@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-
+import Link from 'next/link';
 
 export default function MobileNav() {
   const [state, setState] = React.useState({
@@ -125,7 +125,7 @@ export default function MobileNav() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {[{name:'Home',link:'#home'}, {name:'Products',link:'#products'}, {name:'About-Us' , link: '#about'}].map((text, index) => (
+        {[{name:'Home',link:'/'}, {name:'Products',link:'#products'}, {name:'About-Us' , link: '#about'}].map((text, index) => (
           <div key={text} disablePadding>
             {
                 text.name === 'Products' ?
@@ -143,15 +143,6 @@ export default function MobileNav() {
                       </li>
                     ))
                   }
-                    <li>
-                        <a href='#'>Cladcut</a>
-                    </li>
-                    <li>
-                        <a href='#'>ChatPro</a>
-                    </li>
-                    <li>
-                        <a href='#'>ERP</a>
-                    </li>
                 </ul>
             </>
             :

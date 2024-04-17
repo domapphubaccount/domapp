@@ -6,11 +6,14 @@ import DarkLogo from "../../../assets/images/Header/dark-logo.png";
 import MobileNav from './Mobile_nav/Mobile_nav';
 import { Container, Row, Col } from 'reactstrap';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function Header() {
     const headerScrol = useRef();
     const [getWidowY, setWindowY] = useState();
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const router = useRouter()
+    console.log(router)
 
     const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
@@ -30,7 +33,7 @@ export default function Header() {
             <Container>
                 <div className={`navbar_container ${getWidowY >= 600 && 'nav_active'}`} id="main_nav" ref={headerScrol}>
                     <div>
-                        <Image src={getWidowY >= 600 ? Logo : DarkLogo} alt="main logo" className="main_logo" />
+                        <Image onClick={()=>router.push('/')} src={getWidowY >= 600 ? Logo : DarkLogo} alt="main logo" className="main_logo" style={{cursor:'pointer'}} />
                     </div>
                     <div className="nav">
                         <nav>
@@ -48,15 +51,15 @@ export default function Header() {
                                                         <li>
                                                             <div>Design SoftWare</div>
                                                             <ul>
-                                                                <li>Cladcut</li>
-                                                                <li>Windload</li>
-                                                                <li>Facade Static</li>
+                                                                <li><Link href={'/cladCut'}>Cladcut</Link></li>
+                                                                <li><Link href={'/windload'}>Windload</Link></li>
+                                                                <li><Link href={'/facade'}>Facade Static</Link></li>
                                                             </ul>
                                                         </li>
                                                         <li>
                                                             <div>Business Adminstration</div>
                                                             <ul>
-                                                                <li>ERP System</li>
+                                                                <li><Link href={'/erp'}>ERP System</Link></li>
                                                             </ul>
                                                         </li>
                                                     </ul>
@@ -67,7 +70,7 @@ export default function Header() {
                                                             <div>Risk Assessment <div className='text-secondary'>comply with SBC</div></div>
                                                             <ul>
                                                                 <li>
-                                                                    RD-App
+                                                                    <Link href={'/rd'}>RD-App</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -75,7 +78,7 @@ export default function Header() {
                                                             <div>Communication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    ChatPlus
+                                                                    <Link href={'/chat'}>ChatPlus</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
