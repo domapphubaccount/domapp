@@ -136,7 +136,7 @@ export default function MobileNav() {
                 <ul className='header-products'>
                   {
                     items.map((item,index)=>(
-                      <li>
+                      <li key={index}>
                         <Link href={item.link}>
                           {item.title}
                         </Link>

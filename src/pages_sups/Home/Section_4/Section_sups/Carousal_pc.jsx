@@ -97,10 +97,6 @@ const MyCarousel = () => {
 
   function handleCarouselNav(itemIndex){
     setActiveIndex(itemIndex);
-    // Use the ref to navigate to the corresponding slide
-    // if (carouselRef.current) {
-    //     carouselRef.current.slickGoTo(itemIndex - 1);
-    // }
 }
 
 
@@ -195,7 +191,7 @@ const MyCarousel = () => {
         </div>
         {items.map((item,index)=> (
           item.index == activeIndex &&
-          <div>
+          <div key={index}>
             <Link className='explore_more' href={`${item.link}`}>
                 <div className='explore'>Explore</div> <div><i className="bi bi-arrow-right ar"></i></div>
             </Link>
