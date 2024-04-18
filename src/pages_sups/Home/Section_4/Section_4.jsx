@@ -4,7 +4,7 @@ import MobileSlider from "./Section_sups/Carousel_mobile"
 export default function Section_4() {
   return (
     <section className="home_section_4" id="products">
-        <Container>
+        <Container style={{overflow: 'hidden'}}>
           <div className="pc-slider">
             {/* <Carousel /> */}
             <Carousel />
