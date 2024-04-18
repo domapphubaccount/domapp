@@ -9,7 +9,7 @@ export default function ServiceDetailsPage ({videos}) {
     return(
     <section className="services-details-area ptb-80 py-5">
       <div className="container">
-        <div className="row align-items-center mb-5">
+        <div className="row align-items-center mb-5" data-aos="fade-up" data-aos-duration="3000">
           <div className="col-lg-6 services-details">
             <div className="services-details-desc caption_products">
               <h3>Incredible Infrastructure</h3>
@@ -38,7 +38,7 @@ export default function ServiceDetailsPage ({videos}) {
 
         <div className="separate"></div>
 
-        <div className="row align-items-center">
+        <div className="row align-items-center" data-aos="fade-up" data-aos-duration="3000">
           <div className="col-lg-6 services-details-image">
                   <video className="rounded h-100 w-100 card_shadow" preload="none" loop muted autoPlay>
                     <source src={videos.seconed.src} type="video/mp4" />
