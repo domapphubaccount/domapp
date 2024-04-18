@@ -47,7 +47,7 @@ function Section_5Sup() {
     <div className="slider-container">
       <Slider {...settings}>
         {cardsData.map((item,index) => (
-        <div className="slider_card_product card-shadow">
+        <div key={index} className="slider_card_product card-shadow">
           <Link href={item.link} style={{textDecoration: 'none'}}>
           <Image alt={item.title} src={item.src}/>
           <div className="fw-bold text-dark p-2 text-center">
