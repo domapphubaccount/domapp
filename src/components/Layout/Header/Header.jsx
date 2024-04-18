@@ -13,8 +13,6 @@ export default function Header() {
     const [getWidowY, setWindowY] = useState();
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const router = useRouter()
-    console.log(router)
-
     const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
     useEffect(() => {

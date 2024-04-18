@@ -118,7 +118,6 @@ export default function Page() {
 
   return (
     <>
-        
         {items.map((item , index) => (
           
             <>
@@ -128,11 +127,9 @@ export default function Page() {
                 <Products_sups />
               </>
               }
-            </>
-          
+            </>    
         ))
         }
-        
     </>
   )
 }
