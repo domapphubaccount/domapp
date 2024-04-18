@@ -33,7 +33,7 @@ export default function Cards() {
                 <Col key={index} sm={12} md={6} lg={4} className="card_column overflow-hidden" 
                 data-aos="fade-up" data-aos-duration="3000">
                     <div className="home_section_2_card rounded" data-aos="fade-up"
-     data-aos-duration="3000">
+                        data-aos-duration="3000">
                         <h4>
                             {item.title}
                         </h4>

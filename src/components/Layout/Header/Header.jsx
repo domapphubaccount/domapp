@@ -37,7 +37,7 @@ export default function Header() {
                         <nav>
                             <ul className='nav-list-container'>
                                 <li>
-                                    <Link href="/" className='nav-link-item'>HOME</Link>
+                                    <Link href="/#home" className='nav-link-item'>HOME</Link>
                                 </li>
                                 <li className="custom-dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
                                     <Link href="/#products" className='nav-link-item'>PRODUCTS</Link>

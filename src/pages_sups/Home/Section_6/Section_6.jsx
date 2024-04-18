@@ -1,3 +1,4 @@
+import Section_head from "@/components/Reuse/Section_Head/Section_head"
 import Link from "next/link"
 import React from "react"
 import * as Icon from "react-feather"
@@ -6,13 +7,14 @@ const ServicesPage = () => (
   <section className="home_section_6">
     <div className="services-area-two pt-80 pb-50 bg-f9f6f6">
       <div className="container">
-        <div className="section-title">
-          <h2>Our Services</h2>
+          {/* <h2>Our Services</h2>
           <div className="bar"></div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          </p> */}
+        <div className="section-title">
+        <Section_head head={1}  title_1={'Our mission'}des_1={'Our mission is to enhance our customer’s success through unique solutions.'}/>
         </div>
 
         <div className="row justify-content-center">

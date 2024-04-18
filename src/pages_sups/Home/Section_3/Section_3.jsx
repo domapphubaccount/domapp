@@ -31,7 +31,7 @@ export default function Section_3() {
                 counterData.map((item,index)=>(
                     <Col key={index}>
                         <div className="h-100">
-                            <h2>
+                            <h2 className="fw-bold">
                                 <CountUp end={item.number} duration={15}/>
                                {
                                 item.title === "Support Availability" ?
@@ -39,7 +39,7 @@ export default function Section_3() {
                                 '+'
                                }
                             </h2>
-                            <div>
+                            <div className="fw-bold">
                                 {item.title}
                             </div>
                         </div>

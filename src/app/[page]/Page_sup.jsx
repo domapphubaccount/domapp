@@ -14,24 +14,24 @@ export default function Page() {
   const items = [
     {
       index: 1,
-      src: product_1,
+      src: product_3,
       title: 'CladCut',
       link:'/cladCut',
       caption: 'Precision cutting made effortless with CladCut',
       Section_2:{
         first:{
-          caption:'',
-          src:''
+          caption:'Upload the project sitting out as dxf file and get detailed fabrication drawing for each panel as ( dxf, dxf for CNC and PDF).     ',
+          src:'/Products/Clad_1.mp4'
         },
         seconed:{
           caption:'',
-          src:''
+          src:'/Products/Clad_1.mp4'
         }
       }
     },
     {
       index: 2,
-      src: product_3,
+      src: product_1,
       title: 'Windload',
       link:'/windload',
       caption: 'Powerful structural analysis and design .Instant access, directly from your browser',
@@ -124,7 +124,7 @@ export default function Page() {
               {item.link === router &&
               <>
                 <Product bannar={item.src} title={item.title} caption={item.caption}/>
-                <Products_sups />
+                <Products_sups videos={item.Section_2}/>
               </>
               }
             </>    

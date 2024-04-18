@@ -23,6 +23,7 @@ const MyCarousel = () => {
     fade: true,
     infinite: true,
     speed: 500,
+    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     afterChange: () => setUpdateCount(updateCount + 1),
@@ -36,6 +37,7 @@ const MyCarousel = () => {
       src: product_1,
       title: 'CladCut',
       link:'/cladCut',
+      video: '/Products/Clad_1.mp4',
       caption: 'Section 1'
     },
     {
@@ -43,6 +45,7 @@ const MyCarousel = () => {
       src: product_3,
       title: 'Windload',
       link:'/windload',
+      video:'/Home_page/Section_2.mp4',
       caption: 'Section 3'
     },
     {
@@ -50,6 +53,7 @@ const MyCarousel = () => {
       src: product_2,
       title: 'Facade Static',
       link: '/facade',
+      video: '/Home_page/Section_2.mp4',
       caption: 'Section 2'
     },
     {
@@ -57,6 +61,7 @@ const MyCarousel = () => {
       src: product_3,
       title: 'ERP System',
       link: '/erp',
+      video:'/Home_page/Section_2.mp4',
       caption: 'Section 3'
     },
     {
@@ -64,6 +69,7 @@ const MyCarousel = () => {
       src: product_3,
       title: 'ChatPlus',
       link: '/chat',
+      video:'/Home_page/Section_2.mp4',
       caption: 'Section 3'
     },
     {
@@ -71,6 +77,7 @@ const MyCarousel = () => {
       src: product_3,
       title: 'RD App',
       link: '/rd',
+      video:'/Home_page/Section_2.mp4',
       caption: 'Section 3'
     }
   ];
@@ -102,8 +109,7 @@ const MyCarousel = () => {
 
   return (
     <div className='h-100'>
-      <div ref={carouselRef} className="carousal_container card_shadow ">
-        {getinviw &&
+      <div className="carousal_container card_shadow ">
         <div  className="carousal_nav"
               data-aos="fade-down"
               data-aos-easing="linear"
@@ -130,7 +136,6 @@ const MyCarousel = () => {
           </ul>
         </div>
         
-        }
         <div className={`carousal_card fade-in`} data-aos="zoom-in" data-aos-duration="500">
           <div className='slider-video-container'>
           <Slider
@@ -139,53 +144,26 @@ const MyCarousel = () => {
           }}
           {...settings}
           >
-            <div>
+            {items.map((item,index)=>(
+
+            <div key={index}>
             <div className="carousel_inside_content">
                   <div className="h-100">
                     <Row className="h-100">
                       <Col className={`d-flex align-items-center justify-content-center rounded transformed_video  ${'video_col'}`} >
                         {/* <Image src={item.src} alt="product" style={{border: '2px solid gray'}}/> */}
                         <video className="rounded h-100 w-100" preload="none" loop muted autoPlay>
-                            <source src="/Home_page/Section_2.mp4" type="video/mp4" />
+                            <source src={item.video} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                       </Col>
+                        <div className='text-center fw-bold'>-- {item.title} --</div>
                     </Row>
                   </div>
                 </div>
             </div>
+            ))}
 
-            <div>
-            <div className="carousel_inside_content video_col">
-                  <div className="h-100">
-                    <Row className="h-100">
-                      <Col className={`d-flex align-items-center justify-content-center rounded transformed_video `} >
-                        {/* <Image src={item.src} alt="product" style={{border: '2px solid gray'}}/> */}
-                        <video className="rounded h-100 w-100" preload="none" loop muted autoPlay>
-                            <source src="/Home_page/Section_2.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                      </Col>
-                    </Row>
-                  </div>
-                </div>
-            </div>
-
-            <div>
-            <div className="carousel_inside_content">
-                  <div className="h-100">
-                    <Row className="h-100">
-                      <Col className={`d-flex align-items-center justify-content-center rounded transformed_video  ${'video_col'}`} >
-                        {/* <Image src={item.src} alt="product" style={{border: '2px solid gray'}}/> */}
-                        <video className="rounded h-100 w-100" preload="none" loop muted autoPlay>
-                            <source src="/Home_page/Section_2.mp4" type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
-                      </Col>
-                    </Row>
-                  </div>
-                </div>
-            </div>
         </Slider>
         </div>
         </div>

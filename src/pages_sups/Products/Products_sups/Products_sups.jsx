@@ -3,19 +3,18 @@ import ServicesDetails1 from "@/assets/images/Products_Page/services-details1.pn
 import ServicesDetails2 from "@/assets/images/Products_Page/services-details2.png"
 import Image from "next/image"
 
-export default function ServiceDetailsPage () {
+export default function ServiceDetailsPage ({videos}) {
+  
 
     return(
-    <div className="services-details-area ptb-80 py-5">
+    <section className="services-details-area ptb-80 py-5">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row align-items-center mb-5">
           <div className="col-lg-6 services-details">
-            <div className="services-details-desc">
+            <div className="services-details-desc caption_products">
               <h3>Incredible Infrastructure</h3>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry’s standard dummy
-                text ever since the 1500s, when an unknown printer.
+                {videos.first.caption}
               </p>
 
               <p>
@@ -29,12 +28,11 @@ export default function ServiceDetailsPage () {
             </div>
           </div>
 
-          <div className="col-lg-6 services-details-image">
-            <Image
-              src={ServicesDetails1}
-              className="animate__animated animate__fadeInUp"
-              alt="Services"
-            />
+          <div className="col-lg-6 services-details-image card_shadow">
+                  <video className="rounded h-100 w-100" preload="none" loop muted autoPlay>
+                    <source src={videos.first.src} type="video/mp4" />
+                            Your browser does not support the video tag.
+                  </video>
           </div>
         </div>
 
@@ -42,11 +40,10 @@ export default function ServiceDetailsPage () {
 
         <div className="row align-items-center">
           <div className="col-lg-6 services-details-image">
-            <Image
-              src={ServicesDetails2}
-              className="animate__animated animate__fadeInUp"
-              alt="Services"
-            />
+                  <video className="rounded h-100 w-100 card_shadow" preload="none" loop muted autoPlay>
+                    <source src={videos.seconed.src} type="video/mp4" />
+                            Your browser does not support the video tag.
+                  </video>
           </div>
 
           <div className="col-lg-6 services-details">
@@ -63,7 +60,7 @@ export default function ServiceDetailsPage () {
           </div>
         </div>
       </div>
-    </div>
+    </section>
 )
 }
 

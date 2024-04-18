@@ -8,7 +8,7 @@ import Cards from "./Section_sups/Cards";
 export default function Section_2() {
   return (
     <section className="home_section_2" id="about">
-        <Section_head head={1}  title_1={'Our mission'}des_1={'to enhance our customer’s success through unique solutions.'}/>
+        <Section_head head={1}  title_1={'Our mission'}des_1={'Our mission is to enhance our customer’s success through unique solutions.'}/>
 
         <Container>
             <Row>

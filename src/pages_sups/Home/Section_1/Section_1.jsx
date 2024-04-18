@@ -9,7 +9,7 @@ export default function Section_1() {
           <div data-aos="fade-left" data-aos-duration="3000">
             <h1>Domapphub</h1>
             <p>We Build the Stunning and Functional Applications for your needs </p>
-            <a href="#about" className="get_started">Get Started</a>
+            <a href="#products" className="get_started">Get Started</a>
           </div>
         </div>
         {/* <svg className="swction_wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
