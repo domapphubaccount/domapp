@@ -179,7 +179,9 @@ const MyCarousel = ({setConatiner}) => {
           item.index == activeIndex &&
           <div key={index} >
             <Link className='explore_more' href={`${item.link}`}>
-                <div className='explore'>Explore</div> <div><i className="bi bi-arrow-right ar"></i></div>
+                <div className='explore'>Explore</div> <div>
+                  <i className="bi bi-arrow-right ar"></i>  
+                </div>
             </Link>
         </div>
         ))

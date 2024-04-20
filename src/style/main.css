@@ -836,37 +836,71 @@ footer{
      .pc-slider{
         display: none
     }
-    }
-    
-    .explore_more{
-        background-color: #000000;
-        position: absolute;
-        bottom: 60px;
-        right: 60px;
-        padding: 7px 12px 7px 15px;
-        display: flex;
-        border-radius: 50vw;
-        text-decoration: none;
-        transition:all .5s;
-        
-        .explore{
-            background-color: #000000;
-            color: #fff;
-            font-size: .9rem;
-            font-weight: bold;
-
-        }.ar{
-            border-radius: 50%;
-            background-color: #fff;
-            color: #000;
-            border: 2px solid black;
-            padding: 8.5px;
-            margin-right: -20px;
-            margin-left: 6px;
-
-        }
     } 
 }
+.explore_more{
+    background-color: #000000;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    padding: 7px 12px 7px 15px;
+    display: flex;
+    border-radius: 50vw;
+    text-decoration: none;
+    transition:all .5s;
+    border: 2px solid black;
+
+}
+    .explore{
+        color: #fff;
+        font-size: .9rem;
+        font-weight: bold;
+
+    }.ar{
+        border-radius: 50%;
+        background-color: #fff;
+        color: #000;
+        border: 2px solid black;
+        padding: 8.5px;
+        margin-right: -20px;
+        margin-left: 6px;
+
+    }
+
+
+.explore_more:hover{
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    padding: 7px 12px 7px 15px;
+    display: flex;
+    border-radius: 50vw;
+    text-decoration: none;
+    transition:all .5s;
+    border: 2px solid black;
+}
+    
+    .explore_more:hover .explore{
+        color: #000000;
+        font-size: .9rem;
+        font-weight: bold;
+
+    }
+    .explore_more:hover .ar{
+        border-radius: 50%;
+        background-color: #000000;
+        color: #ffffff;
+        border: 2px solid black;
+        padding: 8.5px;
+        margin-right: -20px;
+        margin-left: 6px;
+
+    }
+
+
+
+
 .transformed_circle{
     background-color: #000;
     position: absolute;
@@ -877,10 +911,6 @@ footer{
     bottom: 0;
     left: 0;
     z-index: -1;
-}
-.explore_more .explore:hover{
-    background-color: #000;
-    color: #fff;
 }
 /* home_section_5 */
 .home_section_5{
@@ -1056,7 +1086,7 @@ footer{
     max-width: 687px;
     max-height: 386px;
     transform: translateY(0) scale(1);
-    transition: 5s;
+    transition: 3s;
   }
   .catch{
     position: absolute;
