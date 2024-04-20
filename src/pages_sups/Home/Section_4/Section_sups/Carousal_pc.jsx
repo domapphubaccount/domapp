@@ -116,15 +116,18 @@ const MyCarousel = () => {
               data-aos-duration="1500"
         >
           <ul>
+          <div className='transformed_circle' style={{transform: `translate(${activeIndex === 1 ? '0px' : activeIndex === 2 ? '95px' : activeIndex === 3 ? '200px' : activeIndex === 4 ? '322px' : activeIndex === 5 ? '435px' : '525px' })` , width: activeIndex === 3 ? '126px' : activeIndex === 4 && '120px'  }}></div>
             {items.map((item,index) => (
-                <li key={index} className={`${item.index === activeIndex && 'active_card'}`} >
+              <li key={index} className={`${item.index === activeIndex && 'active_card'}`} >
                   {item.index == activeIndex ?
-
+                    <>
+                    {console.log(activeIndex)}
                     <div 
                       data-aos="fade-up"
                       data-aos-duration="1000">
                       {item.title}
                     </div>
+                    </>
                     :
                     <button onClick={(e)=>{handleCarouselNav(item.index);sliderRef.slickGoTo(item.index - 1); console.log(item.index)}}>
                       {item.title}
