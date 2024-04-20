@@ -141,10 +141,10 @@ const MyCarousel = ({setConatiner}) => {
           </ul>
         </div>
         
-        <div style={{position:'relative' , zIndex:'100'}} className={`carousal_card fade-in`} 
+        <div  className={`carousal_card fade-in`} 
         // data-aos="zoom-in" data-aos-duration="500"
         >
-          <div className={`slider-video-container ${inView && "slider-video-container-normal"}`}>
+          <div className={`slider-video-container ${inView && "slider-video-container-normal"}`} style={{position:'relative' , zIndex:'100'}}>
           <Slider
           ref={slider => {
             sliderRef = slider;
