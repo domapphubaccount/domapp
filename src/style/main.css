@@ -1050,9 +1050,25 @@ footer{
   .slider-video-container{
     max-width: 687px;
     max-height: 386px;
+    transform: translateY(-200px) scale(1.214190093708166);
+  }
+  .slider-video-container-normal{
+    max-width: 687px;
+    max-height: 386px;
+    transform: translateY(0) scale(1);
+    transition: 5s;
+  }
+  .catch{
+    position: absolute;
+    top: 25%;
+  }
 
+  .container-trans{
+    transition: all 4s;
   }
 
   .caption_products{
     font-family: 'Open Sans', sans-serif;
+    transform: translateY(0) scale(1);
+
   }
