@@ -21,7 +21,7 @@ export default function Product({bannar,title,caption}) {
                 </div>
                 <div>
                     <a href='#'>
-                        Try it Now
+                        Get Started
                     </a>
                 </div>
             </div>

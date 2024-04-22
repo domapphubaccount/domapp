@@ -9,7 +9,7 @@ export default function Section_4() {
   return (
     <section className="home_section_4" id="products">
         <Section_head head={1}  title_1={'Our Products'}des_1={'to enhance our customer’s success through unique solutions.'}/>
-        <div className={`container-trans ${ handleContainer && 'container'} `}>
+        <div className={`container-trans ${ handleContainer && 'container'} section_2_mobile_carousal`}>
           <div className="pc-slider">
             <Carousel setConatiner={setConatiner}/>
           </div>

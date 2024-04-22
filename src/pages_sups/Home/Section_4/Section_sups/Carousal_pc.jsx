@@ -41,8 +41,26 @@ const MyCarousel = ({setConatiner}) => {
       src: product_1,
       title: 'CladCut',
       link:'/cladCut',
-      video: '/Products/Clad_1.mp4',
-      caption: 'Section 1'
+      video: '/Home_page/products/cladcut.MP4',
+      caption: 'Section 1',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
     },
     {
       index: 2,
@@ -50,7 +68,25 @@ const MyCarousel = ({setConatiner}) => {
       title: 'Windload',
       link:'/windload',
       video:'/Home_page/Section_2.mp4',
-      caption: 'Section 3'
+      caption: 'Section 3',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
     },
     {
       index: 3,
@@ -58,7 +94,25 @@ const MyCarousel = ({setConatiner}) => {
       title: 'Facade Static',
       link: '/facade',
       video: '/Home_page/Section_2.mp4',
-      caption: 'Section 2'
+      caption: 'Section 2',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
     },
     {
       index: 4,
@@ -66,7 +120,25 @@ const MyCarousel = ({setConatiner}) => {
       title: 'ERP System',
       link: '/erp',
       video:'/Home_page/Section_2.mp4',
-      caption: 'Section 3'
+      caption: 'Section 3',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
     },
     {
       index: 5,
@@ -74,7 +146,25 @@ const MyCarousel = ({setConatiner}) => {
       title: 'ChatPlus',
       link: '/chat',
       video:'/Home_page/Section_2.mp4',
-      caption: 'Section 3'
+      caption: 'Section 3',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
     },
     {
       index: 6,
@@ -82,7 +172,25 @@ const MyCarousel = ({setConatiner}) => {
       title: 'RD App',
       link: '/rd',
       video:'/Home_page/Section_2.mp4',
-      caption: 'Section 3'
+      caption: 'Section 3',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
     }
   ];
 
@@ -141,7 +249,7 @@ const MyCarousel = ({setConatiner}) => {
           </ul>
         </div>
         
-        <div  className={`carousal_card fade-in`} 
+        <div  className={`carousal_card fade-in`} //carousal_card
         // data-aos="zoom-in" data-aos-duration="500"
         >
           <div className={`slider-video-container ${inView && "slider-video-container-normal"}`} style={{position:'relative' , zIndex:'100'}}>
@@ -157,14 +265,17 @@ const MyCarousel = ({setConatiner}) => {
             <div className={"carousel_inside_content"} >
                   <div className="h-100">
                     <Row className="h-100">
-                      <Col className={`d-flex align-items-center justify-content-center rounded transformed_video  ${'video_col'}`} >
+                      <Col sm={4} md={4} lg={4}>
+                        any
+                      </Col>
+                      <Col sm={8} md={8} lg={8} className={`d-flex align-items-center justify-content-center rounded transformed_video video_col`} >
                         {/* <Image src={item.src} alt="product" style={{border: '2px solid gray'}}/> */}
                         <video  className="rounded h-100 w-100" preload="none" loop muted autoPlay>
                             <source src={item.video} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                       </Col>
-                        <div className='text-center fw-bold'>-- {item.title} --</div>
+                        {/* <div className='text-center fw-bold'>-- {item.title} --</div> */}
                     </Row>
                   </div>
                 </div>

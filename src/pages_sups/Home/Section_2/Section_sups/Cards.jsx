@@ -1,7 +1,13 @@
 import { Col, Row } from "reactstrap";
+import ResponsiveCarousel from "./Carousal";
 
 export default function Cards() {
     const cardsData = [
+        
+        {
+            title: 'Our mission',
+            description: 'to enhance our customer’s success through unique solutions.            '
+        },
         {
             title: 'Cutting-Edge Software',
             description: 'We specialize in developing applications that meets the needs of our clients with precision and creativity, utilizing the latest tech and frameworks.            '
@@ -44,6 +50,10 @@ export default function Cards() {
                 </Col>
             ))}
         </Row>
+
+
+
+        {/* <ResponsiveCarousel /> */}
     </div>
   )
 }

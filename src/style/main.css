@@ -549,17 +549,9 @@ footer{
         z-index: -1;
         background: var(--dark-blue);
         border-bottom-left-radius: 5px;
-        animation-name: example;
         animation-duration: 4s;
       }
       
-      @keyframes example {
-        0%   {background-color:red; left:0px; top:0px;}
-        25%  {background-color:yellow; left:200px; top:0px;}
-        50%  {background-color:blue; left:200px; top:200px;}
-        75%  {background-color:green; left:0px; top:200px;}
-        100% {background-color:red; left:0px; top:0px;}
-      }
     
 
     /* .home_section_2_card:hover{
@@ -595,13 +587,48 @@ footer{
     }
 
 }
+.home_section_2_card {
+    background-color:#f1f1f1 !important;
+    box-shadow: -2px 2px 7px 2px #ccc;
+    padding: 23px;
+    height: 100%;
+    min-height: 100px;
+    position: relative;
+    transition: all 0.4s !important;
 
+    h4 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    p{
+        font-size: .8rem;
+        font-weight: bold;
+    }
+}
+.section_2_mobile_cards{
+    display: none;
+}
+.section_2_mobile_carousal{
+    display: block;
+}
+@media (max-width: 770px) {
+    .section_2_mobile_carousal{
+        display: none;
+    }
+    .section_2_mobile_cards{
+        display: block;
+    }
+}
 
-.home_section_2 .card_dis {
+.home_section_2_card:hover {
+    transform: translateY(-8px) !important;
+} 
+
+.home_section_2_carousal .card_dis {
     padding: 40px;
 }
 
-.home_section_2 .card_dis h5 {
+.home_section_2_carousal .card_dis h5 {
     font-family: "Ubuntu", sans-serif;
     font-weight: 600;
     font-style: normal;
@@ -722,16 +749,16 @@ footer{
 } */
 .home_section_4{
     padding: 60px 0;
-    background-color: #f7f7f7;
+    background-image: url('../assets/images/back_drops/drop7.png');
     
     .carousal_container{
         position: relative;
         height: 80vh;
         border-radius: 15px;
         /* border: 3px solid gray; */
-        background: rgb(241,241,241);
+        /* background: rgb(241,241,241);
         background: linear-gradient(47deg, rgba(241,241,241,0.7344187675070029) 0%, rgba(210,210,210,0.5859593837535014) 40%, rgba(239,239,240,1) 100%);
-        background-image: url('../assets/images/back_drops/drop3.png');
+        background-image: url('../assets/images/back_drops/drop3.png'); */
         border: 2px solid #8080800a;
 
     
@@ -849,6 +876,7 @@ footer{
     text-decoration: none;
     transition:all .5s;
     border: 2px solid black;
+    z-index: 100;
 
 }
     .explore{
@@ -1078,19 +1106,22 @@ footer{
 
 
   .slider-video-container{
-    max-width: 687px;
-    max-height: 386px;
-    transform: translateY(-200px) scale(1.214190093708166);
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    transform: translateY(-200px);
   }
   .slider-video-container-normal{
-    max-width: 687px;
-    max-height: 386px;
-    transform: translateY(0) scale(1);
-    transition: 3s;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translateY(0);
+    transition: 2s;
   }
+
   .catch{
     position: absolute;
     top: 25%;
+    height: 100%;
   }
 
   .container-trans{
@@ -1102,3 +1133,49 @@ footer{
     transform: translateY(0) scale(1);
 
   }
+
+  /* loading section */
+  .loading_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/back_drops/drop7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* feed logo */
+  .feed_logo{
+    width: 180px;
+    margin-top: -100px;
+    animation-name: loadingPage;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes loadingPage{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+
+  .home_section_5 .slick-center  {
+    transform: scale(1.2); /* Adjust the size of the center slide */
+  }
+  .slick-slide.slick-center{
+    transform: scale(1.1);
+}

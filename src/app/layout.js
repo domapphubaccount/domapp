@@ -4,6 +4,8 @@ import "./globals.css";
 import "../style/main.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-icons/font/bootstrap-icons.css"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { AOSInit } from "@/components/Animation/aos";
 
 const inter = Inter({ subsets: ["latin"] });

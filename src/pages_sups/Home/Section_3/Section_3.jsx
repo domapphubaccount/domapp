@@ -1,6 +1,6 @@
-"use client"
-import { Col, Container, Row } from "reactstrap"
+import { Col, Container, Row } from "reactstrap";
 import CountUp from 'react-countup';
+import { InView } from 'react-intersection-observer';
 
 export default function Section_3() {
     const counterData = [
@@ -20,34 +20,33 @@ export default function Section_3() {
             number: 24,
             title: 'Support Availability'
         }
-    ]
+    ];
 
-
-  return (
-    <section className="home_section_3 shadow_inside">
-        <Container>
-            <Row>
-            {
-                counterData.map((item,index)=>(
-                    <Col key={index}>
-                        <div className="h-100">
-                            <h2 className="fw-bold">
-                                <CountUp end={item.number} duration={15}/>
-                               {
-                                item.title === "Support Availability" ?
-                                '/7':
-                                '+'
-                               }
-                            </h2>
-                            <div className="fw-bold">
-                                {item.title}
-                            </div>
-                        </div>
-                    </Col>
-                ))
-            }
-            </Row>
-        </Container>
-    </section>
-  )
+    return (
+        <section className="home_section_3 shadow_inside">
+            <Container>
+                <Row>
+                    {counterData.map((item, index) => (
+                        <Col key={index}>
+                            <InView>
+                                {({ ref, inView }) => (
+                                    <div ref={ref} className="h-100">
+                                        <h2 className="fw-bold">
+                                            {inView ? (
+                                                <CountUp end={item.number} duration={3} />
+                                            ) : (
+                                                '+'
+                                            )}
+                                            {item.title === "Support Availability" ? '/7' : ''}
+                                        </h2>
+                                        <div className="fw-bold">{item.title}</div>
+                                    </div>
+                                )}
+                            </InView>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+        </section>
+    );
 }

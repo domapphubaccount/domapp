@@ -87,7 +87,7 @@ export default function Header() {
                                     )}
                                 </li>
                                 <li>
-                                    <Link href="/#about" className='nav-link-item'>WHAT WE DO</Link>
+                                    <Link href="/#whatwedo" className='nav-link-item'>WHAT WE DO</Link>
                                 </li>
                                 <li>
                                     <Link href="/#about" className='nav-link-item'>ABOUT US</Link>
