@@ -7,7 +7,7 @@ export default function Section_8() {
   return (
     <section className='erp_section_7'>
         <Container>
-            <div className='row g-0 section_container'>
+            <div className='row g-0 section_container' id='Task'>
                 <Col sm={12} md={6} lg={6}>
                     <img src={Task.src} className='image_manage' alt="manage" data-aos="fade-up" data-aos-duration="2500"/>
                 </Col>

@@ -2481,3 +2481,12 @@ footer{
  .chat_section_4_cards .chat_card_icon_container .card_icon i{
     width: 100px;
  }
+ .card_container a{
+    color: #000;
+    text-decoration: none;
+    transition: 1s;
+ }
+ .card_container a:hover{
+    color: #bb5938;
+    text-decoration: none;
+ }

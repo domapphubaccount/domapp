@@ -5,7 +5,7 @@ import yesI from "@/assets/images/Products_Page/Erp/Features/yes.svg"
 
 export default function Section_11() {
   return (
-    <section className='erp_section_11'>
+    <section className='erp_section_11' id="Sub">
         <Container>
             <div className='row g-0 section_container'>
                 <Col sm={12} md={6} lg={6}>

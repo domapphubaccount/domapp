@@ -7,7 +7,7 @@ export default function Section_9() {
   return (
     <section className='erp_section_9'>
         <Container>
-            <div className='row g-0 section_container'>
+            <div className='row g-0 section_container' id="Time">
                 <Col sm={12} md={6} lg={6}>
                     <div className='content h-100' data-aos="fade-up" data-aos-duration="2500">
                         <div>

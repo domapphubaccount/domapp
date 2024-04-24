@@ -22,7 +22,8 @@ export default function Section_3() {
                                         {item.Section_4.features_1.list.map((item,index)=>(
                                         <li key={index}>
                                             <div>
-                                                <h5>{item.head}</h5>
+                                                {console.log(item.head.slice(0,3))}
+                                                <a href={`#${item.head.slice(0,3)}`}><h5>{item.head}</h5></a>
                                                 <p>{item.caption}</p>
                                             </div>
                                         </li> 

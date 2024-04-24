@@ -50,14 +50,14 @@ export default function Page() {
                     <Section_12 />
                     <Section_13 />
                     <Section_14 />
-                    
+
                     <Section_15 />
                     <Section_16 />
                     <Section_17 />
                     <Section_18 />
                     {/* <Section_19 /> */}
                     {/* <Section_5 /> */}
-                    <Section_6 />
+                    {/* <Section_6 /> */}
                     <div className="py-5">
                     <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/>
                     </div>
