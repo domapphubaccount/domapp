@@ -54,15 +54,15 @@ export default function Header() {
                                                         <li>
                                                             <div>Design SoftWare</div>
                                                             <ul>
-                                                                <li><Link href={'/cladCut'}>Cladcut</Link></li>
-                                                                <li><Link href={'/windload'}>Windload</Link></li>
-                                                                <li><Link href={'/facade'}>Facade Static</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/cladCut'}>Cladcut</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/windload'}>Windload</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/facade'}>Facade Static</Link></li>
                                                             </ul>
                                                         </li>
                                                         <li>
                                                             <div>Business Adminstration</div>
                                                             <ul>
-                                                                <li><Link href={'/erp'}>ERP System</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/erp'}>ERP System</Link></li>
                                                             </ul>
                                                         </li>
                                                     </ul>
@@ -73,7 +73,7 @@ export default function Header() {
                                                             <div>Risk Assessment <div className='text-secondary'>comply with SBC</div></div>
                                                             <ul>
                                                                 <li onClick={handleClick}>
-                                                                    <Link href={'/rd'}>RD-App</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/rd'}>RD-App</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -81,7 +81,7 @@ export default function Header() {
                                                             <div>Communication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link href={'/chat'}>ChatPlus</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/chat'}>ChatPlus</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>

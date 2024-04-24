@@ -13,18 +13,22 @@ export default function Section_9() {
                         <div>
                             <h3>Time Tracking</h3>
                             <p>
-                            Effortlessly monitor the time invested in your projects using the ERP's comprehensive time-tracking solution. Begin or end your timer or input time manually for tasks. Then, seamlessly bill your clients based on the recorded time.                            </p>
+                            Effortlessly monitor the time invested in your projects using the ERP's comprehensive time-tracking solution. Begin or end your timer or input time manually for tasks. Then, seamlessly bill your clients based on the recorded time.
+                            </p>
                         </div>
                         <div>
                             <ul className='list' data-aos="fade-right"  data-aos-duration="1500">
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project overview</span></div>
+                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Measuring productivity and project progress.</span></div>
                                 </li>
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project Details</span></div>
+                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Track time spent on specific tasks or projects.</span></div>
                                 </li>
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span><span>Time spent</span> </div>
+                                    <div><span><img src={yesI.src} alt='true' /></span><span>Track time manually by entering start and end times.</span> </div>
+                                </li>
+                                <li>
+                                    <div><span><img src={yesI.src} alt='true' /></span><span>Built-in timer feature to track time automatically</span> </div>
                                 </li>
                             </ul>
                         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container } from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
 import Pay from "@/assets/images/Products_Page/Erp/Features/pay.jpg"
 import yesI from "@/assets/images/Products_Page/Erp/Features/yes.svg"
 
@@ -16,21 +16,50 @@ export default function Section_10() {
                         <div>
                             <h3>Invoices & Payments</h3>
                             <p>
-                                We’ve developed an incredibly user-friendly invoicing system, removing the necessity for third-party invoicing tools. Within the CRM, you can easily create invoices with diverse options such as time billing, product billing, task billing, and others. Invoices are automatically sent to clients via email, enabling them to conveniently make payments via credit card or PayPal.
+                            We’ve developed an incredibly user-friendly invoicing system, removing the necessity for third-party invoicing tools. Within the ERP System, you can easily create invoices with diverse options such as time billing, product billing, task billing, and others. Invoices are automatically sent to clients via email, enabling them to conveniently make payments via credit card or PayPal.
                             </p>    
                         </div>
                         <div>
-                            <ul className='list' data-aos="fade-right"  data-aos-duration="1500">
-                                <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project overview</span></div>
-                                </li>
-                                <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project Details</span></div>
-                                </li>
-                                <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span><span>Time spent</span> </div>
-                                </li>
-                            </ul>
+                            <Row>
+                                <Col>
+                                    <ul className='list' data-aos="fade-right"  data-aos-duration="1500">
+                                        <li>
+                                            <div><h5>Invoices</h5></div>
+                                        </li>
+                                        <li>
+                                            <div><span><img src={yesI.src} alt='true' /></span> <span>Create, Send, Track.</span></div>
+                                        </li>
+                                        <li>
+                                            <div><span><img src={yesI.src} alt='true' /></span> <span>Customize Template.</span></div>
+                                        </li>
+                                        <li>
+                                            <div><span><img src={yesI.src} alt='true' /></span><span>Invoice Automation.</span> </div>
+                                        </li>
+                                    </ul>
+                                </Col>
+                                <Col>
+                                    <ul className='list' data-aos="fade-right"  data-aos-duration="1500">
+                                        <li>
+                                            <div><h5>Payments</h5></div>
+                                        </li>
+                                        <li>
+                                            <div><span><img src={yesI.src} alt='true' /></span> <span>Track payments.</span></div>
+                                        </li>
+                                        <li>
+                                            <div><span><img src={yesI.src} alt='true' /></span> <span>Receive and generate payments.</span></div>
+                                        </li>
+                                        <li>
+                                            <div><span><img src={yesI.src} alt='true' /></span><span>Payment status overview.</span> </div>
+                                        </li>
+                                        <li>
+                                            <div><span><img src={yesI.src} alt='true' /></span><span>Determine payment method paypal, credit card.</span> </div>
+                                        </li>
+                                        <li>
+                                            <div><span><img src={yesI.src} alt='true' /></span><span>Control product, time, and task billing.</span> </div>
+                                        </li>
+                                    </ul>
+                                </Col>
+                            </Row>
                         </div>
                     </div>
                 </Col>

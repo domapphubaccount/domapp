@@ -15,7 +15,7 @@ export default function Section_14() {
                             <p>
                             You have the flexibility to generate recurring invoices on a daily, weekly, monthly, or yearly basis. The system will autonomously generate new invoices and send them to your clients via email.</p>
                         </div>
-                        <div>
+                        {/* <div>
                             <ul className='list' data-aos="fade-right"  data-aos-duration="1500">
                                 <li>
                                     <div><span><img src={yesI.src} alt='true' /></span> <span>Project overview</span></div>
@@ -27,7 +27,7 @@ export default function Section_14() {
                                     <div><span><img src={yesI.src} alt='true' /></span><span>Time spent</span> </div>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     </div>
                 </Col>
                 <Col sm={12} md={6} lg={6}>

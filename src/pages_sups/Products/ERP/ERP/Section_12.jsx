@@ -19,13 +19,16 @@ export default function Section_12() {
                         <div>
                             <ul className='list' data-aos="fade-right"  data-aos-duration="1500">
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project overview</span></div>
+                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Create, Modify estimates.</span></div>
                                 </li>
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project Details</span></div>
+                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Customized Templates.</span></div>
                                 </li>
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span><span>Time spent</span> </div>
+                                    <div><span><img src={yesI.src} alt='true' /></span><span>Manage Deal amount and products.</span> </div>
+                                </li>
+                                <li>
+                                    <div><span><img src={yesI.src} alt='true' /></span><span>Send estimates automation.</span> </div>
                                 </li>
                             </ul>
                         </div>

@@ -19,13 +19,13 @@ export default function Section_7() {
                         <div>
                             <ul className='list' data-aos="fade-right"  data-aos-duration="1500">
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project overview</span></div>
+                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project overview, assign users, mangers.</span></div>
                                 </li>
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project Details</span></div>
+                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project details, status, progression and completion.</span></div>
                                 </li>
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span><span>Time spent</span> </div>
+                                    <div><span><img src={yesI.src} alt='true' /></span><span>Project cloning, activity and time spent.</span> </div>
                                 </li>
                             </ul>
                         </div>

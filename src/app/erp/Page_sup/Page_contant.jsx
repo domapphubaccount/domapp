@@ -21,6 +21,10 @@ import Section_11 from "@/pages_sups/Products/ERP/ERP/Section_11"
 import Section_12 from "@/pages_sups/Products/ERP/ERP/Section_12"
 import Section_13 from "@/pages_sups/Products/ERP/ERP/Section_13"
 import Section_14 from "@/pages_sups/Products/ERP/ERP/Section_14"
+import Section_15 from "@/pages_sups/Products/ERP/ERP/Section_15"
+import Section_16 from "@/pages_sups/Products/ERP/ERP/Section_16"
+import Section_17 from "@/pages_sups/Products/ERP/ERP/Section_17"
+import Section_18 from "@/pages_sups/Products/ERP/ERP/Section_18"
 
 
 export default function Page() {
@@ -46,6 +50,12 @@ export default function Page() {
                     <Section_12 />
                     <Section_13 />
                     <Section_14 />
+                    
+                    <Section_15 />
+                    <Section_16 />
+                    <Section_17 />
+                    <Section_18 />
+                    {/* <Section_19 /> */}
                     {/* <Section_5 /> */}
                     <Section_6 />
                     <div className="py-5">

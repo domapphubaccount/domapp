@@ -2426,6 +2426,33 @@ footer{
     object-fit: cover;
  }
 
+
+ .erp_section_15 .section_container .content{
+    padding: 60px 25px;
+    background: #DAE8F5;
+ }
+ .erp_section_15 .section_container .content p{
+    font-size: .9rem;
+    padding: 20px 0;
+ }
+ .erp_section_15 .section_container .list li div{
+    display: flex;
+ }
+ .erp_section_15 .section_container .list li div span{
+    margin: 5px;
+    transition: 1s;
+ }
+ .erp_section_15 .section_container .list li div span:hover{
+    color: #6a0606;
+ }
+ .erp_section_15 .section_container .list img{
+    width: 15px;
+ }
+ .erp_section_15 .image_manage{
+    height: 100%;
+    object-fit: cover;
+ }
+
  /* chat */
 
  .chat_section_4_cards .chat_card_icon_container{

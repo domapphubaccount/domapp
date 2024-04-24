@@ -21,13 +21,19 @@ export default function Section_8() {
                         <div>
                             <ul className='list' data-aos="fade-right"  data-aos-duration="1500">
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project overview</span></div>
+                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Task assignment.</span></div>
                                 </li>
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Project Details</span></div>
+                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Task control.</span></div>
                                 </li>
                                 <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span><span>Time spent</span> </div>
+                                    <div><span><img src={yesI.src} alt='true' /></span><span>Task cloning.</span> </div>
+                                </li>
+                                <li>
+                                    <div><span><img src={yesI.src} alt='true' /></span><span>Task summary and overview.</span> </div>
+                                </li>
+                                <li>
+                                    <div><span><img src={yesI.src} alt='true' /></span><span>Task reminder.</span> </div>
                                 </li>
                             </ul>
                         </div>

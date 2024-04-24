@@ -11,6 +11,7 @@ import Products_carousal from '@/components/Reuse/Section_Head/Products_carousal
 import Section_head from '@/components/Reuse/Section_Head/Section_head'
 import ScrollToTop from 'react-scroll-to-top'
 import Section_4 from '@/pages_sups/Products/Chat/Chat/Section_4'
+import Each_product from '@/components/Reuse/Section_Head/Products_carousal/Each_product'
 
 
 export default function Page() {
@@ -31,6 +32,7 @@ export default function Page() {
                     <Section_head heads={1} title_1={'Features'} sectionId={'chat2'}/>
                     </div>
                     <Section_3_Chat />
+                    <Each_product />
                     <div className="py-5">
                     <Section_head heads={1} title_1={'Our Products'} sectionId={'chat3'}/>
                     </div>
