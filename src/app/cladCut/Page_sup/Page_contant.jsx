@@ -29,7 +29,7 @@ export default function Page() {
                     <Products_sups sections={item.Section_2}/>
                     <Screens_Section sections={item.Section_3} />
                     {/* <Section_3 sections={item.Section_3} /> */}
-                    {/* <Section_4 sections={item.Section_4} /> */}
+                    <Section_4 sections={item.Section_4} />
                     <Section_5 sections={item.Section_5} />
                     <div className="py-5">
                     <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/>
