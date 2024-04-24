@@ -114,3 +114,4 @@ export const Card = React.memo(function (props) {
     </div>
   );
 });
+Card.displayName ='Card'

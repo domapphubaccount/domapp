@@ -8,6 +8,9 @@
     --secondary-color: '#3e646f';
     --view: -100px;
 }
+/* *{
+    font-family: "League Spartan"
+} */
 a{
     text-decoration: none;
   }

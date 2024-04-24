@@ -18,8 +18,8 @@ export default function Section_3() {
                     </Col>
                     <Col sm={12} md={7} lg={7}>
                         <div className='h-100' data-aos="fade-up" data-aos-duration="3000">
-                            {items.filter((item) => item.link === '/erp' ).map((item) => 
-                                <div className='card_content'>
+                            {items.filter((item) => item.link === '/erp' ).map((item,index) => 
+                                <div key={index} className='card_content'>
                                     <div>
                                         {item.Section_3.features_1.title}
                                     </div>
