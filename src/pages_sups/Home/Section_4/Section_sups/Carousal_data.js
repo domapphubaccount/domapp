@@ -1,0 +1,162 @@
+import product_1 from "@/assets/images/Home_Page/products/pr1.jpg"
+import product_2 from "@/assets/images/Home_Page/products/pr2.jpg"
+import product_3 from "@/assets/images/Home_Page/products/pr3.jpg"
+
+export const items = [
+    {
+      index: 1,
+      src: product_1,
+      title: 'CladCut',
+      link:'/cladCut',
+      video: '/Home_page/products/cladcut.MP4',
+      caption: 'Produce detailed fabrication drawing with lightning speed.',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
+    },
+    {
+      index: 2,
+      src: product_3,
+      title: 'Windload',
+      link:'/windload',
+      video:'/Wind/Carousal.mp4',
+      caption: 'Generate Wind Pressure Designs.',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
+    },
+    {
+      index: 3,
+      src: product_2,
+      title: 'Façade static',
+      link: '/facade',
+      video: '/Facade/Carousal.mp4',
+      caption: 'Get Suggested Profiles for SG50 CW system.',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
+    },
+    {
+      index: 4,
+      src: product_3,
+      title: 'ERP System',
+      link: '/erp',
+      video:'/Home_page/products/ERPSystem.mp4',
+      caption: 'Project management, Invoicing, Leads, Tasks, Time tracking and more.',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
+    },
+    {
+      index: 5,
+      src: product_3,
+      title: 'ChatPlus',
+      link: '/chat',
+      video:'/Home_page/Section_2.mp4',
+      caption: 'Empower your connection with customers through messaging.',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
+    },
+    {
+      index: 6,
+      src: product_3,
+      title: 'RD App',
+      link: '/rd',
+      video:'/Home_page/products/RDAPP.mp4',
+      caption: 'Risk assessment complying with SBC',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
+    }
+  ];

@@ -7,11 +7,13 @@ import MobileNav from './Mobile_nav/Mobile_nav';
 import { Container, Row, Col } from 'reactstrap';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import PositionedSnackbar from '@/components/Reuse/Section_Head/SnackBar';
 
 export default function Header() {
     const headerScrol = useRef();
     const [getWidowY, setWindowY] = useState();
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [open, setOpen] = React.useState(false);
     const router = useRouter()
     const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
@@ -26,6 +28,9 @@ export default function Header() {
         };
     }, []);
 
+    const handleClick = (newState) => () => {
+        setOpen(true);
+      };
     return (
         <header>
             <Container className='nav-container'>
@@ -67,7 +72,7 @@ export default function Header() {
                                                         <li>
                                                             <div>Risk Assessment <div className='text-secondary'>comply with SBC</div></div>
                                                             <ul>
-                                                                <li>
+                                                                <li onClick={handleClick}>
                                                                     <Link href={'/rd'}>RD-App</Link>
                                                                 </li>
                                                             </ul>
@@ -100,6 +105,7 @@ export default function Header() {
                     </div>
                 </div>
             </Container>
+            <PositionedSnackbar handleClick={handleClick} setOpen={setOpen} open={open}/>
         </header>
     )
 }

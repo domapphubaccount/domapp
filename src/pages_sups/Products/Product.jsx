@@ -1,14 +1,12 @@
 import React from 'react'
-import Pr1 from '@/assets/images/Home_Page/products/pr1.jpg'
-import Pr2 from '@/assets/images/Home_Page/products/pr2.jpg'
 import Image from 'next/image'
 
-export default function Product({bannar,title,caption}) {
+export default function Product({bannar,title,caption,linkPage}) {
 
 
   return (
-    <section>
-        <div className='products'>
+    <section className='ERP_bannar'>
+            <div className='products'>
             <Image src={bannar} alt='product' className="bannar" />
             <div className='head-section'>
                 <div className='mb-4'>
@@ -20,13 +18,14 @@ export default function Product({bannar,title,caption}) {
                     </p>
                 </div>
                 <div>
-                    <a href='#'>
+                    <a href={linkPage}>
                         Get Started
                     </a>
                 </div>
             </div>
 
         </div>
+        
     </section>
   )
 }

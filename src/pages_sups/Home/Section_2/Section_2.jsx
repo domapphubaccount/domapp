@@ -2,6 +2,7 @@ import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import { Col, Container, Row } from "reactstrap";
 import Cards from "./Section_sups/Cards";
 import ResponsiveCarousel from "./Section_sups/Carousal";
+import About_2 from "./Section_sups/About_2";
 
 export default function Section_2() {
   return (
@@ -10,8 +11,8 @@ export default function Section_2() {
 
         <Container>
             <Row className="card_shadow card_dis rounded mb-5" >
-                <Col sm={12} lg={6} md={12}>
-                    <div className="card_shadow rounded h-100 video_container" data-aos="fade-down" data-aos-duration="2000" >
+                <Col sm={12} lg={6} md={12} className="p-4">
+                    <div className="card_shadow rounded h-100 video_container my-3" data-aos="fade-down" data-aos-duration="2000" >
                         <div className="h-100 card_shadow ">
                             <video className="rounded h-100 w-100" preload="none" style={{ objectFit: 'cover' }} loop muted autoPlay>
                                 <source src="/Home_page/Section_2.mp4" type="video/mp4" />
@@ -50,6 +51,7 @@ export default function Section_2() {
             <div className="section_2_mobile_cards">
                 <Cards />
             </div>
+            <About_2 />
 
             <ResponsiveCarousel />
 

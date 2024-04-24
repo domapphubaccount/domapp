@@ -7,9 +7,10 @@ export default function Section_3 ({sections}) {
   
 
     return(
-    <section className="services-details-area ptb-80 py-5">
+    <section className="services-details-area-3 ptb-80 py-5">
       <div className="container">
-        <div className="row align-items-center mb-5 card-shadow p-3" data-aos="fade-up" data-aos-duration="3000">
+      {!sections.first.none &&
+        <div className="row align-items-center mb-5 card-shadow p-3 row-card" data-aos="fade-up" data-aos-duration="3000">
           <div className="col-lg-6 services-details">
             <div className="services-details-desc caption_products">
               <h3>{
@@ -21,24 +22,17 @@ export default function Section_3 ({sections}) {
             </div>
           </div>
 
-          <div className="col-lg-6 services-details-image card_shadow">
-                  {/* <video className="rounded h-100 w-100" preload="none" loop muted autoPlay>
-                    <source src={sections.first.src} type="video/mp4" />
-                            Your browser does not support the video tag.
-                  </video> */}
+          <div className="col-lg-6 services-details-image  row-card">
                   <Image src={sections.first.src} alt="clad" />
           </div>
         </div>
+}
 
         <div className="separate"></div>
 
-{!sections.seconed.none &&
+      {!sections.seconed.none &&
         <div className="row align-items-center mb-5 card_shadow p-3" data-aos="fade-up" data-aos-duration="3000">
-          <div className="col-lg-6 services-details-image">
-                  {/* <video className="rounded h-100 w-100 card_shadow" preload="none" loop muted autoPlay>
-                    <source src={sections.seconed.src} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video> */}
+          <div className="col-lg-6 services-details-image d-flex justify-content-center align-items-center">
                 <Image src={sections.seconed.src} alt="clad" />
           </div>
 
@@ -53,7 +47,7 @@ export default function Section_3 ({sections}) {
             </div>
           </div>
         </div>
-}
+      }
       </div>
     </section>
 )
