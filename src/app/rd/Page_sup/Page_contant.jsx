@@ -11,7 +11,7 @@ import Products_carousal from "@/components/Reuse/Section_Head/Products_carousal
 import Section_head from "@/components/Reuse/Section_Head/Section_head"
 import Section_2 from "@/pages_sups/Products/RD/RD/Section_2"
 import Section_3 from "@/pages_sups/Products/RD/RD/Section_3"
-import Section_4 from "@/pages_sups/Products/Rd/RD/Section_4"
+import Section_4 from "@/pages_sups/Products/RD/RD/Section_4"
 import ScrollToTop from 'react-scroll-to-top'
 
 
