@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Drop from '@/assets/images/back_drops/drop9.png'
+import { league } from '@/pages_sups/Home/Section_1/Section_1'
 
 export default function Product({bannar,title,caption}) {
   return (
@@ -12,7 +13,7 @@ export default function Product({bannar,title,caption}) {
                 </svg>
             <div className='head-section'>
                 <div className='mb-4'>
-                    <h1><span style={{color:'#602c2c',textShadow:'-1px 2px 8px #fff'}}>ERP</span> System</h1>
+                    <h1 className={league.className}><span style={{color:'#602c2c',textShadow:'-1px 2px 8px #fff'}}>ERP</span> System</h1>
                 </div>
                 <div className='mb-4'>
                     <p>

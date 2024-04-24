@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { league } from '../Home/Section_1/Section_1'
 
 export default function Product({bannar,title,caption,linkPage}) {
 
@@ -10,7 +11,7 @@ export default function Product({bannar,title,caption,linkPage}) {
             <Image src={bannar} alt='product' className="bannar" />
             <div className='head-section'>
                 <div className='mb-4'>
-                    <h1>{title}</h1>
+                    <h1 className={league.className}>{title}</h1>
                 </div>
                 <div className='mb-4'>
                     <p>

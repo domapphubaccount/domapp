@@ -7,7 +7,7 @@ import { items } from '@/app/Page_data'
 export default function Section_3() {
     
   return (
-    <section className='erp_section_3'>
+    <section className='erp_section_3 se4'>
         <Container>
             <div className='card_container card_shadow'>
                 <Row>

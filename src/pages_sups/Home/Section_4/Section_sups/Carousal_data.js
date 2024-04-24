@@ -8,7 +8,7 @@ export const items = [
       src: product_1,
       title: 'CladCut',
       link:'/cladCut',
-      video: '/Home_page/products/cladcut.MP4',
+      video: '/Home_page/carousal/CladCut.mp4',
       caption: 'Produce detailed fabrication drawing with lightning speed.',
       dataList: [
         {
@@ -34,7 +34,7 @@ export const items = [
       src: product_3,
       title: 'Windload',
       link:'/windload',
-      video:'/Wind/Carousal.mp4',
+      video:'/Home_page/carousal/windload.mp4',
       caption: 'Generate Wind Pressure Designs.',
       dataList: [
         {
@@ -60,7 +60,7 @@ export const items = [
       src: product_2,
       title: 'Façade static',
       link: '/facade',
-      video: '/Facade/Carousal.mp4',
+      video: '/Home_page/carousal/facade static.mp4',
       caption: 'Get Suggested Profiles for SG50 CW system.',
       dataList: [
         {
@@ -86,7 +86,7 @@ export const items = [
       src: product_3,
       title: 'ERP System',
       link: '/erp',
-      video:'/Home_page/products/ERPSystem.mp4',
+      video:'/Home_page/carousal/ERPSystem.mp4',
       caption: 'Project management, Invoicing, Leads, Tasks, Time tracking and more.',
       dataList: [
         {
@@ -112,7 +112,7 @@ export const items = [
       src: product_3,
       title: 'ChatPlus',
       link: '/chat',
-      video:'/Home_page/Section_2.mp4',
+      video:'/Home_page/carousal/chatplus.mp4',
       caption: 'Empower your connection with customers through messaging.',
       dataList: [
         {
@@ -138,7 +138,7 @@ export const items = [
       src: product_3,
       title: 'RD App',
       link: '/rd',
-      video:'/Home_page/products/RDAPP.mp4',
+      video:'/Home_page/carousal/RDAPP.mp4',
       caption: 'Risk assessment complying with SBC',
       dataList: [
         {
