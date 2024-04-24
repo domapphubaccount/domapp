@@ -28,7 +28,7 @@ export default function Page() {
                     <Product bannar={item.src} title={item.title} caption={item.caption} linkPage={item.page}/>
                     <Products_sups sections={item.Section_2}/>
                     <Screens_Section sections={item.Section_3} />
-                    <Section_3 sections={item.Section_3} />
+                    {/* <Section_3 sections={item.Section_3} /> */}
                     {/* <Section_4 sections={item.Section_4} /> */}
                     <Section_5 sections={item.Section_5} />
                     <div className="py-5">
