@@ -20,7 +20,7 @@ export default function Product({bannar,title,caption}) {
                     </p>
                 </div>
                 <div>
-                    <a href='#'>
+                    <a href='https://erp.designal.cc/home'>
                         Get Started
                     </a>
                 </div>

@@ -24,7 +24,7 @@ export default function Bannar({bannar,title,caption}) {
                                 </p>
                             </div>
                             <div>
-                                <a href='#'>
+                                <a href='https://whatsappdome.onrender.com/dashboard'>
                                     Get Started
                                 </a>
                             </div>
