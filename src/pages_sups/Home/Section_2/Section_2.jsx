@@ -2,12 +2,11 @@ import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import { Col, Container, Row } from "reactstrap";
 import Cards from "./Section_sups/Cards";
 import ResponsiveCarousel from "./Section_sups/Carousal";
-import About_2 from "./Section_sups/About_2";
 
 export default function Section_2() {
   return (
     <section className="home_section_2" >
-        <Section_head head={1}  title_1={'About Us'}des_1={''} sectionId="about"/>
+        <Section_head head={1}  title_1={'About Us'}des_1={'we specialize in crafting innovative solutions that redefine possibilities.'} sectionId="about"/>
 
         <Container>
             <Row className="card_shadow card_dis rounded mb-5" >
@@ -25,7 +24,7 @@ export default function Section_2() {
                 </Col>
                 <Col sm={12} lg={6} md={12}>
                     <div data-aos="fade-up" data-aos-duration="2000" >
-                        <div><h5>At Domapp, we specialize in crafting innovative solutions that redefine possibilities.</h5></div>
+                        <div><h5>At Domapp Our Expertise Shines Bright .</h5></div>
                         <div className="card_list">
                             <ul>
                                 <li>
@@ -51,7 +50,7 @@ export default function Section_2() {
             <div className="section_2_mobile_cards">
                 <Cards />
             </div>
-            <About_2 />
+            {/* <About_2 /> */}
 
             <ResponsiveCarousel />
 

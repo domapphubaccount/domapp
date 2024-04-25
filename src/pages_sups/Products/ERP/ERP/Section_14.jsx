@@ -31,7 +31,7 @@ export default function Section_14() {
                     </div>
                 </Col>
                 <Col sm={12} md={6} lg={6}>
-                    <img src={Time.src} className='image_manage' alt="manage" data-aos="fade-up" data-aos-duration="3000"/>
+                    <img src={Time.src} className='image_manage product_image-card' alt="manage" data-aos="fade-up" data-aos-duration="3000"/>
                 </Col>
             </div>
         </Container>

@@ -36,7 +36,7 @@ export const items = [
       src: product_3,
       title: 'CladCut',
       link:'/cladCut',
-      page:'https://auspicious-request.surge.sh/project-landing/',
+      page:'http://domhupp.surge.sh/login/',
       caption: 'Precision cutting made effortless with CladCut',
       Section_2:{
         first:{
@@ -110,7 +110,7 @@ export const items = [
       src: product_1,
       title: 'Windload',
       link:'/windload',
-      page:'https://auspicious-request.surge.sh/tools/',
+      page:'http://domhupp.surge.sh/login/',
       caption: 'Powerful structural analysis and design .Instant access, directly from your browser',
       Section_2:{
         first:{
@@ -184,7 +184,7 @@ export const items = [
       src: product_2,
       title: 'Facade Static',
       link: '/facade',
-      page:'https://auspicious-request.surge.sh/f-static-home/',
+      page:'http://domhupp.surge.sh/login/',
       caption: '',
       Section_2:{
         first:{

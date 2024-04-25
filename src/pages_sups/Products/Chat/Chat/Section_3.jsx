@@ -23,10 +23,10 @@ export default function Section_3() {
           },
     ]
     const seconedCols = [
-                {
-          title:'Diverse Communication',
-          body:'Allows Manual, Hybrid communication.'
-        },
+        //         {
+        //   title:'Diverse Communication',
+        //   body:'Allows Manual, Hybrid communication.'
+        // },
         {
           title:'Auto-reply',
           body:'Customized automated reply.'
@@ -40,8 +40,8 @@ export default function Section_3() {
           body:'Chat Plus offers versatile Automated business processes enhancing efficiency across multiple industries.          '
         },
         {
-          title:'API Integration          ',
-          body:'Offers integration with your internal systems.          '
+          title:'API Integration',
+          body:'Offers integration with your CRM & ERP.'
         }
     ]
   return (

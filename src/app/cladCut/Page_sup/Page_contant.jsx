@@ -20,7 +20,7 @@ export default function Page() {
   
 
   return (
-    <>
+    <div className="facade_page">
         {items.map((item , index) => (
             <>
               {item.link === router &&
@@ -41,6 +41,6 @@ export default function Page() {
             </>    
         ))
         }
-    </>
+    </div>
   )
 }

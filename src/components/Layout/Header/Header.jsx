@@ -55,8 +55,8 @@ export default function Header() {
                                                             <div>Design SoftWare</div>
                                                             <ul>
                                                                 <li><Link className='d-block w-100 h-100' href={'/cladCut'}>Cladcut</Link></li>
-                                                                <li><Link className='d-block w-100 h-100' href={'/windload'}>Windload</Link></li>
-                                                                <li><Link className='d-block w-100 h-100' href={'/facade'}>Facade Static</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/windload'}>Windload <span className='free_icon_product' >Free</span></Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/facade'}>Facade Static <span className='free_icon_product' >Free</span></Link></li>
                                                             </ul>
                                                         </li>
                                                         <li>

@@ -4,7 +4,6 @@ import { league } from '../Home/Section_1/Section_1'
 
 export default function Product({bannar,title,caption,linkPage}) {
 
-
   return (
     <section className='ERP_bannar'>
             <div className='products'>
@@ -20,7 +19,10 @@ export default function Product({bannar,title,caption,linkPage}) {
                 </div>
                 <div>
                     <a href={linkPage}>
-                        Get Started
+                        {
+                            title == "CladCut" ? 'Get Started' :
+                            'Start For Free' 
+                        }
                     </a>
                 </div>
             </div>

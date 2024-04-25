@@ -1,47 +1,52 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
+import CardSection_1 from '@/assets/images/Products_Page/Rd/s1.svg'
+import CardSection_2 from '@/assets/images/Products_Page/Rd/s2.svg'
+import porp from "@/assets/images/Products_Page/Rd/rd.jpg"
+import quotes from "@/assets/images/Products_Page/Rd/quotes-left.svg"
 
-export default function Section_2() {
+export default function Section_3() {
   return (
-    <section className='rd_section_2'>
+    <section className='rd_section_3'>
         <Container>
-            <Row>
-                <Col sm={12} md={4} lg={4}>
-                    <div className='p-4'>
-                        <h3 className='mb-3'>
-                        Get ahead of your Competition with Flowshot Pro Tool
-                        </h3>
+            <Row className='justify-content-between'>
+                <Col sm={12} md={5} lg={5}>
+                    <div className='about-content py-3' data-aos="fade-up" data-aos-duration="3000">
+                        <div>
+                        <i className="bi bi-amd custom_icon"></i>
+                        </div>
+                        <h2>
+                        RD APP PURPOSE
+                        </h2>
                         <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have , or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't.
+                        The RD APP is designed with the main purpose of assuring that each project is complying with the Saudi Building Code and receives the technical attention needed for high-quality output.
+                        Tracking the stages of progress for each project and ensuring seamless coordination with the various parties involved, starting from receiving the project, followed by the initial risk assessment and any deeper review by the experts in several fields of civil engineering, such as geotechnical studies, structural analysis, innovative materials..etc. and going through each technical inspection stage on-site with efficiency. 
                         </p>
                     </div>
                 </Col>
-                <Col sm={12} md={8} lg={8}>
-                    <Row>
-                        <Col sm={12} md={6} lg={6}>
-                            <div className='h-100 text-center rd-cards-blue' >
-                                <div style={{fontSize:'3rem'}}>
-                                    <i class="bi bi-2-circle"></i>
-                                </div>
-                                <h3>Clean RD</h3>
-                                <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatipn.
-                                </p>
-                            </div>
-                        </Col>
-                        <Col sm={12} md={6} lg={6}>
-                            <div className='h-100 text-center rd-cards-blue'>
-                                <div style={{fontSize:'3rem'}}>
-                                    <i class="bi bi-2-circle"></i>
-                                </div>
-                                <h3>Clean RD</h3>
-                                <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatipn.
-                                </p>
-                            </div>
-                        </Col>
-                    </Row>
-                
+                <Col sm={12} md={6} lg={6}>
+                    <div data-aos="fade-up" data-aos-duration="500">
+                        <img src={porp.src} alt='' />
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <div>
+                        <div className='text-start' data-aos="fade-up" data-aos-duration="500">
+                            <img src={quotes.src} className='me-auto' alt="qute" />
+                        </div>
+                        <div className='py-5 text-center' data-aos="fade-up" data-aos-duration="2000">
+                            <Container>
+                            <p>
+                            “CHOOSING RD APP MEANS BENEFITING FROM THE BEST OF SMART SOLUTIONS THAT SAVE TIME AND COST AND ENHANCE EFFICIENCY AND COMMUNICATION EFFORTS ,  IT IS A GREAT COMPETITIVE ADVANTAGE , IN LINE WITH SAUDI BUILDING CODE.”
+                            </p>
+                            </Container>
+                        </div>
+                        <div className='text-end' data-aos="fade-up" data-aos-duration="500">
+                            <img src={quotes.src}   className="ms-auto" alt="qute" />
+                        </div>
+                    </div>
                 </Col>
             </Row>
         </Container>

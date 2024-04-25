@@ -8,7 +8,7 @@ import Icon_4 from "@/assets/images/Products_Page/Chat/start_icons/icon_4.svg"
 
 export default function Section_2() {
   return (
-    <section>
+    <section className='chat_why_us'>
         <Container>
         <div className='d-flex justify-content-center flex-wrap chat_cards_container mb-5'>
             <div className='my-5'>

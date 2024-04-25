@@ -32,13 +32,13 @@ export default function Page() {
   
 
   return (
-    <>
+    <div className="erp_page">
         {items.map((item , index) => (
             <>
               {item.link === router &&
               <>
                     <Bannar bannar={item.src} title={item.title} caption={item.caption}/>
-                    <Section_2/>
+                    {/* <Section_2/> */}
                     <Section_head heads={1} title_1={'Our Features'} sectionId={'chat'}/>
                     <Section_3 />
                     <Section_7 />
@@ -68,6 +68,6 @@ export default function Page() {
             </>    
         ))
         }
-    </>
+    </div>
   )
 }

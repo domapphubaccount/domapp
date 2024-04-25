@@ -56,6 +56,7 @@ export default function Products_carousal(props) {
 
           return (
             <StackedCarousel
+              className="products_carousal"
               ref={carouselRef}
               slideComponent={Card}
               slideWidth={400}

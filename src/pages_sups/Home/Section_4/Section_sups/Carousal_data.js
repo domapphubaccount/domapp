@@ -139,7 +139,7 @@ export const items = [
       title: 'RD App',
       link: '/rd',
       video:'/Home_page/carousal/RDAPP.mp4',
-      caption: 'Risk assessment complying with SBC',
+      caption: 'Smart solutions that save time, Cost, Boosting efficiency and communication effort, Aligned with the Saudi Building Code      ',
       dataList: [
         {
           head:'Manage and Modify project data',

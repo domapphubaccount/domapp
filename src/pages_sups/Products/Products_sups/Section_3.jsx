@@ -29,7 +29,7 @@ export default function Section_3 ({sections}) {
             {path === '/cladCut' ? 
             <Carousal />
             :
-            <Image src={sections.first.src} alt="clad" />
+            <Image src={sections.first.src} alt="clad" className="product_image-card card_shadow "/>
                 }
                   </div>
         </div>
@@ -38,7 +38,7 @@ export default function Section_3 ({sections}) {
 
         <div className="row align-items-center mb-5 card_shadow p-3 row-card" data-aos="fade-up" data-aos-duration="3000">
           <div className="col-lg-6 services-details-image">
-                <Image src={sections.seconed.src} alt="clad" />
+                <Image src={sections.seconed.src} alt="clad" className="product_image-card card_shadow "/>
           </div>
 
           <div className="col-lg-6 services-details">

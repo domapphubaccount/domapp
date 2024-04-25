@@ -32,7 +32,7 @@ export default function Section_7() {
                     </div>
                 </Col>
                 <Col sm={12} md={6} lg={6}>
-                    <img src={Manage.src} className='image_manage' alt="manage" data-aos="fade-up"/>
+                    <img src={Manage.src} className='image_manage product_image-card' alt="manage" data-aos="fade-up" />
                 </Col>
             </div>
         </Container>
