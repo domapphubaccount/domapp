@@ -389,7 +389,7 @@ footer{
 .section_head{
     text-align: center;
     color: var(--main_font_color);
-    padding: 40px;
+    padding: 120px 40px 40px 40px;
     /* background-image: url('../assets/images/back_drops/drop2.png'); */
     /* font-family: ; */
 
