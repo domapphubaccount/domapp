@@ -1,18 +1,14 @@
 import React from "react";
 import Slider from "react-slick";
-import s1 from "@/assets/images/Products_Page/Erp/Features/pay.jpg"
-import s2 from "@/assets/images/Products_Page/Erp/Features/porp.jpg"
-import s3 from "@/assets/images/Products_Page/Erp/Features/repay.jpg"
-import s4 from "@/assets/images/Products_Page/Erp/Features/task.jpg"
 import { Container } from "reactstrap";
 
-export default function Each_product() {
+export default function Each_product({product_carousal}) {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 2,
+    slidesToScroll: 1,
     arrows:false,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
@@ -40,22 +36,18 @@ export default function Each_product() {
     );
   }
   return (
-    <section>
+    <section className="py-5">
         <Container>
     <div className="slider-container">
       <Slider {...settings}>
-        <div>
-          <img src={s1.src} alt="product" />
+        {
+          product_carousal.map((item,index) => (
+
+        <div key={index}>
+          <img src={item.src} alt="product" />
         </div>
-        <div>
-          <img src={s2.src} alt="product" />
-        </div>
-        <div>
-          <img src={s3.src} alt="product" />
-        </div>
-        <div>
-          <img src={s4.src} alt="product" />
-        </div>
+          ))
+        }
       </Slider>
     </div>
     </Container>

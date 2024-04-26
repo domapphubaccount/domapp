@@ -11,6 +11,19 @@ import { usePathname } from 'next/navigation'
 import Products_carousal from "@/components/Reuse/Section_Head/Products_carousal/Products_carousal"
 import Section_head from "@/components/Reuse/Section_Head/Section_head"
 import ScrollToTop from 'react-scroll-to-top'
+import Each_product from "@/components/Reuse/Section_Head/Products_carousal/Each_product"
+
+import s1 from "@/assets/images/Products_Page/facade/step1.png"
+import s2 from "@/assets/images/Products_Page/facade/step2.png"
+import s3 from "@/assets/images/Products_Page/facade/step3.png"
+import s4 from "@/assets/images/Products_Page/facade/step4.png"
+import s5 from "@/assets/images/Products_Page/facade/step5.png"
+import s6 from "@/assets/images/Products_Page/facade/step6.png"
+
+
+const product_carousal = [
+  s1,s2,s3,s4,s5,s6
+]
 
 
 export default function Page() {
@@ -24,6 +37,7 @@ export default function Page() {
               {item.link === router &&
               <>
                     <Product bannar={item.src} title={item.title} caption={item.caption} linkPage={item.page}/>
+                    <Each_product product_carousal={product_carousal}/>
                     <Products_sups sections={item.Section_2}/>
                     <Section_3 sections={item.Section_3} />
                     <Section_4 sections={item.Section_4} />

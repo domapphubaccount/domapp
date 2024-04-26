@@ -13,6 +13,20 @@ import ScrollToTop from 'react-scroll-to-top'
 import Section_4 from '@/pages_sups/Products/Chat/Chat/Section_4'
 import Each_product from '@/components/Reuse/Section_Head/Products_carousal/Each_product'
 
+import s1 from "@/assets/images/Products_Page/Chat/carousal/dash.png"
+import s2 from "@/assets/images/Products_Page/Chat/carousal/chat.png"
+import s3 from "@/assets/images/Products_Page/Chat/carousal/performance.png"
+import s4 from "@/assets/images/Products_Page/Chat/carousal/user.png"
+import s5 from "@/assets/images/Products_Page/Chat/carousal/teams.png"
+import s6 from "@/assets/images/Products_Page/Chat/carousal/chat_inside.png"
+import s7 from "@/assets/images/Products_Page/Chat/carousal/conversation.png"
+import s8 from "@/assets/images/Products_Page/Chat/carousal/service.png"
+import s9 from "@/assets/images/Products_Page/Chat/carousal/answer.png"
+
+const product_carousal = [
+  s1,s2,s3,s4,s5,s6,s7,s8,s9
+]
+
 
 export default function Page() {
   const router = usePathname();
@@ -32,7 +46,7 @@ export default function Page() {
                     <Section_head heads={1} title_1={'Features'} sectionId={'chat2'}/>
                     </div>
                     <Section_3_Chat />
-                    <Each_product />
+                    <Each_product product_carousal={product_carousal}/>
                     <div className="py-5">
                     <Section_head heads={1} title_1={'Our Products'} sectionId={'chat3'}/>
                     </div>
