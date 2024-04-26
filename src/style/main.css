@@ -1815,6 +1815,23 @@ footer{
 
 
 /* ERP  */
+.erp_bannar .products{
+    background-image: url('../assets/images/Home_Page/products/erp_back.jpg');
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.erp_bannar .head-section{
+    z-index: 10;
+}
+.erp_bannar img{
+    z-index: 11;
+    position: relative;
+}
+.erp_bannar svg{
+    z-index: 2;
+}
 
 .erp_bannar .head-section h1{
     color: #fff;
