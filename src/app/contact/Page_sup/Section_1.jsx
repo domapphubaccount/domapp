@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
+import Contact from "@/assets/images/Products_Page/contact/contact.jpg"
 
 export default function Section_1() {
   return (
@@ -60,6 +60,13 @@ export default function Section_1() {
                         </div>
                     </li>
                 </ul>
+                <div>
+                    <Row>
+                        <Col sm={12} lg={4} md={6}>
+                    <img src={Contact.src} alt="contact" />
+                        </Col>
+                    </Row>
+                </div>
             </div>
         </Container>
     </section>
