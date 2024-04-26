@@ -1283,7 +1283,12 @@ footer{
 
 /* Product Chat Tools */
 .chat_bannar .products{
+    position: relative;
     background: #1c3f39;
+    background-image: url('../assets/images/Home_Page/products/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .chat_bannar .products .head-section h1{
     color: #fff;
