@@ -97,6 +97,9 @@ export default function Header() {
                                 <li>
                                     <Link href="/#about" className='nav-link-item'>ABOUT US</Link>
                                 </li>
+                                <li>
+                                    <Link href="/contact" className='nav-link-item'>CONTACT US</Link>
+                                </li>
                             </ul>
                         </nav>
                     </div>

@@ -123,7 +123,7 @@ export default function MobileNav() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {[{name:'Home',link:'/'}, {name:'Products',link:'#products'}, {name:'About-Us' , link: '#about'}].map((text, index) => (
+        {[{name:'Home',link:'/'}, {name:'Products',link:'#products'}, {name:'About-Us' , link: '#about'} , {name:'Contact-Us' , link: '/contact'} ].map((text, index) => (
           <div key={text} disablePadding>
             {
                 text.name === 'Products' ?
