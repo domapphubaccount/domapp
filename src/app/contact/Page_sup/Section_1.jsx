@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import SendIcon from '@mui/icons-material/Send';
 import Button from '@mui/material/Button';
@@ -27,24 +26,16 @@ export default function Section_1() {
                        <Row>
 
                         <Col sm={12} className='my-2'>
-                        <TextField id="outlined-basic" className='w-100' label="Name" variant="outlined" />     
+                            <input type='text' placeholder='Name' className='p-2 rounded w-100 border border-2'  />
                         </Col>
                         <Col sm={12} className='my-2'>
-                        <TextField id="outlined-basic" className='w-100' label="Email" variant="outlined" />   
+                            <input type='text' placeholder='Email' className='p-2 rounded w-100 border border-2' />
                         </Col> 
                         <Col sm={12} className='my-2'>
-                        <TextField id="outlined-basic" className='w-100' label="Title" variant="outlined" />
+                            <input type='text' placeholder='Title' className='p-2 rounded w-100 border border-2' />
                         </Col>
                         <Col sm={12} className='my-2'>
-                        <TextField
-                                className='w-100'
-                                id="standard-multiline-static"
-                                label="Messege"
-                                multiline
-                                rows={6}
-                                defaultValue="Messege"
-                                variant="outlined"
-                                /> 
+                            <textarea rows="6" placeholder='Messsege' className='p-2 rounded w-100 border border-2'></textarea>
                         </Col>
                         <Col className='text-end'>
 
