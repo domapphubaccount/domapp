@@ -9,7 +9,7 @@ export default function Section_1() {
                 <Col lg={4} md={4} sm={12}>
                     <div className='h-100 text-center card' data-aos="fade-up" data-aos-duration="3000">
                         <div>
-                        <i class="bi bi-database-up"></i>
+                        <i className="bi bi-database-up"></i>
                         </div>    
                         <div>
                             <h4>
@@ -24,7 +24,7 @@ export default function Section_1() {
                 <Col lg={4} md={4} sm={12}>
                     <div className='h-100 text-center card' data-aos="fade-up" data-aos-duration="1000">
                         <div>
-                        <i class="bi bi-file-lock"></i>                        </div>    
+                        <i className="bi bi-file-lock"></i>                        </div>    
                         <div>
                             <h4>
                             Highly Secure
@@ -38,7 +38,7 @@ export default function Section_1() {
                 <Col lg={4} md={4} sm={12}>
                     <div className='h-100 text-center card' data-aos="fade-up" data-aos-duration="3000">
                         <div>
-                        <i class="bi bi-code-slash"></i>
+                        <i className="bi bi-code-slash"></i>
                         </div>    
                         <div>
                             <h4>

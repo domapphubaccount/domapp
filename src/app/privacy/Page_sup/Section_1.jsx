@@ -1,5 +1,7 @@
 import React from 'react'
-import { Container } from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
+import Privacy from "@/assets/images/Products_Page/privacy/privacy.jpg"
+
 
 export default function Section_1() {
   return (
@@ -103,6 +105,13 @@ export default function Section_1() {
                     </li>
                 </ul>
             </div>
+            <div>
+                    <Row>
+                        <Col sm={12} lg={4} md={6}>
+                            <img src={Privacy.src} alt="privacy" />
+                        </Col>
+                    </Row>
+                </div>
         </Container>
     </section>
   )

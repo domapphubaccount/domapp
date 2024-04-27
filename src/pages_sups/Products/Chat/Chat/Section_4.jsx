@@ -10,7 +10,7 @@ export default function Section_4() {
                 <div className='h-100' data-aos="fade-up" data-aos-duration="3000">
                     <div className='h-100 chat_card_icon_container'>
                         <div className='card_icon d-inline-block'>
-                            <i class="bi bi-telephone-x"></i>
+                            <i className="bi bi-telephone-x"></i>
                         </div>
                         <div>
                             <h4>Support Interaction</h4>
@@ -25,7 +25,7 @@ export default function Section_4() {
                 <div className='h-100' data-aos="fade-up" data-aos-duration="1000">
                     <div className='h-100 chat_card_icon_container'>
                         <div className='card_icon d-inline-block'>
-                            <i class="bi bi-postage-fill"></i>
+                            <i className="bi bi-postage-fill"></i>
                         </div>
                         <div>
                             <h4>Error-Free Communication</h4>
@@ -39,7 +39,7 @@ export default function Section_4() {
                 <div className='h-100' data-aos="fade-up" data-aos-duration="500">
                     <div className='h-100 chat_card_icon_container'>
                         <div className='card_icon d-inline-block'>
-                            <i class="bi bi-lock"></i>
+                            <i className="bi bi-lock"></i>
                         </div>
                         <div>
                             <h4>Fortified Communication Channels
@@ -55,7 +55,7 @@ export default function Section_4() {
                 <div className='h-100' data-aos="fade-up" data-aos-duration="3000">
                     <div className='h-100 chat_card_icon_container'>
                         <div className='card_icon d-inline-block'>
-                            <i class="bi bi-broadcast-pin"></i>
+                            <i className="bi bi-broadcast-pin"></i>
                         </div>
                         <div>
                             <h4>Streamlined Communication Workflows
@@ -71,7 +71,7 @@ export default function Section_4() {
                 <div className='h-100' data-aos="fade-up" data-aos-duration="2000">
                     <div className='h-100 chat_card_icon_container'>
                         <div className='card_icon d-inline-block'>
-                            <i class="bi bi-phone"></i>
+                            <i className="bi bi-phone"></i>
                         </div>
                         <div>
                             <h4>Mobile Responsiveness
@@ -87,7 +87,7 @@ export default function Section_4() {
                     <div className='h-100' data-aos="fade-up" data-aos-duration="500">
                     <div className='h-100 chat_card_icon_container' >
                         <div className='card_icon d-inline-block'>
-                        <i class="bi bi-archive"></i>
+                        <i className="bi bi-archive"></i>
                         </div>
                         <div>
                             <h4>Efficient Communication Archive
