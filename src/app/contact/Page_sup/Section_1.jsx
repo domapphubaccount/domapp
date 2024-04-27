@@ -26,22 +26,22 @@ export default function Section_1() {
                        <Row>
 
                         <Col sm={12} className='my-2'>
-                            <input type='text' placeholder='Name' className='p-2 rounded w-100 border border-2'  />
+                        <input type="text" className='w-100 p-3 rounded border border-2' placeholder="Name" />     
                         </Col>
                         <Col sm={12} className='my-2'>
-                            <input type='text' placeholder='Email' className='p-2 rounded w-100 border border-2' />
+                        <input type="email" className='w-100 p-3 rounded border border-2' placeholder="Email" />     
                         </Col> 
                         <Col sm={12} className='my-2'>
-                            <input type='text' placeholder='Title' className='p-2 rounded w-100 border border-2' />
+                        <input type="text" className='w-100 p-3 rounded border border-2' placeholder="Title" />     
                         </Col>
                         <Col sm={12} className='my-2'>
-                            <textarea rows="6" placeholder='Messsege' className='p-2 rounded w-100 border border-2'></textarea>
+                        <textarea rows="6" placeholder='Messege' className='w-100 p-3 rounded border border-2'></textarea>
                         </Col>
                         <Col className='text-end'>
 
-                        <Button variant="contained" className='my-3 bg-secondary' endIcon={<SendIcon />}>
+                        <button variant="contained" className='my-3 bg-secondary px-4 py-2 rounded text-light fw-bold card_shadow m-3'>
                             Send
-                        </Button>
+                        </button>
 
                         </Col>
                         </Row>
