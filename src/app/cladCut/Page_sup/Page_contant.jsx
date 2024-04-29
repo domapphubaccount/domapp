@@ -3,7 +3,6 @@
 import Product from "@/pages_sups/Products/Product"
 import Products_sups from "@/pages_sups/Products/Products_sups/Products_sups"
 import React from 'react'
-import Section_5 from "@/pages_sups/Products/Products_sups/Section_5"
 import { items } from "../../Page_data"
 import { usePathname } from 'next/navigation'
 import Screens_Section from "@/pages_sups/Products/Products_sups/Screens_Section"
@@ -38,12 +37,7 @@ export default function Page() {
                     <Head_2 />
                     <Section_4 />
                     <Section_3 />
-                    {/* <Head_CWF head={'Data Management'} body={'Clad-Cut Does the Heavy Lifting'} />
-                    <Products_sups sections={item.Section_2}/>
-                    <Screens_Section sections={item.Section_3} /> */}
-                    {/* <Section_3 sections={item.Section_3} /> */}
-                    {/* <Section_4 sections={item.Section_4} />
-                    <Section_5 sections={item.Section_5} /> */}
+
                     <div className="py-5">
                     <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/>
                     </div>

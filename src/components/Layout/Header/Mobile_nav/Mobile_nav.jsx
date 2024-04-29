@@ -49,22 +49,22 @@ export default function MobileNav() {
         }
       }
     },
-    {
-      index: 3,
-      title: 'Facade Static',
-      link: '/facade',
-      caption: 'Section 2',
-      Section_2:{
-        first:{
-          caption:'',
-          src:''
-        },
-        seconed:{
-          caption:'',
-          src:''
-        }
-      }
-    },
+    // {
+    //   index: 3,
+    //   title: 'Facade Static',
+    //   link: '/facade',
+    //   caption: 'Section 2',
+    //   Section_2:{
+    //     first:{
+    //       caption:'',
+    //       src:''
+    //     },
+    //     seconed:{
+    //       caption:'',
+    //       src:''
+    //     }
+    //   }
+    // },
     {
       index: 4,
       title: 'ERP System',
