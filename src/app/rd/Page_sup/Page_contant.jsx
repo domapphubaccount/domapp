@@ -15,6 +15,12 @@ import Section_1 from "@/pages_sups/Products/RD/RD/Section_1"
 import Section_5 from "@/pages_sups/Products/RD/RD/Section_5"
 import Section_6 from "@/pages_sups/Products/RD/RD/Section_6"
 import Section_7 from "@/pages_sups/Products/RD/RD/Section_7"
+import RD_heading from "@/pages_sups/Products/RD/RD/RD_heading"
+import RD_cards from "@/pages_sups/Products/RD/RD/RD_cards"
+import RD_sup_section from "@/pages_sups/Products/RD/RD/RD_sup_section"
+import RD_features_cards from "@/pages_sups/Products/RD/RD/RD_features_cards"
+import RD_Content_section from "@/pages_sups/Products/RD/RD/RD_Content_section"
+import Heading from "@/components/Reuse/Section_Head/Heading"
 
 
 export default function Page() {
@@ -28,6 +34,8 @@ export default function Page() {
               {item.link === router &&
               <>
                     <Bannar bannar={item.src} title={item.title} caption={item.caption}/>
+                    <RD_cards />
+                    <RD_heading title="" body="We Provide Best Feature For App Design And Coding"/>
                     <Section_1 />
                     <Section_2/>
                     <Section_3 />
@@ -36,15 +44,21 @@ export default function Page() {
                     {/* <Section_5 />
                     <Section_6 /> */}
                     <Section_5 />
-                    <Section_6 />
+                    <RD_heading title="AND MORE" body="We Provide Best Features 'And more'"/>
+                    <RD_features_cards />
+                    <RD_sup_section />
+                    <RD_Content_section />
+                    {/* <Section_6 /> */}
+                    <RD_heading title="" body="We Provide Best Communication And Cost Monitoring"/>
                     <Section_7 />
-                    <div className="py-5">
+                    {/* <div className="py-5">
                         <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/>
-                    </div>
+                    </div> */}
+                    <Heading head="Our Products" body="You Can Find More Products" back="RD APP" />
                     <Products_carousal />
               </>
               }
-              <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%'}} />
+              <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
             </>    
         ))
         }

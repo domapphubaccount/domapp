@@ -12,6 +12,7 @@ import Screens_Section from "@/pages_sups/Products/Products_sups/Screens_Section
 import Products_carousal from "@/components/Reuse/Section_Head/Products_carousal/Products_carousal"
 import Section_head from "@/components/Reuse/Section_Head/Section_head"
 import ScrollToTop from 'react-scroll-to-top'
+import Head_CWF from "@/pages_sups/Products/Head_CWF"
 
 
 
@@ -26,6 +27,7 @@ export default function Page() {
               {item.link === router &&
               <>
                     <Product bannar={item.src} title={item.title} caption={item.caption} linkPage={item.page}/>
+                    <Head_CWF head={'Data Management'} body={'Project Data Management and Modification'} />
                     <Products_sups sections={item.Section_2}/>
                     <Screens_Section sections={item.Section_3} />
                     {/* <Section_3 sections={item.Section_3} /> */}
@@ -37,7 +39,7 @@ export default function Page() {
                     <Products_carousal />
               </>
               }
-              <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%'}} />
+              <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
             </>    
         ))
         }

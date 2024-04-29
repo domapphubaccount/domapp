@@ -2,6 +2,8 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import CardSection_1 from '@/assets/images/Products_Page/Rd/quality.jpg'
 import CardSection_2 from '@/assets/images/Products_Page/Rd/doc.jpg'
+import Shape1 from "@/assets/images/shap/shap1.png"
+
 
 export default function Section_6() {
   return (
@@ -52,6 +54,9 @@ The application's documentation system includes automated notifications and remi
                 </Col>
             </Row>
         </Container>
+        {/* <div className="shape1">
+          <img src={Shape1.src} alt="shape" />
+        </div> */}
     </section>
   )
 }

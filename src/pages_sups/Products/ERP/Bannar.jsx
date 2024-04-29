@@ -4,7 +4,8 @@ import Drop from '@/assets/images/back_drops/drop9.png'
 import { league } from '@/pages_sups/Home/Section_1/Section_1'
 import Erp_Dash from "@/assets/images/Products_Page/Erp/ERP_dash.png"
 
-export default function Product({bannar,title,caption}) {
+export default function Product({bannar,title,caption,small_caption}) {
+    console.log(small_caption)
   return (
     <section className='erp_bannar'>
             <div className='products'>
@@ -14,11 +15,12 @@ export default function Product({bannar,title,caption}) {
                 </svg>
             <div className='container'>
                 <div className='row erp'>
-                <div className='head-section col-md-6'>
+                <div className='head-section col-md-5'>
                     <div className='mb-4'>
                         <h1 className={league.className}><span>ERP</span> System</h1>
                     </div>
                     <div className='mb-4'>
+                        {small_caption &&<div className='text-light mb-3'>{small_caption}</div>}
                         <p>
                             {caption}
                         </p>
@@ -29,7 +31,7 @@ export default function Product({bannar,title,caption}) {
                         </a>
                     </div>
                 </div>
-                <div className='col-md-6 py-5'>
+                <div className='col-md-7 py-5'>
                     <img src={Erp_Dash.src} alt="erp dash" />
                 </div>
                 </div>

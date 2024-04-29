@@ -2,6 +2,8 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import CardSection_1 from '@/assets/images/Products_Page/Rd/s1.svg'
 import CardSection_2 from '@/assets/images/Products_Page/Rd/integ.jpg'
+import Shape1 from "@/assets/images/shap/shap1.png"
+// import Shape2 from "@/assets/images/shap/shap2.svg"
 
 export default function Section_3() {
   return (
@@ -50,6 +52,14 @@ The RD App streamlines the issuance of RD and inspection reports for technical e
                 </Col>
             </Row>
         </Container>
+                
+        {/* <div className="shape1">
+          <img src={Shape1.src} alt="shape" />
+        </div> */}
+        {/* <div className="shape7">
+          <img src={Shape2.src} alt="shape" />
+        </div> */}
+
     </section>
   )
 }

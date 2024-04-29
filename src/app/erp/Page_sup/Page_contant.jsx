@@ -25,6 +25,12 @@ import Section_15 from "@/pages_sups/Products/ERP/ERP/Section_15"
 import Section_16 from "@/pages_sups/Products/ERP/ERP/Section_16"
 import Section_17 from "@/pages_sups/Products/ERP/ERP/Section_17"
 import Section_18 from "@/pages_sups/Products/ERP/ERP/Section_18"
+import Cards_section from "@/pages_sups/Products/ERP/ERP/Cards_section"
+import Cards_section2 from "@/pages_sups/Products/ERP/ERP/Cards_section2"
+import Cards_section3 from "@/pages_sups/Products/ERP/ERP/Cards_section3"
+import Heading from "@/components/Reuse/Section_Head/Heading"
+import Bannar2 from "@/pages_sups/Products/ERP/Bannar2"
+import Section_5_sup from "@/pages_sups/Products/ERP/ERP/Section_5_sup"
 
 
 export default function Page() {
@@ -37,20 +43,27 @@ export default function Page() {
             <>
               {item.link === router &&
               <>
-                    <Bannar bannar={item.src} title={item.title} caption={item.caption}/>
+              <Bannar2 />
+                    {/* <Bannar bannar={item.src} title={item.title} caption={item.caption} small_caption={item.small_caption}/> */}
                     {/* <Section_2/> */}
-                    <Section_head heads={1} title_1={'Our Features'} sectionId={'chat'}/>
+                    {/* <Section_head heads={1} title_1={'Our Features'} sectionId={'chat'}/> */}
+                    <Heading head="ERP SYSTEM" body="First Choice For Your Business" back="ERP" />
+                    <Cards_section />
                     <Section_3 />
                     <Section_7 />
                     <Section_8 />
                     <Section_9 />
                     <Section_10 />
+                    <Heading head="Our Features" body="We Build Amazing " back="ERP"/>
+                    <Cards_section2 />
+                    <Section_5_sup />
                     <Section_4 />
-                    <Section_11 />
-                    <Section_12 />
+                    {/* <Section_11 />
+                    <Section_12 /> */}
                     <Section_13 />
                     <Section_14 />
-
+                    <Heading head="Our Features" body="We Build Amazing " back="ERP" />
+                    <Cards_section3 />
                     <Section_15 />
                     <Section_16 />
                     <Section_17 />
@@ -59,12 +72,13 @@ export default function Page() {
                     {/* <Section_5 /> */}
                     {/* <Section_6 /> */}
                     <div className="py-5">
-                    <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/>
+                    <Heading head="Our Products" body="You Can Find More Products" back="ERP" />
+                    {/* <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/> */}
                     </div>
                     <Products_carousal />
               </>
               }
-                    <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%'}} />
+                    <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
             </>    
         ))
         }

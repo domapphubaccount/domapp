@@ -5,7 +5,7 @@ import yesI from "@/assets/images/Products_Page/Erp/Features/yes.svg"
 
 export default function Section_14() {
   return (
-    <section className='erp_section_11' id="Rec">
+    <section className='erp_section_11 mb-5' id="Rec">
         <Container>
             <div className='row g-0 section_container'>
                 <Col sm={12} md={6} lg={6}>
@@ -30,8 +30,8 @@ export default function Section_14() {
                         </div> */}
                     </div>
                 </Col>
-                <Col sm={12} md={6} lg={6}>
-                    <img src={Time.src} className='image_manage product_image-card' alt="manage" data-aos="fade-up" data-aos-duration="3000"/>
+                <Col sm={12} md={6} lg={6} className='product_image-card'>
+                    <img src={Time.src} className='image_manage ' style={{maxHeight:'400px'}} alt="manage" data-aos="fade-up" data-aos-duration="3000"/>
                 </Col>
             </div>
         </Container>

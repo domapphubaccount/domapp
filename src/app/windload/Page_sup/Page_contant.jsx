@@ -11,6 +11,7 @@ import { usePathname } from 'next/navigation'
 import Products_carousal from "@/components/Reuse/Section_Head/Products_carousal/Products_carousal"
 import Section_head from "@/components/Reuse/Section_Head/Section_head"
 import ScrollToTop from 'react-scroll-to-top'
+import Screens_Section from "@/pages_sups/Products/Products_sups/Screens_Section"
 
 export default function Page() {
   const router = usePathname();
@@ -24,8 +25,9 @@ export default function Page() {
               <>
                     <Product bannar={item.src} title={item.title} caption={item.caption} linkPage={item.page}/>
                     <Products_sups sections={item.Section_2}/>
-                    <Section_3 sections={item.Section_3} />
-                    <Section_4 sections={item.Section_4} />
+                    {/* <Section_3 sections={item.Section_3} /> */}
+                    <Screens_Section sections={item.Section_3} />
+                    {/* <Section_4 sections={item.Section_4} /> */}
                     <Section_5 sections={item.Section_5} />
                     <div className="py-5">
                     <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/>
@@ -33,7 +35,7 @@ export default function Page() {
                     <Products_carousal />
               </>
               }
-                <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%'}} />
+                <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
             </>    
         ))
         }

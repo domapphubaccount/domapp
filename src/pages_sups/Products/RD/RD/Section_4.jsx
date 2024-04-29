@@ -1,5 +1,7 @@
 import React from 'react'
 import { Container } from 'reactstrap'
+import Shape1 from "@/assets/images/shap/shap1.png"
+
 
 export default function Section_4() {
   return (
@@ -10,6 +12,9 @@ export default function Section_4() {
                 <p>Data protected by CITC Decision Number 424/1442 Date 27-01-1442.</p>
             </div>
         </Container>
+        {/* <div className="shape1">
+          <img src={Shape1.src} alt="shape" />
+        </div> */}
     </section>
   )
 }

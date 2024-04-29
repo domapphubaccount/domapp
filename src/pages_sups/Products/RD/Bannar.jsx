@@ -6,10 +6,11 @@ import labtop from '@/assets/images/Products_Page/Rd/bannar_lab.png'
 import { league } from '@/pages_sups/Home/Section_1/Section_1'
 import Shap_1 from "@/assets/images/Products_Page/Rd/mask-shape.png"
 import Shap_2 from "@/assets/images/Products_Page/Rd/line-shape.png"
+import Shape1 from "@/assets/images/shap/shap1.png"
 
 export default function Product({bannar,title,caption}) {
   return (
-    <section className={`rd_bannar ${league}`}>
+    <section className={`rd_bannar ${league} position-relative`}>
             <div className='rd'>
         <Container className='h-100'>
                 <Row className='h-100 align-items-center'>
@@ -17,17 +18,17 @@ export default function Product({bannar,title,caption}) {
                         <div className='head-section text-center'>
                             <div className='banner_caption_text' style={{marginTop:'100px'}}>
                             <div className='mb-4'>
-                                <h1>RD APP</h1>
+                                <h1 className={league.className}>RD APP</h1>
                             </div>
                             <div className='mb-4'>
-                                <p>
+                                <p className={league.className}>
                                     Smart solutions that save time & Cost.
                                 </p>
                             </div>
                             </div>
                         </div>
                     </Col>
-                    <Col sm={12} md={6}>
+                    <Col sm={12} md={7}>
                         <div className=' position-relative py-5' style={{zIndex:10}}>
                             <img src={labtop.src} alt="lab" className='mt-5'/>
                         </div>
@@ -50,6 +51,9 @@ export default function Product({bannar,title,caption}) {
                         <img src={Shap_2.src} alt="shap" />
                     </div>
             </div>
+            {/* <div className="shape1">
+          <img src={Shape1.src} alt="shape" />
+        </div> */}
     </section>
   )
 }

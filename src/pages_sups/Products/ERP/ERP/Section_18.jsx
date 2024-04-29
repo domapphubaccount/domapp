@@ -5,10 +5,10 @@ import yesI from "@/assets/images/Products_Page/Erp/Features/yes.svg"
 
 export default function Section_18() {
   return (
-    <section className='erp_section_15'>
+    <section className='erp_section_15' id="Tas">
         <Container>
             <div className='row g-0 section_container'>
-                <Col sm={12} md={6} lg={6}>
+            <Col sm={12} md={7} lg={8}>
                     <div className='content h-100' data-aos="fade-up" data-aos-duration="2500">
                         <div>
                             <h3>Task Dependency Management</h3>
@@ -34,8 +34,8 @@ export default function Section_18() {
                         </div>
                     </div>
                 </Col>
-                <Col sm={12} md={6} lg={6}>
-                    <img src={Time.src} className='image_manage product_image-card' alt="manage" data-aos="fade-up" data-aos-duration="3000"/>
+                <Col sm={12} md={5} lg={4}>
+                    <img src={Time.src} className='image_manage product_image-card' alt="manage" />
                 </Col>
             </div>
         </Container>

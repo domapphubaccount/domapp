@@ -49,7 +49,7 @@ export default function Header() {
                                     {dropdownOpen && (
                                         <div className="dropdown-menu-cust shadow_inside" data-aos="fade-up" data-aos-duration="300">
                                             <Row>
-                                                <Col sm={6} md={6} lg={6}>
+                                                <Col sm={12} md={12} lg={12}>
                                                     <ul className='products-category first-col'>
                                                         <li>
                                                             <div>Design SoftWare</div>
@@ -65,10 +65,9 @@ export default function Header() {
                                                                 <li><Link className='d-block w-100 h-100' href={'/erp'}>ERP System</Link></li>
                                                             </ul>
                                                         </li>
-                                                    </ul>
-                                                </Col>
-                                                <Col sm={6} md={6} lg={6}>
-                                                    <ul className='products-category last-col'>
+                                                    {/* </ul>
+                                            
+                                                    <ul className='products-category last-col'> */}
                                                         <li>
                                                             <div>Risk Assessment <div className='text-secondary'>comply with SBC</div></div>
                                                             <ul>

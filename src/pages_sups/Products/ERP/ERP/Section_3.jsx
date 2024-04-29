@@ -7,10 +7,13 @@ import { items } from '@/app/Page_data'
 export default function Section_3() {
     
   return (
-    <section className='erp_section_3'>
+    <section className='erp_section_3 mt-5'>
         <Container>
-            <div className='card_container card_shadow'>
-                <Row>
+            <div className="text-center fw-bold">
+                REDUCED COST IMPROVED PRODUCTIVITY 
+            </div>
+            {/* <div className='card_container card_shadow'> */}
+                {/* <Row>
                     <Col sm={12} md={5} lg={5}>
                         <div className='h-100 p-3 d-flex align-items-center' data-aos="fade-down" data-aos-duration="3000">
                             <Image src={F1} alt='f1' />
@@ -27,8 +30,6 @@ export default function Section_3() {
                                         {item.Section_3.features_1.list.map((item,index)=>(
                                         <li key={index}>
                                             <div>
-
-                                                {console.log(item.head.slice(0,4))}
                                                 <a href={`#${item.head.slice(0,4)}`}><h5>{item.head}</h5></a>
                                                 <p>{item.caption}</p>
                                             </div>
@@ -39,8 +40,8 @@ export default function Section_3() {
                             )}
                         </div>
                     </Col>
-                </Row>
-            </div>
+                </Row> */}
+            {/* </div> */}
         </Container>
     </section>
   )

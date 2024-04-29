@@ -11,6 +11,7 @@ export default function Section_3 ({sections}) {
   return(
     <section className="services-details-area-2 ptb-80 py-5">
       <div className="container">
+        
         <div className="row align-items-center mb-5 card_shadow p-3 row-card" data-aos="fade-up" data-aos-duration="3000">
           <div className="col-lg-6 services-details">
             <div className="services-details-desc caption_products">

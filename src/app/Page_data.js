@@ -115,21 +115,22 @@ export const items = [
       Section_2:{
         first:{
           caption:{
-            header:'Manage and Modify project data',
-            body:'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications            '
+            header:'Project info',
+            body:'Manage and modify project and client information'
           },
           src:'/Wind/First.mp4'
         },
         seconed:{
           caption:{
-            header:'Entering and editing manufacturing components.',
-            body:'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details            '
+            header:'Site Data',
+            body:'Following Saudi Building Code 301, identifying the site data in terms of risk category, project address, and exposure category is made simple'
           },
           src:'/Wind/Map.mp4'
         }
       },
       Section_3:{
         first:{
+          none: true,
           caption:{
             header:'Project info',
             body:'Manage and modify project and client information'
@@ -137,6 +138,7 @@ export const items = [
           src: Wind_1
         },
         seconed:{
+          none: true,
           caption:{
             header:'Site Data',
             body:'Following Saudi Building Code 301, identifying the site data in terms of risk category, project address, and exposure category is made simple            '
@@ -257,7 +259,8 @@ export const items = [
       src: product_3,
       title: 'ERP System',
       link: '/erp',
-      caption: 'Comprehensive client relationship management application',
+      small_caption: 'Simple, Flexible, and Powerfull',
+      caption: 'Comprehensive client relationship management application .',
       Section_2:{
         first:{
           caption:{
@@ -365,6 +368,29 @@ export const items = [
           src: clad_1
         }
       },
+      Section_7:{
+        features_1:{
+          list:[
+          {
+            head:'Project Management',
+            caption:'This application offers highly advanced features designed to streamline project management. Enhance your efficiency further by utilizing the project templates and project cloning capabilities, making your workflow even smoother.            '
+          },
+          {
+            head:'Task Management',
+            caption:"Ensure task completion on schedule to accomplish your goals. Utilize the application's advanced functionalities like task cloning, timers, reminders, and more to enhance productivity and efficiency. Assign tasks to both team members and clients to streamline collaboration."
+          },
+          {
+            head:'Time Tracking',
+            caption:"Effortlessly monitor the time invested in your projects using the ERP's comprehensive time-tracking solution. Begin or end your timer or input time manually for tasks. Then, seamlessly bill your clients based on the recorded time.            "
+          },
+          {
+            head:'Invoices & Payments',
+            caption:"We’ve developed an incredibly user-friendly invoicing system, removing the necessity for third-party invoicing tools. Within the CRM, you can easily create invoices with diverse options such as time billing, product billing, task billing, and others. Invoices are automatically sent to clients via email, enabling them to conveniently make payments via credit card or PayPal.            "
+          },
+        ],
+          src: clad_1
+        }
+      }
     },
     {
       index: 5,

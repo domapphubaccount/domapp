@@ -7,9 +7,11 @@ import { items } from '@/app/Page_data'
 export default function Section_3() {
     
   return (
-    <section className='erp_section_3 se4'>
+    <section className='erp_section_3 mb-5'>
         <Container>
-            <div className='card_container card_shadow'>
+        <div className='text-center fw-bold'>INTEGRATED BUSINESS MODALES CREATED FOR SPEED & EFFICIENCY</div>
+
+            {/* <div className='card_container card_shadow'>
                 <Row>
                     <Col sm={12} md={7} lg={7}>
                         <div className='h-100' data-aos="fade-up" data-aos-duration="3000">
@@ -22,7 +24,6 @@ export default function Section_3() {
                                         {item.Section_4.features_1.list.map((item,index)=>(
                                         <li key={index}>
                                             <div>
-                                                {console.log(item.head.slice(0,3))}
                                                 <a href={`#${item.head.slice(0,3)}`}><h5>{item.head}</h5></a>
                                                 <p>{item.caption}</p>
                                             </div>
@@ -39,7 +40,7 @@ export default function Section_3() {
                         </div>
                     </Col>
                 </Row>
-            </div>
+            </div> */}
         </Container>
     </section>
   )

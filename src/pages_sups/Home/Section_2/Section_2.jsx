@@ -2,12 +2,13 @@ import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import { Col, Container, Row } from "reactstrap";
 import Cards from "./Section_sups/Cards";
 import ResponsiveCarousel from "./Section_sups/Carousal";
+import Heading from "@/components/Reuse/Section_Head/Heading";
 
 export default function Section_2() {
   return (
     <section className="home_section_2" >
         <Section_head head={1}  title_1={'About Us'}des_1={'we specialize in crafting innovative solutions that redefine possibilities.'} sectionId="about"/>
-
+        {/* <Heading  head="About Us" body="we specialize in crafting innovative solutions that redefine possibilities." back="DOMAPP"/> */}
         <Container>
             <Row className="card_shadow card_dis rounded mb-5" >
                 <Col sm={12} lg={6} md={12} className="p-4">

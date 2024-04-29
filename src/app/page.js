@@ -46,7 +46,7 @@ export default function Home() {
     <Footer />
     </>
     }
-      <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%'}} />
+      <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
     </>
   );
 }

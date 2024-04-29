@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 
+
 export default function Section_1() {
   return (
     <section className='rd_section_1'>
@@ -13,12 +14,12 @@ export default function Section_1() {
                         </div>    
                         <div>
                             <h4>
-                            Good Performance
+                            Increased Productivity
                             </h4>
                             <p>
-                            Appropriately grow competitive leadership rather than strategic technically sound processes without state.
-                            </p>
+                            Efficient platform for managing risks, It streamlines the entire risk management process, eliminating manual and time-consuming tasks allowing teams to manage risks more effectively and efficiently.                            </p>
                         </div>
+                        <div className='back_image'/>
                     </div>
                 </Col>
                 <Col lg={4} md={4} sm={12}>
@@ -27,12 +28,12 @@ export default function Section_1() {
                         <i className="bi bi-file-lock"></i>                        </div>    
                         <div>
                             <h4>
-                            Highly Secure
+                            Secure Data
                             </h4>
                             <p>
-                            Appropriately grow competitive leadership rather than strategic technically sound processes without state.
-                            </p>
+                            Advanced encryption protocols to safeguard data, ensuring secure transmission and storage                            </p>
                         </div>
+                        <div className='back_image'/>
                     </div>
                 </Col>
                 <Col lg={4} md={4} sm={12}>
@@ -42,12 +43,12 @@ export default function Section_1() {
                         </div>    
                         <div>
                             <h4>
-                            Fast Development
+                            Saudi Code Compliance
                             </h4>
                             <p>
-                            Appropriately grow competitive leadership rather than strategic technically sound processes without state.
-                            </p>
+                            Every risk management strategy and precautionary measure implemented is aligned with the regulations outlined in the Saudi Building Code, prioritizing safety and regulatory adherence throughout.                            </p>
                         </div>
+                        <div className='back_image'/>
                     </div>
                 </Col>
             </Row>

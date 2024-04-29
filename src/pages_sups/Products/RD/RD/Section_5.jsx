@@ -2,6 +2,8 @@ import React from 'react'
 import { Col, Container, Row } from 'reactstrap'
 import CardSection_1 from '@/assets/images/Products_Page/Rd/cont.jpg'
 import CardSection_2 from '@/assets/images/Products_Page/Rd/produc.jpg'
+import Shape1 from "@/assets/images/shap/shap1.png"
+
 
 export default function Section_5() {
   return (
@@ -49,6 +51,9 @@ export default function Section_5() {
                 </Col>
             </Row>
         </Container>
+        {/* <div className="shape1">
+          <img src={Shape1.src} alt="shape" />
+        </div> */}
     </section>
   )
 }

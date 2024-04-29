@@ -8,10 +8,10 @@ export default function Section_15() {
     <section className='erp_section_15' id="Lea">
         <Container>
             <div className='row g-0 section_container'>
-                <Col sm={12} md={6} lg={6}>
+                <Col sm={12} md={5} lg={4}>
                     <img src={Pay.src} className='image_manage product_image-card' alt="manage" data-aos="fade-up" data-aos-duration="2500"/>
                 </Col>
-                <Col sm={12} md={6} lg={6}>
+                <Col sm={12} md={7} lg={8}>
                     <div className='content h-100' data-aos="fade-up" data-aos-duration="3000">
                         <div>
                             <h3>Leads & Opportunities</h3>
@@ -20,23 +20,23 @@ export default function Section_15() {
                             </p>    
                         </div>
                         <div>
-                            <ul className='list' data-aos="fade-right"  data-aos-duration="1500">
-                                <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Create contacts, companies form leads.</span></div>
-                                </li>
-                                <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Convert emails, messages and anything into a lead.</span></div>
-                                </li>
-                                <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Assign users, supervisors and managers.</span></div>
-                                </li>
-                                <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Add a lead reminder.</span></div>
-                                </li>
-                                <li>
-                                    <div><span><img src={yesI.src} alt='true' /></span> <span>Manage and control leads.</span></div>
-                                </li>
-                            </ul>
+                            <div className='list' data-aos="fade-right"  data-aos-duration="1500">
+                                <div className='d-flex'>
+                                    <span><img src={yesI.src} className='mx-2' alt='true' /></span> <span>Create contacts, companies form leads.</span>
+                                </div>
+                                <div className='d-flex'>
+                                    <span><img src={yesI.src} className='mx-2' alt='true' /></span> <span>Convert emails, messages and anything into a lead.</span>
+                                </div>
+                                <div className='d-flex'>
+                                    <span><img src={yesI.src} className='mx-2' alt='true' /></span> <span>Assign users, supervisors and managers.</span>
+                                </div>
+                                <div className='d-flex'>
+                                    <span><img src={yesI.src} className='mx-2' alt='true' /></span> <span>Add a lead reminder.</span>
+                                </div>
+                                <div className='d-flex'>
+                                    <span><img src={yesI.src} className='mx-2' alt='true' /></span> <span>Manage and control leads.</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Col>

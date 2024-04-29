@@ -7,7 +7,7 @@ export default function ServiceDetailsPage ({sections}) {
   
 
     return(
-    <section className="services-details-area ptb-80 py-5">
+    <section className="services-details-area pt-0 pb-5">
       <div className="container py-5">
         <div className="row align-items-center mb-5" data-aos="fade-up" data-aos-duration="3000">
           <div className="col-lg-6 services-details">
