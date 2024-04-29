@@ -54,7 +54,7 @@ export default function Page() {
                     <Section_8 />
                     <Section_9 />
                     <Section_10 />
-                    <Heading head="Our Features" body="We Build Amazing " back="ERP"/>
+                    {/* <Heading head="Our Features" body="We Build Amazing " back="ERP"/> */}
                     <Cards_section2 />
                     <Section_5_sup />
                     <Section_4 />
@@ -62,7 +62,7 @@ export default function Page() {
                     <Section_12 /> */}
                     <Section_13 />
                     <Section_14 />
-                    <Heading head="Our Features" body="We Build Amazing " back="ERP" />
+                    {/* <Heading head="Our Features" body="We Build Amazing " back="ERP" /> */}
                     <Cards_section3 />
                     <Section_15 />
                     <Section_16 />

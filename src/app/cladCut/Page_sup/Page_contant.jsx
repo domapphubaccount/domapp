@@ -31,7 +31,7 @@ export default function Page() {
               {item.link === router &&
               <>
                     <Bannar bannar={bannar.src} title={item.title} caption={item.caption} linkPage={item.page}/>
-                    <Head head={"Our Advantages"} body={""}/>
+                    <Head head={""} body={""}/>
                     <Section_1 />
                     {/* <Section_2 /> */}
                     <Head_2 />
