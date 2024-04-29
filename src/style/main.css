@@ -3204,7 +3204,7 @@ footer{
     right: 20px;
     bottom: 30px;
     border-radius: 50%;
-    z-index: 11;
+    z-index: 200;
 }
 
 @keyframes scale_circle {
