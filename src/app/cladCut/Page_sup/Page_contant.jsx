@@ -16,7 +16,7 @@ import Head from "@/pages_sups/Products/Clad/Clad/Head"
 import Section_1 from "@/pages_sups/Products/Clad/Clad/Section_1"
 import Section_2 from "@/pages_sups/Products/Clad/Clad/Section_2"
 import Section_3 from "@/pages_sups/Products/Clad/Clad/Section_3"
-import Section_4 from "@/pages_sups/Products/Clad/Clad/section_4"
+import Section_4 from "../../../pages_sups/Products/Clad/Clad/Section_4"
 import Head_2 from "@/pages_sups/Products/Clad/Clad/Head_2"
 
 
