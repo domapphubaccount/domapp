@@ -9,7 +9,7 @@ export default function Section_3() {
         <Container>
             <Row className='z-1 position-relative'>
             <Col sm={12} md={4}>
-            <p style={{color:'#bcff00',fontSize:"1.8rem"}}>Clad-Cut </p>
+            <p style={{color:'#bcff00',fontSize:"1.8rem"}}>CladCut </p>
             <h2 className="mil-upper mil-light mil-up mil-mb-30 h2_clad" style={{fontSize: '2.5rem',translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: 1 ,borderImage: "repeating-linear-gradient(-45deg, transparent, transparent 1px, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 100%, .2) 3px) 5"}}>Does the Heavy Lifting</h2>
             </Col>
             <Col sm={12} md={8}>

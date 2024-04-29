@@ -25,7 +25,7 @@ export default function RD_features_cards() {
                       </div>
                     </div>
                   </div>
-                <div className="col-xxl-4 col-md-6 slideInUp wow mt-5" style={{visibility: "visible", animationName: "slideInUp"}}>
+                {/* <div className="col-xxl-4 col-md-6 slideInUp wow mt-5" style={{visibility: "visible", animationName: "slideInUp"}}>
                     <div className="framework-box">
                       <div className="frame-icon"> <img src={I2.src} alt=""/></div>
                       <div className="frame-details">
@@ -34,8 +34,8 @@ export default function RD_features_cards() {
                         Tailor reports to specific project requirements with customizable templates.</p>
                       </div>
                     </div>
-                  </div>
-                <div className="col-xxl-4 col-md-6 slideInUp wow mt-5" style={{visibility: "visible", animationName: "slideInUp"}}>
+                  </div> */}
+                {/* <div className="col-xxl-4 col-md-6 slideInUp wow mt-5" style={{visibility: "visible", animationName: "slideInUp"}}>
                     <div className="framework-box">
                       <div className="frame-icon"> <img src={I3.src} alt=""/></div>
                       <div className="frame-details">
@@ -44,7 +44,7 @@ export default function RD_features_cards() {
                         Stay informed about project updates and deadlines with automated notifications.</p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 <div className="col-xxl-4 col-md-6 slideInUp wow mt-5" style={{visibility: "visible", animationName: "slideInUp"}}>
                     <div className="framework-box">
                       <div className="frame-icon"> <img src={I4.src} alt=""/></div>
@@ -75,7 +75,7 @@ export default function RD_features_cards() {
                       </div>
                     </div>
                   </div>
-                <div className="col-xxl-4 col-md-6 slideInUp wow mt-5" style={{visibility: "visible", animationName: "slideInUp"}}>
+                {/* <div className="col-xxl-4 col-md-6 slideInUp wow mt-5" style={{visibility: "visible", animationName: "slideInUp"}}>
                     <div className="framework-box">
                       <div className="frame-icon"> <img src={I7.src} alt=""/></div>
                       <div className="frame-details">
@@ -84,14 +84,14 @@ export default function RD_features_cards() {
                         Protect sensitive project data with robust security measures.</p>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 <div className="col-xxl-4 col-md-6 slideInUp wow mt-5" style={{visibility: "visible", animationName: "slideInUp"}}>
                     <div className="framework-box">
                       <div className="frame-icon"> <img src={I8.src} alt=""/></div>
                       <div className="frame-details">
-                        <h5>Third-Party Tools</h5>
+                        <h5>Integration</h5>
                         <p className="f-light">
-                        Protect sensitive project data with robust security measures.</p>
+                          RD App offers Integration with existing systems ensuring smooth data flow.</p>
                       </div>
                     </div>
                   </div>
@@ -99,9 +99,9 @@ export default function RD_features_cards() {
                     <div className="framework-box">
                       <div className="frame-icon"> <img src={I9.src} alt=""/></div>
                       <div className="frame-details">
-                        <h5>Multilingual Support</h5>
+                        <h5>Rsponsive Support</h5>
                         <p className="f-light">
-                        Protect sensitive project data with robust security measures.</p>
+                        Dedicated experts ensure smooth operations with prompt.</p>
                       </div>
                     </div>
                   </div>
