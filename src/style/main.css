@@ -2430,7 +2430,7 @@ footer{
 .rd_bannar{
     /* background: linear-gradient(to right, #151423 0%, #3a7bd5 100%); */
     background-color: #151423;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* background-image: url('../assets/images/Products_Page/Rd/bannar.png');
     background-size: cover;
     background-repeat: no-repeat; */

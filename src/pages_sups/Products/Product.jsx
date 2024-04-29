@@ -3,11 +3,12 @@ import Image from 'next/image'
 import { league } from '../Home/Section_1/Section_1'
 
 export default function Product({bannar,title,caption,linkPage}) {
+    console.log(bannar)
 
   return (
     <section className='ERP_bannar'>
             <div className='products'>
-            <img src={bannar} alt='product' className="bannar" />
+            <img src={bannar.src} alt='product' className="bannar" />
             <div className='head-section'>
                 <div className='mb-4'>
                     <h1  className={league.className}>{title}</h1>
