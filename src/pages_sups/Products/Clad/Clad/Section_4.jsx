@@ -84,7 +84,7 @@ export default function Section_4() {
                         </div>
                         <h4 className="mil-upper mil-mb-20">Streamlined Installation</h4>
                         <div className="mil-divider-sm mil-mb-20"></div>
-                        <p className="mil-service-text">Rejection drawings ensure a smooth on-site process.</p>
+                        <p className="mil-service-text">Erection drawings ensure a smooth on-site process.</p>
                         <div className="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
                             {/* <img src={i1.src} alt="icon"/> */}
                         </div>

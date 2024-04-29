@@ -110,7 +110,7 @@ export const items = [
       src: product_1,
       title: 'Windload',
       link:'/windload',
-      page:'http://domhupp.surge.sh/login/',
+      page:'https://domapphub.surge.sh/login/',
       caption: 'Powerful structural analysis and design .Instant access, directly from your browser',
       Section_2:{
         first:{
