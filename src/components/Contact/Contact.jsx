@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
+import cont from "@/assets/images/Home_Page/customer-support.png"
 
 export default function Contact() {
     const [toggle,setToggle] = useState(false)
@@ -30,13 +31,16 @@ export default function Contact() {
                 <i class="bi bi-whatsapp"></i>
                 </div>
                 <div className='contact_circle_content'>
-                <i class="bi bi-chat-left-text"></i>
+                <i class="bi bi-envelope-at-fill"></i>
                 </div>
                 <div className='contact_circle_content'>
                 <i class="bi bi-telephone-forward"></i>
                 </div>
                 <div className='contact_circle_content'>
-                    <i class="bi bi-chat-right-dots"></i>
+                <i class="bi bi-clock-history"></i>
+                </div>
+                <div className='contact_circle_content'>
+                <i class="bi bi-geo-alt-fill"></i>
                 </div>
         </div>
         }
@@ -44,7 +48,7 @@ export default function Contact() {
             <div className='border_circle'></div>
             <div className='contact_circle z-1 position-relative' onClick={handleToggle}>
                 {
-                    // i
+                    <img src={cont.src} alt=""/>
                 }
             </div>
         </div>

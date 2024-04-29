@@ -7,10 +7,10 @@ export default function Product({bannar,title,caption,linkPage}) {
   return (
     <section className='ERP_bannar'>
             <div className='products'>
-            <Image src={bannar} alt='product' className="bannar" />
+            <img src={bannar} alt='product' className="bannar" />
             <div className='head-section'>
                 <div className='mb-4'>
-                    <h1 className={league.className}>{title}</h1>
+                    <h1  className={league.className}>{title}</h1>
                 </div>
                 <div className='mb-4'>
                     <p>

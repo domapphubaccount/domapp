@@ -9,7 +9,7 @@ export default function Section_15() {
         <Container>
             <div className='row g-0 section_container'>
                 <Col sm={12} md={5} lg={4}>
-                    <img src={Pay.src} className='image_manage product_image-card' alt="manage" data-aos="fade-up" data-aos-duration="2500"/>
+                    <img src={Pay.src} className='image_manage  ' alt="manage" data-aos="fade-up" data-aos-duration="2500"/>
                 </Col>
                 <Col sm={12} md={7} lg={8}>
                     <div className='content h-100' data-aos="fade-up" data-aos-duration="3000">

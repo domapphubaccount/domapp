@@ -55,13 +55,13 @@ export default function Screens_Section({sections}) {
                                         {router === '/windload' ? (
                                             wind.map((item, index) => (
                                                 <div key={index} onClick={() => handleImageClick(item)}>
-                                                    <img src={item.src} className="product_image-card card_shadow" style={{ height: "400px", width: "350px", objectFit: "cover" }} alt='image' />
+                                                    <img src={item.src} className="  card_shadow" style={{ height: "400px", width: "350px", objectFit: "cover" }} alt='image' />
                                                 </div>
                                             ))
                                         ) : (
                                             screens.map((item, index) => (
                                                 <div key={index} onClick={() => handleImageClick(item)}>
-                                                    <img src={item.src} className="product_image-card card_shadow" style={{ height: "400px", width: "350px", objectFit: "cover" }} alt='image' />
+                                                    <img src={item.src} className="  card_shadow" style={{ height: "400px", width: "350px", objectFit: "cover" }} alt='image' />
                                                 </div>
                                             ))
                                         )}

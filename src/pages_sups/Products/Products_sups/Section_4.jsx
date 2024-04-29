@@ -23,7 +23,7 @@ export default function Section_3 ({sections}) {
           </div>
 
           <div className="col-lg-6 services-details-image row-card">
-                  <Image src={sections.first.src} alt="clad" className="product_image-card card_shadow "/>
+                  <Image src={sections.first.src} alt="clad" className="  card_shadow "/>
           </div>
         </div>
 
@@ -31,7 +31,7 @@ export default function Section_3 ({sections}) {
 
         <div className="row align-items-center mb-5 p-3" data-aos="fade-up" data-aos-duration="3000">
           <div className="col-lg-6 services-details-image row-card">
-                <Image src={sections.seconed.src} alt="clad" className="product_image-card card_shadow "/>
+                <Image src={sections.seconed.src} alt="clad" className="  card_shadow "/>
           </div>
 
           <div className="col-lg-6 services-details">

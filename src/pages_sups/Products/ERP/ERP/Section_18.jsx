@@ -35,7 +35,7 @@ export default function Section_18() {
                     </div>
                 </Col>
                 <Col sm={12} md={5} lg={4}>
-                    <img src={Time.src} className='image_manage product_image-card' alt="manage" />
+                    <img src={Time.src} className='image_manage  ' alt="manage" />
                 </Col>
             </div>
         </Container>

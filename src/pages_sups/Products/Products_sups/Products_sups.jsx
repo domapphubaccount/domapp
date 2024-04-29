@@ -24,7 +24,7 @@ export default function ServiceDetailsPage ({sections}) {
           </div>
 
           <div className="col-lg-6 services-details-image ">
-                  <video className="rounded h-100 w-100 card_shadow product_image-card" preload="none" loop muted autoPlay >
+                  <video className="rounded h-100 w-100 card_shadow  " preload="none" loop muted autoPlay >
                     <source src={sections.first.src} type="video/mp4" />
                             Your browser does not support the video tag.
                   </video>
@@ -35,7 +35,7 @@ export default function ServiceDetailsPage ({sections}) {
 
         <div className="row align-items-center" data-aos="fade-up" data-aos-duration="3000">
           <div className="col-lg-6 services-details-image">
-                  <video className="rounded h-100 w-100 card_shadow product_image-card" preload="none" loop muted autoPlay>
+                  <video className="rounded h-100 w-100 card_shadow  " preload="none" loop muted autoPlay>
                     <source src={sections.seconed.src} type="video/mp4" />
                             Your browser does not support the video tag.
                   </video>

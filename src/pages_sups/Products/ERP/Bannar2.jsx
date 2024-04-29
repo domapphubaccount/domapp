@@ -43,7 +43,7 @@ export default function Bannar2() {
             </div>
             <div className="col-lg-7 col-md-6">
               <div className="home-screen">
-                <div className="screen-1"><img className="img-fluid" src={Erp_Dash.src} alt=""/></div>
+                <div className="screen-1"><img className="img-fluid" style={{borderRadius:'15px'}} src={Erp_Dash.src} alt=""/></div>
                 {/* <div className="screen-2"><img className="img-fluid" src={d2.src} alt=""/></div>
                 <div className="screen-3"><img className="img-fluid" src={d3.src} alt=""/></div> */}
               </div>

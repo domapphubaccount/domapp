@@ -29,8 +29,8 @@ export default function Product({bannar,title,caption}) {
                         </div>
                     </Col>
                     <Col sm={12} md={7}>
-                        <div className=' position-relative py-5' style={{zIndex:10}}>
-                            <img src={labtop.src} alt="lab" className='mt-5'/>
+                        <div className=' position-relative py-5' style={{zIndex:10,borderRadius:'15px'}}>
+                            <img src={labtop.src} style={{borderRadius:'15px'}} alt="lab" className='mt-5'/>
                         </div>
                     </Col>
                 </Row>

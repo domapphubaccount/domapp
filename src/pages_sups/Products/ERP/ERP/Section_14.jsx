@@ -30,7 +30,7 @@ export default function Section_14() {
                         </div> */}
                     </div>
                 </Col>
-                <Col sm={12} md={6} lg={6} className='product_image-card'>
+                <Col sm={12} md={6} lg={6} className=' '>
                     <img src={Time.src} className='image_manage ' style={{maxHeight:'400px'}} alt="manage" data-aos="fade-up" data-aos-duration="3000"/>
                 </Col>
             </div>

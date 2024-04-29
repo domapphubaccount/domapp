@@ -46,7 +46,7 @@ export default function Page() {
                     <Section_5 />
                     <RD_heading title="AND MORE" body="We Provide Best Features 'And more'"/>
                     <RD_features_cards />
-                    <RD_sup_section />
+                    {/* <RD_sup_section /> */}
                     <RD_Content_section />
                     {/* <Section_6 /> */}
                     <RD_heading title="" body="We Provide Best Communication And Cost Monitoring"/>
