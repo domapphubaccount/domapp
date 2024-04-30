@@ -3843,3 +3843,56 @@ width: 100%;
 height: 90px;
 z-index: 2;
 }
+
+.bundle-button {
+    border: 5px solid hsla(0, 0%, 100%, .2);
+    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 100%, .2) 3px) 5;
+    padding-left: 10px;
+    /* Add a background color */
+    background-color: transparent;
+}
+
+.bundle-button:hover {
+    border: 5px solid #bcff00;
+    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, #bcff00 0, #bcff00 3px) 5;
+    /* Set background color to match border-image */
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 100%, .2) 3px);
+
+}
+.bundle-button .nul{
+    display: none;
+}
+.bundle-button:hover .nul{
+    display: flex;
+}
+.bundle-button:hover .dis{
+    display: none;
+}
+.pricing_ERP{
+    transition: all .5s;
+}
+.pricing_ERP:hover{
+    background-color: #9f98d0;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.box_place{
+    background-color: #fff;
+    border: 2px solid #8ea7e0;
+    border-radius: 5px;
+    position: absolute;
+    right: 50px;
+    width: 400px;
+    bottom: 50px;
+    padding: 10px 20px;
+}
+.box_place ul{
+    padding: 0;
+}
+.box_place li{
+    font-size: 1rem;
+    color: #424242;
+    margin-bottom: 10px;
+}

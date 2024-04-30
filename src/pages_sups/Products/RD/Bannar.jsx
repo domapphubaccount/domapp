@@ -22,7 +22,8 @@ export default function Product({bannar,title,caption}) {
                             </div>
                             <div className='mb-4'>
                                 <p className={league.className}>
-                                    Smart solutions that save time & Cost.
+                                    {/* Smart solutions that save time & Cost. */}
+                                    RISK ASSESSMENT COMPLAYING WITH <br/><span style={{color:'#3381f3'}} className='fw-bold'>SAUDI BUILDING CODE</span>
                                 </p>
                             </div>
                             </div>

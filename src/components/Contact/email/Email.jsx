@@ -1,39 +1,30 @@
-"use client"
-
-import React from 'react';
-import { Container, Col, Row } from 'reactstrap';
-import { Formik, Form } from 'formik';
+import React, { useState } from 'react';
+import { Col, Form, Modal, ModalBody, ModalFooter, ModalHeader, Row } from 'reactstrap';
+import { Formik } from 'formik';
 import * as Yup from 'yup';
-import Contact from "@/assets/images/Products_Page/contact/contact.jpg";
 
-export default function Section_1() {
-    
+export default function Email({modal,setModal}) {
+    const toggleModal = () => setModal(!modal);
+
     const initialValues = {
         name:'',
         email:'',
         title:'',
-        product:'',
         message:''
     };
 
     const validationSchema = Yup.object().shape({
         name: Yup.string().required('Name is required'),
         email: Yup.string().email('Invalid email').required('Email is required'),
-        // product: Yup.string().required('Email is required'),
         title: Yup.string().required('Title is required'),
         message: Yup.string().required('Message is required'),
     });
 
-    const handleSubmit = (values, actions) => {
-        // Handle form submission logic here
-        console.log(values);
-        actions.setSubmitting(false); 
-    };
-
     return (
-        <section className='privacy-content'>
-            <Container>
-                <div>
+        <div>
+            <Modal isOpen={modal} toggle={toggleModal} size="md"> 
+                <ModalHeader toggle={toggleModal}>DOMEAPP</ModalHeader>
+                <ModalBody>
                     <Formik 
                         initialValues={initialValues} 
                         validationSchema={validationSchema}
@@ -42,14 +33,6 @@ export default function Section_1() {
                         {({ values, errors, touched, handleChange, handleSubmit }) => (
                             <Form onSubmit={handleSubmit}>
                                 <ul className='p-1'>
-                                <li>
-                        <div>
-                            <h2>Get in Touch</h2>
-                            <p>
-                            Welcome to DomapphubApps! We're here to assist you with any questions, feedback, or inquiries you may have. Please feel free to reach out to us using the contact information provided below. Your privacy is important to us, and we're committed to handling your information with care and transparency.
-                            </p>
-                        </div>
-                    </li>  
                                     <li>
                                         <div>
                                             <h2>Get in Touch</h2>
@@ -58,7 +41,7 @@ export default function Section_1() {
                                     <li className='pt-3'>
                                         <div>
                                             <Row className='justify-content-center'>
-                                                <Col lg={5} md={6} sm={12}>
+                                                <Col lg={12} md={12} sm={12}>
                                                     <Row>
                                                         <Col sm={12} className='my-2'>
                                                             <input 
@@ -83,29 +66,10 @@ export default function Section_1() {
                                                             {errors.email && touched.email && <div className="text-danger">{errors.email}</div>}     
                                                         </Col> 
                                                         <Col sm={12} className='my-2'>
-                                                            <select 
-                                                                className='w-100 p-3 rounded border border-2 pe-3' 
-                                                                placeholder="Select Product" 
-                                                                name="product" 
-                                                                value={values.product} 
-                                                                onChange={handleChange}
-
-                                                            >
-                                                                <option className="p-2" value="">Select an option</option>
-                                                                <option className="p-2" value="1">Cladcut</option>
-                                                                <option className="p-2" value="2">FacadStatic</option>
-                                                                <option className="p-2" value="3">Windload</option>
-                                                                <option className="p-2" value="4">ERP System</option>
-                                                                <option className="p-2" value="5">RD APP</option>
-                                                                <option className="p-2" value="6">Chatplus</option>
-                                                            </select>
-                                                            {errors.product && touched.product && <div className="text-danger">{errors.product}</div>}     
-                                                        </Col> 
-                                                        <Col sm={12} className='my-2'>
                                                             <input 
                                                                 type="text" 
                                                                 className='w-100 p-3 rounded border border-2' 
-                                                                placeholder="Subject" 
+                                                                placeholder="Title" 
                                                                 name="title" 
                                                                 value={values.title} 
                                                                 onChange={handleChange}
@@ -141,15 +105,16 @@ export default function Section_1() {
                             </Form>
                         )}
                     </Formik>
-                    <div>
-                        <Row>
-                            <Col sm={12} lg={4} md={6}>
-                                <img src={Contact.src} alt="contact" />
-                            </Col>
-                        </Row>
-                    </div>
-                </div>
-            </Container>
-        </section>
+                </ModalBody>
+                <ModalFooter>
+                    <button color="secondary" onClick={toggleModal}>Close</button>
+                </ModalFooter>
+            </Modal>
+        </div>
     );
+}
+
+function handleSubmit(values) {
+    // Handle form submission here
+    console.log(values);
 }

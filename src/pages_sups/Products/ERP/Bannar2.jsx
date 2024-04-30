@@ -35,8 +35,11 @@ export default function Bannar2() {
                 highly advanced features designed to streamline project management , time tracking and more ...
                 </p>
                 <div className="docutment-button"> 
-                    <a className="btn text-white" href="https://docs.pixelstrap.net/django/mofi/document/" target="_blank">
+                    <a className="btn text-white me-3" href="https://docs.pixelstrap.net/django/mofi/document/" target="_blank">
                         Get Started
+                    </a>
+                    <a className="btn text-white pricing_ERP" href="https://docs.pixelstrap.net/django/mofi/document/" target="_blank">
+                        Pricing
                     </a>
                 </div>
               </div>

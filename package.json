@@ -33,7 +33,8 @@
     "reactstrap": "^9.2.2",
     "sass": "^1.75.0",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "eslint": "^8",
