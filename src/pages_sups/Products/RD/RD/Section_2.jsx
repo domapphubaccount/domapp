@@ -10,7 +10,7 @@ export default function Section_3() {
         <Container>
             <Row className='justify-content-between'>
                 <Col sm={12} md={5} lg={5}>
-                    <div className='about-content py-3' data-aos="fade-up" data-aos-duration="3000">
+                    <div className='about-content py-3' data-aos="fade-up" data-aos-duration="1000">
                         <div>
                         <i className="bi bi-amd custom_icon"></i>
                         </div>
@@ -24,7 +24,7 @@ export default function Section_3() {
                     </div>
                 </Col>
                 <Col sm={12} md={6} lg={6}>
-                    <div data-aos="fade-up" data-aos-duration="500">
+                    <div data-aos="fade-up" data-aos-duration="1000">
                         <img src={porp.src} alt='' />
                     </div>
                 </Col>

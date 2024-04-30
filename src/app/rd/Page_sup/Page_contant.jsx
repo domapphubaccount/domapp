@@ -28,7 +28,7 @@ export default function Page() {
   
 
   return (
-    <div className="rd_page">
+    <div className="rd_page page_hid">
         {items.map((item , index) => (
             <>
               {item.link === router &&

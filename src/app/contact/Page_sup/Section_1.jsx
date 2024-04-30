@@ -50,11 +50,6 @@ export default function Section_1() {
                             </p>
                         </div>
                     </li>  
-                                    <li>
-                                        <div>
-                                            <h2>Get in Touch</h2>
-                                        </div>
-                                    </li>  
                                     <li className='pt-3'>
                                         <div>
                                             <Row className='justify-content-center'>

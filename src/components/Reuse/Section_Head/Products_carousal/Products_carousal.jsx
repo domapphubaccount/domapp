@@ -30,10 +30,10 @@ const cardsData = [
       src: RD,
       link: '/rd'
   },
-  {
-      src: Facade,
-      link: '/facade'
-  },
+  // {
+  //     src: Facade,
+  //     link: '/facade'
+  // },
   {
       src: Erp,
       link: '/erp'

@@ -52,9 +52,9 @@ export default function Section_2() {
                 <Cards />
             </div>
             {/* <About_2 /> */}
-
+            <div className="pc_res">
             <ResponsiveCarousel />
-
+            </div>
         </Container>
     </section>
   )

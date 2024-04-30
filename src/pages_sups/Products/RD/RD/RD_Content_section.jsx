@@ -15,7 +15,7 @@ export default function RD_Content_section() {
                         <div className="order-2 order-lg-1 col-lg-6 mt_md--40 mt_sm--40">
                             <div className="content"><div className="animated fadeInUp" style={{animationDuration: "1s"}}>
                                 <span className="date-of-timeline">
-                                Highlighting
+                                
                                 </span>
                             </div>
                         <div className="animated fadeInUp" style={{animationDuration:"1s"}}>
@@ -74,7 +74,7 @@ export default function RD_Content_section() {
                         <div className="order-2 order-lg-1 col-lg-6 mt_md--40 mt_sm--40">
                             <div className="content"><div className="animated fadeInUp" style={{animationDuration: "1s"}}>
                                 <span className="date-of-timeline">
-                                Filtering
+                                
                                 </span>
                             </div>
                         <div className="animated fadeInUp" style={{animationDuration:"1s"}}>

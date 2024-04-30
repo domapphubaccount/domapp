@@ -29,7 +29,7 @@ export default function Page() {
 
   return (
     
-    <>
+    <div className='page_hid'>
         {
       showTimer < 2 ? <Loading_page /> :
       <>
@@ -39,6 +39,6 @@ export default function Page() {
       </>
       }
       <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
-    </>
+    </div>
   )
 }

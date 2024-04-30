@@ -8,7 +8,7 @@ export default function Section_1() {
         <Container>
             <Row>
                 <Col lg={4} md={4} sm={12}>
-                    <div className='h-100 text-center card' data-aos="fade-up" data-aos-duration="3000">
+                    <div className='h-100 text-center card' data-aos="fade-up" data-aos-duration="1000">
                         <div>
                         <i className="bi bi-database-up"></i>
                         </div>    
@@ -37,7 +37,7 @@ export default function Section_1() {
                     </div>
                 </Col>
                 <Col lg={4} md={4} sm={12}>
-                    <div className='h-100 text-center card' data-aos="fade-up" data-aos-duration="3000">
+                    <div className='h-100 text-center card' data-aos="fade-up" data-aos-duration="1000">
                         <div>
                         <i className="bi bi-code-slash"></i>
                         </div>    

@@ -7,11 +7,11 @@ import Section__head from "./Page_sup/Section__head";
 export default function Home() {
 
   return (
-    <>
+    <div className='page_hid'>
     <Header />
         <Section__head />
         <Section_1 />
     <Footer />
-    </>
+    </div>
   );
 }

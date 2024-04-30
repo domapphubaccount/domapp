@@ -12,7 +12,7 @@ export default function Each_product({ product_carousal }) {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
   };

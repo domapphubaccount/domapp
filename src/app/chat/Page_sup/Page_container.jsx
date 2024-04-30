@@ -27,7 +27,7 @@ export default function Page() {
 
   return (
     
-    <>
+    <div className='page_hid'>
         {
       showTimer < 2 ? <Loading_page /> :
       <>
@@ -36,6 +36,6 @@ export default function Page() {
         <Footer />
       </>
       }
-    </>
+    </div>
   )
 }

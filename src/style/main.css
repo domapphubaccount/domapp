@@ -22,6 +22,9 @@ a{
     /* box-shadow: inset 0px 0px 20px 0 #ccc; */
     box-shadow: 0 0 5px 0 rgb(16 30 30 / 10%), 0 2px 7px 0 rgb(16 30 30 / 15%), 0 4px 4px -2px rgb(16 30 30 / 10%);;
 }
+.page_hid{
+    overflow: hidden;
+}
 .dark-bannar{
     top: 0;
     left: 0;
@@ -651,6 +654,9 @@ footer{
     }
     .section_2_mobile_cards{
         display: block;
+    }
+    .pc_res{
+        display: none;
     }
 }
 
@@ -3881,18 +3887,25 @@ z-index: 2;
 .box_place{
     background-color: #fff;
     border: 2px solid #8ea7e0;
+    border-top: 20px solid rgba(30, 144, 255, 1);
     border-radius: 5px;
     position: absolute;
     right: 50px;
     width: 400px;
-    bottom: 50px;
-    padding: 10px 20px;
+    bottom: 0px;
+    padding: 20px 20px 10px 20px;
+}
+
+@media (max-width:400px) {
+    .box_place{
+        width: 250px;
+    }
 }
 .box_place ul{
     padding: 0;
 }
 .box_place li{
-    font-size: 1rem;
+    font-size: .8rem;
     color: #424242;
     margin-bottom: 10px;
 }
