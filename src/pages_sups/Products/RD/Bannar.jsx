@@ -7,6 +7,7 @@ import { league } from '@/pages_sups/Home/Section_1/Section_1'
 import Shap_1 from "@/assets/images/Products_Page/Rd/mask-shape.png"
 import Shap_2 from "@/assets/images/Products_Page/Rd/line-shape.png"
 import Shape1 from "@/assets/images/shap/shap1.png"
+import Link from 'next/link'
 
 export default function Product({bannar,title,caption}) {
   return (
@@ -21,10 +22,13 @@ export default function Product({bannar,title,caption}) {
                                 <h1 className={league.className}>RD APP</h1>
                             </div>
                             <div className='mb-4'>
-                                <p className={league.className}>
+                                <p className={league.className + ' mb-4'}>
                                     {/* Smart solutions that save time & Cost. */}
                                     RISK ASSESSMENT COMPLAYING WITH <br/><span style={{color:'#3381f3'}} className='fw-bold'>SAUDI BUILDING CODE</span>
                                 </p>
+                                <Link href='/contact' className='rd_get_started'>
+                                    Get Started
+                                </Link>
                             </div>
                             </div>
                         </div>

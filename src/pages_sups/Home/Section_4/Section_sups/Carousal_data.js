@@ -55,32 +55,32 @@ export const items = [
         },
       ]
     },
-    {
-      index: 3,
-      src: product_2,
-      title: 'Façade static',
-      link: '/facade',
-      video: '/Home_page/carousal/facade static.mp4',
-      caption: 'Get Suggested Profiles for SG50 CW system.',
-      dataList: [
-        {
-          head:'Manage and Modify project data',
-          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
-        },
-        {
-          head:'Entering and editing manufacturing components.',
-          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
-        },
-        {
-          head:'Importing dxf files',
-          body: 'Import and upload the project sitting out as dxf file.'
-        },
-        {
-          head:'Producing detailed manufacturing drawings.',
-          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
-        },
-      ]
-    },
+    // {
+    //   index: 3,
+    //   src: product_2,
+    //   title: 'Façade static',
+    //   link: '/facade',
+    //   video: '/Home_page/carousal/facade static.mp4',
+    //   caption: 'Get Suggested Profiles for SG50 CW system.',
+    //   dataList: [
+    //     {
+    //       head:'Manage and Modify project data',
+    //       body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+    //     },
+    //     {
+    //       head:'Entering and editing manufacturing components.',
+    //       body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+    //     },
+    //     {
+    //       head:'Importing dxf files',
+    //       body: 'Import and upload the project sitting out as dxf file.'
+    //     },
+    //     {
+    //       head:'Producing detailed manufacturing drawings.',
+    //       body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+    //     },
+    //   ]
+    // },
     {
       index: 4,
       src: product_3,

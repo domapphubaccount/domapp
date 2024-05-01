@@ -111,7 +111,7 @@ export const items = [
       title: 'Windload',
       link:'/windload',
       page:'https://domapphub.surge.sh/login/',
-      caption: 'Powerful structural analysis and design .Instant access, directly from your browser',
+      caption: 'Generate Wind Pressure Designs',
       Section_2:{
         first:{
           caption:{

@@ -38,9 +38,9 @@ export default function Home() {
     <Section_2 />
     {/* <Section_5 /> */}
     <Section_4 />
-    <div className="seperate py-5">
+    {/* <div className="seperate py-5">
     <Products_carousal />
-    </div>
+    </div> */}
     <Section_3 />
     {/* <Section_6 /> */}
     <Footer />

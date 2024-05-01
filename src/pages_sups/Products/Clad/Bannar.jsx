@@ -31,7 +31,7 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                             <br/>
                             <span style={{fontSize:'1.5rem'}}>Efficient, accurate aluminum cladding fabrication</span>
                             </h1>
-                            <a className="mil-link mil-light mil-upper me-3" href="https://domapphub.surge.sh/pricing/">
+                            <a className="mil-link mil-light mil-upper me-3" href="https://dometools-fv24.onrender.com/login/">
                                 TRY FOR FREE
                                 <span className="mil-arrow">
                                     <img src={arrow.src} alt="arrow" />

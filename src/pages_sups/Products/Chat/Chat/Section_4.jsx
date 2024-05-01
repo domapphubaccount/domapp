@@ -30,7 +30,7 @@ export default function Section_4() {
                         <div>
                             <h4>Error-Free Communication</h4>
                             <p>
-                            Implement advanced algorithms and AI technologies to ensure error-free communication, reducing the risk of misunderstandings and inaccuracies.                            </p>
+                            Implement advanced algorithms to ensure error-free communication, reducing the risk of misunderstandings and inaccuracies.                            </p>
                         </div>
                     </div>
                     </div>

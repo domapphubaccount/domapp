@@ -3909,3 +3909,60 @@ z-index: 2;
     color: #424242;
     margin-bottom: 10px;
 }
+.wind_bannar{
+    background-image: url("../assets/images/Products_Page/Wind/bannar.jpg");
+    
+}
+.sq1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top: 4px solid #fff;
+    border-right: 4px solid #fff;
+    width: 110px;
+    height: 110px;
+}
+.sq2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    width: 110px;
+    height: 110px;
+}
+.sq3{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 4px solid #fff;
+    border-right: 4px solid #fff;
+    width: 110px;
+    height: 110px;
+}
+.sq4{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    width: 110px;
+    height: 110px;
+}
+.wind_bannar{
+    min-height: 400px;
+}
+.rd_get_started{
+    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, #bcff00 0, #bcff00 3px) 5;
+    /* Set background color to match border-image */
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 100%, .2) 3px);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.rd_get_started:hover{
+    /* Set background color to match border-image */
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 82%, 0.425) 3px);
+    color: #ffffff;
+}
