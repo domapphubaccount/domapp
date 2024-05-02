@@ -62,7 +62,7 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Business Adminstration</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100' href={'/erp'}>ERP System</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/erp'} shallow>ERP System</Link></li>
                                                             </ul>
                                                         </li>
                                                     {/* </ul>

@@ -89,7 +89,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                         >
                             Send Message
                         </Tooltip>
-                        <Link href="/contact">
+                        <Link href="/contact" shallow>
                             <i className="bi bi-envelope-at-fill"></i>
                         </Link>
                     </div>

@@ -109,7 +109,7 @@ export const Card = React.memo(function (props) {
       }}
       className="my-slide-component"
     >
-      <Link href={link}>
+      <Link href={link} shallow>
         <Image src={src} alt={src} />
       </Link>
     </div>

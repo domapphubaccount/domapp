@@ -132,7 +132,7 @@ const MyCarousel = () => {
         {items.map((item,index)=> (
           item.index == activeIndex &&
           <div key={index} >
-            <Link className='explore_more' href={`${item.link}`}>
+            <Link className='explore_more' href={`${item.link}`} shallow>
                 <div className='explore'>Explore</div> <div>
                   <i className="bi bi-arrow-right ar"></i>  
                 </div>

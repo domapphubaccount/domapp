@@ -26,7 +26,7 @@ export default function Product({bannar,title,caption}) {
                                     {/* Smart solutions that save time & Cost. */}
                                     RISK ASSESSMENT COMPLAYING WITH <br/><span style={{color:'#3381f3'}} className='fw-bold'>SAUDI BUILDING CODE</span>
                                 </p>
-                                <Link href='/contact' className='rd_get_started'>
+                                <Link href='/contact' className='rd_get_started' shallow>
                                     Get Started
                                 </Link>
                             </div>

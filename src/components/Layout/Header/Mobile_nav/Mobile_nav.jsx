@@ -135,7 +135,7 @@ export default function MobileNav() {
                   {
                     items.map((item,index)=>(
                       <li key={index}>
-                        <Link href={item.link}>
+                        <Link href={item.link} shallow>
                           {item.title}
                         </Link>
                       </li>

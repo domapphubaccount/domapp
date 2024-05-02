@@ -21,7 +21,7 @@ const FadeCarousel = () => {
         <Slider {...settings}>
             {items.map((item,index)=>(
               <div key={index}>
-                <Link href={item.link}>
+                <Link href={item.link} shallow>
                 <div className="carousel_inside_content">
                     <div className="h-100">
                       <Row className="h-100">

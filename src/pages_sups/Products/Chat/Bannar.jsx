@@ -27,7 +27,7 @@ export default function Bannar({bannar,title,caption}) {
                                 </p>
                             </div>
                             <div>
-                                <Link href='/contact'>
+                                <Link href='/contact' shallow>
                                     Get Started
                                 </Link>
                             </div>
