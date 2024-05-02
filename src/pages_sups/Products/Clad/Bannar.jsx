@@ -37,7 +37,7 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                                     <img src={arrow.src} alt="arrow" />
                                 </span>
                             </a>
-                            <a className="mil-link mil-light mil-upper bundle-button" href="https://domapphub.surge.sh/pricing/">
+                            <a className="mil-link mil-light mil-upper bundle-button" href="https://dometools-fv24.onrender.com/pricing/">
                                 Bundles
                                 <span className="mil-arrow p-2 dis">
                                     <img src={dollar.src} alt="arrow" />
