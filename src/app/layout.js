@@ -30,7 +30,6 @@ export default function RootLayout({ children }) {
       <AOSInit />
       <body className={inter.className}>
         {children}
-        <Contact/>
       </body>
     </html>
   );

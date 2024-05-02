@@ -5,6 +5,7 @@ import Page_sup from './Page_contant'
 import Loading_page from '@/components/Loading_page/Loading_page'
 import { useEffect, useState } from 'react'
 import ScrollToTop from "react-scroll-to-top";
+import Contact from '@/components/Contact/Contact'
 
 
 export const metadata = {
@@ -15,7 +16,11 @@ export const metadata = {
 
 export default function Page() {
     const [showTimer , setShowTimer] = useState(0)
-  
+    const [toggle, setToggle] = useState(false);
+
+    const handleToggle = () => {
+      setToggle(!toggle);
+  }
     function handleTimer(){
       setShowTimer(showTimer + 1)
     }
@@ -33,12 +38,13 @@ export default function Page() {
         {
       showTimer < 2 ? <Loading_page /> :
       <>
-        <Header />
+        <Header handleToggle={handleToggle}/>
           <Page_sup />
         <Footer />
       </>
       }
       <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
+      <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
     </div>
   )
 }

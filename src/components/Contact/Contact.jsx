@@ -6,9 +6,8 @@ import Link from 'next/link';
 import { Tooltip } from 'reactstrap';
 import cross from '@/assets/images/Home_Page/cross.png'
 
-export default function Contact() {
+export default function Contact({handleToggle,toggle,setToggle}) {
     const [modal, setModal] = useState(false); 
-    const [toggle, setToggle] = useState(false);
     const [placebox, setPlacebox] = useState(false);
     const [timebox, setTimebox] = useState(false);
     const [whatsTooltipOpen, setWhatsTooltipOpen] = useState(false);
@@ -16,14 +15,8 @@ export default function Contact() {
     const [timeTooltipOpen, setTimeTooltipOpen] = useState(false);
     const [placeTooltipOpen, setPlaceTooltipOpen] = useState(false);
 
-    const toggleRef = useRef(null);
     const boxPlaceRef = useRef(null);
     const boxTimeRef = useRef(null);
-
-    const handleToggle = () => {
-        setToggle(!toggle);
-        console.log("zeft");
-    }
 
     const handlePlaceToggle = () => {
         setPlacebox(!placebox);
@@ -120,8 +113,11 @@ export default function Contact() {
                                             <i class="bi bi-clock text-dark"></i> 
                                         </div>
                                         <div>
-                                         Saturday to Thursday from 8 am to 5 pm
-                                        <div>(Local Time in Makkah, Saudi Arabia)</div>
+                                         Saturday to Thursday from 
+                                         <div className='my-2'>
+                                            <span className='fw-bold text-light bg-primary rounded p-1'> 8 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>5 Pm</span>
+                                        </div>
+                                        <div>(Local Time in <span className='fw-bold'>Makkah, Saudi Arabia</span>)</div>
                                         </div>
                                     </li>
                                     <li className='d-flex'>
@@ -129,17 +125,17 @@ export default function Contact() {
                                             <i class="bi bi-clock text-dark"></i> 
                                         </div>
                                         <div>
-                                         Saturday to Thursday from 8 am to 5 pm
-                                        <div>(Local Time in Makkah, Saudi Arabia)</div>
+                                         Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>9 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>5 Pm</span></div>
+                                        <div>(Local Time in <span className='fw-bold'>Cairo, Egypt</span>)</div>
                                         </div>
                                     </li>
                                     <li className='d-flex'>
                                         <div className='me-2'>
                                             <i class="bi bi-clock text-dark"></i> 
                                         </div>
-                                        <div>
-                                         Saturday to Thursday from 8 am to 5 pm
-                                        <div>(Local Time in Makkah, Saudi Arabia)</div>
+                                        <div >
+                                         Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>5 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>2 Pm</span></div>
+                                        <div>(Local Time in <span className='fw-bold'>UTC</span>)</div>
                                         </div>
                                     </li>
                                 </ul>

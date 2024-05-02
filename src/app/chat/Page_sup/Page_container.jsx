@@ -4,6 +4,7 @@ import Header from '@/components/Layout/Header/Header'
 import Page_sup from './Page_contant'
 import Loading_page from '@/components/Loading_page/Loading_page'
 import { useEffect, useState } from 'react'
+import Contact from '@/components/Contact/Contact'
 
 export const metadata = {
     title: "CladCut",
@@ -13,6 +14,11 @@ export const metadata = {
 
 export default function Page() {
     const [showTimer , setShowTimer] = useState(0)
+    const [toggle, setToggle] = useState(false);
+
+    const handleToggle = () => {
+      setToggle(!toggle);
+  }
   
     function handleTimer(){
       setShowTimer(showTimer + 1)
@@ -31,11 +37,13 @@ export default function Page() {
         {
       showTimer < 2 ? <Loading_page /> :
       <>
-        <Header />
+        <Header handleToggle={handleToggle}/>
           <Page_sup />
         <Footer />
       </>
       }
+            <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
+
     </div>
   )
 }

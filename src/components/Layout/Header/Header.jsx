@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import PositionedSnackbar from '@/components/Reuse/Section_Head/SnackBar';
 
-export default function Header() {
+export default function Header({handleToggle}) {
     const headerScrol = useRef();
     const [getWidowY, setWindowY] = useState();
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -97,7 +97,7 @@ export default function Header() {
                                     <Link href="/#about" className='nav-link-item'>ABOUT US</Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact" className='nav-link-item'>CONTACT US</Link>
+                                    <a onClick={handleToggle} className='pointer nav-link-item'>CONTACT US</a>
                                 </li>
                             </ul>
                         </nav>

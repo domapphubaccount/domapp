@@ -1,4 +1,5 @@
 "use client"
+import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import Loading_page from "@/components/Loading_page/Loading_page";
@@ -16,6 +17,11 @@ import ScrollToTop from 'react-scroll-to-top'
 
 export default function Home() {
   const [showTimer , setShowTimer] = useState(0)
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+}
   
   function handleTimer(){
     setShowTimer(showTimer + 1)
@@ -33,7 +39,7 @@ export default function Home() {
     {
       showTimer < 3 ? <Loading_page /> :
       <>
-    <Header />
+    <Header handleToggle={handleToggle}/>
     <Section_1 />
     <Section_2 />
     {/* <Section_5 /> */}
@@ -46,6 +52,7 @@ export default function Home() {
     <Footer />
     </>
     }
+      <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
       <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
     </div>
   );
