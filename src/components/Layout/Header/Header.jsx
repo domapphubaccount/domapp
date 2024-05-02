@@ -34,7 +34,7 @@ export default function Header() {
     return (
         <header>
             <Container className='nav-container'>
-                <div className={`navbar_container ${getWidowY >= 600 && 'nav_active'}`} id="main_nav" ref={headerScrol}>
+                <div className={`navbar_container ${getWidowY >= 100 && 'nav_active'}`} id="main_nav" ref={headerScrol}>
                     <div>
                         <Image onClick={()=>router.push('/')} src={getWidowY >= 600 ? Logo : DarkLogo} alt="main logo" className="main_logo" style={{cursor:'pointer'}} />
                     </div>

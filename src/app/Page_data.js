@@ -110,7 +110,7 @@ export const items = [
       src: product_1,
       title: 'Windload',
       link:'/windload',
-      page:'https://domapphub.surge.sh/login/',
+      page:'https://dometools-fv24.onrender.com/login/',
       caption: 'Generate Wind Pressure Designs',
       Section_2:{
         first:{

@@ -106,7 +106,7 @@ export default function Section_1() {
                                                             >
                                                                 <option className="p-2" value="">Select an option</option>
                                                                 <option className="p-2" value="1">Cladcut</option>
-                                                                <option className="p-2" value="2">FacadStatic</option>
+                                                                {/* <option className="p-2" value="2">FacadStatic</option> */}
                                                                 <option className="p-2" value="3">Windload</option>
                                                                 <option className="p-2" value="4">ERP System</option>
                                                                 <option className="p-2" value="5">RD APP</option>

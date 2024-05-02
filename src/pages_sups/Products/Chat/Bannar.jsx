@@ -4,6 +4,7 @@ import { Col, Row } from 'reactstrap'
 import ChatIcon from "@/assets/images/back_drops/drop4.png"
 import Chat_bannar from "@/assets/images/Products_Page/Chat/bannar/bannar_icon.png"
 import { league } from '@/pages_sups/Home/Section_1/Section_1'
+import Link from 'next/link'
 
 export default function Bannar({bannar,title,caption}) {
 
@@ -26,9 +27,9 @@ export default function Bannar({bannar,title,caption}) {
                                 </p>
                             </div>
                             <div>
-                                <a href='https://whatsappdome.onrender.com/dashboard'>
+                                <Link href='/contact'>
                                     Get Started
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     

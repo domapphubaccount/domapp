@@ -115,9 +115,32 @@ export default function Contact() {
                         {timebox &&
                             <div className='box_place' data-aos="fade-up" data-aos-duration="500" ref={boxTimeRef}>
                                 <ul>
-                                    <li>
-                                        Saturday to Thursday from 8 am to 5 pm
-                                    <div>(Local Time in Makkah, Saudi Arabia)</div>
+                                    <li className='d-flex'>
+                                        <div className='me-2'>
+                                            <i class="bi bi-clock text-dark"></i> 
+                                        </div>
+                                        <div>
+                                         Saturday to Thursday from 8 am to 5 pm
+                                        <div>(Local Time in Makkah, Saudi Arabia)</div>
+                                        </div>
+                                    </li>
+                                    <li className='d-flex'>
+                                        <div className='me-2'>
+                                            <i class="bi bi-clock text-dark"></i> 
+                                        </div>
+                                        <div>
+                                         Saturday to Thursday from 8 am to 5 pm
+                                        <div>(Local Time in Makkah, Saudi Arabia)</div>
+                                        </div>
+                                    </li>
+                                    <li className='d-flex'>
+                                        <div className='me-2'>
+                                            <i class="bi bi-clock text-dark"></i> 
+                                        </div>
+                                        <div>
+                                         Saturday to Thursday from 8 am to 5 pm
+                                        <div>(Local Time in Makkah, Saudi Arabia)</div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -140,14 +163,25 @@ export default function Contact() {
                                     {/* <li>
                                         <small className='fw-bold'>1- </small>2198 , Al Malaz, Salah Ad Din Al Ayyubi Rd, Building No. 7259 , Al Riyadh , Saudi Arabia
                                     </li> */}
-                                    <li>
-                                    <small className='fw-bold'>1- </small>20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt
+                                    <li className='d-flex'>
+                                    <div className='fw-bold me-2'>
+                                        <span> 
+                                            <i class="bi bi-geo-alt text-dark"></i>
+                                        </span>
+                                    </div>
+                                    <span>20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt</span>
                                     </li>
-                                    <li>
-                                    <small className='fw-bold'>2- </small>Al Geish Rd, Jad Allah Tower,4th Floor, Office No 309, 412, KFS, Egypt
+                                    <li className='d-flex'>
+                                        <div className='fw-bold me-2'>
+                                            <i class="bi bi-geo-alt text-dark"></i>
+                                        </div>
+                                        <span>Al Geish Rd, Jad Allah Tower,4th Floor, Office No 309, 412, KFS, Egypt</span>
                                     </li>
-                                    <li>
-                                    <small className='fw-bold'>3- </small>Al Geish Rd, Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt
+                                    <li className='d-flex'>
+                                        <div className='fw-bold me-2'>
+                                            <i class="bi bi-geo-alt text-dark"></i>
+                                        </div>
+                                        <span>Al Geish Rd, Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt</span>
                                     </li>
                                 </ul>
                             </div>
