@@ -1,3 +1,5 @@
+"use client"
+import React from "react";
 import Page_container from "./Page_sup/Page_container"
 export const metadata = {
     title: "Facade Static",
