@@ -116,7 +116,8 @@ export default function Contact() {
                             <div className='box_place' data-aos="fade-up" data-aos-duration="500" ref={boxTimeRef}>
                                 <ul>
                                     <li>
-                                    Saturday to Thursday from 9 am to 5 pm
+                                        Saturday to Thursday from 8 am to 5 pm
+                                    <div>(Local Time in Makkah, Saudi Arabia)</div>
                                     </li>
                                 </ul>
                             </div>

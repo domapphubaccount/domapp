@@ -38,9 +38,9 @@ export default function Bannar2() {
                     <a className="btn text-white me-3" href="/contact" target="_blank">
                         Get Started
                     </a>
-                    <a className="btn text-white pricing_ERP" href="https://docs.pixelstrap.net/django/mofi/document/" target="_blank">
+                    {/* <a className="btn text-white pricing_ERP" href="https://docs.pixelstrap.net/django/mofi/document/" target="_blank">
                         Pricing
-                    </a>
+                    </a> */}
                 </div>
               </div>
             </div>
