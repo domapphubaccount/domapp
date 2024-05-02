@@ -5,6 +5,7 @@ import { Container, Col, Row } from 'reactstrap';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import Contact from "@/assets/images/Products_Page/contact/contact.jpg";
+import axios from 'axios';
 
 export default function Section_1() {
     
@@ -15,17 +16,18 @@ export default function Section_1() {
         product:'',
         message:''
     };
-
     const validationSchema = Yup.object().shape({
         name: Yup.string().required('Name is required'),
         email: Yup.string().email('Invalid email').required('Email is required'),
         // product: Yup.string().required('Email is required'),
+        phone: Yup.string().matches(/^\+?[0-9]{8,14}$/, 'Phone number is not valid'),
         title: Yup.string().required('Title is required'),
         message: Yup.string().required('Message is required'),
     });
 
     const handleSubmit = (values, actions) => {
         // Handle form submission logic here
+        axios.post('',values)
         console.log(values);
         actions.setSubmitting(false); 
     };
@@ -65,6 +67,17 @@ export default function Section_1() {
                                                                 onChange={handleChange}
                                                             />
                                                             {errors.name && touched.name && <div className="text-danger">{errors.name}</div>}     
+                                                        </Col>
+                                                        <Col sm={12} className='my-2'>
+                                                            <input 
+                                                                type="text" 
+                                                                className='w-100 p-3 rounded border border-2' 
+                                                                placeholder="Phone" 
+                                                                name="phone" 
+                                                                value={values.phone} 
+                                                                onChange={handleChange}
+                                                            />
+                                                            {errors.phone && touched.phone && <div className="text-danger">{errors.phone}</div>}     
                                                         </Col>
                                                         <Col sm={12} className='my-2'>
                                                             <input 

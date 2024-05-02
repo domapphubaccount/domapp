@@ -794,6 +794,7 @@ footer{
     .carousal_container{
         position: relative;
         height: 80vh;
+        min-height: 600px;
         border-radius: 15px;
         border: 2px solid #8080800a;
 
