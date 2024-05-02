@@ -1,13 +1,14 @@
 "use client"
 
-import React from 'react';
-import { Container, Col, Row } from 'reactstrap';
+import React, { useState } from 'react';
+import { Container, Col, Row, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import Contact from "@/assets/images/Products_Page/contact/contact.jpg";
 import axios from 'axios';
 
 export default function Section_1() {
+    const [module , setModule] = useState(false)
     
     const initialValues = {
         name:'',
@@ -27,10 +28,14 @@ export default function Section_1() {
 
     const handleSubmit = (values, actions) => {
         // Handle form submission logic here
-        axios.post('',values)
+        axios.post('https://domapphub.com/Care/contacts.php',values).then(res => {setModule(true); console.log('done')})
         console.log(values);
         actions.setSubmitting(false); 
     };
+
+    const toggleModule = () => {
+        setModule(!module)
+    }
 
     return (
         <section className='privacy-content'>
@@ -158,6 +163,19 @@ export default function Section_1() {
                     </div>
                 </div>
             </Container>
+            <Modal isOpen={module} toggle={toggleModule} size="lg"> {/* Toggle modal visibility */}
+                <ModalHeader toggle={toggleModule}>Thanks for your message</ModalHeader>
+                <ModalBody>
+                    <div className='text-center py-4'>
+
+                       <h5 className='pb-3'> We have received your message </h5>
+                       <p> we will contact you as soon as posible</p>
+                    </div>
+                </ModalBody>
+                <ModalFooter>
+                <button color="secondary" onClick={toggleModule}>Close</button>
+                </ModalFooter>
+            </Modal>
         </section>
     );
 }
