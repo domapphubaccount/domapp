@@ -19,7 +19,7 @@ export default function Home() {
         <Header handleToggle={handleToggle}/>
         <Section__head />
         <Section_1 />
-    <Footer />
+        <Footer />
     <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
 
     </div>
