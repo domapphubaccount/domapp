@@ -65,7 +65,7 @@ const MyCarousel = () => {
           data-aos-duration="3000"
         >
         <ul>
-          <div className='transformed_circle' style={{transform: `translate(${activeIndex === 1 ? '0px' : activeIndex === 2 ? '95px' : activeIndex === 3 ? '200px' : activeIndex === 4 ? '196px' : activeIndex === 5 ? '315px' : '400px' })` , width: activeIndex === 3 ? '126px' : activeIndex === 4 && '120px'  }}></div>
+          <div className='transformed_circle' style={{transform: `translate(${activeIndex === 1 ? '0px' : activeIndex === 2 ? '95px' : activeIndex === 9 ? '200px' : activeIndex === 3 ? '196px' : activeIndex === 4 ? '305px' : '400px' })` , width: activeIndex === 3 ? '126px' : activeIndex === 4 && '120px'  }}></div>
             {items.map((item,index) => (
               <li key={index} className={`${item.index === activeIndex && 'active_card'}`} >
                   {item.index == activeIndex ?
@@ -111,6 +111,7 @@ const MyCarousel = () => {
                               </div>
                             </div>
                           </Col>
+                          {console.log(item)}
                           <Col sm={8} md={8} lg={8} className={`d-flex align-items-center justify-content-center rounded transformed_video video_col`} >
                             <video  className="rounded h-100 w-100" preload="none" loop muted autoPlay>
                                 <source src={item.video} type="video/mp4" />

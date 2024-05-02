@@ -82,7 +82,7 @@ export const items = [
     //   ]
     // },
     {
-      index: 4,
+      index: 3,
       src: product_3,
       title: 'ERP System',
       link: '/erp',
@@ -108,7 +108,7 @@ export const items = [
       ]
     },
     {
-      index: 5,
+      index: 4,
       src: product_3,
       title: 'ChatPlus',
       link: '/chat',
@@ -134,7 +134,7 @@ export const items = [
       ]
     },
     {
-      index: 6,
+      index: 5,
       src: product_3,
       title: 'RD App',
       link: '/rd',
