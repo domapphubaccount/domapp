@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstrap'; // Import Modal components from Reactstrap
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"; // Import slick carousel styles
 import S1 from '@/assets/images/Products_Page/Clad/Carousal/as1.png';
 import S2 from '@/assets/images/Products_Page/Clad/Carousal/as2.png';
 import S3 from '@/assets/images/Products_Page/Clad/Carousal/as3.png';
@@ -9,7 +11,7 @@ import W1 from '@/assets/images/Products_Page/Wind/Carousal/Windloadexport_1.jpe
 import W2 from '@/assets/images/Products_Page/Wind/Carousal/Windloadexport_2.jpeg';
 import { usePathname } from 'next/navigation';
 
-export default function Screens_Section({sections}) {
+export default function Screens_Section({ sections }) {
     const router = usePathname();
     const [modal, setModal] = useState(false); // State to control modal visibility
     const [modalImage, setModalImage] = useState(null);
@@ -25,7 +27,10 @@ export default function Screens_Section({sections}) {
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
-        initialSlide: 2
+        initialSlide: 2,
+        arrows: true,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     };
 
     const screens = [S1, S2, S3, S4];
@@ -36,6 +41,28 @@ export default function Screens_Section({sections}) {
         toggleModal(); // Toggle modal visibility when an image is clicked
     };
 
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "gray",borderRadius: '50%' }}
+            onClick={onClick}
+          />
+        );
+      }
+      
+      function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "gray",borderRadius: '50%' }}
+            onClick={onClick}
+          />
+        );
+      }
+
     return (
         <section className=''>
             <div className='screens_section'>
@@ -43,8 +70,8 @@ export default function Screens_Section({sections}) {
                     <div className="row align-items-center mb-5 card_shadow p-3 row-card carousal_inside" data-aos="fade-up" data-aos-duration="3000">
                         <div className="col-lg-6 services-details">
                             <div className="services-details-desc caption_products">
-                                <h3>{sections.first.caption.header}</h3>
-                                <p>{sections.first.caption.body}</p>
+                                <h3>{sections.seconed.caption.header}</h3>
+                                <p>{sections.seconed.caption.body}</p>
                             </div>
                         </div>
 

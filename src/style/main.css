@@ -3966,3 +3966,9 @@ z-index: 2;
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 82%, 0.425) 3px);
     color: #ffffff;
 }
+/* .arrow-slick:before{
+    content: '';
+    background: gray;
+    width: 30px;
+    height: 30px;
+} */
