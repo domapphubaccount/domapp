@@ -42,7 +42,7 @@ export default function Header({handleToggle}) {
                         <nav>
                             <ul className='nav-list-container'>
                                 <li>
-                                    <Link href="/#home" className='nav-link-item'>HOME</Link>
+                                    <Link href="/#home" className='nav-link-item' shallow>HOME</Link>
                                 </li>
                                 <li className="custom-dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
                                     <Link href="/#products" className='nav-link-item'>PRODUCTS</Link>
@@ -54,8 +54,8 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Design SoftWare</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100' href={'/cladCut'}>Cladcut</Link></li>
-                                                                <li><Link className='d-block w-100 h-100' href={'/windload'}>Windload <span className='free_icon_product' >Free</span></Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/cladCut'} shallow>Cladcut</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/windload'} shallow>Windload <span className='free_icon_product' >Free</span></Link></li>
                                                                 {/* <li><Link className='d-block w-100 h-100' href={'/facade'}>Facade Static <span className='free_icon_product' >Free</span></Link></li> */}
                                                             </ul>
                                                         </li>
@@ -72,7 +72,7 @@ export default function Header({handleToggle}) {
                                                             <div>Risk Assessment <div className='text-secondary'>comply with SBC</div></div>
                                                             <ul>
                                                                 <li onClick={handleClick}>
-                                                                    <Link className='d-block w-100 h-100' href={'/rd'}>RD-App</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/rd'} shallow>RD-App</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -80,7 +80,7 @@ export default function Header({handleToggle}) {
                                                             <div>Communication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/chat'}>ChatPlus</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/chat'} shallow>ChatPlus</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -91,10 +91,10 @@ export default function Header({handleToggle}) {
                                     )}
                                 </li>
                                 <li>
-                                    <Link href="/#whatwedo" className='nav-link-item'>WHAT WE DO</Link>
+                                    <Link href="/#whatwedo" className='nav-link-item' shallow>WHAT WE DO</Link>
                                 </li>
                                 <li>
-                                    <Link href="/#about" className='nav-link-item'>ABOUT US</Link>
+                                    <Link href="/#about" className='nav-link-item' shallow>ABOUT US</Link>
                                 </li>
                                 <li>
                                     <a onClick={handleToggle} className='pointer nav-link-item'>CONTACT US</a>
