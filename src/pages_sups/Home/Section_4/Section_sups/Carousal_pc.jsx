@@ -111,7 +111,6 @@ const MyCarousel = () => {
                               </div>
                             </div>
                           </Col>
-                          {console.log(item)}
                           <Col sm={8} md={8} lg={8} className={`d-flex align-items-center justify-content-center rounded transformed_video video_col`} >
                             <video  className="rounded h-100 w-100" preload="none" loop muted autoPlay>
                                 <source src={item.video} type="video/mp4" />

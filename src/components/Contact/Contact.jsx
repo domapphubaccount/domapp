@@ -137,17 +137,17 @@ export default function Contact() {
                         {placebox &&
                             <div className='box_place' data-aos="fade-up" data-aos-duration="500" ref={boxPlaceRef}>
                                 <ul>
+                                    {/* <li>
+                                        <small className='fw-bold'>1- </small>2198 , Al Malaz, Salah Ad Din Al Ayyubi Rd, Building No. 7259 , Al Riyadh , Saudi Arabia
+                                    </li> */}
                                     <li>
-                                        <small className='fw-bold'>1- </small>Al Malaz, Salah Ad Din Al Ayyubi Rd, Riyadh Saudi Arabia
+                                    <small className='fw-bold'>1- </small>20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt
                                     </li>
                                     <li>
-                                    <small className='fw-bold'>2- </small>20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt
+                                    <small className='fw-bold'>2- </small>Al Geish Rd, Jad Allah Tower,4th Floor, Office No 309, 412, KFS, Egypt
                                     </li>
                                     <li>
-                                    <small className='fw-bold'>3- </small>Al Geish Rd, Jad Allah Tower,4th Floor, Office No 309, 412, KFS, Egypt
-                                    </li>
-                                    <li>
-                                    <small className='fw-bold'>4- </small>Al Geish Rd, Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt
+                                    <small className='fw-bold'>3- </small>Al Geish Rd, Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt
                                     </li>
                                 </ul>
                             </div>
