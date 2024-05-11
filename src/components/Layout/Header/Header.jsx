@@ -62,7 +62,7 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Business Adminstration</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100' href={'/erp'} shallow>ERP System</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/erp'} shallow>Dom ERP</Link></li>
                                                             </ul>
                                                         </li>
                                                     {/* </ul>
@@ -80,7 +80,7 @@ export default function Header({handleToggle}) {
                                                             <div>Communication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/chat'} shallow>ChatPlus</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/chat'} shallow>Dom CRM</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>

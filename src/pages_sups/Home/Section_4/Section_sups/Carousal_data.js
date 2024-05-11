@@ -2,13 +2,16 @@ import product_1 from "@/assets/images/Home_Page/products/pr1.jpg"
 import product_2 from "@/assets/images/Home_Page/products/pr2.jpg"
 import product_3 from "@/assets/images/Home_Page/products/pr3.jpg"
 
+// import ERPGIF from '../../public/Products/DomERP.gif'
+
+
 export const items = [
     {
       index: 1,
       src: product_1,
       title: 'CladCut',
       link:'/cladCut',
-      video: '/Home_page/carousal/CladCut.mp4',
+      video: '/Products/CladCut.gif',
       caption: 'Produce detailed fabrication drawing with lightning speed.',
       dataList: [
         {
@@ -34,7 +37,7 @@ export const items = [
       src: product_3,
       title: 'Windload',
       link:'/windload',
-      video:'/Home_page/carousal/windload.mp4',
+      video:'/Products/Winldload.gif',
       caption: 'Generate Wind Pressure Designs.',
       dataList: [
         {
@@ -84,9 +87,9 @@ export const items = [
     {
       index: 3,
       src: product_3,
-      title: 'ERP System',
+      title: 'Dom ERP',
       link: '/erp',
-      video:'/Home_page/carousal/ERPSystem.mp4',
+      video:'/Products/DomERP.gif',
       caption: 'Project management, Invoicing, Leads, Tasks, Time tracking and more.',
       dataList: [
         {
@@ -110,9 +113,9 @@ export const items = [
     {
       index: 4,
       src: product_3,
-      title: 'ChatPlus',
+      title: 'Dom CRM',
       link: '/chat',
-      video:'/Home_page/carousal/chatplus.mp4',
+      video:'/Products/DomCRM.gif',
       caption: 'Empower your connection with customers through messaging.',
       dataList: [
         {
@@ -138,7 +141,7 @@ export const items = [
       src: product_3,
       title: 'RD App',
       link: '/rd',
-      video:'/Home_page/carousal/RDAPP.mp4',
+      video:'/Products/RDAPP.gif',
       caption: 'Smart solutions that save time, Cost, Boosting efficiency and communication effort, Aligned with the Saudi Building Code      ',
       dataList: [
         {
