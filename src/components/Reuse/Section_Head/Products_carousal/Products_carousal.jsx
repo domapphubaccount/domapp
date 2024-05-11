@@ -11,7 +11,7 @@ import { Fab } from "@mui/material";
 import Clad from '@/assets/images/Products_Page/products_carousal/clad.png'
 import Wind from '@/assets/images/Products_Page/products_carousal/wind.png'
 import RD from '@/assets/images/Products_Page/products_carousal/RD.png'
-import Facade from '@/assets/images/Products_Page/products_carousal/facade.png'
+// import Facade from '@/assets/images/Products_Page/products_carousal/facade.png'
 import Chat from '@/assets/images/Products_Page/products_carousal/chat.png'
 import Erp from '@/assets/images/Products_Page/products_carousal/erp.png'
 import Image from "next/image";
