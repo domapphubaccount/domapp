@@ -30,7 +30,7 @@ export default function Bannar2() {
                     </div>
                   </div>
                 </div>
-                <h2>Dom <span>CRM  </span><img className="line-text" src="../assets/images/landing/home/line.png" alt=""/></h2>
+                <h2>Dom <span>ERP  </span><img className="line-text" src="../assets/images/landing/home/line.png" alt=""/></h2>
                 <p>Comprehensive client relationship management application . 
                 highly advanced features designed to streamline project management , time tracking and more ...
                 </p>
