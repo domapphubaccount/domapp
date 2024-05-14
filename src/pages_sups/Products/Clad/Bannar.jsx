@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { league } from '@/pages_sups/Home/Section_1/Section_1'
-import arrow from '@/assets/images/Products_Page/Clad/arrow.svg'
 import { Container } from 'reactstrap'
+import arrow from '@/assets/images/Products_Page/Clad/arrow.svg'
 import dollar from "@/assets/images/Products_Page/Clad/dollar.png"
 
 export default function Bannar({bannar,title,caption,linkPage}) {

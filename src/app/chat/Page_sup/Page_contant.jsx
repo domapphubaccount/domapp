@@ -20,6 +20,7 @@ import s6 from "@/assets/images/Products_Page/Chat/carousal/chat_inside.png";
 import s7 from "@/assets/images/Products_Page/Chat/carousal/conversation.png";
 import s8 from "@/assets/images/Products_Page/Chat/carousal/service.png";
 import s9 from "@/assets/images/Products_Page/Chat/carousal/answer.png";
+import Pricing from '@/pages_sups/Products/Chat/Chat/Pricing';
 
 const product_carousal = [
   s1, s2, s3, s4, s5, s6, s7, s8, s9

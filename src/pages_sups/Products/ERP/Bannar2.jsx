@@ -1,8 +1,9 @@
 import React from 'react'
 import { Container } from 'reactstrap'
 import Erp_Dash from "@/assets/images/Products_Page/Erp/ERP_dash.png"
-import d2 from "@/assets/images/Products_Page/Erp/2.png"
-import d3 from "@/assets/images/Products_Page/Erp/3.png"
+import arrow from '@/assets/images/Products_Page/Clad/arrow.svg'
+import dollar from "@/assets/images/Products_Page/Erp/dollar.png"
+
 
 
 
@@ -36,8 +37,14 @@ export default function Bannar2() {
                 </p>
                 <div className="docutment-button"> 
                     <a className="btn text-white me-3" href="/contact" target="_blank">
-                        Get Started
+                        Try Demo
                     </a>
+                    <a className="mil-link mil-light mil-upper bundle-button erp p-0 ps-2 rounded" href="/erp/pricing">
+                                Pricing
+                                <span className="mil-arrow erp p-2 dis">
+                                    <img src={dollar.src} alt="arrow" />
+                                </span>
+                            </a>
                     {/* <a className="btn text-white pricing_ERP" href="https://docs.pixelstrap.net/django/mofi/document/" target="_blank">
                         Pricing
                     </a> */}

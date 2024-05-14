@@ -26,13 +26,15 @@ export default function Bannar({bannar,title,caption}) {
                                     {caption}
                                 </p>
                             </div>
-                            <div>
-                                <Link href='/contact' shallow>
+                            <div className='d-flex justify-content-center'>
+                                <Link href='/contact' className='mx-2' shallow>
                                     Get Started
+                                </Link>
+                                <Link href='/chat/pricing' className='mx-2'>
+                                    $ Pricing
                                 </Link>
                             </div>
                         </div>
-                    
             </div>
     </section>
   )
