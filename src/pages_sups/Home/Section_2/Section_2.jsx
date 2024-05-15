@@ -7,7 +7,7 @@ import Heading from "@/components/Reuse/Section_Head/Heading";
 export default function Section_2() {
   return (
     <section className="home_section_2" >
-        <Section_head head={1}  title_1={'About Us'}des_1={'we specialize in crafting innovative solutions that redefine possibilities.'} sectionId="about"/>
+        <Section_head head={1}  title_1={'About Us'}des_1={'Specialize in crafting innovative solutions that redefine possibilities.'} sectionId="about"/>
         {/* <Heading  head="About Us" body="we specialize in crafting innovative solutions that redefine possibilities." back="DOMAPP"/> */}
         <Container>
             <Row className="card_shadow card_dis rounded mb-5" >
@@ -25,11 +25,11 @@ export default function Section_2() {
                 </Col>
                 <Col sm={12} lg={6} md={12}>
                     <div data-aos="fade-up" data-aos-duration="2000" >
-                        <div><h5>At Domapp Our Expertise Shines Bright .</h5></div>
+                        <div><h5>At Domapp Our Expertise Shines Brights .</h5></div>
                         <div className="card_list">
                             <ul>
                                 <li>
-                                We design solutions that surpass expectations and propel our clients towards success.
+                                We design solutions that surpass expectations and propel our clients toward success.
                                 </li>
                                 <li>
                                 Our unwavering commitment lies in delivering consistent, reliable, and cost-effective services that adhere to the highest quality standards. We continuously strive to meet and exceed the needs and expectations of our clients, ensuring their utmost satisfaction.
@@ -38,7 +38,7 @@ export default function Section_2() {
                                 We craft and refine client-driven concepts to seamlessly integrate with our precisely designed applications ensuring optimal functionality and user satisfaction at every step.
                                 </li>
                                 <li>
-                                With our expertise, we develop, and design applications tailored to the client's requirements. Our expertise allows us to customize and modify the applications we design to aligns perfectly with the client's company and business visions.
+                                With our expertise, we develop, and design applications tailored to the client's requirements. Our expertise allows us to customize and modify the applications we design to align perfectly with the client's company and business visions.
                                 </li>
                             </ul>
                         </div>

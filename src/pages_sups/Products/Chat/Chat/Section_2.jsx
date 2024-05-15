@@ -73,7 +73,7 @@ export default function Section_2() {
                             Auto-reply
                             </h4>
                             <p>
-                            Customized automated reply.
+                            Customized automated reply
                             </p>
                         </div>
                     </div>
@@ -96,7 +96,7 @@ export default function Section_2() {
                             Secure Communication
                             </h4>
                             <p>
-                            Guarantee end-to-end encryption for every communication.
+                            Guarantee end-to-end encryption for every communication
                             </p>
                         </div>
                     </div>

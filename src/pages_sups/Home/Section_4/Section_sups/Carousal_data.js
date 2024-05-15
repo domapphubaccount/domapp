@@ -12,7 +12,7 @@ export const items = [
       title: 'CladCut',
       link:'/cladCut',
       video: '/Products/CladCut.gif',
-      caption: 'Produce detailed fabrication drawing with lightning speed.',
+      caption: 'Produce detailed fabrication drawings with exceptional speed and efficiency.',
       dataList: [
         {
           head:'Manage and Modify project data',

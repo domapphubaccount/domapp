@@ -23,7 +23,7 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                                 The future
                             </span> */}
                             <h1 className="mil-upper mil-light mil-mb-60 fw-bold" style={{fontSize:'60px'}}>
-                            <span style={{fontSize:'1.8rem'}}>Fast</span>
+                            {/* <span style={{fontSize:'1.8rem'}}>Fast</span> */}
                             <br />
                             <span className="mil-accent fw-bold" style={{fontSize:'60px'}}>
                             CladCut
@@ -58,9 +58,9 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                                         </span>
                                     </h4>
                                     <p className="mil-light">
-                                        Succeeded 
-                                    <br/>
-                                    m&sup2;
+                                    square meter
+                                    <br/> of 
+                                    Cladding produced  
                                     </p>
                                 </div>
                             </div>
@@ -76,14 +76,14 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                         </p>
                     </div>
                 </div>
-                <div className="col-6">
+                {/* <div className="col-6">
                     <div className="mil-counter-frame mil-light mil-mb-30">
                         <h4 className="mil-accent mil-thin mil-mb-10">
                             <span className="mil-counter" data-number="10">5</span>
                         </h4>
                         <p className="mil-light">Years <br/>Experience</p>
                     </div>
-                </div>
+                </div> */}
                 <div className="col-6">
                     <div className="mil-counter-frame mil-light mil-mb-30">
                         <h4 className="mil-accent mil-thin mil-mb-10">

@@ -14,12 +14,12 @@ export default function Section_3() {
         },
         {
             number: 25000,
-            title: 'Successful Projects'
+            title: 'Successful Jobs'
         },
-        {
-            number: 24,
-            title: 'Support Availability'
-        }
+        // {
+        //     number: 24,
+        //     title: 'Support Availability'
+        // }
     ];
 
     return (
@@ -33,7 +33,7 @@ export default function Section_3() {
                                     <div ref={ref} className="h-100">
                                         <h2 className="fw-bold">
                                             {inView ? (
-                                                <CountUp end={item.number} duration={3} />
+                                                <>+ <CountUp end={item.number} duration={3} /></>
                                             ) : (
                                                 '+'
                                             )}

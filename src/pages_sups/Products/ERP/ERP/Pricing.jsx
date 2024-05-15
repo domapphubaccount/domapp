@@ -87,7 +87,7 @@ function Monthly({priceIcon}){
                         </div>
 
                         <div>
-                            <button className='pricing-btn-erp'>CONTACT SALES</button>
+                            <a href="https://wa.me/201501060885"><button className='pricing-btn-erp'>CONTACT SALES</button></a>
                         </div>
                     </div>
                 </Col>

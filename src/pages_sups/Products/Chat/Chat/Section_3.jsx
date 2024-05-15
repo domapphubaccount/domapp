@@ -7,7 +7,7 @@ export default function Section_3() {
     const firstCols = [
         {
             title:'Maximize support interaction',
-            body:'Enhance customer interaction, lead quality, and communication effectiveness and provide real-time customer support to answering queries, resolving issues, handling complaints, etc.          '
+            body:'Enhance customer interaction, lead quality, and communication effectiveness and provide real-time customer support to answer queries, resolve issues, handle complaints, etc.          '
           },
           {
             title:'Improve Precision',
@@ -33,7 +33,7 @@ export default function Section_3() {
         },
         {
           title:'Archive',
-          body:'Archive and access past conversations effortlessly, Store and retrieve chat transcripts seamlessly, ensuring easy reference and review. Organize your communication history efficiently for enhanced productivity and knowledge retention.          '
+          body:'Archive and access past conversations effortlessly, store and retrieve chat transcripts seamlessly, ensuring easy reference and review. Organize your communication history efficiently for enhanced productivity and knowledge retention.          '
         },
         {
           title:'Automated Business',

@@ -5,15 +5,15 @@ export default function Cards() {
     const cardsData = [
         
         {
-            title: 'Our mission',
+            title: 'Our Mission',
             description: 'to enhance our customer’s success through unique solutions.            '
         },
         {
             title: 'Cutting-Edge Software',
-            description: 'We specialize in developing applications that meets the needs of our clients with precision and creativity, utilizing the latest tech and frameworks.            '
+            description: 'We specialize in developing applications that meet the needs of our clients with precision and creativity, utilizing the latest tech and frameworks.            '
         },
         {
-            title: 'Tech Advancement',
+            title: 'Technology Advancement',
             description: 'Embracing innovation in artificial intelligence, virtual reality, and big data analytics to drive our clients, businesses forward with creativity and expertise.          ' 
         },
         {

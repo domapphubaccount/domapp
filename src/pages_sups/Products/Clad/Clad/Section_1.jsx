@@ -20,9 +20,9 @@ export default function Section_1() {
                         style={{translate: "none", rotate: "none", scale: "none",transform: "translate(0px, 0px)", opacity: 1}}>Effortless Workflow</h2>
                         <p className="mil-up mil-mb-40" style={{translate: "none" ,rotate: "none" ,scale: "none", transform: "translate(0px, 0px)", opacity: 1}}>
                             
-                            <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Intuitive interface guides you through the process.</div>
-                            <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Select your aluminum sheet size.</div>
-                            <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Upload your cladding layout as a DXF file.</div>
+                            <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>An intuitive interface guides you through the process.</div>
+                            <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Select your sheet size.</div>
+                            <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Upload your cladding layout as a DXF or XLS file.</div>
                             <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Sit back and let Clad-Cut handle the rest.</div>
                         </p>
                         {/* <a className="mil-link mil-upper mil-up has-popup-video" style={{cursor: "pointer", translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: 1}}>Watch video<span className="mil-arrow"><img src={arrow.src} alt="arrow"/></span></a> */}
