@@ -12,7 +12,7 @@ export default function Head_2() {
                 </h1>
                 <div className='sub-title'>
                     <div>
-                    <h4 style={{fontSize:'1rem',fontSize: "2rem",color: "rgb(127 209 63)",textShadow: "1px 1px 0px #000"}} className='fw-bold'>Exclusive Features</h4>
+                    <h4 style={{fontSize:'1rem',fontSize: "2rem",color: "black",textShadow: "1px 1px 0px #000"}} className='fw-bold'>Exclusive Features</h4>
                     <h2>Make us proud</h2>
                     </div>
                 </div>

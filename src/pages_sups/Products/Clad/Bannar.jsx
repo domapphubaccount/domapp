@@ -25,7 +25,7 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                             <h1 className="mil-upper mil-light mil-mb-60 fw-bold" style={{fontSize:'60px'}}>
                             {/* <span style={{fontSize:'1.8rem'}}>Fast</span> */}
                             <br />
-                            <span className="mil-accent fw-bold" style={{fontSize:'60px'}}>
+                            <span className="mil-accent fw-bold clad_bannar_title" style={{fontSize:'60px',textStrokeWidth: '3px',textStroketrokeColor:' black'}}>
                             CladCut
                             </span>
                             <br/>

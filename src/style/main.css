@@ -3622,7 +3622,7 @@ footer{
     margin-left: 15px;
     width: 40px;
     height: 40px;
-    background-color: #bcff00;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3647,7 +3647,7 @@ footer{
 }
 
 .mil-accent {
-    color: #bcff00;
+    color: #ffffff;
 }
 .mil-thin {
     font-weight: 500;
@@ -3831,8 +3831,8 @@ footer{
     background-color: #fff;
     padding-top: 80px;
     padding-bottom: 40px;
-    border: 5px solid #bcff00;
-    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, #bcff00 0, #bcff00 3px) 5;
+    border: 5px solid #000000;
+    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, #000000 0, #000000 3px) 5;
 }
 .image_card_clad{
     padding: 10px;
@@ -3860,8 +3860,8 @@ z-index: 2;
 }
 
 .bundle-button:hover {
-    border: 5px solid #bcff00;
-    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, #bcff00 0, #bcff00 3px) 5;
+    border: 5px solid #ffffff;
+    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, #ffffff 0, #ffffff 3px) 5;
     /* Set background color to match border-image */
     background-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 100%, .2) 3px);
 
@@ -4223,4 +4223,9 @@ z-index: 2;
 .erp-demo .pricing-btn-erp:hover{
     color: #5F2CE3 !important;
     background-color: #ffffff !important;
+}
+.clad_bannar_title{
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    color: #fff;
 }
