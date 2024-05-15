@@ -20,7 +20,7 @@ export default function Section_4() {
                         </div>
                         <h4 className="mil-upper mil-mb-20">Reduced Time</h4>
                         <div className="mil-divider-sm mil-mb-20"></div>
-                        <p className="mil-service-text">Go from days to minutes for fabrication orders.</p>
+                        <p className="mil-service-text">Go from days to minutes for fabrication orders</p>
                         <div className="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
                             {/* <img src={i1.src} alt="icon"/> */}
                         </div>
