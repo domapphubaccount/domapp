@@ -71,11 +71,11 @@ export default function Page() {
                     {/* <Section_19 /> */}
                     {/* <Section_5 /> */}
                     {/* <Section_6 /> */}
-                    <div className="py-5">
-                    <Heading head="Our Products" body="You Can Find More Products" back="ERP" />
+                    {/* <div className="py-5">
+                    <Heading head="Our Products" body="You Can Find More Products" back="ERP" /> */}
                     {/* <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/> */}
-                    </div>
-                    <Products_carousal />
+                    {/* </div> */}
+                    {/* <Products_carousal /> */}
               </>
               }
                     <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />

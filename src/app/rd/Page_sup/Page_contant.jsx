@@ -54,8 +54,8 @@ export default function Page() {
                     {/* <div className="py-5">
                         <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/>
                     </div> */}
-                    <Heading head="Our Products" body="You Can Find More Products" back="RD APP" />
-                    <Products_carousal />
+                    {/* <Heading head="Our Products" body="You Can Find More Products" back="RD APP" />
+                    <Products_carousal /> */}
               </>
               }
               <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />

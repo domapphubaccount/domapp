@@ -21,8 +21,8 @@ export default function Product({bannar,title,caption,linkPage}) {
                 <div>
                     <a href={linkPage}>
                         {
-                            title == "CladCut" ? 'Get Started' :
-                            'Start For Free' 
+                            'Get Started' 
+                           
                         }
                     </a>
                 </div>
