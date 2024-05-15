@@ -29,7 +29,7 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                             CladCut
                             </span>
                             <br/>
-                            <span style={{fontSize:'1.5rem'}}>Efficient, accurate aluminum cladding fabrication</span>
+                            <span style={{fontSize:'1.5rem'}}>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>
                             </h1>
                             <a className="mil-link mil-light mil-upper me-3" href="https://dometools-fv24.onrender.com/login/">
                                 TRY FOR FREE

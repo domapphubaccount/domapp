@@ -36,7 +36,7 @@ export default function Section_4() {
                         </div>
                         <h4 className="mil-upper mil-mb-20">Effortless Workflow</h4>
                         <div className="mil-divider-sm mil-mb-20"></div>
-                        <p className="mil-service-text">An intuitive interface simplifies the process.</p>
+                        <p className="mil-service-text">An intuitive interface simplifies the process</p>
                         <div className="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
                             {/* <img src={i1.src} alt="icon"/> */}
                         </div>
@@ -52,7 +52,7 @@ export default function Section_4() {
                         </div>
                         <h4 className="mil-upper mil-mb-20">Improved Efficiency</h4>
                         <div className="mil-divider-sm mil-mb-20"></div>
-                        <p className="mil-service-text">Optimized cutting layouts and clash detection save time and material.</p>
+                        <p className="mil-service-text">Optimized cutting layouts and clash detection save time and material</p>
                         <div className="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
                             {/* <img src={i1.src} alt="icon"/> */}
                         </div>
@@ -68,7 +68,7 @@ export default function Section_4() {
                         </div>
                         <h4 className="mil-upper mil-mb-20">Enhanced Accuracy</h4>
                         <div className="mil-divider-sm mil-mb-20"></div>
-                        <p className="mil-service-text">Precise unfold views and automatic dimensioning minimize errors.</p>
+                        <p className="mil-service-text">Precise unfold views and automatic dimensioning minimize errors</p>
                         <div className="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
                             {/* <img src={i1.src} alt="icon"/> */}
                         </div>
@@ -84,7 +84,7 @@ export default function Section_4() {
                         </div>
                         <h4 className="mil-upper mil-mb-20">Streamlined Installation</h4>
                         <div className="mil-divider-sm mil-mb-20"></div>
-                        <p className="mil-service-text">Installation drawings ensure a smooth on-site process.</p>
+                        <p className="mil-service-text">Installation drawings ensure a smooth on-site process</p>
                         <div className="mil-go-buton mil-icon mil-icon-lg mil-icon-accent-bg">
                             {/* <img src={i1.src} alt="icon"/> */}
                         </div>

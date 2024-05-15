@@ -139,7 +139,7 @@ export const items = [
     {
       index: 5,
       src: product_3,
-      title: 'RD App',
+      title: 'RDApp',
       link: '/rd',
       video:'/Products/RDAPP.gif',
       caption: 'Smart solutions that save time, Cost, Boosting efficiency and communication effort, Aligned with the Saudi Building Code      ',
