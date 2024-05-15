@@ -62,7 +62,7 @@ function Monthly({priceIcon}){
                         <div className='mb-3'><small className='dis'>Meta Message fee not included <br/><Link href="#">...learn more</Link></small></div>
 
                         <div>
-                            <button>CONTACT SALES</button>
+                            <a href="https://wa.me/201501060885"><button>CONTACT SALES</button></a>
                         </div>
                     </div>
                 </Col>
@@ -89,7 +89,7 @@ function Monthly({priceIcon}){
                         <div className='mb-3'><small className='dis'>Meta Message fee not included <br/><Link href="#">...learn more</Link></small></div>
 
                         <div>
-                            <button>CONTACT SALES</button>
+                        <a href="https://wa.me/201501060885"><button>CONTACT SALES</button></a>
                         </div>
                     </div>
                 </Col>
@@ -114,7 +114,7 @@ function Monthly({priceIcon}){
                         <div className='mb-3'><small className='dis'>Meta Message fee not included <br/><Link href="#">...learn more</Link></small></div>
 
                         <div>
-                            <button>CONTACT SALES</button>
+                        <a href="https://wa.me/201501060885"><button>CONTACT SALES</button></a>
                         </div>
                     </div>
                 </Col>
