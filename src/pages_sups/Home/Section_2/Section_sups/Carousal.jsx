@@ -12,7 +12,7 @@ import { Fab } from "@mui/material";
 const cardsData = [
         
   {
-      title: 'Our mission',
+      title: 'Our Mission',
       description: 'to enhance our customer’s success through unique solutions.     ',
       link: '/cladCut'
   },
@@ -32,7 +32,7 @@ const cardsData = [
       link: '/cladCut'
   },
   {
-      title: 'Tailored Solutions',
+      title: 'Specialized Solutions',
       description: 'Crafting custom applications to fulfill unique requirements and objectives, ensuring our clients, success and business growth. ',
       link: '/cladCut'
   },

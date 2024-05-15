@@ -21,7 +21,7 @@ export default function Cards() {
             description: 'From Cladcut to Chatplus, our projects showcase our commitment to pushing boundaries and creating groundbreaking solutions that make a difference.            '
         },
         {
-            title: 'Tailored Solutions',
+            title: 'Specialized Solutions',
             description: 'Crafting custom applications to fulfill unique requirements and objectives, ensuring our clients, success and business growth.           '
         },
         {
