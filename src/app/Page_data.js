@@ -260,7 +260,7 @@ export const items = [
       title: 'ChatPlus',
       link: '/erp',
       small_caption: 'Simple, Flexible, and Powerfull',
-      caption: 'Comprehensive client relationship management application .',
+      caption: 'Empower your connection with customers through messaging.',
       Section_2:{
         first:{
           caption:{

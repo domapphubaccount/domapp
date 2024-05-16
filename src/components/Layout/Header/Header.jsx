@@ -17,16 +17,16 @@ export default function Header({handleToggle}) {
     const router = useRouter()
     const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setWindowY(window.scrollY);
-        };
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         setWindowY(window.scrollY);
+    //     };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
 
     const handleClick = (newState) => () => {
         setOpen(true);
@@ -34,9 +34,9 @@ export default function Header({handleToggle}) {
     return (
         <header>
             <Container className='nav-container'>
-                <div className={`navbar_container ${getWidowY >= 100 && 'nav_active'}`} id="main_nav" ref={headerScrol}>
+                <div className={`navbar_container  nav_active`} id="main_nav" ref={headerScrol}>
                     <div>
-                        <Image onClick={()=>router.push('/')} src={getWidowY >= 600 ? Logo : DarkLogo} alt="main logo" className="main_logo" style={{cursor:'pointer'}} />
+                        <Image onClick={()=>router.push('/')} src={Logo} alt="main logo" className="main_logo" style={{cursor:'pointer'}} />
                     </div>
                     <div className="nav">
                         <nav>

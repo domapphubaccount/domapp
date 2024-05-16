@@ -24,17 +24,16 @@ export default function Bannar2() {
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-5 col-md-6">
               <div className="home-text">
-                <div className="main-title">
+                {/* <div className="main-title">
                   <div className="d-flex align-items-center gap-2">
                     <div className="flex-shrink-0"><img src="../assets/images/landing/icon/Rocket.png" alt=""/></div>
                     <div className="flex-grow-1">
                       <p className="m-0">Simple, Flexible, and Powerfull</p>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <h2>Dom <span>ERP  </span><img className="line-text" src="../assets/images/landing/home/line.png" alt=""/></h2>
-                <p>Comprehensive client relationship management application . 
-                highly advanced features designed to streamline project management , time tracking and more ...
+                <p>Project management, Invoicing, Leads, Tasks, Time tracking and more...
                 </p>
                 <div className="docutment-button"> 
                     <a className="btn text-white me-3" href="https://erp.domapphub.com/signup" target="_blank">
