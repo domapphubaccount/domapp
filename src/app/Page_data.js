@@ -257,7 +257,7 @@ export const items = [
     {
       index: 4,
       src: product_3,
-      title: 'Dom CRM',
+      title: 'ChatPlus',
       link: '/erp',
       small_caption: 'Simple, Flexible, and Powerfull',
       caption: 'Comprehensive client relationship management application .',
