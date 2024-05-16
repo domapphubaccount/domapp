@@ -113,7 +113,7 @@ export const items = [
     {
       index: 4,
       src: product_3,
-      title: 'Dom CRM',
+      title: 'ChatPlus',
       link: '/chat',
       video:'/Products/DomCRM.gif',
       caption: 'Empower your connection with customers through messaging.',
