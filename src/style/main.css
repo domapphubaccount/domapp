@@ -4229,3 +4229,9 @@ z-index: 2;
     -webkit-text-stroke-color: black;
     color: #fff;
 }
+.lngg{
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    border-radius: 20px;
+}

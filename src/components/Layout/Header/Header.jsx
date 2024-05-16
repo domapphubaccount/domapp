@@ -8,25 +8,26 @@ import { Container, Row, Col } from 'reactstrap';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import PositionedSnackbar from '@/components/Reuse/Section_Head/SnackBar';
+import Lang from './LNG/Lang';
 
 export default function Header({handleToggle}) {
     const headerScrol = useRef();
-    const [getWidowY, setWindowY] = useState();
+    const [getWidowY, setWindowY] = useState(0);
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [open, setOpen] = React.useState(false);
     const router = useRouter()
     const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         setWindowY(window.scrollY);
-    //     };
+    useEffect(() => {
+        const handleScroll = () => {
+            setWindowY(window.scrollY);
+        };
 
-    //     window.addEventListener("scroll", handleScroll);
-    //     return () => {
-    //         window.removeEventListener("scroll", handleScroll);
-    //     };
-    // }, []);
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     const handleClick = (newState) => () => {
         setOpen(true);
@@ -108,6 +109,9 @@ export default function Header({handleToggle}) {
                         <MobileNav />
                     </div>
                 </div>
+                { getWidowY < 100 &&
+                <Lang />
+                }
             </Container>
             <PositionedSnackbar handleClick={handleClick} setOpen={setOpen} open={open}/>
         </header>
