@@ -165,6 +165,14 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                             <i class="bi bi-geo-alt text-dark"></i>
                                         </span>
                                     </div>
+                                    <span>2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, Al Riyadh, Saudi Arabia</span>
+                                    </li>
+                                    <li className='d-flex'>
+                                    <div className='fw-bold me-2'>
+                                        <span> 
+                                            <i class="bi bi-geo-alt text-dark"></i>
+                                        </span>
+                                    </div>
                                     <span>20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt</span>
                                     </li>
                                     <li className='d-flex'>

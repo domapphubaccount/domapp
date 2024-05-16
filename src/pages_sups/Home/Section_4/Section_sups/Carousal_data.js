@@ -142,7 +142,7 @@ export const items = [
       title: 'RDApp',
       link: '/rd',
       video:'/Products/RDAPP.gif',
-      caption: 'Smart solutions that save time, Cost, Boosting efficiency and communication effort, Aligned with the Saudi Building Code      ',
+      caption: 'Risk assessment complying with saudi building code',
       dataList: [
         {
           head:'Manage and Modify project data',

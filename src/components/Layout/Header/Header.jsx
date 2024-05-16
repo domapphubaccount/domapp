@@ -102,6 +102,11 @@ export default function Header({handleToggle}) {
                                 <li>
                                     <a onClick={handleToggle} className='pointer nav-link-item'>CONTACT US</a>
                                 </li>
+                                <li>
+                                { getWidowY < 100 &&
+                                    <Lang />
+                                    }                                
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -109,9 +114,6 @@ export default function Header({handleToggle}) {
                         <MobileNav />
                     </div>
                 </div>
-                { getWidowY < 100 &&
-                <Lang />
-                }
             </Container>
             <PositionedSnackbar handleClick={handleClick} setOpen={setOpen} open={open}/>
         </header>

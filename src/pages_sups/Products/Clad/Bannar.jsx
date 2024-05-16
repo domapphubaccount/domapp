@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 import { league } from '@/pages_sups/Home/Section_1/Section_1'
 import { Container } from 'reactstrap'
 import arrow from '@/assets/images/Products_Page/Clad/arrow.svg'
@@ -25,7 +24,7 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                             <h1 className="mil-upper mil-light mil-mb-60 fw-bold" style={{fontSize:'60px'}}>
                             {/* <span style={{fontSize:'1.8rem'}}>Fast</span> */}
                             <br />
-                            <span className="mil-accent fw-bold clad_bannar_title" style={{fontSize:'60px',textStrokeWidth: '3px',textStroketrokeColor:' black'}}>
+                            <span className={`mil-accent fw-bold clad_bannar_title ${league.className}`}style={{fontSize:'60px',textStrokeWidth: '3px',textStroketrokeColor:' black'}}>
                             CladCut
                             </span>
                             <br/>

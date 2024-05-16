@@ -28,7 +28,7 @@ function Lang() {
 
   return (
     <div className="lngg">
-      <Select
+      {/* <Select
         defaultValue={options[0]} // Set default to English
         options={options}
         // onChange={handleChange}
@@ -53,7 +53,16 @@ function Lang() {
             alignItems: 'center',
           }),
         }}
-      />
+      /> */}
+<i class="bi bi-globe-americas"></i>
+      <select className='lang-selector text-end'>
+        <option className='text-center'>
+          EN
+        </option>
+        <option className='text-center'>
+          AR
+        </option>
+      </select>
     </div>
   );
 }
