@@ -75,7 +75,7 @@ export default function Header({handleToggle}) {
                                                             <div>Risk Assessment <div className='text-secondary'>comply with SBC</div></div>
                                                             <ul>
                                                                 <li onClick={handleClick}>
-                                                                    <Link className='d-block w-100 h-100' href={'/rd'} shallow>RD-App</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/rd'} shallow>RDApp</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -83,7 +83,7 @@ export default function Header({handleToggle}) {
                                                             <div>Communication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/chat'} shallow>Dom CRM</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/chat'} shallow>ChatPlus</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>

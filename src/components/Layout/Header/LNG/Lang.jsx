@@ -1,66 +1,37 @@
-import React from 'react';
-import Select from 'react-select';
+import React, { useState } from 'react';
 import 'flag-icons/css/flag-icons.min.css';
 
-const options = [
-  {
-    value: 'http://example.com/',
-    label: (
-      <div>
-        <span className="fi fi-us" style={{ marginRight: 8 }}></span> English
-      </div>
-    ),
-  },
-  {
-    value: 'http://putaksbocis.cz/',
-    label: (
-      <div>
-        <span className="fi fi-sa" style={{ marginRight: 8 }}></span> العربية
-      </div>
-    ),
-  },
-];
-
 function Lang() {
-//   const handleChange = (selectedOption) => {
-//     window.location.href = selectedOption.value;
-//   };
+  const [selectedLang, setSelectedLang] = useState('EN');
+
+  const handleChange = (event) => {
+    const selectedValue = event.target.value;
+    if (selectedValue === 'EN') {
+      setSelectedLang('EN');
+    } else if (selectedValue === 'AR') {
+      setSelectedLang('AR');
+    }
+  };
 
   return (
     <div className="lngg">
-      {/* <Select
-        defaultValue={options[0]} // Set default to English
-        options={options}
-        // onChange={handleChange}
-        styles={{
-            control: (provided) => ({
-                ...provided,
-                borderRadius: '20px',
-              }),
-              menu: (provided) => ({
-                ...provided,
-                borderRadius: '20px',
-              }),
-          option: (provided) => ({
-            ...provided,
-            display: 'flex',
-            alignItems: 'center',
-            borderRadius: '20px'
-          }),
-          singleValue: (provided) => ({
-            ...provided,
-            display: 'flex',
-            alignItems: 'center',
-          }),
-        }}
-      /> */}
-<i class="bi bi-globe-americas"></i>
-      <select className='lang-selector text-end'>
-        <option className='text-center'>
-          EN
+      <i className="bi bi-globe-americas"></i>
+      <select
+        className="lang-selector text-center"
+        value={selectedLang}
+        onChange={handleChange}
+      >
+        <option value="EN" className='text-center' disabled hidden>
+          {selectedLang}
         </option>
-        <option className='text-center'>
-          AR
+        <option value="AR" className='text-center' disabled hidden>
+          {selectedLang}
+        </option>
+        <option value="EN" className='text-center' style={{ fontSize: '.8rem', padding: '0.5rem' }}>
+          English
+        </option>
+        <option value="AR" className='text-center' style={{ fontSize: '.8rem', padding: '2rem' }}>
+          Arabic
         </option>
       </select>
     </div>

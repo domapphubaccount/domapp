@@ -4238,12 +4238,13 @@ z-index: 2;
 }
 .lngg i{
     position: absolute;
-    left: -10px;
+    left: 0px;
 }
 .lang-selector{
     border: 0;
     outline: 0;
-    width: 55px;
+    width: 70px;
+    height: 20px;
     font-weight: 600;
 }
 .lang-selector option{

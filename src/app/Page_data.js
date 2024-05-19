@@ -395,9 +395,9 @@ export const items = [
     {
       index: 5,
       src: product_3,
-      title: 'DomCRM',
+      title: 'ChatPlus',
       link: '/chat',
-      caption: 'Enable seamless communication with numerous clients simultaneously',
+      caption: 'Empower your connection with customers through messaging.',
       Section_1:{
         title: 'ChatPlus',
         caption:'',

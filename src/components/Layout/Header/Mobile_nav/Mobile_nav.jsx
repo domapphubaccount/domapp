@@ -4,6 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
 import Link from 'next/link';
+import Lang from '../LNG/Lang';
 
 export default function MobileNav() {
   const [state, setState] = React.useState({
@@ -99,7 +100,7 @@ export default function MobileNav() {
     },
     {
       index: 6,
-      title: 'RD App',
+      title: 'RDApp',
       link: '/rd',
       caption: 'Section 3',
       Section_2:{
@@ -119,7 +120,7 @@ export default function MobileNav() {
     <Box
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
+      // onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
@@ -151,6 +152,9 @@ export default function MobileNav() {
           </div>
         ))}
       </List>
+      <div className='px-3 mb-3'>
+      <Lang />
+      </div>
     </Box>
   );
 
