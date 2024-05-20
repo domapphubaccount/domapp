@@ -6,7 +6,7 @@ export default function Cards() {
         
         {
             title: 'Our Mission',
-            description: 'to enhance our customer’s success through unique solutions.            '
+            description: 'To enhance our customer’s success through unique solutions.            '
         },
         {
             title: 'Cutting-Edge Software',
