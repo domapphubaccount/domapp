@@ -34,13 +34,34 @@ function Monthly(){
         <Container>
             <div style={{maxWidth:'1000px'}} className='m-auto'>
             <Row>
-                <Col sm={12} md={4} className='my-3'>
-                    <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3' style={{borderRadius: '15px'}}>
-                        <div className='mb-3'>
-                            <div className='fw-bold text-secondary'>Basic</div>
+            <Col sm={12} md={4} lg={3} className='m-auto my-3 '>
+                    <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between' style={{borderRadius: '15px'}}>
+                        <div className='mb-1 text-center'>
+                            {/* <div className='fw-bold text-secondary'>Free</div> */}
+                            {/* <h4><del>0</del><small> SAR</small></h4> */}
+                            <h1>FREE
+                                {/* <small> Trial</small> */}
+                                </h1>
+                        </div>
+                        <div className='mb-4'>
+                            <p className='text-start mb-4'>Includes .</p>
+                            <ul className='pricing-wind-data'>
+                                <li><i class="bi bi-check-circle-fill"></i>6 report</li>
+                            </ul>
+                        </div>
+
+                        <div className='contact-wind-card'>
+                            <a href="https://wa.me/201501060885"><button className='pricing-btn-wind'>TRY FOR FREE</button></a>
+                        </div>
+                    </div>
+                </Col>
+                <Col sm={12} md={4} lg={3} className='my-3'>
+                    <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between' style={{borderRadius: '15px'}}>
+                        <div className='mb-1 text-center'>
+                            <div className='fw-bold text-secondary fs-4 mb-3'>Basic</div>
                             <h4><del>250</del><small> SAR</small></h4>
-                            <h1>200<small> SAR</small></h1>
-                            <p>Includes .</p>
+                            <h2>200<small> SAR</small></h2>
+                            <p className='text-start m-0'>Includes .</p>
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
@@ -49,18 +70,24 @@ function Monthly(){
                             </ul>
                         </div>
 
-                        <div>
+                        <div className='contact-wind-card'>
                             <a href="https://wa.me/201501060885"><button className='pricing-btn-wind'>CONTACT SALES</button></a>
                         </div>
                     </div>
                 </Col>
-                <Col sm={12} md={4} className='my-3'>
-                    <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3' style={{borderRadius: '15px'}}>
-                        <div className='mb-3'>
-                        <div className='fw-bold text-secondary'>Standard</div>
+                <Col sm={12} md={4} lg={3} className='my-3'>
+                    <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between' style={{borderRadius: '15px'}}>
+                        <div className='position-absolute wind-price-discount d-flex justify-content-center align-items-center'>
+                            <div>
+                                <p className='text-light m-0'>%20</p>
+                                <p className='text-light m-0'>SAVE</p>
+                            </div>
+                        </div>
+                        <div className='mb-1 text-center'>
+                        <div className='fw-bold text-secondary fs-4 mb-3'>Standard</div>
                             <h4><del>750</del><small> SAR</small></h4>
-                            <h1>562<small> SAR</small></h1>
-                            <p>Includes .</p>
+                            <h2>562<small> SAR</small></h2>
+                            <p className='text-start m-0'>Includes .</p>
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
@@ -68,18 +95,18 @@ function Monthly(){
                             </ul>
                         </div>
 
-                        <div>
+                        <div className='contact-wind-card'>
                             <a href="https://wa.me/201501060885"><button className='pricing-btn-wind'>CONTACT SALES</button></a>
                         </div>
                     </div>
                 </Col>
-                <Col sm={12} md={4} className='my-3'>
-                    <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3' style={{borderRadius: '15px'}}>
-                        <div className='mb-3'>
-                            <div className='fw-bold text-secondary'>Professional</div>
+                <Col sm={12} md={4} lg={3} className='my-3'>
+                    <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between' style={{borderRadius: '15px'}}>
+                        <div className='mb-1 text-center'>
+                            <div className='fw-bold text-secondary fs-4 mb-3'>Professional</div>
                             <h4><del>1500</del><small> SAR</small></h4>
-                            <h1>975<small> SAR</small></h1>
-                            <p>Includes .</p>
+                            <h2>975<small> SAR</small></h2>
+                            <p className='text-start m-0'>Includes .</p>
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
@@ -87,30 +114,12 @@ function Monthly(){
                             </ul>
                         </div>
 
-                        <div>
+                        <div className='contact-wind-card'>
                             <a href="https://wa.me/201501060885"><button className='pricing-btn-wind'>CONTACT SALES</button></a>
                         </div>
                     </div>
                 </Col>
-                <Col sm={12} md={4} className='m-auto my-3 '>
-                    <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3' style={{borderRadius: '15px'}}>
-                        <div className='mb-3'>
-                            {/* <div className='fw-bold text-secondary'>Free</div> */}
-                            {/* <h4><del>0</del><small> SAR</small></h4> */}
-                            <h1>FREE<small> Trial</small></h1>
-                            <p>Includes .</p>
-                        </div>
-                        <div className='mb-4'>
-                            <ul className='pricing-wind-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>6 report</li>
-                            </ul>
-                        </div>
 
-                        <div>
-                            <a href="https://wa.me/201501060885"><button className='pricing-btn-wind'>CONTACT SALES</button></a>
-                        </div>
-                    </div>
-                </Col>
 
 
 

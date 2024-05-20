@@ -4354,3 +4354,28 @@ z-index: 2;
     background-color: #1B255A;
     color: #fff;
  }
+
+ /* .contact-wind-card{
+    height: 120px;
+    display: flex;
+    align-items: end;
+ }
+ .contact-wind-card button{
+    width: 100%;
+ }
+ .contact-wind-card a{
+    width: 100%;
+ } */
+ /* .pricing-container.wind{
+    overflow: hidden;
+ } */
+
+ .wind-price-discount{
+    width: 80px;
+    height: 80px;
+    top: -35px;
+    left: -25px;
+    background-image: url('../assets/images/Products_Page/Wind/discount.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
