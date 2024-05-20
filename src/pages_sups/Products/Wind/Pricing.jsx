@@ -97,7 +97,7 @@ function Monthly(){
                         <div className='mb-3'>
                             {/* <div className='fw-bold text-secondary'>Free</div> */}
                             {/* <h4><del>0</del><small> SAR</small></h4> */}
-                            <h1>FREE<small></small></h1>
+                            <h1>FREE<small> Trial</small></h1>
                             <p>Includes .</p>
                         </div>
                         <div className='mb-4'>

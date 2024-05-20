@@ -4162,6 +4162,9 @@ z-index: 2;
 .pricing-container.erp small{
     color: #ffffff;
 }
+.pricing-container.erp.erp-demo small{
+    color: #1B255A;
+}
 .pricing-container.erp p{
     color: #fff;
 }
@@ -4309,4 +4312,45 @@ z-index: 2;
     text-align: center;
     color: #fff;
     /* background-color: #5F2CE3; */
+ }
+
+ .free-button{
+    position: absolute;
+    left: -57px;
+    height: 40px;
+    top: 80px;
+    padding: 10px 20px;
+    width: 100px !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #1B255A;
+    color: #fff;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    transition: all .5s;
+    border: 2px solid #1B255A;
+}
+.free-button:hover{
+    color: #1B255A;
+    background-color: #fff;
+ }
+ .interprise-button{
+    position: absolute;
+    right: -57px;
+    height: 40px;
+    top: 80px;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100px !important;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: all .5s;
+    border: 2px solid #1B255A;
+    color: #1B255A;
+    background-color: #fff;
+ }
+ .interprise-button:hover{
+    background-color: #1B255A;
+    color: #fff;
  }
