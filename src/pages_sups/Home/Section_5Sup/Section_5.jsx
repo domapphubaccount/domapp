@@ -52,7 +52,7 @@ function Section_5Sup() {
         
     {
         title: 'Our mission',
-        description: 'to enhance our customer’s success through unique solutions.     ',
+        description: 'To enhance our customer’s success through unique solutions.     ',
         link: '/cladCut'
     },
     {
