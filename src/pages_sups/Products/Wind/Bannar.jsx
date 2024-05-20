@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { league } from '@/pages_sups/Home/Section_1/Section_1'
+import Link from 'next/link'
 
 export default function Bannar({bannar,title,caption,linkPage}) {
     console.log(bannar)
@@ -26,6 +27,9 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                             'Start For Free' 
                         }
                     </a>
+                    <Link href={'/windload/pricing'}>
+                        $ Pricing
+                    </Link>
                 </div>
                 <div className='sq1'></div>
                 <div className='sq2'></div>

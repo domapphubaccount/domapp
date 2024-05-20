@@ -43,7 +43,7 @@ export default function Section_7() {
                         </h2>
                         <p>
                         We have effectively developed a cost-per-meter technique that provides an estimated project value for each element in the Bill of Quantities (BOQ) during CPV ARABIA's operations in the Kingdom of Saudi Arabia.
-                        This method has been programmed into the RD APP with detailed factors to enhance cost evaluations for projects and promptly notify Stakeholders of any flagged concerns.
+                        This method has been programmed into the  RDAPP with detailed factors to enhance cost evaluations for projects and promptly notify Stakeholders of any flagged concerns.
                         </p>
                     </div>
                 </Col>

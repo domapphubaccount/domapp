@@ -42,34 +42,94 @@ function Monthly({priceIcon}){
     return(
         <>
 
-        <div className='py-5'>
+        <div className='py-3'>
         <Container>
             <div style={{maxWidth:'1000px'}} className='m-auto'>
-            <Row>
-                <Col sm={12} md={4} className='ms-auto'>
-                    <div className='pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0' style={{borderRadius: '15px',boxShadow:'10px 10px 10px #ccc' , border: "3px solid #5F2CE3 !important"}}>
+            <Row className=''>
+
+                <Col sm={12} md={4} lg={3} className='ms-auto my-4'>
+                    <div className='pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0' style={{borderRadius: '15px',boxShadow:'10px 10px 10px #ccc' , border: "3px solid #1B255A !important"}}>
                         <div className='mb-3 position-relative'>
-                            <p className='demo-erp'>TRY DEMO</p>
-                            <p className='demo-erp'>Works for 12 hours</p>
+                            {/* <p className='demo-erp'>TRY DEMO</p>
+                            <p className='demo-erp'>Works for 12 hours</p> */}
                             
-                            <h3>FREE</h3>
+                            <h3>Basic</h3>
+                            <p>Yearly Sub</p>
+                            <h4><del>6000</del><small> SAR</small></h4>
+                            <h3>5000<small> SAR</small></h3>
                             <p>Includes .</p>
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-erp-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>2 users</li>
-                                <li><i class="bi bi-check-circle-fill"></i>12 HOURS</li>
+                                <li><i class="bi bi-check-circle-fill"></i>5 users</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Setup fees</li>
+                                <li><i class="bi bi-check-circle-fill"></i>First year sub</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
                             </ul>
                         </div>
+                            <h6>* Next year renewed 1800 SRC</h6>
 
                         <div>
                             <button className='pricing-btn-erp' onClick={handleDemoClick}>START DEMO</button>
                         </div>
                     </div>
                 </Col>
-                <Col sm={12} md={4} className='me-auto'>
+                <Col sm={12} md={4} lg={3} className='ms-auto my-4'>
+                    <div className='pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0' style={{borderRadius: '15px',boxShadow:'10px 10px 10px #ccc' , border: "3px solid #1B255A !important"}}>
+                        <div className='mb-3 position-relative'>
+                            {/* <p className='demo-erp'>TRY DEMO</p>
+                            <p className='demo-erp'>Works for 12 hours</p> */}
+                            
+                            <h3>Standard</h3>
+                            <p>One time payment</p>
+                            <h4><del>14500</del><small> SAR</small></h4>
+                            <h3>9000<small> SAR</small></h3>
+                            <p>Includes .</p>
+                        </div>
+                        <div className='mb-4'>
+                            <ul className='pricing-erp-data'>
+                                <li><i class="bi bi-check-circle-fill"></i>15 users</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Setup fees</li>
+                                <li><i class="bi bi-check-circle-fill"></i>First year sub</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
+                            </ul>
+                        </div>
+                            <h6>* Next year renewed 5000 SRC</h6>
+                        <div>
+                            <button className='pricing-btn-erp' onClick={handleDemoClick}>START DEMO</button>
+                        </div>
+                    </div>
+                </Col>
+                <Col sm={12} md={4} lg={3} className='ms-auto my-4'>
+                    <div className='pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0' style={{borderRadius: '15px',boxShadow:'10px 10px 10px #ccc' , border: "3px solid #1B255A !important"}}>
+                        <div className='mb-3 position-relative'>
+                            {/* <p className='demo-erp'>TRY DEMO</p>
+                            <p className='demo-erp'>Works for 12 hours</p> */}
+                            
+                            <h3>Profissional</h3>
+                            <p>One time payment</p>
+                            <h4><del>24000</del><small> SAR</small></h4>
+                            <h3>18000<small> SAR</small></h3>
+                            <p>Includes .</p>
+                        </div>
+                        <div className='mb-4'>
+                            <ul className='pricing-erp-data'>
+                                <li><i class="bi bi-check-circle-fill"></i>2 users</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Setup fees</li>
+                                <li><i class="bi bi-check-circle-fill"></i>First year sub</li>
+                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
+                            </ul>
+                        </div>
+                            <h6>* Next year renewed 7500 SRC</h6>
+                        <div>
+                            <button className='pricing-btn-erp' onClick={handleDemoClick}>START DEMO</button>
+                        </div>
+                    </div>
+                </Col>
+                <Col sm={12} md={4} lg={3} className='me-auto my-4'>
                     <div className='pricing-container pricing-card-3 p-4 py-4 erp border-0' style={{borderRadius: '15px',boxShadow:'10px 10px 10px #ccc'}}>
                         <div className='mb-3'>
+                        <h3>Enterprize</h3>
                             <p>One time payment</p>
                             <h4><del>6000</del><small> SAR</small></h4>
                             <h3>5000<small> SAR</small></h3>
@@ -88,6 +148,28 @@ function Monthly({priceIcon}){
 
                         <div>
                             <a href="https://wa.me/201501060885"><button className='pricing-btn-erp'>CONTACT SALES</button></a>
+                        </div>
+                    </div>
+                </Col>
+
+                <Col sm={12} md={4} className='m-auto'>
+                    <div className='pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0' style={{borderRadius: '15px',boxShadow:'10px 10px 10px #ccc' , border: "3px solid #1B255A !important"}}>
+                        <div className='mb-3 position-relative'>
+                            <p className='demo-erp'>TRY DEMO</p>
+                            <p className='demo-erp'>Works for 12 hours</p>
+                            
+                            <h3>FREE</h3>
+                            <p>Includes .</p>
+                        </div>
+                        <div className='mb-4'>
+                            <ul className='pricing-erp-data'>
+                                <li><i class="bi bi-check-circle-fill"></i>2 users</li>
+                                <li><i class="bi bi-check-circle-fill"></i>12 HOURS</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <button className='pricing-btn-erp' onClick={handleDemoClick}>START DEMO</button>
                         </div>
                     </div>
                 </Col>

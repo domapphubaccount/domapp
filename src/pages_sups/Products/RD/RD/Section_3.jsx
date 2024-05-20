@@ -19,8 +19,8 @@ export default function Section_3() {
                         USER FRIENDLY
                         </h2>
                         <p>
-                        The RD APP boasts a user-friendly interface, ensuring smooth navigation and effortless interactions for all users. By displaying all the reports issued for the project, all the tickets for the project, and clarifying the project status. 
-The RD APP’s straightforward layout and clearly labeled options make it a breeze for users to accomplish tasks and access information.
+                        The  RDAPP boasts a user-friendly interface, ensuring smooth navigation and effortless interactions for all users. By displaying all the reports issued for the project, all the tickets for the project, and clarifying the project status. 
+The  RDAPP’s straightforward layout and clearly labeled options make it a breeze for users to accomplish tasks and access information.
                         </p>
                     </div>
                 </Col>

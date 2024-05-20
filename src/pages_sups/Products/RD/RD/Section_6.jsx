@@ -19,7 +19,7 @@ export default function Section_6() {
                         QUALITY CONTROL
                         </h2>
                         <p>
-                        One of the key standout capabilities of the RD APP is its capacity to enhance process excellence it achieves this automatically by highlighting the technical reservations according to the Saudi Building Code in each project to Stakeholders, the client, and the inspection engineer this way the RD APP reduces the potential human errors factor and streamlines the inspection process for the engineers. 
+                        One of the key standout capabilities of the  RDAPP is its capacity to enhance process excellence it achieves this automatically by highlighting the technical reservations according to the Saudi Building Code in each project to Stakeholders, the client, and the inspection engineer this way the  RDAPP reduces the potential human errors factor and streamlines the inspection process for the engineers. 
 Identifying projects requiring advanced technical engagement and routing them to the respective subject matter experts.
                         </p>
                     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { league } from '../Home/Section_1/Section_1'
+import Link from 'next/link'
 
 export default function Product({bannar,title,caption,linkPage}) {
     console.log(bannar)
@@ -18,13 +19,16 @@ export default function Product({bannar,title,caption,linkPage}) {
                         {caption}
                     </p>
                 </div>
-                <div>
+                <div className='d-flex '>
                     <a href={linkPage}>
                         {
                             'Get Started' 
                            
                         }
                     </a>
+                    <Link href="/windload/pricing">
+                        Pricing
+                    </Link>
                 </div>
             </div>
 

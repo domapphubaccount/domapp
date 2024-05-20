@@ -19,7 +19,7 @@ export default function Product({bannar,title,caption}) {
                         <div className='head-section text-center'>
                             <div className='banner_caption_text' style={{marginTop:'100px'}}>
                             <div className='mb-4'>
-                                <h1 className={league.className}>RD APP</h1>
+                                <h1 className={league.className}> RDAPP</h1>
                             </div>
                             <div className='mb-4'>
                                 <p className={league.className + ' mb-4'}>
