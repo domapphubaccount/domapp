@@ -95,9 +95,9 @@ function Monthly(){
                 <Col sm={12} md={4} className='m-auto my-3 '>
                     <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3' style={{borderRadius: '15px'}}>
                         <div className='mb-3'>
-                            <div className='fw-bold text-secondary'>Free</div>
+                            {/* <div className='fw-bold text-secondary'>Free</div> */}
                             {/* <h4><del>0</del><small> SAR</small></h4> */}
-                            <h1>0<small> SAR</small></h1>
+                            <h1>FREE<small></small></h1>
                             <p>Includes .</p>
                         </div>
                         <div className='mb-4'>
@@ -129,7 +129,7 @@ function Section__head() {
         <div>
             <div className='head_container'>
                 <h1 style={{zIndex:4}} className='position-relative'>
-                Windload PRICING
+                Windload Pricing
                 </h1>
             </div>
         </div>
