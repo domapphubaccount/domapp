@@ -155,9 +155,9 @@ function Monthly({priceIcon}){
                 <Col sm={12} md={4} className='m-auto'>
                     <div className='pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0' style={{borderRadius: '15px',boxShadow:'10px 10px 10px #ccc' , border: "3px solid #1B255A !important"}}>
                         <div className='mb-3 position-relative'>
-                            <p className='demo-erp'>TRY DEMO</p>
+                            {/* <p className='demo-erp'>TRY DEMO</p>
                             <p className='demo-erp'>Works for 12 hours</p>
-                            
+                             */}
                             <h3>FREE</h3>
                             <p>Includes .</p>
                         </div>
