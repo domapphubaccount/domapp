@@ -9,7 +9,7 @@ export default function Section_1() {
         <div className='dark_bannar'></div>
         <div className="bannar_container">
           <div data-aos="fade-left" data-aos-duration="3000">
-            <h1 className={league.className}>DomAppHub</h1>
+            <h1 className={league.className}>DomApp</h1>
             <p>Transforming ideas into unique applications. </p>
             <a href="#products" className="get_started">Get Started</a>
           </div>

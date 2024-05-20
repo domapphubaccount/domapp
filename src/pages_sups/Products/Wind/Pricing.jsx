@@ -44,12 +44,8 @@ function Monthly(){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>5 users</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Cloud Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Hosting Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>One Time setUp Fee</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Maintainance and Updates</li>
+                                <li><i class="bi bi-check-circle-fill"></i>50 report</li>
+
                             </ul>
                         </div>
 
@@ -68,12 +64,7 @@ function Monthly(){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>5 users</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Cloud Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Hosting Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>One Time setUp Fee</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Maintainance and Updates</li>
+                                <li><i class="bi bi-check-circle-fill"></i>150 report</li>
                             </ul>
                         </div>
 
@@ -92,12 +83,7 @@ function Monthly(){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>5 users</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Cloud Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Hosting Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>One Time setUp Fee</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Maintainance and Updates</li>
+                                <li><i class="bi bi-check-circle-fill"></i>300 report</li>
                             </ul>
                         </div>
 
@@ -106,7 +92,7 @@ function Monthly(){
                         </div>
                     </div>
                 </Col>
-                <Col sm={12} md={4} className='my-3'>
+                <Col sm={12} md={4} className='m-auto my-3 '>
                     <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3' style={{borderRadius: '15px'}}>
                         <div className='mb-3'>
                             <div className='fw-bold text-secondary'>Free</div>
@@ -116,12 +102,7 @@ function Monthly(){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>5 users</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Cloud Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Hosting Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>One Time setUp Fee</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Maintainance and Updates</li>
+                                <li><i class="bi bi-check-circle-fill"></i>6 report</li>
                             </ul>
                         </div>
 
@@ -148,7 +129,7 @@ function Section__head() {
         <div>
             <div className='head_container'>
                 <h1 style={{zIndex:4}} className='position-relative'>
-                ERP PRICING
+                Windload PRICING
                 </h1>
             </div>
         </div>
