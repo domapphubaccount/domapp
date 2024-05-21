@@ -30,9 +30,9 @@ export default function Bannar({bannar,title,caption}) {
                                 <Link href='/contact' className='mx-2' shallow>
                                     Get Started
                                 </Link>
-                                <Link href='/chat/pricing' className='mx-2'>
+                                {/* <Link href='/chat/pricing' className='mx-2'>
                                     $ Pricing
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
             </div>
