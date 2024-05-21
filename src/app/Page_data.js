@@ -108,10 +108,10 @@ export const items = [
     {
       index: 2,
       src: product_1,
-      title: 'Windload',
+      title: 'WindMaster',
       link:'/windload',
       page:'https://dometools-fv24.onrender.com/login/',
-      caption: 'Generate Wind Pressure Designs',
+      caption: 'Calculate wind loads on structures in accordance with SBC-301 standards.',
       Section_2:{
         first:{
           caption:{

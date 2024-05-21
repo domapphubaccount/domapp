@@ -19,10 +19,10 @@ export default function Product({bannar,title,caption,linkPage}) {
                         {caption}
                     </p>
                 </div>
-                <div className='d-flex '>
+                <div className='d-flex justify-content-center m-auto' style={{maxWidth:'300px'}}>
                     <a href={linkPage}>
                         {
-                            'Get Started' 
+                            'Try For Free' 
                            
                         }
                     </a>

@@ -35,10 +35,10 @@ export const items = [
     {
       index: 2,
       src: product_3,
-      title: 'Windload',
+      title: 'WindMaster',
       link:'/windload',
       video:'/Products/Winldload.gif',
-      caption: 'Generate Wind Pressure Designs.',
+      caption: 'Calculate wind loads on structures in accordance with SBC-301 standards.',
       dataList: [
         {
           head:'Manage and Modify project data',

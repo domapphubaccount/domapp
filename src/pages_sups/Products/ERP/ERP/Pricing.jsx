@@ -47,13 +47,8 @@ function Monthly({priceIcon}){
         <div className='py-3'>
         <Container>
             <div style={{maxWidth:'1000px'}} className='m-auto'>
-            <Row className=' position-relative'>
-                    <div className='free-button' onClick={()=> setShowFree(true)}>FREE</div>
-                    <div className='interprise-button' onClick={()=> setShowFree(false)}>Interprise</div>
-                    {
-    showFree &&
-
-                <Col sm={12} md={4} lg={3} className='me-auto my-4'>
+                <Row>
+                <Col sm={12} md={6} lg={4} className='m-auto my-4'>
                     <div className='pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0 h-100' style={{borderRadius: '15px',boxShadow:'0px 0px 10px #ccc' , border: "1.5px solid #1B255A !important"}}>
                         <div className='mb-3 position-relative text-center'>
                             {/* <p className='demo-erp'>TRY DEMO</p>
@@ -74,7 +69,11 @@ function Monthly({priceIcon}){
                         </div>
                     </div>
                 </Col>
-}
+                </Row>
+            <Row className=' position-relative'>
+                    {/* <div className='free-button' onClick={()=> setShowFree(true)}>FREE</div>
+                    <div className='interprise-button' onClick={()=> setShowFree(false)}>Interprise</div> */}
+
                 <Col sm={12} md={4} lg={3} className='ms-auto my-4'>
                     <div className='pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0 h-100' style={{borderRadius: '15px',boxShadow:'0px 0px 10px #ccc' , border: "1.5px solid #1B255A !important"}}>
                         <div className='mb-3 position-relative text-center'>
@@ -157,7 +156,7 @@ function Monthly({priceIcon}){
                         </div>
                     </div>
                 </Col>
-{!showFree &&
+{/* {!showFree && */}
                 <Col sm={12} md={4} lg={3} className='me-auto my-4'>
                     <div className='pricing-container pricing-card-3 p-4 py-4 erp border-0 h-100' style={{borderRadius: '15px',boxShadow:'0px 0px 10px #ccc'}}>
                         <div className='mb-3 text-center'>
@@ -185,7 +184,7 @@ function Monthly({priceIcon}){
                         </div>
                     </div>
                 </Col>
-}
+{/* } */}
 
             </Row>
             </div>

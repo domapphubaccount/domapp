@@ -36,7 +36,7 @@ export default function MobileNav() {
     },
     {
       index: 2,
-      title: 'Windload',
+      title: 'WindMaster',
       link:'/windload',
       caption: 'Powerful structural analysis and design .Instant access, directly from your browser',
       Section_2:{

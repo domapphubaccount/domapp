@@ -57,6 +57,12 @@ function Monthly(){
                 </Col>
                 <Col sm={12} md={4} lg={3} className='my-3'>
                     <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between' style={{borderRadius: '15px'}}>
+                    <div className='position-absolute wind-price-discount d-flex justify-content-center align-items-center'>
+                            <div>
+                                <p className='text-light m-0'>%20</p>
+                                <p className='text-light m-0'>SAVE</p>
+                            </div>
+                        </div>
                         <div className='mb-1 text-center'>
                             <div className='fw-bold text-secondary fs-4 mb-3'>Basic</div>
                             <h4><del>250</del><small> SAR</small></h4>
@@ -79,7 +85,7 @@ function Monthly(){
                     <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between' style={{borderRadius: '15px'}}>
                         <div className='position-absolute wind-price-discount d-flex justify-content-center align-items-center'>
                             <div>
-                                <p className='text-light m-0'>%20</p>
+                                <p className='text-light m-0'>%25</p>
                                 <p className='text-light m-0'>SAVE</p>
                             </div>
                         </div>
@@ -102,6 +108,12 @@ function Monthly(){
                 </Col>
                 <Col sm={12} md={4} lg={3} className='my-3'>
                     <div className='pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between' style={{borderRadius: '15px'}}>
+                    <div className='position-absolute wind-price-discount d-flex justify-content-center align-items-center'>
+                            <div>
+                                <p className='text-light m-0'>%35</p>
+                                <p className='text-light m-0'>SAVE</p>
+                            </div>
+                        </div>
                         <div className='mb-1 text-center'>
                             <div className='fw-bold text-secondary fs-4 mb-3'>Professional</div>
                             <h4><del>1500</del><small> SAR</small></h4>
