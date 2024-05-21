@@ -4241,6 +4241,7 @@ z-index: 2;
     right: 80px;
     border-radius: 20px; */
     font-size: .8rem;
+    transition: .5s;
 }
 .lngg i{
     position: absolute;
@@ -4378,4 +4379,17 @@ z-index: 2;
     background-image: url('../assets/images/Products_Page/Wind/discount.png');
     background-repeat: no-repeat;
     background-size: cover;
+ }
+ .lng-option{
+    border-bottom: 2px solid gray;
+
+ }
+ .lng-option:hover{
+    background-color: #e9e9e9;
+ }
+ .lngg .bi-chevron-down{
+    right: -50px;
+ }
+ .lngg:hover{
+    background-color: #e9e9e9;
  }
