@@ -35,7 +35,7 @@ export default function Page() {
               <>
                     <Bannar bannar={item.src} title={item.title} caption={item.caption}/>
                     <RD_cards />
-                    <RD_heading title="" body="RD App stacked with the best features."/>
+                    <RD_heading title="" body="RDAPP stacked with the best features."/>
                     <Section_1 />
                     <Section_2/>
                     <Section_3 />
@@ -44,12 +44,12 @@ export default function Page() {
                     {/* <Section_5 />
                     <Section_6 /> */}
                     <Section_5 />
-                    <RD_heading title="AND MORE" body="RD App Provides Best Features 'And more'"/>
+                    <RD_heading title="AND MORE" body="RDAPP Provides Best Features 'And more'"/>
                     <RD_features_cards />
                     {/* <RD_sup_section /> */}
                     <RD_Content_section />
                     {/* <Section_6 /> */}
-                    <RD_heading title="" body="RD App Provides Best Communication And Cost Monitoring"/>
+                    <RD_heading title="" body="RDAPP Provides Best Communication And Cost Monitoring"/>
                     <Section_7 />
                     {/* <div className="py-5">
                         <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/>

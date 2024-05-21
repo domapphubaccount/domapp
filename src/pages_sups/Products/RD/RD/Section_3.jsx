@@ -46,7 +46,7 @@ The  RDAPP’s straightforward layout and clearly labeled options make it a bree
                         </h2>
                         <p>
                         Integrating all technical reports and relevant documents into one application that is designed with specific limits according to the Saudi Building Code, with easy access for all users to create, edit, and share documents according to their specific roles.  
-The RD App streamlines the issuance of RD and inspection reports for technical engineers, automatically populating data across all reports and eliminating redundant data entry. 
+The RDAPP streamlines the issuance of RD and inspection reports for technical engineers, automatically populating data across all reports and eliminating redundant data entry. 
                         </p>
                     </div>
                 </Col>

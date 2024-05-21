@@ -105,12 +105,12 @@ export default function Section_1() {
 
                                                             >
                                                                 <option className="p-2" value="">Select an option</option>
-                                                                <option className="p-2" value="1">Cladcut</option>
+                                                                <option className="p-2" value="1">CLADCUT</option>
                                                                 {/* <option className="p-2" value="2">FacadStatic</option> */}
-                                                                <option className="p-2" value="3">Windload</option>
-                                                                <option className="p-2" value="4">ERP System</option>
+                                                                <option className="p-2" value="3">WINDMASTER</option>
+                                                                <option className="p-2" value="4">CRM BONDIFY</option>
                                                                 <option className="p-2" value="5"> RDAPP</option>
-                                                                <option className="p-2" value="6">Chatplus</option>
+                                                                <option className="p-2" value="6">CHATPLUS</option>
                                                             </select>
                                                             {errors.product && touched.product && <div className="text-danger">{errors.product}</div>}     
                                                         </Col> 

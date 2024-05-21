@@ -67,7 +67,7 @@ function Section_5Sup() {
     },
     {
         title: 'Creative Innovation',
-        description: 'From Cladcut to Chatplus, our projects showcase our commitment to pushing boundaries and creating groundbreaking solutions that make a difference. ',
+        description: 'From Cladcut to CHATPLUS, our projects showcase our commitment to pushing boundaries and creating groundbreaking solutions that make a difference. ',
         link: '/cladCut'
     },
     {

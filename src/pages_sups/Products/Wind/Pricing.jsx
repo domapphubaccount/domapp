@@ -51,7 +51,7 @@ function Monthly(){
                         </div>
 
                         <div className='contact-wind-card'>
-                            <a href="https://wa.me/201501060885"><button className='pricing-btn-wind'>TRY FOR FREE</button></a>
+                            <a href="https://dometools-fv24.onrender.com/windload/"><button className='pricing-btn-wind'>TRY FOR FREE</button></a>
                         </div>
                     </div>
                 </Col>
@@ -150,7 +150,7 @@ function Section__head() {
         <div>
             <div className='head_container'>
                 <h1 style={{zIndex:4}} className='position-relative'>
-                Windload Pricing
+                WINDMASTER Pricing
                 </h1>
             </div>
         </div>

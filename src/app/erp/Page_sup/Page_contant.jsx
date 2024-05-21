@@ -47,7 +47,7 @@ export default function Page() {
                     {/* <Bannar bannar={item.src} title={item.title} caption={item.caption} small_caption={item.small_caption}/> */}
                     {/* <Section_2/> */}
                     {/* <Section_head heads={1} title_1={'Our Features'} sectionId={'chat'}/> */}
-                    <Heading head="ERP SYSTEM" body="First Choice For Your Business" back="ERP" />
+                    <Heading head="CRM BONDIFY" body="First Choice For Your Business" back="CRM BONDIFY" />
                     <Cards_section />
                     <Section_3 />
                     <Section_7 />

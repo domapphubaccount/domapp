@@ -25,7 +25,7 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                             {/* <span style={{fontSize:'1.8rem'}}>Fast</span> */}
                             <br />
                             <span className={`mil-accent fw-bold clad_bannar_title ${league.className}`}style={{fontSize:'60px',textStrokeWidth: '3px',textStroketrokeColor:' black'}}>
-                            CladCut
+                            CLADCUT
                             </span>
                             <br/>
                             <span style={{fontSize:'1.5rem'}}>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>

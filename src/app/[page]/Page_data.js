@@ -25,7 +25,7 @@ export const items = [
     {
       index: 1,
       src: product_3,
-      title: 'CladCut',
+      title: 'CLADCUT',
       link:'/cladCut',
       caption: 'Precision cutting made effortless with CladCut',
       Section_2:{
@@ -242,7 +242,7 @@ export const items = [
     {
       index: 4,
       src: product_3,
-      title: 'ERP System',
+      title: 'CRM BONDIFY',
       link: '/erp',
       caption: 'Section 3',
       Section_2:{
@@ -314,11 +314,11 @@ export const items = [
     {
       index: 5,
       src: product_3,
-      title: 'ChatPlus',
+      title: 'CHATPLUS',
       link: '/chat',
       caption: 'Enable seamless communication with numerous clients simultaneously',
       Section_1:{
-        title: 'ChatPlus',
+        title: 'CHATPLUS',
         caption:'',
         cards:
         [
@@ -436,7 +436,7 @@ export const items = [
     {
       index: 6,
       src: product_3,
-      title: 'RD App',
+      title: 'RDAPP',
       link: '/rd',
       caption: 'Section 3',
       Section_2:{

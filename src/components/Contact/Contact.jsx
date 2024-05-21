@@ -115,7 +115,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                         <div>
                                          Saturday to Thursday from 
                                          <div className='my-2'>
-                                            <span className='fw-bold text-light bg-primary rounded p-1'> 8 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>5 Pm</span>
+                                            <span className='fw-bold text-light bg-primary rounded p-1'> 08:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>04:00 Pm</span>
                                         </div>
                                         <div>(Local Time in <span className='fw-bold'>Makkah, Saudi Arabia</span>)</div>
                                         </div>
@@ -125,7 +125,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                             <i class="bi bi-clock text-dark"></i> 
                                         </div>
                                         <div>
-                                         Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>9 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>5 Pm</span></div>
+                                         Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>09:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>05:00 Pm</span></div>
                                         <div>(Local Time in <span className='fw-bold'>Cairo, Egypt</span>)</div>
                                         </div>
                                     </li>
@@ -134,7 +134,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                             <i class="bi bi-clock text-dark"></i> 
                                         </div>
                                         <div >
-                                         Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>5 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>2 Pm</span></div>
+                                         Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>05:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>02:00 Pm</span></div>
                                         <div>(Local Time in <span className='fw-bold'>UTC</span>)</div>
                                         </div>
                                     </li>

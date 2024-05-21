@@ -17,7 +17,7 @@ export default function Product({bannar,title,caption,small_caption}) {
                 <div className='row erp'>
                 <div className='head-section col-md-5'>
                     <div className='mb-4'>
-                        <h1 className={league.className}><span>ERP</span> System</h1>
+                        <h1 className={league.className}><span>CRM</span> BONDIFY</h1>
                     </div>
                     <div className='mb-4'>
                         {small_caption &&<div className='text-light mb-3'>{small_caption}</div>}

@@ -13,7 +13,7 @@ export default function Section_9() {
                         <div>
                             <h3>Time Tracking</h3>
                             <p>
-                            Effortlessly monitor the time invested in your projects using the ERP's comprehensive time-tracking solution. Begin or end your timer or input time manually for tasks. Then, seamlessly bill your clients based on the recorded time.
+                            Effortlessly monitor the time invested in your projects using the CRM BONDIFY's comprehensive time-tracking solution. Begin or end your timer or input time manually for tasks. Then, seamlessly bill your clients based on the recorded time.
                             </p>
                         </div>
                         <div>

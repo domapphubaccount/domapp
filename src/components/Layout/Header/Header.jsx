@@ -55,8 +55,8 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Design SoftWare</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100' href={'/cladCut'} shallow>Cladcut</Link></li>
-                                                                <li><Link className='d-block w-100 h-100' href={'/windload'} shallow>WindMaster
+                                                                <li><Link className='d-block w-100 h-100' href={'/cladCut'} shallow>CLADCUT</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/windload'} shallow>WINDMASTER
                                                                 {/* <span className='free_icon_product' >Free</span> */}
                                                                 </Link></li>
                                                                 {/* <li><Link className='d-block w-100 h-100' href={'/facade'}>Facade Static <span className='free_icon_product' >Free</span></Link></li> */}
@@ -65,7 +65,7 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Business Adminstration</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100' href={'/erp'} shallow>Dom ERP</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/erp'} shallow>CRM BONDIFY</Link></li>
                                                             </ul>
                                                         </li>
                                                     {/* </ul>
@@ -75,7 +75,7 @@ export default function Header({handleToggle}) {
                                                             <div>Risk Assessment <div className='text-secondary'>comply with SBC</div></div>
                                                             <ul>
                                                                 <li onClick={handleClick}>
-                                                                    <Link className='d-block w-100 h-100' href={'/rd'} shallow>RDApp</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/rd'} shallow>RDAPP</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -83,7 +83,7 @@ export default function Header({handleToggle}) {
                                                             <div>Communication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/chat'} shallow>ChatPlus</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/chat'} shallow>CHATPLUS</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>

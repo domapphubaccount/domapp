@@ -20,9 +20,9 @@ export default function MobileNav() {
   const items = [
     {
       index: 1,
-      title: 'CladCut',
+      title: 'CLADCUT',
       link:'/cladCut',
-      caption: 'Precision cutting made effortless with CladCut',
+      caption: 'Precision cutting made effortless with CLADCUT',
       Section_2:{
         first:{
           caption:'',
@@ -36,7 +36,7 @@ export default function MobileNav() {
     },
     {
       index: 2,
-      title: 'WindMaster',
+      title: 'WINDMASTER',
       link:'/windload',
       caption: 'Powerful structural analysis and design .Instant access, directly from your browser',
       Section_2:{
@@ -68,7 +68,7 @@ export default function MobileNav() {
     // },
     {
       index: 4,
-      title: 'ERP System',
+      title: 'CRM BONDIFY',
       link: '/erp',
       caption: 'Section 3',
       Section_2:{
@@ -84,7 +84,7 @@ export default function MobileNav() {
     },
     {
       index: 5,
-      title: 'ChatPlus',
+      title: 'CHATPLUS',
       link: '/chat',
       caption: 'Enable seamless communication with numerous clients simultaneously',
       Section_2:{
@@ -100,7 +100,7 @@ export default function MobileNav() {
     },
     {
       index: 6,
-      title: 'RDApp',
+      title: 'RDAPP',
       link: '/rd',
       caption: 'Section 3',
       Section_2:{

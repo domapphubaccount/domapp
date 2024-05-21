@@ -16,7 +16,7 @@ export default function Section_10() {
                         <div>
                             <h3>Invoices & Payments</h3>
                             <p>
-                            We’ve developed an incredibly user-friendly invoicing system, removing the necessity for third-party invoicing tools. Within the ERP System, you can easily create invoices with diverse options such as time billing, product billing, task billing, and others. Invoices are automatically sent to clients via email, enabling them to conveniently make payments via credit card or PayPal.
+                            We’ve developed an incredibly user-friendly invoicing system, removing the necessity for third-party invoicing tools. Within the CRM BONDIFY, you can easily create invoices with diverse options such as time billing, product billing, task billing, and others. Invoices are automatically sent to clients via email, enabling them to conveniently make payments via credit card or PayPal.
                             </p>    
                         </div>
                         <div>

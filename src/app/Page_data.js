@@ -34,10 +34,10 @@ export const items = [
     {
       index: 1,
       src: product_3,
-      title: 'CladCut',
+      title: 'CLADCUT',
       link:'/cladCut',
       page:'http://domhupp.surge.sh/login/',
-      caption: 'Precision cutting made effortless with CladCut',
+      caption: 'Precision cutting made effortless with CLADCUT',
       Section_2:{
         first:{
           caption:{
@@ -108,10 +108,10 @@ export const items = [
     {
       index: 2,
       src: product_1,
-      title: 'WindMaster',
+      title: 'WINDMASTER',
       link:'/windload',
       page:'https://dometools-fv24.onrender.com/login/',
-      caption: 'Calculate wind loads on structures in accordance with SBC-301 standards.',
+      caption: 'Calculate wind loads on structures.',
       Section_2:{
         first:{
           caption:{
@@ -257,7 +257,7 @@ export const items = [
     {
       index: 4,
       src: product_3,
-      title: 'ChatPlus',
+      title: 'CHATPLUS',
       link: '/erp',
       small_caption: 'Simple, Flexible, and Powerfull',
       caption: 'Empower your connection with customers through messaging.',
@@ -395,11 +395,11 @@ export const items = [
     {
       index: 5,
       src: product_3,
-      title: 'ChatPlus',
+      title: 'CHATPLUS',
       link: '/chat',
       caption: 'Empower your connection with customers through messaging.',
       Section_1:{
-        title: 'ChatPlus',
+        title: 'CHATPLUS',
         caption:'',
         cards:
         [
@@ -517,7 +517,7 @@ export const items = [
     {
       index: 6,
       src: product_3,
-      title: 'RD App',
+      title: 'RDAPP',
       link: '/rd',
       caption: 'Section 3',
       Section_2:{

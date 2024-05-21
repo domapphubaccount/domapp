@@ -9,7 +9,7 @@ export const items = [
     {
       index: 1,
       src: product_1,
-      title: 'CladCut',
+      title: 'CLADCUT',
       link:'/cladCut',
       video: '/Products/CladCut.gif',
       caption: 'Produce detailed fabrication drawings with exceptional speed and efficiency.',
@@ -35,10 +35,10 @@ export const items = [
     {
       index: 2,
       src: product_3,
-      title: 'WindMaster',
+      title: 'WINDMASTER',
       link:'/windload',
       video:'/Products/Winldload.gif',
-      caption: 'Calculate wind loads on structures in accordance with SBC-301 standards.',
+      caption: 'Calculate wind loads on structures.',
       dataList: [
         {
           head:'Manage and Modify project data',
@@ -87,7 +87,7 @@ export const items = [
     {
       index: 3,
       src: product_3,
-      title: 'Dom ERP',
+      title: 'CRM BONDIFY',
       link: '/erp',
       video:'/Products/DomERP.gif',
       caption: 'Project management, Invoicing, Leads, Tasks, Time tracking and more.',
@@ -113,7 +113,7 @@ export const items = [
     {
       index: 4,
       src: product_3,
-      title: 'ChatPlus',
+      title: 'CHATPLUS',
       link: '/chat',
       video:'/Products/DomCRM.gif',
       caption: 'Empower your connection with customers through messaging.',
@@ -139,10 +139,10 @@ export const items = [
     {
       index: 5,
       src: product_3,
-      title: 'RDApp',
+      title: 'RDAPP',
       link: '/rd',
       video:'/Products/RDAPP.gif',
-      caption: 'Risk assessment complying with saudi building code',
+      caption: 'Risk assessment complying with saudi building code.',
       dataList: [
         {
           head:'Manage and Modify project data',

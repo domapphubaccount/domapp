@@ -65,7 +65,7 @@ const MyCarousel = () => {
           data-aos-duration="3000"
         >
         <ul>
-          <div className='transformed_circle' style={{transform: `translate(${activeIndex === 1 ? '0px' : activeIndex === 2 ? '105px' : activeIndex === 9 ? '200px' : activeIndex === 3 ? '210px' : activeIndex === 4 ? '310px' : '405px' })` , width: activeIndex === 3 ? '101px' : activeIndex === 4 ? '100px' : activeIndex === 5 && '94px'  }}></div>
+          <div className='transformed_circle' style={{transform: `translate(${activeIndex === 1 ? '0px' : activeIndex === 2 ? '105px' : activeIndex === 9 ? '200px' : activeIndex === 3 ? '240px' : activeIndex === 4 ? '384px' : '480px' })` , width: activeIndex === 3 ? '140px' : activeIndex === 4 ? '100px' : activeIndex === 5 ? '94px': activeIndex === 1 ? '110px' : activeIndex === 2 && '140px'  }}></div>
             {items.map((item,index) => (
               <li key={index} className={`${item.index === activeIndex && 'active_card'}`} >
                   {item.index == activeIndex ?

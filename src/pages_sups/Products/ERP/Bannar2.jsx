@@ -32,8 +32,8 @@ export default function Bannar2() {
                     </div>
                   </div>
                 </div> */}
-                <h2>Dom <span>ERP  </span><img className="line-text" src="../assets/images/landing/home/line.png" alt=""/></h2>
-                <p>Project management, Invoicing, Leads, Tasks, Time tracking and more...
+                <h2>CRM BONDIFY<img className="line-text" src="../assets/images/landing/home/line.png" alt=""/></h2>
+                <p>Project management, Invoicing, Leads, Tasks, Time tracking and more
                 </p>
                 <div className="docutment-button"> 
                     <a className="btn text-white me-3" href="https://erp.domapphub.com/signup" target="_blank">
