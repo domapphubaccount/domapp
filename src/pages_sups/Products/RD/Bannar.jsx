@@ -24,7 +24,7 @@ export default function Product({bannar,title,caption}) {
                             <div className='mb-4'>
                                 <p className={league.className + ' mb-4'}>
                                     {/* Smart solutions that save time & Cost. */}
-                                    RISK ASSESSMENT COMPLAYING WITH <br/><span className='fw-bold'>SAUDI BUILDING CODE</span>
+                                    Risk assessment complying with<br/><span className='fw-bold'>Saudi building code</span>
                                 </p>
                                 <Link href='/contact' className='rd_get_started' shallow>
                                     Get Started

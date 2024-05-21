@@ -21,14 +21,14 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                             {/* <span className="mil-suptitle mil-light mil-upper mil-mb-60 fw-bold" style={{fontSize:'60px',paddingTop:'90px'}}>
                                 The future
                             </span> */}
-                            <h1 className="mil-upper mil-light mil-mb-60 fw-bold" style={{fontSize:'60px'}}>
+                            <h1 className=" mil-light mil-mb-60 fw-bold" style={{fontSize:'60px'}}>
                             {/* <span style={{fontSize:'1.8rem'}}>Fast</span> */}
                             <br />
-                            <span className={`mil-accent fw-bold clad_bannar_title ${league.className}`}style={{fontSize:'60px',textStrokeWidth: '3px',textStroketrokeColor:' black'}}>
+                            <span className={`mil-upper mil-accent fw-bold clad_bannar_title ${league.className}`}style={{fontSize:'60px',textStrokeWidth: '3px',textStroketrokeColor:' black'}}>
                             CLADCUT
                             </span>
                             <br/>
-                            <span style={{fontSize:'1.5rem'}}>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>
+                            <span style={{fontSize:'1.5rem' }}>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>
                             </h1>
                             <a className="mil-link mil-light mil-upper me-3" href="https://dometools-fv24.onrender.com/cladcuthome/">
                                 TRY FOR FREE
