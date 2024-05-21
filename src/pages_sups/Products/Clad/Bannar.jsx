@@ -30,7 +30,7 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                             <br/>
                             <span style={{fontSize:'1.5rem'}}>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>
                             </h1>
-                            <a className="mil-link mil-light mil-upper me-3" href="https://dometools-fv24.onrender.com/login/">
+                            <a className="mil-link mil-light mil-upper me-3" href="https://dometools-fv24.onrender.com/cladcuthome/">
                                 TRY FOR FREE
                                 <span className="mil-arrow">
                                     <img src={arrow.src} alt="arrow" />
