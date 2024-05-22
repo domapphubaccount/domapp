@@ -39,9 +39,6 @@ export default function Page() {
 
   return (
     <div className="erp_page">
-        {items.map((item , index) => (
-            <>
-              {item.link === router &&
               <>
               <Bannar2 />
                     {/* <Bannar bannar={item.src} title={item.title} caption={item.caption} small_caption={item.small_caption}/> */}
@@ -77,11 +74,7 @@ export default function Page() {
                     {/* </div> */}
                     {/* <Products_carousal /> */}
               </>
-              }
-                    <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
-            </>    
-        ))
-        }
+              <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
     </div>
   )
 }

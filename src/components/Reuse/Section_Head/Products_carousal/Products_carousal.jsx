@@ -24,11 +24,11 @@ const cardsData = [
   },
   {
       src: Wind,
-      link: '/windload'
+      link: '/windmaster'
   },
   {
       src: RD,
-      link: '/rd'
+      link: '/rdApprd'
   },
   // {
   //     src: Facade,
@@ -36,11 +36,11 @@ const cardsData = [
   // },
   {
       src: Erp,
-      link: '/erp'
+      link: '/crmBondify'
   },
   {
       src: Chat,
-      link: '/chat'
+      link: '/chatPlus'
   },
 ]
 

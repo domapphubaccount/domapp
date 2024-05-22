@@ -27,7 +27,7 @@ export default function Bannar({bannar,title,caption,linkPage}) {
                             'Start For Free' 
                         }
                     </a>
-                    <Link href={'/windload/pricing'}>
+                    <Link href={'/windmaster/pricing'}>
                         $ Pricing
                     </Link>
                 </div>

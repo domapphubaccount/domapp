@@ -109,8 +109,8 @@ export const items = [
       index: 2,
       src: product_1,
       title: 'WINDMASTER',
-      link:'/windload',
-      page:'https://dometools-fv24.onrender.com/login/',
+      link:'/windmaster',
+      page:'https://dometools-fv24.onrender.com/windload/',
       caption: 'Calculate wind loads on structures.',
       Section_2:{
         first:{
@@ -258,7 +258,7 @@ export const items = [
       index: 4,
       src: product_3,
       title: 'CHATPLUS',
-      link: '/erp',
+      link: 'chatPlus',
       small_caption: 'Simple, Flexible, and Powerfull',
       caption: 'Empower your connection with customers through messaging.',
       Section_2:{
@@ -396,7 +396,7 @@ export const items = [
       index: 5,
       src: product_3,
       title: 'CHATPLUS',
-      link: '/chat',
+      link: '/chatPlus',
       caption: 'Empower your connection with customers through messaging.',
       Section_1:{
         title: 'CHATPLUS',
@@ -518,7 +518,7 @@ export const items = [
       index: 6,
       src: product_3,
       title: 'RDAPP',
-      link: '/rd',
+      link: '/rdApp',
       caption: 'Section 3',
       Section_2:{
         first:{

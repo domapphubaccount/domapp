@@ -36,7 +36,7 @@ export const items = [
       index: 2,
       src: product_3,
       title: 'WINDMASTER',
-      link:'/windload',
+      link:'/windmaster',
       video:'/Products/Winldload.gif',
       caption: 'Calculate wind loads on structures.',
       dataList: [
@@ -88,7 +88,7 @@ export const items = [
       index: 3,
       src: product_3,
       title: 'CRM BONDIFY',
-      link: '/erp',
+      link: '/crmBondify',
       video:'/Products/DomERP.gif',
       caption: 'Project management, Invoicing, Leads, Tasks, Time tracking and more.',
       dataList: [
@@ -114,7 +114,7 @@ export const items = [
       index: 4,
       src: product_3,
       title: 'CHATPLUS',
-      link: '/chat',
+      link: '/chatPlus',
       video:'/Products/DomCRM.gif',
       caption: 'Empower your connection with customers through messaging.',
       dataList: [
@@ -140,7 +140,7 @@ export const items = [
       index: 5,
       src: product_3,
       title: 'RDAPP',
-      link: '/rd',
+      link: '/rdApp',
       video:'/Products/RDAPP.gif',
       caption: 'Risk assessment complying with saudi building code.',
       dataList: [

@@ -79,7 +79,7 @@ export default function Screens_Section({ sections }) {
                             <div className="slider-container rounded">
                                 <Container>
                                     <Slider {...settings}>
-                                        {router === '/windload' ? (
+                                        {router === '/windmaster' ? (
                                             wind.map((item, index) => (
                                                 <div key={index} onClick={() => handleImageClick(item)}>
                                                     <img src={item.src} className="  card_shadow" style={{ height: "400px", width: "350px", objectFit: "cover" }} alt='image' />

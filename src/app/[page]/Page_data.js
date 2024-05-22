@@ -99,7 +99,7 @@ export const items = [
       index: 2,
       src: product_1,
       title: 'Windload',
-      link:'/windload',
+      link:'/windmaster',
       caption: 'Powerful structural analysis and design .Instant access, directly from your browser',
       Section_2:{
         first:{
@@ -243,7 +243,7 @@ export const items = [
       index: 4,
       src: product_3,
       title: 'CRM BONDIFY',
-      link: '/erp',
+      link: '/crmBondify',
       caption: 'Section 3',
       Section_2:{
         first:{
@@ -315,7 +315,7 @@ export const items = [
       index: 5,
       src: product_3,
       title: 'CHATPLUS',
-      link: '/chat',
+      link: '/chatPlus',
       caption: 'Enable seamless communication with numerous clients simultaneously',
       Section_1:{
         title: 'CHATPLUS',
@@ -437,7 +437,7 @@ export const items = [
       index: 6,
       src: product_3,
       title: 'RDAPP',
-      link: '/rd',
+      link: '/rdApp',
       caption: 'Section 3',
       Section_2:{
         first:{

@@ -13,7 +13,7 @@ const ServicesPage = () => (
         </div>
 
         <div className="row justify-content-center">
-        {items.filter((item) => item.link === '/erp' ).map((item) => 
+        {items.filter((item) => item.link === '/crmBondify' ).map((item) => 
         item.Section_6.features_1.list.map((item,index)=>(
           <div key={index} className="col-lg-6 col-sm-6 p-4" data-aos-duration="3000" data-aos="fade-up">
             <div className="single-services-box h-100 card_shadow">

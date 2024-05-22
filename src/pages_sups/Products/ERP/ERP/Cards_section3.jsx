@@ -8,7 +8,7 @@ export default function Cards_section3() {
     <section className='erp_cards_section py-5 my-5'>
         <Container>
             <div className='row'>
-            {items.filter((item) => item.link === '/erp' ).map((item,index) => 
+            {items.filter((item) => item.link === '/crmBondify' ).map((item,index) => 
               item.Section_6.features_1.list.map((item,index)=>(
             <div key={index} className="col-xxl-3 col-lg-4 col-sm-6 slideInUp wow" style={{visibility: "visible", animationName: "slideInUp"}}> 
               <div className="feature-box text-center">

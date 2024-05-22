@@ -37,7 +37,7 @@ export default function MobileNav() {
     {
       index: 2,
       title: 'WINDMASTER',
-      link:'/windload',
+      link:'/wind',
       caption: 'Powerful structural analysis and design .Instant access, directly from your browser',
       Section_2:{
         first:{
@@ -69,7 +69,7 @@ export default function MobileNav() {
     {
       index: 4,
       title: 'CRM BONDIFY',
-      link: '/erp',
+      link: '/crmBondify',
       caption: 'Section 3',
       Section_2:{
         first:{
@@ -85,7 +85,7 @@ export default function MobileNav() {
     {
       index: 5,
       title: 'CHATPLUS',
-      link: '/chat',
+      link: '/chatPlus',
       caption: 'Enable seamless communication with numerous clients simultaneously',
       Section_2:{
         first:{
@@ -101,7 +101,7 @@ export default function MobileNav() {
     {
       index: 6,
       title: 'RDAPP',
-      link: '/rd',
+      link: '/rdApp',
       caption: 'Section 3',
       Section_2:{
         first:{

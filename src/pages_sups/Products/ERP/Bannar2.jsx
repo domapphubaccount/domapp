@@ -39,7 +39,7 @@ export default function Bannar2() {
                     <a className="btn text-white me-3" href="https://erp.domapphub.com/signup" target="_blank">
                         Try Demo
                     </a>
-                    <Link className="btn text-white me-3" target="_blank" href="/erp/pricing">
+                    <Link className="btn text-white me-3" target="_blank" href="/crmBondify/pricing">
                         Pricing
                     </Link>
                     {/* <a className="mil-link mil-light mil-upper bundle-button erp p-0 ps-2 rounded" href="/erp/pricing">

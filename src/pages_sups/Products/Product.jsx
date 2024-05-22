@@ -26,7 +26,7 @@ export default function Product({bannar,title,caption,linkPage}) {
                            
                         }
                     </a>
-                    <Link href="/windload/pricing">
+                    <Link href="/windmaster/pricing">
                         Pricing
                     </Link>
                 </div>
