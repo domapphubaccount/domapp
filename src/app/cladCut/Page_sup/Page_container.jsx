@@ -35,14 +35,10 @@ export default function Page() {
   return (
     
     <div className='page_hid'>
-        {
-      showTimer < 2 ? <Loading_page /> :
-      <>
+
         <Header handleToggle={handleToggle}/>
           <Page_sup />
         <Footer />
-      </>
-      }
       <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
       <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
     </div>

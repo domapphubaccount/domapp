@@ -23,14 +23,9 @@ export default function Page() {
   return (
     
     <>
-        {
-      showTimer < 2 ? <Loading_page /> :
-      <>
         <Header />
           <Page_sup />
         <Footer />
-      </>
-      }
     </>
   )
 }

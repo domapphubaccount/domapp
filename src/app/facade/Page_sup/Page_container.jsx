@@ -34,14 +34,11 @@ export default function Page() {
   return (
     
     <div className='page_hid'>
-        {
-      showTimer < 2 ? <Loading_page /> :
-      <>
+
         <Header handleToggle={handleToggle}/>
           <Page_sup />
         <Footer />
-      </>
-      }      <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
+      <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
 
     </div>
   )

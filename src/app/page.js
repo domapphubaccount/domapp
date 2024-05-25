@@ -36,22 +36,12 @@ export default function Home() {
 
   return (
     <div style={{overflow:'hidden'}}>
-    {
-      showTimer < 3 ? <Loading_page /> :
-      <>
     <Header handleToggle={handleToggle}/>
     <Section_1 />
     <Section_2 />
-    {/* <Section_5 /> */}
     <Section_4 />
-    {/* <div className="seperate py-5">
-    <Products_carousal />
-    </div> */}
     <Section_3 />
-    {/* <Section_6 /> */}
     <Footer />
-    </>
-    }
       <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
       <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
     </div>

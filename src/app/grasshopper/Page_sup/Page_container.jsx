@@ -38,7 +38,7 @@ export default function Page() {
         <Header handleToggle={handleToggle}/>
           <Page_sup />
         <Footer />
-        <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
+            <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
     </>
   )
 }
