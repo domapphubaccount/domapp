@@ -5289,3 +5289,42 @@ z-index: 2;
 .cust_about{
     color: #505489;
 }
+
+.cast_bannar .title{
+    font-weight: 800;
+    color: #1F2471 !important;
+}
+.cast_bannar .sub-title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.text-primary {
+    color: #896eff !important;
+    background-color: rgba(137, 110, 255, .1)
+}
+
+.section-head.style-1 .sub-title {
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the animation on hover */
+.icon-bx-wraper:hover .icon-bx-md.radius.bg-white{
+    animation: rotate360 3s linear;
+}

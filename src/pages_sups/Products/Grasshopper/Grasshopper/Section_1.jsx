@@ -101,41 +101,41 @@ function SectionContent(){
     <div className="row align-items-center">
             <div className="col-xl-6 col-lg-7 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
                 <div className="section-head style-1">
-                    <h6 className="sub-title bgl-primary m-b20 text-primary">Fetures</h6>
+                    <h6 className="sub-title bgl-primary m-b20 text-primary" style={{color:"#896eff !important;"}}>Services</h6>
                     <h2 className="title">Our Working Process To Help Your Boost Your Business</h2>
                 </div>
             <div className="section-wraper-one">
                 <div className="icon-bx-wraper style-2 left m-b30">
                     <div className="icon-bx-md radius bg-white text-red">
                         <a href="#" className="icon-cell">
-                            <i className="flaticon-idea"></i>
+                            <i class="bi bi-code-slash"></i>
                         </a>
                     </div>
                     <div className="icon-content">
-                        <h4 className="dlab-title">Idea &amp; Analysis Gathering</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h4 className="dlab-title">Custom Software Development</h4>
+                        <p>We create software solutions that meet your specific needs. From analysis to implementation, we ensure a software designed specifically to meet your requirements.</p>
                     </div>
                 </div>
                 <div className="icon-bx-wraper style-2 left m-b30">
                     <div className="icon-bx-md radius bg-white text-yellow">
                         <a href="#" className="icon-cell">
-                            <i className="flaticon-line-graph"></i>
+                        <i class="bi bi-cast"></i>
                         </a>
                     </div>
                     <div className="icon-content">
-                        <h4 className="dlab-title">Designing &amp; Developing</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                        <h4 className="dlab-title">Software Customization</h4>
+                        <p>Have existing software that needs customization? Our team can modify and customize any software to align with your unique business needs.</p>
                     </div>
                 </div>
                 <div className="icon-bx-wraper style-2 left m-b30">
                     <div className="icon-bx-md radius bg-white text-green">
                         <a href="#" className="icon-cell">
-                            <i className="flaticon-rocket"></i>
+                        <i class="bi bi-columns-gap"></i>
                         </a>
                     </div>
                     <div className="icon-content">
-                        <h4 className="dlab-title">Testing &amp; Lunching</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h4 className="dlab-title">Web Development</h4>
+                        <p>We develop high-quality web applications to ensure a seamless and efficient user experience.</p>
                     </div>
                 </div>
             </div>
@@ -152,6 +152,8 @@ function AboutUs(){
     return <>
     <div className="row align-items-center cust_about">
         <div className="col-lg-6 m-b30 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
-            <div className="dz-media"><img src={sectioncardabout.src} className="move-2" alt="" /></div></div><div className="col-lg-6 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.4s"><div className="section-head style-1 mb-4"><h6 className="sub-title bgl-primary m-b20 text-primary">About Us</h6><h2 className="title">How We Can Help You Achieve Your Business Goal</h2></div><p>Integer pretium molestie nisl, non blandit lectus suscipit in. Vivamus tellus diam, iaculis eget nulla sit amet, tincidunt consectetur sem. Suspendisse laoreet, quam sed faucibus feugiat, tortor velit suscipit orci, sed consectetur ante eros id urna. Mauris luctus nulla ut pharetra tempor.</p><p className="m-b30">Mauris egestas eleifend sapien eu malesuada. Phasellus at metus eget sapien tristique accumsan non sit amet augue.</p></div></div>
+            <div className="dz-media"><img src={sectioncardabout.src} className="move-2" alt="" /></div></div><div className="col-lg-6 m-b30 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.4s"><div className="section-head style-1 mb-4"><h6 className="sub-title bgl-primary m-b20 text-primary" style={{color:'#896eff !important'}}>About Us</h6><h2 className="title">How We Can Help You Achieve Your Business Goal</h2></div>
+            <p>DomApp is a leading software development company, distinguished by extensive experience and high capability in designing and programming any software your company needs.</p>
+            <p className="m-b30">Whether it’s our own development or customization of other software, we are here to provide the optimal solutions for your success.</p></div></div>
     </>
 }

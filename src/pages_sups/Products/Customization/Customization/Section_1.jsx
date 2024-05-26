@@ -25,13 +25,13 @@ export default function Section_1() {
                                     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div className="about-us-list">
                                             <h3 className="title">Who we are</h3>
-                                            <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                            <p>DomApp is a leading software development company, distinguished by extensive experience and high capability in designing and programming any software your company needs.</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div className="about-us-list">
                                             <h3 className="title">Who we are</h3>
-                                            <p>There are many vtions of passages of Lorem Ipsum available, but the majority have suffered.</p>
+                                            <p>Whether it’s our own development or customization of other software, we are here to provide the optimal solutions for your success.</p>
                                         </div>
                                     </div>
                                 </div>

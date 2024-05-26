@@ -38,8 +38,8 @@ function Section_3() {
                                     <input type="tel" className="form-control" name="contact-phone" placeholder="+123456789" required="" fdprocessedid="6fiee" />
                                 </div>
                                 <div className="form-group mb--40">
-                                    <label>Message</label>
-                                    <textarea type="tel" className="form-control" name="contact-phone" placeholder="hi?" required="" fdprocessedid="6fiee" />
+                                    <label>Project description</label>
+                                    <textarea type="tel" className="form-control" name="contact-phone" placeholder="What do you have ?" required="" fdprocessedid="6fiee" />
                                 </div>
                                 <div className="form-group">
                                     <button type="submit" className="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn" fdprocessedid="71fagi">Estimate Project</button>
