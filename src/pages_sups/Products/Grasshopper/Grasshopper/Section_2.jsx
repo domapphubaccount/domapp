@@ -7,7 +7,7 @@ export default function Section_2() {
   return (
     <section className='grass_section_2'>
         <Container>
-            {/* <SectionContent /> */}
+           
         </Container>
     </section>
   )
