@@ -110,7 +110,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                 <ul>
                                     <li className='d-flex'>
                                         <div className='me-2'>
-                                            <i class="bi bi-clock text-dark"></i> 
+                                            <i className="bi bi-clock text-dark"></i> 
                                         </div>
                                         <div>
                                          Saturday to Thursday from 
@@ -122,7 +122,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                     </li>
                                     <li className='d-flex'>
                                         <div className='me-2'>
-                                            <i class="bi bi-clock text-dark"></i> 
+                                            <i className="bi bi-clock text-dark"></i> 
                                         </div>
                                         <div>
                                          Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>09:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>05:00 Pm</span></div>
@@ -131,7 +131,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                     </li>
                                     <li className='d-flex'>
                                         <div className='me-2'>
-                                            <i class="bi bi-clock text-dark"></i> 
+                                            <i className="bi bi-clock text-dark"></i> 
                                         </div>
                                         <div >
                                          Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>05:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>02:00 Pm</span></div>
@@ -162,7 +162,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                     <li className='d-flex'>
                                     <div className='fw-bold me-2'>
                                         <span> 
-                                            <i class="bi bi-geo-alt text-dark"></i>
+                                            <i className="bi bi-geo-alt text-dark"></i>
                                         </span>
                                     </div>
                                     <span>2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, Al Riyadh, Saudi Arabia</span>
@@ -170,20 +170,20 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                     <li className='d-flex'>
                                     <div className='fw-bold me-2'>
                                         <span> 
-                                            <i class="bi bi-geo-alt text-dark"></i>
+                                            <i className="bi bi-geo-alt text-dark"></i>
                                         </span>
                                     </div>
                                     <span>20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt</span>
                                     </li>
                                     <li className='d-flex'>
                                         <div className='fw-bold me-2'>
-                                            <i class="bi bi-geo-alt text-dark"></i>
+                                            <i className="bi bi-geo-alt text-dark"></i>
                                         </div>
                                         <span>Al Geish Rd, Jad Allah Tower,4th Floor, Office No 309, 412, KFS, Egypt</span>
                                     </li>
                                     <li className='d-flex'>
                                         <div className='fw-bold me-2'>
-                                            <i class="bi bi-geo-alt text-dark"></i>
+                                            <i className="bi bi-geo-alt text-dark"></i>
                                         </div>
                                         <span>Al Geish Rd, Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt</span>
                                     </li>

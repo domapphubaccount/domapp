@@ -46,7 +46,7 @@ function Monthly(){
                         <div className='mb-4'>
                             <p className='text-start mb-4'>Includes .</p>
                             <ul className='pricing-wind-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>6 report</li>
+                                <li><i className="bi bi-check-circle-fill"></i>6 report</li>
                             </ul>
                         </div>
 
@@ -71,7 +71,7 @@ function Monthly(){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>50 report</li>
+                                <li><i className="bi bi-check-circle-fill"></i>50 report</li>
 
                             </ul>
                         </div>
@@ -97,7 +97,7 @@ function Monthly(){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>150 report</li>
+                                <li><i className="bi bi-check-circle-fill"></i>150 report</li>
                             </ul>
                         </div>
 
@@ -122,7 +122,7 @@ function Monthly(){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-wind-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>300 report</li>
+                                <li><i className="bi bi-check-circle-fill"></i>300 report</li>
                             </ul>
                         </div>
 

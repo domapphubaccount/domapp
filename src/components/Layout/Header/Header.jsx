@@ -87,6 +87,14 @@ export default function Header({handleToggle}) {
                                                                 </li>
                                                             </ul>
                                                         </li>
+                                                        <li>
+                                                            <div>Customisation</div> 
+                                                            <ul>
+                                                                <li>
+                                                                    <Link className='d-block w-100 h-100' href={'/customisation'} shallow>CUSTOMISATION</Link>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
                                                     </ul>
                                                 </Col>
                                             </Row>

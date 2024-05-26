@@ -8,8 +8,8 @@ export default function RD_sup_section() {
             <div className="col-lg-5 offset-lg-7 col-lg-5 offset-lg-2">
                 <div className='secure-app-content'>
                     <div>
-                    <div class="ply-main">
-                    <div class="ply-content"><i class="bi bi-file-lock"></i></div>
+                    <div className="ply-main">
+                    <div className="ply-content"><i className="bi bi-file-lock"></i></div>
                     <h3>Secure <span>Data</span></h3>
                     </div>
                     <h1>Top secure App</h1>

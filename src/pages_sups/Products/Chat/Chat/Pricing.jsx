@@ -46,7 +46,7 @@ function Monthly({priceIcon}){
                 <Col sm={12} md={4}>
                     <div className='text-center pricing-container pricing-card-3'>
                         <div className='mb-3'>
-                        <i class="bi bi-person"></i>
+                        <i className="bi bi-person"></i>
                             <h3>Standard</h3>
                             <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>5</span> Users</p>
                         </div>
@@ -69,7 +69,7 @@ function Monthly({priceIcon}){
                 <Col sm={12} md={4}>
                     <div className='text-center pricing-container pricing-card'>
                         <div className='mb-3'>
-                        <i class="bi bi-building"></i>
+                        <i className="bi bi-building"></i>
                             <h3>Professional</h3>
                             <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>10</span> Users</p>
                         </div>
@@ -96,7 +96,7 @@ function Monthly({priceIcon}){
                 <Col sm={12} md={4}>
                     <div className='text-center pricing-container pricing-card-2'>
                         <div className='mb-3'>
-                            <i class="bi bi-buildings"></i>
+                            <i className="bi bi-buildings"></i>
                             <h3>Premium</h3>
                             <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>15</span> Users</p>
                         </div>
@@ -135,7 +135,7 @@ function Annual({priceIcon}){
                 <Col sm={12} md={4}>
                     <div className='text-center pricing-container pricing-card-3'>
                         <div className='mb-3'>
-                        <i class="bi bi-person"></i>
+                        <i className="bi bi-person"></i>
                             <h3>Standard</h3>
                             <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>5</span> Users</p>
                         </div>
@@ -156,7 +156,7 @@ function Annual({priceIcon}){
                 <Col sm={12} md={4}>
                     <div className='text-center pricing-container pricing-card'>
                         <div className='mb-3'>
-                        <i class="bi bi-building"></i>
+                        <i className="bi bi-building"></i>
                             <h3>Professional</h3>
                             <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>10</span> Users</p>
                         </div>
@@ -181,7 +181,7 @@ function Annual({priceIcon}){
                 <Col sm={12} md={4}>
                     <div className='text-center pricing-container pricing-card-2'>
                         <div className='mb-3'>
-                            <i class="bi bi-buildings"></i>
+                            <i className="bi bi-buildings"></i>
                             <h3>Premium</h3>
                             <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>15</span> Users</p>
                         </div>

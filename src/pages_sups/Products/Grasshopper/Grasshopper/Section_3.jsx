@@ -9,42 +9,42 @@ import shap5 from "@/assets/images/Products_Page/Customization/bubble-15.png"
 function Section_3() {
   return (
     <section className='cust_section_3'>
-        <div class="section call-to-action-area">
-            <div class="container">
+        <div className="section call-to-action-area">
+            <div className="container">
                 <Row>
                     <Col>
-                        <div class="call-to-action">
-                            <div class="section-heading heading-light">
-                                <span class="subtitle">Let's Work Together</span>
-                                <h2 class="title">Need a successful project?</h2>
-                                {/* <a class="axil-btn btn-large btn-fill-white" href="/demo/react/abstrak/contact">Estimate Project</a> */}
+                        <div className="call-to-action">
+                            <div className="section-heading heading-light">
+                                <span className="subtitle">Let's Work Together</span>
+                                <h2 className="title">Need a successful project?</h2>
+                                {/* <a className="axil-btn btn-large btn-fill-white" href="/demo/react/abstrak/contact">Estimate Project</a> */}
                             </div>
                         </div>
                     </Col>
                     <Col>
-                        <div class="contact-form-box shadow-box" style={{transform:'translateY(-200px)'}}>
-                            <h3 class="title">Contact us for a free consultation!</h3>
-                            <form class="axil-contact-form">
-                                <div class="form-group">
+                        <div className="contact-form-box shadow-box" style={{transform:'translateY(-200px)'}}>
+                            <h3 className="title">Contact us for a free consultation!</h3>
+                            <form className="axil-contact-form">
+                                <div className="form-group">
                                     <label>Name</label>
-                                    <input type="text" class="form-control" name="contact-name" placeholder="John Smith" required="" fdprocessedid="u5jczt" />
+                                    <input type="text" className="form-control" name="contact-name" placeholder="John Smith" required="" fdprocessedid="u5jczt" />
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <label>Email</label>
-                                    <input type="email" class="form-control" name="contact-email" placeholder="example@mail.com" required="" fdprocessedid="i4lqz6" />
+                                    <input type="email" className="form-control" name="contact-email" placeholder="example@mail.com" required="" fdprocessedid="i4lqz6" />
                                 </div>
-                                <div class="form-group mb--40">
+                                <div className="form-group mb--40">
                                     <label>Phone</label>
-                                    <input type="tel" class="form-control" name="contact-phone" placeholder="+123456789" required="" fdprocessedid="6fiee" />
+                                    <input type="tel" className="form-control" name="contact-phone" placeholder="+123456789" required="" fdprocessedid="6fiee" />
                                 </div>
-                                <div class="form-group mb--40">
+                                <div className="form-group mb--40">
                                     <label>Message</label>
-                                    <textarea type="tel" class="form-control" name="contact-phone" placeholder="hi?" required="" fdprocessedid="6fiee" />
+                                    <textarea type="tel" className="form-control" name="contact-phone" placeholder="hi?" required="" fdprocessedid="6fiee" />
                                 </div>
-                                <div class="form-group">
-                                    <button type="submit" class="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn" fdprocessedid="71fagi">Estimate Project</button>
+                                <div className="form-group">
+                                    <button type="submit" className="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn" fdprocessedid="71fagi">Estimate Project</button>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                 </div>
                             </form>
                         </div>
@@ -52,26 +52,26 @@ function Section_3() {
                 </Row>
 
             </div>
-            <ul class="list-unstyled shape-group-9">
-                <li class="shape shape-1">
+            <ul className="list-unstyled shape-group-9">
+                <li className="shape shape-1">
                     <img src={shap1.src} alt="Comments"/>
                 </li>
-                <li class="shape shape-2">
+                <li className="shape shape-2">
                     <img src={shap2.src} alt="Comments"/>
                 </li>
-                <li class="shape shape-3">
+                <li className="shape shape-3">
                     <img src={shap3.src} alt="Comments"/>
                 </li>
-                <li class="shape shape-4">
+                <li className="shape shape-4">
                     <img src={shap4.src} alt="Comments"/>
                 </li>
-                <li class="shape shape-5">
+                <li className="shape shape-5">
                     <img src={shap5.src} alt="Comments"/>
                 </li>
-                <li class="shape shape-6">
+                <li className="shape shape-6">
                     <img src={shap5.src} alt="Comments"/>
                 </li>
-                <li class="shape shape-7">
+                <li className="shape shape-7">
                     <img src={shap2.src}  alt="Comments"/>
                 </li>
             </ul>

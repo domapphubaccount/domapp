@@ -59,8 +59,8 @@ function Monthly({priceIcon}){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-erp-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>2 users</li>
-                                <li><i class="bi bi-check-circle-fill"></i>12 HOURS</li>
+                                <li><i className="bi bi-check-circle-fill"></i>2 users</li>
+                                <li><i className="bi bi-check-circle-fill"></i>12 HOURS</li>
                             </ul>
                         </div>
 
@@ -88,10 +88,10 @@ function Monthly({priceIcon}){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-erp-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>5 users</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Setup fees</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Subscription</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
+                                <li><i className="bi bi-check-circle-fill"></i>5 users</li>
+                                <li><i className="bi bi-check-circle-fill"></i>Setup fees</li>
+                                <li><i className="bi bi-check-circle-fill"></i>First year Subscription</li>
+                                <li><i className="bi bi-check-circle-fill"></i>Online training</li>
                             </ul>
                         </div>
                             <small className='mb-2 d-block fw-bold' style={{fontSize: '.7rem'}}>* Next year renewed 1800 SAR</small>
@@ -116,10 +116,10 @@ function Monthly({priceIcon}){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-erp-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>15 users</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Setup fees</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Subscription</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
+                                <li><i className="bi bi-check-circle-fill"></i>15 users</li>
+                                <li><i className="bi bi-check-circle-fill"></i>Setup fees</li>
+                                <li><i className="bi bi-check-circle-fill"></i>First year Subscription</li>
+                                <li><i className="bi bi-check-circle-fill"></i>Online training</li>
                             </ul>
                         </div>
                             <small className='mb-2 d-block fw-bold' style={{fontSize: '.7rem'}}>* Next year renewed 5000 SAR</small>
@@ -143,10 +143,10 @@ function Monthly({priceIcon}){
                         </div>
                         <div className='mb-4'>
                             <ul className='pricing-erp-data'>
-                                <li><i class="bi bi-check-circle-fill"></i>25 users</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Setup fees</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Subscription</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
+                                <li><i className="bi bi-check-circle-fill"></i>25 users</li>
+                                <li><i className="bi bi-check-circle-fill"></i>Setup fees</li>
+                                <li><i className="bi bi-check-circle-fill"></i>First year Subscription</li>
+                                <li><i className="bi bi-check-circle-fill"></i>Online training</li>
                             </ul>
                         </div>
                             <small className='mb-2 d-block fw-bold' style={{fontSize: '.7rem'}}>* Next year renewed 7500 SAR</small>
@@ -169,12 +169,12 @@ function Monthly({priceIcon}){
                             <p>Get customized features for your organization</p>
                         <div className='mb-4'>
                             <ul className='pricing-erp-data'>
-                                {/* <li><i class="bi bi-check-circle-fill"></i>Get customized features for your organization</li> */}
-                                {/* <li><i class="bi bi-check-circle-fill"></i>First year Cloud Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>First year Hosting Free</li>
-                                <li><i class="bi bi-check-circle-fill"></i>One Time setUp Fee</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Online training</li>
-                                <li><i class="bi bi-check-circle-fill"></i>Maintainance and Updates</li> */}
+                                {/* <li><i className="bi bi-check-circle-fill"></i>Get customized features for your organization</li> */}
+                                {/* <li><i className="bi bi-check-circle-fill"></i>First year Cloud Free</li>
+                                <li><i className="bi bi-check-circle-fill"></i>First year Hosting Free</li>
+                                <li><i className="bi bi-check-circle-fill"></i>One Time setUp Fee</li>
+                                <li><i className="bi bi-check-circle-fill"></i>Online training</li>
+                                <li><i className="bi bi-check-circle-fill"></i>Maintainance and Updates</li> */}
                             </ul>
                         </div>
 
@@ -203,7 +203,7 @@ function Annual({priceIcon}){
                 <Col sm={12} md={4}>
                     <div className='text-center pricing-container pricing-card-3'>
                         <div className='mb-3'>
-                        <i class="bi bi-person"></i>
+                        <i className="bi bi-person"></i>
                             <h3>Standard</h3>
                             <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>5</span> Users</p>
                         </div>
@@ -224,7 +224,7 @@ function Annual({priceIcon}){
                 <Col sm={12} md={4}>
                     <div className='text-center pricing-container pricing-card'>
                         <div className='mb-3'>
-                        <i class="bi bi-building"></i>
+                        <i className="bi bi-building"></i>
                             <h3>Professional</h3>
                             <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>10</span> Users</p>
                         </div>
@@ -249,7 +249,7 @@ function Annual({priceIcon}){
                 <Col sm={12} md={4}>
                     <div className='text-center pricing-container pricing-card-2'>
                         <div className='mb-3'>
-                            <i class="bi bi-buildings"></i>
+                            <i className="bi bi-buildings"></i>
                             <h3>Premium</h3>
                             <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>15</span> Users</p>
                         </div>
