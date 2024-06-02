@@ -87,7 +87,7 @@ export const items = [
     {
       index: 3,
       src: product_3,
-      title: 'CRM BONDIFY',
+      title: 'BONDIFY CRM ',
       link: '/crmBondify',
       video:'/Products/DomERP.gif',
       caption: 'Project management, Invoicing, Leads, Tasks, Time tracking and more.',
@@ -161,5 +161,57 @@ export const items = [
           body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
         },
       ]
-    }
+    },
+    {
+      index: 6,
+      src: product_3,
+      title: 'GRASSHOPPER® 3D',
+      link: '/grasshopper',
+      video:'/Products/GRASSHOPPER.gif',
+      caption: 'Boost your productivity and efficiency with Grasshopper for Rhino – streamline your designs, save time, and innovate faster',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
+    },
+    {
+      index: 7,
+      src: product_3,
+      title: 'CUSTOMIZATION',
+      link: '/customisation',
+      video:'/Products/CUSTOMIZATION.gif',
+      caption: 'Software solutions, personalized custom modifications, high-quality web development, and continuous support.',
+      dataList: [
+        {
+          head:'Manage and Modify project data',
+          body: 'Efficiently input and manage project information including job specifics, client details, project data, type of cladding employed and specifications'
+        },
+        {
+          head:'Entering and editing manufacturing components.',
+          body: 'Input and editing of engineering components essential for manufacturing, including fixations, stiffeners, and bend details'
+        },
+        {
+          head:'Importing dxf files',
+          body: 'Import and upload the project sitting out as dxf file.'
+        },
+        {
+          head:'Producing detailed manufacturing drawings.',
+          body: 'Producing detailed fabrication drawing for each panel as (dxf, dxf for CNC and PDF)'
+        },
+      ]
+    },
   ];

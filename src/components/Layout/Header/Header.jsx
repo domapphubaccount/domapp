@@ -88,18 +88,18 @@ export default function Header({handleToggle}) {
                                                             </ul>
                                                         </li>
                                                         <li>
-                                                            <div>Customisation</div> 
+                                                            <div>Web Developement</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/customisation'} shallow>CUSTOMISATION</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/customisation'} shallow>CUSTOMIZATION</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li>
-                                                            <div>Grasshopper</div> 
+                                                            <div>Facade design</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/grasshopper'} shallow>GRASSHOPER</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/grasshopper'} shallow>GRASSHOPPER® 3D</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
