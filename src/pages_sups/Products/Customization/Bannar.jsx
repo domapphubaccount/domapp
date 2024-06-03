@@ -35,7 +35,7 @@ export default function Bannar() {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">The Ultimate Tool for Creativity and Efficiency</h4>
-                                        <p className='text-xs leading-relaxed'>shopper for Rhino is the ultimate tool for architects, engineers, and designers seeking to push the boundaries of creativity and efficiency.</p>
+                                        <p className='text-xs leading-relaxed'>Grasshopper is the ultimate tool for architects, engineers, and designers seeking to push the boundaries of creativity and efficiency.</p>
                                     </div>
                                 </div>
                             </div>
