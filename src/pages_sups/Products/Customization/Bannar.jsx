@@ -18,7 +18,7 @@ export default function Bannar() {
                 <div className="container position-relative">
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="inner mb-5">
+                            <div className="inner mb-5" data-aos="fade-right">
                                 <h1 className="title theme-gradient"
                                 >Grasshopper®<br/>3D   
                                 </h1>
@@ -29,7 +29,7 @@ export default function Bannar() {
                     <div className="service-wrapper mb-5 service-white">
                         <div className="row">
                             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div className="service service__style--1">
+                                <div className="service service__style--1" data-aos="fade-up" data-aos-duration="1000">
                                     <div className="icon">
                                         <img src={iconCard.src} alt="Digital Agency"/>
                                     </div>
@@ -40,7 +40,7 @@ export default function Bannar() {
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <div className="service service__style--1">
+                            <div className="service service__style--1" data-aos="fade-up" data-aos-duration="2000">
                                 <div className="icon">
                                     <img src={iconCard2.src} alt="Digital Agency"/>
                                 </div>
@@ -51,7 +51,7 @@ export default function Bannar() {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                        <div className="service service__style--1">
+                        <div className="service service__style--1" data-aos="fade-up" data-aos-duration="3000">
                         <div className="icon">
                             <img src={iconCard3.src} alt="Digital Agency"/>
                         </div>

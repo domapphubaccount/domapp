@@ -5590,3 +5590,55 @@ i.icon-2x {
     background-color: #000;
     background-image: url("../assets/images/Grasshopper/pattern-1.png");
   }
+  .grass_whyus .subtitle {
+    color: #c75c6f;
+    color: var(--color-rose);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: DM Sans, sans-serif;
+    font-family: var(--font-primary);
+    margin-bottom: 15px;
+}
+.line-container {
+    position: relative;
+    height: 100px; /* Adjust based on your layout */
+    margin-bottom: 20px;
+  }
+  
+  .blue-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 5px;
+    height: 0; /* Start with height 0 */
+    background-color: blue;
+    transform: translateX(-50%);
+  }
+  .progress_sidebar{
+    width: 8px;
+    background-color: #f9004d;
+    border: 1px solid green;
+    position: relative;
+    height: 550px;
+    margin: 20px;
+
+  }
+  .progress_sidebar .progress{
+    position: absolute;
+    top: 0;
+    height: 100px;
+    background-color: #fff;
+    width: 100%;
+  }
+  .grass_whyUs_card{
+    box-shadow: 1px 3px 10px #63626278;
+    color: #bfbebe;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  .grass_whyUs_card h6{
+    line-height: 1.4;
+  }
+  .whyus_container_card{
+    height: 600px;
+  }

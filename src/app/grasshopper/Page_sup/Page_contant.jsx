@@ -10,6 +10,7 @@ import Section_3 from '@/pages_sups/Products/Customization/Customization/Section
 import Section_4 from '@/pages_sups/Products/Customization/Customization/Section_4'
 import Section_5 from '@/pages_sups/Products/Customization/Customization/Section_5'
 import Section_6 from '@/pages_sups/Products/Customization/Customization/Section_6'
+import Section_7 from '@/pages_sups/Products/Customization/Customization/Section_7'
 
 
 export default function Page() {
@@ -21,6 +22,7 @@ export default function Page() {
       <Section_1 />
       <Section_5 />
       <Section_6 />
+      <Section_7 />
       <Section_4 />
       {/* <Section_3 /> */}
       <Section_2 />

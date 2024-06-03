@@ -16,7 +16,7 @@ function Section_4() {
       /> */}
         <Container>
             <Row>
-                <Col md={6} sm={12}>
+                <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000" >
                     <div className='p-2 my-2'>
                         <div className='description py-5 px-3 rounded'>
                             <h4>Visualization and Documentation</h4>
@@ -26,18 +26,20 @@ function Section_4() {
                         </div>
                     </div>
                 </Col>
-                <Col md={6} sm={12}>
+
+                <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000" >
                     <div className='h-100 d-flex align-items-center my-2'>
                         <img src={grass1.src} className='rounded'  alt=''/>
                     </div>
                 </Col>
 
-                <Col md={6} sm={12}>
+                <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000" >
                     <div className='h-100 d-flex align-items-center my-2'>
                         <img src={grass2.src} className='rounded'  alt=''/>
                     </div>
                 </Col>
-                <Col md={6} sm={12}>
+
+                <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000" >
                     <div className='p-5 my-2'>
                         <div className='description py-5 px-3 rounded'>
                             <h4>Rapid Iterations</h4>
@@ -48,8 +50,7 @@ function Section_4() {
                     </div>
                 </Col>
 
-
-                <Col md={6} sm={12}>
+                <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000" >
                     <div className='p-5 my-2'>
                     <div className='description py-5 px-3 rounded'>
                             <h4>Complex Calculations and Geometries</h4>
@@ -59,7 +60,8 @@ function Section_4() {
                         </div>
                     </div>
                 </Col>
-                <Col md={6} sm={12}>
+
+                <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000" >
                     <div className='h-100 d-flex align-items-center my-2'>
                         <img src={grass3.src} className='rounded'  alt=''/>
                     </div>
