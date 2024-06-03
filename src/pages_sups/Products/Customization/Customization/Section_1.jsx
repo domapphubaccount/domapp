@@ -18,7 +18,7 @@ export default function Section_1() {
                 <div className="section-title">
                   <h2 className="title fw-bold">About Grasshopper</h2>
                   <p className="description">
-                  	Grasshopper can save approximately 40-80% of the time typically required for complex design and modelling tasks by automating repetitive processes, enabling rapid iterations, and integrating analysis tools, this estimate assumes that users have a moderate to high level of proficiency with Grasshopper, as familiarity with the tool greatly enhances its efficiency benefits.                  </p>
+                  Grasshopper is a powerful visual programming language and environment integrated within the Rhino 3D modelling software. It allows users to create and manipulate complex designs that offers significant time savings and enhanced design capabilities.               </p>
                 </div>
                 {/* <div className="row mt--30 mt_sm--10">
                   <div className="col-lg-6 col-md-12 col-sm-12 col-12">

@@ -34,8 +34,8 @@ export default function Bannar() {
                                         <img src={iconCard.src} alt="Digital Agency"/>
                                     </div>
                                     <div className="content">
-                                        <h4 className="title">Powerful Visual Programming Language</h4>
-                                        <p className='text-xs leading-relaxed'>Grasshopper is a powerful visual programming language and environment integrated within the Rhino 3D modelling software. It allows users to create and manipulate complex designs that offers significant time savings and enhanced design capabilities.</p>
+                                        <h4 className="title">The Ultimate Tool for Creativity and Efficiency</h4>
+                                        <p className='text-xs leading-relaxed'>shopper for Rhino is the ultimate tool for architects, engineers, and designers seeking to push the boundaries of creativity and efficiency.</p>
                                     </div>
                                 </div>
                             </div>
