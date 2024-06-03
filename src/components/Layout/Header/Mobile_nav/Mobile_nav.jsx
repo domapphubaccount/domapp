@@ -68,7 +68,7 @@ export default function MobileNav() {
     // },
     {
       index: 4,
-      title: 'CRM BONDIFY',
+      title: 'BONDIFY CRM',
       link: '/crmBondify',
       caption: 'Section 3',
       Section_2:{
@@ -113,7 +113,39 @@ export default function MobileNav() {
           src:''
         }
       }
-    }
+    },
+    {
+      index: 7,
+      title: 'CUSTOMIZATION',
+      link: '/customisation',
+      caption: 'Section 3',
+      Section_2:{
+        first:{
+          caption:'',
+          src:''
+        },
+        seconed:{
+          caption:'',
+          src:''
+        }
+      }
+    },
+    {
+      index: 8,
+      title: 'BONDIFY CRM',
+      link: '/crmBondify',
+      caption: 'Section 3',
+      Section_2:{
+        first:{
+          caption:'',
+          src:''
+        },
+        seconed:{
+          caption:'',
+          src:''
+        }
+      }
+    },
   ];
 
   const list = (anchor) => (

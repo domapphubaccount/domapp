@@ -168,7 +168,7 @@ export const items = [
       title: 'GRASSHOPPER® 3D',
       link: '/grasshopper',
       video:'/Products/GRASSHOPPER.gif',
-      caption: 'Boost your productivity and efficiency with Grasshopper for Rhino – streamline your designs, save time, and innovate faster',
+      caption: 'Precision engineering for exquisite facade fabrication.',
       dataList: [
         {
           head:'Manage and Modify project data',

@@ -22,6 +22,7 @@ export default function Bannar() {
                                 <h1 className="title theme-gradient"
                                 >Grasshopper®<br/>3D   
                                 </h1>
+                                <p className='text-white'>Precision engineering for exquisite facade fabrication.</p>
                             </div>
                         </div>
                     </div>
@@ -34,7 +35,7 @@ export default function Bannar() {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">Powerful Visual Programming Language</h4>
-                                        <p className='text-xs leading-relaxed'>Grasshopper for Rhino is a powerful visual programming language and environment integrated within the Rhino 3D modelling software. It allows users to create and manipulate complex designs that offers significant time savings and enhanced design capabilities.</p>
+                                        <p className='text-xs leading-relaxed'>Grasshopper is a powerful visual programming language and environment integrated within the Rhino 3D modelling software. It allows users to create and manipulate complex designs that offers significant time savings and enhanced design capabilities.</p>
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +46,7 @@ export default function Bannar() {
                                 </div>
                                 <div className="content">
                                     <h4 className="title">Empowering Designers and Engineers</h4>
-                                    <p className='text-xs leading-relaxed'>Grasshopper for Rhino empowers designers and engineers to push the boundaries of traditional modelling through a flexible, intuitive, and powerful dynamic design environment.</p>
+                                    <p className='text-xs leading-relaxed'>Grasshopper empowers designers and engineers to push the boundaries of traditional modelling through a flexible, intuitive, and powerful dynamic design environment.</p>
                                 </div>
                             </div>
                         </div>

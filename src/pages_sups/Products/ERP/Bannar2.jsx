@@ -32,7 +32,7 @@ export default function Bannar2() {
                     </div>
                   </div>
                 </div> */}
-                <h2>CRM BONDIFY<img className="line-text" src="../assets/images/landing/home/line.png" alt=""/></h2>
+                <h2>BONDIFY CRM<img className="line-text" src="../assets/images/landing/home/line.png" alt=""/></h2>
                 <p>Project management, Invoicing, Leads, Tasks, Time tracking and more.
                 </p>
                 <div className="docutment-button"> 
