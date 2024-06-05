@@ -9,7 +9,7 @@ function Section_6() {
                     <div className="servive-block servive-block-red rounded">
                         <i className="icon-2x color-light fa fa-globe"></i>
                         <h2 className="heading-md">Learning and Development</h2>
-                        <p>The visual programming approach makes it accessible to those without extensive coding knowledge, while still offering advanced capabilities for those who wish to delve deeper into scripting and algorithmic design.</p>
+                        <p>The visual programming approach makes it accessible to those without extensive coding knowledge, while still offering advanced capabilities for those who wish to dive deeper into scripting and algorithmic design.</p>
                     </div>
                 </div>
                 <div className="col-sm-6" data-aos="fade-up" data-aos-duration="2000" >
