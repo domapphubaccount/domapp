@@ -191,10 +191,10 @@ export const items = [
     {
       index: 7,
       src: product_3,
-      title: 'CUSTOMIZATION',
+      title: 'SOFTWARE AND CUSTOMIZATION',
       link: '/customisation',
       video:'/Products/CUSTOMIZATION.gif',
-      caption: 'Software solutions, personalized custom modifications, high-quality web development, and continuous support.',
+      caption: 'We create ideas, build and customize stunning applications.',
       dataList: [
         {
           head:'Manage and Modify project data',

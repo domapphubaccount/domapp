@@ -17,10 +17,9 @@ export default function Bannar() {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="section-heading heading-left">
-                        <h6 data-wow-duration="1s" data-wow-delay="0.5s" class="wow fadeInUp sub-title text-primary" style={{color: '#896eff!important'}}>We Create Ideas</h6>
-                            <h1 className="title h2">Build and <span style={{color: '#896eff!important'}}>customize</span> stunning applications</h1>
-                            <div><div className='d-inline-block m-auto text-secondary fw-bold px-5'>Software and Customization
-We create ideas, build and customize stunning applications.</div></div>
+                        {/* <h6 data-wow-duration="1s" data-wow-delay="0.5s" class="wow fadeInUp sub-title text-primary" style={{color: '#896eff!important'}}>We Create Ideas</h6> */}
+                            <h1 className="title h2">SOFTWARE AND CUSTOMIZATION</h1>
+                            <div><div className='d-inline-block m-auto text-primary fw-bold px-5'>We create ideas, build and customize stunning applications.</div></div>
                             {/* <p>"Unleash Your Brand's Potential with DomApp Website Customization services"</p> */}
                         </div>
                     </div>
