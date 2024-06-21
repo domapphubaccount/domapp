@@ -5642,14 +5642,14 @@ i.icon-2x {
   .whyus_container_card{
     height: 600px;
   }
-  @media (max-width: 700px) {
+  /* @media (max-width: 700px) {
     .mobile-res{
-        display: block;
-    }
-    .pc_res{
         display: none;
     }
-  }
+    .pc_res{
+        display: block;
+    }
+  } */
   .carousal_arrow::before{
     content: "";
   }

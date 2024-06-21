@@ -37,7 +37,7 @@ export default function MobileNav() {
     {
       index: 2,
       title: 'WINDMASTER',
-      link:'/wind',
+      link:'/windmaster',
       caption: 'Powerful structural analysis and design .Instant access, directly from your browser',
       Section_2:{
         first:{
@@ -116,7 +116,7 @@ export default function MobileNav() {
     },
     {
       index: 7,
-      title: 'CUSTOMIZATION',
+      title: 'SOFTWARE AND CUSTOMIZATION',
       link: '/customisation',
       caption: 'Section 3',
       Section_2:{
@@ -132,8 +132,8 @@ export default function MobileNav() {
     },
     {
       index: 8,
-      title: 'BONDIFY CRM',
-      link: '/crmBondify',
+      title: 'GRASSHOPPER® 3D',
+      link: '/grasshopper',
       caption: 'Section 3',
       Section_2:{
         first:{
@@ -184,9 +184,9 @@ export default function MobileNav() {
           </div>
         ))}
       </List>
-      <div className='px-3 mb-3'>
+      {/* <div className='px-3 mb-3'>
       <Lang />
-      </div>
+      </div> */}
     </Box>
   );
 
