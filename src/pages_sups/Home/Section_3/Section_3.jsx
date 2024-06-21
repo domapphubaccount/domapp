@@ -27,9 +27,10 @@ export default function Section_3() {
             <Container>
                 <Row>
                     {counterData.map((item, index) => (
-                        <Col key={index}>
+                        <Col key={index} sm="4">
                             <InView>
                                 {({ ref, inView }) => (
+                                    
                                     <div ref={ref} className="h-100">
                                         <h2 className="fw-bold">
                                             {inView ? (
