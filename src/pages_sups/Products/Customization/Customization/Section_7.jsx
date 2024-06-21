@@ -55,7 +55,7 @@ function Section_7() {
             At DomApp, we have specialists in cutting-edge facade fabrication that combines the power of Grasshopper with our team of experienced engineers. Our advanced parametric design capabilities enable us to create stunning, efficient, and highly customizable facade solutions.
           </p>
         </div>
-        <div className='d-flex align-items-stretch'>
+        <div className='d-flex align-items-stretch pc-res'>
           <div className='d-flex justify-content-between flex-column whyus_container_card'>
             
             <div className='grass_whyUs_card mb-5' id="g_1" ref={g1Ref} style={{ opacity: 0 }}>
@@ -83,6 +83,25 @@ function Section_7() {
             </div>
 
           </div>
+        </div>
+
+        <div className='mobile-res'>
+            <div className='grass_whyUs_card mb-5' id="g_1" ref={g1Ref} style={{ opacity: 0 }}>
+              <div>
+                <span className='fw-bold text-white'> Innovative Solutions: </span> We are at the forefront of facade design and fabrication, offering innovative solutions that set your building apart.
+              </div>
+            </div>
+
+            <div className='grass_whyUs_card mb-5' id="g_2" ref={g2Ref} style={{ opacity: 0 }}>
+              <div>
+              <span className='fw-bold text-white'>Client-Centric Approach: </span> Your satisfaction is our priority. We work closely with you to understand your needs and exceed your expectations.
+              </div>
+            </div>
+            <div className='grass_whyUs_card mb-5' id="g_3" ref={g3Ref} style={{ opacity: 0 }}>
+              <div>
+                <span className='fw-bold text-white'>Experienced Team: </span> Our team combines technical expertise with creative vision, delivering exceptional results every time.
+              </div>
+            </div>
         </div>
       </Container>
     </div>
