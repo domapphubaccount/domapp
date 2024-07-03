@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { carousalData } from "./carousalData";
 import Section_head from "../Reuse/Section_Head/Section_head";
 import { useRouter } from "next/navigation";
+import { Container } from "reactstrap";
 
 function Carousal() {
   const navigate = useRouter()
@@ -18,7 +19,7 @@ function Carousal() {
     }, []);
 
     var settings = {
-        dots: true,
+        dots: false,
         focusOnSelect: true,
         className: "center",
         centerMode: true,
@@ -28,6 +29,7 @@ function Carousal() {
         slidesToScroll: 2,
         initialSlide: 0,
         infinite: true,
+        arrows: false,
         responsive: [
           {
             breakpoint: 1024,
@@ -58,7 +60,7 @@ function Carousal() {
         prevArrow: <SamplePrevArrow />
       };
     const settings_video = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -116,7 +118,7 @@ function Carousal() {
                               <div className="m-auto">
                                 {item.icon}
                               </div>
-                              <h6 className="mt-3">{item.title}</h6>
+                              <h6 className="mt-3" style={{fontSize:'13px'}}>{item.title}</h6>
                               </div>
                           </div>
                   ))    
@@ -125,6 +127,7 @@ function Carousal() {
               </div>
           </div>
 
+          <div className="m-auto py-4" style={{maxWidth:'800px'}}>
           <div className="carousals_icons">
               <div className="slider-container">
               <Slider {...settings_video} asNavFor={nav2} ref={slider => (sliderRef1 = slider)}>
@@ -138,6 +141,7 @@ function Carousal() {
                 }
               </Slider>
               </div>
+          </div>
           </div>
 
       </div>
