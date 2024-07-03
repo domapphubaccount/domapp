@@ -101,8 +101,9 @@ function Carousal() {
 
   return (
     <>
+    <div id="products"></div>
       <Section_head head={1}  title_1={'Our Products'}des_1={'Each developed with precision, passion, and a deep commitment to excellence.'}/>
-      <div className="carousal_container container" id="products">
+      <div className="carousal_container container">
 
           <div className="carousals_icons">
               <div className="slider-container">
