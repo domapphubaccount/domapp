@@ -19,7 +19,7 @@ export default function Bannar() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="inner mb-5" data-aos="fade-right">
-                                <h1 className="title theme-gradient"
+                                <h1 className="title theme-gradient grass_title"
                                 >Grasshopper®<br/>3D   
                                 </h1>
                                 <p className='text-white'>Flexible, Intuitive, and powerful dynamic design environment.</p>
