@@ -13,6 +13,7 @@ export default function Section_1() {
     const initialValues = {
         name:'',
         email:'',
+        phone: '',
         title:'',
         product:'',
         message:''
