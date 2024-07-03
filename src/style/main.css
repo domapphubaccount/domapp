@@ -5653,3 +5653,40 @@ i.icon-2x {
   .carousal_arrow::before{
     content: "";
   }
+  .slick-slide {
+    transition: transform 0.3s ease;
+}
+
+.slick-slide.slick-active.slick-center {
+    position: relative;
+    transform: scale(1.1);
+    /* border: 2px solid #f00;  */
+}
+.slick-slide.slick-active.slick-center h6{
+    font-weight: 800;
+    font-size: 16px;
+}
+.slick-slide.slick-active.slick-center svg{
+    width: 30px;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    fill: #fff;
+}
+.slick-slide.slick-active.slick-center svg path{
+    fill: #000;
+}
+.slick-slide.slick-active.slick-center .grass{
+    width: 30px;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    fill: #fff;
+}
+.slick-slide.slick-active.slick-center .grass path{
+    fill: #fff;
+}
