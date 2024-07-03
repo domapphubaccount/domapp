@@ -22,7 +22,7 @@ export const carousalData = [
     {
         index: 3,
         title: 'BONDIFY CRM',
-        src: '/Products/DomERP.gif',
+        src: '/Products/BONDIFY CRM.gif',
         link: '/crmBondify',
         icon:<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-3 m-auto" style={{width: "30px"}}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5L18.75 6.188M21 7.5V9.75M21 7.5L18.75 8.813M3 7.5L5.25 6.188M3 7.5L5.25 8.813M3 7.5V9.75M12 12.75L14.25 11.438M12 12.75L9.75 11.438M12 12.75V15M12 21.75L14.25 20.438M12 21.75V19.5M12 21.75L9.75 20.438M9.75 4.875L12 3.188L14.25 4.875M21 14.25V16.5L18.75 17.813M3 16.5V14.25L5.25 15.563" />
