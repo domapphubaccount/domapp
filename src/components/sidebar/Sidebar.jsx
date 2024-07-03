@@ -51,7 +51,7 @@ export default function Sidebar({items}) {
 
   const idItems = [
     <li>
-    <Link href="/#whatwedo" className='nav-link-item text-black no-underline	' shallow>WHAT WE DO</Link>
+      <Link href="/#whatwedo" className='nav-link-item text-black no-underline	' shallow>WHAT WE DO</Link>
     </li>,
     <li>
         <Link href="/#about" className='nav-link-item text-black no-underline	' shallow>ABOUT US</Link>
