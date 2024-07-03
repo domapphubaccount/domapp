@@ -16,10 +16,6 @@ export default function Section_3() {
             number: 25000,
             title: 'Successful Jobs'
         },
-        // {
-        //     number: 24,
-        //     title: 'Support Availability'
-        // }
     ];
 
     return (
