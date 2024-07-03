@@ -22,7 +22,7 @@ export default function Bannar() {
                                 <h1 className="title theme-gradient"
                                 >Grasshopper®<br/>3D   
                                 </h1>
-                                <p className='text-white'>Precision engineering for exquisite facade fabrication.</p>
+                                <p className='text-white'>Flexible, Intuitive, and powerful dynamic design environment.</p>
                             </div>
                         </div>
                     </div>
