@@ -5690,3 +5690,8 @@ i.icon-2x {
 .slick-slide.slick-active.slick-center .grass path{
     fill: #fff;
 }
+@media (max-width: 700px) {
+    .grass_title{
+        font-size: 50px!important;
+    }
+}
