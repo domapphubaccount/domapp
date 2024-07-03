@@ -119,9 +119,9 @@ export default function Header({handleToggle}) {
                                     <a onClick={handleToggle} className='pointer nav-link-item'>CONTACT US</a>
                                 </li>
                                 <li>
-                                { getWidowY < 100 &&
+                                {/* { getWidowY < 100 &&
                                     <Lang />
-                                    }                                
+                                    }                                 */}
                                 </li>
                             </ul>
                         </nav>
