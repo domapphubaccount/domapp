@@ -23,7 +23,7 @@ export default function Bannar({bannar,title,caption}) {
                             </div>
                             <div className='mb-4'>
                                 <p>
-                                    {caption}
+                                One platform with all your connection needs.
                                 </p>
                             </div>
                             <div className='d-flex justify-content-center'>
