@@ -23,7 +23,7 @@ export default function Sidebar({items}) {
   const [open, setOpen] = React.useState(false);
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
-  const [openAccordion, setOpenAccordion] = React.useState(0);
+  const [openAccordion, setOpenAccordion] = React.useState(2);
  
   const handleOpen = (value) => setOpenAccordion(openAccordion === value ? 0 : value);
  
@@ -50,12 +50,15 @@ export default function Sidebar({items}) {
   }
 
   const idItems = [
-    <li>
-      <Link href="/#whatwedo" className='nav-link-item text-black no-underline	' shallow>WHAT WE DO</Link>
-    </li>,
-    <li>
-        <Link href="/#about" className='nav-link-item text-black no-underline	' shallow>ABOUT US</Link>
-    </li>
+    {
+      link:"/#whatwedo",
+      title: "WHAT WE DO"
+    }
+    ,
+    {
+      link: "/#about",
+      title: "ABOUT US"
+    }
   ]
  
   return (
@@ -87,7 +90,7 @@ export default function Sidebar({items}) {
 
 
         <Accordion open={openAccordion === 2} icon={<Icon id={2} open={openAccordion} />}>
-          <AccordionHeader onClick={() => handleOpen(2)} className="p-2">
+          <AccordionHeader onClick={() => handleOpen(2)} className="p-2 mb-4">
             Products
           </AccordionHeader>
           <AccordionBody>
@@ -104,12 +107,15 @@ export default function Sidebar({items}) {
           ))}
           </AccordionBody>
         </Accordion>
+
+
         {idItems.map((item,index)=>(
-          <ListItem key={index} onClick={()=>handleNavigate(item.link)}>
-            <ListItemPrefix>
-              {item}
-            </ListItemPrefix>
-          </ListItem>
+            <Accordion key={index} onClick={()=>{navigate.push(item.link);setOpen(false)}}>
+              <AccordionHeader  className="p-2">
+                    {item.title}
+              </AccordionHeader>
+            </Accordion>
+        
           ))}
 
 
