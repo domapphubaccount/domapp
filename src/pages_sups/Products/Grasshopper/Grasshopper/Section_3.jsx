@@ -26,7 +26,10 @@ function Section_3() {
             name:'',
             email:'',
             phone: '',
-            message: ''
+            Product: '',
+            title: '',
+            message: '',
+
         },
         validationSchema: validationSchema,
         onSubmit: values => {
