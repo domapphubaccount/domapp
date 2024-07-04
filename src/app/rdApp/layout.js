@@ -5,7 +5,7 @@ export const metadata = {
   description: "RDAPP",
 };
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
 
   return (
     <>

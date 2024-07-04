@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Bannar from "@/pages_sups/Products/RD/Bannar"
 import Section_2 from "@/pages_sups/Products/RD/RD/Section_2"
@@ -16,20 +17,20 @@ export default function Page() {
 
   return (
     <div className="rd_page page_hid">
-                    <Bannar/>
-                    <RD_cards />
-                    <RD_heading title="" body="RDAPP stacked with the best features."/>
-                    <Section_1 />
-                    <Section_2/>
-                    <Section_3 />
-                    <Section_4 />
-                    <Section_5 />
-                    <RD_heading title="AND MORE" body="RDAPP Provides Best Features 'And more'"/>
-                    <RD_features_cards />
-                    <RD_Content_section />
-                    <RD_heading title="" body="RDAPP Provides Best Communication And Cost Monitoring"/>
-                    <Section_7 />
-              <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
+      <Bannar/>
+      <RD_cards />
+      <RD_heading title="" body="RDAPP stacked with the best features."/>
+      <Section_1 />
+      <Section_2/>
+      <Section_3 />
+      <Section_4 />
+      <Section_5 />
+      <RD_heading title="AND MORE" body="RDAPP Provides Best Features 'And more'"/>
+      <RD_features_cards />
+      <RD_Content_section />
+      <RD_heading title="" body="RDAPP Provides Best Communication And Cost Monitoring"/>
+      <Section_7 />
+      <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />
     </div>
   )
 }
