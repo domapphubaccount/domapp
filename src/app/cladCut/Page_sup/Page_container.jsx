@@ -1,12 +1,11 @@
 "use client"
+
 import Footer from '@/components/Layout/Footer/Footer'
 import Header from '@/components/Layout/Header/Header'
 import Page_sup from './Page_contant'
-import Loading_page from '@/components/Loading_page/Loading_page'
 import { useEffect, useState } from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import Contact from '@/components/Contact/Contact'
-
 
 export const metadata = {
     title: "CLADCUT",

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import React from 'react';
 import Section_2 from "@/pages_sups/Products/Chat/Chat/Section_2";
 import Section_3_Chat from "@/pages_sups/Products/Chat/Chat/Section_3";
 import Bannar from "@/pages_sups/Products/Chat/Bannar";
