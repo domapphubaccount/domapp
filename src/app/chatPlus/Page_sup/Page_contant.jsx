@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 
 import Section_2 from "@/pages_sups/Products/Chat/Chat/Section_2";

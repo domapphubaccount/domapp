@@ -11,9 +11,8 @@ import RD_heading from "@/pages_sups/Products/RD/RD/RD_heading"
 import RD_cards from "@/pages_sups/Products/RD/RD/RD_cards"
 import RD_features_cards from "@/pages_sups/Products/RD/RD/RD_features_cards"
 import RD_Content_section from "@/pages_sups/Products/RD/RD/RD_Content_section"
-import dynamic from "next/dynamic";
 
-function Page() {  
+export default function Page() {  
 
   return (
     <div className="rd_page page_hid">
@@ -34,5 +33,3 @@ function Page() {
     </div>
   )
 }
-
-export default dynamic (() => Promise.resolve(Page), {ssr: false})

@@ -2,7 +2,6 @@
 import Footer from '@/components/Layout/Footer/Footer'
 import Header from '@/components/Layout/Header/Header'
 import Page_sup from './Page_contant'
-import Loading_page from '@/components/Loading_page/Loading_page'
 import { useEffect, useState } from 'react'
 import Contact from '@/components/Contact/Contact'
 
