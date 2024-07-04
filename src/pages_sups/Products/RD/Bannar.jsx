@@ -9,7 +9,7 @@ import Shap_2 from "@/assets/images/Products_Page/Rd/line-shape.png"
 import Shape1 from "@/assets/images/shap/shap1.png"
 import Link from 'next/link'
 
-export default function Product({bannar,title,caption}) {
+export default function Product() {
   return (
     <section className={`rd_bannar ${league} position-relative`}>
             <div className='rd'>

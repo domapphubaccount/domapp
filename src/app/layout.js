@@ -7,7 +7,6 @@ import "bootstrap-icons/font/bootstrap-icons.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { AOSInit } from "@/components/Animation/aos";
-import Contact from '@/components/Contact/Contact';
 
 const inter = Inter({ subsets: ["latin"] });
 
