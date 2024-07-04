@@ -1,11 +1,12 @@
 "use client"
+
 import Footer from '@/components/Layout/Footer/Footer'
 import Header from '@/components/Layout/Header/Header'
 import Page_sup from './Page_contant'
-import Loading_page from '@/components/Loading_page/Loading_page'
 import { useEffect, useState } from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import Contact from '@/components/Contact/Contact'
+import dynamic from 'next/dynamic'
 
 
 export const metadata = {
@@ -14,7 +15,7 @@ export const metadata = {
   };
   
 
-export default function Page() {
+function Page() {
     const [showTimer , setShowTimer] = useState(0)
     const [toggle, setToggle] = useState(false);
 
@@ -44,3 +45,5 @@ export default function Page() {
     </div>
   )
 }
+
+export default dynamic (() => Promise.resolve(Page), {ssr: false})

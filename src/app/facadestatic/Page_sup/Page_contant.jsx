@@ -8,8 +8,6 @@ import Section_4 from "@/pages_sups/Products/Products_sups/Section_4"
 import Section_5 from "@/pages_sups/Products/Products_sups/Section_5"
 import { items } from "../../Page_data"
 import { usePathname } from 'next/navigation'
-import Products_carousal from "@/components/Reuse/Section_Head/Products_carousal/Products_carousal"
-import Section_head from "@/components/Reuse/Section_Head/Section_head"
 import ScrollToTop from 'react-scroll-to-top'
 import Each_product from "@/components/Reuse/Section_Head/Products_carousal/Each_product"
 

@@ -170,7 +170,6 @@ export default function Section_1() {
                 <ModalHeader toggle={toggleModule}>Thanks for your message</ModalHeader>
                 <ModalBody>
                     <div className='text-center py-4'>
-
                        <h5 className='pb-3'> We have received your message </h5>
                        <p> we will contact you as soon as posible</p>
                     </div>
