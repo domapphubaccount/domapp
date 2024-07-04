@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import ScrollToTop from 'react-scroll-to-top'
 import Bannar from "@/pages_sups/Products/Clad/Bannar"
