@@ -6,8 +6,6 @@ import Page_sup from './Page_contant'
 import { useEffect, useState } from 'react'
 import ScrollToTop from "react-scroll-to-top";
 import Contact from '@/components/Contact/Contact'
-import dynamic from 'next/dynamic'
-
 
 export const metadata = {
     title: "CLADCUT",
@@ -15,7 +13,7 @@ export const metadata = {
   };
   
 
-function Page() {
+export default function Page() {
     const [showTimer , setShowTimer] = useState(0)
     const [toggle, setToggle] = useState(false);
 
@@ -45,5 +43,3 @@ function Page() {
     </div>
   )
 }
-
-export default dynamic (() => Promise.resolve(Page), {ssr: false})
