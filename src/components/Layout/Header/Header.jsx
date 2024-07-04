@@ -55,7 +55,7 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Design SoftWare</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100' href={'/cladCut'} shallow>CLADCUT</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/cladcut'} shallow>CLADCUT</Link></li>
                                                                 <li><Link className='d-block w-100 h-100' href={'/windmaster'} shallow>WINDMASTER
                                                                 {/* <span className='free_icon_product' >Free</span> */}
                                                                 </Link></li>
@@ -65,7 +65,7 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Business Adminstration</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100' href={'/crmBondify'} shallow>BONDIFY CRM</Link></li>
+                                                                <li><Link className='d-block w-100 h-100' href={'/bondifycrm'} shallow>BONDIFY CRM</Link></li>
                                                             </ul>
                                                         </li>
                                                     {/* </ul>
@@ -75,7 +75,7 @@ export default function Header({handleToggle}) {
                                                             <div>Risk Assessment <div className='text-secondary'>comply with SBC</div></div>
                                                             <ul>
                                                                 <li onClick={handleClick}>
-                                                                    <Link className='d-block w-100 h-100' href={'/rdApp'} shallow>RDAPP</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/rdapp'} shallow>RDAPP</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -83,7 +83,7 @@ export default function Header({handleToggle}) {
                                                             <div>Communication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/chatPlus'} shallow>CHATPLUS</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/chatplus'} shallow>CHATPLUS</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -91,7 +91,7 @@ export default function Header({handleToggle}) {
                                                             <div>Developement Services</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/customisation'} shallow>SOFTWARE AND CUSTOMIZATION</Link>
+                                                                    <Link className='d-block w-100 h-100' href={'/customization'} shallow>SOFTWARE AND CUSTOMIZATION</Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
