@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { Container } from 'reactstrap'
 import quotes from "@/assets/images/Products_Page/Rd/quotes-left.svg"
