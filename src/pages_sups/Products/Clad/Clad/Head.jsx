@@ -1,8 +1,9 @@
+"use client"
 import React from 'react'
 import { Container } from 'reactstrap'
 import quotes from "@/assets/images/Products_Page/Rd/quotes-left.svg"
 import Image from 'next/image'
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 function Head({ head, body }) {
   return (
@@ -35,4 +36,4 @@ function Head({ head, body }) {
     </section>
   )
 }
-export default dynamic (() => Promise.resolve(Head), {ssr: false})
+// export default dynamic (() => Promise.resolve(Head), {ssr: false})
