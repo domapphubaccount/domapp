@@ -25,14 +25,8 @@ export default function Page() {
               <>
                     <Product bannar={item.src} title={item.title} caption={item.caption} linkPage={item.page}/>
                     <Products_sups sections={item.Section_2}/>
-                    {/* <Section_3 sections={item.Section_3} /> */}
                     <Screens_Section sections={item.Section_4} />
-                    {/* <Section_4 sections={item.Section_4} /> */}
                     <Section_5 sections={item.Section_5} />
-                    {/* <div className="py-5">
-                    <Section_head heads={1} title_1={'Our Products'} sectionId={'chat'}/>
-                    </div>
-                    <Products_carousal /> */}
               </>
               }
                 <ScrollToTop smooth color="#fff" style={{backgroundColor:'#525A63', padding:'5px', borderRadius: '50%',left:'20px'}} />

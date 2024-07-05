@@ -10,7 +10,6 @@ export default function Bannar({bannar,title,caption,linkPage}) {
     <section className='wind_bannar'>
             <div className='products'>
             <div className='dark_bannar'></div>
-            {/* <img src={bannar} alt='product' className="bannar" /> */}
             <div className='head-section wind_bannar'>
                 <div className='mb-4'>
                     <h1  className={league.className}>{title}</h1>
