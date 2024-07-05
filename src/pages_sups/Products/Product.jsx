@@ -4,7 +4,6 @@ import { league } from '../Home/Section_1/Section_1'
 import Link from 'next/link'
 
 export default function Product({bannar,title,caption,linkPage}) {
-    console.log(bannar)
 
   return (
     <section className='ERP_bannar'>

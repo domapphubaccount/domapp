@@ -37,7 +37,7 @@ export const items = [
       src: product_1,
       title: 'WINDMASTER',
       link:'/windmaster',
-      page:'https://dometools-fv24.onrender.com/windload/',
+      page:' https://domapphub.com/windload/',
       caption: 'Calculate wind loads on structures.',
       Section_2:{
         first:{
