@@ -51,7 +51,7 @@ function Monthly(){
                         </div>
 
                         <div className='contact-wind-card'>
-                            <a href=" https://domapphub.com/windload/"><button className='pricing-btn-wind'>TRY FOR FREE</button></a>
+                            <a href=" https://platform.domapphub.com/windload/"><button className='pricing-btn-wind'>TRY FOR FREE</button></a>
                         </div>
                     </div>
                 </Col>

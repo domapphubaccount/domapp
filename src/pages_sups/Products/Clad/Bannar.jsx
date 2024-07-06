@@ -26,13 +26,13 @@ export default function Bannar() {
                                     <br/>
                                     <span style={{fontSize:'1.5rem' }}>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>
                                     </h1>
-                                    <a className="mil-link mil-light mil-upper me-3" href=" https://domapphub.com/cladcuthome/">
+                                    <a className="mil-link mil-light mil-upper me-3" href=" https://platform.domapphub.com/cladcuthome/">
                                         TRY FOR FREE
                                         <span className="mil-arrow">
                                             <img src={arrow.src} alt="arrow" />
                                         </span>
                                     </a>
-                                    <a className="mil-link mil-light mil-upper bundle-button" href=" https://domapphub.com/pricing/">
+                                    <a className="mil-link mil-light mil-upper bundle-button" href=" https://platform.domapphub.com/pricing/">
                                         Pricing
                                         <span className="mil-arrow p-2 dis">
                                             <img src={dollar.src} alt="arrow" />
