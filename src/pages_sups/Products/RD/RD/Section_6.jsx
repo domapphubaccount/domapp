@@ -13,7 +13,7 @@ export default function Section_6() {
                 <Col sm={12} md={5} lg={5}>
                     <div className='about-content py-3' data-aos="fade-up" data-aos-duration="1000">
                         <div >
-                        <i className="bi bi-amd custom_icon"></i>
+<i className="bi bi-check custom_icon"></i>
                         </div>
                         <h2>
                         QUALITY CONTROL
@@ -39,7 +39,7 @@ Identifying projects requiring advanced technical engagement and routing them to
                 <Col sm={12} md={5} lg={5}>
                     <div className='about-content py-3' data-aos="fade-up" data-aos-duration="1000">
                         <div>
-                        <i className="bi bi-amd custom_icon"></i>
+<i className="bi bi-check custom_icon"></i>
                         </div>
                         <h2>
                         DOCUMENTATION
