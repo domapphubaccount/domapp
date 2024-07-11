@@ -1,6 +1,8 @@
 import React from 'react'
 import bannar from "@/assets/images/Products_Page/Clad/bannar.jpg"
 import { Col, Row , Container } from 'reactstrap'
+import CladBannar from "@/assets/images/Products_Page/Clad/logo2.png"
+import Image from 'next/image'
 
 export default function Section_3() {
   return (
@@ -9,7 +11,8 @@ export default function Section_3() {
         <Container>
             <Row className='z-1 position-relative'>
             <Col sm={12} md={4}>
-            <p style={{color:'#fff',fontSize:"1.8rem"}}>CLADCUT </p>
+            {/* <p style={{color:'#fff',fontSize:"1.8rem"}}>CLADCUT </p> */}
+            <Image width={200} height={100} src={CladBannar.src} alt="cladcut bannar title" />
             <h2 className="mil-upper mil-light mil-up mil-mb-30 h2_clad" style={{fontSize: '2.5rem',translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: 1 ,borderImage: "repeating-linear-gradient(-45deg, transparent, transparent 1px, hsla(0, 0%, 100%, .2) 0, hsla(0, 0%, 100%, .2) 3px) 5"}}>Takes the lead</h2>
             </Col>
             <Col sm={12} md={8}>
