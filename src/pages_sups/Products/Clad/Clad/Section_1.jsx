@@ -12,10 +12,6 @@ export default function Section_1() {
             <div className="row justify-content-between align-items-center flex-sm-row-reverse" style={{overflow:'hidden'}}>
                 <div className="col-lg-5">
                     <div className="mil-mb-90">
-                        {/* <span className="mil-suptitle mil-upper mil-up mil-mb-30" 
-                        style={{translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: 1}}>
-                            Effortless Workflow
-                        </span> */}
                         <h2 className="mil-upper mil-up mil-mb-30" 
                         style={{translate: "none", rotate: "none", scale: "none",transform: "translate(0px, 0px)", opacity: 1}}>Effortless Workflow</h2>
                         <p className="mil-up mil-mb-40" style={{translate: "none" ,rotate: "none" ,scale: "none", transform: "translate(0px, 0px)", opacity: 1}}>
@@ -25,7 +21,6 @@ export default function Section_1() {
                             <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Upload your cladding layout as a DXF or XLS file.</div>
                             <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Sit back and let CLADCUT handle the rest.</div>
                         </p>
-                        {/* <a className="mil-link mil-upper mil-up has-popup-video" style={{cursor: "pointer", translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: 1}}>Watch video<span className="mil-arrow"><img src={arrow.src} alt="arrow"/></span></a> */}
                         </div></div><div className="col-lg-6">
                             <div className="mil-illustration mil-up mil-mb-90" 
                             style={{translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: 1}}><div className="mil-image-frame">
