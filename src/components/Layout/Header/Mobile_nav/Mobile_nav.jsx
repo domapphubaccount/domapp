@@ -6,6 +6,8 @@ import List from '@mui/material/List';
 import Link from 'next/link';
 import Lang from '../LNG/Lang';
 import Sidebar from '@/components/sidebar/Sidebar';
+import cladIcon from "@/assets/images/Products_Page/Clad/ICON.png"
+
 
 export default function MobileNav() {
   const [state, setState] = React.useState({
@@ -23,9 +25,7 @@ export default function MobileNav() {
       index: 1,
       title: 'CLADCUT',
       link:'/cladcut',
-      icon:   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-3 m-auto" style={{width:'16px'}}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
-              </svg>
+      icon:   <img style={{width:'15px',height:'17px'}} src={cladIcon.src} alt='' /> 
     },
     {
       index: 2,

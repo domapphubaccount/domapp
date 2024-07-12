@@ -11,7 +11,7 @@ export default function Product({bannar,title,caption,linkPage}) {
             <img src={bannar.src} alt='product' className="bannar" />
             <div className='head-section'>
                 <div className='mb-4'>
-                    <h1  className={league.className}>{title}</h1>
+                    <h1  className={'grass_title ' + league.className}>{title}</h1>
                 </div>
                 <div className='mb-4'>
                     <p>
