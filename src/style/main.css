@@ -5903,3 +5903,7 @@ i.icon-2x {
     }
     /* end bannar */
 /* end cladcut */
+.mobile_nav .backdrop-blur-sm.bg-black {
+    background-color: #fff !important;
+    opacity: 0 !important;
+}
