@@ -8,6 +8,8 @@ import cladWhiteHouse from "@/assets/images/Products_Page/Clad/bannar.jpg"
 import CladBannar from "@/assets/images/Products_Page/Clad/Logo_Bannar.png"
 import objectDrop from "@/assets/images/Products_Page/Clad/object_drop.png"
 import Image from 'next/image'
+import cladback from "@/assets/images/Products_Page/Clad/cladback.jpeg"
+import SVGS from "@/assets/images/Products_Page/Clad/Sprinkle.svg"
 
 export default function Bannar() {
 
@@ -16,7 +18,8 @@ export default function Bannar() {
         <div className='products2'>
             <div className='light-purple-bannar'></div> 
                 <Container>
-                    <img src={cladWhiteHouse.src} alt='products2' className="bannar" />
+                    {/* <img src={cladWhiteHouse.src} alt='products2' className="bannar" /> */}
+                        <img src={SVGS.src} alt='' className='cladback' />
                     <div className="mil-background-grid mil-top-space"></div>
                     <div className="mil-banner-content">
                         <div className="row align-items-end">
@@ -51,7 +54,7 @@ export default function Bannar() {
                                                     190K+
                                                 </span>
                                             </h4>
-                                            <p >
+                                            <p className='fw-bold'>
                                             square meter
                                             <br/> of 
                                             Cladding produced  
@@ -65,7 +68,7 @@ export default function Bannar() {
                                         18K+
                                     </span>
                                 </h4>
-                                <p >
+                                <p className='fw-bold'>
                                     Reduced <br/>Working Hours
                                 </p>
                             </div>
@@ -75,7 +78,7 @@ export default function Bannar() {
                                 <h4 className="mil-accent mil-mb-10">
                                     <span className="mil-counter clad-text-color fw-bold" data-number="99">100+</span>
                                 </h4>
-                                <p >Users <br/> <div className='pt-2 pb-3'></div></p>
+                                <p className='fw-bold'>Users <br/> <div className='pt-2 pb-3'></div></p>
                             </div>
                         </div>
                     </div>
