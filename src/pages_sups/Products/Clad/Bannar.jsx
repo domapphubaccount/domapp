@@ -33,15 +33,19 @@ export default function Bannar() {
                                         <span className='slogan'>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>
                                     </h1>
                                 <div className='flex'>
+                                    <a style={{textDecoration:'none'}} href=" https://platform.domapphub.com/cladcuthome/">
                                     <button className='try-button'>
                                         TRY FOR FREE
                                         <div class="arrow-wrapper">
                                             <div class="arrow"></div>
                                         </div>
                                     </button>
+                                    </a>
+                                    <a style={{textDecoration: 'none'}} href=" https://platform.domapphub.com/pricing/">
                                     <button className='try-button mx-3'>
                                         PRICING
                                     </button>
+                                    </a>
                                 </div>
                                 </div>
                             </div>
