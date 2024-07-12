@@ -19,7 +19,7 @@ export default function Section_1() {
                             <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>An intuitive interface guides you through the process.</div>
                             <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Select your sheet size.</div>
                             <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Upload your cladding layout as a DXF or XLS file.</div>
-                            <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Sit back and let CLADCUT handle the rest.</div>
+                            <div className='d-flex mb-3'><img src={checked.src} alt='' className='mx-3' style={{width:'30px',height:'30px'}}/>Sit back and let CladCut handle the rest.</div>
                         </p>
                         </div></div><div className="col-lg-6">
                             <div className="mil-illustration mil-up mil-mb-90" 
