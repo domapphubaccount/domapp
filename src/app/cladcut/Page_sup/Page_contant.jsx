@@ -11,7 +11,7 @@ import Head_2 from "@/pages_sups/Products/Clad/Clad/Head_2"
 
 export default function Page() {
   return (
-    <div className="facade_page">
+    <div className="facade_page cladcut">
                     <Bannar />
                     <Head head={""} body={""}/>
                     <Section_1 />
