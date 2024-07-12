@@ -3,56 +3,62 @@ import { league } from '@/pages_sups/Home/Section_1/Section_1'
 import { Container } from 'reactstrap'
 import arrow from '@/assets/images/Products_Page/Clad/arrow.svg'
 import dollar from "@/assets/images/Products_Page/Clad/dollar.png"
-import bannar from "@/assets/images/Products_Page/Clad/bannar.jpg"
+import bannar from "@/assets/images/Products_Page/Clad/bannar.png"
+import cladWhiteHouse from "@/assets/images/Products_Page/Clad/bannar.jpg"
+import CladBannar from "@/assets/images/Products_Page/Clad/Logo_Bannar.png"
+import objectDrop from "@/assets/images/Products_Page/Clad/object_drop.png"
+import Image from 'next/image'
+import cladback from "@/assets/images/Products_Page/Clad/cladback.jpeg"
+import SVGS from "@/assets/images/Products_Page/Clad/Sprinkle.svg"
 
 export default function Bannar() {
 
   return (
-    <section className='ERP_bannar'>
+    <section className='cladCut-bannar'>
         <div className='products2'>
-            <div className='dark-bannar' style={{zIndex:'2',backgroundColor:'#00000091'}}></div>
+            <div className='light-purple-bannar'></div> 
                 <Container>
-                    <img src={bannar.src} alt='products2' className="bannar" />
+                    {/* <img src={cladWhiteHouse.src} alt='products2' className="bannar" /> */}
+                        <img src={SVGS.src} alt='' className='cladback' />
                     <div className="mil-background-grid mil-top-space"></div>
                     <div className="mil-banner-content">
                         <div className="row align-items-end">
                             <div className="col-xl-7">
-                                <div className="mil-mb-90">
-                                    <h1 className=" mil-light mil-mb-60 fw-bold" style={{fontSize:'60px'}}>
-                                    <br />
-                                    <span className={`mil-upper mil-accent fw-bold clad_bannar_title ${league.className}`}style={{fontSize:'60px',textStrokeWidth: '3px',textStroketrokeColor:' black'}}>
-                                    CLADCUT
-                                    </span>
-                                    <br/>
-                                    <span style={{fontSize:'1.5rem' }}>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>
+                                <div className="mil-mb-90 mil-mt-90">
+                                    <h1 className="mil-mb-60 fw-bold" style={{fontSize:'60px'}}>
+                                        <br />
+                                            {/* <div className='back-drop-object'></div> */}
+                                            <Image width={300} height={100} src={CladBannar.src} alt="cladcut bannar title" />
+                                        <br/>
+                                        <span className='slogan'>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>
                                     </h1>
-                                    <a className="mil-link mil-light mil-upper me-3" href=" https://platform.domapphub.com/cladcuthome/">
+                                <div className='flex'>
+                                    <a style={{textDecoration:'none'}} href=" https://platform.domapphub.com/cladcuthome/">
+                                    <button className='try-button'>
                                         TRY FOR FREE
-                                        <span className="mil-arrow">
-                                            <img src={arrow.src} alt="arrow" />
-                                        </span>
+                                        <div class="arrow-wrapper">
+                                            <div class="arrow"></div>
+                                        </div>
+                                    </button>
                                     </a>
-                                    <a className="mil-link mil-light mil-upper bundle-button" href=" https://platform.domapphub.com/pricing/">
-                                        Pricing
-                                        <span className="mil-arrow p-2 dis">
-                                            <img src={dollar.src} alt="arrow" />
-                                        </span>
-                                        <span className='mil-arrow nul'>
-                                            <img src={arrow.src} alt="arrow" />
-                                        </span>
+                                    <a style={{textDecoration: 'none'}} href=" https://platform.domapphub.com/pricing/">
+                                    <button className='try-button mx-3'>
+                                        PRICING
+                                    </button>
                                     </a>
+                                </div>
                                 </div>
                             </div>
                             <div className="col-xl-5">
                                 <div className="row mil-mb-60">
                                     <div className="col-6">
-                                        <div className="mil-counter-frame mil-light mil-mb-30">
-                                            <h4 className="mil-accent mil-thin mil-mb-10">
-                                                <span className="mil-counter " data-number="346">
+                                        <div className="mil-counter-frame mil-mb-30">
+                                            <h4 className="mil-accent mil-mb-10">
+                                                <span className="mil-counter clad-text-color fw-bold" data-number="346">
                                                     190K+
                                                 </span>
                                             </h4>
-                                            <p className="mil-light">
+                                            <p className='fw-bold'>
                                             square meter
                                             <br/> of 
                                             Cladding produced  
@@ -60,23 +66,23 @@ export default function Bannar() {
                                         </div>
                                     </div>
                                 <div className="col-6">
-                            <div className="mil-counter-frame mil-light mil-mb-30">
-                                    <h4 className="mil-accent mil-thin mil-mb-10">
-                                    <span className="mil-counter" data-number="9">
+                            <div className="mil-counter-frame mil-mb-30">
+                                    <h4 className="mil-accent mil-mb-10">
+                                    <span className="mil-counter clad-text-color fw-bold" data-number="9">
                                         18K+
                                     </span>
                                 </h4>
-                                <p className="mil-light">
+                                <p className='fw-bold'>
                                     Reduced <br/>Working Hours
                                 </p>
                             </div>
                         </div>
                         <div className="col-6">
-                            <div className="mil-counter-frame mil-light mil-mb-30">
-                                <h4 className="mil-accent mil-thin mil-mb-10">
-                                    <span className="mil-counter" data-number="99">100+</span>
+                            <div className="mil-counter-frame mil-mb-30">
+                                <h4 className="mil-accent mil-mb-10">
+                                    <span className="mil-counter clad-text-color fw-bold" data-number="99">100+</span>
                                 </h4>
-                                <p className="mil-light">Users <br/> <div className='pt-2 pb-3'></div></p>
+                                <p className='fw-bold'>Users <br/> <div className='pt-2 pb-3'></div></p>
                             </div>
                         </div>
                     </div>
@@ -85,7 +91,6 @@ export default function Bannar() {
         </div>
         </Container>
         </div>
- 
     </section>
   )
 }

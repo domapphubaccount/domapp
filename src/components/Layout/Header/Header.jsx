@@ -2,13 +2,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from "next/image";
 import Logo from "../../../assets/images/Header/dark-logo.png";
-import DarkLogo from "../../../assets/images/Header/dark-logo.png";
+// import DarkLogo from "../../../assets/images/Header/dark-logo.png";
 import MobileNav from './Mobile_nav/Mobile_nav';
 import { Container, Row, Col } from 'reactstrap';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import PositionedSnackbar from '@/components/Reuse/Section_Head/SnackBar';
-import Lang from './LNG/Lang';
+
+import cladIcon from "@/assets/images/Products_Page/Clad/ICON.png"
+
+import CladCutLogo from "@/assets/images/Header/products_logos/cladcut.png"
+// import Lang from './LNG/Lang';
 
 export default function Header({handleToggle}) {
     const headerScrol = useRef();
@@ -17,6 +21,9 @@ export default function Header({handleToggle}) {
     const [open, setOpen] = React.useState(false);
     const router = useRouter()
     const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+    const pathname = usePathname();
+
+    // console.log()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -36,8 +43,8 @@ export default function Header({handleToggle}) {
         <header>
             <Container className='nav-container'>
                 <div className={`navbar_container  nav_active`} id="main_nav" ref={headerScrol}>
-                    <div>
-                        <Image onClick={()=>router.push('/')} src={Logo} alt="main logo" className="main_logo" style={{cursor:'pointer'}} />
+                    <div className='d-flex items-center'>
+                        <Image onClick={()=>router.push('/')} src={ pathname.slice(0,8) === "/cladcut" ? CladCutLogo : Logo} alt="main logo" className="main_logo" style={{cursor:'pointer'}} />
                     </div>
                     <div className="nav">
                         <nav>
@@ -55,8 +62,8 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Design SoftWare</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100' href={'/cladcut'} shallow>CLADCUT</Link></li>
-                                                                <li><Link className='d-block w-100 h-100' href={'/windmaster'} shallow>WINDMASTER
+                                                                <li><Link className='d-block w-100 h-100 d-flex' href={'/cladcut'} shallow> <img style={{width:'15px',height:'17px'}} src={cladIcon.src} className='me-3' alt='' /> <div >CLADCUT</div></Link></li>
+                                                                <li><Link className='d-block w-100 h-100 d-flex' href={'/windmaster'} shallow><i className="bi bi-wind me-3 float-none"></i> <div >WINDMASTER</div>
                                                                 {/* <span className='free_icon_product' >Free</span> */}
                                                                 </Link></li>
                                                                 {/* <li><Link className='d-block w-100 h-100' href={'/facade'}>Facade Static <span className='free_icon_product' >Free</span></Link></li> */}
@@ -65,7 +72,7 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Business Adminstration</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100' href={'/bondifycrm'} shallow>BONDIFY CRM</Link></li>
+                                                                <li><Link className='d-block w-100 h-100 d-flex' href={'/bondifycrm'} shallow><i className="bi bi-kanban me-3 float-none"></i><div >BONDIFY CRM</div></Link></li>
                                                             </ul>
                                                         </li>
                                                     {/* </ul>
@@ -75,7 +82,7 @@ export default function Header({handleToggle}) {
                                                             <div>Risk Assessment <div className='text-secondary'>comply with SBC</div></div>
                                                             <ul>
                                                                 <li onClick={handleClick}>
-                                                                    <Link className='d-block w-100 h-100' href={'/rdapp'} shallow>RDAPP</Link>
+                                                                    <Link className='d-block w-100 h-100 d-flex' href={'/rdapp'} shallow><i className="bi bi-file-text me-3 float-none"></i><div >RDAPP</div></Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -83,7 +90,7 @@ export default function Header({handleToggle}) {
                                                             <div>Communication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/chatplus'} shallow>CHATPLUS</Link>
+                                                                    <Link className='d-block w-100 h-100 d-flex' href={'/chatplus'} shallow><i className="bi bi-chat-square-text me-3 float-none"></i><div >CHATPLUS</div></Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -91,7 +98,7 @@ export default function Header({handleToggle}) {
                                                             <div>Developement Services</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/customization'} shallow>SOFTWARE AND CUSTOMIZATION</Link>
+                                                                    <Link className='d-block w-100 h-100 d-flex' href={'/customization'} shallow><i className="bi bi-code-slash me-3 float-none"></i><div >SOFTWARE AND CUSTOMIZATION</div></Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -99,7 +106,7 @@ export default function Header({handleToggle}) {
                                                             <div>Facade Fabrication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100' href={'/grasshopper'} shallow>GRASSHOPPER® 3D</Link>
+                                                                    <Link className='d-block w-100 h-100 d-flex' href={'/grasshopper'} shallow><i className="bi bi-badge-3d me-3 float-none"></i><div >GRASSHOPPER® 3D</div></Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
