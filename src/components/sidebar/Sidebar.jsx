@@ -117,12 +117,6 @@ export default function Sidebar({items}) {
             </Accordion>
         
           ))}
-
-
-
-
-
-
         </List>
         {/* <Button className="mt-3 ml-5" size="sm">
           Documentation

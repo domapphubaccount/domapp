@@ -3840,7 +3840,7 @@ footer{
     padding-top: 80px;
     padding-bottom: 40px;
     border: 5px solid var(--purple);
-    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, var(--purple) 0, var(--purple) 3px) 5;
+    border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, var(--purple) 0, var(--p) 3px) 5;
 }
 .image_card_clad{
     padding: 10px;
@@ -5891,6 +5891,18 @@ i.icon-2x {
         z-index: 2;
         filter: blur(4px); /* Adjust the value as needed */
     }
-    
+    .cladback{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        filter: blur(2px);
+    }
     /* end bannar */
 /* end cladcut */
+.mobile_nav .backdrop-blur-sm.bg-black {
+    background-color: #fff !important;
+    opacity: 0 !important;
+}
