@@ -62,7 +62,7 @@ export default function Header({handleToggle}) {
                                                         <li>
                                                             <div>Design SoftWare</div>
                                                             <ul>
-                                                                <li><Link className='d-block w-100 h-100 d-flex' href={'/cladcut'} shallow> <img style={{width:'15px',height:'17px'}} src={cladIcon.src} className='me-3' alt='' /> <div >CLADCUT</div></Link></li>
+                                                                <li><Link className='d-block w-100 h-100 d-flex' href={'/cladcut'} shallow> <img style={{width:'15px',height:'15px'}} src={cladIcon.src} className='me-3' alt='' /> <div >CLADCUT</div></Link></li>
                                                                 <li><Link className='d-block w-100 h-100 d-flex' href={'/windmaster'} shallow><i className="bi bi-wind me-3 float-none"></i> <div >WINDMASTER</div>
                                                                 {/* <span className='free_icon_product' >Free</span> */}
                                                                 </Link></li>
