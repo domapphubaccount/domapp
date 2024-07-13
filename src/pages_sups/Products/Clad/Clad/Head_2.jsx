@@ -8,7 +8,7 @@ export default function Head_2() {
         <Container>
             <div className='text-center'>
                 <h1 >
-                    CLADCUT
+                    CladCut
                 </h1>
                 <div className='sub-title'>
                     <div>

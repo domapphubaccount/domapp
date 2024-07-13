@@ -106,7 +106,7 @@ export default function Section_1() {
 
                                                             >
                                                                 <option className="p-2" value="">Select an option</option>
-                                                                <option className="p-2" value="1">CLADCUT</option>
+                                                                <option className="p-2" value="1">CladCut</option>
                                                                 {/* <option className="p-2" value="2">FacadStatic</option> */}
                                                                 <option className="p-2" value="3">WINDMASTER</option>
                                                                 <option className="p-2" value="4">BONDIFY CRM</option>

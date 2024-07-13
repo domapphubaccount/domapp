@@ -23,7 +23,7 @@ export default function MobileNav() {
   const items = [
     {
       index: 1,
-      title: 'CLADCUT',
+      title: 'CladCut',
       link:'/cladcut',
       icon:   <img style={{width:'15px',height:'17px'}} src={cladIcon.src} alt='' /> 
     },

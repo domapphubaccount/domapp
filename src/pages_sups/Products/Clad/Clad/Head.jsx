@@ -20,7 +20,7 @@ function Head({ head, body }) {
                   {head}
                 </span>
                 <h2 className="mil-upper mil-up mil-mb-30" style={{ translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: "1" }}>
-                  Unleash the Speed of Aluminum Cladding Fabrication with CLADCUT
+                  Unleash the Speed of Aluminum Cladding Fabrication with CladCut
                 </h2>
                 <p className={"mil-up"} style={{ translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: 1 }}>
                   Generate fabrication drawings and CNC files in minutes, not days.
