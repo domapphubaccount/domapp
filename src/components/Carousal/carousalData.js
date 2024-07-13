@@ -1,7 +1,7 @@
 export const carousalData = [
     {
         index: 1,
-        title: 'CLADCUT',
+        title: 'CladCut',
         src: '/Products/CladCut.gif',
         link: '/cladcut',
         icon:  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 675 639" strokeWidth={1.5} stroke="currentColor" className="size-3 m-auto" style={{width:'30px'}}>

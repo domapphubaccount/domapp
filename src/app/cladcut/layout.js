@@ -1,8 +1,8 @@
 import React from "react";
 
 export const metadata = {
-  title: "CLADCUT",
-  description: "CLADCUT",
+  title: "CladCut",
+  description: "CladCut",
 };
 
 export default function Layout({ children }) {

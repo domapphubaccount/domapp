@@ -168,6 +168,12 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                     <span>2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, Al Riyadh, Saudi Arabia</span>
                                     </li>
                                     <li className='d-flex'>
+                                        <div className='fw-bold me-2'>
+                                            <i className="bi bi-geo-alt text-dark"></i>
+                                        </div>
+                                        <span>Prince Mohamed Ibn Abdulrahman St, Ask Fayha Dist, Riyadh, Saudi Arabia</span>
+                                    </li>
+                                    <li className='d-flex'>
                                     <div className='fw-bold me-2'>
                                         <span> 
                                             <i className="bi bi-geo-alt text-dark"></i>
@@ -187,6 +193,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                         </div>
                                         <span>Al Geish Rd, Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt</span>
                                     </li>
+
                                 </ul>
                             </div>
                         }

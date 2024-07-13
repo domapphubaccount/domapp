@@ -9,7 +9,7 @@ export const items = [
     {
       index: 1,
       src: product_1,
-      title: 'CLADCUT',
+      title: 'CladCut',
       link:'/cladCut',
       video: '/Products/CladCut.gif',
       caption: 'Produce detailed fabrication drawings with exceptional speed and efficiency.',
