@@ -185,13 +185,13 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                         <div className='fw-bold me-2'>
                                             <i className="bi bi-geo-alt text-dark"></i>
                                         </div>
-                                        <span>Al Geish Rd, Jad Allah Tower,4th Floor, Office No 309, 412, KFS, Egypt</span>
+                                        <span>Jad Allah Tower,4th Floor, Office No 309, 412, KFS, Egypt</span>
                                     </li>
                                     <li className='d-flex'>
                                         <div className='fw-bold me-2'>
                                             <i className="bi bi-geo-alt text-dark"></i>
                                         </div>
-                                        <span>Al Geish Rd, Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt</span>
+                                        <span>Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt</span>
                                     </li>
 
                                 </ul>
