@@ -8,9 +8,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import PositionedSnackbar from '@/components/Reuse/Section_Head/SnackBar';
-
 import cladIcon from "@/assets/images/Products_Page/Clad/ICON.png"
-
 import CladCutLogo from "@/assets/images/Header/products_logos/cladcut.png"
 // import Lang from './LNG/Lang';
 
@@ -44,7 +42,7 @@ export default function Header({handleToggle}) {
             <Container className='nav-container'>
                 <div className={`navbar_container  nav_active`} id="main_nav" ref={headerScrol}>
                     <div className='d-flex items-center'>
-                        <Image onClick={()=>router.push('/')} src={ pathname.slice(0,8) === "/cladcut" ? CladCutLogo : Logo} alt="main logo" className="main_logo" style={{cursor:'pointer'}} />
+                        <Image onClick={()=>router.push('/')} src={Logo} alt="main logo" className="main_logo" style={{cursor:'pointer'}} />
                     </div>
                     <div className="nav">
                         <nav>
