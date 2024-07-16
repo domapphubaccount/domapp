@@ -55,7 +55,7 @@ function Bannar2(){
                       </div>
 
                       <div className='flex'>
-                        <a style={{textDecoration:'none'}} href=" https://platform.domapphub.com/cladcuthome/">
+                        <a style={{textDecoration:'none'}} href="https://cladcut.domapphub.com/">
                         <button className='try-button'>
                             TRY FOR FREE
                             <div className="arrow-wrapper">
@@ -63,7 +63,7 @@ function Bannar2(){
                             </div>
                         </button>
                         </a>
-                        <a style={{textDecoration: 'none'}} href=" https://platform.domapphub.com/pricing/">
+                        <a style={{textDecoration: 'none'}} href="https://cladcut.domapphub.com/pricing/">
                         <button className='try-button mx-3'>
                             PRICING
                         </button>
