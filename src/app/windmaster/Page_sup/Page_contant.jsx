@@ -28,7 +28,7 @@ export default function Page() {
     src: product_1,
     title: 'WINDMASTER',
     link:'/windmaster',
-    page:' https://platform.domapphub.com/windmaster/',
+    page:' https://windmaster.domapphub.com/',
     caption: 'Calculate wind loads on structures.',
     Section_2:{
       first:{
