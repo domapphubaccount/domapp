@@ -10,6 +10,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import PositionedSnackbar from '@/components/Reuse/Section_Head/SnackBar';
 import cladIcon from "@/assets/images/Products_Page/Clad/ICON.png"
 import CladCutLogo from "@/assets/images/Header/products_logos/cladcut.png"
+import grassIcon from "@/assets/images/Grasshopper/insect.png"
 // import Lang from './LNG/Lang';
 
 export default function Header({handleToggle}) {
@@ -104,7 +105,7 @@ export default function Header({handleToggle}) {
                                                             <div>Facade Fabrication</div> 
                                                             <ul>
                                                                 <li>
-                                                                    <Link className='d-block w-100 h-100 d-flex' href={'/grasshopper'} shallow><i className="bi bi-badge-3d me-3 float-none"></i><div >GRASSHOPPER® 3D</div></Link>
+                                                                    <Link className='d-block w-100 h-100 d-flex' href={'/grasshopper'} shallow><img style={{width:'15px',height:'15px'}} src={grassIcon.src} className='me-3' alt='' /> <div >GRASSHOPPER® 3D</div></Link>
                                                                 </li>
                                                             </ul>
                                                         </li>
