@@ -10,7 +10,7 @@ export default function Bannar2() {
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-5 col-md-6">
               <div className="home-text">
-                <h2>BONDIFY CRM<img className="line-text" src="../assets/images/landing/home/line.png" alt="a"/></h2>
+                <h2>BONDIFY CRM</h2>
                 <p>Project management, Invoicing, Leads, Tasks, Time tracking and more.
                 </p>
                 <div className="docutment-button"> 
