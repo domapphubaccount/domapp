@@ -19,10 +19,6 @@ export default function Bannar() {
   return (
     <section className='cladCut-bannar'>
         <div className='products2'>
-            {/* <div className='light-purple-bannar'></div>  */}
-                {/* <Container>
-
-            </Container> */}
             <Bannar2 />
         </div>
     </section>
@@ -48,7 +44,7 @@ function Bannar2(){
 						{/* <p className="fs-18 mt-35 mb-55 lg-mb-30 lg-mt-20"> */}
 
                         <div className='slogan my-5 fw-bold'>Produce detailed fabrication drawings with 
-                        <span class="position-relative d-inline-block">
+                        <span className="position-relative d-inline-block">
                             exceptional speed 
                             <img src={Shape_2.src} className='absolute' alt="" />
                         </span> and efficiency.
@@ -131,74 +127,3 @@ function Bannar2(){
       </>
     )
   }
-
-//   <img src={SVGS.src} alt='' className='cladback' />
-//   <div className="mil-background-grid mil-top-space"></div>
-//   <div className="mil-banner-content">
-//       <div className="row align-items-end">
-//           <div className="col-xl-7">
-//               <div className="mil-mb-90 mil-mt-90">
-//                   <h1 className="mil-mb-60 fw-bold" style={{fontSize:'60px'}}>
-//                       <br />
-//                           {/* <div className='back-drop-object'></div> */}
-//                           <Image width={300} height={100} src={CladBannar.src} alt="cladcut bannar title" />
-//                       <br/>
-//                       <span className='slogan'>Produce detailed fabrication drawings with exceptional speed and efficiency.</span>
-//                   </h1>
-            //   <div className='flex'>
-            //       <a style={{textDecoration:'none'}} href=" https://platform.domapphub.com/cladcuthome/">
-            //       <button className='try-button'>
-            //           TRY FOR FREE
-            //           <div className="arrow-wrapper">
-            //               <div className="arrow"></div>
-            //           </div>
-            //       </button>
-            //       </a>
-            //       <a style={{textDecoration: 'none'}} href=" https://platform.domapphub.com/pricing/">
-            //       <button className='try-button mx-3'>
-            //           PRICING
-            //       </button>
-            //       </a>
-            //   </div>
-//               </div>
-//           </div>
-//           <div className="col-xl-5">
-//               <div className="row mil-mb-60">
-//                   <div className="col-6">
-//                       <div className="mil-counter-frame mil-mb-30">
-                        //   <h4 className="mil-accent mil-mb-10">
-                        //       <span className="mil-counter clad-text-color fw-bold" data-number="346">
-                        //           190K+
-                        //       </span>
-                        //   </h4>
-                        //   <p className='fw-bold'>
-                        //   square meter
-                        //   <br/> of 
-                        //   Cladding produced  
-                        //   </p>
-//                       </div>
-//                   </div>
-//               <div className="col-6">
-//           <div className="mil-counter-frame mil-mb-30">
-            //       <h4 className="mil-accent mil-mb-10">
-            //       <span className="mil-counter clad-text-color fw-bold" data-number="9">
-            //           18K+
-            //       </span>
-            //   </h4>
-            //   <p className='fw-bold'>
-            //       Reduced <br/>Working Hours
-            //   </p>
-//           </div>
-//       </div>
-//       <div className="col-6">
-//           <div className="mil-counter-frame mil-mb-30">
-            //   <h4 className="mil-accent mil-mb-10">
-            //       <span className="mil-counter clad-text-color fw-bold" data-number="99">100+</span>
-            //   </h4>
-            //   <p className='fw-bold'>Users <br/> <div className='pt-2 pb-3'></div></p>
-//           </div>
-//       </div>
-//   </div>
-// </div>
-// </div>
-// </div>
