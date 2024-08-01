@@ -14,7 +14,7 @@ export default function Bannar2() {
                 <p>Project management, Invoicing, Leads, Tasks, Time tracking and more.
                 </p>
                 <div className="docutment-button"> 
-                    <a className="btn text-white me-3 mb-3" href="https://erp.domapphub.com/signup" target="_blank">
+                    <a className="btn text-white me-3 mb-3" href="https://bondifycrm.domapphub.com/signup" target="_blank">
                         Try Demo
                     </a>
                     <Link className="btn text-white me-3 mb-3" target="_blank" href="/bondifycrm/pricing">
