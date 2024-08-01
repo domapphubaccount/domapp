@@ -108,7 +108,7 @@ function SectionContent(){
                 <div className="icon-bx-wraper style-2 left m-b30">
                     <div className="icon-bx-md radius bg-white text-red">
                         <a href="#" className="icon-cell">
-                            <i class="bi bi-code-slash"></i>
+                            <i className="bi bi-code-slash"></i>
                         </a>
                     </div>
                     <div className="icon-content">
@@ -119,7 +119,7 @@ function SectionContent(){
                 <div className="icon-bx-wraper style-2 left m-b30">
                     <div className="icon-bx-md radius bg-white text-yellow">
                         <a href="#" className="icon-cell">
-                        <i class="bi bi-cast"></i>
+                        <i className="bi bi-cast"></i>
                         </a>
                     </div>
                     <div className="icon-content">
@@ -130,7 +130,7 @@ function SectionContent(){
                 <div className="icon-bx-wraper style-2 left m-b30">
                     <div className="icon-bx-md radius bg-white text-green">
                         <a href="#" className="icon-cell">
-                        <i class="bi bi-columns-gap"></i>
+                        <i className="bi bi-columns-gap"></i>
                         </a>
                     </div>
                     <div className="icon-content">

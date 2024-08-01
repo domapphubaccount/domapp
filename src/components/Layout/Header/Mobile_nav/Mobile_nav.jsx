@@ -7,6 +7,8 @@ import Link from 'next/link';
 import Lang from '../LNG/Lang';
 import Sidebar from '@/components/sidebar/Sidebar';
 import cladIcon from "@/assets/images/Products_Page/Clad/ICON.png"
+import byldIcon from "@/assets/images/Byld/iconlogo.png"
+
 
 
 export default function MobileNav() {
@@ -25,7 +27,7 @@ export default function MobileNav() {
       index: 1,
       title: 'CladCut',
       link:'/cladcut',
-      icon:   <img style={{width:'15px',height:'17px'}} src={cladIcon.src} alt='' /> 
+      icon:   <img style={{width:'15px',height:'15px'}} src={cladIcon.src} alt='' /> 
     },
     {
       index: 2,
@@ -77,7 +79,13 @@ export default function MobileNav() {
             <path transform="translate(1662,911)" d="m0 0 16 2 10 4 10 8 8 10 5 12 1 4v18l-4 12-6 9-5 6-10 7-11 4-5 1h-15l-13-4-9-6-5-4-6-8-5-10-2-7-1-9 2-14 4-10 7-9 9-8 12-6z"/>
             <path transform="translate(1568,1195)" d="m0 0"/>
           </svg>
-    }
+    },
+    {
+      index: 1,
+      title: 'BYLD',
+      link:'/byld',
+      icon:   <img style={{width:'15px',height:'17px'}} src={byldIcon.src} alt='' /> 
+    },
   ];
 
   return (
