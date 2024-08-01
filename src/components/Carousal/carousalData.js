@@ -11,7 +11,7 @@ export const carousalData = [
         viewBox="0 0 675 639"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="size-3 m-auto"
+        className=" m-auto"
         style={{ width: "30px" }}
       >
         <g
@@ -38,7 +38,7 @@ export const carousalData = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="size-3 m-auto"
+        className="m-auto"
         style={{ width: "30px" }}
       >
         <path
@@ -61,7 +61,7 @@ export const carousalData = [
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="size-3 m-auto"
+        className=" m-auto"
         style={{ width: "30px" }}
       >
         <path
@@ -84,7 +84,7 @@ export const carousalData = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="size-3 m-auto"
+        className=" m-auto"
         style={{ width: "30px" }}
       >
         <path
@@ -107,7 +107,7 @@ export const carousalData = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="size-3 m-auto"
+        className=" m-auto"
         style={{ width: "30px" }}
       >
         <path
@@ -130,7 +130,7 @@ export const carousalData = [
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="size-3 m-auto"
+        className=" m-auto"
         style={{ width: "30px" }}
       >
         <path
@@ -152,7 +152,7 @@ export const carousalData = [
         viewBox="0 0 2048 2048"
         style={{ width: "30px" }}
         xmlns="http://www.w3.org/2000/svg"
-        className="m-auto size-3 grass"
+        className="m-auto  grass"
       >
         <path
           transform="translate(1752,416)"
