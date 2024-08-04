@@ -108,10 +108,8 @@ export default function Header({ handleToggle }) {
                                   >
                                     <i className="bi bi-wind me-3 float-none"></i>{" "}
                                     <div>WINDMASTER</div>
-                                    {/* <span className='free_icon_product' >Free</span> */}
                                   </Link>
                                 </li>
-                                {/* <li><Link className='d-block w-100 h-100' href={'/facade'}>Facade Static <span className='free_icon_product' >Free</span></Link></li> */}
                               </ul>
                             </li>
                             <li>
