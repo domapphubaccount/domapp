@@ -1,11 +1,11 @@
 "use client"
 
 import Product from "@/pages_sups/Products/Product"
-import Products_sups from "@/pages_sups/Products/Products_sups/Products_sups"
+import Products_sups from "@/pages_sups/Products/Wind/Wind/Products_sups"
 import React from 'react'
 import Section_3 from "@/pages_sups/Products/Products_sups/Section_3"
-import Section_4 from "@/pages_sups/Products/Products_sups/Section_4"
-import Section_5 from "@/pages_sups/Products/Products_sups/Section_5"
+import Section_4 from "@/pages_sups/Products/Wind/Wind/Section_4"
+import Section_5 from "@/pages_sups/Products/Wind/Wind/Section_5"
 import { items } from "../../Page_data"
 import { usePathname } from 'next/navigation'
 import ScrollToTop from 'react-scroll-to-top'
