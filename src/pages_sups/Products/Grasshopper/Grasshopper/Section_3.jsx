@@ -25,4 +25,4 @@ function Section_3() {
   )
 }
 
-export default Section_6
+export default Section_3
