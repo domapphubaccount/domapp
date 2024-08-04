@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Section_2() {
+export default function Section_6() {
   return (
     <section className='customization_section_2'>
         <div className="call-to-action-wrapper call-to-action text-white-wrapper  ptb--120">

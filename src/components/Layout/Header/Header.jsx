@@ -7,7 +7,7 @@ import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import PositionedSnackbar from "@/components/Reuse/Section_Head/SnackBar";
-import cladIcon from "@/assets/images/Products_Page/Clad/ICON.png";
+import cladIcon from "@/assets/images/Clad/ICON.png";
 import CladCutLogo from "@/assets/images/Header/products_logos/cladcut.png";
 import grassIcon from "@/assets/images/Grasshopper/insect.png";
 import byldIcon from "@/assets/images/Byld/iconlogo.png";

@@ -6,7 +6,7 @@ import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Section_7() {
+function Section_4() {
   const progressBarRef = useRef(null);
   const g1Ref = useRef(null);
   const g2Ref = useRef(null);
@@ -108,4 +108,4 @@ function Section_7() {
   );
 }
 
-export default Section_7;
+export default Section_4;

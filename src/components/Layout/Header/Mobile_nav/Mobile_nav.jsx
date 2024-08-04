@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import Link from 'next/link';
 import Lang from '../LNG/Lang';
 import Sidebar from '@/components/sidebar/Sidebar';
-import cladIcon from "@/assets/images/Products_Page/Clad/ICON.png"
+import cladIcon from "@/assets/images/Clad/ICON.png"
 import byldIcon from "@/assets/images/Byld/iconlogo.png"
 
 

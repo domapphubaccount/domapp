@@ -6,7 +6,7 @@ import grass3 from "@/assets/images/Grasshopper/3.png"
 import grass4 from "@/assets/images/Grasshopper/4.png"
 import SectionHeader from '@/components/Reuse/Section_Head/SectionHeader'
 
-function Section_4() {
+function Section_5() {
   return (
     <section className='grass_imgs_section py-5' style={{backgroundColor: '#191919'}}>
         {/* <SectionHeader
@@ -72,4 +72,4 @@ function Section_4() {
   )
 }
 
-export default Section_4
+export default Section_5

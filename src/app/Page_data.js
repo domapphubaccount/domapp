@@ -4,12 +4,12 @@ import product_3 from "@/assets/images/Home_Page/products/pr3.jpg"
 
 
 // CLADCUT
-import clad_1 from "@/assets/images/Products_Page/Clad/Picture1.png"
-import clad_2 from "@/assets/images/Products_Page/Clad/Picture2.png"
-import clad_3 from "@/assets/images/Products_Page/Clad/Picture3.png"
-import clad_4 from "@/assets/images/Products_Page/Clad/Picture4.png"
-import clad_5 from "@/assets/images/Products_Page/Clad/Picture5.png"
-// import clad_5 from "@/assets/images/Products_Page/Clad/Picture6.png"
+import clad_1 from "@/assets/images/Clad/Picture1.png"
+import clad_2 from "@/assets/images/Clad/Picture2.png"
+import clad_3 from "@/assets/images/Clad/Picture3.png"
+import clad_4 from "@/assets/images/Clad/Picture4.png"
+import clad_5 from "@/assets/images/Clad/Picture5.png"
+// import clad_5 from "@/assets/images/Clad/Picture6.png"
 
 // WINDLOAD
 import Wind_1 from "@/assets/images/Products_Page/Wind/W1.png"

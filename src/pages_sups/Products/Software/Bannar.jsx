@@ -1,0 +1,43 @@
+import React from 'react'
+import Image from 'next/image'
+
+import { league } from '@/pages_sups/Home/Section_1/Section_1'
+import shap1 from '@/assets/images/Products_Page/Customization/bubble-9.png'
+import shap2 from '@/assets/images/Products_Page/Customization/line-4.png'
+import item from '@/assets/images/Products_Page/Customization/project-8.png'
+import item2 from '@/assets/images/Products_Page/Customization/pic1.png'
+
+export default function Bannar() {
+  return (
+    <section className={`cast_bannar ${league} position-relative`}>
+        <div className="breadcrum-area breadcrumb-banner single-breadcrumb">
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col-lg-6">
+                        <div className="section-heading heading-left">
+                            <h1 className="title h2 head_bannar">SOFTWARE AND CUSTOMIZATION</h1>
+                            <div><div className='d-inline-block m-auto text-primary fw-bold px-5'>Develop and customize web & software applications.</div></div>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div className="banner-thumbnail">
+                            <div className="position-relative" style={{position: "relative",willChange: "transform"}}>
+                                <img className='move-2 position-absolute w-full' src={item2.src} alt="Illustration"/>
+                                <img className='move-2 w-full' src={item.src} alt="Illustration"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul className="shape-group-8 list-unstyled">
+                <li className="shape shape-1">
+                    <img src={shap1.src} width={100} alt="Bubble"/>
+                </li>
+                <li className="shape shape-3">
+                    <img src={shap2.src} width={100} alt="Line"/>
+                </li>
+            </ul>
+        </div>
+    </section>
+  )
+}

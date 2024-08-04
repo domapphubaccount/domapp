@@ -3,10 +3,10 @@ import { Container, Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstra
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; // Import slick carousel styles
-import S1 from '@/assets/images/Products_Page/Clad/Carousal/as1.png';
-import S2 from '@/assets/images/Products_Page/Clad/Carousal/as2.png';
-import S3 from '@/assets/images/Products_Page/Clad/Carousal/as3.png';
-import S4 from '@/assets/images/Products_Page/Clad/Carousal/as4.png';
+import S1 from '@/assets/images/Clad/Carousal/as1.png';
+import S2 from '@/assets/images/Clad/Carousal/as2.png';
+import S3 from '@/assets/images/Clad/Carousal/as3.png';
+import S4 from '@/assets/images/Clad/Carousal/as4.png';
 import W1 from '@/assets/images/Products_Page/Wind/Carousal/Windloadexport_1.jpeg';
 import W2 from '@/assets/images/Products_Page/Wind/Carousal/Windloadexport_2.jpeg';
 import { usePathname } from 'next/navigation';
