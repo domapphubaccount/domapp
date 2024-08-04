@@ -1,35 +1,27 @@
-"use client"
-import Footer from '@/components/Layout/Footer/Footer'
-import Header from '@/components/Layout/Header/Header'
-import Page_sup from './Page_contant'
-import { useEffect, useState } from 'react'
-import Contact from '@/components/Contact/Contact'
+"use client";
+import Footer from "@/components/Layout/Footer/Footer";
+import Header from "@/components/Layout/Header/Header";
+import Page_sup from "./Page_contant";
+import { useState } from "react";
+import Contact from "@/components/Contact/Contact";
 
 export default function Page() {
-    const [showTimer , setShowTimer] = useState(0);
-    const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
-    const handleToggle = () => {
-      setToggle(!toggle);
-  }
-  
-    function handleTimer(){
-      setShowTimer(showTimer + 1)
-    }
-  
-    useEffect(()=>{
-      if(showTimer < 2){
-      setTimeout(handleTimer,1000)
-      console.log('timer')
-      }
-    },[showTimer])
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
 
   return (
     <>
-        <Header handleToggle={handleToggle}/>
-          <Page_sup />
-        <Footer />
-        <Contact handleToggle={handleToggle} toggle={toggle} setToggle={setToggle}/>
+      <Header handleToggle={handleToggle} />
+      <Page_sup />
+      <Footer />
+      <Contact
+        handleToggle={handleToggle}
+        toggle={toggle}
+        setToggle={setToggle}
+      />
     </>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'reactstrap'
-import arrows from "@/assets/images/Products_Page/Clad/arrows.svg"
+import arrows from "@/assets/images/Clad/arrows.svg"
 
 export default function Section_2() {
   return (
