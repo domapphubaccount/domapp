@@ -10,7 +10,8 @@ import PositionedSnackbar from "@/components/Reuse/Section_Head/SnackBar";
 import cladIcon from "@/assets/images/Products_Page/Clad/ICON.png";
 import CladCutLogo from "@/assets/images/Header/products_logos/cladcut.png";
 import grassIcon from "@/assets/images/Grasshopper/insect.png";
-import byldIcon from "@/assets/images/Byld/iconlogo.png"
+import byldIcon from "@/assets/images/Byld/iconlogo.png";
+import RDAppIcon from "@/assets/images/RDApp/logo.png"
 
 export default function Header({ handleToggle }) {
   const headerScrol = useRef();
@@ -142,7 +143,12 @@ export default function Header({ handleToggle }) {
                                     href={"/rdapp"}
                                     shallow
                                   >
-                                    <i className="bi bi-file-text me-3 float-none"></i>
+                                    <img
+                                      style={{ width: "15px", height: "15px" }}
+                                      src={RDAppIcon.src}
+                                      className="me-3"
+                                      alt=""
+                                    />{" "}
                                     <div>RDAPP</div>
                                   </Link>
                                 </li>
@@ -201,7 +207,7 @@ export default function Header({ handleToggle }) {
                             <li>
                               <div>Generative AI</div>
                               <ul>
-                              <li>
+                                <li>
                                   <Link
                                     className="d-block w-100 h-100 d-flex"
                                     href={"/byld"}
@@ -239,11 +245,6 @@ export default function Header({ handleToggle }) {
                   <a onClick={handleToggle} className="pointer nav-link-item">
                     CONTACT US
                   </a>
-                </li>
-                <li>
-                  {/* { getWidowY < 100 &&
-                                    <Lang />
-                                    }                                 */}
                 </li>
               </ul>
             </nav>

@@ -1,7 +1,7 @@
 import React from 'react'
-import Erp_Dash from "@/assets/images/Products_Page/Erp/ERP_dash.png"
+import Erp_Dash from "@/assets/images/BondifyCRM/ERP_dash.png"
 import Link from 'next/link'
-import Bondify from "@/assets/images/Products_Page/Erp/bannar.png"
+import Bondify from "@/assets/images/BondifyCRM/bannar.png"
 
 export default function Bannar2() {
   return (
