@@ -8,11 +8,11 @@ import Wind_4 from "@/assets/images/Products_Page/Wind/W4.png";
 import clad_5 from "@/assets/images/Clad/Picture5.png";
 
 import Product from "@/pages_sups/Products/Product";
-import Products_sups from "@/pages_sups/Products/Products_sups/Products_sups";
+import Section_2 from "@/pages_sups/Products/Wind/Wind/Section_2";
 import React from "react";
-import Section_5 from "@/pages_sups/Products/Products_sups/Section_5";
+import Section_5 from "@/pages_sups/Products/Wind/Wind/Section_5";
 import ScrollToTop from "react-scroll-to-top";
-import Screens_Section from "@/pages_sups/Products/Products_sups/Screens_Section";
+import Screens_Section from "@/pages_sups/Products/Wind/Wind/Screens_Section";
 import product_1 from "@/assets/images/Home_Page/products/pr1.jpg";
 
 export default function Page() {
@@ -102,7 +102,7 @@ export default function Page() {
           caption={items.caption}
           linkPage={items.page}
         />
-        <Products_sups sections={items.Section_2} />
+        <Section_2 sections={items.Section_2} />
         <Screens_Section sections={items.Section_4} />
         <Section_5 sections={items.Section_5} />
         <ScrollToTop
