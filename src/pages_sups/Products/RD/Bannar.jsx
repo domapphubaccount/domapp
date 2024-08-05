@@ -5,7 +5,7 @@ import { league } from "@/pages_sups/Home/Section_1/Section_1";
 import Shap_1 from "@/assets/images/Products_Page/Rd/mask-shape.png";
 import Shap_2 from "@/assets/images/Products_Page/Rd/line-shape.png";
 import Link from "next/link";
-import Logo from "@/assets/images/RDApp/logo_white.png";
+import Logo from "@/assets/images/RDApp/logo_noslogan.png";
 
 export default function Product() {
   return (
@@ -21,11 +21,11 @@ export default function Product() {
                 >
                   <div className="flex justify-center mb-3">
                     <div className="mr-3">
-                      <img src={Logo.src} alt="logo" width={55} height={55} />
+                      <img src={Logo.src} alt="logo"/>
                     </div>
-                    <div className="mb-4">
+                    {/* <div className="mb-4">
                       <h1 className={league.className}>RDAPP</h1>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="mb-4">
                     <p className={league.className + " mb-4"}>
@@ -34,7 +34,7 @@ export default function Product() {
                       <br />
                       <span className="fw-bold">Saudi building code .</span>
                     </p>
-                    <Link href="/contact" className="rd_get_started text-white" shallow>
+                    <Link type="button" href="/contact" className="rd_get_started text-white" shallow>
                       Get Started
                     </Link>
                   </div>
