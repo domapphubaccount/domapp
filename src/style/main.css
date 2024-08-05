@@ -2779,14 +2779,14 @@ footer{
 
     height: 100%;
  }
- .rd_section_1 .card:hover {
+ /* .rd_section_1 .card:hover {
     color: #fff;
- }
+ } */
 
  .rd_section_1 i{
     display: inline-block;
     color: #fff;
-    background-color: #0B163F;
+    background-color: #344155;
     padding: 5px 10px;
     border-radius: 8px;
     font-size: 2rem;
@@ -2804,7 +2804,7 @@ footer{
  .custom_icon{
     display: inline-block;
     color: #fff;
-    background-color: #0B163F;
+    background-color: #344155;
     padding: 5px 10px;
     border-radius: 8px;
     font-size: 2rem;

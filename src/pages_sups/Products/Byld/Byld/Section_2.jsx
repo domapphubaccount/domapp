@@ -1,6 +1,6 @@
 import React from "react";
-import eating from "@/assets/images/Byld/eating.svg";
-import space from "@/assets/images/Byld/space.svg";
+import eating from "@/assets/images/Byld/data.jpg";
+import space from "@/assets/images/Byld/share.jpg";
 import tasks from "@/assets/images/Byld/tasks.svg";
 
 function Section_2() {
@@ -13,9 +13,7 @@ function Section_2() {
               className="text-2xl md:text-3xl font-bold font-heading wow animate__ animate__fadeInDown animated"
               style={{ visibility: "visible", animationName: "fadeInDown" }}
             >
-                 
               <span>Clear answers to </span>
-              
               <span className="text-blue-500">complex questions</span>,
               <br />
               <span>referencing the Saudi Building Code</span>
@@ -42,7 +40,7 @@ function Section_2() {
               animationName: "fadeInUp",
             }}
           >
-            <div className="p-12 bg-white shadow rounded">
+            <div className="p-12 h-100 bg-white shadow rounded">
               <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
                 1
               </div>
@@ -57,6 +55,7 @@ function Section_2() {
               </p>
             </div>
           </div>
+
           <div
             className="hover-up-5 w-full md:w-1/2 lg:w-1/3 px-3 mb-6 wow animate__ animate__fadeInUp animated"
             data-wow-delay=".5s"
@@ -66,7 +65,7 @@ function Section_2() {
               animationName: "fadeInUp",
             }}
           >
-            <div className="p-12 bg-white shadow rounded">
+            <div className="p-12 h-100 bg-white shadow rounded">
               <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
                 2
               </div>
@@ -81,9 +80,10 @@ function Section_2() {
               </p>
             </div>
           </div>
+
           <div className="hover-up-5 w-full lg:w-1/3 px-3 mb-6">
             <div
-              className="p-12 bg-white shadow rounded wow animate__ animate__fadeInUp animated"
+              className="p-12 h-100 bg-white shadow rounded wow animate__ animate__fadeInUp animated"
               data-wow-delay=".7s"
               style={{
                 visibility: "visible",
@@ -104,6 +104,7 @@ function Section_2() {
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>

@@ -211,13 +211,12 @@ export default function Header({ handleToggle }) {
                                     href={"/byld"}
                                     shallow
                                   >
-                                    {" "}
                                     <img
                                       style={{ width: "15px", height: "18px" }}
                                       src={byldIcon.src}
                                       className="me-3"
                                       alt=""
-                                    />{" "}
+                                    />
                                     <div>BYLD</div>
                                   </Link>
                                 </li>

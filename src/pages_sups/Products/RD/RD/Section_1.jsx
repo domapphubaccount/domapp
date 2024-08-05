@@ -19,7 +19,7 @@ export default function Section_1() {
                             <p>
                             Efficient platform for managing risks, It streamlines the entire risk management process, eliminating manual and time-consuming tasks allowing teams to manage risks more effectively and efficiently.                            </p>
                         </div>
-                        <div className='back_image'/>
+                        {/* <div className='back_image'/> */}
                     </div>
                 </Col>
                 <Col lg={4} md={4} sm={12}>
@@ -33,7 +33,7 @@ export default function Section_1() {
                             <p>
                             Advanced encryption protocols to safeguard data, ensuring secure transmission and storage                            </p>
                         </div>
-                        <div className='back_image'/>
+                        {/* <div className='back_image'/> */}
                     </div>
                 </Col>
                 <Col lg={4} md={4} sm={12}>
@@ -48,7 +48,7 @@ export default function Section_1() {
                             <p>
                             Every risk management strategy and precautionary measure implemented is aligned with the regulations outlined in the Saudi Building Code, prioritizing safety and regulatory adherence throughout.                            </p>
                         </div>
-                        <div className='back_image'/>
+                        {/* <div className='back_image'/> */}
                     </div>
                 </Col>
             </Row>
