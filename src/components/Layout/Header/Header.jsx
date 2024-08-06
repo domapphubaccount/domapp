@@ -142,7 +142,7 @@ export default function Header({ handleToggle }) {
                                     shallow
                                   >
                                     <img
-                                      style={{ width: "15px", height: "15px" }}
+                                      style={{ width: "15px", height: "18px" }}
                                       src={RDAppIcon.src}
                                       className="me-3"
                                       alt=""
