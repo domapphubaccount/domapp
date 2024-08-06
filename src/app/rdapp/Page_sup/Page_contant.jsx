@@ -15,7 +15,7 @@ import dynamic from "next/dynamic";
 
 function Page() {
   return (
-    <div className="rd_page page_hid">
+    <div className="page_hid">
       <Bannar />
       <RD_cards />
       <RD_heading title="" body="RDAPP stacked with the best features." />

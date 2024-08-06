@@ -108,10 +108,8 @@ export default function Header({ handleToggle }) {
                                   >
                                     <i className="bi bi-wind me-3 float-none"></i>{" "}
                                     <div>WINDMASTER</div>
-                                    {/* <span className='free_icon_product' >Free</span> */}
                                   </Link>
                                 </li>
-                                {/* <li><Link className='d-block w-100 h-100' href={'/facade'}>Facade Static <span className='free_icon_product' >Free</span></Link></li> */}
                               </ul>
                             </li>
                             <li>
@@ -144,7 +142,7 @@ export default function Header({ handleToggle }) {
                                     shallow
                                   >
                                     <img
-                                      style={{ width: "15px", height: "15px" }}
+                                      style={{ width: "15px", height: "18px" }}
                                       src={RDAppIcon.src}
                                       className="me-3"
                                       alt=""
@@ -213,13 +211,12 @@ export default function Header({ handleToggle }) {
                                     href={"/byld"}
                                     shallow
                                   >
-                                    {" "}
                                     <img
                                       style={{ width: "15px", height: "20px" }}
                                       src={byldIcon.src}
                                       className="me-3"
                                       alt=""
-                                    />{" "}
+                                    />
                                     <div>BYLD</div>
                                   </Link>
                                 </li>
