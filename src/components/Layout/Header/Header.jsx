@@ -215,7 +215,7 @@ export default function Header({ handleToggle }) {
                                   >
                                     {" "}
                                     <img
-                                      style={{ width: "15px", height: "18px" }}
+                                      style={{ width: "15px", height: "20px" }}
                                       src={byldIcon.src}
                                       className="me-3"
                                       alt=""
