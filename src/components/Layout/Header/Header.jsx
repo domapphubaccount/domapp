@@ -81,7 +81,7 @@ export default function Header({ handleToggle }) {
                         <Col sm={12} md={12} lg={12}>
                           <ul className="products-category first-col">
                             <li>
-                              <div>Design SoftWare</div>
+                              <div>Design Software</div>
                               <ul>
                                 <li>
                                   <Link
