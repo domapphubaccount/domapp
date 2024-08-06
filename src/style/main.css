@@ -5644,6 +5644,9 @@ i.icon-2x {
         display: block;
     }
   } */
+   .carousal_arrow{
+    border-radius: 5px;
+   }
   .carousal_arrow::before{
     content: "";
   }

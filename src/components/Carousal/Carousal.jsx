@@ -29,7 +29,7 @@ function Carousal() {
         slidesToScroll: 2,
         initialSlide: 0,
         infinite: true,
-        arrows: false,
+        arrows: true,
         responsive: [
           {
             breakpoint: 1024,
@@ -72,7 +72,7 @@ function Carousal() {
     return (
       <div
         className={`${className} carousal_arrow`}
-        style={{ ...style, display: "block", background: "black",right:'0'}}
+        style={{ ...style, display: "block", background: "black",right:'0' , width:'auto' , height: 'auto'}}
         onClick={onClick}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-6">
@@ -88,7 +88,7 @@ function Carousal() {
     return (
       <div
         className={`${className} carousal_arrow`}
-        style={{ ...style, display: "block", background: "black",left: '0' }}
+        style={{ ...style, display: "block", background: "black",left: '0', width:'auto' , height: 'auto' , zIndex:'10' }}
         onClick={onClick}
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-6">
