@@ -19,9 +19,9 @@ function Pricing() {
               animationName: "fadeInUp",
             }}
           >
-            <span>Start saving time today and</span>
-            <span className="text-blue-500">choose</span>
-            <span>your best plan</span>
+            <span>Start saving time today and </span>
+            <span className="text-blue-500"> choose </span>
+            <span> your best plan</span>
           </h2>
           <p
             className="max-w-sm mx-auto text-lg text-blueGray-400 wow animate__ animate__fadeInDown animated"
@@ -32,7 +32,7 @@ function Pricing() {
               animationName: "fadeInDown",
             }}
           >
-            Best for freelance developers who need to save their time
+            Best for those who need to save their time
           </p>
         </div>
         <div data-aos="fade-down" className="flex flex-wrap -mx-3">
