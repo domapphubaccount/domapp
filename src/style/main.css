@@ -6035,3 +6035,41 @@ i.icon-2x {
     }
     /* end bannar */
 /* end byld */
+
+/* .carousal_arrow_next::before{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    bottom: -50%;
+    transform: translateY(20px);
+    left: -30px;
+}
+.carousal_arrow_prev::before{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    bottom: -50%;
+    transform: translateY(20px);
+    right: -30px;
+} */
+
+#carusal_close_next{
+    position: absolute;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    right: 0px;
+}
+#carusal_close_prev{
+    position: absolute;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    left: 0;
+}
