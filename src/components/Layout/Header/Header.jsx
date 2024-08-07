@@ -147,7 +147,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />{" "}
-                                    <div>RDAPP</div>
+                                    <div className="mt-1">RDAPP</div>
                                   </Link>
                                 </li>
                               </ul>
