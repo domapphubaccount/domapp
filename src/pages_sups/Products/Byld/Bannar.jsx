@@ -33,7 +33,7 @@ function Bannar() {
             >
               Try For Free
             </a>
-            <a
+            {/* <a
               className="btn-white wow animate__ animate__fadeInUp hover-up-2 animated no-underline	"
               data-wow-delay=".3s"
               href="#how-we-work"
@@ -44,7 +44,7 @@ function Bannar() {
               }}
             >
               Pricing
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
