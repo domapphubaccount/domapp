@@ -142,6 +142,7 @@ function Carousal() {
 
   return (
     <>
+    <></>
       <div id="products"></div>
       <Section_head
         head={1}
