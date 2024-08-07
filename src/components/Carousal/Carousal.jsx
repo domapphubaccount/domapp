@@ -23,8 +23,10 @@ function Carousal() {
     focusOnSelect: true,
     className: "center",
     centerMode: true,
-    infinite: false,
+    infinite: true,
+    autoplay: true,
     speed: 500,
+    autoplaySpeed: 2000,
     slidesToShow: 5,
     slidesToScroll: 2,
     initialSlide: 0,
@@ -166,7 +168,7 @@ function Carousal() {
                   <div key={index}>
                     <div className="text-center p-3">
                       <div className="m-auto">{item.icon}</div>
-                      <h6 className="mt-3" style={{ fontSize: "13px" }}>
+                      <h6 className="m-auto mt-3" style={{ fontSize: "13px" , maxWidth: '172px'}}>
                         {item.title}
                       </h6>
                     </div>
