@@ -22,7 +22,7 @@ export default function Bannar() {
                   <h1 className="title theme-gradient grass_title">
                     Grasshopper®
                     <br />
-            q        3D
+                   3D
                   </h1>
                   <p className="text-white">
                     Precision engineering for exquisite facade fabrication.
