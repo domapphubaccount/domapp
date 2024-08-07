@@ -12,7 +12,7 @@ export default function Page() {
         <Bannar />
         <Section_1 />
         <Section_2 />
-        <Pricing />
+        {/* <Pricing /> */}
       </>
     </div>
   );
