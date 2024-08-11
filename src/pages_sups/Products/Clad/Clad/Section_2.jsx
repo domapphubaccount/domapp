@@ -3,7 +3,8 @@ import { Col, Container, Row } from "reactstrap";
 import arrows from "@/assets/images/Clad/arrows.svg";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
-import V_bannar from "@/assets/images/Clad/v-bannar.png"
+import V_bannar from "@/assets/images/Clad/v-bannar.png";
+import playIcon from "@/assets/images/Clad/play-button.png"
 
 export default function Section_2() {
   const [isOpen, setOpen] = useState(false);
@@ -21,15 +22,21 @@ export default function Section_2() {
                     //   class="group aspect-w-16 aspect-h-16 sm:aspect-h-9 bg-neutral-800 rounded-3xl overflow-hidden border-4 border-white dark:border-neutral-900 sm:rounded-[50px] sm:border-[10px] z-0"
                     title="Magical Scotland - 4K Scenic Relaxation Film with Calming Music"
                   >
-                    <img
-                      className="w-full aspect-video rounded-3xl"
-                      src={V_bannar.src}
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    />
+                    <div className="relative">
+                      <img
+                        className="w-full aspect-video rounded-3xl"
+                        src={V_bannar.src}
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                      />
+                      <div className="play-icon-clad">
+                      <div class="border_circle" onClick={()=> setOpen(true)}></div>
+                        <img  src={playIcon.src} width={100} />
+                      </div>
+                    </div>
 
                     <ModalVideo
                       channel="youtube"

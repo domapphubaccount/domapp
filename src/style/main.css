@@ -6520,4 +6520,22 @@ i.icon-2x {
 .react-international-phone-input-container .react-international-phone-country-selector-button{
     border: none !important;
 }
+.aspect-video{
+    filter: blur(1px);
+}
+
+.play-icon-clad{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+
+.play-icon-clad .border_circle{
+    width: 100px;
+    height: 100px;
+}
+
 /* end clad  */
