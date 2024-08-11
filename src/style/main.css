@@ -4911,7 +4911,7 @@ z-index: 2;
 }
 
 .cust_section_3 .call-to-action-area {
-    padding: 140px 0 100px;
+    /* padding: 140px 0 100px; */
     position: relative;
     z-index: 1;
 }
@@ -4932,11 +4932,12 @@ z-index: 2;
     border-bottom: 1px solid #e7e7e7;
 }
 .cust_section_3 .call-to-action .section-heading {
-    margin-bottom: 65px;
+    margin-bottom: 200px;
+    margin-top: 65px;
     text-align: center;
 }
 .cust_section_3 .title{
-    font-size: 56px;
+    font-size: 40px;
 }
 
 .axil-btn.btn-large {
@@ -4949,7 +4950,7 @@ z-index: 2;
 }
 .call-to-action .section-heading .title {
     width: 60%;
-    margin: 0 auto 60px;
+    margin: 60px auto 60px;
     color: #fff;
 }
 .axil-btn {
@@ -4976,8 +4977,8 @@ z-index: 2;
 }
 
 .contact-form-box.shadow-box {
-    box-shadow: -2px 5px 48px 0 rgb(0 0 0 / 78%);
-    margin-top: 200px;
+    box-shadow: 0px 0px 9px 2px rgb(0 0 0 / 20%);
+    margin-top: -20px;
 
 }
 .contact-form-box {
@@ -6501,3 +6502,22 @@ i.icon-2x {
     color: #fff;
 }
 /* end chatplus */
+
+/* start clad  */
+.clad-v-bannar{
+    margin-top: -40px;
+    margin-right: -40px;
+    margin-bottom: -40px;
+    background-color: var(--purple);
+}
+
+.react-international-phone-input{
+    border: none !important;
+}
+.react-international-phone-country-selector{
+    border: none !important;
+}
+.react-international-phone-input-container .react-international-phone-country-selector-button{
+    border: none !important;
+}
+/* end clad  */

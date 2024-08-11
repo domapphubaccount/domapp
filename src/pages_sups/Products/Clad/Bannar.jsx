@@ -11,7 +11,7 @@ export default function Bannar() {
       <div className="products2">
         <div className="load-speed-section py-5 pt-160 pb-160 lg-pt-100 lg-pb-80 mil-top-space clad-background">
           <div className="container relative" style={{ zIndex: "3" }}>
-            <div className="row align-items-center">
+            <div className="row align-items-center justify-between">
               <div
                 className="col-xxl-5 col-lg-6 wow fadeInLeft"
                 style={{ visibility: "visible", animationName: "fadeInLeft" }}
