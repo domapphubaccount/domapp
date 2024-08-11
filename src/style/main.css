@@ -6161,10 +6161,10 @@ i.icon-2x {
     color: var(--strong-chat) !important;
 }
 
-.header .bg.agency {
+/* .header .bg.agency {
     background-image: url(../assets/images/chatPlus/slider.png);
     background-position: 100%;
-}
+} */
 .header .bg {
     background-size: cover;
     background-repeat: no-repeat;

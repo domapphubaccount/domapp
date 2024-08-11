@@ -130,7 +130,7 @@ function Section_2() {
                     /> */}
                     <PhoneInput
                       className="form-control p-2 z-10 relative"
-                      defaultCountry="ua"
+                      defaultCountry="sa"
                       name="phone"
                       placeholder="+123456789"
                       onChange={formik.handleChange}
