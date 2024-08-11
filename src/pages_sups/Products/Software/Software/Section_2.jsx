@@ -29,7 +29,7 @@ function Section_2() {
       .email("Invalid email address")
       .required("Email is required"),
     phone: Yup.string()
-      .matches(/^[0-9]+$/, "Phone number is not valid")
+      // .matches(/^[0-9]$/, "Phone number is not valid")
       .required("Phone number is required"),
     message: Yup.string().required("Project description is required"),
   });
@@ -46,6 +46,7 @@ function Section_2() {
     onSubmit: (values) => {
       // alert(JSON.stringify(values, null, 2));
       // Handle form submission logic here
+      console.log(values)
       axios
         .post("https://domapphub.com/Care/contacts.php", values)
         .then((res) => {
@@ -68,9 +69,7 @@ function Section_2() {
             <Col>
               <div className="call-to-action">
                 <div className="section-heading heading-light">
-                  {/* <span className="subtitle">Let's Work Together</span> */}
                   <h2 className="title">Need a successful project?</h2>
-                  {/* <a className="axil-btn btn-large btn-fill-white" href="/demo/react/abstrak/contact">Estimate Project</a> */}
                 </div>
               </div>
             </Col>
@@ -118,22 +117,12 @@ function Section_2() {
                   </div>
                   <div className="form-group mb--40">
                     <label htmlFor="phone">Phone</label>
-                    {/* <input
-                      type="tel"
-                      className="form-control"
-                      id="phone"
-                      name="phone"
-                      placeholder="+123456789"
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
-                      value={formik.values.phone}
-                    /> */}
                     <PhoneInput
                       className="form-control p-2 z-10 relative"
                       defaultCountry="sa"
                       name="phone"
                       placeholder="+123456789"
-                      onChange={formik.handleChange}
+                      onChange={(e)=>formik.setFieldValue('phone' , e)}
                       onBlur={formik.handleBlur}
                       value={formik.values.phone}
                     />
@@ -141,6 +130,25 @@ function Section_2() {
                       <div className="text-danger">{formik.errors.phone}</div>
                     ) : null}
                   </div>
+
+                  <div className="form-group">
+                    <label htmlFor="title">Title</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="title"
+                      name="title"
+                      placeholder="Title"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      value={formik.values.email}
+                    />
+                    {formik.touched.title && formik.errors.title ? (
+                      <div className="text-danger">{formik.errors.title}</div>
+                    ) : null}
+                  </div>
+
+
                   <div className="form-group mb--40">
                     <label htmlFor="message">Project description</label>
                     <textarea
