@@ -11,7 +11,8 @@ import cladIcon from "@/assets/images/Clad/ICON.png";
 import CladCutLogo from "@/assets/images/Header/products_logos/cladcut.png";
 import grassIcon from "@/assets/images/Grasshopper/insect.png";
 import byldIcon from "@/assets/images/Byld/iconlogo.png";
-import RDAppIcon from "@/assets/images/RDApp/logo.png"
+import RDAppIcon from "@/assets/images/RDApp/logo.png";
+import ChatPlusIcon from "@/assets/images/chatPlus/logo.png";
 
 export default function Header({ handleToggle }) {
   const headerScrol = useRef();
@@ -89,13 +90,12 @@ export default function Header({ handleToggle }) {
                                     href={"/cladcut"}
                                     shallow
                                   >
-                                    {" "}
                                     <img
                                       style={{ width: "15px", height: "15px" }}
                                       src={cladIcon.src}
                                       className="me-3"
                                       alt=""
-                                    />{" "}
+                                    />
                                     <div>CladCut</div>
                                   </Link>
                                 </li>
@@ -146,7 +146,7 @@ export default function Header({ handleToggle }) {
                                       src={RDAppIcon.src}
                                       className="me-3"
                                       alt=""
-                                    />{" "}
+                                    />
                                     <div className="mt-1">RDAPP</div>
                                   </Link>
                                 </li>
@@ -161,7 +161,13 @@ export default function Header({ handleToggle }) {
                                     href={"/chatplus"}
                                     shallow
                                   >
-                                    <i className="bi bi-chat-square-text me-3 float-none"></i>
+                                    {/* <i className="bi bi-chat-square-text me-3 float-none"></i> */}
+                                    <img
+                                      style={{ width: "15px", height: "18px" }}
+                                      src={ChatPlusIcon.src}
+                                      className="me-3"
+                                      alt=""
+                                    />
                                     <div>CHATPLUS</div>
                                   </Link>
                                 </li>

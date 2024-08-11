@@ -42,7 +42,7 @@ export default function Section_7() {
                             COST MONITORING  
                         </h2>
                         <p>
-                        We have effectively developed a cost-per-meter technique that provides an estimated project value for each element in the Bill of Quantities (BOQ) during CPV ARABIA's operations in the Kingdom of Saudi Arabia.
+                        We have effectively developed a cost-per-meter technique that provides an estimated project value for each element in the Bill of Quantities (BOQ).
                         This method has been programmed into the  RDAPP with detailed factors to enhance cost evaluations for projects and promptly notify Stakeholders of any flagged concerns.
                         </p>
                     </div>

@@ -6073,3 +6073,431 @@ i.icon-2x {
     z-index: 1;
     left: 0;
 }
+
+
+
+/* start chatplus */
+:root{
+    --strong-chat: #04185b;
+    --light-chat: #1f357d;
+    --secondary-chat: #333333;
+    
+    --light-chat:#8181f6;
+    --secondary-2-chat: #8181f6;
+}
+
+
+.chatplus_btn{
+    background-color: var(--strong-chat) !important;
+}
+.chatplus_main{
+    background-color: var(--strong-chat) !important;
+}
+.chatplus_secondary{
+    background-color: var(--secondary-chat) !important;
+}
+
+.chat_amaizing_card_2::before{
+    background-color: var(--secondary-chat) !important;
+}
+.chat_amaizing_card_2::after{
+    background-color: var(--secondary-chat) !important;    
+}
+
+.chat_amaizing_card_2 .card_content .card_data_container .icon_card_data{
+    border-color: var(--secondary-chat) !important;
+    color: var(--secondary-color) !important;
+}
+
+
+
+
+.chat_amaizing_card::after{
+    background-color: #4545f4 !important;
+}
+.chat_amaizing_card::before{
+    background-color: #4545f4 !important;
+}
+.chat_amaizing_card .card_content .card_data_container .icon_card_data{
+    border-color: #4545f4 !important;
+    color: #4545f4 !important;
+}
+
+
+.chat_amaizing_card_3::before{
+    background-color: #4545f4 !important;
+}
+.chat_amaizing_card_3::after{
+    background-color: #4545f4 !important;
+}
+
+.chat_amaizing_card_3 .card_content .card_data_container .icon_card_data{
+    border-color: #4545f4 !important;
+    color: #4545f4 !important;
+}
+
+
+
+.chat_amaizing_card_4::before{
+    background-color: #333333 !important;
+}
+.chat_amaizing_card_4::after{
+    background-color: #333333 !important;
+}
+.chat_amaizing_card_4 .card_content .card_data_container .icon_card_data{
+    border-color: #333333 !important;
+    color: #333333 !important;
+}
+
+
+.chat_section_4_cards .chat_card_icon_container{
+    background-color: #a0bbff42 !important
+}
+.chat_section_4_cards .chat_card_icon_container .card_icon{
+    background-color:#1f357d;
+}
+.chat_section_2 h3{
+    color: var(--strong-chat) !important;
+}
+
+.header .bg.agency {
+    background-image: url(../assets/images/chatPlus/slider.png);
+    background-position: 100%;
+}
+.header .bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+}
+
+.chat-head.header {
+    display: block;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+.chat-head.header .bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+}
+.chat-head.header .center-text {
+    height: calc(100vh - 83px);
+    margin-top: 50px;
+}
+.chat-head .header .header-text {
+    margin-bottom: 45px;
+}
+
+.chat-head .agency .h1, .agency .h2, .agency .h3, .agency .h4, .agency .h5, .agency .h6, .agency h1, .agency h2, .agency h3, .agency h4, .agency h5, .agency h6 {
+    color: var(--strong-chat);
+}
+.chat-head .center-text {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.chat-head .btn-default.btn-gradient {
+    border: transparent;
+    position: relative;
+    background-color: var(--strong-chat);
+    background-image: linear-gradient(var(--light-chat), var(--strong-chat));
+    background-image: linear-gradient(to right, var(--light-chat), var(--strong-chat), var(--strong-chat), var(--light-chat));
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+}
+.chat-head .btn-default {
+    padding: 14px 35px !important;
+    font-size: calc(13px + 3*(100vw - 300px) / 1620) !important;
+    font-weight: 500;
+    border: 2px solid;
+    text-transform: capitalize;
+    border-radius: 50px !important;
+    color: #fff !important;
+    transition: .5s;
+    letter-spacing: 0;
+}
+.chat-head .agency .h1 span.bold-text, .agency h1 span.bold-text {
+    font-weight: 600;
+}
+.chat-head .header .header-sub-text, .header .header-text {
+    margin-bottom: 45px;
+}
+.chat-head .agency.header .header-sub-text p {
+    font-size: calc(13px + 5*(100vw - 300px) / 1620);
+    letter-spacing: 0;
+}
+.chat-head .agency.header .btn-default {
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.chat-head .agency .btn {
+    text-transform: uppercase;
+}
+.agency .plus-container {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    animation: star 1s infinite;
+}
+.agency .plus-container .plus {
+    position: relative;
+}
+.agency .plus-container .plus:before {
+    border-left: 6px solid;
+    height: 19px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.agency .plus-container .plus:before {
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    color: var(--strong-chat);
+}
+.agency .plus-container .plus:after {
+    border-top: 6px solid;
+    width: 19px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.agency .plus-container .plus:after, .agency .plus-container .plus:before {
+    content: "";
+    position: absolute;
+    border-radius: 2px;
+    color: var(--strong-chat);
+}
+
+.agency .plus-container {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    animation: star 1s infinite;
+}
+.agency .plus-container.plus-container2 {
+    top: 25%;
+    left: 25%;
+}
+.agency .plus-container.plus-container3 {
+    top: 50%;
+    left: 2%;
+}
+.agency .plus-container.plus-container4 {
+    top: 65%;
+    left: 32%;
+}
+.agency .plus-container.plus-container5 {
+    top: 80%;
+    left: 10%;
+}
+
+@keyframes star {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+.chat.agency{
+    overflow: hidden;
+
+}
+.agency.about-bg {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 70px 0;
+}
+.chat .agency h3.text-as-shadow, .text-as-shadow {
+    font-size: 150px !important;
+    color: var(--strong-chat);
+}
+.text-as-shadow {
+    position: absolute;
+    opacity: .03;
+    left: 250px;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    top: 0;
+}
+.chat .row>div {
+    position: relative;
+}
+.chat .agency-content .agency-header-center-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.chat .agency-content .agency-header-center-container .borders {
+    margin-right: 30px;
+    color: var(--strong-chat);
+    border-right: 2px solid;
+    height: 80px;
+}
+.chat .agency-content .agency-header-center-container .agency-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat .agency-content .agency-header-center-container .agency-head .agency-head-text {
+    font-size: 30px !important;
+    font-weight: 600;
+    margin-top: -16px;
+    margin-bottom: -16px;
+}
+.chat .agency .block-span {
+    display: block;
+}
+.chat .agency-content .agency-para {
+    font-size: calc(13px + 4*(100vw - 300px) / 1620);
+    letter-spacing: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.agency-content .agency-header-center-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.chat .btn-default.btn-gradient {
+    border: transparent;
+    border-radius: 50px;
+    position: relative;
+    background-color: var(--strong-chat);
+    background-image: linear-gradient(var(--light-chat), var(--strong-chat));
+    background-image: linear-gradient(to right, #1f357d, var(--strong-chat), var(--strong-chat), var(--light-chat));
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+    padding: 14px 35px !important;
+    color: white;
+}
+
+
+.agency.service-bg {
+    position: relative;
+    overflow: hidden;
+}
+.chat .center-text {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.chat.agency h6.borders-before {
+    margin-left: 40px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.chat .agency.format .borders-before span {
+    font-size: 16px;
+    font-weight: 500;
+}
+.chat .agency h6.borders-before span:before {
+    border-top: 2px solid var(--primary);
+    width: 24px;
+}
+.chat .agency.format .format-head-text {
+    margin-bottom: 25px;
+}
+
+.chat.agency .block-span {
+    display: block;
+}
+.agency .center-content.unset-height {
+    height: unset;
+}
+
+
+.agency .icon-collection .about-icon {
+    margin: 0 0 40px;
+}
+
+.agency .icon-collection .about-icon div {
+    padding: 45px 25px;
+}
+
+.chat .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.chat .icon-collection .about-icon {
+    margin: 0 18px;
+    filter: drop-shadow(0 0 10px #eee);
+    border-radius: 20px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.chat .agency .h5, .agency h5 {
+    font-size: calc(14px + 4*(100vw - 300px) / 1620) !important;
+    font-weight: 600;
+    letter-spacing: 0;
+    padding-top: 5px;
+    text-align: center;
+}
+.agency .icon-collection .about-icon {
+    margin: 0 0 40px;
+}
+
+.agency .borders-before span:before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #f5f5f8;
+    width: 46px;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 100%;
+    margin-right: 15px;
+}
+
+.chat .about-icon img{
+    width: 50px;
+}
+.agency .girl-boy {
+    right: 13%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 500px;
+}
+
+.set-abs {
+    position: absolute;
+}
+
+.icon-collection .about-icon:hover {
+    transition: .5s;
+    background-color: var(--strong-chat);
+}
+.icon-collection .about-icon:hover a{
+    transition: .5s;
+    background-color: var(--strong-chat);
+}
+.agency .icon-collection .about-icon:hover div img {
+    filter: brightness(0) invert(1);
+}
+.agency .icon-collection .about-icon:hover div h5{
+    color: #fff;
+}
+/* end chatplus */

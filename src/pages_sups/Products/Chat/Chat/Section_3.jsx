@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Mob from '@/assets/images/Products_Page/Chat/mobile/mobile.jpg'
+import Mob from '@/assets/images/chatPlus/chatPhone.png'
 import { Col, Container, Row } from 'reactstrap'
 
 export default function Section_3() {
@@ -10,16 +10,16 @@ export default function Section_3() {
             body:'Enhance customer interaction, lead quality, and communication effectiveness and provide real-time customer support to answer queries, resolve issues, handle complaints, etc.          '
           },
           {
-            title:'Improve Precision',
-            body: 'Enhance communication accuracy by eliminating human error.'
+            title:'Message Templates',
+            body: 'Create and customize multiple templates tailored for different scenarios.'
           },
           {
-            title:'Secure Communication',
-            body:'Guarantee end-to-end encryption for every communication. '
+            title:'Broadcast Messaging',
+            body:'Sending a single message to a large number of recipients simultaneously.'
           },
           {
-            title:'Communication efficiency',
-            body:'Minimize time and effort for specific communication tasks. '
+            title:'Performance Report',
+            body:"Provides an analysis of the team's efficiency and effectiveness in handling customer interactions."
           },
     ]
     const seconedCols = [
@@ -29,15 +29,15 @@ export default function Section_3() {
         // },
         {
           title:'Auto-reply',
-          body:'Customized automated reply.'
+          body:'Customized automated reply feature offers a range of capabilities designed to enhance customer engagement and streamline business communications.'
         },
         {
           title:'Archive',
-          body:'Archive and access past conversations effortlessly, store and retrieve chat transcripts seamlessly, ensuring easy reference and review. Organize your communication history efficiently for enhanced productivity and knowledge retention.          '
+          body:'Archive and access past conversations effortlessly, store and retrieve chat transcripts seamlessly, ensuring easy reference and review.          '
         },
         {
-          title:'Automated Business',
-          body:'Chat Plus offers versatile Automated business processes enhancing efficiency across multiple industries.          '
+          title:'Automated Processes',
+          body:'ChatPlus offers versatile Automated business processes enhancing efficiency such as appointment scheduling, order tracking, and more.'
         },
         {
           title:'API Integration',
@@ -60,7 +60,7 @@ export default function Section_3() {
                         </div>
                         
                     </Col>
-                    <Col sm={12} md={4} lg={4}>
+                    <Col sm={12} md={4} lg={4} className='flex items-center'>
                         <Image src={Mob} alt='mobile' data-aos="fade-right"/>
                     </Col>
                     <Col sm={12} md={4} lg={4}>

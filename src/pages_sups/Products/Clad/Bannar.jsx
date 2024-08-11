@@ -56,7 +56,7 @@ export default function Bannar() {
                 </div>
               </div>
 
-              <div className="col-lg-6 ms-auto">
+              <div className="col-lg-6" style={{marginTop: '40px'}}>
                 <div className="block-container position-relative ps-sm-3 pe-sm-3 ps-xl-5 pe-xl-5 md-mt-40">
                   <div className="row gx-xxl-5 align-items-center">
                     <div
@@ -100,13 +100,13 @@ export default function Bannar() {
                       </div>
                     </div>
                     <div
-                      className="col-sm-6 wow fadeInLeft cladcard"
+                      className="col-sm-6 wow fadeInLeft cladcard "
                       style={{
                         visibility: "visible",
                         animationName: "fadeInLeft",
                       }}
                     >
-                      <div className="block-wrapper d-flex flex-column align-items-center justify-content-center mb-40 xs-mb-20">
+                      <div className="block-wrapper d-flex flex-column align-items-center justify-content-center xs-mb-20">
                         <div className="rating font-recoleta">
                           <h4 className="mil-accent mil-mb-10">
                             <span
@@ -139,6 +139,7 @@ export default function Bannar() {
                           </p>
                         </div>
                       </div>
+
                     </div>
                   </div>
                   <img src={Shape_1.src} alt="" className="shapes shape-one" />
