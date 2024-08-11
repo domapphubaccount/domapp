@@ -38,7 +38,7 @@ function Section_2() {
       name: "",
       email: "",
       phone: "",
-      Product: "",
+      Product: "7",
       title: "",
       message: "",
     },
@@ -141,7 +141,7 @@ function Section_2() {
                       placeholder="Title"
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
-                      value={formik.values.email}
+                      value={formik.values.title}
                     />
                     {formik.touched.title && formik.errors.title ? (
                       <div className="text-danger">{formik.errors.title}</div>
