@@ -6505,10 +6505,10 @@ i.icon-2x {
 
 /* start clad  */
 .clad-v-bannar{
-    margin-top: -10px;
+    /* margin-top: -10px;
     margin-right: -10px;
     margin-bottom: -10px;
-    background-color: #49505747;
+    background-color: #49505747; */
 }
 
 .react-international-phone-input{
