@@ -6505,9 +6505,9 @@ i.icon-2x {
 
 /* start clad  */
 .clad-v-bannar{
-    margin-top: -40px;
-    margin-right: -40px;
-    margin-bottom: -40px;
+    margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
     background-color: var(--purple);
 }
 
@@ -6534,17 +6534,21 @@ i.icon-2x {
 
 
 .play-icon-clad .border_circle{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 /* end clad  */
 
 /* start rd */
 .rd-v-bannar{
-    margin-top: -40px;
-    margin-right: -40px;
-    margin-bottom: -40px;
+    margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
     background-color: #344155;
+}
+.video-screen-border{
+    border: 10px solid #333333;
+    border-radius: 25px;
 }
 /* end rd */

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Col, Container, Row } from "reactstrap";
-import arrows from "@/assets/images/Clad/arrows.svg";
-import ModalVideo from "react-modal-video";
+import { Container } from "reactstrap";
 import "react-modal-video/scss/modal-video.scss";
 import V_bannar from "@/assets/images/RDApp/v-bannar.png";
-import playIcon from "@/assets/images/Clad/play-button.png"
+import Video from "@/components/Reuse/Section_Head/Video";
+
 
 export default function RDvideo() {
   const [isOpen, setOpen] = useState(false);
@@ -12,7 +11,8 @@ export default function RDvideo() {
   return (
     <section>
       <Container>
-        <div className="mt-40">
+        <Video title={'Quick Brief'} body={'Discover a seamless experience with RDAPP.'} src={'UmEKrcSRIZE?si=usEOhTep7BL-eS5J'} className={"rd-v-bannar"} bannar={V_bannar} />
+        {/* <div className="mt-40">
           <Row className="justify-center">
             <Col lg={8}>
               <div className="relative">
@@ -48,7 +48,7 @@ export default function RDvideo() {
               </div>
             </Col>
           </Row>
-        </div>
+        </div> */}
       </Container>
     </section>
   );
