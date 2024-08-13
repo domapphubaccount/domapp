@@ -12,11 +12,13 @@ import RD_cards from "@/pages_sups/Products/RD/RD/RD_cards";
 import RD_features_cards from "@/pages_sups/Products/RD/RD/RD_features_cards";
 import RD_Content_section from "@/pages_sups/Products/RD/RD/RD_Content_section";
 import dynamic from "next/dynamic";
+import RDvideo from "@/pages_sups/Products/RD/RD/RD_video";
 
 function Page() {
   return (
     <div className="page_hid">
       <Bannar />
+      <RDvideo/>
       <RD_cards />
       <RD_heading title="" body="RDAPP stacked with the best features." />
       <Section_1 />

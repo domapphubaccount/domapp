@@ -6539,3 +6539,12 @@ i.icon-2x {
 }
 
 /* end clad  */
+
+/* start rd */
+.rd-v-bannar{
+    margin-top: -40px;
+    margin-right: -40px;
+    margin-bottom: -40px;
+    background-color: #344155;
+}
+/* end rd */
