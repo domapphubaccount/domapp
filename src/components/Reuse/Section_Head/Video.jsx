@@ -3,11 +3,11 @@ import playIcon from "@/assets/images/Clad/play-button.png";
 import ModalVideo from "react-modal-video";
 import { Col, Row } from "reactstrap";
 
-function Video({title , body , src , className , bannar}) {
+function Video({title , body , src , className , bannar , additional}) {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section>
+    <section className={additional}>
       <div className="container">
         <div className="my-5">
           <Row>

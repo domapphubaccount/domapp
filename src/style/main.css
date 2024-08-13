@@ -6505,10 +6505,10 @@ i.icon-2x {
 
 /* start clad  */
 .clad-v-bannar{
-    margin-top: -20px;
-    margin-right: -20px;
-    margin-bottom: -20px;
-    background-color: var(--purple);
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+    background-color: #49505747;
 }
 
 .react-international-phone-input{
@@ -6521,7 +6521,7 @@ i.icon-2x {
     border: none !important;
 }
 .aspect-video{
-    filter: blur(1px);
+    /* filter: blur(1px); */
 }
 
 .play-icon-clad{
@@ -6542,10 +6542,16 @@ i.icon-2x {
 
 /* start rd */
 .rd-v-bannar{
-    margin-top: -20px;
+    /* margin-top: -20px;
     margin-right: -20px;
     margin-bottom: -20px;
-    background-color: #344155;
+    background-color: #344155; */
+}
+.rd-video h3{
+    font-size: 1.2rem !important;
+}
+.rd-video h1{
+    font-size: 1.7rem !important;
 }
 .video-screen-border{
     border: 10px solid #333333;

@@ -14,9 +14,9 @@ export default function Page() {
     <div className="facade_page cladcut">
       <Bannar />
       <Section_2 />
-      <Head head={""} body={""} />
+      <Head head={""} b nody={""} />
       <Section_1 />
-      <Head_2 />
+      <Head_2 />w
       <Section_4 />
       <Section_3 />
       <ScrollToTop

@@ -11,7 +11,7 @@ export default function RDvideo() {
   return (
     <section>
       <Container>
-        <Video title={'Quick Brief'} body={'Discover a seamless experience with RDAPP.'} src={'UmEKrcSRIZE?si=usEOhTep7BL-eS5J'} className={"rd-v-bannar"} bannar={V_bannar} />
+        <Video title={'Quick Brief'} body={'Discover a seamless experience with RDAPP.'} src={'IgnZiK_89_o?si=Djcfh9XEQxDU4lFk'} className={"rd-v-bannar"} bannar={V_bannar} additional={'rd-video'} />
         {/* <div className="mt-40">
           <Row className="justify-center">
             <Col lg={8}>
