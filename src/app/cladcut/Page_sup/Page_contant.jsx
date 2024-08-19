@@ -16,7 +16,7 @@ export default function Page() {
       <Section_2 />
       <Head head={""} b nody={""} />
       <Section_1 />
-      <Head_2 />w
+      <Head_2 />
       <Section_4 />
       <Section_3 />
       <ScrollToTop
