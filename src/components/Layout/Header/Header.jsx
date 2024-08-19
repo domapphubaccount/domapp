@@ -168,7 +168,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    <div>CHATPLUS</div>
+                                    <div>ChatPlus</div>
                                   </Link>
                                 </li>
                               </ul>

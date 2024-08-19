@@ -74,7 +74,7 @@ export const carousalData = [
   },
   {
     index: 4,
-    title: "CHATPLUS",
+    title: "ChatPlus",
     src: "/Products/DomCRM.gif",
     link: "/chatplus",
     icon: (
