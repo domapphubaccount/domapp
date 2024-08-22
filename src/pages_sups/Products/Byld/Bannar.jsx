@@ -27,13 +27,13 @@ function Bannar() {
             </p>
           </div>
           <div>
-            <a
+            <Link
               className="btn-primary mr-3 wow animate__ animate__fadeInUp hover-up-2 animated no-underline	"
-              href="#how-features"
+              href="/contact"
               style={{ visibility: "visible", animationName: "fadeInUp" }}
             >
               Try For Free
-            </a>
+            </Link>
             <Link
               className="btn-white wow animate__ animate__fadeInUp hover-up-2 animated no-underline	"
               data-wow-delay=".3s"
