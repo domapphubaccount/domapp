@@ -55,7 +55,7 @@ function Section_4() {
             At DomApp, we have specialists in cutting-edge facade fabrication that combines the power of Grasshopper with our team of experienced engineers. Our advanced parametric design capabilities enable us to create stunning, efficient, and highly customizable facade solutions.
           </p>
         </div>
-        <div className='d-flex align-items-stretch pc_res'>
+        {/* <div className='d-flex align-items-stretch pc_res'>
           <div className='d-flex justify-content-between flex-column whyus_container_card'>
             
             <div className='grass_whyUs_card mb-5' id="g_1" ref={g1Ref} style={{ opacity: 0 }}>
@@ -83,7 +83,7 @@ function Section_4() {
             </div>
 
           </div>
-        </div>
+        </div> */}
 
         <div className='mobile-res'>
             <div className='grass_whyUs_card mb-5' id="g_1" ref={g1Ref} style={{ opacity: 0 }}>
