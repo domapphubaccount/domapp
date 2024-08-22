@@ -3,6 +3,7 @@ import bannarImg from "@/assets/images/Byld/intersect.svg";
 import subBannar from "@/assets/images/Byld/dashboard.png";
 import byldicon from "@/assets/images/Byld/logobyld.png";
 import blob from "@/assets/images/Byld/blob-tear.svg";
+import Link from "next/link";
 
 function Bannar() {
   return (
@@ -33,10 +34,10 @@ function Bannar() {
             >
               Try For Free
             </a>
-            {/* <a
+            <Link
               className="btn-white wow animate__ animate__fadeInUp hover-up-2 animated no-underline	"
               data-wow-delay=".3s"
-              href="#how-we-work"
+              href="/contact"
               style={{
                 visibility: "visible",
                 animationDelay: "0.3s",
@@ -44,7 +45,7 @@ function Bannar() {
               }}
             >
               Pricing
-            </a> */}
+            </Link>
           </div>
         </div>
       </div>
