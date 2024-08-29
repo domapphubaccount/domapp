@@ -2,7 +2,7 @@ export const carousalData = [
   {
     index: 1,
     title: "CladCut",
-    src: "/Products/CladCut.gif",
+    src: "/Products/CladCut.png",
     link: "/cladcut",
     icon: (
       <svg
@@ -29,25 +29,9 @@ export const carousalData = [
   {
     index: 2,
     title: "WINDMASTER",
-    src: "/Products/WINDMASTER.gif",
+    src: "/Products/WINDMASTER.png",
     link: "/windmaster",
     icon: (
-      // <svg
-      //   xmlns="http://www.w3.org/2000/svg"
-      //   fill="none"
-      //   viewBox="0 0 24 24"
-      //   strokeWidth={1.5}
-      //   stroke="currentColor"
-      //   className="m-auto"
-      //   style={{ width: "30px" }}
-      // >
-      //   <path
-      //     strokeLinecap="round"
-      //     strokeLinejoin="round"
-      //     d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819"
-      //   />
-      // </svg>
-
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +92,7 @@ export const carousalData = [
   {
     index: 3,
     title: "BONDIFY CRM",
-    src: "/Products/BONDIFY CRM.gif",
+    src: "/Products/BONDIFY CRM.png",
     link: "/bondifycrm",
     icon: (
       <svg
@@ -131,7 +115,7 @@ export const carousalData = [
   {
     index: 4,
     title: "ChatPlus",
-    src: "/Products/DomCRM.gif",
+    src: "/Products/DomCRM.png",
     link: "/chatplus",
     icon: (
       // <svg
@@ -205,7 +189,7 @@ l23 144 0 1560 0 1560 -23 144 c-97 610 -353 1125 -772 1555 -74 76 -182 176
   {
     index: 5,
     title: "RDAPP",
-    src: "/Products/RDAPP.gif",
+    src: "/Products/RDAPP.png",
     link: "/rdapp",
     icon: (
       <svg
@@ -243,7 +227,7 @@ c-1307 -1 -1581 -3 -1646 -15z m2453 -1816 c0 -1171 1 -1143 -57 -1251 -88
   {
     index: 6,
     title: "SOFTWARE AND CUSTOMIZATION",
-    src: "/Products/CUSTOMIZATION.gif",
+    src: "/Products/CUSTOMIZATION.png",
     link: "/customization",
     icon: (
       <svg
@@ -266,7 +250,7 @@ c-1307 -1 -1581 -3 -1646 -15z m2453 -1816 c0 -1171 1 -1143 -57 -1251 -88
   {
     index: 7,
     title: "Grasshopper®3D",
-    src: "/Products/GRASSHOPPER.gif",
+    src: "/Products/GRASSHOPPER.png",
     link: "/grasshopper",
     icon: (
       <svg
@@ -291,7 +275,7 @@ c-1307 -1 -1581 -3 -1646 -15z m2453 -1816 c0 -1171 1 -1143 -57 -1251 -88
   {
     index: 7,
     title: "BYLD",
-    src: "/Products/BYLD.gif",
+    src: "/Products/BYLD.png",
     link: "/byld",
     icon: (
       <svg
