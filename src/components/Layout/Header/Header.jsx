@@ -13,6 +13,7 @@ import grassIcon from "@/assets/images/Grasshopper/insect.png";
 import byldIcon from "@/assets/images/Byld/iconlogo.png";
 import RDAppIcon from "@/assets/images/RDApp/logo.png";
 import ChatPlusIcon from "@/assets/images/chatPlus/logo.png";
+import Windmaster from "@/assets/images/windmaster/windmaster.png"
 
 export default function Header({ handleToggle }) {
   const headerScrol = useRef();
@@ -106,7 +107,13 @@ export default function Header({ handleToggle }) {
                                     href={"/windmaster"}
                                     shallow
                                   >
-                                    <i className="bi bi-wind me-3 float-none"></i>{" "}
+                                    {/* <i className="bi bi-wind me-3 float-none"></i>{" "} */}
+                                    <img
+                                      style={{ width: "15px", height: "15px" }}
+                                      src={Windmaster.src}
+                                      className="me-3"
+                                      alt=""
+                                    />
                                     <div>WINDMASTER</div>
                                   </Link>
                                 </li>
