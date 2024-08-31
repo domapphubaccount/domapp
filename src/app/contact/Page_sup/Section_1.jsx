@@ -149,7 +149,7 @@ export default function Section_1() {
                                   BONDIFY CRM
                                 </option>
                                 <option className="p-2" value="5">
-                                  RDAPP
+                                  RDApp
                                 </option>
                                 <option className="p-2" value="6">
                                   CHATPLUS

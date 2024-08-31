@@ -13,7 +13,8 @@ import grassIcon from "@/assets/images/Grasshopper/insect.png";
 import byldIcon from "@/assets/images/Byld/iconlogo.png";
 import RDAppIcon from "@/assets/images/RDApp/logo.png";
 import ChatPlusIcon from "@/assets/images/chatPlus/logo.png";
-import Windmaster from "@/assets/images/windmaster/windmaster.png"
+import Windmaster from "@/assets/images/windmaster/windmaster.png";
+import customizationIcon from "@/assets/images/customization/customization.png"
 
 export default function Header({ handleToggle }) {
   const headerScrol = useRef();
@@ -114,7 +115,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    <div>WINDMASTER</div>
+                                    <div>WindMaster</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -129,7 +130,7 @@ export default function Header({ handleToggle }) {
                                     shallow
                                   >
                                     <i className="bi bi-kanban me-3 float-none"></i>
-                                    <div>BONDIFY CRM</div>
+                                    <div>Bondify CRM</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -154,7 +155,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    <div className="mt-1">RDAPP</div>
+                                    <div className="mt-1">RDApp</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -189,8 +190,14 @@ export default function Header({ handleToggle }) {
                                     href={"/customization"}
                                     shallow
                                   >
-                                    <i className="bi bi-code-slash me-3 float-none"></i>
-                                    <div>SOFTWARE AND CUSTOMIZATION</div>
+                                    <img
+                                      style={{ width: "20px", height: "20px" }}
+                                      src={customizationIcon.src}
+                                      className="me-3"
+                                      alt=""
+                                    />
+                                    {/* <i className="bi bi-code-slash me-3 float-none"></i> */}
+                                    <div>Software And Customization</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -205,12 +212,12 @@ export default function Header({ handleToggle }) {
                                     shallow
                                   >
                                     <img
-                                      style={{ width: "15px", height: "15px" }}
+                                      style={{ width: "20px", height: "20px" }}
                                       src={grassIcon.src}
                                       className="me-3"
                                       alt=""
                                     />{" "}
-                                    <div>GRASSHOPPER® 3D</div>
+                                    <div>Grasshopper® 3D</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -230,7 +237,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    <div>BYLD</div>
+                                    <div>Byld</div>
                                   </Link>
                                 </li>
                               </ul>

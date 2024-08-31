@@ -139,7 +139,7 @@ export const items = [
     {
       index: 5,
       src: product_3,
-      title: 'RDAPP',
+      title: 'RDApp',
       link: '/rdApp',
       video:'/Products/RDAPP.gif',
       caption: 'Risk assessment complying with saudi building code.',

@@ -20,7 +20,7 @@ function Page() {
       <Bannar />
       <RDvideo/>
       <RD_cards />
-      <RD_heading title="" body="RDAPP stacked with the best features." />
+      <RD_heading title="" body="RDApp stacked with the best features." />
       <Section_1 />
       <Section_2 />
       <Section_3 />
@@ -28,13 +28,13 @@ function Page() {
       <Section_5 />
       <RD_heading
         title="AND MORE"
-        body="RDAPP Provides Best Features 'And more'"
+        body="RDApp Provides Best Features 'And more'"
       />
       <RD_features_cards />
       <RD_Content_section />
       <RD_heading
         title=""
-        body="RDAPP Provides Best Communication And Cost Monitoring"
+        body="RDApp Provides Best Communication And Cost Monitoring"
       />
       <Section_7 />
       <ScrollToTop

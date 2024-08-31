@@ -322,7 +322,7 @@ export const items = [
     {
       index: 6,
       src: product_3,
-      title: 'RDAPP',
+      title: 'RDApp',
       link: '/rdapp',
       caption: 'Section 3',
       Section_2:{

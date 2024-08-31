@@ -72,7 +72,7 @@ function Bannar2() {
         </div>
       </div>
 
-      <div class="set-abs abs-horizon-center girl-boy">
+      <div class="set-abs abs-horizon-center girl-boy image_bannar">
         {/* <div style={{willChange: "transform; transition: 3000ms cubic-bezier(0.03, 0.98, 0.52, 0.99); transform: perspective(20000px) rotateX(3.68412deg) rotateY(-5.86818deg) scale3d(1, 1, 1);"}}></div> */}
         <div style={{transform: "perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"}}>
           <img

@@ -16,8 +16,7 @@ export default function RD_cards() {
                         <div className='py-5 text-center' data-aos="fade-up" data-aos-duration="1000">
                             <Container>
                                 <p>
-                                    “CHOOSING  RDAPP MEANS BENEFITING FROM THE BEST OF SMART SOLUTIONS THAT SAVE TIME AND COST AND ENHANCE EFFICIENCY AND COMMUNICATION EFFORTS ,  IT IS A GREAT COMPETITIVE ADVANTAGE , IN LINE WITH SAUDI BUILDING CODE.”
-                                </p>
+                                “Choosing RDApp Means Benefiting From The Best Of Smart Solutions That Save Time And Cost And Enhance Efficiency And Communication Efforts, It Is A Great Competitive Advantage, In Line With Saudi Building Code.”                                </p>
                             </Container>
                         </div>
                         <div className='text-end' data-aos="fade-up" data-aos-duration="1000">

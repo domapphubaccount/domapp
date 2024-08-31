@@ -1394,6 +1394,12 @@ footer{
     width: 200px;
     height: 200px;
 }
+@media (max-width: 1060px) {
+    
+    .chat_page .image_bannar{
+        display: none;
+    }
+}
 
 .chat_cards_container{
     margin-top: -100px;

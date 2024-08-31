@@ -22,7 +22,7 @@ export default function RD_Content_section() {
                     <h2 className="title">QUALITY CONTROL</h2>
                 </div><div className="animated fadeInUp" style={{animationDuration: "1s"}}>
                     <p className="description">
-                    One of the key standout capabilities of the  RDAPP is its capacity to enhance process excellence it achieves this automatically by highlighting the technical reservations according to the Saudi Building Code in each project to Stakeholders
+                    One of the key standout capabilities of the  RDApp is its capacity to enhance process excellence it achieves this automatically by highlighting the technical reservations according to the Saudi Building Code in each project to Stakeholders
                     </p>
                 </div>
                 <div className="row row--30">
@@ -33,7 +33,7 @@ export default function RD_Content_section() {
                             </div>
                         <div className="animated fadeInUp" style={{animationDuration: "1s"}}>
                             <p>
-                            the client, and the inspection engineer this way the  RDAPP reduces the potential human errors factor and streamlines the inspection process for the engineers.
+                            the client, and the inspection engineer this way the  RDApp reduces the potential human errors factor and streamlines the inspection process for the engineers.
                             </p>
                         </div>
                     </div>

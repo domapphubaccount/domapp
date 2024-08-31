@@ -13,7 +13,7 @@ export default function RD_sup_section() {
                     <h3>Secure <span>Data</span></h3>
                     </div>
                     <h1>Top secure App</h1>
-                    <h4><span>RDAPP </span>– Easy to use, Attractive and clean, with many Features And many more....... </h4>
+                    <h4><span>RDApp </span>– Easy to use, Attractive and clean, with many Features And many more....... </h4>
                 </div>
                 </div>
 

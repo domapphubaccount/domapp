@@ -91,7 +91,7 @@ export default function RD_features_cards() {
                       <div className="frame-details">
                         <h5>Integration</h5>
                         <p className="f-light">
-                          RDAPP offers Integration with existing systems ensuring smooth data flow.</p>
+                          RDApp offers Integration with existing systems ensuring smooth data flow.</p>
                       </div>
                     </div>
                   </div>
