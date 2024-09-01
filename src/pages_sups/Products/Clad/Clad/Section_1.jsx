@@ -61,7 +61,7 @@ export default function Section_1() {
                     className="mx-3"
                     style={{ width: "30px", height: "30px" }}
                   />
-                  Upload your cladding layout as a DXF or XLS file.
+                  Upload your cladding layout as a DXF.
                 </div>
                 <div className="d-flex mb-3">
                   <img
