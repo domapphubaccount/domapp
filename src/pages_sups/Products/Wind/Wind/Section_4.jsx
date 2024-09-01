@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Section_4({ sections }) {
@@ -8,19 +9,18 @@ export default function Section_4({ sections }) {
           <div className="col-md-8">
             <div className=" text-md-start text-center">
               <h4 className="title mb-3 text-white title-dark">
-                Start your free 2 week trial today
+                Start your free trial today
               </h4>
               <p className="text-white-50 mb-0">
-                Start working with Landrick that can provide everything you need
-                to generate awareness, drive traffic, connect.
+              Discover how our Wind Master can enhance your wind analysis. Start your free trial today for a detailed analysis!
               </p>
             </div>
           </div>
           <div className="col-md-4 mt-4 mt-sm-0">
             <div className="text-md-end text-center">
-              <a className="btn btn-light" href="#">
+              <Link className="btn btn-light" href="/contact">
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>

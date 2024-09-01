@@ -25,10 +25,8 @@ export default function Section_3() {
               Collaborate with your <br /> team anytime and anywhare.
             </h4>
             <p className="text-muted mb-0 para-desc">
-              Start working with{" "}
-              <span className="text-primary fw-bold">Landrick</span> that can
-              provide everything you need to generate awareness, drive traffic,
-              connect.
+            <span className="text-primary fw-bold">Wind Master </span> can provide everything you need to generate advanced wind analysis reports.
+              
             </p>
             <div className="d-flex align-items-center text-start mt-4 pt-2">
               <div className="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
@@ -53,7 +51,7 @@ export default function Section_3() {
               </div>
               <div className="flex-1">
                 
-              Manage and modify project and client information
+              Wind calculations for the multiple structure types such as: the main wind-force resisting system (MWFRS), the components and cladding, arched roofs and more.
                 
               </div>
             </div>
@@ -75,8 +73,7 @@ export default function Section_3() {
                 </svg>
               </div>
               <div className="flex-1">
-              Following Saudi Building Code 301, identifying the site data in terms of risk category, project address, and exposure category is made simple
-              </div>
+              Provide transparent, easy-to-understand calculations that make an impact. Quickly export reports to PDF.              </div>
             </div>
             <div className="d-flex align-items-center text-start mt-4">
               <div className="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
@@ -96,7 +93,7 @@ export default function Section_3() {
                 </svg>
               </div>
               <div className="flex-1">
-              Export detailed design data sheet
+              Simplify your workflow and Reduce repetitive calculations, easy interface, and online accessibility, allowing you to work seamlessly from any location.
               </div>
             </div>
           </div>

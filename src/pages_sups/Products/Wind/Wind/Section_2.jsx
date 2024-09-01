@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ServiceDetailsPage() {
   return (
-    <section>
+    <section className="mb-52">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10" data-aos="fade-down">
@@ -33,122 +33,107 @@ export default function ServiceDetailsPage() {
                       </svg>
                     </div>
                     <div className="flex-1 content ms-4">
-                      <h5 className="mb-1">
-                        <a className="text-dark" href="#">
-                          Instant Chat
-                        </a>
-                      </h5>
+                      <h5 className="mb-1">Accuracy and Precision.</h5>
                       <p className="text-muted mb-0">
-                        The most well-known dummy text is the, which is said to
-                        have originated in the 16th century.
+                        Achieve precise and reliable results with accuracy and
+                        efficiency, surpassing the limitations of traditional
+                        methods.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div className="col-md-6 mt-4 pt-2">
                   <div className="d-flex features feature-primary feature-clean p-4 shadow rounded">
                     <div className="icons rounded d-block text-center rounded">
                       <svg
-                        stroke="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
                         fill="none"
-                        stroke-width="2"
                         viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         className="h3 mb-0"
                         height="1em"
                         width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <rect
-                          x="3"
-                          y="3"
-                          width="18"
-                          height="18"
-                          rx="2"
-                          ry="2"
-                        ></rect>
-                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                        <polyline points="21 15 16 10 5 21"></polyline>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
+                        />
                       </svg>
                     </div>
                     <div className="flex-1 content ms-4">
-                      <h5 className="mb-1">
-                        <a className="text-dark" href="#">
-                          Media Messages
-                        </a>
-                      </h5>
+                      <h5 className="mb-1">Saudi Building Compliance</h5>
                       <p className="text-muted mb-0">
-                        The most well-known dummy text is the, which is said to
-                        have originated in the 16th century.
+                        Accurately calculate wind loads on Facades in accordance
+                        with the latest Saudi Building Code standards.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div className="col-md-6 mt-4 pt-2">
                   <div className="d-flex features feature-primary feature-clean p-4 shadow rounded">
                     <div className="icons rounded d-block text-center rounded">
                       <svg
-                        stroke="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
                         fill="none"
-                        stroke-width="2"
                         viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         className="h3 mb-0"
                         height="1em"
                         width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <polygon points="23 7 16 12 23 17 23 7"></polygon>
-                        <rect
-                          x="1"
-                          y="5"
-                          width="15"
-                          height="14"
-                          rx="2"
-                          ry="2"
-                        ></rect>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                        />
                       </svg>
                     </div>
                     <div className="flex-1 content ms-4">
-                      <h5 className="mb-1">
-                        <a className="text-dark" href="#">
-                          Video Messages
-                        </a>
-                      </h5>
+                      <h5 className="mb-1">Reduced Time.</h5>
                       <p className="text-muted mb-0">
-                        The most well-known dummy text is the, which is said to
-                        have originated in the 16th century.
+                        Eliminate the wasted time spent on inefficient methods,
+                        allowing your engineering team to focus on critical
+                        tasks.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div className="col-md-6 mt-4 pt-2">
                   <div className="d-flex features feature-primary feature-clean p-4 shadow rounded">
                     <div className="icons rounded d-block text-center rounded">
                       <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
                         stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 1024 1024"
                         className="h3 mb-0"
                         height="1em"
                         width="1em"
-                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path d="M832 64H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zm-600 72h560v208H232V136zm560 480H232V408h560v208zm0 272H232V680h560v208zM304 240a40 40 0 1 0 80 0 40 40 0 1 0-80 0zm0 272a40 40 0 1 0 80 0 40 40 0 1 0-80 0zm0 272a40 40 0 1 0 80 0 40 40 0 1 0-80 0z"></path>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"
+                        />
                       </svg>
                     </div>
                     <div className="flex-1 content ms-4">
-                      <h5 className="mb-1">
-                        <a className="text-dark" href="#">
-                          Dedicated Server
-                        </a>
-                      </h5>
+                      <h5 className="mb-1">Comprehensive Reporting</h5>
                       <p className="text-muted mb-0">
-                        The most well-known dummy text is the, which is said to
-                        have originated in the 16th century.
+                        Wind Master generates a detailed, easy-to-understand
+                        report that includes all calculations, and compliance
+                        checks.
                       </p>
                     </div>
                   </div>
