@@ -19,7 +19,7 @@ export default function Section_3() {
                         USER FRIENDLY
                         </h2>
                         <p>
-                        The  RDApp boasts a user-friendly interface, ensuring smooth navigation and effortless interactions for all users. By displaying all the reports issued for the project, all the tickets for the project, and clarifying the project status. 
+                        The  RDAPP boasts a user-friendly interface, ensuring smooth navigation and effortless interactions for all users. By displaying all the reports issued for the project, all the tickets for the project, and clarifying the project status. 
 The  RDAPP’s straightforward layout and clearly labeled options make it a breeze for users to accomplish tasks and access information.
                         </p>
                     </div>
@@ -46,7 +46,7 @@ The  RDAPP’s straightforward layout and clearly labeled options make it a bree
                         </h2>
                         <p>
                         Integrating all technical reports and relevant documents into one application that is designed with specific limits according to the Saudi Building Code, with easy access for all users to create, edit, and share documents according to their specific roles.  
-The RDApp streamlines the issuance of RD and inspection reports for technical engineers, automatically populating data across all reports and eliminating redundant data entry. 
+The RDAPP streamlines the issuance of RD and inspection reports for technical engineers, automatically populating data across all reports and eliminating redundant data entry. 
                         </p>
                     </div>
                 </Col>

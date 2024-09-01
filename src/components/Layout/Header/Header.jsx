@@ -15,6 +15,7 @@ import RDAppIcon from "@/assets/images/RDApp/logo.png";
 import ChatPlusIcon from "@/assets/images/chatPlus/logo.png";
 import Windmaster from "@/assets/images/windmaster/windmaster.png";
 import customizationIcon from "@/assets/images/customization/customization.png"
+import bondify from "@/assets/images/BondifyCRM/bondify.png"
 
 export default function Header({ handleToggle }) {
   const headerScrol = useRef();
@@ -115,7 +116,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    <div>WindMaster</div>
+                                    <div>Wind Master</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -129,7 +130,13 @@ export default function Header({ handleToggle }) {
                                     href={"/bondifycrm"}
                                     shallow
                                   >
-                                    <i className="bi bi-kanban me-3 float-none"></i>
+                                        <img
+                                      style={{ width: "10px", height: "15px" }}
+                                      src={bondify.src}
+                                      className="me-3"
+                                      alt=""
+                                    />
+                                    {/* <i className="bi bi-kanban me-3 float-none"></i> */}
                                     <div>Bondify CRM</div>
                                   </Link>
                                 </li>
@@ -155,7 +162,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    <div className="mt-1">RDApp</div>
+                                    <div className="mt-1">RDAPP</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -237,7 +244,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    <div>Byld</div>
+                                    <div>BYLD</div>
                                   </Link>
                                 </li>
                               </ul>

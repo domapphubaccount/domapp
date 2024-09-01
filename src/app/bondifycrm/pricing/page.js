@@ -1,10 +1,22 @@
+"use client"
+import Contact from "@/components/Contact/Contact";
 import Pricing from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Pricing";
-import React from "react";
+import React, { useState } from "react";
 
 export default function page() {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
   return (
     <div>
       <Pricing />
+      <Contact
+        handleToggle={handleToggle}
+        toggle={toggle}
+        setToggle={setToggle}
+      />
     </div>
   );
 }

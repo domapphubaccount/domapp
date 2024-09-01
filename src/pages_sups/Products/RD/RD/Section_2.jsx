@@ -16,10 +16,10 @@ export default function Section_3() {
 <i className="bi bi-check custom_icon"></i>
                         </div>
                         <h2>
-                         RDApp PURPOSE
+                         RDAPP PURPOSE
                         </h2>
                         <p>
-                        The  RDApp is designed with the main purpose of assuring that each project is complying with the Saudi Building Code and receives the technical attention needed for high-quality output.
+                        The  RDAPP is designed with the main purpose of assuring that each project is complying with the Saudi Building Code and receives the technical attention needed for high-quality output.
                         Tracking the stages of progress for each project and ensuring seamless coordination with the various parties involved, starting from receiving the project, followed by the initial risk assessment and any deeper review by the experts in several fields of civil engineering, such as geotechnical studies, structural analysis, innovative materials..etc. and going through each technical inspection stage on-site with efficiency. 
                         </p>
                     </div>

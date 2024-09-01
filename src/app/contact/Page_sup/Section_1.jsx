@@ -143,22 +143,22 @@ export default function Section_1() {
                                 </option>
                                 {/* <option className="p-2" value="2">FacadStatic</option> */}
                                 <option className="p-2" value="3">
-                                  WINDMASTER
+                                  Wind Master
                                 </option>
                                 <option className="p-2" value="4">
-                                  BONDIFY CRM
+                                  Bondify CRM
                                 </option>
                                 <option className="p-2" value="5">
-                                  RDApp
+                                  RDAPP
                                 </option>
                                 <option className="p-2" value="6">
-                                  CHATPLUS
+                                  ChatPlus
                                 </option>
                                 <option className="p-2" value="7">
-                                  CUSTOMIZATION
+                                  Software & Customization
                                 </option>
                                 <option className="p-2" value="8">
-                                  GRASSHOPPER
+                                  Grasshopper 3D
                                 </option>
                                 <option className="p-2" value="9">
                                   BYLD

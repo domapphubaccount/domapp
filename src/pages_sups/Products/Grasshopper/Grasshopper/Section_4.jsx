@@ -86,18 +86,18 @@ function Section_4() {
         </div> */}
 
         <div className='mobile-res'>
-            <div className='grass_whyUs_card mb-5' id="g_1" ref={g1Ref} style={{ opacity: 0 }}>
+            <div className='grass_whyUs_card mb-5' id="g_1" >
               <div>
                 <span className='fw-bold text-white'> Innovative Solutions: </span> We are at the forefront of facade design and fabrication, offering innovative solutions that set your building apart.
               </div>
             </div>
 
-            <div className='grass_whyUs_card mb-5' id="g_2" ref={g2Ref} style={{ opacity: 0 }}>
+            <div className='grass_whyUs_card mb-5' id="g_2" >
               <div>
               <span className='fw-bold text-white'>Client-Centric Approach: </span> Your satisfaction is our priority. We work closely with you to understand your needs and exceed your expectations.
               </div>
             </div>
-            <div className='grass_whyUs_card' id="g_3" ref={g3Ref} style={{ opacity: 0 }}>
+            <div className='grass_whyUs_card' id="g_3" >
               <div>
                 <span className='fw-bold text-white'>Experienced Team: </span> Our team combines technical expertise with creative vision, delivering exceptional results every time.
               </div>
