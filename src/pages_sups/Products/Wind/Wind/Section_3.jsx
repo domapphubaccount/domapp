@@ -3,7 +3,7 @@ import windmasterImage from "@/assets/images/windmaster/windmaster.png"
 
 export default function Section_3() {
   return (
-    <div className="container mt-100 mt-60 relative">
+    <div className="container mt-20 relative">
       <div className="row align-items-center social-feature-left social-feature-right">
         <div className="col-lg-5 col-md-6 order-1 order-md-2">
           <img
