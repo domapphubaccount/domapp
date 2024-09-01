@@ -3924,6 +3924,29 @@ z-index: 2;
     background-image: url("../assets/images/Products_Page/Wind/bannar.jpg");
     
 }
+.section-title .title {
+    letter-spacing: .5px;
+    font-size: 30px !important;
+}
+
+.shape {
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    bottom: -2px;
+    left: 0;
+}
+
+.features-absolute {
+    position: relative;
+    z-index: 2;
+    transition: all .5s ease;
+    margin: -100px 0 0;
+}
+
+.features.feature-clean {
+    background-color: #fff;
+}
 .sq1{
     position: absolute;
     right: 0;

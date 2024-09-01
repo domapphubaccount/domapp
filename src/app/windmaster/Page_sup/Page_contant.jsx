@@ -14,6 +14,8 @@ import Section_5 from "@/pages_sups/Products/Wind/Wind/Section_5";
 import ScrollToTop from "react-scroll-to-top";
 import Screens_Section from "@/pages_sups/Products/Wind/Wind/Screens_Section";
 import product_1 from "@/assets/images/Home_Page/products/pr1.jpg";
+import Bannar from "@/pages_sups/Products/Wind/Bannar";
+import Section_3 from "@/pages_sups/Products/Wind/Wind/Section_3";
 
 export default function Page() {
   const items = {
@@ -96,15 +98,17 @@ export default function Page() {
   return (
     <div className="wind_page">
       <>
-        <Product
+      <Bannar />
+        {/* <Product
           bannar={items.src}
           title={items.title}
           caption={items.caption}
           linkPage={items.page}
-        />
-        <Section_2 sections={items.Section_2} />
-        <Screens_Section sections={items.Section_4} />
-        <Section_5 sections={items.Section_5} />
+        /> */}
+        <Section_2/>
+        <Section_3 />
+        {/* <Screens_Section sections={items.Section_4} />
+        <Section_5 sections={items.Section_5} /> */}
         <ScrollToTop
           smooth
           color="#fff"
