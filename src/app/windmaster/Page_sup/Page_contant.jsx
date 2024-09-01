@@ -25,9 +25,9 @@ export default function Page() {
       <>
       <Bannar />
         <Section_2/>
+        <Section_5 />
         <Section_3 />
         <Section_4 />
-        <Section_5 />
         <ScrollToTop
           smooth
           color="#fff"

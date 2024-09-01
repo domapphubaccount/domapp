@@ -3,8 +3,8 @@ import windmasterImage from "@/assets/images/windmaster/windmaster.png"
 
 export default function Section_3() {
   return (
-    <div className="container mt-20 relative">
-      <div className="row align-items-center social-feature-left social-feature-right">
+    <div className="container mt-20 relative ">
+      <div className="row align-items-center  social-feature-right"  data-aos="fade-up">
         <div className="col-lg-5 col-md-6 order-1 order-md-2">
           <img
             alt=""
@@ -13,7 +13,7 @@ export default function Section_3() {
             height="0"
             decoding="async"
             data-nimg="1"
-            className="img-fluid rounded-md shadow-lg p-5"
+            className="img-fluid rounded-md shadow-lg p-5 bg-white"
             style={{color:"transparent",width:"100%",height:"auto"}}
             sizes="100vw"
             src={windmasterImage.src}

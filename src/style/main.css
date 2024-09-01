@@ -3960,6 +3960,9 @@ z-index: 2;
     border-radius: 30px;
     bottom: -75px;
 }
+.social-feature-right::after{
+    right: 200px;
+}
 
 .social-feature-left:after, .social-feature-right:after {
     background: rgba(47, 85, 212, .1);

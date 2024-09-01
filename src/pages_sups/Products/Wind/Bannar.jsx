@@ -17,7 +17,7 @@ export default function Bannar() {
         <div class="container h-100">
           <div class="row justify-center items-center h-100">
             <div class="col-lg-12 text-center">
-              <div class="title-heading leading-6 mb-3">
+              <div class="title-heading leading-6 mb-3" data-aos="fade-up">
                 <div className="flex justify-center">
                   <img src={windmaster.src} alt="windmaster" width={400} />
                 </div>
