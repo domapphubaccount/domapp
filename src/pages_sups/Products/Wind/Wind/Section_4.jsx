@@ -1,52 +1,30 @@
-import React from "react"
-import ServicesDetails1 from "@/assets/images/Products_Page/services-details1.png"
-import ServicesDetails2 from "@/assets/images/Products_Page/services-details2.png"
-import Image from "next/image"
+import React from "react";
 
-export default function Section_3 ({sections}) {
-  
-
-    return(
-    <section className="services-details-area ptb-80 py-5">
-      <div className="container">
-        <div className="row align-items-center mb-5 p-3" data-aos="fade-up" data-aos-duration="3000">
-          <div className="col-lg-6 services-details">
-            <div className="services-details-desc caption_products">
-              <h3>{
-              sections.first.caption.header
-              }</h3>
-              <p>
-                {sections.first.caption.body}
+export default function Section_4({ sections }) {
+  return (
+    <section className="container my-12 mt-60">
+      <div className="rounded bg-primary bg-gradient p-lg-5 p-4">
+        <div className="row align-items-end">
+          <div className="col-md-8">
+            <div className=" text-md-start text-center">
+              <h4 className="title mb-3 text-white title-dark">
+                Start your free 2 week trial today
+              </h4>
+              <p className="text-white-50 mb-0">
+                Start working with Landrick that can provide everything you need
+                to generate awareness, drive traffic, connect.
               </p>
-
             </div>
           </div>
-
-          <div className="col-lg-6 services-details-image row-card">
-                  <Image src={sections.first.src} alt="clad" className="  card_shadow "/>
-          </div>
-        </div>
-
-        <div className="separate"></div>
-
-        <div className="row align-items-center mb-5 p-3" data-aos="fade-up" data-aos-duration="3000">
-          <div className="col-lg-6 services-details-image row-card">
-                <Image src={sections.seconed.src} alt="clad" className="  card_shadow "/>
-          </div>
-
-          <div className="col-lg-6 services-details">
-            <div className="services-details-desc">
-            <h3>{
-                sections.seconed.caption.header
-              }</h3>
-              <p>
-                {sections.seconed.caption.body}
-              </p>
+          <div className="col-md-4 mt-4 mt-sm-0">
+            <div className="text-md-end text-center">
+              <a className="btn btn-light" href="#">
+                Get Started
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-)
+  );
 }
-

@@ -3928,6 +3928,46 @@ z-index: 2;
     letter-spacing: .5px;
     font-size: 30px !important;
 }
+.features.feature-primary.feature-clean .icons {
+    color: #2f55d4 !important;
+    background-color: rgba(47, 85, 212, .1);
+}
+.features.feature-clean .icons {
+    height: 65px !important;
+    width: 65px !important;
+    min-width: 65px !important;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-body {
+    padding: 1.5rem;
+}
+.work-process.process-arrow:after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 40px;
+    top: 30px;
+    left: 80%;
+    background: url(../assets/images/windmaster/process.png) 50% no-repeat;
+    z-index: 1;
+}
+
+.social-feature-left:after, .social-feature-right:after {
+    width: 450px;
+    height: 520px;
+    border-radius: 30px;
+    bottom: -75px;
+}
+
+.social-feature-left:after, .social-feature-right:after {
+    background: rgba(47, 85, 212, .1);
+    box-shadow: 0 0 40px rgba(47, 85, 212, .1);
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
 
 .shape {
     position: absolute;
