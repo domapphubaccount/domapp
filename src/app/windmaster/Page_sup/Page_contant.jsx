@@ -96,7 +96,7 @@ export default function Page() {
   };
 
   return (
-    <div className="wind_page">
+    <div >
       <>
       <Bannar />
         {/* <Product
