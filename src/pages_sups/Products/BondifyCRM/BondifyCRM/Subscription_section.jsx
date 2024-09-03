@@ -53,7 +53,7 @@ export default function Payments_section() {
                           <span>
                             <img src={yesI.src} alt="true" />
                           </span>{" "}
-                          <span>Create, Send, Track.</span>
+                          <span>Create, send, track.</span>
                         </div>
                       </li>
                       <li>
@@ -61,7 +61,7 @@ export default function Payments_section() {
                           <span>
                             <img src={yesI.src} alt="true" />
                           </span>{" "}
-                          <span>Customize Template.</span>
+                          <span>Customize template.</span>
                         </div>
                       </li>
                       <li>
@@ -69,7 +69,7 @@ export default function Payments_section() {
                           <span>
                             <img src={yesI.src} alt="true" />
                           </span>
-                          <span>Invoice Automation.</span>{" "}
+                          <span>Invoice automation.</span>{" "}
                         </div>
                       </li>
                     </ul>

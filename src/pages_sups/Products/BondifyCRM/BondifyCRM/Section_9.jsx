@@ -43,7 +43,7 @@ export default function Section_9() {
                         <img src={yesI.src} alt="true" />
                       </span>{" "}
                       <span>
-                        create professional and customizable proposals quickly
+                        Create professional and customizable proposals quickly
                         and efficiently.
                       </span>
                     </div>

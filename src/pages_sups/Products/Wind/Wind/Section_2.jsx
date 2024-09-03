@@ -33,7 +33,7 @@ export default function ServiceDetailsPage() {
                       </svg>
                     </div>
                     <div className="flex-1 content ms-4">
-                      <h5 className="mb-1">Accuracy and Precision.</h5>
+                      <h5 className="mb-1">Accuracy And Precision.</h5>
                       <p className="text-muted mb-0">
                         Achieve precise and reliable results with accuracy and
                         efficiency, surpassing the limitations of traditional
@@ -68,7 +68,7 @@ export default function ServiceDetailsPage() {
                     <div className="flex-1 content ms-4">
                       <h5 className="mb-1">Saudi Building Compliance</h5>
                       <p className="text-muted mb-0">
-                        Accurately calculate wind loads on Facades in accordance
+                        Accurately calculate wind loads on facades in accordance
                         with the latest Saudi Building Code standards.
                       </p>
                     </div>

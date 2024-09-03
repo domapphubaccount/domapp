@@ -6,7 +6,7 @@ import { Col, Container, Row } from 'reactstrap'
 export default function Section_3() {
     const firstCols = [
         {
-            title:'Maximize support interaction',
+            title:'Maximize Support Interaction',
             body:'Enhance customer interaction, lead quality, and communication effectiveness and provide real-time customer support to answer queries, resolve issues, handle complaints, etc.          '
           },
           {

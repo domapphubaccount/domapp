@@ -25,8 +25,8 @@ function Section_2() {
               style={{ visibility: "visible", animationName: "fadeInUp" }}
             >
               Using BYLD can enhance informed decision-making and ensure that
-              your projects comply with all requirements of the Saudi building
-              code.
+              your projects comply with all requirements of the Saudi Building
+              Code.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ function Section_2() {
               </div>
               <img className="h-48 mx-auto my-4" src={space.src} alt="" />
               <h3 className="mb-2 font-bold font-heading">
-                Sharing Information with Others
+                Sharing Information With Others
               </h3>
               <p className="text-sm text-blueGray-400 leading-relaxed">
                 You can share the results of your conversations to unify

@@ -45,14 +45,14 @@ export default function Section_14() {
                       <img src={yesI.src} className="mx-2" alt="true" />
                     </span>{" "}
                     <span>
-                      create, customize, and automate business processes.
+                      Create, customize, and automate business processes.
                     </span>
                   </div>
                   <div className="d-flex">
                     <span>
                       <img src={yesI.src} className="mx-2" alt="true" />
                     </span>{" "}
-                    <span>automate routine tasks.</span>
+                    <span>Automate routine tasks.</span>
                   </div>
                   <div className="d-flex">
                     <span>

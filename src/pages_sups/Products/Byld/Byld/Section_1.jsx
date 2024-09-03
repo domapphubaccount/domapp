@@ -32,7 +32,7 @@ function Section_1() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className="mb-2 text-xl font-semibold font-heading">Continuous Updates and Additions</h3>
+                                        <h3 className="mb-2 text-xl font-semibold font-heading">Continuous Updates And Additions</h3>
                                         <p className="text-blueGray-400 leading-loose">Monitoring all updates approved by relevant authorities for developing the Saudi Building Code ensures the continuous dissemination of accurate information. All requirements and codes are subject to addition.</p>
                                     </div>
                                 </div>

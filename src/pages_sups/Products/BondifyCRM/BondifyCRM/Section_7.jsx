@@ -81,13 +81,13 @@ export default function Section_7() {
             >
               <div className="col-sm-6">
                 <ul className="list-check-1 light">
-                  <li>Create, Modify estimates.</li>
-                  <li>Customized Templates.</li>
+                  <li>Create, modify estimates.</li>
+                  <li>Customized templates.</li>
                 </ul>
               </div>
               <div className="col-sm-6">
                 <ul className="list-check-1 light">
-                  <li>Manage Deal amount and products.</li>
+                  <li>Manage deal amount and products.</li>
                   <li>Send estimates automation.</li>
                 </ul>
               </div>
