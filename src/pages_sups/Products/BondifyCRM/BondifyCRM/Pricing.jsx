@@ -411,7 +411,7 @@ function Section__head() {
       <div>
         <div className="head_container">
           <h1 style={{ zIndex: 4 }} className="position-relative">
-            Bondify CRM Pricing
+            bondify CRM Pricing
           </h1>
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function Bannar() {
                 </div>
                 <div className="slogan my-5 fw-bold">
                   Produce detailed fabrication drawings with <span className="position-relative d-inline-block"> exceptional speed
-                    <img src={Shape_2.src} className="absolute" alt="" />
+                    {/* <img src={Shape_2.src} className="absolute" alt="" /> */}
                   </span>{" "}
                   and efficiency.
                 </div>

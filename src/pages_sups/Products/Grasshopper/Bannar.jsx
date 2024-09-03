@@ -20,9 +20,9 @@ export default function Bannar() {
               <div className="col-lg-12">
                 <div className="inner mb-5" data-aos="fade-right">
                   <h1 className="title theme-gradient grass_title">
-                    Grasshopper®
+                    Grasshopper Modules
                     <br />
-                   3D
+                   
                   </h1>
                   <p className="text-white">
                     Precision engineering for exquisite facade fabrication.

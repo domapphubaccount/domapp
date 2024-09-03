@@ -28,8 +28,7 @@ export default function Section_9() {
                 <p>
                   Initial impressions are paramount. Showcase professionalism to
                   potential clients through impeccably crafted project
-                  proposals. Our intuitive interface ensures ease of use without
-                  the need for design expertise.
+                  proposals. Our intuitive interface ensures ease of use for all users.
                 </p>
               </div>
               <div>

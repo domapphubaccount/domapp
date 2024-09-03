@@ -18,7 +18,7 @@ export default function Section_10() {
                 <p>
                   You have the flexibility to generate recurring invoices on a
                   daily, weekly, monthly, or yearly basis. The system will
-                  autonomously generate new invoices and send them to your
+                  independently generate new invoices and send them to your
                   clients via email.
                 </p>
               </div>

@@ -35,7 +35,7 @@ export const items = [
     {
       index: 2,
       src: product_3,
-      title: 'WINDMASTER',
+      title: 'WIND MASTER',
       link:'/windmaster',
       video:'/Products/Winldload.gif',
       caption: 'Calculate wind loads on structures.',
@@ -87,7 +87,7 @@ export const items = [
     {
       index: 3,
       src: product_3,
-      title: 'BONDIFY CRM ',
+      title: 'BOondify CRM',
       link: '/crmBondify',
       video:'/Products/DomERP.gif',
       caption: 'Project management, Invoicing, Leads, Tasks, Time tracking and more.',

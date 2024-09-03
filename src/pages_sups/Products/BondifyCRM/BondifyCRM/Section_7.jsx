@@ -16,7 +16,7 @@ export default function Section_7() {
                 for your products and services. You have the flexibility to set
                 the billing cycle to weekly, monthly, yearly, and more. The
                 system will then automatically generate a new invoice and charge
-                your client's credit card accordingly.
+                your client's accordingly.
               </p>
             </div>
             <div

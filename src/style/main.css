@@ -2543,9 +2543,9 @@ footer{
     margin: 5px;
     transition: 1s;
  }
- .erp_section_7 .section_container .list li div span:hover{
+ /* .erp_section_7 .section_container .list li div span:hover{
     color: #6a0606;
- }
+ } */
  .erp_section_7 .section_container .list img{
     width: 15px;
  }
@@ -2575,9 +2575,9 @@ footer{
     margin: 5px;
     transition: 1s;
  }
- .erp_section_9 .section_container .list li div span:hover{
+ /* .erp_section_9 .section_container .list li div span:hover{
     color: #6a0606;
- }
+ } */
  .erp_section_9 .section_container .list img{
     width: 15px;
  }
@@ -2603,9 +2603,9 @@ footer{
     margin: 5px;
     transition: 1s;
  }
- .erp_section_11 .section_container .list li div span:hover{
+ /* .erp_section_11 .section_container .list li div span:hover{
     color: #6a0606;
- }
+ } */
  .erp_section_11 .section_container .list img{
     width: 15px;
  }
@@ -2645,9 +2645,9 @@ footer{
     margin: 5px;
     transition: 1s;
  }
- .erp_section_15 .section_container .list li div span:hover{
+ /* .erp_section_15 .section_container .list li div span:hover{
     color: #6a0606;
- }
+ } */
  .erp_section_15 .section_container .list img{
     width: 15px;
  }
@@ -2833,7 +2833,7 @@ footer{
     color: #1c77ed;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     line-height: .7;
     opacity: .05;
     margin-bottom: 50px;
@@ -5523,7 +5523,7 @@ z-index: 2;
     line-height: 1.4074;
     font-size: 3.5rem;
     text-align: left;
-    font-family: 'Open Sans';
+    /* font-family: 'Open Sans'; */
 }
 .section-button .description{
     color: #d5d5d5;

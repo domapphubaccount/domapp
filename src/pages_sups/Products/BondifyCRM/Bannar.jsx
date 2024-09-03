@@ -2,6 +2,7 @@ import React from 'react'
 import Erp_Dash from "@/assets/images/BondifyCRM/ERP_dash.png"
 import Link from 'next/link'
 import Bondify from "@/assets/images/BondifyCRM/bannar.png"
+import bondi from "@/assets/images/BondifyCRM/bondi.png"
 
 export default function Bannar2() {
   return (
@@ -10,9 +11,12 @@ export default function Bannar2() {
           <div className="row align-items-center justify-content-center">
             <div className="col-lg-5 col-md-6">
               <div className="home-text">
-                <h2>BONDIFY CRM</h2>
+                {/* <h2>bondify CRM</h2>
                 <p>Project management, Invoicing, Leads, Tasks, Time tracking and more.
-                </p>
+                </p> */}
+                <div className='mb-5'>
+                  <img src={bondi.src} />
+                </div>
                 <div className="docutment-button"> 
                     <a className="btn text-white me-3 mb-3" href="http://bondifycrm.domapphub.com/" target="_blank">
                         Try Demo

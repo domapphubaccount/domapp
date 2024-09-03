@@ -28,7 +28,7 @@ export default function Payments_section() {
                 <p>
                   We’ve developed an incredibly user-friendly invoicing system,
                   removing the necessity for third-party invoicing tools. Within
-                  the CRM BONDIFY, you can easily create invoices with diverse
+                  the bondify CRM, you can easily create invoices with diverse
                   options such as time billing, product billing, task billing,
                   and others. Invoices are automatically sent to clients via
                   email, enabling them to conveniently make payments via credit

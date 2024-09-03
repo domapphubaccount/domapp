@@ -15,7 +15,7 @@ export default function Section_4() {
                         <div>
                             <h4>Support Interaction</h4>
                             <p>
-                            Empower agents to provide dynamic and personalized support interactions
+                            Empower agents to provide dynamic and personalized support interactions.
                             </p>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ export default function Section_4() {
                         <div>
                             <h4>Error-Free Communication</h4>
                             <p>
-                            Implement advanced algorithms to ensure error-free communication, reducing the risk of misunderstandings and inaccuracies                         </p>
+                            Implement advanced algorithms to ensure error-free communication, reducing the risk of misunderstandings and inaccuracies.                        </p>
                         </div>
                     </div>
                     </div>
@@ -45,7 +45,7 @@ export default function Section_4() {
                             <h4>Fortified Communication Channels
 </h4>
                             <p>
-                            Establish secure communication channels with end-to-end encryption to safeguard sensitive information and protect against cyber threats
+                            Establish secure communication channels with end-to-end encryption to safeguard sensitive information and protect against cyber threats.
                             </p>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ export default function Section_4() {
                             <h4>Streamlined Communication Workflows
 </h4>
                             <p>
-                            Optimize communication workflows to minimize redundancy and maximize efficiency, enabling seamless collaboration and information sharing
+                            Optimize communication workflows to minimize redundancy and maximize efficiency, enabling seamless collaboration and information sharing.
                             </p>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ export default function Section_4() {
                             <h4>Mobile Responsiveness
 </h4>
                             <p>
-                            Enhance mobile responsiveness by providing automated replies tailored to the specific needs and preferences of mobile users
+                            Enhance mobile responsiveness by providing automated replies tailored to the specific needs and preferences of mobile users.
                             </p>
                         </div>
                     </div>
@@ -93,7 +93,7 @@ export default function Section_4() {
                             <h4>Efficient Communication Archive
 </h4>
                             <p>
-                            Implement a robust archiving system to store and retrieve past conversations effortlessly, enabling quick access to historical data for analysis and reference
+                            Implement a robust archiving system to store and retrieve past conversations effortlessly, enabling quick access to historical data for analysis and reference.
                             </p>
                         </div>
                     </div>

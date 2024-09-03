@@ -14,7 +14,7 @@ export default function Section_13() {
               data-aos-duration="2500"
             >
               <div>
-                <h3>Knowledgebase</h3>
+                <h3>Knowledge base</h3>
                 <p>
                   Reduce your customer support response time by providing
                   customers access to self-service resources and a help

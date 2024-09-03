@@ -26,7 +26,7 @@ export default function Bannar() {
                     class="btn btn-light d-inline-flex align-items-center mx-2 font-bold"
                     href="https://windmaster.domapphub.com"
                   >
-                    Get Started
+                    Try For Free
                   </Link>
                   <Link
                     class="btn btn-light d-inline-flex align-items-center mx-2"

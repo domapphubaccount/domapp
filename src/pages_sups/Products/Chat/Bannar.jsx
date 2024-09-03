@@ -55,7 +55,7 @@ function Bannar2() {
                     </h1> */}
                   </div>
                   <div class="header-sub-text mb-5 text-lg">
-                    <p>One platform with all your connection needs.</p>
+                    <p>One platform with all your communication needs.</p>
                   </div>
                   <div class="link-horizontal">
                     <Link

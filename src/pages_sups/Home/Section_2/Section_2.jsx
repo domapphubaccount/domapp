@@ -25,7 +25,7 @@ export default function Section_2() {
                 </Col>
                 <Col sm={12} lg={6} md={12}>
                     <div data-aos="fade-up" data-aos-duration="2000" >
-                        <div><h5>At Domapp Our Expertise Shines Brights </h5></div>
+                        <div><h5>At DomApp Our Expertise Shines Bright </h5></div>
                         <div className="card_list">
                             <ul>
                                 <li>

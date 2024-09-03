@@ -16,8 +16,8 @@ export default function Bannar() {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="section-heading heading-left">
-                            <h1 className="title h2 head_bannar">SOFTWARE AND CUSTOMIZATION</h1>
-                            <div><div className='d-inline-block m-auto text-primary fw-bold px-5'>Develop and customize web & software applications.</div></div>
+                            <h1 className="title h2 head_bannar">Custome Software</h1>
+                            <div><div className='d-inline-block m-auto text-primary fw-bold px-5'>Tailored solutions, turning your vision into reality.</div></div>
                             <div><Link className='btn btn-primary font-bold mt-4' href={'/contact'}>Contact us</Link></div>
                         </div>
                     </div>

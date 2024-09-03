@@ -19,7 +19,7 @@ export default function About_2() {
                             Our Expertise Shines Bright
                             </h5>
                             <p className='py-1'>
-                            At Domapp, our team of developers collaborates to align with your business objectives.
+                            At DomApp, our team of developers collaborates to align with your business objectives.
                             </p>
                         </div>
                     </div>

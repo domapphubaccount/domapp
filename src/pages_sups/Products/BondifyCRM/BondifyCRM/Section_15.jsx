@@ -66,7 +66,7 @@ export default function Section_15() {
                       </span>
                       <span>
                         Dynamic task adjustment schedules when dependent tasks
-                        are delayed or completed ahead of schedule
+                        are delayed or completed ahead of schedule.
                       </span>{" "}
                     </div>
                   </li>

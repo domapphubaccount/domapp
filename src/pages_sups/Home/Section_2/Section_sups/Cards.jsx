@@ -18,7 +18,7 @@ export default function Cards() {
         },
         {
             title: 'Creative Innovation',
-            description: 'From CladCut to CHATPLUS, our projects showcase our commitment to pushing boundaries and creating groundbreaking solutions that make a difference.            '
+            description: 'From CladCut to ChatPlus, our projects showcase our commitment to pushing boundaries and creating groundbreaking solutions that make a difference.            '
         },
         {
             title: 'Specialized Solutions',

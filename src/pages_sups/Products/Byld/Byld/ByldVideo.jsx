@@ -9,7 +9,7 @@ function ByldVideo() {
       <Container>
         <Video
           title={"Quick Brief"}
-          body={"Revolutionize Construction Compliance with BYLD AI."}
+          body={"Revolutionize Construction Compliance with BYLD."}
           src={"X4SlALLTSpE?si=jJ_LttMc1lvbKjK6"}
           className={"rd-v-bannar"}
           bannar={V_bannar}

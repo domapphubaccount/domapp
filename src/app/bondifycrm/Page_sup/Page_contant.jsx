@@ -43,9 +43,9 @@ export default function Page() {
       <>
         <Bannar />
         <Heading
-          head="BONDIFY CRM"
+          head="bondify CRM"
           body="First Choice For Your Business"
-          back="BONDIFY CRM"
+          back="bondify CRM"
         />
         <Section_1 />
         <Break body={'REDUCED COST IMPROVED PRODUCTIVITY'} />

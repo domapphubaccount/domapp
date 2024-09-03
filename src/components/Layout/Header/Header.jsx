@@ -137,7 +137,7 @@ export default function Header({ handleToggle }) {
                                       alt=""
                                     />
                                     {/* <i className="bi bi-kanban me-3 float-none"></i> */}
-                                    <div>Bondify CRM</div>
+                                    <div>bondify CRM</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -204,7 +204,7 @@ export default function Header({ handleToggle }) {
                                       alt=""
                                     />
                                     {/* <i className="bi bi-code-slash me-3 float-none"></i> */}
-                                    <div>Software And Customization</div>
+                                    <div>Custome Software</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -224,7 +224,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />{" "}
-                                    <div>Grasshopper® 3D</div>
+                                    <div>Grasshopper Modules</div>
                                   </Link>
                                 </li>
                               </ul>

@@ -24,7 +24,7 @@ function Section_2() {
               className="text-blueGray-400 leading-loose wow animate__ animate__fadeInUp animated"
               style={{ visibility: "visible", animationName: "fadeInUp" }}
             >
-              Using BYLD AI can enhance informed decision-making and ensure that
+              Using BYLD can enhance informed decision-making and ensure that
               your projects comply with all requirements of the Saudi building
               code.
             </p>

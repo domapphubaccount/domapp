@@ -7,11 +7,11 @@ function Section_2() {
             <div className="row">
                 <div className="col-lg-4 col-12">
                     <div className="section-title mt--30 mt_md--5 mt_mobile--5 mb_mobile--10">
-                        <h2 className="title">Services</h2>
-                        <p>We Provide You Best Experience</p>
-                        <div className="service-btn">
+                        <h2 className="title">Our Services</h2>
+                        <p>Delivering premium services for an outstanding experience</p>
+                        {/* <div className="service-btn">
                             <span className="text text-white fw-bold">Request Custom Service</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             <div className="col-lg-8 col-12 mt_md--50">

@@ -70,7 +70,7 @@ export default function Section_1() {
                     <div>
                       <h2>Get in Touch</h2>
                       <p>
-                        Welcome to DomapphubApps! We're here to assist you with
+                        Welcome to DomApphubApps! We're here to assist you with
                         any questions, feedback, or inquiries you may have.
                         Please feel free to reach out to us using the contact
                         information provided below. Your privacy is important to
@@ -146,7 +146,7 @@ export default function Section_1() {
                                   Wind Master
                                 </option>
                                 <option className="p-2" value="4">
-                                  Bondify CRM
+                                  bondify CRM
                                 </option>
                                 <option className="p-2" value="5">
                                   RDAPP
@@ -158,7 +158,7 @@ export default function Section_1() {
                                   Software & Customization
                                 </option>
                                 <option className="p-2" value="8">
-                                  Grasshopper 3D
+                                  Grasshopper  Modules
                                 </option>
                                 <option className="p-2" value="9">
                                   BYLD

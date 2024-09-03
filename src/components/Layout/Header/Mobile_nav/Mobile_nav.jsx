@@ -36,13 +36,13 @@ export default function MobileNav() {
     },
     {
       index: 2,
-      title: 'WindMaster',
+      title: 'Wind Master',
       link:'/windmaster',
       icon:   <img style={{width:'15px',height:'15px'}} src={windmaster.src} alt='' /> 
     },
     {
       index: 4,
-      title: 'Bondify CRM',
+      title: 'bondify CRM',
       link: '/bondifycrm',
       icon: <img style={{width:'15px',height:'15px'}} src={bondify.src} alt='' /> 
     },
@@ -60,7 +60,7 @@ export default function MobileNav() {
     },
     {
       index: 7,
-      title: 'Software And Customization',
+      title: 'Custome Software',
       link: '/customization',
       icon: <img style={{width:'15px',height:'15px'}} src={customization.src} alt='' /> 
     },

@@ -18,7 +18,7 @@ export default function Section_4() {
                 <h3>Time Tracking</h3>
                 <p>
                   Effortlessly monitor the time invested in your projects using
-                  the CRM BONDIFY's comprehensive time-tracking solution. Begin
+                  the bondify CRM comprehensive time-tracking solution. Begin
                   or end your timer or input time manually for tasks. Then,
                   seamlessly bill your clients based on the recorded time.
                 </p>
@@ -63,7 +63,7 @@ export default function Section_4() {
                         <img src={yesI.src} alt="true" />
                       </span>
                       <span>
-                        Built-in timer feature to track time automatically
+                        Built-in timer feature to track time automatically.
                       </span>{" "}
                     </div>
                   </li>

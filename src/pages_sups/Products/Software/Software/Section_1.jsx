@@ -127,7 +127,7 @@ function SectionContent(){
                         <p>Have existing software that needs customization? Our team can modify and customize any software to align with your unique business needs.</p>
                     </div>
                 </div>
-                <div className="icon-bx-wraper style-2 left m-b30">
+                {/* <div className="icon-bx-wraper style-2 left m-b30">
                     <div className="icon-bx-md radius bg-white text-green">
                         <a href="#" className="icon-cell">
                         <i className="bi bi-columns-gap"></i>
@@ -137,7 +137,7 @@ function SectionContent(){
                         <h4 className="dlab-title">Web Development</h4>
                         <p>We develop high-quality web applications to ensure a seamless and efficient user experience.</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
         <div className="col-xl-6 col-lg-5 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.4s">
