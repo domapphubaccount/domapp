@@ -7,6 +7,7 @@ import shap2 from '@/assets/images/Products_Page/Customization/line-4.png'
 import item from '@/assets/images/Products_Page/Customization/project-8.png'
 import item2 from '@/assets/images/Products_Page/Customization/pic1.png'
 import Link from 'next/link'
+import customlogo from "@/assets/images/customization/Custom.png"
 
 export default function Bannar() {
   return (
@@ -16,8 +17,11 @@ export default function Bannar() {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="section-heading heading-left">
-                            <h1 className="title h2 head_bannar">Custome Software</h1>
-                            <div><div className='d-inline-block m-auto text-primary fw-bold px-5'>Tailored solutions, turning your vision into reality.</div></div>
+                            {/* <h1 className="title h2 head_bannar">Custome Software</h1> */}
+                            {/* <div><div className='d-inline-block m-auto text-primary fw-bold px-5'>Tailored solutions, turning your vision into reality.</div></div> */}
+                            <img src={customlogo.src}  />
+                            
+                            
                             <div><Link className='btn btn-primary font-bold mt-4' href={'/contact'}>Contact us</Link></div>
                         </div>
                     </div>

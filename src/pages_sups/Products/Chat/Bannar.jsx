@@ -60,9 +60,15 @@ function Bannar2() {
                   <div class="link-horizontal">
                     <Link
                       href="/contact"
-                      class="btn btn-default btn-gradient text-white active"
+                      class="btn btn-default btn-gradient text-white active mx-2"
                     >
                       start now
+                    </Link>
+                    <Link
+                      href="/chatplus/pricing"
+                      class="btn btn-default btn-gradient text-white active mx-2"
+                    >
+                      Pricing
                     </Link>
                   </div>
                 </div>

@@ -2861,7 +2861,7 @@ footer{
     color: #1c77ed;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     margin-bottom: 10px;
     letter-spacing: 3px; 
 }
@@ -4052,7 +4052,7 @@ z-index: 2;
 
 .pricing-card{
     background-color: #fff;
-    border-top: 10px solid #35776B;
+    border-top: 10px solid #04185B;
     border-radius: 6px;
     padding: 40px;
     box-shadow: 0px 0px 6px 0px #ccc;
@@ -4068,7 +4068,7 @@ z-index: 2;
     color: rgb(0, 0, 0);
 }
 .pricing-card button{
-    background-color: #35776B;
+    background-color: #04185B;
     width: 100%;
     padding: 10px 10px;
     color: #fff;
@@ -6630,3 +6630,29 @@ i.icon-2x {
     border-radius: 25px;
 }
 /* end rd */
+
+.annual_button{
+    position: relative;
+}
+.annual_button::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url("../assets/images/Products_Page/process.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(150deg) scaleX(-1);
+    top: -50px;
+}
+.annual_button::before{
+    content: "Save up to 20%";
+    position: absolute;
+    top: -60px;
+    right: -70px;
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000 !important;
+
+}

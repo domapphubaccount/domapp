@@ -204,7 +204,7 @@ export default function Header({ handleToggle }) {
                                       alt=""
                                     />
                                     {/* <i className="bi bi-code-slash me-3 float-none"></i> */}
-                                    <div>Custome Software</div>
+                                    <div>Custom Software</div>
                                   </Link>
                                 </li>
                               </ul>

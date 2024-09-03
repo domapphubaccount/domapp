@@ -155,7 +155,7 @@ export default function Section_1() {
                                   ChatPlus
                                 </option>
                                 <option className="p-2" value="7">
-                                  Software & Customization
+                                  Custom Software
                                 </option>
                                 <option className="p-2" value="8">
                                   Grasshopper  Modules

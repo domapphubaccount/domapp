@@ -25,244 +25,161 @@ export default function Pricing() {
 
 function Monthly({ priceIcon }) {
   const [showFree, setShowFree] = useState(false);
+  const [priceToggle, setPriceToggle] = useState(true);
+  const [priceIcontog, setPriceIcon] = useState(false);
 
   const handleDemoClick = () => {
     window.location.href = "https://erp.domapphub.com/signup";
   };
+
+  console.log(priceToggle);
   return (
     <>
       <div className="py-3">
         <Container>
-          <div style={{ maxWidth: "1000px" }} className="m-auto">
-            <Row>
-              <Col sm={12} md={6} lg={4} className="m-auto my-4">
-                <div
-                  className="pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0 h-100"
-                  style={{
-                    borderRadius: "15px",
-                    boxShadow: "0px 0px 10px #ccc",
-                    border: "1.5px solid #1B255A !important",
-                  }}
-                >
-                  <div className="mb-3 position-relative text-center">
-                    <h3>FREE</h3>
-                    <p>Includes .</p>
-                  </div>
-                  <div className="mb-4">
-                    <ul className="pricing-erp-data">
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>2 users
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>12 HOURS
-                      </li>
-                    </ul>
-                  </div>
+          <div style={{ maxWidth: "1000px" }} className="m-auto"></div>
 
-                  <div>
-                    <button
-                      className="pricing-btn-erp"
-                      onClick={handleDemoClick}
-                    >
-                      START DEMO
-                    </button>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-            <Row className=" position-relative">
-              <Col sm={12} md={4} lg={3} className="ms-auto my-4">
-                <div
-                  className="pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0 h-100"
-                  style={{
-                    borderRadius: "15px",
-                    boxShadow: "0px 0px 10px #ccc",
-                    border: "1.5px solid #1B255A !important",
-                  }}
+          <div>
+            <div className="d-flex justify-content-center">
+              <div
+                className=""
+                style={{
+                  // overflow: "hidden",
+                  borderRadius: "20px",
+                  border: "1px solid #23834B",
+                  boxShadow: "0px 4px 20px 2px #ccc",
+                }}
+              >
+                <button
+                  className={`pricing_toggle  ${
+                    priceToggle ? "toggle-2" : "toggle-1"
+                  }`}
+                  style={{borderRadius: "20px",}}
+                  onClick={() => setPriceToggle(true)}
                 >
-                  <div className="mb-3 position-relative text-center">
-                    <h3>Basic</h3>
-                    <p>Yearly Subscription</p>
-                    <h4 className="fw-light">
-                      <del>6000</del>
-                      <small> SAR</small>
-                    </h4>
-                    <h3>
-                      5000<small> SAR</small>
-                    </h3>
-                    <p>Includes .</p>
-                  </div>
-                  <div className="mb-4">
-                    <ul className="pricing-erp-data">
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>5 users
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>Setup fees
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>First year
-                        Subscription
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>Online
-                        training
-                      </li>
-                    </ul>
-                  </div>
-                  <small
-                    className="mb-2 d-block fw-bold"
-                    style={{ fontSize: ".7rem" }}
-                  >
-                    * Next year renewed 1800 SAR
-                  </small>
+                  Monthly
+                </button>
+                <button
+                  className={`pricing_toggle annual_button ${
+                    priceToggle ? "toggle-1" : "toggle-2"
+                  }`}
+                  style={{
+                    borderRadius: "20px",
+                  }}
+                  onClick={() => setPriceToggle(false)}
+                >
+                  Annual
+                </button>
+              </div>
+            </div>
 
-                  <div>
-                    <a href="https://wa.me/201501060885">
-                      <button className="pricing-btn-erp">CONTACT SALES</button>
-                    </a>
-                  </div>
-                </div>
-              </Col>
-              <Col sm={12} md={4} lg={3} className="ms-auto my-4">
-                <div
-                  className="pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0 h-100"
-                  style={{
-                    borderRadius: "15px",
-                    boxShadow: "0px 0px 10px #ccc",
-                    border: "1.5px solid #1B255A !important",
-                  }}
-                >
-                  <div className="mb-3 position-relative text-center">
-                    <h3>Standard</h3>
-                    <p>Yearly Subscription</p>
-                    <h4 className="fw-light">
-                      <del>14500</del>
-                      <small> SAR</small>
-                    </h4>
-                    <h3>
-                      9000<small> SAR</small>
-                    </h3>
-                    <p>Includes .</p>
-                  </div>
-                  <div className="mb-4">
-                    <ul className="pricing-erp-data">
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>15 users
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>Setup fees
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>First year
-                        Subscription
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>Online
-                        training
-                      </li>
-                    </ul>
-                  </div>
-                  <small
-                    className="mb-2 d-block fw-bold"
-                    style={{ fontSize: ".7rem" }}
-                  >
-                    * Next year renewed 5000 SAR
-                  </small>
-                  <div>
-                    <a href="https://wa.me/201501060885">
-                      <button className="pricing-btn-erp">CONTACT SALES</button>
-                    </a>
-                  </div>
-                </div>
-              </Col>
-              <Col sm={12} md={4} lg={3} className="ms-auto my-4">
-                <div
-                  className="pricing-container mb-4 pricing-card-3 p-4 py-4 erp erp-demo border-0 h-100"
-                  style={{
-                    borderRadius: "15px",
-                    boxShadow: "0px 0px 10px #ccc",
-                    border: "1.5px solid #1B255A !important",
-                  }}
-                >
-                  <div className="mb-3 position-relative text-center">
-                    <h3>Professional</h3>
-                    <p>Yearly Subscription</p>
-                    <h4 className="fw-light">
-                      <del>24000</del>
-                      <small> SAR</small>
-                    </h4>
-                    <h3>
-                      13000<small> SAR</small>
-                    </h3>
-                    <p>Includes .</p>
-                  </div>
-                  <div className="mb-4">
-                    <ul className="pricing-erp-data">
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>25 users
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>Setup fees
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>First year
-                        Subscription
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>Online
-                        training
-                      </li>
-                    </ul>
-                  </div>
-                  <small
-                    className="mb-2 d-block fw-bold"
-                    style={{ fontSize: ".7rem" }}
-                  >
-                    * Next year renewed 7500 SAR
-                  </small>
-                  <div>
-                    <a href="https://wa.me/201501060885">
-                      <button className="pricing-btn-erp">CONTACT SALES</button>
-                    </a>
-                  </div>
-                </div>
-              </Col>
-              <Col sm={12} md={4} lg={3} className="me-auto my-4">
-                <div
-                  className="pricing-container pricing-card-3 p-4 py-4 erp border-0 h-100"
-                  style={{
-                    borderRadius: "15px",
-                    boxShadow: "0px 0px 10px #ccc",
-                  }}
-                >
-                  <div className="mb-3 text-center">
-                    <h3>Enterprise</h3>
-                  </div>
-                  <div className="mt-5 pt-5">
-                    <p>Get customized features for your organization</p>
-                    <div className="mb-4">
-                      <ul className="pricing-erp-data">
-                        {/* <li><i className="bi bi-check-circle-fill"></i>Get customized features for your organization</li> */}
-                        {/* <li><i className="bi bi-check-circle-fill"></i>First year Cloud Free</li>
-                                <li><i className="bi bi-check-circle-fill"></i>First year Hosting Free</li>
-                                <li><i className="bi bi-check-circle-fill"></i>One Time setUp Fee</li>
-                                <li><i className="bi bi-check-circle-fill"></i>Online training</li>
-                                <li><i className="bi bi-check-circle-fill"></i>Maintainance and Updates</li> */}
-                      </ul>
-                    </div>
-
-                    <div>
-                      <a href="https://wa.me/201501060885">
-                        <button className="pricing-btn-erp">
-                          CONTACT SALES
-                        </button>
-                      </a>
+            {priceToggle ? (
+              <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
+                <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
+                  <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+                    <img
+                      src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"
+                      alt=""
+                      class="rounded-3xl w-20 h-20"
+                    />
+                    <div class="ml-5">
+                      <span class="block text-2xl font-semibold">FREE</span>
                     </div>
                   </div>
+                  <ul class="mb-7 font-medium text-gray-500">
+                    <li class="flex text-lg mb-2">
+                      <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                      <span class="ml-3">
+                        Get started <span class="text-black">For Free</span>
+                      </span>
+                    </li>
+                  </ul>
+                  <Link
+                    href="http://bondifycrm.domapphub.com/login"
+                    class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
+                  >
+                    Start Demo
+                    <img
+                      src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
+                      class="ml-2"
+                    />
+                  </Link>
                 </div>
-              </Col>
-            </Row>
+
+                <div class="w-full flex-1 p-8 order-3 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
+                  <div class="mb-8 pb-8 flex items-center border-b border-gray-600">
+                    <img
+                      src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"
+                      alt=""
+                      class="rounded-3xl w-20 h-20"
+                    />
+                    <div class="ml-5">
+                      <span class="block text-3xl font-semibold text-white">
+                        Enterprise
+                      </span>
+                    </div>
+                  </div>
+                  <ul class="mb-10 font-medium text-xl">
+                    <li class="flex mb-6">
+                      <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+                      <span class="ml-3">
+                        Get customized features for your organization
+                      </span>
+                    </li>
+                  </ul>
+                  <Link
+                    href="https://wa.me/201501060885"
+                    class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-2xl"
+                  >
+                    Contact Sales
+                    <img
+                      src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
+                      class="ml-2"
+                    />
+                  </Link>
+                </div>
+
+                <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
+                  <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+                    <img
+                      src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"
+                      alt=""
+                      class="rounded-3xl w-20 h-20"
+                    />
+                    <div class="ml-5">
+                      <span class="block text-2xl font-semibold">Standard</span>
+                      <span>
+                        <span class="font-medium text-gray-500 text-xl align-top">
+                          SAR&thinsp;
+                        </span>
+                        <span class="text-3xl font-bold">34 </span>
+                      </span>
+                      <span class="text-gray-500 font-medium">/ user</span>
+                    </div>
+                  </div>
+                  <ul class="mb-7 font-medium text-gray-500">
+                    <li class="flex text-lg mb-2">
+                      <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+                      <span class="ml-3">
+                        All features in <span class="text-black">Startup</span>
+                      </span>
+                    </li>
+                  </ul>
+                  <Link
+                    href="https://wa.me/201501060885"
+                    class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
+                  >
+                    Contact Sales
+                    <img
+                      src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
+                      class="ml-2"
+                    />
+                  </Link>
+                </div>
+              </div>
+            ) : (
+              <Annual />
+            )}
           </div>
         </Container>
       </div>
@@ -272,134 +189,108 @@ function Monthly({ priceIcon }) {
 function Annual({ priceIcon }) {
   return (
     <>
-      <div className="py-5">
-        <Container>
-          <div style={{ maxWidth: "1000px" }} className="m-auto">
-            <Row>
-              <Col sm={12} md={4}>
-                <div className="text-center pricing-container pricing-card-3">
-                  <div className="mb-3">
-                    <i className="bi bi-person"></i>
-                    <h3>Standard</h3>
-                    <p>
-                      <span className="fw-bold" style={{ fontSize: "1.2rem" }}>
-                        5
-                      </span>{" "}
-                      Users
-                    </p>
-                  </div>
-                  <div className="mb-2">
-                    <h2 className="price">
-                      1200 {priceIcon ? "$" : <small>SAR</small>}
-                      <br />
-                      <small>
-                        <del></del>
-                      </small>
-                    </h2>
-                    <small></small>
-                    <br />
-                    <small className="dis">
-                      The price does not include tax
-                    </small>
-                  </div>
-                  <div className="mb-3">
-                    <small className="dis">
-                      Meta Message fee not included <br />
-                      <Link href="#">...learn more</Link>
-                    </small>
-                  </div>
-                  <div>
-                    <button>CONTACT SALES</button>
-                  </div>
-                </div>
-              </Col>
-              <Col sm={12} md={4}>
-                <div className="text-center pricing-container pricing-card">
-                  <div className="mb-3">
-                    <i className="bi bi-building"></i>
-                    <h3>Professional</h3>
-                    <p>
-                      <span className="fw-bold" style={{ fontSize: "1.2rem" }}>
-                        10
-                      </span>{" "}
-                      Users
-                    </p>
-                  </div>
-                  <div className="mb-2">
-                    <h2 className="price">
-                      <small>
-                        <del>2400 {priceIcon ? "$" : <small>SAR</small>}</del>
-                      </small>
-                      <br />
-                      2208 {priceIcon ? "$" : <small>SAR</small>}
-                    </h2>
-                    <small
-                      className="dis fw-bold text-dark"
-                      style={{ fontSize: "1rem" }}
-                    >
-                      ( 8% Discount )
-                    </small>
-                    <br />
-                    <small className="dis">
-                      The price does not include tax
-                    </small>
-                  </div>
-                  <div className="mb-3">
-                    <small className="dis">
-                      Meta Message fee not included <br />
-                      <Link href="#">...learn more</Link>
-                    </small>
-                  </div>
-                  <div>
-                    <button>CONTACT SALES</button>
-                  </div>
-                </div>
-              </Col>
-              <Col sm={12} md={4}>
-                <div className="text-center pricing-container pricing-card-2">
-                  <div className="mb-3">
-                    <i className="bi bi-buildings"></i>
-                    <h3>Premium</h3>
-                    <p>
-                      <span className="fw-bold" style={{ fontSize: "1.2rem" }}>
-                        15
-                      </span>{" "}
-                      Users
-                    </p>
-                  </div>
-                  <div className="mb-2">
-                    <h2 className="price">
-                      <small>
-                        <del>4500 {priceIcon ? "$" : <small>SAR</small>}</del>
-                      </small>
-                      <br />
-                      4050 {priceIcon ? "$" : <small>SAR</small>}
-                    </h2>
-                    <small
-                      className="dis fw-bold text-dark"
-                      style={{ fontSize: "1rem" }}
-                    >
-                      ( 10% Discount )
-                    </small>
-                    <br />
-                    <small className="dis">
-                      The price does not include tax
-                    </small>
-                  </div>
-                  <div className="mb-3">
-                    <small className="dis">
-                      Meta Message fee not included <br />
-                      <Link href="#">...learn more</Link>
-                    </small>
-                  </div>
-                  <div>
-                    <button>CONTACT SALES</button>
-                  </div>
-                </div>
-              </Col>
-            </Row>
+      <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
+        <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
+          <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+            <img
+              src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"
+              alt=""
+              class="rounded-3xl w-20 h-20"
+            />
+            <div class="ml-5">
+              <span class="block text-2xl font-semibold">FREE</span>
+            </div>
           </div>
-        </Container>
+          <ul class="mb-7 font-medium text-gray-500">
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">
+                Get started <span class="text-black">For Free</span>
+              </span>
+            </li>
+          </ul>
+          <Link
+            href="http://bondifycrm.domapphub.com/login"
+            class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
+          >
+            Start Demo
+            <img
+              src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
+              class="ml-2"
+            />
+          </Link>
+        </div>
+
+        <div class="w-full flex-1 p-8 order-3 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
+          <div class="mb-8 pb-8 flex items-center border-b border-gray-600">
+            <img
+              src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"
+              alt=""
+              class="rounded-3xl w-20 h-20"
+            />
+            <div class="ml-5">
+              <span class="block text-3xl font-semibold text-white">
+                Enterprise
+              </span>
+            </div>
+          </div>
+          <ul class="mb-10 font-medium text-xl">
+            <li class="flex mb-6">
+              <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
+              <span class="ml-3">
+                Get customized features for your organization
+              </span>
+            </li>
+          </ul>
+          <Link
+            href="https://wa.me/201501060885"
+            class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-2xl"
+          >
+            Contact Sales
+            <img
+              src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
+              class="ml-2"
+            />
+          </Link>
+        </div>
+
+        <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
+          <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
+            <img
+              src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"
+              alt=""
+              class="rounded-3xl w-20 h-20"
+            />
+            <div class="ml-5">
+              <span class="block text-2xl font-semibold">Standard</span>
+              <span>
+                <span class="font-medium text-gray-500 text-xl align-top">
+                  SAR&thinsp;
+                </span>
+                <span class="text-3xl font-bold">24 </span>
+              </span>
+              <span class="text-gray-500 font-medium">/ user</span>
+            </div>
+          </div>
+          <ul class="mb-7 font-medium text-gray-500">
+            <li class="flex text-lg mb-2">
+              <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
+              <span class="ml-3">
+                All features in <span class="text-black">Startup</span>
+              </span>
+            </li>
+          </ul>
+          <Link
+            href="https://wa.me/201501060885"
+            class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
+          >
+            Contact Sales
+            <img
+              src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
+              class="ml-2"
+            />
+          </Link>
+        </div>
       </div>
     </>
   );

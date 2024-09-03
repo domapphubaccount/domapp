@@ -60,7 +60,7 @@ export default function MobileNav() {
     },
     {
       index: 7,
-      title: 'Custome Software',
+      title: 'Custom Software',
       link: '/customization',
       icon: <img style={{width:'15px',height:'15px'}} src={customization.src} alt='' /> 
     },
