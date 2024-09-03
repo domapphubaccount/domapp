@@ -40,7 +40,7 @@ export default function Section_1() {
                 <h4>Secure Data</h4>
                 <p>
                   Advanced encryption protocols to safeguard data, ensuring
-                  secure transmission and storage{" "}
+                  secure transmission and storage.
                 </p>
               </div>
               {/* <div className='back_image'/> */}

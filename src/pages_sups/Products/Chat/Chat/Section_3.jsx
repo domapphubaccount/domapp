@@ -37,7 +37,7 @@ export default function Section_3() {
         },
         {
           title:'Automated Processes',
-          body:'ChatPlus offers versatile Automated business processes enhancing efficiency such as appointment scheduling, order tracking, and more.'
+          body:'ChatPlus offers versatile automated business processes enhancing efficiency such as appointment scheduling, order tracking, and more.'
         },
         {
           title:'API Integration',

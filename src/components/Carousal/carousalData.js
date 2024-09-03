@@ -208,7 +208,7 @@ l23 144 0 1560 0 1560 -23 144 c-97 610 -353 1125 -772 1555 -74 76 -182 176
   },
   {
     index: 5,
-    title: "RDApp",
+    title: "RDAPP",
     src: "/Products/RDAPP.png",
     link: "/rdapp",
     icon: (
@@ -246,7 +246,7 @@ c-1307 -1 -1581 -3 -1646 -15z m2453 -1816 c0 -1171 1 -1143 -57 -1251 -88
 
   {
     index: 6,
-    title: "Custome Software",
+    title: "Custom Software",
     src: "/Products/CUSTOMIZATION.png",
     link: "/customization",
     icon: (

@@ -44,7 +44,7 @@ export default function Section_5() {
                         PRODUCTIVITY
                         </h2>
                         <p>
-                         RDAPP will increase the productivity of each report issued 50% reduction in time, organizing each report cycle, and connecting all parties involved faster.
+                        Based on our customers feedback RDAPP will increase the productivity of each report issued 50% reduction in time, organizing each report cycle, and connecting all parties involved faster.
  The  RDAPP will provide an Instant Unified Report Update with each step within the paths designed making both the design review and the site inspection visits according to the Saudi Building Code, and much more efficient.
                         </p>
                     </div>

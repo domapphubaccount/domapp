@@ -22,7 +22,7 @@ export default function RD_Content_section() {
                     <h2 className="title">QUALITY CONTROL</h2>
                 </div><div className="animated fadeInUp" style={{animationDuration: "1s"}}>
                     <p className="description">
-                    One of the key standout capabilities of the  RDAPP is its capacity to enhance process excellence it achieves this automatically by highlighting the technical reservations according to the Saudi Building Code in each project to Stakeholders
+                    One of the key standout capabilities of the  RDAPP is its capacity to enhance process excellence it achieves this automatically by highlighting the technical reservations according to the Saudi Building Code in each project to Stakeholders.
                     </p>
                 </div>
                 <div className="row row--30">
@@ -81,7 +81,7 @@ export default function RD_Content_section() {
                     <h2 className="title">DOCUMENTATION</h2>
                 </div><div className="animated fadeInUp" style={{animationDuration: "1s"}}>
                     <p className="description">
-                    With the built-in documentation system, users can easily create, edit, and share project reports at the same moment, ensuring efficient collaboration among team members. The documentation system offers advanced search and filtering capabilities                    </p>
+                    With the built-in documentation system, users can easily create, edit, and share project reports at the same moment, ensuring efficient collaboration among team members. The documentation system offers advanced search and filtering capabilities.                    </p>
                 </div>
                 <div className="row row--30">
                     <div className="col-lg-6 col-md-6 col-12">

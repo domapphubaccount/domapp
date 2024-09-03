@@ -102,7 +102,7 @@ function SectionContent(){
             <div className="col-xl-6 col-lg-7 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
                 <div className="section-head style-1">
                     <h6 className="sub-title bgl-primary m-b20 text-primary" style={{color:"#896eff !important;"}}>Services</h6>
-                    <h2 className="title">Our Working Process To Help Your Boost Your Business</h2>
+                    <h2 className="title">Our Working Process To Help You Boost Your Business</h2>
                 </div>
             <div className="section-wraper-one">
                 <div className="icon-bx-wraper style-2 left m-b30">
