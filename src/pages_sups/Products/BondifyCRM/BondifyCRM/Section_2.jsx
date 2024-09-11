@@ -28,7 +28,7 @@ export default function Section_2() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
                       <span>Project Overview: Assign team members, supervisors, and project leads.</span>
                     </div>
@@ -36,7 +36,7 @@ export default function Section_2() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
                       <span>
                       Project Tracking: Manage and track project progress, including status updates, milestones, and completion targets.
@@ -46,7 +46,7 @@ export default function Section_2() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
                       <span>Project Duplication: Easily clone existing projects for efficiency, with full visibility into team activities and time allocation.</span>{" "}
                     </div>

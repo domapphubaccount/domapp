@@ -1852,6 +1852,10 @@ footer{
 
 
 /* ERP  */
+.yes_icon{
+    min-width: 15px;
+    max-width: 15px;
+}
 .erp_bannar .products2{
     background-image: url('../assets/images/Home_Page/products/erp_back.jpg');
     position: relative;
@@ -2590,7 +2594,13 @@ footer{
 
  .erp_section_11 .section_container .content{
     padding: 60px 25px;
-    background: #F3ECEC;
+    /* background: #F3ECEC; */
+ }
+ .bondify-section{
+    background-image: url('../assets/images/BondifyCRM/Features/bannarjpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
  }
  .erp_section_11 .section_container .content p{
     font-size: .9rem;
@@ -2629,7 +2639,7 @@ footer{
 
  .erp_section_15 .section_container .content{
     padding: 60px 25px;
-    background: #DAE8F5;
+    /* background: #DAE8F5; */
     font-size: 13px;
  }
  .erp_section_15 h3{
@@ -4754,7 +4764,7 @@ z-index: 2;
     font-size: 100px;
     line-height: 112px;
     display: inline-block;
-    background: -webkit-linear-gradient(145deg,#f81f01, #ee076e);
+    background: -webkit-linear-gradient(145deg, #01f803, #158130);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -4802,7 +4812,7 @@ z-index: 2;
 }
 
 .customization_section_2 .call-to-action {
-    background: linear-gradient(145deg, #f81f01, #ee076e);
+    background: -webkit-linear-gradient(145deg, #01f803, #158130);
     position: relative;
     z-index: 2;
     padding: 120px 0;
@@ -5592,7 +5602,7 @@ z-index: 2;
     
 }
 .grass_imgs_section .description{
-    border: 2px solid #f9004d;
+    border: 2px solid #06f900;
 }
 .grass_imgs_section .description h4{
     color: #fff;
@@ -5650,7 +5660,7 @@ i.icon-2x {
   }
 
   .servive-block-red {
-    background: -webkit-linear-gradient(145deg,#f81f01, #ee076e)
+    background: -webkit-linear-gradient(145deg, #01f803, #158130)
   }
  
   .grass_features{

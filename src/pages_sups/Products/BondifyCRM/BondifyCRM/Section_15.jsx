@@ -7,7 +7,7 @@ export default function Section_15() {
   return (
     <section className="erp_section_15" id="Tas">
       <Container>
-        <div className="row g-0 section_container">
+        <div className="row g-0 section_container bondify-section">
           <Col sm={12} md={7} lg={8}>
             <div
               className="content h-100"
@@ -75,7 +75,7 @@ export default function Section_15() {
             </div>
           </Col>
           <Col sm={12} md={5} lg={4}>
-            <img src={Time.src} className="image_manage  " alt="manage" />
+            {/* <img src={Time.src} className="image_manage  " alt="manage" /> */}
           </Col>
         </div>
       </Container>

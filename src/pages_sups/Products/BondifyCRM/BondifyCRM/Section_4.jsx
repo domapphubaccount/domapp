@@ -32,7 +32,7 @@ export default function Section_4() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
                       <span>Measuring productivity and project progress.</span>
                     </div>
@@ -40,7 +40,7 @@ export default function Section_4() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
                       <span>
                         Track time spent on specific tasks or projects.
@@ -50,7 +50,7 @@ export default function Section_4() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
                       <span>
                         Track time manually by entering start and end times.
@@ -60,7 +60,7 @@ export default function Section_4() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
                       <span>
                         Built-in timer feature to track time automatically.

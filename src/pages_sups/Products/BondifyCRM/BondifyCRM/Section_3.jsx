@@ -42,7 +42,7 @@ export default function Section_3() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
                       <span>Task assignment.</span>
                     </div>
@@ -50,7 +50,7 @@ export default function Section_3() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
                       <span>Task control.</span>
                     </div>
@@ -58,7 +58,7 @@ export default function Section_3() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
                       <span>Task cloning.</span>{" "}
                     </div>
@@ -66,7 +66,7 @@ export default function Section_3() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
                       <span>Task summary and overview.</span>{" "}
                     </div>
@@ -74,7 +74,7 @@ export default function Section_3() {
                   <li>
                     <div>
                       <span>
-                        <img src={yesI.src} alt="true" />
+                        <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
                       <span>Task reminder.</span>{" "}
                     </div>

@@ -50,7 +50,7 @@ export default function Section_5() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img src={yesI.src} className="yes_icon" alt="true" />
                           </span>{" "}
                           <span>Create, send, track.</span>
                         </div>
@@ -58,7 +58,7 @@ export default function Section_5() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img src={yesI.src} className="yes_icon" alt="true" />
                           </span>{" "}
                           <span>Customize template.</span>
                         </div>
@@ -66,7 +66,7 @@ export default function Section_5() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img src={yesI.src} className="yes_icon" alt="true" />
                           </span>
                           <span>Invoice automation.</span>{" "}
                         </div>
@@ -87,7 +87,7 @@ export default function Section_5() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img src={yesI.src} className="yes_icon" alt="true" />
                           </span>{" "}
                           <span>Track payments.</span>
                         </div>
@@ -95,7 +95,7 @@ export default function Section_5() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img src={yesI.src} className="yes_icon" alt="true" />
                           </span>{" "}
                           <span>Receive and generate payments.</span>
                         </div>
@@ -103,7 +103,7 @@ export default function Section_5() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img src={yesI.src} className="yes_icon" alt="true" />
                           </span>
                           <span>Payment status overview.</span>{" "}
                         </div>
@@ -111,7 +111,7 @@ export default function Section_5() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img src={yesI.src} className="yes_icon" alt="true" />
                           </span>
                           <span>
                             Determine payment method paypal, credit card.
@@ -121,7 +121,7 @@ export default function Section_5() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img src={yesI.src} className="yes_icon" alt="true" />
                           </span>
                           <span>Control product, time, and task billing.</span>{" "}
                         </div>
