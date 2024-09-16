@@ -116,7 +116,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    <div>Wind Master</div>
+                                    <div className="uppercase">Wind Master</div>
                                   </Link>
                                 </li>
                               </ul>
@@ -130,7 +130,7 @@ export default function Header({ handleToggle }) {
                                     href={"/bondifycrm"}
                                     shallow
                                   >
-                                        <img
+                                    <img
                                       style={{ width: "10px", height: "15px" }}
                                       src={bondify.src}
                                       className="me-3"

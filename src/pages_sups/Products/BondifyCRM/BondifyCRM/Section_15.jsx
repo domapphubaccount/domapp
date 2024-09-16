@@ -21,7 +21,7 @@ export default function Section_15() {
                   tasks where one task must be completed before another can
                   begin. This sequential dependency management ensures that
                   tasks are executed in the correct order, preventing
-                  bottlenecks and ensuring smooth project progression..
+                  bottlenecks and ensuring smooth project progression.
                   Dependency management facilitates effective synchronization
                   among your diverse team members.
                 </p>

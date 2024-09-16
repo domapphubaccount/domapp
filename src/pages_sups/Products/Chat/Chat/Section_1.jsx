@@ -21,7 +21,7 @@ export default function Section_1() {
                 </h6> */}
                 <div class="format-head-text">
                   <h2 class="about-font-header my-3 fw-bold">
-                  Flexible configuration options
+                  Flexible Configuration Options
                   </h2>
                 </div>
                 <div class="format-sub-text my-3">
