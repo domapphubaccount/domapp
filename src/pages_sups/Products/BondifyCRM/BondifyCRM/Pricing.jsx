@@ -1,14 +1,36 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "reactstrap";
 import { league } from "@/pages_sups/Home/Section_1/Section_1";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import Link from "next/link";
+import axios from "axios";
 
 export default function Pricing() {
   // const [priceToggle , setPriceToggle] = useState(true)
   const [priceIcon, setPriceIcon] = useState(false);
+
+  const [currency, setCurrency] = useState("USD")
+
+ 
+  useEffect(() => {
+    axios
+      .get("https://ipapi.co/json/")
+      .then(response => {
+        country =
+          response.data.country_name == "Saudi Arabia"
+            && setCurrency("SAR")
+
+            
+
+      
+     
+      })
+      .catch(error => {
+        console.log("error", error)
+      })
+  }, [])
   return (
     <>
       <Header />
@@ -16,14 +38,14 @@ export default function Pricing() {
         <div className="mb-2">
           <Section__head />
         </div>
-        <Monthly priceIcon={priceIcon} />
+        <Monthly priceIcon={priceIcon} currency={currency}/>
       </section>
       <Footer />
     </>
   );
 }
 
-function Monthly({ priceIcon }) {
+function Monthly({ priceIcon,currency }) {
   const [showFree, setShowFree] = useState(false);
   const [priceToggle, setPriceToggle] = useState(true);
   const [priceIcontog, setPriceIcon] = useState(false);
@@ -150,9 +172,9 @@ function Monthly({ priceIcon }) {
                       <span class="block text-2xl font-semibold">Standard</span>
                       <span>
                         <span class="font-medium text-gray-500 text-xl align-top">
-                          SAR&thinsp;
+                          {currency}&thinsp;
                         </span>
-                        <span class="text-3xl font-bold">34 </span>
+                        <span class="text-3xl font-bold">9 </span>
                       </span>
                       <span class="text-gray-500 font-medium">/ user</span>
                     </div>
@@ -178,7 +200,7 @@ function Monthly({ priceIcon }) {
                 </div>
               </div>
             ) : (
-              <Annual />
+              <Annual currency={currency} />
             )}
           </div>
         </Container>
@@ -186,7 +208,7 @@ function Monthly({ priceIcon }) {
     </>
   );
 }
-function Annual({ priceIcon }) {
+function Annual({ priceIcon,currency }) {
   return (
     <>
       <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
@@ -265,9 +287,9 @@ function Annual({ priceIcon }) {
               <span class="block text-2xl font-semibold">Standard</span>
               <span>
                 <span class="font-medium text-gray-500 text-xl align-top">
-                  SAR&thinsp;
+                {currency}&thinsp;
                 </span>
-                <span class="text-3xl font-bold">24 </span>
+                <span class="text-3xl font-bold">{currency=="SAR"?27:7} </span>
               </span>
               <span class="text-gray-500 font-medium">/ user</span>
             </div>

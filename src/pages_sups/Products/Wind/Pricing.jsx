@@ -1,14 +1,30 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "reactstrap";
 import { league } from "@/pages_sups/Home/Section_1/Section_1";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import Link from "next/link";
+import axios from "axios";
 
 export default function Pricing() {
   // const [priceToggle , setPriceToggle] = useState(true)
   const [priceIcon, setPriceIcon] = useState(false);
+  const [currency, setCurrency] = useState("USD")
+
+ 
+  useEffect(() => {
+    axios
+      .get("https://ipapi.co/json/")
+      .then(response => {
+        country =
+          response.data.country_name == "Saudi Arabia"
+            && setCurrency("SAR")
+      })
+      .catch(error => {
+        console.log("error", error)
+      })
+  }, [])
   return (
     <>
       <Header />
@@ -16,14 +32,14 @@ export default function Pricing() {
         <div className="mb-2">
           <Section__head />
         </div>
-        <Monthly priceIcon={priceIcon} />
+        <Monthly priceIcon={priceIcon} currency={currency} />
       </section>
       <Footer />
     </>
   );
 }
 
-function Monthly() {
+function Monthly({currency}) {
   const handleDemoClick = () => {
     window.location.href = "https://erp.domapphub.com/signup";
   };
@@ -84,7 +100,7 @@ function Monthly() {
                       <small> SAR</small>
                     </h4> */}
                     <h2>
-                      50<small> SAR</small>
+                      {currency=="SAR"?50:15}<small> {currency}</small>
                     </h2>
                     <p className="text-start m-0">Includes .</p>
                   </div>
@@ -132,7 +148,7 @@ function Monthly() {
                       <small> SAR</small>
                     </h4> */}
                     <h2>
-                      200<small> SAR</small>
+                      {currency=="SAR"?200:55}<small> {currency}</small>
                     </h2>
                     <p className="text-start m-0">Includes .</p>
                   </div>
