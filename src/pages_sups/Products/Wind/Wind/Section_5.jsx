@@ -24,7 +24,7 @@ export default function Section_5() {
               <div className="card-body">
                 <h5 className="text-dark">Project info</h5>
                 <p className="text-muted mb-0">
-                  Manage and modify project and client information
+                  Manage and modify project and client information.
                 </p>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function Section_5() {
                 <p className="text-muted mb-0">
                   Following Saudi Building Code 301, identifying the site data
                   in terms of risk category, project address, and exposure
-                  category is made simple
+                  category is made simple.
                 </p>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Section_5() {
               <div className="card-body">
                 <h5 className="text-dark">Export & Print</h5>
                 <p className="text-muted mb-0">
-                  Export detailed design data sheet
+                  Export detailed design data sheet.
                 </p>
               </div>
             </div>

@@ -33,7 +33,7 @@ export default function RD_Content_section() {
                             </div>
                         <div className="animated fadeInUp" style={{animationDuration: "1s"}}>
                             <p>
-                            the client, and the inspection engineer this way the  RDAPP reduces the potential human errors factor and streamlines the inspection process for the engineers.
+                            The client, and the inspection engineer this way the  RDAPP reduces the potential human errors factor and streamlines the inspection process for the engineers.
                             </p>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ export default function RD_Content_section() {
                             </div>
                         <div className="animated fadeInUp" style={{animationDuration: "1s"}}>
                             <p>
-                            allowing users to quickly locate specific documents based on project numbers, locations, dates, and engineers who participated in the project, etc.                            </p>
+                            Allowing users to quickly locate specific documents based on project numbers, locations, dates, and engineers who participated in the project, etc.                            </p>
                         </div>
                     </div>
                 </div>

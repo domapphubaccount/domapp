@@ -133,7 +133,7 @@ function Section_1() {
                   <div class="agency-head">
                     <h3 class="agency-head-text">
                      
-                      <span class="block-span">Grow your business and engage with your customers via messaging</span>
+                      <span class="block-span">Grow your business and engage with your customers via messaging.</span>
                     </h3>
                   </div>
                 </div>

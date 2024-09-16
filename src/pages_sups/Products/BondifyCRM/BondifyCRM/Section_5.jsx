@@ -31,7 +31,7 @@ export default function Section_5() {
                   the bondify CRM, you can easily create invoices with diverse
                   options such as time billing, product billing, task billing,
                   and others. Invoices are automatically sent to clients via
-                  email, enabling them to conveniently make online payment gateways
+                  email, enabling them to conveniently make online payment gateways.
                 </p>
               </div>
               <div>
