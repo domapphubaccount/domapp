@@ -131,7 +131,7 @@ export default function ServiceDetailsPage() {
                     <div className="flex-1 content ms-4">
                       <h5 className="mb-1">Comprehensive Reporting</h5>
                       <p className="text-muted mb-0">
-                        Wind Master generates a detailed, easy-to-understand
+                        WIND MASTER generates a detailed, easy-to-understand
                         report that includes all calculations, and compliance
                         checks.
                       </p>

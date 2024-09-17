@@ -12,7 +12,8 @@ export default function Section_4({ sections }) {
                 Start your free trial today
               </h4>
               <p className="text-white-50 mb-0">
-              Discover how our Wind Master can enhance your wind analysis. Start your free trial today for a detailed analysis!
+                Discover how our WIND MASTER can enhance your wind analysis.
+                Start your free trial today for a detailed analysis!
               </p>
             </div>
           </div>
