@@ -14,6 +14,7 @@ export default function Footer() {
           </div>
           {/* ********social media icons******** */}
           <div className="d-flex gap-3">
+            <p>Follow Us:</p>
             {/* ********youtube icon******** */}
             <Link
               href="https://www.youtube.com/@DomAppHub"
