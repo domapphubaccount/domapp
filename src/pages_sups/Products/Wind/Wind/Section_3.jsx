@@ -25,7 +25,7 @@ export default function Section_3() {
               Collaborate with your <br /> team anytime and anywhare.
             </h4>
             <p className="text-muted mb-0 para-desc">
-            <span className="text-primary fw-bold">Wind Master </span> can provide everything you need to generate advanced wind analysis reports.
+            <span className="text-primary fw-bold">WIND MASTER </span> can provide everything you need to generate advanced wind analysis reports.
               
             </p>
             <div className="d-flex align-items-center text-start mt-4 pt-2">
