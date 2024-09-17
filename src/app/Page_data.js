@@ -35,7 +35,7 @@ export const items = [
     {
       index: 2,
       src: product_1,
-      title: 'Wind Master',
+      title: 'WIND MASTER',
       link:'/windmaster',
       page:' https://platform.domapphub.com/windload/',
       caption: 'Calculate wind loads on structures.',

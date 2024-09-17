@@ -467,11 +467,11 @@ export default function Section_1() {
               or services.
             </p>
 
-            <h3> Accuracy of Information We are committed to </h3>
+            <h3> Accuracy of Information </h3>
 
             <p>
               {" "}
-              maintaining the accuracy of the information provided through our
+              We are committed to maintaining the accuracy of the information provided through our
               services. We regularly review and confirm the accuracy of
               essential details using credible and authoritative references.
               However, users are encouraged to review and confirm the accuracy

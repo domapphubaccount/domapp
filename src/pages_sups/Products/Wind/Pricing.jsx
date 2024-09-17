@@ -231,7 +231,7 @@ function Section__head() {
       <div>
         <div className="head_container">
           <h1 style={{ zIndex: 4 }} className="position-relative">
-            Wind Master Pricing
+            WIND MASTER Pricing
           </h1>
         </div>
       </div>

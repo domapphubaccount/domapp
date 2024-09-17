@@ -7,14 +7,9 @@ export default function Footer() {
       <Container>
         <div className="footer d-flex justify-content-between">
           <div>&#169; 2024 DomApp. All rights reserved.</div>
-          <div>
-            <Link href="/privacy" className="privacy_link">
-              Privacy Policy
-            </Link>
-          </div>
-          {/* ********social media icons******** */}
-          <div className="d-flex gap-3">
-            <p>Follow Us:</p>
+             {/* ********social media icons******** */}
+            <div className="d-flex  gap-1">
+            <p className="mt-[2px] me-1" >Follow Us : </p>
             {/* ********youtube icon******** */}
             <Link
               href="https://www.youtube.com/@DomAppHub"
@@ -82,6 +77,12 @@ export default function Footer() {
               </svg>
             </Link>
           </div>
+          <div>
+            <Link href="/privacy" className="privacy_link">
+              Privacy Policy
+            </Link>
+          </div>
+       
         </div>
       </Container>
     </footer>

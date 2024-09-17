@@ -143,7 +143,7 @@ export default function Section_1() {
                                 </option>
                                 {/* <option className="p-2" value="2">FacadStatic</option> */}
                                 <option className="p-2" value="3">
-                                  Wind Master
+                                  WIND MASTER
                                 </option>
                                 <option className="p-2" value="4">
                                   bondify CRM

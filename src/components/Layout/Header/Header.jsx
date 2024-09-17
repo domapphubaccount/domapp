@@ -116,7 +116,7 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    <div className="uppercase">Wind Master</div>
+                                    <div className="uppercase">WIND MASTER</div>
                                   </Link>
                                 </li>
                               </ul>

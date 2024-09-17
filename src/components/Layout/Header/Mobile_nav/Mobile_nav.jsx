@@ -36,7 +36,7 @@ export default function MobileNav() {
     },
     {
       index: 2,
-      title: 'Wind Master',
+      title: 'WIND MASTER',
       link:'/windmaster',
       icon:   <img style={{width:'15px',height:'15px'}} src={windmaster.src} alt='' /> 
     },

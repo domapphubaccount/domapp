@@ -28,7 +28,7 @@ export const carousalData = [
   },
   {
     index: 2,
-    title: "Wind Master",
+    title: "WIND MASTER",
     src: "/Products/WINDMASTER.png",
     link: "/windmaster",
     icon: (
