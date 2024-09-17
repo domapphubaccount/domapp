@@ -18,7 +18,7 @@ export default function Section_1() {
                 <div className="section-title" data-aos="fade-down" data-aos-duration="2000" >
                   <h2 className="title fw-bold">About Grasshopper</h2>
                   <p className="description">
-                  Grasshopper is a powerful visual programming language and environment integrated within the Rhino 3D modelling software. It allows users to create and manipulate complex designs that offers significant time savings and enhanced design capabilities.               </p>
+                  Grasshopper is a powerful visual programming language and environment integrated within the Rhino Modules modelling software. It allows users to create and manipulate complex designs that offers significant time savings and enhanced design capabilities.               </p>
                 </div>
               </div>
             </div>

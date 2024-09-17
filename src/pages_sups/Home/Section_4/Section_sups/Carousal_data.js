@@ -165,7 +165,7 @@ export const items = [
     {
       index: 6,
       src: product_3,
-      title: 'GRASSHOPPER® 3D',
+      title: 'GRASSHOPPER® Modules',
       link: '/grasshopper',
       video:'/Products/GRASSHOPPER.gif',
       caption: 'Precision engineering for exquisite facade fabrication.',

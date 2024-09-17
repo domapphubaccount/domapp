@@ -66,7 +66,7 @@ export default function MobileNav() {
     },
     {
       index: 8,
-      title: 'Grasshopper® 3D',
+      title: 'Grasshopper® Modules',
       link: '/grasshopper',
       icon:  
       <img style={{width:'15px',height:'15px'}} src={grass.src} alt='' /> 
