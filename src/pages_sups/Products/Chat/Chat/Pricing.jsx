@@ -1,14 +1,31 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "reactstrap";
 import { league } from "@/pages_sups/Home/Section_1/Section_1";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import Link from "next/link";
+import axios from "axios";
 
 export default function Pricing() {
   const [priceToggle, setPriceToggle] = useState(true);
   const [priceIcon, setPriceIcon] = useState(false);
+
+  const [currency, setCurrency] = useState("USD")
+
+ 
+  useEffect(() => {
+    axios
+      .get("https://ipapi.co/json/")
+      .then(response => {
+        country =
+          response.data.country_name == "Saudi Arabia"
+            && setCurrency("SAR")
+      })
+      .catch(error => {
+        console.log("error", error)
+      })
+  }, [])
   return (
     <>
       <Header />
@@ -45,7 +62,7 @@ export default function Pricing() {
           </div>
         </div> */}
         {priceToggle ? (
-          <Monthly priceIcon={priceIcon} />
+          <Monthly priceIcon={priceIcon} currency={currency} />
         ) : (
           <Annual priceIcon={priceIcon} />
         )}
@@ -55,7 +72,7 @@ export default function Pricing() {
   );
 }
 
-function Monthly({ priceIcon }) {
+function Monthly({ priceIcon,currency }) {
   return (
     <>
       <div className="py-5">
@@ -95,7 +112,7 @@ function Monthly({ priceIcon }) {
                     <h2 className="price">
                       {/* <small><del>200 {priceIcon ? '$' : <small>SAR</small>}</del></small> */}
                       <br />
-                      60 {priceIcon ? "$" : <small>SAR</small>}
+                     {currency=="SAR"?60:16}  {priceIcon ? "$" : <small>{currency}</small>}
                     </h2>
 
                     <p>
