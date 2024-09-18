@@ -2607,10 +2607,10 @@ footer{
     padding: 20px 0;
  }
  .erp_section_11 .section_container .list li div{
-    display: flex;
+    /* display: flex; */
  }
  .erp_section_11 .section_container .list li div span{
-    margin: 5px;
+    /* margin: 5px; */
     transition: 1s;
  }
  /* .erp_section_11 .section_container .list li div span:hover{
@@ -3516,6 +3516,7 @@ footer{
 .list-check-1.light li:before {
     background-color: #bd6adc4a;
     color: #4100ff;
+   
 }
 
 .list-check-1 li:before {
@@ -3541,6 +3542,7 @@ footer{
     -webkit-transition: all .8s;
     -ms-transition: all .8s;
     transition: all .8s;
+   
 }
 .head_CWF{
     padding: 60px 0;

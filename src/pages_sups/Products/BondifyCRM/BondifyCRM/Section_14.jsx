@@ -36,40 +36,64 @@ export default function Section_14() {
               </div>
               <div>
                 <div
-                  className="list"
+                  className="list "
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>
                       Create, customize, and automate business processes.
                     </span>
                   </div>
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>Automate routine tasks.</span>
                   </div>
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>Confirm invoice payments.</span>
                   </div>
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>Automate recurring tasks, projects.</span>
                   </div>
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>Automate task, project creation.</span>
                   </div>
                 </div>

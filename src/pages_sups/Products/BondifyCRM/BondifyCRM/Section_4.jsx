@@ -18,8 +18,8 @@ export default function Section_4() {
                 <h3>Time Tracking</h3>
                 <p>
                   Effortlessly monitor the time invested in your projects using
-                  the bondify CRM comprehensive time-tracking solution. Begin
-                  or end your timer or input time manually for tasks. Then,
+                  the bondify CRM comprehensive time-tracking solution. Begin or
+                  end your timer or input time manually for tasks. Then,
                   seamlessly bill your clients based on the recorded time.
                 </p>
               </div>
@@ -30,39 +30,44 @@ export default function Section_4() {
                   data-aos-duration="1500"
                 >
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
-                      <span>Measuring productivity and project progress.</span>
+                      <span className="m-0 mb-2">
+                        Measuring productivity and project progress.
+                      </span>
                     </div>
                   </li>
+
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
-                      <span>
+                      <span className="m-0 mb-2">
                         Track time spent on specific tasks or projects.
                       </span>
                     </div>
                   </li>
+
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
-                      <span>
+                      <span className="m-0 mb-2">
                         Track time manually by entering start and end times.
                       </span>{" "}
                     </div>
                   </li>
+
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
-                      <span>
+                      <span className="m-0 mb-2">
                         Built-in timer feature to track time automatically.
                       </span>{" "}
                     </div>

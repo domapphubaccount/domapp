@@ -38,36 +38,60 @@ export default function Section_12() {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>Create contacts, companies form leads.</span>
                   </div>
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>
                       Convert emails, messages and anything into a lead.
                     </span>
                   </div>
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>Assign users, supervisors and managers.</span>
                   </div>
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>Add a lead reminder.</span>
                   </div>
-                  <div className="d-flex">
-                    <span>
-                      <img src={yesI.src} className="mx-2" alt="true" />
-                    </span>{" "}
+
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                    <span className="w-5 h-5">
+                      <img
+                        src={yesI.src}
+                        alt="true"
+                        className="w-full h-full object-contain"
+                      />
+                    </span>
                     <span>Manage and control leads.</span>
                   </div>
                 </div>

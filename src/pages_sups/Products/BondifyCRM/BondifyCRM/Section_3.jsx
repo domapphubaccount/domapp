@@ -40,43 +40,49 @@ export default function Section_3() {
                   data-aos-duration="1500"
                 >
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
-                      <span>Task assignment.</span>
+                      <span className="m-0 mb-2">Task assignment.</span>
                     </div>
                   </li>
+
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
-                      <span>Task control.</span>
+                      <span className="m-0 mb-2">Task control.</span>
                     </div>
                   </li>
+
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
-                      <span>Task cloning.</span>{" "}
+                      <span className="m-0 mb-2">Task cloning.</span>{" "}
                     </div>
                   </li>
+
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
-                      <span>Task summary and overview.</span>{" "}
+                      <span className="m-0 mb-2">
+                        Task summary and overview.
+                      </span>{" "}
                     </div>
                   </li>
+
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
-                      <span>Task reminder.</span>{" "}
+                      <span className="m-0 mb-2">Task reminder.</span>{" "}
                     </div>
                   </li>
                 </ul>

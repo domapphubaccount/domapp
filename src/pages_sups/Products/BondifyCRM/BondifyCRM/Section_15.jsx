@@ -33,25 +33,39 @@ export default function Section_15() {
                   data-aos-duration="1500"
                 >
                   <li>
-                    <div>
-                      <span>
-                        <img src={yesI.src} alt="true" />
-                      </span>{" "}
+                    <div className="grid grid-cols-[auto_1fr] items-start ">
+                      <span className="w-5 h-5">
+                        <img
+                          src={yesI.src}
+                          alt="true"
+                          className="w-full h-full object-contain"
+                        />
+                      </span>
                       <span>Create relationship between tasks.</span>
                     </div>
                   </li>
+
                   <li>
-                    <div>
-                      <span>
-                        <img src={yesI.src} alt="true" />
-                      </span>{" "}
+                    <div className="grid grid-cols-[auto_1fr] items-start ">
+                      <span className="w-5 h-5">
+                        <img
+                          src={yesI.src}
+                          alt="true"
+                          className="w-full h-full object-contain"
+                        />
+                      </span>
                       <span>Control dependent task.</span>
                     </div>
                   </li>
+
                   <li>
-                    <div>
-                      <span>
-                        <img src={yesI.src} alt="true" />
+                    <div className="grid grid-cols-[auto_1fr] items-start ">
+                      <span className="w-5 h-5">
+                        <img
+                          src={yesI.src}
+                          alt="true"
+                          className="w-full h-full object-contain"
+                        />
                       </span>
                       <span>
                         Notifications and alerts to keep team members informed
@@ -59,10 +73,15 @@ export default function Section_15() {
                       </span>{" "}
                     </div>
                   </li>
+                  
                   <li>
-                    <div>
-                      <span>
-                        <img src={yesI.src} alt="true" />
+                    <div className="grid grid-cols-[auto_1fr] items-start ">
+                      <span className="w-5 h-5">
+                        <img
+                          src={yesI.src}
+                          alt="true"
+                          className="w-full h-full object-contain"
+                        />
                       </span>
                       <span>
                         Dynamic task adjustment schedules when dependent tasks
