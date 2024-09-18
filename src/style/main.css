@@ -5777,6 +5777,12 @@ i.icon-2x {
     .head_bannar{
         font-size: 40px!important;
     }
+          .social-feature-left:after,
+          .social-feature-right:after {
+              visibility: hidden;
+          }
+  
+      
 }
 
 /* updates */
@@ -6666,3 +6672,4 @@ i.icon-2x {
     color: #000 !important;
 
 }
+
