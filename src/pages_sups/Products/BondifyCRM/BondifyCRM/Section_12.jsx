@@ -38,7 +38,7 @@ export default function Section_12() {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}
@@ -49,7 +49,7 @@ export default function Section_12() {
                     <span>Create contacts, companies form leads.</span>
                   </div>
 
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}
@@ -62,7 +62,7 @@ export default function Section_12() {
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}
@@ -73,7 +73,7 @@ export default function Section_12() {
                     <span>Assign users, supervisors and managers.</span>
                   </div>
 
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}
@@ -84,7 +84,7 @@ export default function Section_12() {
                     <span>Add a lead reminder.</span>
                   </div>
 
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}

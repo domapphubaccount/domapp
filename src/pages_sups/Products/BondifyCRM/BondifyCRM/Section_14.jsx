@@ -40,7 +40,7 @@ export default function Section_14() {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}
@@ -53,7 +53,7 @@ export default function Section_14() {
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}
@@ -64,7 +64,7 @@ export default function Section_14() {
                     <span>Automate routine tasks.</span>
                   </div>
 
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}
@@ -75,7 +75,7 @@ export default function Section_14() {
                     <span>Confirm invoice payments.</span>
                   </div>
 
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}
@@ -86,7 +86,7 @@ export default function Section_14() {
                     <span>Automate recurring tasks, projects.</span>
                   </div>
 
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 ">
+                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
                     <span className="w-5 h-5">
                       <img
                         src={yesI.src}
