@@ -2670,7 +2670,7 @@ footer{
 
  .chat_section_4_cards .chat_card_icon_container{
     background-color: rgb(229, 247, 243);   
-    padding: 20px;
+    padding: 20px 10px;
     border-radius: 20px; 
     transition: 1s;
  }
@@ -6246,6 +6246,13 @@ i.icon-2x {
 }
 .chat_section_4_cards .chat_card_icon_container .card_icon{
     background-color:#1f357d;
+    margin: 0;
+    /* padding: 10px; */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .chat_section_2 h3{
     color: var(--strong-chat) !important;
