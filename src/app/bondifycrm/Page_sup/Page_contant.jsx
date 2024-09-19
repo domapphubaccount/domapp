@@ -36,6 +36,7 @@ import Heading from "@/components/Reuse/Section_Head/Heading";
 
 import Bannar from "@/pages_sups/Products/BondifyCRM/Bannar";
 import Break from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Break";
+import VideoSection from "@/pages_sups/Products/BondifyCRM/BondifyCRM/VideoSection";
 
 export default function Page() {
   return (
@@ -47,6 +48,7 @@ export default function Page() {
           body="First Choice For Your Business"
           back="bondify CRM"
         />
+        <VideoSection/>
         <Section_1 />
         <Break body={'REDUCED COST IMPROVED PRODUCTIVITY'} />
         <Section_2 />
