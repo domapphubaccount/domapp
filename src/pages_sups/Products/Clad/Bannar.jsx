@@ -115,8 +115,8 @@ export default function Bannar() {
                             </span>
                           </h4>
                           <p className="fw-bold">
-                            square meter
-                            <br /> of Cladding produced
+                            Square Meter
+                            <br /> Of Cladding Produced
                           </p>
                         </div>
                       </div>

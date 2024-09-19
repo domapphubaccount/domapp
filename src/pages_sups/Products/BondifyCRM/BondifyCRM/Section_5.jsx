@@ -153,7 +153,7 @@ export default function Section_5() {
                         </div>
                       </li>
 
-                      <li>
+                      {/* <li>
                         <div className="align-items-start gap-1">
                           <span>
                             <img
@@ -166,7 +166,7 @@ export default function Section_5() {
                             Determine payment method paypal, credit card.
                           </span>{" "}
                         </div>
-                      </li>
+                      </li> */}
 
                       <li>
                         <div className="align-items-start gap-1">

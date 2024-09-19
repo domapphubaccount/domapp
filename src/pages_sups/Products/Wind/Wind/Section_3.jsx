@@ -93,7 +93,7 @@ export default function Section_3() {
                 </svg>
               </div>
               <div className="flex-1">
-              Simplify your workflow and Reduce repetitive calculations, easy interface, and online accessibility, allowing you to work seamlessly from any location.
+              Simplify your workflow and reduce repetitive calculations, easy interface, and online accessibility, allowing you to work seamlessly from any location.
               </div>
             </div>
           </div>
