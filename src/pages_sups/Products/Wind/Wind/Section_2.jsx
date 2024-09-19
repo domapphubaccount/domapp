@@ -66,7 +66,7 @@ export default function ServiceDetailsPage() {
                       </svg>
                     </div>
                     <div className="flex-1 content ms-4">
-                      <h5 className="mb-1">Saudi Building Compliance</h5>
+                      <h5 className="mb-1">Saudi Building Compliance.</h5>
                       <p className="text-muted mb-0">
                         Accurately calculate wind loads on facades in accordance
                         with the latest Saudi Building Code standards.
@@ -129,7 +129,7 @@ export default function ServiceDetailsPage() {
                       </svg>
                     </div>
                     <div className="flex-1 content ms-4">
-                      <h5 className="mb-1">Comprehensive Reporting</h5>
+                      <h5 className="mb-1">Comprehensive Reporting.</h5>
                       <p className="text-muted mb-0">
                         WIND MASTER generates a detailed, easy-to-understand
                         report that includes all calculations, and compliance

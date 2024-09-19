@@ -76,30 +76,7 @@ function Monthly({ priceIcon, currency }) {
       <div className="py-5">
         <Container>
           <div style={{ maxWidth: "1000px" }} className="m-auto">
-            <Row className="justify-center">
-              {/* <Col sm={12} md={4}>
-                    <div className='text-center pricing-container pricing-card-3'>
-                        <div className='mb-3'>
-                        <i className="bi bi-person"></i>
-                            <h3>Standard</h3>
-                            <p><span className='fw-bold' style={{fontSize:'1.2rem'}}>5</span> Users</p>
-                        </div>
-                        <div className='mb-2'>
-                            <h2 className='price'>100 {priceIcon ? '$' : <small>SAR</small>} 
-                            <small><del></del></small>
-                            </h2>
-                            <br/>
-                            <small></small>
-                            <br/>
-                            <small className='dis'>The price does not include tax</small>
-                        </div>
-                        <div className='mb-3'><small className='dis'>Meta Message fee not included <br/><Link href="#">...learn more</Link></small></div>
-
-                        <div>
-                            <a href="https://wa.me/201501060885"><button>CONTACT SALES</button></a>
-                        </div>
-                    </div>
-                </Col> */}
+            <Row className="justify-center">           
               <Col sm={12} md={4}>
                 <div className="text-center pricing-container pricing-card">
                   <div className="mb-2">
@@ -123,7 +100,7 @@ function Monthly({ priceIcon, currency }) {
                     {/* <small className='dis fw-bold text-dark' style={{fontSize: '1rem'}}>( 5% Discount )</small> */}
                     <br />
                   </div>
-                  <div className="flex justify-center  ">
+                  <div className="flex justify-center me-[5px] ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -141,7 +118,7 @@ function Monthly({ priceIcon, currency }) {
                       The price does not include VAT.
                     </small>
                   </div>
-                  <div className=" flex mb-2 justify-center ">
+                  <div className=" flex  justify-center ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -156,17 +133,28 @@ function Monthly({ priceIcon, currency }) {
                     </svg>
 
                     <small className="dis">
-                      Meta Message fee not included. <br />
+                      Meta Message fee not included. 
+                    </small>
+                  </div>
+                  <div className=" flex mb-2 justify-center me-[40px] ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="size-4 me-2"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 0 1 .67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 1 1-.671-1.34l.041-.022ZM12 9a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    <small className="dis">
+                    Setup free Not Included. <br />
                     </small>
                   </div>
 
-                  {/* <small className="mb-3">Setup free Not Included</small> */}
-                  <span
-                    
-                    className="text-sm font-semibold text-gray-500 tracking-wide "
-                  >
-                    Setup free Not Included
-                  </span>
+                
 
                   <div className="mt-3">
                     <a href="https://wa.me/201501060885">
