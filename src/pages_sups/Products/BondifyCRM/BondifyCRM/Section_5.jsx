@@ -108,16 +108,16 @@ export default function Section_5() {
                           <span>Payment status overview.</span>{" "}
                         </div>
                       </li>
-                      <li>
+                      {/* <li>
                         <div>
                           <span>
                             <img src={yesI.src} className="yes_icon" alt="true" />
                           </span>
                           <span>
-                            Determine payment method paypal, credit card.
+                            Determine  payment method paypal, credit card.
                           </span>{" "}
                         </div>
-                      </li>
+                      </li> */}
                       <li>
                         <div>
                           <span>
