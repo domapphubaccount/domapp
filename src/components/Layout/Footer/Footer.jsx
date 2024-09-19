@@ -5,11 +5,15 @@ export default function Footer() {
   return (
     <footer>
       <Container>
-        <div className="footer d-flex justify-content-between">
-          <div>&#169; 2024 DomApp. All rights reserved.</div>
-             {/* ********social media icons******** */}
-            <div className="d-flex  gap-1">
-            <p className="mt-[2px] me-1" >Follow Us : </p>
+        {/* <div className="footer justify-content-between flex flex-col lg:flex-row gap-2 "> */}
+        <div className="footer grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between gap-2">
+          <div className="sm:col-span-2">
+            &#169;2024 DomApp. All rights reserved.
+          </div>
+          {/* ********social media icons******** */}
+
+          <div className="d-flex  gap-1">
+            <p className="mt-[2px] me-1 mb-0">Follow Us : </p>
             {/* ********youtube icon******** */}
             <Link
               href="https://www.youtube.com/@DomAppHub"
@@ -77,12 +81,12 @@ export default function Footer() {
               </svg>
             </Link>
           </div>
+
           <div>
             <Link href="/privacy" className="privacy_link">
               Privacy Policy
             </Link>
           </div>
-       
         </div>
       </Container>
     </footer>
