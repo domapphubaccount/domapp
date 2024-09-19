@@ -5,23 +5,23 @@ function Section_2() {
     <div className="service-area ptb--80  bg_image bg_image--3">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-12">
-            <div className="section-title mt--30 mt_md--5 mt_mobile--5 mb_mobile--10">
-              <h2 className="title">Our Services</h2>
+          <div className=" col-12">
+            <div className="section-title mt--30 mt_md--5 mt_mobile--5 mb_mobile--10 text-center">
+              <h2 className="title text-center">Our Services</h2>
               <p>Delivering premium services for an outstanding experience</p>
               {/* <div className="service-btn">
                             <span className="text text-white fw-bold">Request Custom Service</span>
                         </div> */}
             </div>
           </div>
-          <div className="col-lg-8 col-12 mt_md--50">
+          <div className="col-lg-12 col-12 mt_md--50">
             <div className="row service-one-wrapper">
               <div
                 className="col-lg-6 col-md-6 col-sm-6 col-12"
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <div className="service service__style--2">
+                <div className="service service__style--2 d-flex align-items-start gap-3">
                   <div className="icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ function Section_2() {
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                <div className="service service__style--2">
+                <div className="service service__style--2 d-flex align-items-start gap-3">
                   <div className="icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -84,12 +84,13 @@ function Section_2() {
                   </div>
                 </div>
               </div>
+
               <div
                 className="col-lg-6 col-md-6 col-sm-6 col-12"
                 data-aos="fade-up"
                 data-aos-duration="2000"
               >
-                <div className="service service__style--2">
+                <div className="service service__style--2 d-flex align-items-start gap-3">
                   <div className="icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +125,7 @@ function Section_2() {
                 data-aos="fade-up"
                 data-aos-duration="2500"
               >
-                <div className="service service__style--2">
+                <div className="service service__style--2 d-flex align-items-start gap-3">
                   <div className="icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +134,7 @@ function Section_2() {
                       strokeWidth={1.5}
                       stroke="green"
                       className="size-6"
-                      style={{width:'30px',height:'30px'}}
+                      style={{ width: "30px", height: "30px" }}
                     >
                       <path
                         strokeLinecap="round"

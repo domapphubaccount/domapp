@@ -31,11 +31,12 @@ export default function Section_5() {
                   the bondify CRM, you can easily create invoices with diverse
                   options such as time billing, product billing, task billing,
                   and others. Invoices are automatically sent to clients via
-                  email, enabling them to conveniently make online payment gateways.
+                  email, enabling them to conveniently make online payment
+                  gateways.
                 </p>
               </div>
               <div>
-                <Row>
+                <Row className="">
                   <Col>
                     <ul
                       className="list"
@@ -47,32 +48,54 @@ export default function Section_5() {
                           <h5>Invoices</h5>
                         </div>
                       </li>
+
                       <li>
-                        <div>
+                        <div className="align-items-start gap-1">
                           <span>
-                            <img src={yesI.src} className="yes_icon" alt="true" />
+                            <img
+                              src={yesI.src}
+                              className="yes_icon"
+                              alt="true"
+                            />
                           </span>{" "}
-                          <span>Create, send, track.</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <span>
-                            <img src={yesI.src} className="yes_icon" alt="true" />
-                          </span>{" "}
-                          <span>Customize template.</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <span>
-                            <img src={yesI.src} className="yes_icon" alt="true" />
+                          <span className="m-0 mb-2 text-sm md:text-base">
+                            Create, send, track.
                           </span>
-                          <span>Invoice automation.</span>{" "}
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="align-items-start gap-1">
+                          <span>
+                            <img
+                              src={yesI.src}
+                              className="yes_icon"
+                              alt="true"
+                            />
+                          </span>{" "}
+                          <span className="m-0 mb-2 text-sm md:text-base">
+                            Customize template.
+                          </span>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="align-items-start gap-1">
+                          <span>
+                            <img
+                              src={yesI.src}
+                              className="yes_icon"
+                              alt="true"
+                            />
+                          </span>
+                          <span className="m-0 mb-2 text-sm md:text-base">
+                            Invoice automation.
+                          </span>{" "}
                         </div>
                       </li>
                     </ul>
                   </Col>
+
                   <Col>
                     <ul
                       className="list"
@@ -84,46 +107,79 @@ export default function Section_5() {
                           <h5>Payments</h5>
                         </div>
                       </li>
+
                       <li>
-                        <div>
+                        <div className="align-items-start gap-1">
                           <span>
-                            <img src={yesI.src} className="yes_icon" alt="true" />
+                            <img
+                              src={yesI.src}
+                              className="yes_icon"
+                              alt="true"
+                            />
                           </span>{" "}
-                          <span>Track payments.</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <span>
-                            <img src={yesI.src} className="yes_icon" alt="true" />
-                          </span>{" "}
-                          <span>Receive and generate payments.</span>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <span>
-                            <img src={yesI.src} className="yes_icon" alt="true" />
+                          <span className="m-0 mb-2 text-sm md:text-base">
+                            Track payments.
                           </span>
-                          <span>Payment status overview.</span>{" "}
                         </div>
                       </li>
+
+                      <li>
+                        <div className="align-items-start gap-1">
+                          <span>
+                            <img
+                              src={yesI.src}
+                              className="yes_icon"
+                              alt="true"
+                            />
+                          </span>{" "}
+                          <span className="m-0 mb-2 text-sm md:text-base">
+                            Receive and generate payments.
+                          </span>
+                        </div>
+                      </li>
+
+                      <li>
+                        <div className="align-items-start gap-1">
+                          <span>
+                            <img
+                              src={yesI.src}
+                              className="yes_icon"
+                              alt="true"
+                            />
+                          </span>
+                          <span className="m-0 mb-2 text-sm md:text-base">
+                            Payment status overview.
+                          </span>{" "}
+                        </div>
+                      </li>
+
                       {/* <li>
-                        <div>
+                        <div className="align-items-start gap-1">
                           <span>
-                            <img src={yesI.src} className="yes_icon" alt="true" />
+                            <img
+                              src={yesI.src}
+                              className="yes_icon"
+                              alt="true"
+                            />
                           </span>
-                          <span>
-                            Determine  payment method paypal, credit card.
+                          <span className="m-0 mb-2 text-sm md:text-base">
+                            Determine payment method paypal, credit card.
                           </span>{" "}
                         </div>
                       </li> */}
+
                       <li>
-                        <div>
+                        <div className="align-items-start gap-1">
                           <span>
-                            <img src={yesI.src} className="yes_icon" alt="true" />
+                            <img
+                              src={yesI.src}
+                              className="yes_icon"
+                              alt="true"
+                            />
                           </span>
-                          <span>Control product, time, and task billing.</span>{" "}
+                          <span className="m-0 mb-2 text-sm md:text-base">
+                            Control product, time, and task billing.
+                          </span>{" "}
                         </div>
                       </li>
                     </ul>

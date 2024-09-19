@@ -2607,10 +2607,10 @@ footer{
     padding: 20px 0;
  }
  .erp_section_11 .section_container .list li div{
-    display: flex;
+    /* display: flex; */
  }
  .erp_section_11 .section_container .list li div span{
-    margin: 5px;
+    /* margin: 5px; */
     transition: 1s;
  }
  /* .erp_section_11 .section_container .list li div span:hover{
@@ -2670,7 +2670,7 @@ footer{
 
  .chat_section_4_cards .chat_card_icon_container{
     background-color: rgb(229, 247, 243);   
-    padding: 20px;
+    padding: 20px 10px;
     border-radius: 20px; 
     transition: 1s;
  }
@@ -3516,6 +3516,7 @@ footer{
 .list-check-1.light li:before {
     background-color: #bd6adc4a;
     color: #4100ff;
+   
 }
 
 .list-check-1 li:before {
@@ -3541,6 +3542,7 @@ footer{
     -webkit-transition: all .8s;
     -ms-transition: all .8s;
     transition: all .8s;
+   
 }
 .head_CWF{
     padding: 60px 0;
@@ -5777,6 +5779,12 @@ i.icon-2x {
     .head_bannar{
         font-size: 40px!important;
     }
+          .social-feature-left:after,
+          .social-feature-right:after {
+              visibility: hidden;
+          }
+  
+      
 }
 
 /* updates */
@@ -6238,6 +6246,13 @@ i.icon-2x {
 }
 .chat_section_4_cards .chat_card_icon_container .card_icon{
     background-color:#1f357d;
+    margin: 0;
+    /* padding: 10px; */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .chat_section_2 h3{
     color: var(--strong-chat) !important;
@@ -6666,3 +6681,4 @@ i.icon-2x {
     color: #000 !important;
 
 }
+

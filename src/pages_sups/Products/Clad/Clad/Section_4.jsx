@@ -13,7 +13,7 @@ export default function Section_4() {
         <Row>
           <div className="col-lg-4">
             <span
-              className="mil-service-card mil-up mil-mb-30 d-inline-block"
+              className="mil-service-card mil-up mil-mb-30 d-inline-block w-full"
               href="/services/service-2"
               style={{
                 height: "90%",
@@ -40,11 +40,13 @@ export default function Section_4() {
               </div>
             </span>
           </div>
-          <div className="col-lg-4">
+
+          <div className="col-lg-4 ">
             <span
-              className="mil-service-card mil-up mil-mb-30 d-inline-block"
+              className="mil-service-card mil-up mil-mb-30 d-inline-block w-full"
               href="/services/service-2"
               style={{
+                
                 height: "90%",
                 translate: "none",
                 rotate: "none",
@@ -69,9 +71,12 @@ export default function Section_4() {
               </div>
             </span>
           </div>
+
+     
+
           <div className="col-lg-4">
             <span
-              className="mil-service-card mil-up mil-mb-30 d-inline-block"
+              className="mil-service-card mil-up mil-mb-30 d-inline-block w-full"
               href="/services/service-2"
               style={{
                 height: "90%",
@@ -101,7 +106,7 @@ export default function Section_4() {
           </div>
           <div className="col-lg-4">
             <span
-              className="mil-service-card mil-up mil-mb-30 d-inline-block"
+              className="mil-service-card mil-up mil-mb-30 d-inline-block w-full"
               href="/services/service-2"
               style={{
                 height: "90%",
@@ -131,7 +136,7 @@ export default function Section_4() {
           </div>
           <div className="col-lg-4">
             <span
-              className="mil-service-card mil-up mil-mb-30 d-inline-block"
+              className="mil-service-card mil-up mil-mb-30 d-inline-block w-full"
               href="/services/service-2"
               style={{
                 height: "90%",

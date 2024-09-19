@@ -50,7 +50,7 @@ export default function Section_3() {
             <div className='py-4'>
                 <Row>
                     <Col sm={12} md={4} lg={4}>
-                        <div className='d-flex justify-content-between flex-column h-100 text-end m-3' data-aos="fade-up">{
+                        <div className='d-flex justify-content-between flex-column h-100 text-start m-3' data-aos="fade-up">{
                             firstCols.map((item,index)=>(
                             <div key={index}>
                             <h3>{item.title}</h3>
