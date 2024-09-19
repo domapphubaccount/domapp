@@ -3,6 +3,7 @@ import { league } from "@/pages_sups/Home/Section_1/Section_1";
 import Link from "next/link";
 import Logo from "@/assets/images/chatPlus/logo-slogan.png";
 import BannarIMG from "@/assets/images/chatPlus/img.png"
+import VideoSection from "./Chat/VideoSection";
 
 export default function Bannar() {
   return (
@@ -42,7 +43,7 @@ export default function Bannar() {
 function Bannar2() {
   return (
     <section class="agency header chat-head" id="header">
-      <div class="agency bg">
+      <div class="agency bg mb-4">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -76,6 +77,9 @@ function Bannar2() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-[250px]">
+      <VideoSection />
       </div>
 
       <div class="set-abs abs-horizon-center girl-boy image_bannar">
