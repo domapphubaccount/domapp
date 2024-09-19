@@ -11,21 +11,19 @@ export default function Pricing() {
   const [priceToggle, setPriceToggle] = useState(true);
   const [priceIcon, setPriceIcon] = useState(false);
 
-  const [currency, setCurrency] = useState("USD")
+  const [currency, setCurrency] = useState("USD");
 
- 
   useEffect(() => {
     axios
       .get("https://ipapi.co/json/")
-      .then(response => {
+      .then((response) => {
         country =
-          response.data.country_name == "Saudi Arabia"
-            && setCurrency("SAR")
+          response.data.country_name == "Saudi Arabia" && setCurrency("SAR");
       })
-      .catch(error => {
-        console.log("error", error)
-      })
-  }, [])
+      .catch((error) => {
+        console.log("error", error);
+      });
+  }, []);
   return (
     <>
       <Header />
@@ -72,7 +70,7 @@ export default function Pricing() {
   );
 }
 
-function Monthly({ priceIcon,currency }) {
+function Monthly({ priceIcon, currency }) {
   return (
     <>
       <div className="py-5">
@@ -104,15 +102,16 @@ function Monthly({ priceIcon,currency }) {
                 </Col> */}
               <Col sm={12} md={4}>
                 <div className="text-center pricing-container pricing-card">
-                  <div className="mb-3">
+                  <div className="mb-2">
                     {/* <i className="bi bi-building"></i> */}
                     <h3>Subscription</h3>
                   </div>
-                  <div className="mb-2">
+                  <div className="mb-1">
                     <h2 className="price">
                       {/* <small><del>200 {priceIcon ? '$' : <small>SAR</small>}</del></small> */}
                       <br />
-                     {currency=="SAR"?60:16}  {priceIcon ? "$" : <small>{currency}</small>}
+                      {currency == "SAR" ? 60 : 16}{" "}
+                      {priceIcon ? "$" : <small>{currency}</small>}
                     </h2>
 
                     <p>
@@ -124,7 +123,7 @@ function Monthly({ priceIcon,currency }) {
                     {/* <small className='dis fw-bold text-dark' style={{fontSize: '1rem'}}>( 5% Discount )</small> */}
                     <br />
                   </div>
-                  <div className="flex">
+                  <div className="flex justify-center  ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -142,7 +141,7 @@ function Monthly({ priceIcon,currency }) {
                       The price does not include VAT.
                     </small>
                   </div>
-                  <div className="mb-3 flex">
+                  <div className=" flex mb-2 justify-center ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -161,7 +160,15 @@ function Monthly({ priceIcon,currency }) {
                     </small>
                   </div>
 
-                  <div>
+                  {/* <small className="mb-3">Setup free Not Included</small> */}
+                  <span
+                    
+                    className="text-sm font-semibold text-gray-500 tracking-wide "
+                  >
+                    Setup free Not Included
+                  </span>
+
+                  <div className="mt-3">
                     <a href="https://wa.me/201501060885">
                       <button>CONTACT SALES</button>
                     </a>
