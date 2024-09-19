@@ -26,29 +26,40 @@ export default function Section_2() {
                   data-aos-duration="1500"
                 >
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
-                      <span>Project Overview: Assign team members, supervisors, and project leads.</span>
+                      <span className="m-0 mb-2">
+                        Project Overview: Assign team members, supervisors, and
+                        project leads.
+                      </span>
                     </div>
                   </li>
+
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>{" "}
-                      <span>
-                      Project Tracking: Manage and track project progress, including status updates, milestones, and completion targets.
+                      <span className="m-0 mb-2">
+                        Project Tracking: Manage and track project progress,
+                        including status updates, milestones, and completion
+                        targets.
                       </span>
                     </div>
                   </li>
+
                   <li>
-                    <div>
+                    <div className="align-items-start gap-2">
                       <span>
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
-                      <span>Project Duplication: Easily clone existing projects for efficiency, with full visibility into team activities and time allocation.</span>{" "}
+                      <span className="m-0 mb-2">
+                        Project Duplication: Easily clone existing projects for
+                        efficiency, with full visibility into team activities
+                        and time allocation.
+                      </span>{" "}
                     </div>
                   </li>
                 </ul>

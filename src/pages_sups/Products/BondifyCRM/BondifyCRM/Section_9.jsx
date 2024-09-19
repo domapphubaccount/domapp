@@ -28,7 +28,8 @@ export default function Section_9() {
                 <p>
                   Initial impressions are paramount. Showcase professionalism to
                   potential clients through impeccably crafted project
-                  proposals. Our intuitive interface ensures ease of use for all users.
+                  proposals. Our intuitive interface ensures ease of use for all
+                  users.
                 </p>
               </div>
               <div>
@@ -38,10 +39,14 @@ export default function Section_9() {
                   data-aos-duration="1500"
                 >
                   <li>
-                    <div>
-                      <span>
-                        <img src={yesI.src} alt="true" />
-                      </span>{" "}
+                    <div className="grid grid-cols-[auto_1fr] gap-2 items-start  ">
+                      <span className="w-5 h-5">
+                        <img
+                          src={yesI.src}
+                          alt="true"
+                          className="w-full h-full object-contain"
+                        />
+                      </span>
                       <span>
                         Create professional and customizable proposals quickly
                         and efficiently.

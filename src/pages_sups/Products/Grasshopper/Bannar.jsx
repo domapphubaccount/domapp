@@ -29,24 +29,27 @@ export default function Bannar() {
                 </div>
               </div>
             </div>
+
+
+
             <div className="service-wrapper mb-5 service-white">
-              <div className="row">
+              <div className="row ">
                 <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div
-                    className="service service__style--1"
+                    className="service service__style--1 flex align-items-start gap-3"
                     data-aos="fade-up"
                     data-aos-duration="1000"
                   >
-                    <div className="icon">
+                    <div className="icon ">
                       {/* <img src={iconCard.src} alt="Digital Agency" /> */}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
-                        style={{ width: "80px", height: "80px" }}
+                        style={{ width: "30px", height: "30px" }}
                         stroke="green"
-                        className="size-6"
+                        // className="size-6"
                       >
                         <path
                           strokeLinecap="round"
@@ -67,9 +70,10 @@ export default function Bannar() {
                     </div>
                   </div>
                 </div>
+
                 <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div
-                    className="service service__style--1"
+                    className="service service__style--1 flex align-items-start gap-3"
                     data-aos="fade-up"
                     data-aos-duration="2000"
                   >
@@ -81,8 +85,8 @@ export default function Bannar() {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="green"
-                        className="size-6"
-                        style={{ width: "80px", height: "80px" }}
+                        // className="size-6"
+                        style={{ width: "30px", height: "30px" }}
                       >
                         <path
                           strokeLinecap="round"
@@ -103,9 +107,10 @@ export default function Bannar() {
                     </div>
                   </div>
                 </div>
+
                 <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div
-                    className="service service__style--1"
+                    className="service service__style--1 flex align-items-start gap-3"
                     data-aos="fade-up"
                     data-aos-duration="3000"
                   >
@@ -118,7 +123,7 @@ export default function Bannar() {
                         strokeWidth={1.5}
                         stroke="green"
                         className="size-6"
-                        style={{width:'80px',height:'80px'}}
+                        style={{ width: "30px", height: "30px" }}
                       >
                         <path
                           strokeLinecap="round"
