@@ -11,7 +11,7 @@ export default function VideoSection() {
           <Video
             title={"Quick Start"}
             body={"Don't forget to watch our quick start tutorial."}
-            src={"aCwgkONAi7U?si=UqNp8b9bfwohSbMY"}
+            src={"tdZNU7rZsyI"}
             className={"clad-v-bannar"}
             bannar={ChatPlus_VID}
           />
