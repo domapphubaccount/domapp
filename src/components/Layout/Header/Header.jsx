@@ -14,8 +14,8 @@ import byldIcon from "@/assets/images/Byld/iconlogo.png";
 import RDAppIcon from "@/assets/images/RDApp/logo.png";
 import ChatPlusIcon from "@/assets/images/chatPlus/logo.png";
 import Windmaster from "@/assets/images/windmaster/windmaster.png";
-import customizationIcon from "@/assets/images/customization/customization.png"
-import bondify from "@/assets/images/BondifyCRM/bondify.png"
+import customizationIcon from "@/assets/images/customization/customization.png";
+import bondify from "@/assets/images/BondifyCRM/bondify.png";
 
 export default function Header({ handleToggle }) {
   const headerScrol = useRef();
@@ -57,6 +57,8 @@ export default function Header({ handleToggle }) {
               alt="main logo"
               className="main_logo"
               style={{ cursor: "pointer" }}
+             
+              loading="eager"
             />
           </div>
           <div className="nav">
