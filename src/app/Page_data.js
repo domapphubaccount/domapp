@@ -17,15 +17,7 @@ import Wind_2 from "@/assets/images/Products_Page/Wind/W2.png"
 import Wind_3 from "@/assets/images/Products_Page/Wind/W3.png"
 import Wind_4 from "@/assets/images/Products_Page/Wind/W4.png"
 
-// CHATPLUS
-import Card_1 from "@/assets/images/Products_Page/Chat/Card_1.png"
-import Chat_card_1 from "@/assets/images/Products_Page/Chat/chat_card_1.png"
-import Card_2 from "@/assets/images/Products_Page/Chat/Card_2.png"
-import Chat_card_2 from "@/assets/images/Products_Page/Chat/chat_card_2.png"
-import Card_3 from "@/assets/images/Products_Page/Chat/Card_3.png"
-import Chat_card_3 from "@/assets/images/Products_Page/Chat/chat_card_3.png"
-import Card_4 from "@/assets/images/Products_Page/Chat/Card_4.png"
-import Chat_card_4 from "@/assets/images/Products_Page/Chat/chat_card_4.png"
+
 
 // ERP
 // import 

@@ -15,7 +15,7 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 import Link from "next/link";
-import Logo from "../../assets/images/Header/dark-logo.png";
+import Logo from "../../assets/images/Header/dark-logo.WebP";
 import { useRouter } from "next/navigation";
 
  
