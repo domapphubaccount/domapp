@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Logo from "../../../assets/images/Header/dark-logo.png";
+import Logo from "../../../assets/images/Header/dark-logo.WebP";
 import MobileNav from "./Mobile_nav/Mobile_nav";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
@@ -44,6 +44,7 @@ export default function Header({ handleToggle }) {
   };
   return (
     <header>
+      <link rel="preload" href="/_next/static/media/dark-logo.e6650319.WebP" as="image"></link>
       <Container className="nav-container">
         <div
           className={`navbar_container  nav_active`}
@@ -57,8 +58,11 @@ export default function Header({ handleToggle }) {
               alt="main logo"
               className="main_logo"
               style={{ cursor: "pointer" }}
-             
+              width={120}
+              height={47}
+              priority
               loading="eager"
+     
             />
           </div>
           <div className="nav">
@@ -95,11 +99,13 @@ export default function Header({ handleToggle }) {
                                     href={"/cladcut"}
                                     shallow
                                   >
-                                    <img
-                                      style={{ width: "15px", height: "15px" }}
+                                    <Image
+                                      width={15}
+                                      height={15}
                                       src={cladIcon.src}
                                       className="me-3"
-                                      alt=""
+                                      alt="CladCut"
+                                      style={{ height: '15px', width: '15px' }}                                       
                                     />
                                     <div>CladCut</div>
                                   </Link>
@@ -112,11 +118,13 @@ export default function Header({ handleToggle }) {
                                     shallow
                                   >
                                     {/* <i className="bi bi-wind me-3 float-none"></i>{" "} */}
-                                    <img
-                                      style={{ width: "15px", height: "15px" }}
+                                    <Image
+                                      width={15}
+                                      height={15}
                                       src={Windmaster.src}
                                       className="me-3"
-                                      alt=""
+                                      alt="WIND"
+                                      style={{ height: '15px', width: '15px' }}                                        
                                     />
                                     <div className="uppercase">WIND MASTER</div>
                                   </Link>
@@ -132,11 +140,13 @@ export default function Header({ handleToggle }) {
                                     href={"/bondifycrm"}
                                     shallow
                                   >
-                                    <img
-                                      style={{ width: "10px", height: "15px" }}
+                                    <Image
+                                      width={10}
+                                      height={15}
                                       src={bondify.src}
                                       className="me-3"
-                                      alt=""
+                                      alt="bondify"
+                                      style={{ height: '15px', width: '10px' }}  
                                     />
                                     {/* <i className="bi bi-kanban me-3 float-none"></i> */}
                                     <div>bondify CRM</div>
@@ -158,11 +168,14 @@ export default function Header({ handleToggle }) {
                                     href={"/rdapp"}
                                     shallow
                                   >
-                                    <img
-                                      style={{ width: "15px", height: "18px" }}
+                                    <Image
+                                      width={15}
+                                      height={18}
                                       src={RDAppIcon.src}
                                       className="me-3"
-                                      alt=""
+                                      alt="RDAPP"
+                                      style={{ height: '18px', width: '15px' }}  
+
                                     />
                                     <div className="mt-1">RDAPP</div>
                                   </Link>
@@ -179,11 +192,14 @@ export default function Header({ handleToggle }) {
                                     shallow
                                   >
                                     {/* <i className="bi bi-chat-square-text me-3 float-none"></i> */}
-                                    <img
-                                      style={{ width: "15px", height: "18px" }}
+                                    <Image
+                                      width={15}
+                                      height={18}
                                       src={ChatPlusIcon.src}
                                       className="me-3"
-                                      alt=""
+                                      alt="ChatPlus"
+                                      style={{ height: '18px', width: '15px' }}  
+
                                     />
                                     <div>ChatPlus</div>
                                   </Link>
@@ -199,11 +215,14 @@ export default function Header({ handleToggle }) {
                                     href={"/customization"}
                                     shallow
                                   >
-                                    <img
-                                      style={{ width: "20px", height: "20px" }}
+                                    <Image
+                                      width={18}
+                                      height={18}
                                       src={customizationIcon.src}
                                       className="me-3"
-                                      alt=""
+                                      alt="Custom"
+                                      style={{ height: '18px', width: '18px' }}  
+
                                     />
                                     {/* <i className="bi bi-code-slash me-3 float-none"></i> */}
                                     <div>Custom Software</div>
@@ -220,11 +239,14 @@ export default function Header({ handleToggle }) {
                                     href={"/grasshopper"}
                                     shallow
                                   >
-                                    <img
-                                      style={{ width: "20px", height: "20px" }}
+                                    <Image
+                                      width={20}
+                                      height={20}
                                       src={grassIcon.src}
                                       className="me-3"
-                                      alt=""
+                                      alt="Grasshopper"
+                                      style={{ height: '20px', width: '20px' }}  
+
                                     />{" "}
                                     <div>Grasshopper Modules</div>
                                   </Link>
@@ -240,11 +262,14 @@ export default function Header({ handleToggle }) {
                                     href={"/byld"}
                                     shallow
                                   >
-                                    <img
-                                      style={{ width: "15px", height: "20px" }}
+                                    <Image
+                                      width={15}
+                                      height={20}
                                       src={byldIcon.src}
                                       className="me-3"
-                                      alt=""
+                                      alt="BYLD"
+                                      style={{ height: '20px', width: '15px' }}  
+
                                     />
                                     <div>BYLD</div>
                                   </Link>

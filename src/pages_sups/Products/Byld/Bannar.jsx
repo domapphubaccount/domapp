@@ -1,7 +1,7 @@
 import React from "react";
 import bannarImg from "@/assets/images/Byld/intersect.svg";
-import subBannar from "@/assets/images/Byld/dashboard.png";
-import byldicon from "@/assets/images/Byld/logobyld.png";
+import subBannar from "@/assets/images/Byld/dashboard.WebP";
+import byldicon from "@/assets/images/Byld/logobyld.WebP";
 import blob from "@/assets/images/Byld/blob-tear.svg";
 import Link from "next/link";
 
@@ -75,7 +75,7 @@ function Bannar() {
         </div>
 
         <img
-          src="assets/imgs/elements/pattern.png"
+          src="assets/imgs/elements/pattern.WebP"
           alt=""
           style={{ minHeight: "600px" }}
         />

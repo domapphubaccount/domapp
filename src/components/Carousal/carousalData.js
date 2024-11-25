@@ -2,7 +2,7 @@ export const carousalData = [
   {
     index: 1,
     title: "CladCut",
-    src: "/Products/CladCut.png",
+    src: "/Products/CladCut.WebP",
     link: "/cladcut",
     icon: (
       <svg
@@ -29,7 +29,7 @@ export const carousalData = [
   {
     index: 2,
     title: "WIND MASTER",
-    src: "/Products/WINDMASTER.png",
+    src: "/Products/WINDMASTER.WebP",
     link: "/windmaster",
     icon: (
       <svg
@@ -92,7 +92,7 @@ export const carousalData = [
   {
     index: 3,
     title: "bondify CRM",
-    src: "/Products/BONDIFY CRM.png",
+    src: "/Products/BONDIFY CRM.WebP",
     link: "/bondifycrm",
     icon: (
 
@@ -135,7 +135,7 @@ export const carousalData = [
   {
     index: 4,
     title: "ChatPlus",
-    src: "/Products/DomCRM.png",
+    src: "/Products/DomCRM.WebP",
     link: "/chatplus",
     icon: (
       // <svg
@@ -209,7 +209,7 @@ l23 144 0 1560 0 1560 -23 144 c-97 610 -353 1125 -772 1555 -74 76 -182 176
   {
     index: 5,
     title: "RDAPP",
-    src: "/Products/RDAPP.png",
+    src: "/Products/RDAPP.WebP",
     link: "/rdapp",
     icon: (
       <svg
@@ -247,7 +247,7 @@ c-1307 -1 -1581 -3 -1646 -15z m2453 -1816 c0 -1171 1 -1143 -57 -1251 -88
   {
     index: 6,
     title: "Custom Software",
-    src: "/Products/CUSTOMIZATION.png",
+    src: "/Products/CUSTOMIZATION.WebP",
     link: "/customization",
     icon: (
       // <svg
@@ -332,7 +332,7 @@ c-1307 -1 -1581 -3 -1646 -15z m2453 -1816 c0 -1171 1 -1143 -57 -1251 -88
   {
     index: 7,
     title: "Grasshopper Modules",
-    src: "/Products/GRASSHOPPER.png",
+    src: "/Products/GRASSHOPPER.WebP",
     link: "/grasshopper",
     icon: (
       <svg
@@ -429,7 +429,7 @@ c-494 0 -673 -3 -785 -15 -363 -37 -529 -65 -656 -109 -65 -23 -292 -70 -464
   {
     index: 7,
     title: "BYLD",
-    src: "/Products/BYLD.png",
+    src: "/Products/BYLD.WebP",
     link: "/byld",
     icon: (
       <svg

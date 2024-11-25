@@ -3,6 +3,7 @@ import { Container } from "reactstrap";
 import cl1 from "@/assets/images/Clad/2.jpg";
 import arrow from "@/assets/images/Clad/arrow.svg";
 import checked from "@/assets/images/Clad/checkmark.png";
+import Image from "next/image";
 
 export default function Section_1() {
   return (
@@ -37,38 +38,46 @@ export default function Section_1() {
                 }}
               >
                 <div className="d-flex mb-3">
-                  <img
+                  <Image
                     src={checked.src}
                     alt=""
                     className="mx-3"
                     style={{ width: "30px", height: "30px" }}
+                    width={30}
+                    height={30}
                   />
                   An intuitive interface guides you through the process.
                 </div>
                 <div className="d-flex mb-3">
-                  <img
+                  <Image
                     src={checked.src}
                     alt=""
                     className="mx-3"
                     style={{ width: "30px", height: "30px" }}
+                    width={30}
+                    height={30}
                   />
                   Select your sheet size.
                 </div>
                 <div className="d-flex mb-3">
-                  <img
+                  <Image
                     src={checked.src}
                     alt=""
                     className="mx-3"
                     style={{ width: "30px", height: "30px" }}
+                    width={30}
+                    height={30}
                   />
                   Upload your cladding layout as a DXF.
                 </div>
                 <div className="d-flex mb-3">
-                  <img
+                  <Image
                     src={checked.src}
                     alt=""
                     className="mx-3"
                     style={{ width: "30px", height: "30px" }}
+                    width={30}
+                    height={30}
                   />
                   Sit back and let CladCut handle the rest.
                 </div>

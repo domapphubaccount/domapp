@@ -1,13 +1,13 @@
 "use client"
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import cont from "@/assets/images/Home_Page/customer-support.png";
 import Email from './email/Email';
 import Link from 'next/link';
 import { Tooltip } from 'reactstrap';
-import cross from '@/assets/images/Home_Page/cross.png'
+import cross from '@/assets/images/Home_Page/cross.png';
 
-export default function Contact({handleToggle,toggle,setToggle}) {
-    const [modal, setModal] = useState(false); 
+const Contact = ({ handleToggle, toggle, setToggle }) => {
+    const [modal, setModal] = useState(false);
     const [placebox, setPlacebox] = useState(false);
     const [timebox, setTimebox] = useState(false);
     const [whatsTooltipOpen, setWhatsTooltipOpen] = useState(false);
@@ -18,42 +18,42 @@ export default function Contact({handleToggle,toggle,setToggle}) {
     const boxPlaceRef = useRef(null);
     const boxTimeRef = useRef(null);
 
-    const handlePlaceToggle = () => {
-        setPlacebox(!placebox);
-    }
+    const handlePlaceToggle = useCallback(() => {
+        setPlacebox(prev => !prev);
+    }, []);
 
-    const handleTimeToggle = () => {
-        setTimebox(!timebox);
-    }
+    const handleTimeToggle = useCallback(() => {
+        setTimebox(prev => !prev);
+    }, []);
 
-    const toggleTooltip = (tooltip) => {
+    const toggleTooltip = useCallback((tooltip) => {
         switch (tooltip) {
             case 'whats':
-                setWhatsTooltipOpen(!whatsTooltipOpen);
+                setWhatsTooltipOpen(prev => !prev);
                 break;
             case 'contact':
-                setContactTooltipOpen(!contactTooltipOpen);
+                setContactTooltipOpen(prev => !prev);
                 break;
             case 'time':
-                setTimeTooltipOpen(!timeTooltipOpen);
+                setTimeTooltipOpen(prev => !prev);
                 break;
             case 'place':
-                setPlaceTooltipOpen(!placeTooltipOpen);
+                setPlaceTooltipOpen(prev => !prev);
                 break;
             default:
                 break;
         }
-    }
+    }, []);
 
     useEffect(() => {
-        function handleClickOutside(event) {
+        const handleClickOutside = (event) => {
             if (placebox && boxPlaceRef.current && !boxPlaceRef.current.contains(event.target)) {
                 setPlacebox(false);
             }
             if (timebox && boxTimeRef.current && !boxTimeRef.current.contains(event.target)) {
                 setTimebox(false);
             }
-        }
+        };
 
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
@@ -103,39 +103,38 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                         >
                             Work time
                         </Tooltip>
-                        
                         <i className="bi bi-clock-history"></i>
                         {timebox &&
                             <div className='box_place' data-aos="fade-up" data-aos-duration="500" ref={boxTimeRef}>
                                 <ul>
                                     <li className='d-flex'>
                                         <div className='me-2'>
-                                            <i className="bi bi-clock text-dark"></i> 
+                                            <i className="bi bi-clock text-dark"></i>
                                         </div>
                                         <div>
-                                         Saturday to Thursday from 
-                                         <div className='my-2'>
-                                            <span className='fw-bold text-light bg-primary rounded p-1'> 08:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>04:00 Pm</span>
-                                        </div>
-                                        <div>(Local Time in <span className='fw-bold'>Makkah, Saudi Arabia</span>)</div>
+                                            Saturday to Thursday from
+                                            <div className='my-2'>
+                                                <span className='fw-bold text-light bg-primary rounded p-1'> 08:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>04:00 Pm</span>
+                                            </div>
+                                            <div>(Local Time in <span className='fw-bold'>Makkah, Saudi Arabia</span>)</div>
                                         </div>
                                     </li>
                                     <li className='d-flex'>
                                         <div className='me-2'>
-                                            <i className="bi bi-clock text-dark"></i> 
+                                            <i className="bi bi-clock text-dark"></i>
                                         </div>
                                         <div>
-                                         Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>09:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>05:00 Pm</span></div>
-                                        <div>(Local Time in <span className='fw-bold'>Cairo, Egypt</span>)</div>
+                                            Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>09:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>05:00 Pm</span></div>
+                                            <div>(Local Time in <span className='fw-bold'>Cairo, Egypt</span>)</div>
                                         </div>
                                     </li>
                                     <li className='d-flex'>
                                         <div className='me-2'>
-                                            <i className="bi bi-clock text-dark"></i> 
+                                            <i className="bi bi-clock text-dark"></i>
                                         </div>
-                                        <div >
-                                         Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>05:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>02:00 Pm</span></div>
-                                        <div>(Local Time in <span className='fw-bold'>UTC</span>)</div>
+                                        <div>
+                                            Saturday to Thursday from <div className='my-2'><span className='fw-bold text-light bg-primary rounded p-1'>05:00 Am</span> <span className='fw-bold'>To</span> <span className='fw-bold text-light bg-primary rounded p-1'>02:00 Pm</span></div>
+                                            <div>(Local Time in <span className='fw-bold'>UTC</span>)</div>
                                         </div>
                                     </li>
                                 </ul>
@@ -156,16 +155,13 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                         {placebox &&
                             <div className='box_place' data-aos="fade-up" data-aos-duration="500" ref={boxPlaceRef}>
                                 <ul>
-                                    {/* <li>
-                                        <small className='fw-bold'>1- </small>2198 , Al Malaz, Salah Ad Din Al Ayyubi Rd, Building No. 7259 , Al Riyadh , Saudi Arabia
-                                    </li> */}
                                     <li className='d-flex'>
-                                    <div className='fw-bold me-2'>
-                                        <span> 
-                                            <i className="bi bi-geo-alt text-dark"></i>
-                                        </span>
-                                    </div>
-                                    <span>2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, Al Riyadh, Saudi Arabia</span>
+                                        <div className='fw-bold me-2'>
+                                            <span>
+                                                <i className="bi bi-geo-alt text-dark"></i>
+                                            </span>
+                                        </div>
+                                        <span>2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, Al Riyadh, Saudi Arabia</span>
                                     </li>
                                     <li className='d-flex'>
                                         <div className='fw-bold me-2'>
@@ -174,12 +170,12 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                         <span>Prince Mohamed Ibn Abdulrahman St, Ask Fayha Dist, Riyadh, Saudi Arabia</span>
                                     </li>
                                     <li className='d-flex'>
-                                    <div className='fw-bold me-2'>
-                                        <span> 
-                                            <i className="bi bi-geo-alt text-dark"></i>
-                                        </span>
-                                    </div>
-                                    <span>20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt</span>
+                                        <div className='fw-bold me-2'>
+                                            <span>
+                                                <i className="bi bi-geo-alt text-dark"></i>
+                                            </span>
+                                        </div>
+                                        <span>20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt</span>
                                     </li>
                                     <li className='d-flex'>
                                         <div className='fw-bold me-2'>
@@ -193,7 +189,6 @@ export default function Contact({handleToggle,toggle,setToggle}) {
                                         </div>
                                         <span>Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt</span>
                                     </li>
-
                                 </ul>
                             </div>
                         }
@@ -202,11 +197,13 @@ export default function Contact({handleToggle,toggle,setToggle}) {
             }
             <div className='contact_container'>
                 <div className='border_circle'></div>
-                <div className='contact_circle z-1 position-relative pointer' onClick={handleToggle} >
-                    <img src={!toggle ? cont.src : cross.src} alt=""/>
+                <div className='contact_circle z-1 position-relative pointer' onClick={handleToggle}>
+                    <img src={!toggle ? cont.src : cross.src} alt="" />
                 </div>
             </div>
-            <Email modal={modal} setModal={setModal}/>
+            <Email modal={modal} setModal={setModal} />
         </div>
     );
-}
+};
+
+export default React.memo(Contact);
