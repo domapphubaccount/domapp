@@ -3,7 +3,6 @@ import Bannar from "@/pages_sups/Products/RD/Bannar";
 import Section_2 from "@/pages_sups/Products/RD/RD/Section_2";
 import Section_3 from "@/pages_sups/Products/RD/RD/Section_3";
 import Section_4 from "@/pages_sups/Products/RD/RD/Section_4";
-import ScrollToTop from "react-scroll-to-top";
 import Section_1 from "@/pages_sups/Products/RD/RD/Section_1";
 import Section_5 from "@/pages_sups/Products/RD/RD/Section_5";
 import Section_7 from "@/pages_sups/Products/RD/RD/Section_7";
@@ -37,16 +36,7 @@ function Page() {
         body="RDAPP Provides Best Communication And Cost Monitoring"
       />
       <Section_7 />
-      <ScrollToTop
-        smooth
-        color="#fff"
-        style={{
-          backgroundColor: "#525A63",
-          padding: "5px",
-          borderRadius: "50%",
-          left: "20px",
-        }}
-      />
+
     </div>
   );
 }

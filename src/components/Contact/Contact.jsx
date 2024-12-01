@@ -5,8 +5,10 @@ import Email from './email/Email';
 import Link from 'next/link';
 import { Tooltip } from 'reactstrap';
 import cross from '@/assets/images/Home_Page/cross.png'
+import { useDispatch, useSelector } from 'react-redux';
+import { contact_Toggle } from '@/Store/reducers/Header';
 
-export default function Contact({handleToggle,toggle,setToggle}) {
+export default function Contact() {
     const [modal, setModal] = useState(false); 
     const [placebox, setPlacebox] = useState(false);
     const [timebox, setTimebox] = useState(false);
@@ -14,6 +16,10 @@ export default function Contact({handleToggle,toggle,setToggle}) {
     const [contactTooltipOpen, setContactTooltipOpen] = useState(false);
     const [timeTooltipOpen, setTimeTooltipOpen] = useState(false);
     const [placeTooltipOpen, setPlaceTooltipOpen] = useState(false);
+
+    const dispatch = useDispatch()
+    const contact_toggle = useSelector(state => state.headerRed.contact_Toggle)
+
 
     const boxPlaceRef = useRef(null);
     const boxTimeRef = useRef(null);
@@ -63,7 +69,7 @@ export default function Contact({handleToggle,toggle,setToggle}) {
 
     return (
         <div className='contact_center'>
-            {toggle &&
+            {contact_toggle &&
                 <div data-aos="fade-up">
                     <div className='contact_circle_content pointer' id='whats' onClick={() => toggleTooltip('whats')}>
                         <Tooltip
@@ -202,8 +208,8 @@ export default function Contact({handleToggle,toggle,setToggle}) {
             }
             <div className='contact_container'>
                 <div className='border_circle'></div>
-                <div className='contact_circle z-1 position-relative pointer' onClick={handleToggle} >
-                    <img src={!toggle ? cont.src : cross.src} alt=""/>
+                <div className='contact_circle z-1 position-relative pointer' onClick={()=>dispatch(contact_Toggle(!contact_toggle))} >
+                    <img src={!contact_toggle ? cont.src : cross.src} alt=""/>
                 </div>
             </div>
             <Email modal={modal} setModal={setModal}/>

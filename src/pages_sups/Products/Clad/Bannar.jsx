@@ -75,7 +75,7 @@ export default function Bannar() {
                             </span>
                           </h4>
                           <p className="fw-bold">
-                            Users <br /> <div className="pt-2 pb-3"></div>
+                            Users
                           </p>
                         </div>
                         <ul className="style-none p-0 d-flex align-items-center justify-content-center rating-star mt-15">

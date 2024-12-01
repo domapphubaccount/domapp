@@ -14,19 +14,21 @@ import byldIcon from "@/assets/images/Byld/iconlogo.png";
 import RDAppIcon from "@/assets/images/RDApp/logo.png";
 import ChatPlusIcon from "@/assets/images/chatPlus/logo.png";
 import Windmaster from "@/assets/images/windmaster/windmaster.png";
-import customizationIcon from "@/assets/images/customization/customization.png"
-import bondify from "@/assets/images/BondifyCRM/bondify.png"
+import customizationIcon from "@/assets/images/customization/customization.png";
+import bondify from "@/assets/images/BondifyCRM/bondify.png";
+import { useDispatch } from "react-redux";
+import { contact_Toggle } from "@/Store/reducers/Header";
 
-export default function Header({ handleToggle }) {
+import { header } from "@/Store/constant_data/App";
+
+export default function Header() {
   const headerScrol = useRef();
   const [getWidowY, setWindowY] = useState(0);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [open, setOpen] = React.useState(false);
   const router = useRouter();
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
-  const pathname = usePathname();
-
-  // console.log()
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +64,68 @@ export default function Header({ handleToggle }) {
           <div className="nav">
             <nav>
               <ul className="nav-list-container">
-                <li>
+                {header &&
+                  header.map((item, i) => (
+                    <li
+                      key={i}
+                      className="custom-dropdown"
+                      onMouseEnter={item.name === "PRODUCTS" ? toggleDropdown : ()=>''}
+                      onMouseLeave={item.name === "PRODUCTS" ? toggleDropdown : ()=>''}
+                    >
+                      {console.log(item.name)}
+                      <Link href="/#products" className="nav-link-item">
+                        {item.name}
+                      </Link>
+                      {item.list && dropdownOpen && (
+                        <div
+                          className="dropdown-menu-cust shadow_inside"
+                          data-aos="fade-up"
+                          data-aos-duration="300"
+                        >
+                          <ul className="products-category first-col">
+                            {item.list.map((listItem, index) => (
+                              <li key={index}>
+                                <div>
+                                  {listItem.title}
+                                  {listItem.sub_title && (
+                                    <div className="text-secondary">
+                                      {listItem.sub_title}
+                                    </div>
+                                  )}
+                                </div>
+
+                                <ul>
+                                  {listItem.products.map((product, index) => (
+                                    <li key={index} onClick={handleClick}>
+                                      <Link
+                                        className="d-block w-100 h-100 d-flex items-center"
+                                        href={product.link}
+                                        shallow
+                                      >
+                                        <img
+                                          style={{
+                                            width: "15px",
+                                            height: "15px",
+                                          }}
+                                          src={product.img.src}
+                                          className="me-3"
+                                          alt=""
+                                        />
+                                        <div className="mt-1">
+                                          {product.name}
+                                        </div>
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </li>
+                  ))}
+                {/* <li>
                   <Link href="/#home" className="nav-link-item" shallow>
                     HOME
                   </Link>
@@ -109,7 +172,6 @@ export default function Header({ handleToggle }) {
                                     href={"/windmaster"}
                                     shallow
                                   >
-                                    {/* <i className="bi bi-wind me-3 float-none"></i>{" "} */}
                                     <img
                                       style={{ width: "15px", height: "15px" }}
                                       src={Windmaster.src}
@@ -130,13 +192,12 @@ export default function Header({ handleToggle }) {
                                     href={"/bondifycrm"}
                                     shallow
                                   >
-                                        <img
+                                    <img
                                       style={{ width: "10px", height: "15px" }}
                                       src={bondify.src}
                                       className="me-3"
                                       alt=""
                                     />
-                                    {/* <i className="bi bi-kanban me-3 float-none"></i> */}
                                     <div>bondify CRM</div>
                                   </Link>
                                 </li>
@@ -144,7 +205,7 @@ export default function Header({ handleToggle }) {
                             </li>
                             <li>
                               <div>
-                                Risk Assessment{" "}
+                                Risk Assessment
                                 <div className="text-secondary">
                                   comply with SBC
                                 </div>
@@ -176,7 +237,6 @@ export default function Header({ handleToggle }) {
                                     href={"/chatplus"}
                                     shallow
                                   >
-                                    {/* <i className="bi bi-chat-square-text me-3 float-none"></i> */}
                                     <img
                                       style={{ width: "15px", height: "18px" }}
                                       src={ChatPlusIcon.src}
@@ -203,7 +263,6 @@ export default function Header({ handleToggle }) {
                                       className="me-3"
                                       alt=""
                                     />
-                                    {/* <i className="bi bi-code-slash me-3 float-none"></i> */}
                                     <div>Custom Software</div>
                                   </Link>
                                 </li>
@@ -223,7 +282,7 @@ export default function Header({ handleToggle }) {
                                       src={grassIcon.src}
                                       className="me-3"
                                       alt=""
-                                    />{" "}
+                                    />
                                     <div>Grasshopper Modules</div>
                                   </Link>
                                 </li>
@@ -264,9 +323,12 @@ export default function Header({ handleToggle }) {
                   <Link href="/#about" className="nav-link-item" shallow>
                     ABOUT US
                   </Link>
-                </li>
+                </li> */}
                 <li>
-                  <a onClick={handleToggle} className="pointer nav-link-item">
+                  <a
+                    onClick={() => dispatch(contact_Toggle(true))}
+                    className="pointer nav-link-item"
+                  >
                     CONTACT US
                   </a>
                 </li>

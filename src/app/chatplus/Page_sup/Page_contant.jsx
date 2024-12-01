@@ -3,7 +3,6 @@ import Section_2 from "@/pages_sups/Products/Chat/Chat/Section_2";
 import Section_3_Chat from "@/pages_sups/Products/Chat/Chat/Section_3";
 import Bannar from "@/pages_sups/Products/Chat/Bannar";
 import Section_head from "@/components/Reuse/Section_Head/Section_head";
-import ScrollToTop from "react-scroll-to-top";
 import Section_4 from "@/pages_sups/Products/Chat/Chat/Section_4";
 import Section_1 from "@/pages_sups/Products/Chat/Chat/Section_1";
 
@@ -19,16 +18,6 @@ export default function Page() {
         <Section_head heads={1} title_1={"Features"} sectionId={"chat2"} />
       </div>
       <Section_3_Chat />
-      <ScrollToTop
-        smooth
-        color="#fff"
-        style={{
-          backgroundColor: "#525A63",
-          padding: "5px",
-          borderRadius: "50%",
-          left: "20px",
-        }}
-      />
     </div>
   );
 }

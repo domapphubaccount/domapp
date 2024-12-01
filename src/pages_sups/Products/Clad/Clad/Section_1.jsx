@@ -26,7 +26,7 @@ export default function Section_1() {
               >
                 Effortless Workflow
               </h2>
-              <p
+              <div
                 className="mil-up mil-mb-40"
                 style={{
                   translate: "none",
@@ -72,7 +72,7 @@ export default function Section_1() {
                   />
                   Sit back and let CladCut handle the rest.
                 </div>
-              </p>
+              </div>
             </div>
           </div>
           <div className="col-lg-6">
