@@ -4,47 +4,16 @@ import {
   StackedCarousel,
   ResponsiveContainer,
 } from "react-stacked-center-carousel";
-// import Fab from "@material-ui/core/Fab";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Fab } from "@mui/material";
-
-const cardsData = [
-        
-  {
-      title: 'Our Mission',
-      description: 'To enhance our customer’s success through unique solutions.     ',
-      link: '/cladCut'
-  },
-  {
-      title: 'Cutting-Edge Software',
-      description: 'We specialize in developing applications that meets the needs of our clients with precision and creativity, utilizing the latest tech and frameworks.',
-      link: '/cladCut'
-  },
-  {
-      title: 'Tech Advancement',
-      description: 'Embracing innovation in artificial intelligence, virtual reality, and big data analytics to drive our clients, businesses forward with creativity and expertise.' ,
-      link: '/cladCut'
-  },
-  {
-      title: 'Creative Innovation',
-      description: 'From CladCut to ChatPlus, our projects showcase our commitment to pushing boundaries and creating groundbreaking solutions that make a difference. ',
-      link: '/cladCut'
-  },
-  {
-      title: 'Specialized Solutions',
-      description: 'Crafting custom applications to fulfill unique requirements and objectives, ensuring our clients, success and business growth. ',
-      link: '/cladCut'
-  },
-  {
-      title: 'Client-Centric Approach',
-      description: 'Putting our clients at the heart of everything we do, we strive to exceed expectations and deliver exceptional results that propel their success.',
-      link: '/cladCut'
-  },
-]
+import { useSelector } from "react-redux";
 
 
 export default function ResponsiveCarousel(props) {
+    const { what_we_do } = useSelector(
+    (state) => state.MainData.content.pages.product_page.home.sections
+  );
   const ref = React.useRef();
   return (
     <div style={{ width: "100%", position: "relative" }}>
@@ -52,15 +21,13 @@ export default function ResponsiveCarousel(props) {
         carouselRef={ref}
         render={(parentWidth, carouselRef) => {
           let currentVisibleSlide = 5;
-          // if (parentWidth <= 1440) currentVisibleSlide = 5;
-          // if (parentWidth <= 1080) currentVisibleSlide = 1;
           return (
             <StackedCarousel
               ref={carouselRef}
               slideComponent={Card}
               slideWidth={400}
               carouselWidth={parentWidth}
-              data={cardsData}
+              data={what_we_do.main.slices}
               currentVisibleSlide={currentVisibleSlide}
               maxVisibleSlide={5}
               useGrabCursor

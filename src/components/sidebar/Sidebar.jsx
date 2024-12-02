@@ -1,38 +1,26 @@
-"use client"
+"use client";
 import React from "react";
 import {
   Drawer,
-  Button,
   Typography,
   IconButton,
   List,
   ListItem,
-  ListItemPrefix,
-  ListItemSuffix,
-  Chip,
   Accordion,
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import Image from "next/image";
+import { header } from "@/Store/Main/App/header/header";
 import Link from "next/link";
-import Logo from "../../assets/images/Header/dark-logo.png";
-import { useRouter } from "next/navigation";
 
- 
-export default function Sidebar({items}) {
+export default function Sidebar({ items }) {
   const [open, setOpen] = React.useState(false);
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
   const [openAccordion, setOpenAccordion] = React.useState(2);
- 
-  const handleOpen = (value) => setOpenAccordion(openAccordion === value ? 0 : value);
- 
-  const navigate = useRouter()
-
-  const handleNavigate = (link) => {
-    navigate.push(link)
-  }
-
+  const handleOpen = (value) =>
+    setOpenAccordion(openAccordion === value ? 0 : value);
 
   function Icon({ id, open }) {
     return (
@@ -42,41 +30,53 @@ export default function Sidebar({items}) {
         viewBox="0 0 24 24"
         strokeWidth={2}
         stroke="currentColor"
-        className={`${id === open ? "rotate-180" : ""} h-5 w-5 transition-transform`}
+        className={`${
+          id === open ? "rotate-180" : ""
+        } h-5 w-5 transition-transform`}
       >
-        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+        />
       </svg>
     );
   }
 
-  const idItems = [
-    {
-      link:"/#whatwedo",
-      title: "WHAT WE DO"
-    }
-    ,
-    {
-      link: "/#about",
-      title: "ABOUT US"
-    }
-  ]
- 
   return (
     <React.Fragment>
-      <i onClick={openDrawer} className="bi bi-list nav_toggle"></i>
-      <Drawer open={open} onClose={closeDrawer}>
-        <div className="mb-2 flex items-center justify-between p-4">
-          <Typography variant="h5" color="blue-gray">
-            <img src={Logo.src} alt="logo" className="main_logo"/>
+      <i
+        onClick={openDrawer}
+        className="bi bi-list nav_toggle cursor-pointer text-2xl text-gray-700 hover:text-blue-500"
+      ></i>
+      <Drawer
+        open={open}
+        onClose={closeDrawer}
+        className="bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white overflow-auto"
+      >
+        <div className="mb-4 flex items-center justify-between p-1">
+          <Typography variant="h5" color="white">
+            <Image
+              src={header.logo.src}
+              width={120}
+              height={50}
+              alt="logo"
+              className="main_logo"
+            />
           </Typography>
-          <IconButton variant="text" color="blue-gray" onClick={closeDrawer}>
+          <IconButton
+            variant="text"
+            color="white"
+            onClick={closeDrawer}
+            className="hover:bg-gray-700"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={2}
               stroke="currentColor"
-              className="h-5 w-5"
+              className="h-6 w-6"
             >
               <path
                 strokeLinecap="round"
@@ -86,41 +86,61 @@ export default function Sidebar({items}) {
             </svg>
           </IconButton>
         </div>
-        <List>
-
-
-        <Accordion open={openAccordion === 2} icon={<Icon id={2} open={openAccordion} />}>
-          <AccordionHeader onClick={() => handleOpen(2)} className="p-2 mb-4">
-            Products
-          </AccordionHeader>
-          <AccordionBody>
-          {items.map((item,index)=>(
-
-          <ListItem key={index} onClick={()=>handleNavigate(item.link)}>
-            <ListItemPrefix>
-              <div className="flex">
-                <div className="mx-2">{item.icon}</div>
-                <div>{item.title}</div>
-              </div>
-            </ListItemPrefix>
-          </ListItem>
-          ))}
-          </AccordionBody>
-        </Accordion>
-
-
-        {idItems.map((item,index)=>(
-            <Accordion key={index} onClick={()=>{navigate.push(item.link);setOpen(false)}}>
-              <AccordionHeader  className="p-2">
-                    {item.title}
-              </AccordionHeader>
-            </Accordion>
-        
-          ))}
+        <List className="p-2 space-y-2">
+          {header &&
+            header.nav.map((item, i) => (
+              <Accordion
+                key={i}
+                open={openAccordion === i}
+                icon={item.list ? <Icon id={i} open={openAccordion} /> : null}
+                className="bg-gray-700 rounded-lg"
+              >
+                <AccordionHeader
+                  onClick={() => handleOpen(i)}
+                  className="mb-2 p-0 text-lg text-white hover:bg-gray-600 rounded-lg"
+                >
+                  <Link href={item.link} className="nav-link w-100 p-2" >{item.name}</Link>
+                </AccordionHeader>
+                {item.list && (
+                  <AccordionBody className="bg-gray-800 p-1 rounded-lg">
+                    {item.list.map((products_section, index) => (
+                      <ListItem
+                        key={index}
+                        className="p-1 text-white hover:bg-gray-700 rounded-lg cursor-pointer"
+                      >
+                        <div className="w-100">
+                          <div className="text-base font-semibold w-100">
+                            {products_section.title}
+                          </div>
+                          <div className="mt-2 space-y-2 w-100">
+                            {products_section.products.map((product, index) => (
+                              <div
+                                key={index}
+                                className="space-x-3 p-2 w-100  hover:bg-gray-600"
+                              >
+                                <Link href={product.link} className="flex items-center no-underline	">
+                                  <Image
+                                    src={product.img}
+                                    width={20}
+                                    height={20}
+                                    alt={product.name}
+                                    className="rounded-full me-2"
+                                  />
+                                  <span className="text-sm text-gray-300">
+                                    {product.name}
+                                  </span>
+                                </Link>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </ListItem>
+                    ))}
+                  </AccordionBody>
+                )}
+              </Accordion>
+            ))}
         </List>
-        {/* <Button className="mt-3 ml-5" size="sm">
-          Documentation
-        </Button> */}
       </Drawer>
     </React.Fragment>
   );

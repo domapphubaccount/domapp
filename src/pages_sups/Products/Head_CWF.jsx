@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "reactstrap";
-import { league } from "../Home/Section_1/Section_1";
+import { league } from "../Home/Bannar/Bannar";
 
 export default function Head_CWF({ head, body }) {
   return (

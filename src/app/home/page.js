@@ -1,0 +1,22 @@
+"use client";
+import Carousal from "@/components/Carousal/Carousal";
+import Footer from "@/components/Layout/Footer/Footer";
+import Header from "@/components/Layout/Header/Header";
+import Bannar from "@/pages_sups/Home/Bannar/Bannar";
+import About from "@/pages_sups/Home/About/About";
+import CounterData from "@/pages_sups/Home/CounterData/CounterData";
+import WhatWeDo from "@/pages_sups/Home/WhatWeDo/WhatWeDo";
+
+export default function Home() {
+  return (
+    <main className="overflow-hidden">
+      <Header/>
+      <Bannar />
+      <About />
+      <WhatWeDo />
+      <Carousal />
+      <CounterData />
+      <Footer />
+    </main>
+  );
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Drop from "@/assets/images/back_drops/drop9.png";
-import { league } from "@/pages_sups/Home/Section_1/Section_1";
+import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import iconCard from "@/assets/images/Products_Page/Customization/icon.png";
 import iconCard2 from "@/assets/images/Grasshopper/icon-2.png";
 import iconCard3 from "@/assets/images/Grasshopper/icon-3.png";

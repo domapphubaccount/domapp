@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import labtop from "@/assets/images/Products_Page/Rd/bannar_lab.png";
-import { league } from "@/pages_sups/Home/Section_1/Section_1";
+import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import Shap_1 from "@/assets/images/Products_Page/Rd/mask-shape.png";
 import Shap_2 from "@/assets/images/Products_Page/Rd/line-shape.png";
 import Link from "next/link";

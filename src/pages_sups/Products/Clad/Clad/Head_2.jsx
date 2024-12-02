@@ -1,4 +1,4 @@
-import { league } from "@/pages_sups/Home/Section_1/Section_1";
+import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import React from "react";
 import { Container } from "reactstrap";
 

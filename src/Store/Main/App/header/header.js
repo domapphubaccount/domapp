@@ -1,14 +1,17 @@
-import { bondifycrmIcon, byldIcon, chatplusIcon, cladIcon, customizationIcon, grassIcon, rdappIcon, windmasterIcon } from "./images";
+import { bondifycrmIcon, byldIcon, chatplusIcon, cladIcon, customizationIcon, grassIcon, logo, rdappIcon, windmasterIcon } from "../../assets/images"
+import { about_section, bondifycrm_page, byld_page, chatplus_page, cladcut_page, customization_page, grasshopper_page, home_section, products_section, rdapp_page, whatwedo_section, windmaster_page } from "../../links/links";
 
-export const header = [
+export const header = {
+    logo,
+    nav:[
   {
     name: "HOME",
-    link: "/#home",
+    link: `/${home_section}` ,
     list: false,
   },
   {
     name: "PRODUCTS",
-    link: "/#products",
+    link: `/${products_section}`,
     list: [
       {
         title: "Design Software",
@@ -17,12 +20,12 @@ export const header = [
           {
             name: "CladCut",
             img: cladIcon,
-            link: "/cladcut",
+            link: cladcut_page,
           },
           {
             name: "Wind Master",
             img: windmasterIcon,
-            link: "/windmaster",
+            link: windmaster_page,
           },
         ],
       },
@@ -33,7 +36,7 @@ export const header = [
           {
             name: "bondify CRM",
             img: bondifycrmIcon,
-            link: "/bondifycrm",
+            link: bondifycrm_page,
           },
         ],
       },
@@ -44,7 +47,7 @@ export const header = [
           {
             name: "RDAPP",
             img: rdappIcon,
-            link: "/rdapp",
+            link: rdapp_page,
           },
         ],
       },
@@ -55,7 +58,7 @@ export const header = [
           {
             name: "ChatPlus",
             img: chatplusIcon,
-            link: "/chatplus",
+            link: chatplus_page,
           },
         ],
       },
@@ -66,7 +69,7 @@ export const header = [
           {
             name: "Custom Software",
             img: customizationIcon,
-            link: "/customization",
+            link: customization_page,
           },
         ],
       },
@@ -77,12 +80,12 @@ export const header = [
           {
             name: "Grasshopper Modules",
             img: grassIcon,
-            link: "/grasshopper",
+            link: grasshopper_page,
           },
           {
             name: "BYLD",
             img: byldIcon,
-            link: "/byld",
+            link: byld_page,
           },
         ],
       },
@@ -90,12 +93,12 @@ export const header = [
   },
   {
     name: "WHAT WE DO",
-    link: "/#whatwedo",
+    link: `/${whatwedo_section}`,
     list: false,
   },
   {
     name: "ABOUT US",
-    link: "/#about",
+    link: `/${about_section}`,
     list: false,
   },
-];
+]};

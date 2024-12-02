@@ -1,10 +1,4 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import Link from 'next/link';
-import Lang from '../LNG/Lang';
 import Sidebar from '@/components/sidebar/Sidebar';
 import cladIcon from "@/assets/images/Clad/ICON.png"
 import byldIcon from "@/assets/images/Byld/iconlogo.png"
@@ -15,24 +9,20 @@ import customization from "@/assets/images/customization/customization.png"
 import grass from "@/assets/images/Grasshopper/insect.png"
 import bondify from "@/assets/images/BondifyCRM/bondify.png"
 
+import { header } from '@/Store/Main/App/header/header';
+
 
 export default function MobileNav() {
   const [state, setState] = React.useState({
     top: false,
   });
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
 
-    setState({ ...state, [anchor]: open });
-  };
   const items = [
     {
       index: 1,
       title: 'CladCut',
       link:'/cladcut',
-      icon:   <img style={{width:'15px',height:'15px'}} src={cladIcon.src} alt='' /> 
+      icon: ''
     },
     {
       index: 2,

@@ -1,28 +1,18 @@
 import { Col, Container, Row } from "reactstrap";
 import CountUp from 'react-countup';
 import { InView } from 'react-intersection-observer';
+import { useSelector } from "react-redux";
 
-export default function Section_3() {
-    const counterData = [
-        {
-            number: 300,
-            title: 'Clients'
-        },
-        {
-            number: 20,
-            title: 'Products'
-        },
-        {
-            number: 25000,
-            title: 'Successful Jobs'
-        },
-    ];
+export default function CounterData() {
+    const { counterdata } = useSelector(
+        (state) => state.MainData.content.pages.product_page.home.sections
+      );
 
     return (
         <section className="home_section_3 shadow_inside">
             <Container>
                 <Row>
-                    {counterData.map((item, index) => (
+                    {counterdata.map((item, index) => (
                         <Col key={index} sm="4" className="my-4">
                             <InView>
                                 {({ ref, inView }) => (

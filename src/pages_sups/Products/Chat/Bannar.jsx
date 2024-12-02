@@ -1,5 +1,5 @@
 import React from "react";
-import { league } from "@/pages_sups/Home/Section_1/Section_1";
+import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import Link from "next/link";
 import Logo from "@/assets/images/chatPlus/logo-slogan.png";
 import BannarIMG from "@/assets/images/chatPlus/img.png"
