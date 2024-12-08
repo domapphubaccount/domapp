@@ -5,9 +5,9 @@ import { useSelector } from "react-redux";
 export const league = League_Spartan({ subsets: ["latin"] });
 
 export default function Bannar() {
-  const { home } = useSelector(
-    (state) => state.MainData.content.pages.product_page
-  );
+  const lang = useSelector((state) => state.languageSlice.lang);
+  const home = useSelector(state => state.homeRed.home)
+
 
   return (
     <section
@@ -20,13 +20,13 @@ export default function Bannar() {
           <div className="dark_bannar"></div>
           <div className="bannar_container">
             <div data-aos="fade-left" data-aos-duration="3000">
-              <h1 className={league.className}>{home.sections.bannar.title}</h1>
-              <p>{home.sections.bannar.slogan}</p>
+              <h1 className={league.className}>{home(lang).sections.bannar.title}</h1>
+              <p>{home(lang).sections.bannar.slogan}</p>
               <a
                 href={linksData.home.bannar.get_started}
                 className="get_started"
               >
-                {home.sections.bannar.button}
+                {home(lang).sections.bannar.button}
               </a>
             </div>
           </div>

@@ -11,9 +11,9 @@ import { useSelector } from "react-redux";
 
 
 export default function ResponsiveCarousel(props) {
-    const { what_we_do } = useSelector(
-    (state) => state.MainData.content.pages.product_page.home.sections
-  );
+
+  const lang = useSelector((state) => state.languageSlice.lang);
+  const home = useSelector(state => state.homeRed.home);
   const ref = React.useRef();
   return (
     <div style={{ width: "100%", position: "relative" }}>
@@ -27,7 +27,7 @@ export default function ResponsiveCarousel(props) {
               slideComponent={Card}
               slideWidth={400}
               carouselWidth={parentWidth}
-              data={what_we_do.main.slices}
+              data={home(lang).sections.what_we_do.main.slices}
               currentVisibleSlide={currentVisibleSlide}
               maxVisibleSlide={5}
               useGrabCursor

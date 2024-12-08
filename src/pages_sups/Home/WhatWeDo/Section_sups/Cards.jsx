@@ -1,16 +1,14 @@
 import { Col, Row } from "reactstrap";
-import ResponsiveCarousel from "./Carousal";
 import { useSelector } from "react-redux";
 
 export default function Cards() {
-  const { what_we_do } = useSelector(
-    (state) => state.MainData.content.pages.product_page.home.sections
-  );
+  const lang = useSelector((state) => state.languageSlice.lang);
+  const home = useSelector(state => state.homeRed.home);
 
   return (
     <div className="py-5">
       <Row>
-        {what_we_do.main.slices.map((item, index) => (
+        {home(lang).sections.what_we_do.main.slices.map((item, index) => (
           <Col
             key={index}
             sm={12}
@@ -31,8 +29,6 @@ export default function Cards() {
           </Col>
         ))}
       </Row>
-
-      {/* <ResponsiveCarousel /> */}
     </div>
   );
 }

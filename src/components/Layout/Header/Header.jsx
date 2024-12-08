@@ -1,26 +1,23 @@
 "use client";
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import MobileNav from "./Mobile_nav/Mobile_nav";
 import { Container } from "reactstrap";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import PositionedSnackbar from "@/components/Reuse/Section_Head/SnackBar";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { contact_Toggle } from "@/Store/reducers/Header";
-import { header } from "@/Store/Main/App/header/header";
+import dynamic from "next/dynamic";
+
+const Sidebar = dynamic(() => import("../Sidebar/Sidebar"), { ssr: false });
 
 export default function Header() {
   const headerScrol = useRef();
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [open, setOpen] = React.useState(false);
   const router = useRouter();
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
   const dispatch = useDispatch();
-
-  const handleClick = () => () => {
-    setOpen(true);
-  };
+  const header = useSelector((state) => state.headerRed.header);
+  const lang = useSelector((state) => state.languageSlice.lang);
 
   return (
     <header>
@@ -33,7 +30,7 @@ export default function Header() {
           <div className="d-flex items-center">
             <Image
               onClick={() => router.push("/")}
-              src={header.logo}
+              src={header(lang).logo}
               alt="main logo"
               className="main_logo cursor-pointer"
             />
@@ -41,15 +38,23 @@ export default function Header() {
           <div className="nav">
             <nav>
               <ul className="nav-list-container">
-                {header &&
-                  header.nav.map((item, i) => (
+                {header(lang) &&
+                  header(lang).nav.map((item, i) => (
                     <li
                       key={i}
                       className="custom-dropdown"
-                      onMouseEnter={item.name === "PRODUCTS" ? toggleDropdown : ()=>''}
-                      onMouseLeave={item.name === "PRODUCTS" ? toggleDropdown : ()=>''}
+                      onMouseEnter={item.list ? toggleDropdown : () => ""}
+                      onMouseLeave={item.list ? toggleDropdown : () => ""}
                     >
-                      <Link href={item.link} className="nav-link-item">
+                      <Link
+                        href={item.link}
+                        className="nav-link-item"
+                        onClick={
+                          item.contact
+                            ? () => dispatch(contact_Toggle(true))
+                            : ""
+                        }
+                      >
                         {item.name}
                       </Link>
                       {item.list && dropdownOpen && (
@@ -72,7 +77,7 @@ export default function Header() {
 
                                 <ul>
                                   {listItem.products.map((product, index) => (
-                                    <li key={index} onClick={handleClick}>
+                                    <li key={index}>
                                       <Link
                                         className="d-block w-100 h-100 d-flex items-center"
                                         href={product.link}
@@ -99,27 +104,14 @@ export default function Header() {
                       )}
                     </li>
                   ))}
-                <li>
-                  <a
-                    onClick={() => dispatch(contact_Toggle(true))}
-                    className="pointer nav-link-item"
-                  >
-                    CONTACT US
-                  </a>
-                </li>
               </ul>
             </nav>
           </div>
           <div className="mobile_nav">
-            <MobileNav />
+            <Sidebar />
           </div>
         </div>
       </Container>
-      <PositionedSnackbar
-        handleClick={handleClick}
-        setOpen={setOpen}
-        open={open}
-      />
     </header>
   );
 }

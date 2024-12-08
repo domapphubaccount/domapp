@@ -3,14 +3,18 @@ import CladBannar from "@/assets/images/Clad/Logo_Bannar.png";
 import Image from "next/image";
 
 import Shape_1 from "@/assets/images/Clad/shape.svg";
-import Shape_2 from "@/assets/images/Clad/shape_2.svg";
+import { useSelector } from "react-redux";
+import { cladcut_site } from "@/Store/Main/links/links";
 
 export default function Bannar() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { cladcut } = useSelector((state) => state.cladcutRed);
+
   return (
     <section className="cladCut-bannar">
       <div className="products2">
         <div className="load-speed-section py-5 pt-160 pb-160 lg-pt-100 lg-pb-80 mil-top-space clad-background">
-          <div className="container relative" style={{ zIndex: "3" }}>
+          <div className="container relative" style={{ zIndex: "3" }} dir={dir}>
             <div className="row align-items-center justify-between">
               <div
                 className="col-xxl-5 col-lg-6 wow fadeInLeft"
@@ -27,19 +31,20 @@ export default function Bannar() {
                   </h2>
                 </div>
                 <div className="slogan my-5 fw-bold">
-                  Produce detailed fabrication drawings with <span className="position-relative d-inline-block"> exceptional speed
-                    {/* <img src={Shape_2.src} className="absolute" alt="" /> */}
-                  </span>{" "}
-                  and efficiency.
+                  {cladcut(lang).sections.bannar.slogan.first}
+                  <span className="position-relative d-inline-block">
+                    {cladcut(lang).sections.bannar.slogan.seconed}
+                  </span>
+                  {cladcut(lang).sections.bannar.slogan.end}
                 </div>
 
                 <div className="flex">
                   <a
                     style={{ textDecoration: "none" }}
-                    href="https://cladcut.domapphub.com/"
+                    href={cladcut_site}
                   >
                     <button className="try-button">
-                      TRY FOR FREE
+                      {cladcut(lang).sections.bannar.try_btn}
                       <div className="arrow-wrapper">
                         <div className="arrow"></div>
                       </div>
@@ -47,14 +52,16 @@ export default function Bannar() {
                   </a>
                   <a
                     style={{ textDecoration: "none" }}
-                    href="https://cladcut.domapphub.com/pricing/"
+                    href={`${cladcut_site}pricing/`}
                   >
-                    <button className="try-button mx-3">PRICING</button>
+                    <button className="try-button mx-3">
+                      {cladcut(lang).sections.bannar.pricing_btn}
+                    </button>
                   </a>
                 </div>
               </div>
 
-              <div className="col-lg-6" style={{marginTop: '40px'}}>
+              <div className="col-lg-6" style={{ marginTop: "40px" }}>
                 <div className="block-container position-relative ps-sm-3 pe-sm-3 ps-xl-5 pe-xl-5 md-mt-40">
                   <div className="row gx-xxl-5 align-items-center">
                     <div
@@ -74,9 +81,7 @@ export default function Bannar() {
                               100+
                             </span>
                           </h4>
-                          <p className="fw-bold">
-                            Users
-                          </p>
+                          <p className="fw-bold">{cladcut(lang).sections.bannar.slice.users}</p>
                         </div>
                         <ul className="style-none p-0 d-flex align-items-center justify-content-center rating-star mt-15">
                           <li>
@@ -115,8 +120,7 @@ export default function Bannar() {
                             </span>
                           </h4>
                           <p className="fw-bold">
-                            square meter
-                            <br /> of Cladding produced
+                             {cladcut(lang).sections.bannar.slice.produced}
                           </p>
                         </div>
                       </div>
@@ -132,8 +136,7 @@ export default function Bannar() {
                             </span>
                           </h4>
                           <p className="fw-bold">
-                            Reduced <br />
-                            Working Hours
+                            {cladcut(lang).sections.bannar.slice.houres}
                           </p>
                         </div>
                       </div>

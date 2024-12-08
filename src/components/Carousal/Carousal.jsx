@@ -8,9 +8,8 @@ import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
 
 function Carousal() {
-  const { products } = useSelector(
-    (state) => state.MainData.content.pages.product_page.home.sections
-  );
+  const lang = useSelector((state) => state.languageSlice.lang);
+  const home = useSelector(state => state.homeRed.home);
   const navigate = useRouter();
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
@@ -152,9 +151,9 @@ function Carousal() {
       <div id="products"></div>
       <Section_head
         head={1}
-        title_1={products.head.title}
+        title_1={home(lang).sections.products.head.title}
         des_1={
-          products.head.slogan
+          home(lang).sections.products.head.slogan
         }
       />
       <div className="carousal_container container">
@@ -167,8 +166,8 @@ function Carousal() {
               swipeToSlide={true}
               focusOnSelect={true}
             >
-              {products.main.slices &&
-                products.main.slices.map((item, index) => (
+              {home(lang).sections.products.main.slices &&
+                home(lang).sections.products.main.slices.map((item, index) => (
                   <div key={index}>
                     <div className="text-center p-3">
                       <div className="m-auto">{item.icon}</div>
@@ -190,8 +189,8 @@ function Carousal() {
                 asNavFor={nav2}
                 ref={(slider) => (sliderRef1 = slider)}
               >
-                {products.main.slices &&
-                  products.main.slices.map((item, index) => (
+                {home(lang).sections.products.main.slices &&
+                  home(lang).sections.products.main.slices.map((item, index) => (
                     <div
                       key={index}
                       className=" shadow_inside pointer"

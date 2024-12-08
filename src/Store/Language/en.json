@@ -1,0 +1,299 @@
+{
+  "HOME": "HOME",
+  "PRODUCTS": "PRODUCTS",
+  "WHAT_WE_DO": "WHAT WE DO",
+  "ABOUT_US": "ABOUT US",
+  "CONTACT_US": "CONTACT US",
+  "Design_Software": "Design Software",
+  "Business_Adminstration": "Business Administration",
+  "Risk_Assessment": "Risk Assessment",
+  "Communication": "Communication",
+  "Developement_Services": "Development Services",
+  "Facade_Fabrication": "Facade Fabrication",
+  "comply_with_SBC": "comply with SBC",
+  "CladCut": "CladCut",
+  "Wind_Master": "Wind Master",
+  "bondify_CRM": "bondify CRM",
+  "RDAPP": "RDAPP",
+  "ChatPlus": "ChatPlus",
+  "Custom_Software": "Custom Software",
+  "Grasshopper_Modules": "Grasshopper Modules",
+  "BYLD": "BYLD",
+
+  "slogan": "Transforming ideas into unique applications.",
+  "Get_Started": "Get Started",
+
+  "ABOUT_US_SLOGAN": "Specialized in crafting innovative solutions that redefine possibilities.",
+  "ABOUT_US_MAIN_TITLE": "At DomApp Our Expertise Shines Bright",
+  "ABOUT_US_MAIN_SLICES": [
+    "We design solutions that surpass expectations and propel our clients toward success.",
+    "Our unwavering commitment lies in delivering consistent, reliable, and cost-effective services that adhere to the highest quality standards. We continuously strive to meet and exceed the needs and expectations of our clients, ensuring their utmost satisfaction.",
+    "We craft and refine client-driven concepts to seamlessly integrate with our precisely designed applications ensuring optimal functionality and user satisfaction at every step.",
+    "With our expertise, we develop, and design applications tailored to the client's requirements. Our expertise allows us to customize and modify the applications we design to align perfectly with the client's company and business visions."
+  ],
+
+  "WHAT_WE_DO_SLOGAN": "We develop remarkable and exceptional innovative software solutions.",
+  "WHAT_WE_DO_SLICES": [
+    {
+      "title": "Our Mission",
+      "description": "To enhance our customer’s success through unique solutions."
+    },
+    {
+      "title": "Cutting-Edge Software",
+      "description": "We specialize in developing applications that meet the needs of our clients with precision and creativity, utilizing the latest tech and frameworks."
+    },
+    {
+      "title": "Technology Advancement",
+      "description": "Embracing innovation in artificial intelligence, virtual reality, and big data analytics to drive our clients, businesses forward with creativity and expertise."
+    },
+    {
+      "title": "Creative Innovation",
+      "description": "From CladCut to ChatPlus, our projects showcase our commitment to pushing boundaries and creating groundbreaking solutions that make a difference."
+    },
+    {
+      "title": "Specialized Solutions",
+      "description": "Crafting custom applications to fulfill unique requirements and objectives, ensuring our clients, success and business growth."
+    },
+    {
+      "title": "Client-Centric Approach",
+      "description": "Putting our clients at the heart of everything we do, we strive to exceed expectations and deliver exceptional results that propel their success."
+    }
+  ],
+
+  "OUR_PRODUCTS_TITLE": "Our Products",
+  "OUR_PRODUCTS_SLOGAN": "Each developed with precision, passion, and a deep commitment to excellence.",
+
+  "HOME_COUNTER": [
+    {
+      "number": 300,
+      "title": "Clients"
+    },
+    {
+      "number": 20,
+      "title": "Products"
+    },
+    {
+      "number": 25000,
+      "title": "Successful Jobs"
+    }
+  ],
+
+  "CONTACT_CARD_WHATSAPP": "Contact us on WhatsApp",
+  "CONTACT_CARD_MESSAGE": "Send Message",
+  "CONTACT_CARD_WORK_TIME": "Work time",
+  "CONTACT_FIND_US": "Find us here",
+  "CONTACT_CARD_WORK_TIME_SLICE": [
+    {
+      "days": "Saturday to Thursday from",
+      "from": "08:00 Am",
+      "to": "04:00 Pm",
+      "place": "Makkah, Saudi Arabia"
+    },
+    {
+      "days": "Saturday to Thursday from",
+      "from": "09:00 Am",
+      "to": "05:00 Pm",
+      "place": "Cairo, Egypt"
+    },
+    {
+      "days": "Saturday to Thursday from",
+      "from": "05:00 Am",
+      "to": "02:00 Pm",
+      "place": "UTC"
+    }
+  ],
+  "CONTACT_CARD_PLACE": [
+    {
+      "place": "2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, Al Riyadh, Saudi Arabia"
+    },
+    {
+      "place": "Prince Mohamed Ibn Abdulrahman St, Ask Fayha Dist, Riyadh, Saudi Arabia"
+    },
+    { "place": "20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt" },
+    { "place": "Jad Allah Tower,4th Floor, Office No 309, 412, KFS, Egypt" },
+    { "place": "Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt" }
+  ],
+
+  "CONTACT_PAGE_HEAD_TITLE": "Get in Touch",
+  "CONTACT_PAGE_HEAD_SLOGAN": "Welcome to DomApphubApps! We're here to assist you with any questions, feedback, or inquiries you may have. Please feel free to reach out to us using the contact information provided below. Your privacy is important to us, and we're committed to handling your information with care and transparency.",
+  "CONTACT_PAGE_FORM_NAME": "Name",
+  "CONTACT_PAGE_FORM_PHONE": "Phone",
+  "CONTACT_PAGE_FORM_EMAIL": "Email",
+  "CONTACT_PAGE_FORM_OPTIONS": "Select Option",
+  "CONTACT_PAGE_FORM_SUBJECT": "Subject",
+  "CONTACT_PAGE_FORM_MESSAGE": "Message",
+  "CONTACT_PAGE_FORM_SEND": "Send",
+
+  "CLADCUT_PAGE_BANNAR_SLOGAN": {
+    "first": "Produce detailed fabrication drawings with ",
+    "seconed": " exceptional speed",
+    "end": "and efficiency."
+  },
+  "CLADCUT_PAGE_TRY_BTN": "TRY FOR FREE",
+  "CLADCUT_PAGE_PRICING_BTN": "PRICING",
+  "CLADCUT_PAGE_BANNAR_SLICE": {
+    "users": "Users",
+    "produced": "square meter of Cladding produced",
+    "houres": "Reduced Working Hours"
+  },
+
+  "CLADCUT_PAGE_QUICK_START_TITLE": "Quick Start",
+  "CLADCUT_PAGE_QUICK_START_SLOGAN": "Don't forget to watch our quick start tutorial.",
+  "CLADCUT_PAGE_HEAD_NOTE_1_TITLE": "Unleash the Speed of Aluminum Cladding Fabrication with CladCut",
+  "CLADCUT_PAGE_HEAD_NOTE_1_SLOGAN": "Generate fabrication drawings and CNC files in minutes, not days.",
+  "CLADCUT_PAGE_WORK_FLOW_TITLE": "Effortless Workflow",
+  "CLADCUT_PAGE_WORK_FLOW_SLICE": [
+    "An intuitive interface guides you through the process.",
+    "Select your sheet size.",
+    "Upload your cladding layout as a DXF.",
+    "Sit back and let CladCut handle the rest."
+  ],
+  "CLADCUT_PAGE_WORK_FLOW_HISTORY": {
+    "many": "Many",
+    "type": "Years",
+    "by": "of",
+    "mid": "successful",
+    "last": "work"
+  },
+  "CLADCUT_PAGE_HEAD_NOTE_2_TITLE": "Exclusive Features",
+  "CLADCUT_PAGE_HEAD_NOTE_2_SLOGAN": "Make us proud",
+  "CLADCUT_PAGE_CARDS_TITLE_1": "Reduced Time",
+  "CLADCUT_PAGE_CARDS_TITLE_2": "Effortless Workflow",
+  "CLADCUT_PAGE_CARDS_TITLE_3": "Improved Efficiency",
+  "CLADCUT_PAGE_CARDS_TITLE_4": "Enhanced Accuracy",
+  "CLADCUT_PAGE_CARDS_TITLE_5": "Streamlined Installation",
+  "CLADCUT_PAGE_CARDS_SLOGAN_1": "Go from days to minutes for fabrication orders.",
+  "CLADCUT_PAGE_CARDS_SLOGAN_2": "An intuitive interface simplifies the process.",
+  "CLADCUT_PAGE_CARDS_SLOGAN_3": "Optimized cutting layouts and clash detection save time and material.",
+  "CLADCUT_PAGE_CARDS_SLOGAN_4": "Precise unfold views and automatic dimensioning minimize errors.",
+  "CLADCUT_PAGE_CARDS_SLOGAN_5": "Installation drawings ensure a smooth on-site process.",
+  "CLADCUT_PAGE_FOOTER_TITLE": "Takes the lead",
+  "CLADCUT_PAGE_FOOTER_SLICE": [
+    "Creates precise unfold views for each sheet.",
+    "Optimally positions fixing angles, avoiding clashes.",
+    "Automatically generates dimensions for clear reference.",
+    "Exports fabrication-ready files: PDF, DXF, and CNC formats for each panel."
+  ],
+
+  "WINDMASTER_PAGE_TRY_BTN": "Try For Free",
+  "WINDMASTER_PAGE_PRICING_BTN": "Pricing",
+
+  "WINDMASTER_PAGE_CARDS_TITLE_1": "Accuracy And Precision.",
+  "WINDMASTER_PAGE_CARDS_TITLE_2": "Saudi Building Compliance.",
+  "WINDMASTER_PAGE_CARDS_TITLE_3": "Reduced Time.",
+  "WINDMASTER_PAGE_CARDS_TITLE_4": "Comprehensive Reporting.",
+  "WINDMASTER_PAGE_CARDS_SLOGAN_1": "Achieve precise and reliable results with accuracy and efficiency, surpassing the limitations of traditional methods.",
+  "WINDMASTER_PAGE_CARDS_SLOGAN_2": "Accurately calculate wind loads on facades in accordance with the latest Saudi Building Code standards.",
+  "WINDMASTER_PAGE_CARDS_SLOGAN_3": "Eliminate the wasted time spent on inefficient methods, allowing your engineering team to focus on critical tasks.",
+  "WINDMASTER_PAGE_CARDS_SLOGAN_4": "Wind Master generates a detailed, easy-to-understand report that includes all calculations, and compliance checks.",
+
+  "WINDMASTER_PAGE_INFO_CARDS_TITLE_1": "Project info.",
+  "WINDMASTER_PAGE_INFO_CARDS_TITLE_2": "Site Data.",
+  "WINDMASTER_PAGE_INFO_CARDS_TITLE_3": "Export & Print.",
+  "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_1": "Manage and modify project and client information.",
+  "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_2": "Following Saudi Building Code 301, identifying the site data in terms of risk category, project address, and exposure category is made simple.",
+  "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_3": "Export detailed design data sheet.",
+
+  "WINDMASTER_PAGE_COLLABORATE_HEAD": {
+    "part_1": "Collaborate with your",
+    "part_2": "team anytime and anywhare."
+  },
+  "WINDMASTER_PAGE_COLLABORATE_SLOGAN": "can provide everything you need to generate advanced wind analysis reports",
+  "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_1": "Wind calculations for the multiple structure types such as: the main wind-force resisting system (MWFRS), the components and cladding, arched roofs and more.",
+  "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_2": "Provide transparent, easy-to-understand calculations that make an impact. Quickly export reports to PDF.",
+  "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_3": "Simplify your workflow and Reduce repetitive calculations, easy interface, and online accessibility, allowing you to work seamlessly from any location.",
+
+  "WINDMASTER_PAGE_GET_STARTED_TITLE": " Start your free trial today",
+  "WINDMASTER_PAGE_GET_STARTED_SLOGAN": "Discover how our Wind Master can enhance your wind analysis. Start your free trial today for a detailed analysis!",
+  "WINDMASTER_PAGE_GET_STARTED_BTN": "Get Started",
+
+  "CHATPLUS_PAGE_SLOGAN": "Try For Free",
+  "CHATPLUS_PAGE_TRY_BTN": "Try For Free",
+  "CHATPLUS_PAGE_PRICING_BTN": "Pricing",
+
+  "CHATPLUS_PAGE_PRICING_GROW": "Grow your business and engage with your customers via messaging",
+
+  "CHATPLUS_PAGE_COLLABORATE_HEAD": "Flexible configuration options",
+  "CHATPLUS_PAGE_COLLABORATE_SLOGAN": "Provide quick and personalized responses, improving customer satisfaction.",
+
+  "CHATPLUS_PAGE_CUSTOMER_SUPPORT": "Customer Support",
+  "CHATPLUS_PAGE_ARCHIVE": "Archive",
+  "CHATPLUS_PAGE_AUTO_REPLY": "Auto-reply",
+  "CHATPLUS_PAGE_BROADCAST": "Broadcast Messaging",
+  "CHATPLUS_PAGE_CHATBOAT": "ChatBot",
+  "CHATPLUS_PAGE_MSGTEMPLATE": "Message Templates",
+
+  "CHATPLUS_PAGE_HEADS": {
+    "why_us": "Why Us",
+    "feature": "Features"
+  },
+  "CHATPLUS_PAGE_CARDS": [
+    {
+      "icon": "bi bi-telephone-x",
+      "title": "Support Interaction",
+      "slogan": "Empower agents to provide dynamic and personalized support interactions."
+    },
+    {
+      "icon": "'bi bi-postage-fill",
+      "title": "Error-Free Communication",
+      "slogan": "Implement advanced algorithms to ensure error-free communication, reducing the risk of misunderstandings and inaccuracies."
+    },
+    {
+      "icon": "bi bi-lock",
+      "title": "Fortified Communication Channels",
+      "slogan": "Establish secure communication channels with end-to-end encryption to safeguard sensitive information and protect against cyber threats."
+    },
+    {
+      "icon": "bi bi-broadcast-pin",
+      "title": "Streamlined Communication Workflows",
+      "slogan": "Optimize communication workflows to minimize redundancy and maximize efficiency, enabling seamless collaboration and information sharing."
+    },
+    {
+      "icon": "bi bi-phone",
+      "title": "Mobile Responsiveness",
+      "slogan": "Enhance mobile responsiveness by providing automated replies tailored to the specific needs and preferences of mobile users."
+    },
+    {
+      "icon": "bi bi-archive",
+      "title": "Efficient Communication Archive",
+      "slogan": "Implement a robust archiving system to store and retrieve past conversations effortlessly, enabling quick access to historical data for analysis and reference."
+    }
+  ],
+
+  "CHATPLUS_PAGE_FEATUERS_CARDS_L": [
+    {
+      "title": "Maximize Support Interaction",
+      "slogan": "Enhance customer interaction, lead quality, and communication effectiveness and provide real-time customer support to answer queries, resolve issues, handle complaints, etc."
+    },
+    {
+      "title": "Message Templates",
+      "slogan": "Create and customize multiple templates tailored for different scenarios."
+    },
+    {
+      "title": "Broadcast Messaging",
+      "slogan": "Sending a single message to a large number of recipients simultaneously."
+    },
+    {
+      "title": "Performance Report",
+      "slogan": "Provides an analysis of the team's efficiency and effectiveness in handling customer interactions."
+    }
+  ],
+  "CHATPLUS_PAGE_FEATUERS_CARDS_R": [
+    {
+      "title": "Auto-reply",
+      "slogan": "Customized automated reply feature offers a range of capabilities designed to enhance customer engagement and streamline business communications."
+    },
+    {
+      "title": "Archive",
+      "slogan": "Archive and access past conversations effortlessly, store and retrieve chat transcripts seamlessly, ensuring easy reference and review."
+    },
+    {
+      "title": "Automated Processes",
+      "slogan": "ChatPlus offers versatile automated business processes enhancing efficiency such as appointment scheduling, order tracking, and more."
+    },
+    {
+      "title": "API Integration",
+      "slogan": "Offers integration with your CRM & ERP."
+    }
+  ]
+}

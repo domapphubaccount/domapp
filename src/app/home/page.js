@@ -10,7 +10,7 @@ import WhatWeDo from "@/pages_sups/Home/WhatWeDo/WhatWeDo";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <Header/>
+      <Header />
       <Bannar />
       <About />
       <WhatWeDo />

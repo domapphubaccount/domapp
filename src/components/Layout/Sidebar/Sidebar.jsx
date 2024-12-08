@@ -11,8 +11,9 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 import Image from "next/image";
-import { header } from "@/Store/Main/App/header/header";
 import Link from "next/link";
+import { useDispatch, useSelector } from "react-redux";
+import { contact_Toggle } from "@/Store/reducers/Header";
 
 export default function Sidebar({ items }) {
   const [open, setOpen] = React.useState(false);
@@ -21,6 +22,9 @@ export default function Sidebar({ items }) {
   const [openAccordion, setOpenAccordion] = React.useState(2);
   const handleOpen = (value) =>
     setOpenAccordion(openAccordion === value ? 0 : value);
+  const dispatch = useDispatch();
+  const header = useSelector(state => state.headerRed.header);
+  const lang = useSelector(state => state.languageSlice.lang);
 
   function Icon({ id, open }) {
     return (
@@ -57,7 +61,7 @@ export default function Sidebar({ items }) {
         <div className="mb-4 flex items-center justify-between p-1">
           <Typography variant="h5" color="white">
             <Image
-              src={header.logo.src}
+              src={header(lang).logo.src}
               width={120}
               height={50}
               alt="logo"
@@ -87,8 +91,8 @@ export default function Sidebar({ items }) {
           </IconButton>
         </div>
         <List className="p-2 space-y-2">
-          {header &&
-            header.nav.map((item, i) => (
+          {header(lang) &&
+            header(lang).nav.map((item, i) => (
               <Accordion
                 key={i}
                 open={openAccordion === i}
@@ -99,7 +103,7 @@ export default function Sidebar({ items }) {
                   onClick={() => handleOpen(i)}
                   className="mb-2 p-0 text-lg text-white hover:bg-gray-600 rounded-lg"
                 >
-                  <Link href={item.link} className="nav-link w-100 p-2" >{item.name}</Link>
+                  <Link href={item.link} className="nav-link w-100 p-2" onClick={item.contact ? () => dispatch(contact_Toggle(true)) : ''}>{item.name}</Link>
                 </AccordionHeader>
                 {item.list && (
                   <AccordionBody className="bg-gray-800 p-1 rounded-lg">

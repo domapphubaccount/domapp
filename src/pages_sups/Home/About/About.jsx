@@ -6,16 +6,15 @@ import { about } from "@/Store/Main/IDs";
 import { useSelector } from "react-redux";
 
 export default function About() {
-  const { about_us } = useSelector(
-    (state) => state.MainData.content.pages.product_page.home.sections
-  );
+  const lang = useSelector((state) => state.languageSlice.lang);
+  const home = useSelector(state => state.homeRed.home);
 
   return (
     <section className="home_section_2">
       <Section_head
         head={1}
-        title_1={about_us.head.title}
-        des_1={about_us.head.slogan}
+        title_1={home(lang).sections.about_us?.head.title}
+        des_1={home(lang).sections.about_us?.head.slogan}
         sectionId={about}
       />
       <Container>
@@ -35,7 +34,7 @@ export default function About() {
                   muted
                   autoPlay
                 >
-                  <source src={about_us.main.video} type="video/mp4" />
+                  <source src={home(lang).sections.about_us?.main.video} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
                 {/* <div className="about_us_Description typewriter"><h1>About Us</h1></div> */}
@@ -45,11 +44,11 @@ export default function About() {
           <Col sm={12} lg={6} md={12}>
             <div data-aos="fade-up" data-aos-duration="2000">
               <div>
-                <h5>{about_us.main.title}</h5>
+                <h5>{home(lang).sections.about_us?.main.title}</h5>
               </div>
               <div className="card_list">
                 <ul>
-                  {about_us.main.slices.map((item, i) => (
+                  {home(lang).sections.about_us?.main.slices.map((item, i) => (
                     <li key={i}>{item} </li>
                   ))}
                 </ul>

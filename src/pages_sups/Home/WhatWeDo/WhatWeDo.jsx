@@ -8,16 +8,16 @@ import { whatWeDo } from "@/Store/Main/IDs";
 
 
 function WhatWeDo() {
-  const { what_we_do } = useSelector(
-    (state) => state.MainData.content.pages.product_page.home.sections
-  );
+  const lang = useSelector((state) => state.languageSlice.lang);
+  const home = useSelector(state => state.homeRed.home);
+  
   return (
     <section>
       <Container>
         <Section_head
           head={1}
-          title_1={what_we_do.head.title}
-          des_1={what_we_do.head.slogan}
+          title_1={home(lang).sections.what_we_do.head.title}
+          des_1={home(lang).sections.what_we_do.head.slogan}
           sectionId={whatWeDo}
         />
         <div className="section_2_mobile_cards">

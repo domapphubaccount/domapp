@@ -4,12 +4,17 @@ import { Container } from 'reactstrap'
 import quotes from "@/assets/images/Products_Page/Rd/quotes-left.svg"
 import Image from 'next/image'
 import dynamic from "next/dynamic";
+import { useSelector } from 'react-redux'
 
-function Head({ head, body }) {
+function Head({ head }) {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { cladcut } = useSelector((state) => state.cladcutRed);
+
+
   return (
     <section className='py-5 mt-5'>
       <Container>
-        <div>
+        <div dir={dir}>
           <div className='text-start' style={{ width: '80px' }} data-aos="fade-up" data-aos-duration="500">
             <Image src={quotes.src} width={80} height={80} className='me-auto' alt="quote" />
           </div>
@@ -20,10 +25,10 @@ function Head({ head, body }) {
                   {head}
                 </span>
                 <h2 className="mil-up mil-mb-30" style={{ translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: "1" }}>
-                  Unleash the Speed of Aluminum Cladding Fabrication with CladCut
+                  {cladcut(lang).sections.Head_NOTE_1.title}
                 </h2>
                 <p className={"mil-up"} style={{ translate: "none", rotate: "none", scale: "none", transform: "translate(0px, 0px)", opacity: 1 }}>
-                  Generate fabrication drawings and CNC files in minutes, not days.
+                  {cladcut(lang).sections.Head_NOTE_1.slogan}
                 </p>
               </div>
             </Container>

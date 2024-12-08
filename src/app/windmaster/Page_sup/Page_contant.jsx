@@ -18,16 +18,14 @@ import Section_4 from "@/pages_sups/Products/Wind/Wind/Section_4";
 import Section_5 from "@/pages_sups/Products/Wind/Wind/Section_5";
 
 export default function Page() {
-
   return (
-    <div >
+    <div>
       <>
-      <Bannar />
-        <Section_2/>
+        <Bannar />
+        <Section_2 />
         <Section_5 />
         <Section_3 />
         <Section_4 />
-
       </>
     </div>
   );

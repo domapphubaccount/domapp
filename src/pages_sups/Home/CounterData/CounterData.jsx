@@ -4,15 +4,14 @@ import { InView } from 'react-intersection-observer';
 import { useSelector } from "react-redux";
 
 export default function CounterData() {
-    const { counterdata } = useSelector(
-        (state) => state.MainData.content.pages.product_page.home.sections
-      );
+      const lang = useSelector((state) => state.languageSlice.lang);
+      const home = useSelector(state => state.homeRed.home);
 
     return (
         <section className="home_section_3 shadow_inside">
             <Container>
                 <Row>
-                    {counterdata.map((item, index) => (
+                    {home(lang).sections.counterdata.map((item, index) => (
                         <Col key={index} sm="4" className="my-4">
                             <InView>
                                 {({ ref, inView }) => (

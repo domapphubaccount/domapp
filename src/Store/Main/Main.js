@@ -1,19 +1,14 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import { home } from "./pages/home";
 
 
 // start data center
 const initialState = {
-  language: "en", // options are ['en','ar']
+  language: "ar", // options are ['en','ar']
   dir: "ltr", // options are ['ltr','rtl']
-  header: [],
   footer: [],
   content: {
     pages: {
-      product_page: {
-        home,
-      },
       service_page: [],
     },
   },

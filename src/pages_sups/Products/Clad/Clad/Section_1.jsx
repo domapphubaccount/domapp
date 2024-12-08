@@ -1,16 +1,20 @@
 import React from "react";
 import { Container } from "reactstrap";
 import cl1 from "@/assets/images/Clad/2.jpg";
-import arrow from "@/assets/images/Clad/arrow.svg";
 import checked from "@/assets/images/Clad/checkmark.png";
+import { useSelector } from "react-redux";
 
 export default function Section_1() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { cladcut } = useSelector((state) => state.cladcutRed);
+
   return (
     <section>
       <Container>
         <div
           className="row justify-content-between align-items-center flex-sm-row-reverse"
           style={{ overflow: "hidden" }}
+          dir={dir}
         >
           <div className="col-lg-5">
             <div className="mil-mb-90">
@@ -24,7 +28,7 @@ export default function Section_1() {
                   opacity: 1,
                 }}
               >
-                Effortless Workflow
+                {cladcut(lang).sections.WORK_FLOW.title}
               </h2>
               <div
                 className="mil-up mil-mb-40"
@@ -36,42 +40,17 @@ export default function Section_1() {
                   opacity: 1,
                 }}
               >
-                <div className="d-flex mb-3">
-                  <img
-                    src={checked.src}
-                    alt=""
-                    className="mx-3"
-                    style={{ width: "30px", height: "30px" }}
-                  />
-                  An intuitive interface guides you through the process.
-                </div>
-                <div className="d-flex mb-3">
-                  <img
-                    src={checked.src}
-                    alt=""
-                    className="mx-3"
-                    style={{ width: "30px", height: "30px" }}
-                  />
-                  Select your sheet size.
-                </div>
-                <div className="d-flex mb-3">
-                  <img
-                    src={checked.src}
-                    alt=""
-                    className="mx-3"
-                    style={{ width: "30px", height: "30px" }}
-                  />
-                  Upload your cladding layout as a DXF.
-                </div>
-                <div className="d-flex mb-3">
-                  <img
-                    src={checked.src}
-                    alt=""
-                    className="mx-3"
-                    style={{ width: "30px", height: "30px" }}
-                  />
-                  Sit back and let CladCut handle the rest.
-                </div>
+                {cladcut(lang).sections.WORK_FLOW.slice.map((item, index) => (
+                  <div className="d-flex mb-3" key={index}>
+                    <img
+                      src={checked.src}
+                      alt=""
+                      className="mx-3"
+                      style={{ width: "30px", height: "30px" }}
+                    />
+                    {item}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -107,12 +86,15 @@ export default function Section_1() {
                   className="mil-counter mil-right mil-mb-10"
                   data-number="17"
                 >
-                  Many
+                  {cladcut(lang).sections.WORK_FLOW.work_history.many}
                 </h1>
                 <h5 className="mil-upper mil-right">
-                  <span className="mil-marker">Years</span> of <br />
-                  successful <br />
-                  work
+                  <span className="mil-marker">
+                    {cladcut(lang).sections.WORK_FLOW.work_history.type}
+                  </span>{" "}
+                  {cladcut(lang).sections.WORK_FLOW.work_history.by} <br />{" "}
+                  {cladcut(lang).sections.WORK_FLOW.work_history.mid} <br />{" "}
+                  {cladcut(lang).sections.WORK_FLOW.work_history.end}
                 </h5>
               </div>
             </div>
