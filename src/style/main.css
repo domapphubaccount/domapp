@@ -94,6 +94,7 @@ header{
     }
     .mobile_nav{
         display: none;
+        align-items: center;
 
         i{
             font-size: 2rem;
@@ -109,7 +110,7 @@ header{
 
     @media (max-width: 770px) {
         .mobile_nav{
-            display: block;
+            display: flex;
         }
     }
 
@@ -450,7 +451,7 @@ footer{
 }
 /* Home Page */
 .home_bannar{
-    background-image: url('../assets/images/Home_Page/b1.jpg');
+    background-image: url('../assets/images/Home_Page/bannar.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2708,10 +2709,15 @@ footer{
 
  }
 
+ .nav-link{
+    color: #fff;
+    border: none;
+ }
+
  .privacy_head {
     /* height: 20vh; */
     position: relative;
-    background-image: url('../assets/images/Home_Page/b1.jpg');
+    background-image: url('../assets/images/Home_Page/bannar.webp');
     /* padding: 200px 0 100px  0; */
     height: 50vh;
     display: flex;
@@ -6682,3 +6688,41 @@ i.icon-2x {
 
 }
 
+
+
+
+/* Custom scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar (for horizontal scroll) */
+  }
+  
+  /* Track (background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light grey */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Handle (scroll thumb) */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Dark grey */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker grey */
+  }
+  
+  /* Optional: Hide scrollbar for specific elements */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  /* Add a thin scrollbar for Mozilla (Firefox) */
+  .scrollbar-custom {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+  }
+
+  

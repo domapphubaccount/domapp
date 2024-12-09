@@ -1,46 +1,19 @@
 import React from "react";
-import { league } from "@/pages_sups/Home/Section_1/Section_1";
+import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import Link from "next/link";
 import Logo from "@/assets/images/chatPlus/logo-slogan.png";
-import BannarIMG from "@/assets/images/chatPlus/img.png"
-import VideoSection from "./Chat/VideoSection";
+import BannarIMG from "@/assets/images/chatPlus/img.png";
+import { contact_page } from "@/Store/Main/links/links";
+import { useSelector } from "react-redux";
 
 export default function Bannar() {
-  return (
-    // <section className="chat_bannar">
-    //   <div className={`products ${league.className}`}>
-    //     <div className="dark_bannar"></div>
-    //     <svg
-    //       xmlns="http://www.w3.org/2000/svg"
-    //       className="chat_wave"
-    //       viewBox="0 0 1440 320"
-    //     >
-    //       <path
-    //         fill="#ffffff"
-    //         fill-opacity="1"
-    //         d="M0,128L48,144C96,160,192,192,288,176C384,160,480,96,576,101.3C672,107,768,181,864,202.7C960,224,1056,192,1152,160C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-    //       ></path>
-    //     </svg>
-    //     <div className="head-section" data-aos="fade-right">
-    //       <div className="mb-4">
-    //         <h1>CHATPLUS</h1>
-    //       </div>
-    //       <div className="mb-4">
-    //         <p>One platform with all your connection needs.</p>
-    //       </div>
-    //       <div className="d-flex justify-content-center">
-    //         <Link href="/contact" className="mx-2 chatplus_btn" shallow>
-    //           Get Started
-    //         </Link>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
-    <Bannar2 />
-  );
+  return <Bannar2 />;
 }
 
 function Bannar2() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { chatplus } = useSelector((state) => state.chatplusRed);
+
   return (
     <section class="agency header chat-head" id="header">
       <div class="agency bg mb-4">
@@ -51,25 +24,22 @@ function Bannar2() {
                 <div>
                   <div class="header-text">
                     <img src={Logo.src} width={400} alt="chatplus" />
-                    {/* <h1 class="text-uppercase">
-                      <span class="bold-text">CHATPLUS</span>
-                    </h1> */}
                   </div>
-                  <div class="header-sub-text mb-5 text-lg">
-                    <p>One platform with all your communication needs.</p>
+                  <div class="header-sub-text mb-5 text-lg" dir={dir}>
+                    <p>{chatplus(lang).sections.bannar.slogan}</p>
                   </div>
-                  <div class="link-horizontal">
+                  <div class="link-horizontal" dir={dir}>
                     <Link
-                      href="/contact"
+                      href={contact_page}
                       class="btn btn-default btn-gradient text-white active mx-2"
                     >
-                      start now
+                      {chatplus(lang).sections.bannar.try_btn}
                     </Link>
                     <Link
                       href="/chatplus/pricing"
                       class="btn btn-default btn-gradient text-white active mx-2"
                     >
-                      Pricing
+                      {chatplus(lang).sections.bannar.pricing_btn}
                     </Link>
                   </div>
                 </div>
@@ -84,12 +54,13 @@ function Bannar2() {
 
       <div class="set-abs abs-horizon-center girl-boy image_bannar">
         {/* <div style={{willChange: "transform; transition: 3000ms cubic-bezier(0.03, 0.98, 0.52, 0.99); transform: perspective(20000px) rotateX(3.68412deg) rotateY(-5.86818deg) scale3d(1, 1, 1);"}}></div> */}
-        <div style={{transform: "perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"}}>
-          <img
-            alt=""
-            class="img-fluid"
-            src={BannarIMG.src}
-          />
+        <div
+          style={{
+            transform:
+              "perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
+          }}
+        >
+          <img alt="" class="img-fluid" src={BannarIMG.src} />
         </div>
         <div class="plus-container plus-container6">
           <div class="plus white"></div>

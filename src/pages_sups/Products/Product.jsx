@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { league } from "../Home/Section_1/Section_1";
+import { league } from "../Home/Bannar/Bannar";
 import Link from "next/link";
 
 export default function Product({ bannar, title, caption, linkPage }) {

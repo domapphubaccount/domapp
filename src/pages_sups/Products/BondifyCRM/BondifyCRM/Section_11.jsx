@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "reactstrap";
-import { league } from "@/pages_sups/Home/Section_1/Section_1";
+import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import { items } from "@/app/Page_data";
 
 export default function Section_11() {

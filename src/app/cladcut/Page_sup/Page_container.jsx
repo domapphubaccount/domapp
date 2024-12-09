@@ -3,46 +3,17 @@
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import Page_sup from "./Page_contant";
-import { useEffect, useState } from "react";
-import ScrollToTop from "react-scroll-to-top";
-import Contact from "@/components/Contact/Contact";
+
 
 export default function Page() {
-  const [toggle, setToggle] = useState(false);
-  const [isBrouse, setIsBrouse] = useState(false);
-
-  const handleToggle = () => {
-    setToggle(!toggle);
-  };
-
-  useEffect(() => {
-    setIsBrouse(true);
-  }, []);
 
   return (
     <>
-      {isBrouse && (
         <div className="page_hid">
-          <Header handleToggle={handleToggle} />
+          <Header />
           <Page_sup />
           <Footer />
-          <ScrollToTop
-            smooth
-            color="#fff"
-            style={{
-              backgroundColor: "#525A63",
-              padding: "5px",
-              borderRadius: "50%",
-              left: "20px",
-            }}
-          />
-          <Contact
-            handleToggle={handleToggle}
-            toggle={toggle}
-            setToggle={setToggle}
-          />
         </div>
-      )}
     </>
   );
 }

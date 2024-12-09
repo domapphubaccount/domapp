@@ -1,10 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import backdrop from "@/assets/images/windmaster/bg.png";
-import windmaster from "@/assets/images/windmaster/windmaster_slogan.png";
+import windmasterImg from "@/assets/images/windmaster/windmaster_slogan.png";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 export default function Bannar() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { windmaster } = useSelector((state) => state.windmasterRed);
+
   return (
     <>
       <section
@@ -19,35 +23,20 @@ export default function Bannar() {
             <div class="col-lg-12 text-center">
               <div class="title-heading leading-6 mb-3" data-aos="fade-up">
                 <div className="flex justify-center">
-                  <img src={windmaster.src} alt="windmaster" width={400} />
+                  <img src={windmasterImg.src} alt="windmaster" width={400} />
                 </div>
                 <div class="mt-4 pt-2">
                   <Link
                     class="btn btn-light d-inline-flex align-items-center mx-2 font-bold"
                     href="https://windmaster.domapphub.com"
                   >
-                    Try For Free
+                    {windmaster(lang).sections.bannar.try_btn}
                   </Link>
                   <Link
                     class="btn btn-light d-inline-flex align-items-center mx-2"
                     href="/windmaster/pricing"
                   >
-                    {/* <svg
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="align-middle me-1"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg> */}
-                    Pricing
+                    {windmaster(lang).sections.bannar.pricing_btn}
                   </Link>
                 </div>
               </div>

@@ -1,15 +1,18 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-import Shape1 from "@/assets/images/Clad/shape.svg";
-import Shape2 from "@/assets/images/Clad/shape_2.svg";
+import { useSelector } from "react-redux";
+import { cladcut_site } from "@/Store/Main/links/links";
 
 export default function Bannar() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { cladcut } = useSelector((state) => state.cladcutRed);
+
   return (
     <section className="cladCut-bannar">
       <div className="products2">
         <div className="load-speed-section py-5 pt-160 pb-160 lg-pt-100 lg-pb-80 mil-top-space clad-background">
-          <div className="container relative" style={{ zIndex: "3" }}>
+          <div className="container relative" style={{ zIndex: "3" }} dir={dir}>
             <div className="row align-items-center justify-between">
               <div className="col-xxl-5 col-lg-6 wow fadeInLeft">
                 <div className="ln-title-one my-5">
@@ -27,19 +30,31 @@ export default function Bannar() {
                   </h2>
                 </div>
                 <div className="slogan my-5 fw-bold">
-                  Produce detailed fabrication drawings with exceptional speed and efficiency.
+                  {cladcut(lang).sections.bannar.slogan.first}
+                  <span className="position-relative d-inline-block">
+                    {cladcut(lang).sections.bannar.slogan.seconed}
+                  </span>
+                  {cladcut(lang).sections.bannar.slogan.end}
                 </div>
                 <div className="flex">
-                  <a href="https://cladcut.domapphub.com/" style={{ textDecoration: "none" }}>
+                  <a
+                    style={{ textDecoration: "none" }}
+                    href={cladcut_site}
+                  >
                     <button className="try-button">
-                      TRY FOR FREE
+                      {cladcut(lang).sections.bannar.try_btn}
                       <div className="arrow-wrapper">
                         <div className="arrow"></div>
                       </div>
                     </button>
                   </a>
-                  <a href="https://cladcut.domapphub.com/pricing/" style={{ textDecoration: "none" }}>
-                    <button className="try-button mx-3">PRICING</button>
+                  <a
+                    style={{ textDecoration: "none" }}
+                    href={`${cladcut_site}pricing/`}
+                  >
+                    <button className="try-button mx-3">
+                      {cladcut(lang).sections.bannar.pricing_btn}
+                    </button>
                   </a>
                 </div>
               </div>
@@ -55,16 +70,53 @@ export default function Bannar() {
                               100+
                             </span>
                           </h4>
-                          <p className="fw-bold">
-                            Users
-                          </p>
+                          <p className="fw-bold">{cladcut(lang).sections.bannar.slice.users}</p>
                         </div>
                         <ul className="style-none p-0 d-flex align-items-center justify-content-center rating-star mt-15">
                           {/* Stars rendering */}
                         </ul>
                       </div>
                     </div>
-                    {/* More content */}
+                    <div
+                      className="col-sm-6 wow fadeInLeft cladcard "
+                      style={{
+                        visibility: "visible",
+                        animationName: "fadeInLeft",
+                      }}
+                    >
+                      <div className="block-wrapper d-flex flex-column align-items-center justify-content-center xs-mb-20">
+                        <div className="rating font-recoleta">
+                          <h4 className="mil-accent mil-mb-10">
+                            <span
+                              className="mil-counter clad-text-color fw-bold"
+                              data-number="346"
+                            >
+                              190K+
+                            </span>
+                          </h4>
+                          <p className="fw-bold">
+                             {cladcut(lang).sections.bannar.slice.produced}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="block-wrapper mt-4 d-flex flex-column align-items-center justify-content-center mb-40 xs-mb-20">
+                        <div className="rating font-recoleta">
+                          <h4 className="mil-accent mil-mb-10">
+                            <span
+                              className="mil-counter clad-text-color fw-bold"
+                              data-number="9"
+                            >
+                              18K+
+                            </span>
+                          </h4>
+                          <p className="fw-bold">
+                            {cladcut(lang).sections.bannar.slice.houres}
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
                   </div>
                   <Shape1 className="shapes shape-one" />
                 </div>

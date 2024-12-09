@@ -1,10 +1,19 @@
+"use client"
 import React from "react";
-import windmasterImage from "@/assets/images/windmaster/windmaster.png"
+import windmasterImage from "@/assets/images/windmaster/windmaster.png";
+import { useSelector } from "react-redux";
 
 export default function Section_3() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { windmaster } = useSelector((state) => state.windmasterRed);
+
   return (
     <div className="container mt-20 relative ">
-      <div className="row align-items-center  social-feature-right"  data-aos="fade-up">
+      <div
+        className="row align-items-center  social-feature-right"
+        data-aos="fade-up"
+        dir={dir}
+      >
         <div className="col-lg-5 col-md-6 order-1 order-md-2">
           <img
             alt=""
@@ -13,89 +22,39 @@ export default function Section_3() {
             height="0"
             decoding="async"
             data-nimg="1"
-            className="img-fluid rounded-md shadow-lg p-5 bg-white"
-            style={{color:"transparent",width:"100%",height:"auto"}}
+            className="img-fluid rounded-md shadow-lg p-5 bg-white w-full"
+            style={{ color: "transparent", height: "auto" }}
             sizes="100vw"
             src={windmasterImage.src}
           />
         </div>
-        <div className="col-lg-7 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0">
-          <div className="section-title text-md-start text-center">
+        <div
+          className={`col-lg-7 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0`}
+          
+        >
+          <div className={`section-title ${dir == 'rtl' && 'text-end'}`}>
             <h4 className="mb-4">
-              Collaborate with your <br /> team anytime and anywhare.
+              {windmaster(lang).sections.Collaborate.head.part_1} <br />{" "}
+              {windmaster(lang).sections.Collaborate.head.part_2}
             </h4>
             <p className="text-muted mb-0 para-desc">
-            <span className="text-primary fw-bold">WIND MASTER </span> can provide everything you need to generate advanced wind analysis reports.
-              
+              <span className="text-primary fw-bold">Wind Master </span>{" "}
+              {windmaster(lang).sections.Collaborate.slogan}
             </p>
-            <div className="d-flex align-items-center text-start mt-4 pt-2">
+
+            {windmaster(lang).sections.Collaborate.slice.map((item,index)=>(
+
+            <div className="d-flex align-items-center text-start mt-4 pt-2" key={index}>
               <div className="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                  <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-                  <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-                  <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-                  <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                </svg>
+                {item.icon}
               </div>
-              <div className="flex-1">
-                
-              Wind calculations for the multiple structure types such as: the main wind-force resisting system (MWFRS), the components and cladding, arched roofs and more.
-                
+              <div className={`flex-1 ${dir == 'rtl' && 'text-end'}`}>
+                {item.slogan}
               </div>
             </div>
-            <div className="d-flex align-items-center text-start mt-4">
-              <div className="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                  <polyline points="13 2 13 9 20 9"></polyline>
-                </svg>
-              </div>
-              <div className="flex-1">
-              Provide transparent, easy-to-understand calculations that make an impact. Quickly export reports to PDF.              </div>
-            </div>
-            <div className="d-flex align-items-center text-start mt-4">
-              <div className="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                  <line x1="1" y1="10" x2="23" y2="10"></line>
-                </svg>
-              </div>
-              <div className="flex-1">
-              Simplify your workflow and reduce repetitive calculations, easy interface, and online accessibility, allowing you to work seamlessly from any location.
-              </div>
-            </div>
+            ))}
+
+
           </div>
         </div>
       </div>

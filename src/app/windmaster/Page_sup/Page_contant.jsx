@@ -10,7 +10,6 @@ import clad_5 from "@/assets/images/Clad/Picture5.png";
 import Product from "@/pages_sups/Products/Product";
 import Section_2 from "@/pages_sups/Products/Wind/Wind/Section_2";
 import React from "react";
-import ScrollToTop from "react-scroll-to-top";
 import Screens_Section from "@/pages_sups/Products/Wind/Wind/Screens_Section";
 import product_1 from "@/assets/images/Home_Page/products/pr1.jpg";
 import Bannar from "@/pages_sups/Products/Wind/Bannar";
@@ -19,25 +18,14 @@ import Section_4 from "@/pages_sups/Products/Wind/Wind/Section_4";
 import Section_5 from "@/pages_sups/Products/Wind/Wind/Section_5";
 
 export default function Page() {
-
   return (
-    <div >
+    <div>
       <>
-      <Bannar />
-        <Section_2/>
+        <Bannar />
+        <Section_2 />
         <Section_5 />
         <Section_3 />
         <Section_4 />
-        <ScrollToTop
-          smooth
-          color="#fff"
-          style={{
-            backgroundColor: "#525A63",
-            padding: "5px",
-            borderRadius: "50%",
-            left: "20px",
-          }}
-        />
       </>
     </div>
   );

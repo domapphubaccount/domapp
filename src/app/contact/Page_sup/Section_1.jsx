@@ -14,9 +14,13 @@ import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import Contact from "@/assets/images/Products_Page/contact/contact.jpg";
 import axios from "axios";
+import { useSelector } from "react-redux";
+import { linksData } from "@/Store/Main/links/linkstider";
 
 export default function Section_1() {
   const [module, setModule] = useState(false);
+  const { contact_page } = useSelector((state) => state.contactRed);
+  const { lang, dir } = useSelector((state) => state.languageSlice);
 
   const initialValues = {
     name: "",
@@ -41,7 +45,7 @@ export default function Section_1() {
   const handleSubmit = (values, actions) => {
     // Handle form submission logic here
     axios
-      .post("https://domapphub.com/Care/contacts.php", values)
+      .post(linksData.contact.form_api, values)
       .then((res) => {
         setModule(true);
         console.log("done");
@@ -57,7 +61,7 @@ export default function Section_1() {
   return (
     <section className="privacy-content">
       <Container>
-        <div>
+        <div dir={dir}>
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
@@ -68,15 +72,8 @@ export default function Section_1() {
                 <ul className="p-1">
                   <li>
                     <div>
-                      <h2>Get in Touch</h2>
-                      <p>
-                        Welcome to DomApphubApps! We're here to assist you with
-                        any questions, feedback, or inquiries you may have.
-                        Please feel free to reach out to us using the contact
-                        information provided below. Your privacy is important to
-                        us, and we're committed to handling your information
-                        with care and transparency.
-                      </p>
+                      <h2>{contact_page(lang).head.title}</h2>
+                      <p>{contact_page(lang).head.slogan}</p>
                     </div>
                   </li>
                   <li className="pt-3">
@@ -88,7 +85,7 @@ export default function Section_1() {
                               <input
                                 type="text"
                                 className="w-100 p-3 rounded border border-2"
-                                placeholder="Name"
+                                placeholder={contact_page(lang).form.Name}
                                 name="name"
                                 value={values.name}
                                 onChange={handleChange}
@@ -101,7 +98,7 @@ export default function Section_1() {
                               <input
                                 type="text"
                                 className="w-100 p-3 rounded border border-2"
-                                placeholder="Phone"
+                                placeholder={contact_page(lang).form.Phone}
                                 name="phone"
                                 value={values.phone}
                                 onChange={handleChange}
@@ -116,7 +113,7 @@ export default function Section_1() {
                               <input
                                 type="email"
                                 className="w-100 p-3 rounded border border-2"
-                                placeholder="Email"
+                                placeholder={contact_page(lang).form.Email}
                                 name="email"
                                 value={values.email}
                                 onChange={handleChange}
@@ -130,18 +127,17 @@ export default function Section_1() {
                             <Col sm={12} className="my-2">
                               <select
                                 className="w-100 p-3 rounded border border-2 pe-3"
-                                placeholder="Select Product"
+                                placeholder={contact_page(lang).form.Option}
                                 name="product"
                                 value={values.product}
                                 onChange={handleChange}
                               >
                                 <option className="p-2" value="">
-                                  Select an option
+                                {contact_page(lang).form.Option}
                                 </option>
                                 <option className="p-2" value="1">
                                   CladCut
                                 </option>
-                                {/* <option className="p-2" value="2">FacadStatic</option> */}
                                 <option className="p-2" value="3">
                                   WIND MASTER
                                 </option>
@@ -158,7 +154,7 @@ export default function Section_1() {
                                   Custom Software
                                 </option>
                                 <option className="p-2" value="8">
-                                  Grasshopper  Modules
+                                  Grasshopper Modules
                                 </option>
                                 <option className="p-2" value="9">
                                   BYLD
@@ -174,7 +170,7 @@ export default function Section_1() {
                               <input
                                 type="text"
                                 className="w-100 p-3 rounded border border-2"
-                                placeholder="Subject"
+                                placeholder={contact_page(lang).form.Subject}
                                 name="title"
                                 value={values.title}
                                 onChange={handleChange}
@@ -188,7 +184,7 @@ export default function Section_1() {
                             <Col sm={12} className="my-2">
                               <textarea
                                 rows="6"
-                                placeholder="Message"
+                                placeholder={contact_page(lang).form.Message}
                                 className="w-100 p-3 rounded border border-2"
                                 name="message"
                                 value={values.message}
@@ -206,7 +202,7 @@ export default function Section_1() {
                                 variant="contained"
                                 className="my-3 bg-secondary px-4 py-2 rounded text-light fw-bold card_shadow m-3"
                               >
-                                Send
+                                {contact_page(lang).form.Send}
                               </button>
                             </Col>
                           </Row>

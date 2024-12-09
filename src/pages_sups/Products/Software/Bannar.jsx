@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { league } from '@/pages_sups/Home/Section_1/Section_1'
+import { league } from '@/pages_sups/Home/Bannar/Bannar'
 import shap1 from '@/assets/images/Products_Page/Customization/bubble-9.png'
 import shap2 from '@/assets/images/Products_Page/Customization/line-4.png'
 import item from '@/assets/images/Products_Page/Customization/project-8.png'

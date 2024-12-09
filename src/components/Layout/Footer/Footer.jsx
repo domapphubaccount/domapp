@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "reactstrap";
+import LanguageDropdown from "./Lang";
 
 export default function Footer() {
   return (
@@ -81,8 +82,10 @@ export default function Footer() {
               </svg>
             </Link>
           </div>
-
-          <div>
+          <div className="px-3">
+            <LanguageDropdown />
+          </div>
+          <div className="px-3">
             <Link href="/privacy" className="privacy_link">
               Privacy Policy
             </Link>

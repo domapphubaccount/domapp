@@ -1,315 +1,125 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
-import Logo from "../../../assets/images/Header/dark-logo.WebP";
-import MobileNav from "./Mobile_nav/Mobile_nav";
-import { Container, Row, Col } from "reactstrap";
+import { Container } from "reactstrap";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import PositionedSnackbar from "@/components/Reuse/Section_Head/SnackBar";
-import cladIcon from "@/assets/images/Clad/ICON.png";
-import CladCutLogo from "@/assets/images/Header/products_logos/cladcut.png";
-import grassIcon from "@/assets/images/Grasshopper/insect.png";
-import byldIcon from "@/assets/images/Byld/iconlogo.png";
-import RDAppIcon from "@/assets/images/RDApp/logo.png";
-import ChatPlusIcon from "@/assets/images/chatPlus/logo.png";
-import Windmaster from "@/assets/images/windmaster/windmaster.png";
-import customizationIcon from "@/assets/images/customization/customization.png";
-import bondify from "@/assets/images/BondifyCRM/bondify.png";
+import { useRouter } from "next/navigation";
+import { useDispatch, useSelector } from "react-redux";
+import { contact_Toggle } from "@/Store/reducers/Header";
+import dynamic from "next/dynamic";
 
-export default function Header({ handleToggle }) {
+const Sidebar = dynamic(() => import("../Sidebar/Sidebar"), { ssr: false });
+
+export default function Header() {
   const headerScrol = useRef();
-  const [getWidowY, setWindowY] = useState(0);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [open, setOpen] = React.useState(false);
   const router = useRouter();
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
-  const pathname = usePathname();
+  const dispatch = useDispatch();
+  const header = useSelector((state) => state.headerRed.header);
+  const lang = useSelector((state) => state.languageSlice.lang);
 
-  // console.log()
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setWindowY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const handleClick = (newState) => () => {
-    setOpen(true);
-  };
   return (
     <header>
       <link rel="preload" href="/_next/static/media/dark-logo.e6650319.WebP" as="image"></link>
       <Container className="nav-container">
         <div
-          className={`navbar_container  nav_active`}
+          className={`navbar_container nav_active`}
           id="main_nav"
           ref={headerScrol}
         >
           <div className="d-flex items-center">
             <Image
               onClick={() => router.push("/")}
-              src={Logo}
+              src={header(lang).logo}
               alt="main logo"
-              className="main_logo"
-              style={{ cursor: "pointer" }}
-              width={120}
-              height={47}
-              priority
-              loading="eager"
+              // className="main_logo"
+              // style={{ cursor: "pointer" }}
+              // width={120}
+              // height={47}
+              // priority
+              // loading="eager"
      
+              className="main_logo cursor-pointer"
             />
           </div>
           <div className="nav">
             <nav>
               <ul className="nav-list-container">
-                <li>
-                  <Link href="/#home" className="nav-link-item" shallow>
-                    HOME
-                  </Link>
-                </li>
-                <li
-                  className="custom-dropdown"
-                  onMouseEnter={toggleDropdown}
-                  onMouseLeave={toggleDropdown}
-                >
-                  <Link href="/#products" className="nav-link-item">
-                    PRODUCTS
-                  </Link>
-                  {dropdownOpen && (
-                    <div
-                      className="dropdown-menu-cust shadow_inside"
-                      data-aos="fade-up"
-                      data-aos-duration="300"
+                {header(lang) &&
+                  header(lang).nav.map((item, i) => (
+                    <li
+                      key={i}
+                      className="custom-dropdown"
+                      onMouseEnter={item.list ? toggleDropdown : () => ""}
+                      onMouseLeave={item.list ? toggleDropdown : () => ""}
                     >
-                      <Row>
-                        <Col sm={12} md={12} lg={12}>
+                      <Link
+                        href={item.link}
+                        className="nav-link-item"
+                        onClick={
+                          item.contact
+                            ? () => dispatch(contact_Toggle(true))
+                            : ""
+                        }
+                      >
+                        {item.name}
+                      </Link>
+                      {item.list && dropdownOpen && (
+                        <div
+                          className="dropdown-menu-cust shadow_inside"
+                          data-aos="fade-up"
+                          data-aos-duration="300"
+                        >
                           <ul className="products-category first-col">
-                            <li>
-                              <div>Design Software</div>
-                              <ul>
-                                <li>
-                                  <Link
-                                    className="d-block w-100 h-100 d-flex"
-                                    href={"/cladcut"}
-                                    shallow
-                                  >
-                                    <Image
-                                      width={15}
-                                      height={15}
-                                      src={cladIcon.src}
-                                      className="me-3"
-                                      alt="CladCut"
-                                      style={{ height: '15px', width: '15px' }}                                       
-                                    />
-                                    <div>CladCut</div>
-                                  </Link>
-                                </li>
-
-                                <li>
-                                  <Link
-                                    className="d-block w-100 h-100 d-flex"
-                                    href={"/windmaster"}
-                                    shallow
-                                  >
-                                    {/* <i className="bi bi-wind me-3 float-none"></i>{" "} */}
-                                    <Image
-                                      width={15}
-                                      height={15}
-                                      src={Windmaster.src}
-                                      className="me-3"
-                                      alt="WIND"
-                                      style={{ height: '15px', width: '15px' }}                                        
-                                    />
-                                    <div className="uppercase">WIND MASTER</div>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <div>Business Adminstration</div>
-                              <ul>
-                                <li>
-                                  <Link
-                                    className="d-block w-100 h-100 d-flex"
-                                    href={"/bondifycrm"}
-                                    shallow
-                                  >
-                                    <Image
-                                      width={10}
-                                      height={15}
-                                      src={bondify.src}
-                                      className="me-3"
-                                      alt="bondify"
-                                      style={{ height: '15px', width: '10px' }}  
-                                    />
-                                    {/* <i className="bi bi-kanban me-3 float-none"></i> */}
-                                    <div>bondify CRM</div>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <div>
-                                Risk Assessment{" "}
-                                <div className="text-secondary">
-                                  comply with SBC
+                            {item.list.map((listItem, index) => (
+                              <li key={index}>
+                                <div>
+                                  {listItem.title}
+                                  {listItem.sub_title && (
+                                    <div className="text-secondary">
+                                      {listItem.sub_title}
+                                    </div>
+                                  )}
                                 </div>
-                              </div>
-                              <ul>
-                                <li onClick={handleClick}>
-                                  <Link
-                                    className="d-block w-100 h-100 d-flex"
-                                    href={"/rdapp"}
-                                    shallow
-                                  >
-                                    <Image
-                                      width={15}
-                                      height={18}
-                                      src={RDAppIcon.src}
-                                      className="me-3"
-                                      alt="RDAPP"
-                                      style={{ height: '18px', width: '15px' }}  
 
-                                    />
-                                    <div className="mt-1">RDAPP</div>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <div>Communication</div>
-                              <ul>
-                                <li>
-                                  <Link
-                                    className="d-block w-100 h-100 d-flex"
-                                    href={"/chatplus"}
-                                    shallow
-                                  >
-                                    {/* <i className="bi bi-chat-square-text me-3 float-none"></i> */}
-                                    <Image
-                                      width={15}
-                                      height={18}
-                                      src={ChatPlusIcon.src}
-                                      className="me-3"
-                                      alt="ChatPlus"
-                                      style={{ height: '18px', width: '15px' }}  
-
-                                    />
-                                    <div>ChatPlus</div>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <div>Developement Services</div>
-                              <ul>
-                                <li>
-                                  <Link
-                                    className="d-block w-100 h-100 d-flex"
-                                    href={"/customization"}
-                                    shallow
-                                  >
-                                    <Image
-                                      width={18}
-                                      height={18}
-                                      src={customizationIcon.src}
-                                      className="me-3"
-                                      alt="Custom"
-                                      style={{ height: '18px', width: '18px' }}  
-
-                                    />
-                                    {/* <i className="bi bi-code-slash me-3 float-none"></i> */}
-                                    <div>Custom Software</div>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <div>Facade Fabrication</div>
-                              <ul>
-                                <li>
-                                  <Link
-                                    className="d-block w-100 h-100 d-flex"
-                                    href={"/grasshopper"}
-                                    shallow
-                                  >
-                                    <Image
-                                      width={20}
-                                      height={20}
-                                      src={grassIcon.src}
-                                      className="me-3"
-                                      alt="Grasshopper"
-                                      style={{ height: '20px', width: '20px' }}  
-
-                                    />{" "}
-                                    <div>Grasshopper Modules</div>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <div>Generative AI</div>
-                              <ul>
-                                <li>
-                                  <Link
-                                    className="d-block w-100 h-100 d-flex"
-                                    href={"/byld"}
-                                    shallow
-                                  >
-                                    <Image
-                                      width={15}
-                                      height={20}
-                                      src={byldIcon.src}
-                                      className="me-3"
-                                      alt="BYLD"
-                                      style={{ height: '20px', width: '15px' }}  
-
-                                    />
-                                    <div>BYLD</div>
-                                  </Link>
-                                </li>
-                              </ul>
-                            </li>
+                                <ul>
+                                  {listItem.products.map((product, index) => (
+                                    <li key={index}>
+                                      <Link
+                                        className="d-block w-100 h-100 d-flex items-center"
+                                        href={product.link}
+                                        shallow
+                                      >
+                                        <Image
+                                          width={15}
+                                          height={15}
+                                          src={product.img.src}
+                                          className="me-3"
+                                          alt={product.name}
+                                        />
+                                        <div className="mt-1">
+                                          {product.name}
+                                        </div>
+                                      </Link>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </li>
+                            ))}
                           </ul>
-                        </Col>
-                      </Row>
-                    </div>
-                  )}
-                </li>
-                <li>
-                  <Link href="/#whatwedo" className="nav-link-item" shallow>
-                    WHAT WE DO
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#about" className="nav-link-item" shallow>
-                    ABOUT US
-                  </Link>
-                </li>
-                <li>
-                  <a onClick={handleToggle} className="pointer nav-link-item">
-                    CONTACT US
-                  </a>
-                </li>
+                        </div>
+                      )}
+                    </li>
+                  ))}
               </ul>
             </nav>
           </div>
           <div className="mobile_nav">
-            <MobileNav />
+            <Sidebar />
           </div>
         </div>
       </Container>
-      <PositionedSnackbar
-        handleClick={handleClick}
-        setOpen={setOpen}
-        open={open}
-      />
     </header>
   );
 }
