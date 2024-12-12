@@ -19,9 +19,12 @@ import axios from "axios";
 
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
+import { useSelector } from "react-redux";
 
 function Section_2() {
   const [module, setModule] = useState(false);
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { custom_software } = useSelector((state) => state.customSoftwareRed);
 
   const validationSchema = Yup.object({
     name: Yup.string().required("Name is required"),
@@ -64,12 +67,12 @@ function Section_2() {
   return (
     <section className="cust_section_3">
       <div className="section call-to-action-area">
-        <div className="container">
+        <div className="container" dir={dir}>
           <Row>
             <Col>
               <div className="call-to-action">
                 <div className="section-heading heading-light">
-                  <h2 className="title">Need a successful project?</h2>
+                  <h2 className="title">{custom_software(lang).sections.Contact.title}</h2>
                 </div>
               </div>
             </Col>
@@ -78,13 +81,13 @@ function Section_2() {
                 className="contact-form-box shadow-box"
                 style={{ transform: "translateY(-100px)" }}
               >
-                <h3 className="title">Contact us for a free consultation!</h3>
+                <h3 className="title">{custom_software(lang).sections.Contact.form.title}</h3>
                 <form
                   className="axil-contact-form"
                   onSubmit={formik.handleSubmit}
                 >
                   <div className="form-group">
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">{custom_software(lang).sections.Contact.form.name}</label>
                     <input
                       type="text"
                       className="form-control"
@@ -100,7 +103,7 @@ function Section_2() {
                     ) : null}
                   </div>
                   <div className="form-group">
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">{custom_software(lang).sections.Contact.form.email}</label>
                     <input
                       type="email"
                       className="form-control"
@@ -116,7 +119,7 @@ function Section_2() {
                     ) : null}
                   </div>
                   <div className="form-group mb--40">
-                    <label htmlFor="phone">Phone</label>
+                    <label htmlFor="phone">{custom_software(lang).sections.Contact.form.phone}</label>
                     <PhoneInput
                       className="form-control p-2 z-10 relative"
                       defaultCountry="sa"
@@ -132,7 +135,7 @@ function Section_2() {
                   </div>
 
                   <div className="form-group">
-                    <label htmlFor="title">Title</label>
+                    <label htmlFor="title">{custom_software(lang).sections.Contact.form.Title}</label>
                     <input
                       type="text"
                       className="form-control"
@@ -150,7 +153,7 @@ function Section_2() {
 
 
                   <div className="form-group mb--40">
-                    <label htmlFor="message">Project description</label>
+                    <label htmlFor="message">{custom_software(lang).sections.Contact.form.Description}</label>
                     <textarea
                       className="form-control"
                       id="message"
@@ -170,7 +173,7 @@ function Section_2() {
                       className="axil-btn btn-fill-primary btn-fluid btn-primary"
                       name="submit-btn"
                     >
-                      Estimate Project
+                      {custom_software(lang).sections.Contact.form.submit}
                     </button>
                   </div>
                 </form>

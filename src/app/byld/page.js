@@ -1,6 +1,6 @@
 import Page_container from "./Page_sup/Page_container";
 export const metadata = {
-  title: "BONDIFY CRM",
+  title: "BYLD",
   description:
     "BYLD is an advanced tool for engineers, offering instant access to a comprehensive database and seamless compliance with the Saudi Building Code. It ensures accurate, reliable answers through its powerful AI search, while adhering to strict security standards, including Saudi regulations, with advanced encryption for data protection.",
   keywords:[

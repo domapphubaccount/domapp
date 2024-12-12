@@ -2,6 +2,7 @@ import React from "react";
 import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import Link from "next/link";
 import Logo from "@/assets/images/chatPlus/logo-slogan.png";
+import VideoSection from "./Chat/VideoSection";
 import BannarIMG from "@/assets/images/chatPlus/img.png";
 import { contact_page } from "@/Store/Main/links/links";
 import { useSelector } from "react-redux";

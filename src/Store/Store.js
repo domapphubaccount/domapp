@@ -8,6 +8,8 @@ import contactRed from './reducers/ContactUs'
 import cladcutRed from './reducers/CladCut'
 import windmasterRed from './reducers/Windmaster'
 import chatplusRed from './reducers/ChatPlus'
+import byldRed from './reducers/Byld'
+import customSoftwareRed from './reducers/CustomSoftware'
 
 export const store = configureStore({
   reducer: {
@@ -18,6 +20,8 @@ export const store = configureStore({
     cladcutRed,
     chatplusRed,
     windmasterRed,
+    customSoftwareRed,
+    byldRed,
     languageSlice
     
   },

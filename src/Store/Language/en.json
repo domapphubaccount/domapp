@@ -295,5 +295,89 @@
       "title": "API Integration",
       "slogan": "Offers integration with your CRM & ERP."
     }
-  ]
+  ],
+
+  "CHATPLUS_PAGE_QUICK_START_TITLE": "Quick Start",
+  "CHATPLUS_PAGE_QUICK_START_SLOGAN": "Don't forget to watch our quick start tutorial.",
+
+  "BYLD_PAGE_BANNAR_SLOGAN": {
+    "first": "Smart Engineering",
+    "seconed": "Solutions",
+    "third": ", just ask",
+    "forth": "AI"
+  },
+  "BYLD_PAGE_TRY_BTN": "Try For Free",
+  "BYLD_PAGE_PRICING_BTN": "Pricing",
+
+  "BYLD_PAGE_QUICK_START_TITLE": "Quick Brief",
+  "BYLD_PAGE_QUICK_START_SLOGAN": "Revolutionize Construction Compliance With BYLD.",
+
+  "BYLD_PAGE_CARDS": [
+    {
+      "title": "Accurate Information",
+      "slogan": "A precise source of information with the ability to specify the source from a particular code."
+    },
+    {
+      "title": "Sharing Information With Others",
+      "slogan": "You can share the results of your conversations to unify discussion points and facilitate communication among team members."
+    },
+    {
+      "title": "Archive All Conversations",
+      "slogan": "All conversation results are archived in your account to continue the remaining parts of your project."
+    }
+  ],
+
+  "BYLD_PAGE_HEAD_TITLE": {
+    "first": "Clear answers to ",
+    "seconed": "complex questions",
+    "third": "referencing the Saudi Building Code"
+  },
+  "BYLD_PAGE_HEAD_SLOGAN": "Using BYLD can enhance informed decision-making and ensure that your projects comply with all requirements of the Saudi Building Code.",
+
+  "BYLD_PAGE_FEATURES_WHY_US": "Why choose us",
+  "BYLD_PAGE_FEATURES_TITLE": "Key Features",
+  "BYLD_PAGE_FEATURES_SLICE": [
+    {
+      "title": "Compliance with the Saudi Building Code",
+      "slogan": "Eliminate any possibility of misunderstanding the requirements and avoiding reliance on unreliable sources."
+    },
+    {
+      "title": "Continuous Updates And Additions",
+      "slogan": "Monitoring all updates approved by relevant authorities for developing the Saudi Building Code ensures the continuous dissemination of accurate information. All requirements and codes are subject to addition."
+    },
+    {
+      "title": "Instant Responses",
+      "slogan": "Immediate answers to your questions, ensuring ease of use."
+    }
+  ],
+
+  "CUSTOM_SOFTWARE_PAGE_CONTACT_BTN": "Contact us",
+  "CUSTOM_SOFTWARE_PAGE_ABOUT": {
+    "about_us": "About Us",
+    "title": "How We Can Help You Achieve Your Business Goal",
+    "slogan": {
+      "first": "DomApp is a leading software development company, distinguished by extensive experience and high capability in designing and programming any software your company needs.",
+      "seconed": "Whether it’s our own development or customization of other software, we are here to provide the optimal solutions for your success."
+    }
+  },
+  "CUSTOM_SOFTWARE_PAGE_SERVICES": {
+    "Services": "Services",
+    "title": "Our Working Process To Help You Boost Your Business",
+    "slice": [
+      {"title":"Custom Software Development","slogan":"We create software solutions that meet your specific needs. From analysis to implementation, we ensure a software designed specifically to meet your requirements."},
+      {"title":"Software Customization","slogan":"Have existing software that needs customization? Our team can modify and customize any software to align with your unique business needs."}
+    ]
+  },
+  "CUSTOM_SOFTWARE_PAGE_CONTACT":{
+    "title": "Need a successful project?",
+    "form": {
+      "title":"Contact us for a free consultation!",
+      "name": "Name",
+      "Email":"Email",
+      "Phone":"Phone",
+      "Title": "Title",
+      "Description":"Project description",
+      "submit":"Estimate Project"
+    }
+  }
 }

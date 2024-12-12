@@ -18,7 +18,7 @@ export let byldIcon = byldIconImage;
 
 
 
-import Logo from "/public/Logo/logo.png"
+import Logo from "/public/Logo/logo.webp"
 
 export const logo = Logo;
 
@@ -35,3 +35,13 @@ export const clad_icon2 = cladIcon2;
 export const clad_icon3 = cladIcon3;
 export const clad_icon4 = cladIcon4;
 export const clad_icon5 = cladIcon5;
+
+
+import byldIcon1 from "@/assets/images/Byld/data.jpg";
+import byldIcon2 from "@/assets/images/Byld/share.jpg";
+import byldIcon3 from "@/assets/images/Byld/tasks.svg";
+
+export const byld_icon1 = byldIcon1;
+export const byld_icon2 = byldIcon2;
+export const byld_icon3 = byldIcon3;
+

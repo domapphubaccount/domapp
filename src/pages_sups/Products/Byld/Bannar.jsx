@@ -1,11 +1,17 @@
+"use client";
 import React from "react";
 import bannarImg from "@/assets/images/Byld/intersect.svg";
-import subBannar from "@/assets/images/Byld/dashboard.WebP";
-import byldicon from "@/assets/images/Byld/logobyld.WebP";
+import subBannar from "@/assets/images/Byld/dashboard.png";
+import byldicon from "@/assets/images/Byld/logobyld.png";
 import blob from "@/assets/images/Byld/blob-tear.svg";
 import Link from "next/link";
+import { contact_page } from "@/Store/Main/links/links";
+import { useSelector } from "react-redux";
 
 function Bannar() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { byld } = useSelector((state) => state.byldRed);
+
   return (
     <section
       className="xl:bg-contain byld-bg bg-no-repeat -mt-24 pt-40"
@@ -17,22 +23,31 @@ function Bannar() {
             <div className="flex justify-center">
               <img src={byldicon.src} width={300} />
             </div>
-            <p
-              className="mt-8 text-blueGray-400 leading-relaxed wow animate__ animate__fadeIn animated"
-              style={{ visibility: "visible", animationName: "fadeIn" }}
-            >
-              Smart Engineering
-              <strong className="text-blue-500"> Solutions</strong>, just ask{" "}
-              <strong className="text-blue-500"> AI</strong>
-            </p>
+            {
+              <p
+                className="mt-8 text-blueGray-400 leading-relaxed wow animate__ animate__fadeIn animated"
+                style={{ visibility: "visible", animationName: "fadeIn" }}
+              >
+                {byld(lang).sections.bannar.slogan.first}
+                <strong className="text-blue-500">
+                  {" "}
+                  {byld(lang).sections.bannar.slogan.seconed}
+                </strong>
+                {byld(lang).sections.bannar.slogan.third}
+                <strong className="text-blue-500">
+                  {" "}
+                  {byld(lang).sections.bannar.slogan.forth}
+                </strong>
+              </p>
+            }
           </div>
           <div>
             <Link
               className="btn-primary mr-3 wow animate__ animate__fadeInUp hover-up-2 animated no-underline	"
-              href="/contact"
+              href={contact_page}
               style={{ visibility: "visible", animationName: "fadeInUp" }}
             >
-              Try For Free
+              {byld(lang).sections.bannar.try_btn}
             </Link>
             <Link
               className="btn-white wow animate__ animate__fadeInUp hover-up-2 animated no-underline	"
@@ -44,7 +59,7 @@ function Bannar() {
                 animationName: "fadeInUp",
               }}
             >
-              Pricing
+              {byld(lang).sections.bannar.pricing_btn}
             </Link>
           </div>
         </div>

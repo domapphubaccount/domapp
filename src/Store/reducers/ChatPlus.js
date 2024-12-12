@@ -17,6 +17,10 @@ const initialState = {
           try_btn: t("CHATPLUS_PAGE_TRY_BTN", lang),
           pricing_btn: t("CHATPLUS_PAGE_PRICING_BTN", lang),
         },
+        video_section: {
+          title: t("CHATPLUS_PAGE_QUICK_START_TITLE", lang),
+          slogan: t("CHATPLUS_PAGE_QUICK_START_SLOGAN", lang)
+        },
         GROW:{
             title: t( "CHATPLUS_PAGE_PRICING_GROW",lang)
         },
@@ -98,7 +102,6 @@ const initialState = {
         ],
         FEATUERS_CARDS_L: t("CHATPLUS_PAGE_FEATUERS_CARDS_L",lang),
         FEATUERS_CARDS_R: t("CHATPLUS_PAGE_FEATUERS_CARDS_R",lang),
-
         get_started: {
             title: t("WINDMASTER_PAGE_GET_STARTED_TITLE",lang),
             slogan: t("WINDMASTER_PAGE_GET_STARTED_SLOGAN",lang),

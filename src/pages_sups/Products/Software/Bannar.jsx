@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
-
 import { league } from '@/pages_sups/Home/Bannar/Bannar'
 import shap1 from '@/assets/images/Products_Page/Customization/bubble-9.png'
 import shap2 from '@/assets/images/Products_Page/Customization/line-4.png'
@@ -8,8 +6,13 @@ import item from '@/assets/images/Products_Page/Customization/project-8.png'
 import item2 from '@/assets/images/Products_Page/Customization/pic1.png'
 import Link from 'next/link'
 import customlogo from "@/assets/images/customization/Custom.png"
+import { contact_page } from '@/Store/Main/links/links'
+import { useSelector } from 'react-redux'
 
 export default function Bannar() {
+    const { lang, dir } = useSelector((state) => state.languageSlice);
+    const { custom_software } = useSelector((state) => state.customSoftwareRed);
+  
   return (
     <section className={`cast_bannar ${league} position-relative`}>
         <div className="breadcrum-area breadcrumb-banner single-breadcrumb">
@@ -20,9 +23,7 @@ export default function Bannar() {
                             {/* <h1 className="title h2 head_bannar">Custome Software</h1> */}
                             {/* <div><div className='d-inline-block m-auto text-primary fw-bold px-5'>Tailored solutions, turning your vision into reality.</div></div> */}
                             <img src={customlogo.src}  />
-                            
-                            
-                            <div><Link className='btn btn-primary font-bold mt-4' href={'/contact'}>Contact us</Link></div>
+                            <div><Link className='btn btn-primary font-bold mt-4' href={contact_page}>{custom_software(lang).sections.bannar.contact_btn}</Link></div>
                         </div>
                     </div>
                     <div className="col-lg-6">

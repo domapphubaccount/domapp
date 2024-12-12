@@ -15,7 +15,7 @@ export default function Section_4() {
           <Col sm={12} md={4} lg={4} className="g-0 p-3" key={index}>
             <div className="h-100" data-aos="fade-up" dir={dir} data-aos-duration="3000">
               <div className="h-100 chat_card_icon_container">
-                <div className="card_icon d-inline-block">
+                <div className="card_icon flex items-center justify-center">
                     <i className={item.icon}></i>
                 </div>
                 <div>

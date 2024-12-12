@@ -1,6 +1,8 @@
 'use client'
 import React from "react";
 import Image from "next/image";
+
+import CladBannar from "@/assets/images/Clad/Logo_Bannar.png";
 import { useSelector } from "react-redux";
 import { cladcut_site } from "@/Store/Main/links/links";
 
@@ -20,7 +22,7 @@ export default function Bannar() {
                     <Image
                       width={300}
                       height={100}
-                      src="/path/to/CladBannar.webp"
+                      src={CladBannar.src}
                       alt="cladcut banner title"
                       sizes="(max-width: 768px) 100vw, 
                              (max-width: 1200px) 50vw, 
@@ -118,7 +120,7 @@ export default function Bannar() {
 
                     </div>
                   </div>
-                  <Shape1 className="shapes shape-one" />
+                  {/* <Shape1 className="shapes shape-one" /> */}
                 </div>
               </div>
             </div>
