@@ -364,20 +364,135 @@
     "Services": "Services",
     "title": "Our Working Process To Help You Boost Your Business",
     "slice": [
-      {"title":"Custom Software Development","slogan":"We create software solutions that meet your specific needs. From analysis to implementation, we ensure a software designed specifically to meet your requirements."},
-      {"title":"Software Customization","slogan":"Have existing software that needs customization? Our team can modify and customize any software to align with your unique business needs."}
+      {
+        "title": "Custom Software Development",
+        "slogan": "We create software solutions that meet your specific needs. From analysis to implementation, we ensure a software designed specifically to meet your requirements."
+      },
+      {
+        "title": "Software Customization",
+        "slogan": "Have existing software that needs customization? Our team can modify and customize any software to align with your unique business needs."
+      }
     ]
   },
-  "CUSTOM_SOFTWARE_PAGE_CONTACT":{
+  "CUSTOM_SOFTWARE_PAGE_CONTACT": {
     "title": "Need a successful project?",
     "form": {
-      "title":"Contact us for a free consultation!",
+      "title": "Contact us for a free consultation!",
       "name": "Name",
-      "Email":"Email",
-      "Phone":"Phone",
+      "Email": "Email",
+      "Phone": "Phone",
       "Title": "Title",
-      "Description":"Project description",
-      "submit":"Estimate Project"
+      "Description": "Project description",
+      "submit": "Estimate Project"
     }
-  }
+  },
+
+  "GRASSHOPPER_PAGE_BANNAR_SLOGAN": "Precision engineering for exquisite facade fabrication.",
+  "GRASSHOPPER_PAGE_BANNAR_SLICE": [
+    {
+      "title": "The Ultimate Tool for Creativity and Efficiency",
+      "slogan": "Grasshopper is the ultimate tool for architects, engineers, and designers seeking to push the boundaries of creativity and efficiency."
+    },
+    {
+      "title": "Empowering Designers and Engineers",
+      "slogan": "Grasshopper empowers designers and engineers to push the boundaries of traditional modelling through a flexible, intuitive, and powerful dynamic design environment."
+    },
+    {
+      "title": "Significant Time Savings",
+      "slogan": "Grasshopper can save approximately 40-80% of the time typically required for complex design and modelling tasks by automating repetitive processes, enabling rapid iterations, and integrating analysis tools, this estimate assumes that users have a moderate to high level of proficiency with Grasshopper, as familiarity with the tool greatly enhances its efficiency benefits."
+    }
+  ],
+
+  "GRASSHOPPER_PAGE_QUICK_START": {
+    "title": "About Grasshopper",
+    "slogan": "Grasshopper is a powerful visual programming language and environment integrated within the Rhino Modules modelling software. It allows users to create and manipulate complex designs that offers significant time savings and enhanced design capabilities."
+  },
+  "GRASSHOPPER_PAGE_SERVICES_HEAD": {
+    "title": "Our Services",
+    "slogan": "Delivering premium services for an outstanding experience"
+  },
+  "GRASSHOPPER_PAGE_SERVICES_SLICE": [
+    {
+      "title": "Fabrication-Ready Data",
+      "slogan": "We provide accurate and detailed fabrication-ready data for CNC machining, laser cutting, and other digital fabrication methods, ensuring a smooth transition from digital model to physical component."
+    },
+    {
+      "title": "Quality Assurance",
+      "slogan": "Our precise digital models minimize errors and reduce waste, ensuring that every component is fabricated to the highest standards of quality."
+    },
+    {
+      "title": "Precision & Control",
+      "slogan": "The ability to define precise relationships and dependencies between design elements ensures greater control over the final output, improving accuracy and quality."
+    },
+    {
+      "title": "Expert Consultation & Support",
+      "slogan": "Our team of engineers offers expert consultation throughout the project, from initials to final installation."
+    }
+  ],
+  "GRASSHOPPER_PAGE_HEADS": [
+    {
+      "title": "Learning and Development",
+      "slogan": "The visual programming approach makes it accessible to those without extensive coding knowledge, while still offering advanced capabilities for those who wish to dive deeper into scripting and algorithmic design."
+    },
+    {
+      "title": "Collaborative Potential",
+      "slogan": "Grasshopper's ability to integrate with other software and file formats enhances collaboration across different teams and disciplines, fostering better communication and workflow integration."
+    }
+  ],
+  "GRASSHOPPER_PAGE_WHY_US": {
+    "head": {
+      "title": "Why Choose Us?",
+      "slogan": "At DomApp, we have specialists in cutting-edge facade fabrication that combines the power of Grasshopper with our team of experienced engineers. Our advanced parametric design capabilities enable us to create stunning, efficient, and highly customizable facade solutions."
+    },
+    "slice": [
+      {
+        "title": "Innovative Solutions: ",
+        "slogan": "We are at the forefront of facade design and fabrication, offering innovative solutions that set your building apart."
+      },
+      {
+        "title": "Client-Centric Approach: ",
+        "slogan": "Your satisfaction is our priority. We work closely with you to understand your needs and exceed your expectations."
+      },
+      {
+        "title": "Experienced Team: ",
+        "slogan": "Our team combines technical expertise with creative vision, delivering exceptional results every time."
+      }
+    ]
+  },
+  "GRASSHOPPER_PAGE_EXAMPLE": [
+    {
+      "title": "Visualization and Documentation",
+      "first": {
+        "title": "Immediate Visualization:",
+        "slogan": "Preview designs in real-time with custom display settings, facilitating faster evaluations and presentations."
+      },
+      "seconed": {
+        "title": "Clear Documentation:",
+        "slogan": "Annotate and document design logic directly within the Grasshopper canvas, making it easier to understand and communicate complex designs."
+      }
+    },
+    {
+      "title": "Rapid Iterations",
+      "first": {
+        "title": "Dynamic Modifications:",
+        "slogan": "Quickly explore different design options by adjusting sliders or parameters, enabling rapid prototyping and iteration."
+      },
+      "seconed": {
+        "title": "Immediate Feedback:",
+        "slogan": " Visual updates in real-time help identify design issues and improvements instantly, speeding up the decision-making process."
+      }
+    },
+    {
+      "title": "Complex Calculations and Geometries",
+      "first": {
+        "title": "Advanced Computational Power:",
+        "slogan": "Perform complex geometric calculations and manipulations that would be time-consuming and error-prone if done manually."
+      },
+      "seconed": {
+        "title": "Automated Analysis:",
+        "slogan": "Integrate analysis tools (like structural or environmental analysis) directly within the design process, providing immediate insights without needing separate software."
+      }
+    }
+  ],
+  "GRASSHOPPER_PAGE_CONTACT": {"sup":"READY TO DO THIS","title":"Let's get to work","btn":"CONTACT US"}
 }

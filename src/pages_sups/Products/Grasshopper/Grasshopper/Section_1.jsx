@@ -1,8 +1,11 @@
 import React from 'react';
-import cardImg from '@/assets/images/Grasshopper/insect.png';
 import grass from "@/assets/images/Grasshopper/insect.png"
+import { useSelector } from 'react-redux';
 
 export default function Section_1() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { grasshopper } = useSelector((state) => state.grasshopperRed);
+
   return (
     <div className="about-area about-position-top pb--120 bg_color--1">
       <div className="about-wrapper">
@@ -14,11 +17,10 @@ export default function Section_1() {
               </div>
             </div>
             <div className="col-lg-7 col-md-12">
-              <div className="about-inner inner">
+              <div className="about-inner inner" dir={dir}>
                 <div className="section-title" data-aos="fade-down" data-aos-duration="2000" >
-                  <h2 className="title fw-bold">About Grasshopper</h2>
-                  <p className="description">
-                  Grasshopper is a powerful visual programming language and environment integrated within the Rhino Modules modelling software. It allows users to create and manipulate complex designs that offers significant time savings and enhanced design capabilities.               </p>
+                  <h2 className="title fw-bold">{grasshopper(lang).sections.Quick_start.title}</h2>
+                  <p className="description">{grasshopper(lang).sections.Quick_start.slogan}</p>
                 </div>
               </div>
             </div>

@@ -10,6 +10,7 @@ import windmasterRed from './reducers/Windmaster'
 import chatplusRed from './reducers/ChatPlus'
 import byldRed from './reducers/Byld'
 import customSoftwareRed from './reducers/CustomSoftware'
+import grasshopperRed from './reducers/Grasshopper'
 
 export const store = configureStore({
   reducer: {
@@ -20,9 +21,9 @@ export const store = configureStore({
     cladcutRed,
     chatplusRed,
     windmasterRed,
+    grasshopperRed,
     customSoftwareRed,
     byldRed,
     languageSlice
-    
   },
 })
