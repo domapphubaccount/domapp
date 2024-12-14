@@ -53,6 +53,7 @@ function Section_1() {
 
               {byld(lang).sections.FEATURES.slice.map((item, index) => (
                 <div
+                key={index}
                   className="flex items-start py-4 wow animate__ animate__fadeInUp"
                   data-wow-delay=".5s"
                   style={{
