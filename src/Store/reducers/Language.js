@@ -11,7 +11,8 @@ export const languageSlice = createSlice({
   initialState,
   reducers: {
     handle_language: (state , action) => {
-      state.lang = action.payload
+      state.lang = action.payload.lang;
+      state.dir = action.payload.dir;
     }
   },
 })

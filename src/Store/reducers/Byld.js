@@ -18,7 +18,6 @@ const initialState = {
           slogan: t("BYLD_PAGE_BANNAR_SLOGAN", lang),
           try_btn: t("BYLD_PAGE_TRY_BTN", lang),
           pricing_btn: t("BYLD_PAGE_PRICING_BTN", lang),
-          // slice: t("CLADCUT_PAGE_BANNAR_SLICE", lang),
         },
         Quick_start: {
           title: t("BYLD_PAGE_QUICK_START_TITLE", lang),

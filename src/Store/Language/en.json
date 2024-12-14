@@ -187,6 +187,11 @@
   "WINDMASTER_PAGE_CARDS_SLOGAN_3": "Eliminate the wasted time spent on inefficient methods, allowing your engineering team to focus on critical tasks.",
   "WINDMASTER_PAGE_CARDS_SLOGAN_4": "Wind Master generates a detailed, easy-to-understand report that includes all calculations, and compliance checks.",
 
+  "WINDMASTER_PAGE_QUICK_START": {
+    "title":"Quick Start",
+    "slogan":"Don't forget to watch our quick start tutorial."
+  },
+
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_1": "Project info.",
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_2": "Site Data.",
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_3": "Export & Print.",
@@ -654,23 +659,44 @@
     "title": "Invoices & Payments",
     "slogan": "We’ve developed an incredibly user-friendly invoicing system, removing the necessity for third-party invoicing tools. Within the bondify CRM, you can easily create invoices with diverse options such as time billing, product billing, task billing, and others. Invoices are automatically sent to clients via email, enabling them to conveniently make online payment gateways.",
     "slice": [
-      {"title":"Invoices","slice":["Create, send, track.","Customize template.","Invoice automation."]},
-      {"title":"Payments","slice":["Track payments.","Receive and generate payments.","Payment status overview.","Control product, time, and task billing."]}
+      {
+        "title": "Invoices",
+        "slice": [
+          "Create, send, track.",
+          "Customize template.",
+          "Invoice automation."
+        ]
+      },
+      {
+        "title": "Payments",
+        "slice": [
+          "Track payments.",
+          "Receive and generate payments.",
+          "Payment status overview.",
+          "Control product, time, and task billing."
+        ]
+      }
     ]
   },
   "BONDIFYCRM_PAGE_CARD_5": {
     "sub": "Flexible",
     "title": "Subscriptions",
     "slogan": "This functionality allows you to automatically bill your clients for your products and services. You have the flexibility to set the billing cycle to weekly, monthly, yearly, and more. The system will then automatically generate a new invoice and charge your client's accordingly.",
-    "slice": [["Billing invoices", "Billing interval", "Create invoices"],["Transaction document","Process payment","Process runs"]]
+    "slice": [
+      ["Billing invoices", "Billing interval", "Create invoices"],
+      ["Transaction document", "Process payment", "Process runs"]
+    ]
   },
   "BONDIFYCRM_PAGE_CARD_6": {
     "sub": "Simple",
     "title": "Estimates/Quotations",
     "slogan": "Clients are more inclined to engage in a project when they have an estimate of the total cost involved. The application offers a user-friendly tool for effortlessly creating and emailing estimates to your clients. This enables your clients to conveniently review and accept the estimates provided.",
-    "slice": [["Create, modify estimates.", "Customized templates."],["Manage deal amount and products.","Send estimates automation."]]
+    "slice": [
+      ["Create, modify estimates.", "Customized templates."],
+      ["Manage deal amount and products.", "Send estimates automation."]
+    ]
   },
-  "BONDIFYCRM_PAGE_BREAK_2":"INTEGRATED BUSINESS MODALES CREATED FOR SPEED & EFFICIENCY",
+  "BONDIFYCRM_PAGE_BREAK_2": "INTEGRATED BUSINESS MODALES CREATED FOR SPEED & EFFICIENCY",
   "BONDIFYCRM_PAGE_CARD_7": {
     "title": "Time Tracking",
     "slogan": "Effortlessly monitor the time invested in your projects using the bondify CRM comprehensive time-tracking solution. Begin or end your timer or input time manually for tasks. Then, seamlessly bill your clients based on the recorded time.",
@@ -720,5 +746,34 @@
       "Notifications and alerts to keep team members informed about changes to task dependencies.",
       "Dynamic task adjustment schedules when dependent tasks are delayed or completed ahead of schedule."
     ]
-  }
+  },
+  "WINDMASTER_PRICING_PAGE": [
+    {
+      "title":"",
+      "price": "FREE",
+      "include": "Includes",
+      "slice":["1 report"],
+      "footer":"",
+      "link": "",
+      "btn": "TRY FOR FREE"
+    },
+    {
+      "title":"Package 1",
+      "price": "15 USD",
+      "include": "Includes",
+      "slice":["10 reports","1 Year Subscription"],
+      "footer":"Price Excluding VAT",
+      "link": "",
+      "btn": "CONTACT SALES"
+    },
+    {
+      "title": "Package 2",
+      "price": "55 USD",
+      "include": "Includes",
+      "slice":["50 reports","1 Year Subscription"],
+      "footer":"Price Excluding VAT",
+      "link": "",
+      "btn": "CONTACT SALES"
+    }
+  ]
 }

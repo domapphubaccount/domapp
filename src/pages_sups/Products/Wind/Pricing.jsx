@@ -6,25 +6,24 @@ import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import Link from "next/link";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 export default function Pricing() {
   // const [priceToggle , setPriceToggle] = useState(true)
   const [priceIcon, setPriceIcon] = useState(false);
-  const [currency, setCurrency] = useState("USD")
+  const [currency, setCurrency] = useState("USD");
 
- 
   useEffect(() => {
     axios
       .get("https://ipapi.co/json/")
-      .then(response => {
+      .then((response) => {
         country =
-          response.data.country_name == "Saudi Arabia"
-            && setCurrency("SAR")
+          response.data.country_name == "Saudi Arabia" && setCurrency("SAR");
       })
-      .catch(error => {
-        console.log("error", error)
-      })
-  }, [])
+      .catch((error) => {
+        console.log("error", error);
+      });
+  }, []);
   return (
     <>
       <Header />
@@ -39,184 +38,51 @@ export default function Pricing() {
   );
 }
 
-function Monthly({currency}) {
-  const handleDemoClick = () => {
-    window.location.href = "https://erp.domapphub.com/signup";
-  };
+function Monthly({ currency }) {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { windmaster } = useSelector((state) => state.windmasterRed);
   return (
     <>
       <div className="py-5 wind">
         <Container>
           <div style={{ maxWidth: "1000px" }} className="m-auto">
-            
-
             <Row>
-              <Col sm={12} md={4} lg={4} className="m-auto my-3 ">
-                <div
-                  className="pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between"
-                  style={{ borderRadius: "15px" }}
-                >
-                  <div className="mb-1 text-center">
-                    {/* <div className='fw-bold text-secondary'>Free</div> */}
-                    {/* <h4><del>0</del><small> SAR</small></h4> */}
-                    <h1>
-                      FREE
-                      {/* <small> Trial</small> */}
-                    </h1>
-                  </div>
-                  <div className="mb-4">
-                    <p className="text-start mb-4">Includes .</p>
-                    <ul className="pricing-wind-data">
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>1 report
-                      </li>
-                    </ul>
-                  </div>
+              {windmaster(lang).sections.Pricing.map((item, index) => (
+                <Col sm={12} md={4} lg={4} className="my-3">
+                  <div
+                    key={index}
+                    className="pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between"
+                    style={{ borderRadius: "15px" }}
+                  >
+                    <div className="mb-1 text-center">
+                      <div className="fw-bold text-secondary fs-4 mb-3">
+                        {item.title}
+                      </div>
+                      <h2>{item.price}</h2>
+                      <p className="text-start m-0">{item.include}</p>
+                    </div>
+                    <div className="mb-4">
+                      <ul className="pricing-wind-data">
+                        {item.slice.map((item, index) => (
+                          <li key={index}>
+                            <i className="bi bi-check-circle-fill"></i>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
-                  <div className="contact-wind-card">
-                    <a href=" https://windmaster.domapphub.com/login/">
-                      <button className="pricing-btn-wind">TRY FOR FREE</button>
-                    </a>
-                  </div>
-                </div>
-              </Col>
-              <Col sm={12} md={4} lg={4} className="my-3">
-                <div
-                  className="pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between"
-                  style={{ borderRadius: "15px" }}
-                >
-                  {/* <div className="position-absolute wind-price-discount d-flex justify-content-center align-items-center">
                     <div>
-                      <p className="text-light m-0">%20</p>
-                      <p className="text-light m-0">SAVE</p>
+                      <small>{item.footer}</small>
                     </div>
-                  </div> */}
-                  <div className="mb-1 text-center">
-                    <div className="fw-bold text-secondary fs-4 mb-3">
-                      Package 1
-                    </div>
-                    {/* <h4>
-                      <del>250</del>
-                      <small> SAR</small>
-                    </h4> */}
-                    <h2>
-                      {currency=="SAR"?50:15}<small> {currency}</small>
-                    </h2>
-                    <p className="text-start m-0">Includes .</p>
-                  </div>
-                  <div className="mb-4">
-                    <ul className="pricing-wind-data">
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>10 reports
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>1 Year
-                        Subscription
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <small>Price Excluding VAT</small>
-                  </div>
-                  <div className="contact-wind-card">
-                    <a href="https://wa.me/201501060885">
-                      <button className="pricing-btn-wind">
-                        CONTACT SALES
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </Col>
-              <Col sm={12} md={4} lg={4} className="my-3">
-                <div
-                  className="pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between"
-                  style={{ borderRadius: "15px" }}
-                >
-                  {/* <div className="position-absolute wind-price-discount d-flex justify-content-center align-items-center">
-                    <div>
-                      <p className="text-light m-0">%25</p>
-                      <p className="text-light m-0">SAVE</p>
-                    </div>
-                  </div> */}
-                  <div className="mb-1 text-center">
-                    <div className="fw-bold text-secondary fs-4 mb-3">
-                      Package 2
-                    </div>
-                    {/* <h4>
-                      <del>750</del>
-                      <small> SAR</small>
-                    </h4> */}
-                    <h2>
-                      {currency=="SAR"?200:55}<small> {currency}</small>
-                    </h2>
-                    <p className="text-start m-0">Includes .</p>
-                  </div>
-                  <div className="mb-4">
-                    <ul className="pricing-wind-data">
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>50 reports
-                      </li>
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>1 Year
-                        Subscription
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <small>Price Excluding VAT</small>
-                  </div>
-                  <div className="contact-wind-card">
-                    <a href="https://wa.me/201501060885">
-                      <button className="pricing-btn-wind">
-                        CONTACT SALES
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </Col>
-              {/* <Col sm={12} md={4} lg={3} className="my-3">
-                <div
-                  className="pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between"
-                  style={{ borderRadius: "15px" }}
-                >
-                  <div className="position-absolute wind-price-discount d-flex justify-content-center align-items-center">
-                    <div>
-                      <p className="text-light m-0">%35</p>
-                      <p className="text-light m-0">SAVE</p>
+                    <div className="contact-wind-card">
+                      <a href={item.link}>
+                        <button className="pricing-btn-wind">{item.btn}</button>
+                      </a>
                     </div>
                   </div>
-                  <div className="mb-1 text-center">
-                    <div className="fw-bold text-secondary fs-4 mb-3">
-                      Professional
-                    </div>
-                    <h4>
-                      <del>1500</del>
-                      <small> SAR</small>
-                    </h4>
-                    <h2>
-                      975<small> SAR</small>
-                    </h2>
-                    <p className="text-start m-0">Includes .</p>
-                  </div>
-                  <div className="mb-4">
-                    <ul className="pricing-wind-data">
-                      <li>
-                        <i className="bi bi-check-circle-fill"></i>300 report
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="contact-wind-card">
-                    <a href="https://wa.me/201501060885">
-                      <button className="pricing-btn-wind">
-                        CONTACT SALES
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </Col> */}
+                </Col>
+              ))}
             </Row>
           </div>
         </Container>

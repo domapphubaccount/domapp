@@ -16,6 +16,7 @@ const initialState = {
           try_btn: t("WINDMASTER_PAGE_TRY_BTN", lang),
           pricing_btn: t("WINDMASTER_PAGE_PRICING_BTN", lang),
         },
+        Quick_start: t("WINDMASTER_PAGE_QUICK_START", lang) ,
         CARDS: [
           {
             icon: (
@@ -242,7 +243,8 @@ const initialState = {
             title: t("WINDMASTER_PAGE_GET_STARTED_TITLE",lang),
             slogan: t("WINDMASTER_PAGE_GET_STARTED_SLOGAN",lang),
             btn: t("WINDMASTER_PAGE_GET_STARTED_BTN",lang)
-        }
+        },
+        Pricing: t("WINDMASTER_PRICING_PAGE",lang)
       },
     };
   },

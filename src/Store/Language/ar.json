@@ -195,6 +195,12 @@
   "WINDMASTER_PAGE_CARDS_SLOGAN_3": ". التخلص من الوقت المهدر في الأساليب التقليدية غير الفعالة,مما يسمح بالتركيز على المهام الضرورية",
   "WINDMASTER_PAGE_CARDS_SLOGAN_4": ". تقريرا مفصلا وسهل الفهم يتضمن جميع الحسابات والتحقق من الامتثال Windmaste ينشيء",
 
+
+  "WINDMASTER_PAGE_QUICK_START": {
+    "title":"ملخص سريع",
+    "slogan":"Wind Master اكتشف تجربة سلسة مع"
+  },
+
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_1": ". تفاصيل المشروع",
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_2": ". بيانات الموقع الجغرافي",
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_3": ". تصدير وطباعة التقارير",
@@ -746,5 +752,34 @@
       "إشعارات وتنبيهات لإبقاء أعضاء الفريق على علم بالتغييرات التي تطرأ على تبعيات المهام",
       "جداول تعديل المهام الديناميكية عندما تتأخر المهام التابعة أو تكتمل قبل الموعد المحدد"
     ]
-  }
+  },
+  "WINDMASTER_PRICING_PAGE": [
+    {
+      "title":"",
+      "price": "FREE",
+      "include": "Includes",
+      "slice":["1 report"],
+      "footer":"",
+      "link": "https://windmaster.domapphub.com/login/",
+      "btn": "TRY FOR FREE"
+    },
+    {
+      "title":"Package 1",
+      "price": "15 USD",
+      "include": "Includes",
+      "slice":["10 reports","1 Year Subscription"],
+      "footer":"Price Excluding VAT",
+      "link": "https://wa.me/201501060885",
+      "btn": "CONTACT SALES"
+    },
+    {
+      "title": "Package 2",
+      "price": "55 USD",
+      "include": "Includes",
+      "slice":["50 reports","1 Year Subscription"],
+      "footer":"Price Excluding VAT",
+      "link": "https://wa.me/201501060885",
+      "btn": "CONTACT SALES"
+    }
+  ]
 }

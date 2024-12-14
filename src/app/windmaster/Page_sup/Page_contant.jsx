@@ -16,6 +16,7 @@ import Bannar from "@/pages_sups/Products/Wind/Bannar";
 import Section_3 from "@/pages_sups/Products/Wind/Wind/Section_3";
 import Section_4 from "@/pages_sups/Products/Wind/Wind/Section_4";
 import Section_5 from "@/pages_sups/Products/Wind/Wind/Section_5";
+import WindVideo from "@/pages_sups/Products/Wind/Wind/VideoSection";
 
 export default function Page() {
   return (
@@ -25,6 +26,7 @@ export default function Page() {
         <Section_2 />
         <Section_5 />
         <Section_3 />
+        <WindVideo />
         <Section_4 />
       </>
     </div>

@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Menu, MenuItem, IconButton } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import { useDispatch } from "react-redux";
+import { handle_language } from "@/Store/reducers/Language";
 
 export default function LanguageDropdown() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  const dispatch = useDispatch()
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -15,7 +18,9 @@ export default function LanguageDropdown() {
   };
 
   const handleLanguage = (e) => {
-    
+    e.target.id === "ar" ? localStorage.setItem("lang","ar") : localStorage.setItem("lang","en")
+    dispatch(handle_language({lang: e.target.id,dir: e.target.id === "en" ? "ltr" : "rtl"}))
+    handleClose()
   }
 
   return (
