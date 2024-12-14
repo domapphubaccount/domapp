@@ -23,9 +23,9 @@ const initialState = {
         Head_1: t("RDAPP_PAGE_HEAD_1", lang),
         Cards_1: t("RDAPP_PAGE_CARDS_1", lang),
         Cards_1_icon: [
-          <i className="bi bi-database-up"></i>,
-          <i className="bi bi-file-lock"></i>,
-          <i className="bi bi-code-slash"></i>
+          <i key={1} className="bi bi-database-up"></i>,
+          <i key={2} className="bi bi-file-lock"></i>,
+          <i key={3} className="bi bi-code-slash"></i>
         ],
         Info_1: t("RDAPP_PAGE_INFO_1", lang),
         Info_2: t("RDAPP_PAGE_INFO_2", lang),

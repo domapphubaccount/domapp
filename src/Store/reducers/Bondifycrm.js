@@ -42,7 +42,7 @@ const initialState = {
           title: t("BYLD_PAGE_FEATURES_TITLE",lang),
           slice: t("BYLD_PAGE_FEATURES_SLICE",lang),
           icons: [
-            <svg
+            <svg key={1}
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
@@ -57,6 +57,7 @@ const initialState = {
               ></path>
             </svg>,
             <svg
+            key={2}
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
@@ -77,6 +78,7 @@ const initialState = {
               ></path>
             </svg>,
             <svg
+            key={3}
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"

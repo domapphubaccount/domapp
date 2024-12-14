@@ -48,7 +48,7 @@ function Monthly({ currency }) {
           <div style={{ maxWidth: "1000px" }} className="m-auto">
             <Row>
               {windmaster(lang).sections.Pricing.map((item, index) => (
-                <Col sm={12} md={4} lg={4} className="my-3">
+                <Col sm={12} md={4} lg={4} className="my-3" key={index}>
                   <div
                     key={index}
                     className="pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between"

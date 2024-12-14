@@ -18,6 +18,7 @@ const initialState = {
           slogan: t("GRASSHOPPER_PAGE_BANNAR_SLOGAN", lang),
           icon: [
             <svg
+            key={1}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -32,6 +33,7 @@ const initialState = {
               />
             </svg>,
             <svg
+            key={2}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -46,6 +48,7 @@ const initialState = {
               />
             </svg>,
             <svg
+            key={3}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -69,6 +72,7 @@ const initialState = {
           slice: t("GRASSHOPPER_PAGE_SERVICES_SLICE", lang),
           icons: [
             <svg
+            key={1}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -84,6 +88,7 @@ const initialState = {
               />
             </svg>,
             <svg
+            key={2}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -99,6 +104,7 @@ const initialState = {
               />
             </svg>,
             <svg
+            key={3}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -114,6 +120,7 @@ const initialState = {
               />
             </svg>,
             <svg
+            key={4}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
