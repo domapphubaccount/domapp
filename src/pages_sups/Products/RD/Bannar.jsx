@@ -6,8 +6,11 @@ import Shap_1 from "@/assets/images/Products_Page/Rd/mask-shape.png";
 import Shap_2 from "@/assets/images/Products_Page/Rd/line-shape.png";
 import Link from "next/link";
 import Logo from "@/assets/images/RDApp/logo_noslogan.png";
+import { useSelector } from "react-redux";
 
 export default function Product() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { rdapp } = useSelector((state) => state.rdAppRed);
   return (
     <section className={`rd_bannar ${league.className} position-relative`}>
       <div className="vh-100">
@@ -21,21 +24,24 @@ export default function Product() {
                 >
                   <div className="flex justify-center mb-3">
                     <div className="mr-3">
-                      <img src={Logo.src} alt="logo"/>
+                      <img src={Logo.src} alt="logo" />
                     </div>
-                    {/* <div className="mb-4">
-                      <h1 className={league.className}>RDAPP</h1>
-                    </div> */}
                   </div>
                   <div className="mb-4">
                     <p className={league.className + " mb-4"}>
-                      {/* Smart solutions that save time & Cost. */}
-                      Risk assessment complying with
+                      {rdapp(lang).sections.bannar.slogan.title}
                       <br />
-                      <span className="fw-bold">Saudi building code .</span>
+                      <span className="fw-bold">
+                        {rdapp(lang).sections.bannar.slogan.slogan}
+                      </span>
                     </p>
-                    <Link type="button" href="/contact" className="rd_get_started text-white" shallow>
-                      Get Started
+                    <Link
+                      type="button"
+                      href="/contact"
+                      className="rd_get_started text-white"
+                      shallow
+                    >
+                      {rdapp(lang).sections.bannar.try_btn}
                     </Link>
                   </div>
                 </div>

@@ -2,8 +2,11 @@ import React from "react";
 import { Col, Container } from "reactstrap";
 import Pay from "@/assets/images/BondifyCRM/Features/work.jpg";
 import yesI from "@/assets/images/BondifyCRM/Features/yes.svg";
+import { useSelector } from "react-redux";
 
 export default function Section_14() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
   return (
     <section className="erp_section_15">
       <Container>
@@ -24,15 +27,8 @@ export default function Section_14() {
               data-aos-duration="3000"
             >
               <div>
-                <h3>Workflow Automation</h3>
-                <p>
-                  Workflow automation for projects and estimates enables the
-                  automation of repetitive tasks. You can specify actions
-                  triggered when an estimate is accepted by your client or when
-                  a project is marked as completed. These automations enhance
-                  your team's efficiency and ensure no steps are overlooked in
-                  your workflow.
-                </p>
+                <h3>{bondifycrm(lang).sections.Card_11.title}</h3>
+                <p>{bondifycrm(lang).sections.Card_11.slogan}</p>
               </div>
               <div>
                 <div
@@ -40,62 +36,23 @@ export default function Section_14() {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>
-                      Create, customize, and automate business processes.
-                    </span>
-                  </div>
-
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>Automate routine tasks.</span>
-                  </div>
-
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>Confirm invoice payments.</span>
-                  </div>
-
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>Automate recurring tasks, projects.</span>
-                  </div>
-
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>Automate task, project creation.</span>
-                  </div>
+                  {bondifycrm(lang).sections.Card_11.slice.map(
+                    (item, index) => (
+                      <div
+                        className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 "
+                        key={index}
+                      >
+                        <span className="w-5 h-5">
+                          <img
+                            src={yesI.src}
+                            alt="true"
+                            className="w-full h-full object-contain"
+                          />
+                        </span>
+                        <span>{item}</span>
+                      </div>
+                    )
+                  )}
                 </div>
               </div>
             </div>

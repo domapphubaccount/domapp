@@ -1,22 +1,26 @@
 import React from "react";
 import Pay from "@/assets/images/BondifyCRM/Features/invoice.jpg";
 import Time from "@/assets/images/BondifyCRM/Features/estimates.jpg";
+import { useSelector } from "react-redux";
 
 export default function Section_7() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
+
   return (
     <section className="content-inner-2 overflow-hidden" id="Sub">
       <div className="container">
         <div className="row align-items-center about-bx3">
           <div className="col-lg-6 m-b30">
             <div className="section-head" style={{ transform: "none" }}>
-              <h5 className="text-secondary sub-title mb-4">Flexible</h5>
-              <h2 className="title m-b15 mb-4">Subscriptions</h2>
+              <h5 className="text-secondary sub-title mb-4">
+                {bondifycrm(lang).sections.Card_5.sub}
+              </h5>
+              <h2 className="title m-b15 mb-4">
+                {bondifycrm(lang).sections.Card_5.title}
+              </h2>
               <p className="m-b0" data-wow-delay="1s">
-                This functionality allows you to automatically bill your clients
-                for your products and services. You have the flexibility to set
-                the billing cycle to weekly, monthly, yearly, and more. The
-                system will then automatically generate a new invoice and charge
-                your client's accordingly.
+                {bondifycrm(lang).sections.Card_5.slogan}
               </p>
             </div>
             <div
@@ -24,20 +28,15 @@ export default function Section_7() {
               data-wow-delay="1.5s"
               style={{ opacity: "1", transform: "none" }}
             >
-              <div className="col-sm-6">
-                <ul className="list-check-1 light">
-                  <li>Billing invoices</li>
-                  <li>Billing interval</li>
-                  <li>Create invoices</li>
-                </ul>
-              </div>
-              <div className="col-sm-6">
-                <ul className="list-check-1 light">
-                  <li>Transaction document</li>
-                  <li>Process payment</li>
-                  <li>Process runs </li>
-                </ul>
-              </div>
+              {bondifycrm(lang).sections.Card_5.slice.map((item, index) => (
+                <div className="col-sm-6" key={index}>
+                  <ul className="list-check-1 light">
+                    {item.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
           <div className="col-lg-6">
@@ -51,6 +50,7 @@ export default function Section_7() {
             </div>
           </div>
         </div>
+
         <div className="row align-items-center about-bx3" id="Est">
           <div className="col-lg-6">
             <div className="dz-media">
@@ -64,14 +64,14 @@ export default function Section_7() {
           </div>
           <div className="col-lg-6 m-b30">
             <div className="section-head" style={{ transform: "none" }}>
-              <h5 className="text-secondary sub-title mb-4">Simple</h5>
-              <h2 className="title m-b15 mb-4">Estimates/Quotations</h2>
+              <h5 className="text-secondary sub-title mb-4">
+                {bondifycrm(lang).sections.Card_6.sub}
+              </h5>
+              <h2 className="title m-b15 mb-4">
+                {bondifycrm(lang).sections.Card_6.title}
+              </h2>
               <p className="m-b0" data-wow-delay="1s">
-                Clients are more inclined to engage in a project when they have
-                an estimate of the total cost involved. The application offers a
-                user-friendly tool for effortlessly creating and emailing
-                estimates to your clients. This enables your clients to
-                conveniently review and accept the estimates provided.
+                {bondifycrm(lang).sections.Card_6.slogan}
               </p>
             </div>
             <div
@@ -79,18 +79,15 @@ export default function Section_7() {
               data-wow-delay="1.5s"
               style={{ opacity: "1", transform: "none" }}
             >
-              <div className="col-sm-6">
-                <ul className="list-check-1 light">
-                  <li>Create, modify estimates.</li>
-                  <li>Customized templates.</li>
-                </ul>
-              </div>
-              <div className="col-sm-6">
-                <ul className="list-check-1 light">
-                  <li>Manage deal amount and products.</li>
-                  <li>Send estimates automation.</li>
-                </ul>
-              </div>
+              {bondifycrm(lang).sections.Card_6.slice.map((item, index) =>
+                item.map((item, index) => (
+                  <div className="col-sm-6" key={index}>
+                    <ul className="list-check-1 light">
+                      <li>{item}</li>
+                    </ul>
+                  </div>
+                ))
+              )}
             </div>
           </div>
         </div>

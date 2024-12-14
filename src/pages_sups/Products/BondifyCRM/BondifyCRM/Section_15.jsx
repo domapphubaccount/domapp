@@ -2,8 +2,11 @@ import React from "react";
 import { Col, Container } from "reactstrap";
 import Time from "@/assets/images/BondifyCRM/Features/task-dep.jpg";
 import yesI from "@/assets/images/BondifyCRM/Features/yes.svg";
+import { useSelector } from "react-redux";
 
 export default function Section_15() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
   return (
     <section className="erp_section_15" id="Tas">
       <Container>
@@ -15,16 +18,8 @@ export default function Section_15() {
               data-aos-duration="2500"
             >
               <div>
-                <h3>Task Dependency Management</h3>
-                <p>
-                  Create task dependencies, establishing relationships between
-                  tasks where one task must be completed before another can
-                  begin. This sequential dependency management ensures that
-                  tasks are executed in the correct order, preventing
-                  bottlenecks and ensuring smooth project progression.
-                  Dependency management facilitates effective synchronization
-                  among your diverse team members.
-                </p>
+                <h3>{bondifycrm(lang).sections.Card_12.title}</h3>
+                <p>{bondifycrm(lang).sections.Card_12.title}</p>
               </div>
               <div>
                 <ul
@@ -32,63 +27,22 @@ export default function Section_15() {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <li>
-                    <div className="grid grid-cols-[auto_1fr] items-start ">
-                      <span className="w-5 h-5">
-                        <img
-                          src={yesI.src}
-                          alt="true"
-                          className="w-full h-full object-contain"
-                        />
-                      </span>
-                      <span>Create relationship between tasks.</span>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="grid grid-cols-[auto_1fr] items-start ">
-                      <span className="w-5 h-5">
-                        <img
-                          src={yesI.src}
-                          alt="true"
-                          className="w-full h-full object-contain"
-                        />
-                      </span>
-                      <span>Control dependent task.</span>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="grid grid-cols-[auto_1fr] items-start ">
-                      <span className="w-5 h-5">
-                        <img
-                          src={yesI.src}
-                          alt="true"
-                          className="w-full h-full object-contain"
-                        />
-                      </span>
-                      <span>
-                        Notifications and alerts to keep team members informed
-                        about changes to task dependencies.
-                      </span>{" "}
-                    </div>
-                  </li>
-                  
-                  <li>
-                    <div className="grid grid-cols-[auto_1fr] items-start ">
-                      <span className="w-5 h-5">
-                        <img
-                          src={yesI.src}
-                          alt="true"
-                          className="w-full h-full object-contain"
-                        />
-                      </span>
-                      <span>
-                        Dynamic task adjustment schedules when dependent tasks
-                        are delayed or completed ahead of schedule.
-                      </span>{" "}
-                    </div>
-                  </li>
+                  {bondifycrm(lang).sections.Card_12.slice.map(
+                    (item, index) => (
+                      <li key={index}>
+                        <div className="grid grid-cols-[auto_1fr] items-start ">
+                          <span className="w-5 h-5">
+                            <img
+                              src={yesI.src}
+                              alt="true"
+                              className="w-full h-full object-contain"
+                            />
+                          </span>
+                          <span>{item}</span>
+                        </div>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             </div>

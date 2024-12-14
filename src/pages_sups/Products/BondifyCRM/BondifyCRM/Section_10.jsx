@@ -1,8 +1,12 @@
 import React from "react";
 import { Col, Container } from "reactstrap";
 import Time from "@/assets/images/BondifyCRM/Features/repay.jpg";
+import { useSelector } from "react-redux";
 
 export default function Section_10() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
+
   return (
     <section className="erp_section_11 mb-5" id="Rec">
       <Container>
@@ -14,13 +18,8 @@ export default function Section_10() {
               data-aos-duration="2500"
             >
               <div>
-                <h3>Recurring Billing</h3>
-                <p>
-                  You have the flexibility to generate recurring invoices on a
-                  daily, weekly, monthly, or yearly basis. The system will
-                  independently generate new invoices and send them to your
-                  clients via email.
-                </p>
+                <h3>{bondifycrm(lang).sections.Card_8.title}</h3>
+                <p>{bondifycrm(lang).sections.Card_8.slogan}</p>
               </div>
             </div>
           </Col>

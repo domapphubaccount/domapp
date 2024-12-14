@@ -1,8 +1,11 @@
 import React from "react";
 import { Col, Container } from "reactstrap";
 import Time from "@/assets/images/BondifyCRM/Features/know.jpg";
+import { useSelector } from "react-redux";
 
 export default function Section_13() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
   return (
     <section className="erp_section_15" id="Kno">
       <Container>
@@ -14,13 +17,8 @@ export default function Section_13() {
               data-aos-duration="2500"
             >
               <div>
-                <h3>Knowledge Base</h3>
-                <p>
-                  Reduce your customer support response time by providing
-                  customers access to self-service resources and a help
-                  repository. Utilize the knowledge base to create a
-                  comprehensive user knowledge base.
-                </p>
+                <h3>{bondifycrm(lang).sections.Card_10.title}</h3>
+                <p>{bondifycrm(lang).sections.Card_10.slogan}</p>
               </div>
             </div>
           </Col>

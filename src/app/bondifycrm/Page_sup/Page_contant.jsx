@@ -1,6 +1,6 @@
 import React from "react";
 
-import Section_1 from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Section_1";
+// import Section_1 from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Section_1";
 
 import Section_2 from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Section_2";
 
@@ -10,7 +10,7 @@ import Section_4 from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Section_4";
 
 import Section_5 from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Section_5";
 
-import Section_6 from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Section_6";
+// import Section_6 from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Section_6";
 
 import Section_7 from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Section_7";
 
@@ -36,30 +36,34 @@ import Heading from "@/components/Reuse/Section_Head/Heading";
 import Bannar from "@/pages_sups/Products/BondifyCRM/Bannar";
 import Break from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Break";
 import VideoSection from "@/pages_sups/Products/BondifyCRM/BondifyCRM/VideoSection";
+import { useSelector } from "react-redux";
 
 export default function Page() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
+
   return (
     <div className="erp_page">
       <>
         <Bannar />
         <Heading
           head="bondify CRM"
-          body="First Choice For Your Business"
+          body= {bondifycrm(lang).sections.Heading_1.slogan}
           back="bondify CRM"
         />
         <VideoSection/>
-        <Section_1 />
-        <Break body={'REDUCED COST IMPROVED PRODUCTIVITY'} />
+        {/* <Section_1 /> */}
+        <Break body={bondifycrm(lang).sections.Break_1} />
         <Section_2 />
         <Section_3 />
         <Section_4 />
         <Section_5 />
-        <Section_6 />
+        {/* <Section_6 /> */}
         <Section_7 />
-        <Break body={'INTEGRATED BUSINESS MODALES CREATED FOR SPEED & EFFICIENCY'} />
+        <Break body={bondifycrm(lang).sections.Break_2} />
         <Section_9 />
         <Section_10 />
-        <Section_11 />
+        {/* <Section_11 /> */}
         <Section_12 />
         <Section_13 />
         <Section_14 />

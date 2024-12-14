@@ -2,8 +2,11 @@ import React from "react";
 import { Col, Container } from "reactstrap";
 import Time from "@/assets/images/BondifyCRM/Features/time.png";
 import yesI from "@/assets/images/BondifyCRM/Features/yes.svg";
+import { useSelector } from "react-redux";
 
 export default function Section_4() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
   return (
     <section className="erp_section_9" id="Tim">
       <Container>
@@ -15,13 +18,8 @@ export default function Section_4() {
               data-aos-duration="2500"
             >
               <div>
-                <h3>Time Tracking</h3>
-                <p>
-                  Effortlessly monitor the time invested in your projects using
-                  the bondify CRM comprehensive time-tracking solution. Begin or
-                  end your timer or input time manually for tasks. Then,
-                  seamlessly bill your clients based on the recorded time.
-                </p>
+                <h3>{bondifycrm(lang).sections.Card_3.title}</h3>
+                <p>{bondifycrm(lang).sections.Card_3.slogan}</p>
               </div>
               <div>
                 <ul
@@ -29,49 +27,16 @@ export default function Section_4() {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <li>
-                    <div className="align-items-start gap-2">
-                      <span>
-                        <img src={yesI.src} className="yes_icon" alt="true" />
-                      </span>{" "}
-                      <span className="m-0 mb-2">
-                        Measuring productivity and project progress.
-                      </span>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="align-items-start gap-2">
-                      <span>
-                        <img src={yesI.src} className="yes_icon" alt="true" />
-                      </span>{" "}
-                      <span className="m-0 mb-2">
-                        Track time spent on specific tasks or projects.
-                      </span>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="align-items-start gap-2">
-                      <span>
-                        <img src={yesI.src} className="yes_icon" alt="true" />
-                      </span>
-                      <span className="m-0 mb-2">
-                        Track time manually by entering start and end times.
-                      </span>{" "}
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="align-items-start gap-2">
-                      <span>
-                        <img src={yesI.src} className="yes_icon" alt="true" />
-                      </span>
-                      <span className="m-0 mb-2">
-                        Built-in timer feature to track time automatically.
-                      </span>{" "}
-                    </div>
-                  </li>
+                  {bondifycrm(lang).sections.Card_3.slice.map((item, index) => (
+                    <li key={index}>
+                      <div className="align-items-start gap-2">
+                        <span>
+                          <img src={yesI.src} className="yes_icon" alt="true" />
+                        </span>
+                        <span className="m-0 mb-2">{item}</span>
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

@@ -494,5 +494,231 @@
       }
     }
   ],
-  "GRASSHOPPER_PAGE_CONTACT": {"sup":"READY TO DO THIS","title":"Let's get to work","btn":"CONTACT US"}
+  "GRASSHOPPER_PAGE_CONTACT": {
+    "sup": "READY TO DO THIS",
+    "title": "Let's get to work",
+    "btn": "CONTACT US"
+  },
+
+  "RDAPP_PAGE_BANNAR_SLOGAN": {
+    "title": "Risk assessment complying with",
+    "slogan": "Saudi building code ."
+  },
+  "RDAPP_PAGE_QUICK_START": {
+    "title": "RDAPP نبذة عن اداة",
+    "slogan": "اكتشف تجربة سلسة مع RDAPP."
+  },
+  "RDAPP_PAGE_NOTE_1": "“Choosing RDAPP Means Benefiting From The Best Of Smart Solutions That Save Time And Cost And Enhance Efficiency And Communication Efforts, It Is A Great Competitive Advantage, In Line With Saudi Building Code.”",
+  "RDAPP_PAGE_HEAD_1": {
+    "title": "Exclusive Features",
+    "slogan": "RDAPP stacked with the best features."
+  },
+  "RDAPP_PAGE_CARDS_1": [
+    {
+      "title": "Increased Productivity",
+      "slogan": "Efficient platform for managing risks, It streamlines the entire risk management process, eliminating manual and time-consuming tasks allowing teams to manage risks more effectively and efficiently."
+    },
+    {
+      "title": "Secure Data",
+      "slogan": "Advanced encryption protocols to safeguard data, ensuring secure transmission and storage."
+    },
+    {
+      "title": "Saudi Code Compliance",
+      "slogan": "Every risk management strategy and precautionary measure implemented is aligned with the regulations outlined in the Saudi Building Code, prioritizing safety and regulatory adherence throughout."
+    }
+  ],
+
+  "RDAPP_PAGE_INFO_1": {
+    "title": "RDAPP PURPOSE",
+    "slogan": "The RDAPP is designed with the main purpose of assuring that each project is complying with the Saudi Building Code and receives the technical attention needed for high-quality output. Tracking the stages of progress for each project and ensuring seamless coordination with the various parties involved, starting from receiving the project, followed by the initial risk assessment and any deeper review by the experts in several fields of civil engineering, such as geotechnical studies, structural analysis, innovative materials..etc. and going through each technical inspection stage on-site with efficiency."
+  },
+  "RDAPP_PAGE_INFO_2": [
+    {
+      "title": "USER FRIENDLY",
+      "slogan": "The RDAPP boasts a user-friendly interface, ensuring smooth navigation and effortless interactions for all users. By displaying all the reports issued for the project, all the tickets for the project, and clarifying the project status. The RDAPP’s straightforward layout and clearly labeled options make it a breeze for users to accomplish tasks and access information."
+    },
+    {
+      "title": "INTEGRATION",
+      "slogan": "Integrating all technical reports and relevant documents into one application that is designed with specific limits according to the Saudi Building Code, with easy access for all users to create, edit, and share documents according to their specific roles. The RDAPP streamlines the issuance of RD and inspection reports for technical engineers, automatically populating data across all reports and eliminating redundant data entry."
+    }
+  ],
+
+  "RDAPP_PAGE_HEAD_2": {
+    "title": "DATABASE PROTECTION",
+    "slogan": "Data protected by CITC Decision Number 424/1442 Date 27-01-1442."
+  },
+
+  "RDAPP_PAGE_INFO_3": [
+    {
+      "title": "PROCESS CONTROL",
+      "slogan": "The documentary cycle of each report is transferred from one specialist engineer to another, with more than different possible paths for each project that provide full technical disciplines that can guarantee automatically higher quality for each report issued."
+    },
+    {
+      "title": "PRODUCTIVITY",
+      "slogan": "Based on our customers feedback RDAPP will increase the productivity of each report issued 50% reduction in time, organizing each report cycle, and connecting all parties involved faster. The RDAPP will provide an Instant Unified Report Update with each step within the paths designed making both the design review and the site inspection visits according to the Saudi Building Code, and much more efficient."
+    }
+  ],
+  "RDAPP_PAGE_INFO_4": [
+    {
+      "title": "COMMUNICATION",
+      "slogan": "An e-mail is sent automatically from the application without human intervention, as once the any report is approved by the technical department manager, all technical reservations in the report will be sent to Stakeholders, the client and the contractor."
+    },
+    {
+      "title": "COST MONITORING",
+      "slogan": "We have effectively developed a cost-per-meter technique that provides an estimated project value for each element in the Bill of Quantities (BOQ). This method has been programmed into the RDAPP with detailed factors to enhance cost evaluations for projects and promptly notify Stakeholders of any flagged concerns."
+    }
+  ],
+  "RDAPP_PAGE_CARDS_2": [
+    {
+      "title": "Real-Time Collaboration",
+      "slogan": "Enable seamless collaboration among team members with real-time document editing and sharing capabilities."
+    },
+    {
+      "title": "Mobile Accessibility",
+      "slogan": "Access project information anytime, anywhere with mobile accessibility."
+    },
+    {
+      "title": "Audit Trail",
+      "slogan": "Maintain accountability and transparency with an audit trail of document revisions and user actions."
+    },
+    {
+      "title": "Data Security",
+      "slogan": "Protect sensitive project data with robust security measures."
+    },
+    {
+      "title": "Integration",
+      "slogan": "RDAPP offers Integration with existing systems ensuring smooth data flow."
+    },
+    {
+      "title": "Rsponsive Support",
+      "slogan": "RDAPP offers Integration with existing systems ensuring smooth data flow."
+    }
+  ],
+  "RDAPP_PAGE_CARDS_3": [
+    {
+      "title": "QUALITY CONTROL",
+      "slogan_1": "One of the key standout capabilities of the RDAPP is its capacity to enhance process excellence it achieves this automatically by highlighting the technical reservations according to the Saudi Building Code in each project to Stakeholders.",
+      "slogan_2": "The client, and the inspection engineer this way the RDAPP reduces the potential human errors factor and streamlines the inspection process for the engineers.",
+      "slogan_3": "Identifying projects requiring advanced technical engagement and routing them to the respective subject matter experts."
+    },
+    {
+      "title": "DOCUMENTATION",
+      "slogan_1": "With the built-in documentation system, users can easily create, edit, and share project reports at the same moment, ensuring efficient collaboration among team members. The documentation system offers advanced search and filtering capabilities.",
+      "slogan_2": "Allowing users to quickly locate specific documents based on project numbers, locations, dates, and engineers who participated in the project, etc.",
+      "slogan_3": "The application's documentation system includes automated notifications and reminders, ensuring that technical reservations, notes, and all the project updates have been received by the engineers."
+    }
+  ],
+
+  "BONDIFYCRM_PAGE_TRY_BTN": "Try Demo",
+  "BONDIFYCRM_PAGE_PRICING_BTN": "Pricing",
+  "BONDIFYCRM_PAGE_HEADING_1": {
+    "title": "",
+    "slogan": "First Choice For Your Business"
+  },
+  "BONDIFYCRM_PAGE_QUICK_START": {
+    "title": "Quick Start",
+    "slogan": "Don't forget to watch our quick start tutorial."
+  },
+  "BONDIFYCRM_PAGE_BREAK_1": "REDUCED COST IMPROVED PRODUCTIVITY",
+  "BONDIFYCRM_PAGE_CARD_1": {
+    "title": "Project Management",
+    "slogan": "This application offers highly advanced features designed to streamline project management. Enhance your efficiency further by utilizing the project templates and project cloning capabilities, making your workflow even smoother.",
+    "slice": [
+      "Project Overview: Assign team members, supervisors, and project leads.",
+      "Project Tracking: Manage and track project progress, including status updates, milestones, and completion targets.",
+      "Project Duplication: Easily clone existing projects for efficiency, with full visibility into team activities and time allocation."
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_2": {
+    "title": "Task Management",
+    "slogan": "Ensure task completion on schedule to accomplish your goals. Utilize the application's advanced functionalities like task cloning, timers, reminders, and more to enhance productivity and efficiency. Assign tasks to both team members and clients to streamline collaboration.",
+    "slice": [
+      "Task assignment.",
+      "Task control.",
+      "Task cloning.",
+      "Task summary and overview.",
+      "Task reminder."
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_3": {
+    "title": "Time Tracking",
+    "slogan": "Effortlessly monitor the time invested in your projects using the bondify CRM comprehensive time-tracking solution. Begin or end your timer or input time manually for tasks. Then, seamlessly bill your clients based on the recorded time.",
+    "slice": [
+      "Measuring productivity and project progress.",
+      "Track time spent on specific tasks or projects.",
+      "Track time manually by entering start and end times.",
+      "Built-in timer feature to track time automatically."
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_4": {
+    "title": "Invoices & Payments",
+    "slogan": "We’ve developed an incredibly user-friendly invoicing system, removing the necessity for third-party invoicing tools. Within the bondify CRM, you can easily create invoices with diverse options such as time billing, product billing, task billing, and others. Invoices are automatically sent to clients via email, enabling them to conveniently make online payment gateways.",
+    "slice": [
+      {"title":"Invoices","slice":["Create, send, track.","Customize template.","Invoice automation."]},
+      {"title":"Payments","slice":["Track payments.","Receive and generate payments.","Payment status overview.","Control product, time, and task billing."]}
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_5": {
+    "sub": "Flexible",
+    "title": "Subscriptions",
+    "slogan": "This functionality allows you to automatically bill your clients for your products and services. You have the flexibility to set the billing cycle to weekly, monthly, yearly, and more. The system will then automatically generate a new invoice and charge your client's accordingly.",
+    "slice": [["Billing invoices", "Billing interval", "Create invoices"],["Transaction document","Process payment","Process runs"]]
+  },
+  "BONDIFYCRM_PAGE_CARD_6": {
+    "sub": "Simple",
+    "title": "Estimates/Quotations",
+    "slogan": "Clients are more inclined to engage in a project when they have an estimate of the total cost involved. The application offers a user-friendly tool for effortlessly creating and emailing estimates to your clients. This enables your clients to conveniently review and accept the estimates provided.",
+    "slice": [["Create, modify estimates.", "Customized templates."],["Manage deal amount and products.","Send estimates automation."]]
+  },
+  "BONDIFYCRM_PAGE_BREAK_2":"INTEGRATED BUSINESS MODALES CREATED FOR SPEED & EFFICIENCY",
+  "BONDIFYCRM_PAGE_CARD_7": {
+    "title": "Time Tracking",
+    "slogan": "Effortlessly monitor the time invested in your projects using the bondify CRM comprehensive time-tracking solution. Begin or end your timer or input time manually for tasks. Then, seamlessly bill your clients based on the recorded time.",
+    "slice": [
+      "Measuring productivity and project progress.",
+      "Track time spent on specific tasks or projects.",
+      "Track time manually by entering start and end times.",
+      "Built-in timer feature to track time automatically."
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_8": {
+    "title": "Recurring Billing",
+    "slogan": "You have the flexibility to generate recurring invoices on a daily, weekly, monthly, or yearly basis. The system will independently generate new invoices and send them to your clients via email."
+  },
+  "BONDIFYCRM_PAGE_CARD_9": {
+    "title": "Leads & Opportunities",
+    "slogan": "Effectively manage your opportunities and guide leads into paying customers seamlessly Utilize our advanced form builder to effortlessly capture new leads, which can then be embedded on any website.",
+    "slice": [
+      "Create contacts, companies form leads.",
+      "Convert emails, messages and anything into a lead.",
+      "Assign users, supervisors and managers.",
+      "Add a lead reminder.",
+      "Manage and control leads."
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_10": {
+    "title": "Knowledge Base",
+    "slogan": "Reduce your customer support response time by providing customers access to self-service resources and a help repository. Utilize the knowledge base to create a comprehensive user knowledge base."
+  },
+  "BONDIFYCRM_PAGE_CARD_11": {
+    "title": "Leads & Opportunities",
+    "slogan": "Effectively manage your opportunities and guide leads into paying customers seamlessly Utilize our advanced form builder to effortlessly capture new leads, which can then be embedded on any website.",
+    "slice": [
+      "Create contacts, companies form leads.",
+      "Convert emails, messages and anything into a lead.",
+      "Assign users, supervisors and managers.",
+      "Add a lead reminder.",
+      "Manage and control leads."
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_12": {
+    "title": "Task Dependency Management",
+    "slogan": "Create task dependencies, establishing relationships between tasks where one task must be completed before another can begin. This sequential dependency management ensures that tasks are executed in the correct order, preventing bottlenecks and ensuring smooth project progression. Dependency management facilitates effective synchronization among your diverse team members.",
+    "slice": [
+      "Create relationship between tasks.",
+      "Control dependent task.",
+      "Notifications and alerts to keep team members informed about changes to task dependencies.",
+      "Dynamic task adjustment schedules when dependent tasks are delayed or completed ahead of schedule."
+    ]
+  }
 }

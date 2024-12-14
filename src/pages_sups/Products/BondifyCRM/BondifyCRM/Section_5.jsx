@@ -2,8 +2,12 @@ import React from "react";
 import { Col, Container, Row } from "reactstrap";
 import Pay from "@/assets/images/BondifyCRM/Features/pay.jpg";
 import yesI from "@/assets/images/BondifyCRM/Features/yes.svg";
+import { useSelector } from "react-redux";
 
 export default function Section_5() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
+
   return (
     <section className="erp_section_7 mb-5" id="Invo">
       <Container>
@@ -24,166 +28,42 @@ export default function Section_5() {
               data-aos-duration="3000"
             >
               <div>
-                <h3>Invoices & Payments</h3>
-                <p>
-                  We’ve developed an incredibly user-friendly invoicing system,
-                  removing the necessity for third-party invoicing tools. Within
-                  the bondify CRM, you can easily create invoices with diverse
-                  options such as time billing, product billing, task billing,
-                  and others. Invoices are automatically sent to clients via
-                  email, enabling them to conveniently make online payment
-                  gateways.
-                </p>
+                <h3>{bondifycrm(lang).sections.Card_4.title}</h3>
+                <p>{bondifycrm(lang).sections.Card_4.slogan}</p>
               </div>
               <div>
                 <Row className="">
-                  <Col>
-                    <ul
-                      className="list"
-                      data-aos="fade-right"
-                      data-aos-duration="1500"
-                    >
-                      <li>
-                        <div>
-                          <h5>Invoices</h5>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="align-items-start gap-1">
-                          <span>
-                            <img
-                              src={yesI.src}
-                              className="yes_icon"
-                              alt="true"
-                            />
-                          </span>{" "}
-                          <span className="m-0 mb-2 text-sm md:text-base">
-                            Create, send, track.
-                          </span>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="align-items-start gap-1">
-                          <span>
-                            <img
-                              src={yesI.src}
-                              className="yes_icon"
-                              alt="true"
-                            />
-                          </span>{" "}
-                          <span className="m-0 mb-2 text-sm md:text-base">
-                            Customize template.
-                          </span>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="align-items-start gap-1">
-                          <span>
-                            <img
-                              src={yesI.src}
-                              className="yes_icon"
-                              alt="true"
-                            />
-                          </span>
-                          <span className="m-0 mb-2 text-sm md:text-base">
-                            Invoice automation.
-                          </span>{" "}
-                        </div>
-                      </li>
-                    </ul>
-                  </Col>
-
-                  <Col>
-                    <ul
-                      className="list"
-                      data-aos="fade-right"
-                      data-aos-duration="1500"
-                    >
-                      <li>
-                        <div>
-                          <h5>Payments</h5>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="align-items-start gap-1">
-                          <span>
-                            <img
-                              src={yesI.src}
-                              className="yes_icon"
-                              alt="true"
-                            />
-                          </span>{" "}
-                          <span className="m-0 mb-2 text-sm md:text-base">
-                            Track payments.
-                          </span>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="align-items-start gap-1">
-                          <span>
-                            <img
-                              src={yesI.src}
-                              className="yes_icon"
-                              alt="true"
-                            />
-                          </span>{" "}
-                          <span className="m-0 mb-2 text-sm md:text-base">
-                            Receive and generate payments.
-                          </span>
-                        </div>
-                      </li>
-
-                      <li>
-                        <div className="align-items-start gap-1">
-                          <span>
-                            <img
-                              src={yesI.src}
-                              className="yes_icon"
-                              alt="true"
-                            />
-                          </span>
-                          <span className="m-0 mb-2 text-sm md:text-base">
-                            Payment status overview.
-                          </span>{" "}
-                        </div>
-                      </li>
-
-                      {/* <li>
-                        <div className="align-items-start gap-1">
-                          <span>
-                            <img
-                              src={yesI.src}
-                              className="yes_icon"
-                              alt="true"
-                            />
-                          </span>
-                          <span className="m-0 mb-2 text-sm md:text-base">
-                            Determine payment method paypal, credit card.
-                          </span>{" "}
-                        </div>
-                      </li> */}
-
-                      <li>
-                        <div className="align-items-start gap-1">
-                          <span>
-                            <img
-                              src={yesI.src}
-                              className="yes_icon"
-                              alt="true"
-                            />
-                          </span>
-                          <span className="m-0 mb-2 text-sm md:text-base">
-                            Control product, time, and task billing.
-                          </span>{" "}
-                        </div>
-                      </li>
-                    </ul>
-                  </Col>
+                  {bondifycrm(lang).sections.Card_4.slice.map((item, index) => (
+                    <Col key={index}>
+                      <ul
+                        className="list"
+                        data-aos="fade-right"
+                        data-aos-duration="1500"
+                      >
+                        <li>
+                          <div>
+                            <h5>{item.title}</h5>
+                          </div>
+                        </li>
+                        {item.slice.map((item, index) => (
+                          <li key={index}>
+                            <div className="align-items-start gap-1">
+                              <span>
+                                <img
+                                  src={yesI.src}
+                                  className="yes_icon"
+                                  alt="true"
+                                />
+                              </span>
+                              <span className="m-0 mb-2 text-sm md:text-base">
+                                {item}
+                              </span>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </Col>
+                  ))}
                 </Row>
               </div>
             </div>

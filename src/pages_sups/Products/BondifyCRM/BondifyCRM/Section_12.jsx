@@ -2,8 +2,11 @@ import React from "react";
 import { Col, Container } from "reactstrap";
 import Pay from "@/assets/images/BondifyCRM/Features/leads.jpg";
 import yesI from "@/assets/images/BondifyCRM/Features/yes.svg";
+import { useSelector } from "react-redux";
 
 export default function Section_12() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
   return (
     <section className="erp_section_15" id="Lea">
       <Container>
@@ -24,13 +27,8 @@ export default function Section_12() {
               data-aos-duration="3000"
             >
               <div>
-                <h3>Leads & Opportunities</h3>
-                <p>
-                  Effectively manage your opportunities and guide leads into
-                  paying customers seamlessly Utilize our advanced form builder
-                  to effortlessly capture new leads, which can then be embedded
-                  on any website.
-                </p>
+                <h3>{bondifycrm(lang).sections.Card_9.title}</h3>
+                <p>{bondifycrm(lang).sections.Card_9.slogan}</p>
               </div>
               <div>
                 <div
@@ -38,62 +36,21 @@ export default function Section_12() {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>Create contacts, companies form leads.</span>
-                  </div>
-
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>
-                      Convert emails, messages and anything into a lead.
-                    </span>
-                  </div>
-
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>Assign users, supervisors and managers.</span>
-                  </div>
-
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>Add a lead reminder.</span>
-                  </div>
-
-                  <div className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 ">
-                    <span className="w-5 h-5">
-                      <img
-                        src={yesI.src}
-                        alt="true"
-                        className="w-full h-full object-contain"
-                      />
-                    </span>
-                    <span>Manage and control leads.</span>
-                  </div>
+                  {bondifycrm(lang).sections.Card_9.slice.map((item, index) => (
+                    <div
+                      className="grid grid-cols-[auto_1fr] gap-2 items-start mx-2 mb-2 "
+                      key={index}
+                    >
+                      <span className="w-5 h-5">
+                        <img
+                          src={yesI.src}
+                          alt="true"
+                          className="w-full h-full object-contain"
+                        />
+                      </span>
+                      <span>{item}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

@@ -2,8 +2,11 @@ import React from "react";
 import { Col, Container } from "reactstrap";
 import Pay from "@/assets/images/BondifyCRM/Features/porp.jpg";
 import yesI from "@/assets/images/BondifyCRM/Features/yes.svg";
+import { useSelector } from "react-redux";
 
 export default function Section_9() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
   return (
     <section className="erp_section_11" id="Pro">
       <Container>
@@ -24,13 +27,8 @@ export default function Section_9() {
               data-aos-duration="3000"
             >
               <div>
-                <h3>Proposals</h3>
-                <p>
-                  Initial impressions are paramount. Showcase professionalism to
-                  potential clients through impeccably crafted project
-                  proposals. Our intuitive interface ensures ease of use for all
-                  users.
-                </p>
+                <h3>{bondifycrm(lang).sections.Card_7.title}</h3>
+                <p>{bondifycrm(lang).sections.Card_7.slogan}</p>
               </div>
               <div>
                 <ul
@@ -38,21 +36,20 @@ export default function Section_9() {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <li>
-                    <div className="grid grid-cols-[auto_1fr] gap-2 items-start  ">
-                      <span className="w-5 h-5">
-                        <img
-                          src={yesI.src}
-                          alt="true"
-                          className="w-full h-full object-contain"
-                        />
-                      </span>
-                      <span>
-                        Create professional and customizable proposals quickly
-                        and efficiently.
-                      </span>
-                    </div>
-                  </li>
+                  {bondifycrm(lang).sections.Card_7.slice.map((item, index) => (
+                    <li key={index}>
+                      <div className="grid grid-cols-[auto_1fr] gap-2 items-start  ">
+                        <span className="w-5 h-5">
+                          <img
+                            src={yesI.src}
+                            alt="true"
+                            className="w-full h-full object-contain"
+                          />
+                        </span>
+                        <span>{item}</span>
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

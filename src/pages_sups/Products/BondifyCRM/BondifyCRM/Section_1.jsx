@@ -1,14 +1,14 @@
 import React from "react";
 import { Container } from "reactstrap";
 import { league } from "@/pages_sups/Home/Bannar/Bannar";
-import { items } from "@/app/Page_data";
+// import { items } from "@/app/Page_data";
 
 export default function Section_1() {
   return (
     <section className="erp_cards_section">
       <Container>
         <div className="row">
-          {items
+          {/* {items
             .filter((item) => item.link === "/crmBondify")
             .map((item, index) =>
               item.Section_3.features_1.list.map((item, index) => (
@@ -19,7 +19,6 @@ export default function Section_1() {
                 >
                   <div className="feature-box text-center">
                     <div className={`feature-icon ${league.className} `}>
-                      {" "}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -50,11 +49,11 @@ export default function Section_1() {
                       <p className={`mb-0 f-lightCSS ${league.className}`}>
                         {item.caption}
                       </p>
-                    )}{" "}
+                    )}
                   </div>
                 </div>
               ))
-            )}
+            )} */}
         </div>
       </Container>
     </section>

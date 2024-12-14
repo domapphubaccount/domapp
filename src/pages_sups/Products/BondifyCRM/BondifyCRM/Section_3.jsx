@@ -2,8 +2,12 @@ import React from "react";
 import { Col, Container } from "reactstrap";
 import Task from "@/assets/images/BondifyCRM/Features/task.jpg";
 import yesI from "@/assets/images/BondifyCRM/Features/yes.svg";
+import { useSelector } from "react-redux";
 
 export default function Section_3() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
+
   return (
     <section className="erp_section_7" id="Tas">
       <Container>
@@ -24,14 +28,8 @@ export default function Section_3() {
               data-aos-duration="3000"
             >
               <div>
-                <h3>Task Management</h3>
-                <p>
-                  Ensure task completion on schedule to accomplish your goals.
-                  Utilize the application's advanced functionalities like task
-                  cloning, timers, reminders, and more to enhance productivity
-                  and efficiency. Assign tasks to both team members and clients
-                  to streamline collaboration.{" "}
-                </p>
+                <h3>{bondifycrm(lang).sections.Card_2.title}</h3>
+                <p>{bondifycrm(lang).sections.Card_2.slogan}</p>
               </div>
               <div>
                 <ul
@@ -39,52 +37,16 @@ export default function Section_3() {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <li>
-                    <div className="align-items-start gap-2">
-                      <span>
-                        <img src={yesI.src} className="yes_icon" alt="true" />
-                      </span>{" "}
-                      <span className="m-0 mb-2">Task assignment.</span>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="align-items-start gap-2">
-                      <span>
-                        <img src={yesI.src} className="yes_icon" alt="true" />
-                      </span>{" "}
-                      <span className="m-0 mb-2">Task control.</span>
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="align-items-start gap-2">
-                      <span>
-                        <img src={yesI.src} className="yes_icon" alt="true" />
-                      </span>
-                      <span className="m-0 mb-2">Task cloning.</span>{" "}
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="align-items-start gap-2">
-                      <span>
-                        <img src={yesI.src} className="yes_icon" alt="true" />
-                      </span>
-                      <span className="m-0 mb-2">
-                        Task summary and overview.
-                      </span>{" "}
-                    </div>
-                  </li>
-
-                  <li>
-                    <div className="align-items-start gap-2">
-                      <span>
-                        <img src={yesI.src} className="yes_icon" alt="true" />
-                      </span>
-                      <span className="m-0 mb-2">Task reminder.</span>{" "}
-                    </div>
-                  </li>
+                  {bondifycrm(lang).sections.Card_2.slice.map((item, index) => (
+                    <li key={index}>
+                      <div className="align-items-start gap-2">
+                        <span>
+                          <img src={yesI.src} className="yes_icon" alt="true" />
+                        </span>
+                        <span className="m-0 mb-2">{item}</span>
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
