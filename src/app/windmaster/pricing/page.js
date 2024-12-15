@@ -1,12 +1,16 @@
-"use client"
-import Pricing from '@/pages_sups/Products/Wind/Pricing'
-import React from 'react'
+"use client";
+import React from "react";
+import { Suspense } from "react";
+import Loading from "./loading";
+import dynamic from "next/dynamic";
+const Pricing = dynamic(() => import("@/pages_sups/Products/Wind/Pricing"), {
+  ssr: false,
+});
 
 export default function Page() {
-
   return (
-    <div>
-        <Pricing />
-    </div>
-  )
+    <Suspense fallback={<Loading />}>
+      <Pricing />
+    </Suspense>
+  );
 }

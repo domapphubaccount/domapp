@@ -1,8 +1,14 @@
-import Page_container from "./Page_sup/Page_container";
+import { Suspense } from "react";
+import Loading from "./loading";
+import dynamic from "next/dynamic";
+const Page_container = dynamic(() => import("./Page_sup/Page_container"), {
+  ssr: false,
+});
 
 export const metadata = {
   title: "WINDMASTER",
-  description: "Calculate wind loads on façade and generate a detailed, easy-to-understand report that includes all calculations, and compliance checks.",
+  description:
+    "Calculate wind loads on façade and generate a detailed, easy-to-understand report that includes all calculations, and compliance checks.",
   keywords: [
     "windmaster",
     "wind master",
@@ -44,15 +50,14 @@ export const metadata = {
     "wind facade",
     "wind kinetic facade",
     "wind turbine facade",
-    "wind on facade"
-  ]
-  
+    "wind on facade",
+  ],
 };
 
 export default function Page() {
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <Page_container />
-    </>
+    </Suspense>
   );
 }

@@ -36,7 +36,6 @@ const initialState = {
   value: 0,
   contact_Toggle: false,
   header: (lang) => {
-    console.log(lang);
     return {
       logo,
       nav: [

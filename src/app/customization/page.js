@@ -1,4 +1,10 @@
-import Page_container from "./Page_sup/Page_container";
+import { Suspense } from "react";
+import Loading from "./loading";
+import dynamic from "next/dynamic";
+const Page_container = dynamic(() => import("./Page_sup/Page_container"), {
+  ssr: false,
+});
+
 export const metadata = {
   title: "CUSTOMIZATION",
   description: "Custom Software Service provides tailored software solutions and customization for any software to address the unique needs of businesses across diverse industries. Our team collaborates closely with clients to grasp their requirements, ensuring the software we develop aligns with their objectives. We oversee the entire software lifecycle, from initial consultation and design to development and ongoing support, delivering scalable and user-friendly applications that boost productivity and foster innovation. Whether you require a web application, or enterprise software, our custom solutions empower your business to thrive.",
@@ -429,8 +435,8 @@ export const metadata = {
 };
 export default function Page() {
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <Page_container />
-    </>
+    </Suspense>
   );
 }

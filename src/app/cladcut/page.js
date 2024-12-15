@@ -1,4 +1,9 @@
-import Page_container from "./Page_sup/Page_container";
+import { Suspense } from "react";
+import Loading from "./loading";
+import dynamic from "next/dynamic";
+const Page_container = dynamic(() => import("./Page_sup/Page_container"), { ssr: false })
+
+
 export const metadata = {
   title: "CLADCUT",
   description:
@@ -113,8 +118,8 @@ export const metadata = {
 };
 export default function Page() {
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <Page_container />
-    </>
+    </Suspense>
   );
 }

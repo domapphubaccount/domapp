@@ -1,9 +1,15 @@
-import Page_container from "./Page_sup/Page_container";
+import { Suspense } from "react";
+import Loading from "./loading";
+import dynamic from "next/dynamic";
+const Page_container = dynamic(() => import("./Page_sup/Page_container"), {
+  ssr: false,
+});
 
 export const metadata = {
   title: "RDAPP",
-  description: "RDAPP is an innovative platform that streamlines research and development processes while ensuring compliance with the Saudi Building Code (SBC) for each project. It tracks project progress stages, facilitating seamless coordination among all parties from project reception through initial risk assessment and expert reviews in geotechnical studies, structural analysis, and innovative materials. The app efficiently manages each technical inspection stage on-site. By centralizing information, automating workflows, and enhancing communication, RDAPP boosts productivity while employing advanced encryption and security measures to protect sensitive data, making it a trusted solution for organizations focused on innovation.",
-  keywords:[
+  description:
+    "RDAPP is an innovative platform that streamlines research and development processes while ensuring compliance with the Saudi Building Code (SBC) for each project. It tracks project progress stages, facilitating seamless coordination among all parties from project reception through initial risk assessment and expert reviews in geotechnical studies, structural analysis, and innovative materials. The app efficiently manages each technical inspection stage on-site. By centralizing information, automating workflows, and enhancing communication, RDAPP boosts productivity while employing advanced encryption and security measures to protect sensitive data, making it a trusted solution for organizations focused on innovation.",
+  keywords: [
     "app",
     "RD",
     "dating apps",
@@ -329,16 +335,14 @@ export const metadata = {
     "latest big data technologies",
     "big data analytics methods",
     "big data analytics python",
-    "big data fintech"
-  ]
-  
+    "big data fintech",
+  ],
 };
-
 
 export default function Page() {
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <Page_container />
-    </>
+    </Suspense>
   );
 }
