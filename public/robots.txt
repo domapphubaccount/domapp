@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+Sitemap: https://domapphub.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /sitemap.xml
+User-agent: *
+Disallow: /login/
+Disallow: /register/
+Disallow: /uploads/private/
+Disallow: /config/
+Disallow: /backup/
+Disallow: /logs/
+Disallow: /src/
+Disallow: /checkout/
+Disallow: /payment/
+Disallow: /? 
+
+
+
