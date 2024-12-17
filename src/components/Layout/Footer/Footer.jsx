@@ -92,7 +92,6 @@ export default function Footer() {
           </div>
           <div className="px-3">
             <Link href="/privacy" className="privacy_link">
-              Privacy Policy
               {policy(lang).sections.policy.title}
             </Link>
           </div>
