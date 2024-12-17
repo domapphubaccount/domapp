@@ -41,15 +41,18 @@ export default function Pricing() {
 function Monthly({ currency }) {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const { windmaster } = useSelector((state) => state.windmasterRed);
+
+  console.log(windmaster(lang).sections.Pricing)
   return (
     <>
       <div className="py-5 wind">
         <Container>
           <div style={{ maxWidth: "1000px" }} className="m-auto">
             <Row>
-              {windmaster(lang).sections.Pricing.map((item, index) => (
+              {windmaster(lang).sections.Pricing && windmaster(lang).sections?.Pricing?.map((item, index) => (
                 <Col sm={12} md={4} lg={4} className="my-3" key={index}>
                   <div
+                    dir={dir}
                     key={index}
                     className="pricing-container wind pricing-card p-4 py-4 erp border-0 m-3 h-100 d-flex align-items-around flex-column justify-content-between"
                     style={{ borderRadius: "15px" }}
@@ -59,13 +62,13 @@ function Monthly({ currency }) {
                         {item.title}
                       </div>
                       <h2>{item.price}</h2>
-                      <p className="text-start m-0">{item.include}</p>
+                      <p className="m-0">{item.include}</p>
                     </div>
                     <div className="mb-4">
                       <ul className="pricing-wind-data">
                         {item.slice.map((item, index) => (
                           <li key={index}>
-                            <i className="bi bi-check-circle-fill"></i>
+                            <i className="bi bi-check-circle-fill px-2"></i>
                             {item}
                           </li>
                         ))}

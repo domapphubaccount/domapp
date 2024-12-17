@@ -189,8 +189,8 @@
   "WINDMASTER_PAGE_CARDS_SLOGAN_4": "Wind Master generates a detailed, easy-to-understand report that includes all calculations, and compliance checks.",
 
   "WINDMASTER_PAGE_QUICK_START": {
-    "title":"Quick Start",
-    "slogan":"Don't forget to watch our quick start tutorial."
+    "title": "Quick Start",
+    "slogan": "Don't forget to watch our quick start tutorial."
   },
 
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_1": "Project info.",
@@ -511,13 +511,21 @@
     "slogan": "Saudi building code ."
   },
   "RDAPP_PAGE_QUICK_START": {
-    "title": "RDAPP نبذة عن اداة",
-    "slogan": "اكتشف تجربة سلسة مع RDAPP."
+    "title": "Quick Start",
+    "slogan": "Discover a seamless experience with RDAPP."
   },
   "RDAPP_PAGE_NOTE_1": "“Choosing RDAPP Means Benefiting From The Best Of Smart Solutions That Save Time And Cost And Enhance Efficiency And Communication Efforts, It Is A Great Competitive Advantage, In Line With Saudi Building Code.”",
   "RDAPP_PAGE_HEAD_1": {
     "title": "Exclusive Features",
     "slogan": "RDAPP stacked with the best features."
+  },
+  "RDAPP_PAGE_HEAD_2": {
+    "title": "AND MORE",
+    "slogan": "RDAPP Provides Best Features 'And more'"
+  },
+  "RDAPP_PAGE_HEAD_3": {
+    "title": "Exclusive Features",
+    "slogan": "RDAPP Provides Best Communication And Cost Monitoring"
   },
   "RDAPP_PAGE_CARDS_1": [
     {
@@ -750,20 +758,20 @@
   },
   "WINDMASTER_PRICING_PAGE": [
     {
-      "title":"",
+      "title": "",
       "price": "FREE",
       "include": "Includes",
-      "slice":["1 report"],
-      "footer":"",
+      "slice": ["1 report"],
+      "footer": "",
       "link": "",
       "btn": "TRY FOR FREE"
     },
     {
-      "title":"Package 1",
+      "title": "Package 1",
       "price": "15 USD",
       "include": "Includes",
-      "slice":["10 reports","1 Year Subscription"],
-      "footer":"Price Excluding VAT",
+      "slice": ["10 reports", "1 Year Subscription"],
+      "footer": "Price Excluding VAT",
       "link": "",
       "btn": "CONTACT SALES"
     },
@@ -771,10 +779,75 @@
       "title": "Package 2",
       "price": "55 USD",
       "include": "Includes",
-      "slice":["50 reports","1 Year Subscription"],
-      "footer":"Price Excluding VAT",
+      "slice": ["50 reports", "1 Year Subscription"],
+      "footer": "Price Excluding VAT",
       "link": "",
       "btn": "CONTACT SALES"
     }
-  ]
+  ],
+  "BONDIFY_PRICING_PAGE": {
+    "year": "Annual",
+    "month": "Monthly",
+    "save_to": "Save Up To 20%",
+    "monthly": {
+      "free": {
+        "title": "Free",
+        "price": false,
+        "include": "Get started For Free",
+        "link": "http://bondifycrm.domapphub.com/login",
+        "btn": "Start Demo"
+      },
+      "standard": {
+        "title": "Standard",
+        "price": "9",
+        "user": "User",
+        "include": "All features in Startup",
+        "link": "https://wa.me/201501060885",
+        "btn": "CONTACT SALES"
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": false,
+        "include": "Get customized features for your organization",
+        "link": "https://wa.me/201501060885",
+        "btn": "CONTACT SALES"
+      }
+    },
+    "annualy": {
+      "free": {
+        "title": "Free",
+        "price": false,
+        "include": "Get started For Free",
+        "link": "http://bondifycrm.domapphub.com/login",
+        "btn": "Start Demo"
+      },
+      "standard": {
+        "title": "Standard",
+        "price": "7",
+        "user": "مستخدم",
+        "include": "All features in Startup",
+        "link": "https://wa.me/201501060885",
+        "btn": "CONTACT SALES"
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "price": false,
+        "include": "Get customized features for your organization",
+        "link": "https://wa.me/201501060885",
+        "btn": "CONTACT SALES"
+      }
+    }
+  },
+  "CHATPLUS_PRICING_PAGE": {
+    "title": "Subscription",
+    "price": "16",
+    "sub": "/ user / month",
+    "include": [
+      "The price does not include VAT.",
+      "Meta Message fee not included.",
+      "Setup free Not Included."
+    ],
+    "link": "http://bondifycrm.domapphub.com/login",
+    "btn": "CONTACT SALES"
+  }
 }

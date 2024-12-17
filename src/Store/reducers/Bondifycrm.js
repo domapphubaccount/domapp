@@ -100,6 +100,7 @@ const initialState = {
           title: t("BYLD_PAGE_HEAD_TITLE", lang),
           slogan: t("BYLD_PAGE_HEAD_SLOGAN", lang),
         },
+        BONDIFY_PRICING: t("BONDIFY_PRICING_PAGE",lang)
       },
     };
   },

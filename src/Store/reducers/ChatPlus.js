@@ -106,7 +106,8 @@ const initialState = {
             title: t("WINDMASTER_PAGE_GET_STARTED_TITLE",lang),
             slogan: t("WINDMASTER_PAGE_GET_STARTED_SLOGAN",lang),
             btn: t("WINDMASTER_PAGE_GET_STARTED_BTN",lang)
-        }
+        },
+        CHATPLUS_PRICING: t("CHATPLUS_PRICING_PAGE",lang)
       },
     };
   },

@@ -14,6 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import { contact_Toggle } from "@/Store/reducers/Header";
+import LanguageDropdown from "../Footer/Lang";
 
 export default function Sidebar({ items }) {
   const [open, setOpen] = React.useState(false);
@@ -23,8 +24,8 @@ export default function Sidebar({ items }) {
   const handleOpen = (value) =>
     setOpenAccordion(openAccordion === value ? 0 : value);
   const dispatch = useDispatch();
-  const header = useSelector(state => state.headerRed.header);
-  const lang = useSelector(state => state.languageSlice.lang);
+  const header = useSelector((state) => state.headerRed.header);
+  const lang = useSelector((state) => state.languageSlice.lang);
 
   function Icon({ id, open }) {
     return (
@@ -103,7 +104,15 @@ export default function Sidebar({ items }) {
                   onClick={() => handleOpen(i)}
                   className="mb-2 p-0 text-lg text-white hover:bg-gray-600 rounded-lg"
                 >
-                  <Link href={item.link} className="nav-link w-100 p-2" onClick={item.contact ? () => dispatch(contact_Toggle(true)) : ''}>{item.name}</Link>
+                  <Link
+                    href={item.link}
+                    className="nav-link w-100 p-2"
+                    onClick={
+                      item.contact ? () => dispatch(contact_Toggle(true)) : ""
+                    }
+                  >
+                    {item.name}
+                  </Link>
                 </AccordionHeader>
                 {item.list && (
                   <AccordionBody className="bg-gray-800 p-1 rounded-lg">
@@ -122,7 +131,10 @@ export default function Sidebar({ items }) {
                                 key={index}
                                 className="space-x-3 p-2 w-100  hover:bg-gray-600"
                               >
-                                <Link href={product.link} className="flex items-center no-underline	">
+                                <Link
+                                  href={product.link}
+                                  className="flex items-center no-underline	"
+                                >
                                   <Image
                                     src={product.img}
                                     width={20}
@@ -144,6 +156,7 @@ export default function Sidebar({ items }) {
                 )}
               </Accordion>
             ))}
+          <div className="text-end"><LanguageDropdown /></div>
         </List>
       </Drawer>
     </React.Fragment>

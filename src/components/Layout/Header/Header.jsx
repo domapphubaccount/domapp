@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { contact_Toggle } from "@/Store/reducers/Header";
 import dynamic from "next/dynamic";
+import LanguageDropdown from "../Footer/Lang";
 
 const Sidebar = dynamic(() => import("../Sidebar/Sidebar"), { ssr: false });
 
@@ -16,12 +17,16 @@ export default function Header() {
   const router = useRouter();
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
   const dispatch = useDispatch();
-  const {header} = useSelector((state) => state.headerRed);
-  const {lang} = useSelector((state) => state.languageSlice);
+  const { header } = useSelector((state) => state.headerRed);
+  const { lang } = useSelector((state) => state.languageSlice);
 
   return (
     <header>
-      <link rel="preload" href="/_next/static/media/dark-logo.e6650319.WebP" as="image"></link>
+      <link
+        rel="preload"
+        href="/_next/static/media/dark-logo.e6650319.WebP"
+        as="image"
+      ></link>
       <Container className="nav-container">
         <div
           className={`navbar_container nav_active`}
@@ -39,7 +44,6 @@ export default function Header() {
               // height={47}
               // priority
               // loading="eager"
-     
               className="main_logo cursor-pointer"
             />
           </div>
@@ -112,6 +116,7 @@ export default function Header() {
                       )}
                     </li>
                   ))}
+                  <LanguageDropdown />
               </ul>
             </nav>
           </div>

@@ -1,8 +1,13 @@
+"use client";
 import Link from "next/link";
 import { Container } from "reactstrap";
 import LanguageDropdown from "./Lang";
+import { useSelector } from "react-redux";
 
 export default function Footer() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { policy } = useSelector((state) => state.privacyRed);
+
   return (
     <footer>
       <Container>
@@ -88,6 +93,7 @@ export default function Footer() {
           <div className="px-3">
             <Link href="/privacy" className="privacy_link">
               Privacy Policy
+              {policy(lang).sections.policy.title}
             </Link>
           </div>
         </div>

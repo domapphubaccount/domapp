@@ -1,7 +1,10 @@
 "use client"
 import Contact from "@/components/Contact/Contact";
-import Pricing from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Pricing";
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
+const Pricing = dynamic(() => import("@/pages_sups/Products/BondifyCRM/BondifyCRM/Pricing"), {
+  ssr: false,
+});
 
 export default function Page() {
   const [toggle, setToggle] = useState(false);

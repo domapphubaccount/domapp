@@ -6564,6 +6564,7 @@ i.icon-2x {
     transform: rotate(150deg) scaleX(-1);
     top: -50px;
 }
+
 .annual_button::before{
     content: "Save up to 20%";
     position: absolute;
@@ -6573,7 +6574,6 @@ i.icon-2x {
     padding: 10px;
     border-radius: 10px;
     color: #000 !important;
-
 }
 
 

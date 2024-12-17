@@ -12,31 +12,36 @@ import RD_features_cards from "@/pages_sups/Products/RD/RD/RD_features_cards";
 import RD_Content_section from "@/pages_sups/Products/RD/RD/RD_Content_section";
 import dynamic from "next/dynamic";
 import RDvideo from "@/pages_sups/Products/RD/RD/RD_video";
+import { useSelector } from "react-redux";
 
 function Page() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { rdapp } = useSelector((state) => state.rdAppRed);
   return (
     <div className="page_hid">
       <Bannar />
-      <RDvideo/>
+      <RDvideo />
       <RD_cards />
-      <RD_heading title="" body="RDAPP stacked with the best features." />
+      <RD_heading
+        title={rdapp(lang).sections.Head_1.title}
+        body={rdapp(lang).sections.Head_1.slogan}
+      />
       <Section_1 />
       <Section_2 />
       <Section_3 />
       <Section_4 />
       <Section_5 />
       <RD_heading
-        title="AND MORE"
-        body="RDAPP Provides Best Features 'And more'"
+        title={rdapp(lang).sections.Head_2.title}
+        body={rdapp(lang).sections.Head_2.slogan}
       />
       <RD_features_cards />
       <RD_Content_section />
       <RD_heading
-        title=""
-        body="RDAPP Provides Best Communication And Cost Monitoring"
+        title={rdapp(lang).sections.Head_3.slogan}
+        body={rdapp(lang).sections.Head_3.slogan}
       />
       <Section_7 />
-
     </div>
   );
 }

@@ -529,6 +529,14 @@
     "title": "مزايا حصرية",
     "slogan": "RDAPP مزود بأفضل الإمكانيات"
   },
+  "RDAPP_PAGE_HEAD_2": {
+    "title": "مزايا حصرية",
+    "slogan": "يوفر RDAPP أفضل الميزات \"والمزيد\""
+  },
+  "RDAPP_PAGE_HEAD_3": {
+    "title": "مزايا حصرية",
+    "slogan": "يوفر RDAPP أفضل الاتصالات ومراقبة التكاليف"
+  },
   "RDAPP_PAGE_CARDS_1": [
     {
       "title": "التوافق مع كود البناء السعودي",
@@ -765,7 +773,7 @@
       "title": "باقة 1",
       "price": "15 USD",
       "include": "تشتمل علي",
-      "slice": ["10 reports", "1 Year Subscription"],
+      "slice": ["10 تقرير", "1 اشتراك سنة"],
       "footer": "السعر غير شامل ضريبة القيمة المضافة",
       "link": "https://wa.me/201501060885",
       "btn": "تواصل مع المبيعات"
@@ -774,12 +782,77 @@
       "title": "باقة 2",
       "price": "55 USD",
       "include": "تشتمل علي",
-      "slice": ["50 reports", "1 Year Subscription"],
+      "slice": ["50 تقرير", "1 اشتراك سنة"],
       "footer": "السعر غير شامل ضريبة القيمة المضافة",
       "link": "https://wa.me/201501060885",
       "btn": "تواصل مع المبيعات"
     }
   ],
+  "BONDIFY_PRICING_PAGE": {
+    "year": "سنوي",
+    "month": "شهري",
+    "save_to": "قم بتوفير ما يصل إلى 20%",
+    "monthly": {
+      "free": {
+        "title": "مجاناً",
+        "price": false,
+        "include": "إبدأ الأن مجانا",
+        "link": "http://bondifycrm.domapphub.com/login",
+        "btn": "Start Demo"
+      },
+      "standard": {
+        "title": "الخطة الإبتدائية",
+        "price": "9",
+        "user": "مستخدم",
+        "include": "كافة الميزات متاحة",
+        "link": "https://wa.me/201501060885",
+        "btn": "تواصل مع المبيعات"
+      },
+      "enterprise": {
+        "title": "خطة المؤسسات",
+        "price": false,
+        "include": "احصل على ميزات مخصصة لمؤسستك",
+        "link": "https://wa.me/201501060885",
+        "btn": "تواصل مع المبيعات"
+      }
+    },
+    "annualy": {
+      "free": {
+        "title": "مجاناً",
+        "price": false,
+        "include": "إبدأ الأن مجانا",
+        "link": "http://bondifycrm.domapphub.com/login",
+        "btn": "Start Demo"
+      },
+      "standard": {
+        "title": "الخطة الإبتدائية",
+        "price": "7",
+        "user": "مستخدم",
+        "include": "كافة الميزات متاحة",
+        "link": "https://wa.me/201501060885",
+        "btn": "تواصل مع المبيعات"
+      },
+      "enterprise": {
+        "title": "خطة المؤسسات",
+        "price": false,
+        "include": "احصل على ميزات مخصصة لمؤسستك",
+        "link": "https://wa.me/201501060885",
+        "btn": "تواصل مع المبيعات"
+      }
+    }
+  },
+  "CHATPLUS_PRICING_PAGE": {
+    "title": "الإشتراك",
+    "price": "16",
+    "sub": "/ مستخدم / شهر",
+    "include": [
+      "السعر لا يشمل ضريبة القيمة المضافة.",
+      "رسوم الرسالة التعريفية غير متضمنة.",
+      "الإعداد مجاني غير متضمن."
+    ],
+    "link": "http://bondifycrm.domapphub.com/login",
+    "btn": "تواصل معنا"
+  },
 
   "PRIVACY": {
     "title": "الشروط والأحكام",

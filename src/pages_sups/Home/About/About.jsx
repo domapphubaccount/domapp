@@ -48,7 +48,7 @@ export default function About() {
               </div>
               <div className="card_list">
                 <ul>
-                  {home(lang).sections.about_us?.main.slices.map((item, i) => (
+                  {home(lang).sections.about_us?.main?.slices?.map((item, i) => (
                     <li key={i}>{item} </li>
                   ))}
                 </ul>

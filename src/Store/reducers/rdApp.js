@@ -21,6 +21,8 @@ const initialState = {
         Quick_start: t("RDAPP_PAGE_QUICK_START", lang),
         Note_1: t("RDAPP_PAGE_NOTE_1", lang),
         Head_1: t("RDAPP_PAGE_HEAD_1", lang),
+        Head_2: t("RDAPP_PAGE_HEAD_2", lang),
+        Head_3: t("RDAPP_PAGE_HEAD_3", lang),
         Cards_1: t("RDAPP_PAGE_CARDS_1", lang),
         Cards_1_icon: [
           <i key={1} className="bi bi-database-up"></i>,

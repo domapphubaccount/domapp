@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   lang: (typeof window !== "undefined" && localStorage.getItem("lang")) || "ar",
-  dir: "rtl"
+  dir: (typeof window !== "undefined" && localStorage.getItem("lang") == "en" ? "ltr" : "rtl") || "rtl"
 }
 
 export const languageSlice = createSlice({

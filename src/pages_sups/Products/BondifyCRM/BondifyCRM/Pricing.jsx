@@ -6,31 +6,23 @@ import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import Link from "next/link";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 export default function Pricing() {
-  // const [priceToggle , setPriceToggle] = useState(true)
   const [priceIcon, setPriceIcon] = useState(false);
+  const [currency, setCurrency] = useState("USD");
 
-  const [currency, setCurrency] = useState("USD")
-
- 
   useEffect(() => {
     axios
       .get("https://ipapi.co/json/")
-      .then(response => {
+      .then((response) => {
         country =
-          response.data.country_name == "Saudi Arabia"
-            && setCurrency("SAR")
-
-            
-
-      
-     
+          response.data.country_name == "Saudi Arabia" && setCurrency("SAR");
       })
-      .catch(error => {
-        console.log("error", error)
-      })
-  }, [])
+      .catch((error) => {
+        console.log("error", error);
+      });
+  }, []);
   return (
     <>
       <Header />
@@ -38,35 +30,34 @@ export default function Pricing() {
         <div className="mb-2">
           <Section__head />
         </div>
-        <Monthly priceIcon={priceIcon} currency={currency}/>
+        <Monthly priceIcon={priceIcon} currency={currency} />
       </section>
       <Footer />
     </>
   );
 }
 
-function Monthly({ priceIcon,currency }) {
-  const [showFree, setShowFree] = useState(false);
+function Monthly({ priceIcon, currency }) {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
   const [priceToggle, setPriceToggle] = useState(true);
-  const [priceIcontog, setPriceIcon] = useState(false);
+  let {
+    free = {},
+    standard = {},
+    enterprise = {},
+  } = bondifycrm(lang).sections.BONDIFY_PRICING.monthly;
 
-  const handleDemoClick = () => {
-    window.location.href = "https://erp.domapphub.com/signup";
-  };
-
-  console.log(priceToggle);
+  console.log(bondifycrm(lang).sections.BONDIFY_PRICING.monthly);
   return (
     <>
       <div className="py-3">
         <Container>
           <div style={{ maxWidth: "1000px" }} className="m-auto"></div>
-
           <div>
             <div className="d-flex justify-content-center">
               <div
                 className=""
                 style={{
-                  // overflow: "hidden",
                   borderRadius: "20px",
                   border: "1px solid #23834B",
                   boxShadow: "0px 4px 20px 2px #ccc",
@@ -76,12 +67,13 @@ function Monthly({ priceIcon,currency }) {
                   className={`pricing_toggle  ${
                     priceToggle ? "toggle-2" : "toggle-1"
                   }`}
-                  style={{borderRadius: "20px",}}
+                  style={{ borderRadius: "20px" }}
                   onClick={() => setPriceToggle(true)}
                 >
-                  Monthly
+                  {bondifycrm(lang).sections.BONDIFY_PRICING.month}
                 </button>
                 <button
+                  data-save-content="save"
                   className={`pricing_toggle annual_button ${
                     priceToggle ? "toggle-1" : "toggle-2"
                   }`}
@@ -90,13 +82,16 @@ function Monthly({ priceIcon,currency }) {
                   }}
                   onClick={() => setPriceToggle(false)}
                 >
-                  Annual
+                  {bondifycrm(lang).sections.BONDIFY_PRICING.year}
                 </button>
               </div>
             </div>
 
             {priceToggle ? (
-              <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
+              <div
+                class="flex flex-col justify-between items-center lg:flex-row lg:items-start"
+                dir={dir}
+              >
                 <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
                   <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
                     <img
@@ -104,26 +99,26 @@ function Monthly({ priceIcon,currency }) {
                       alt=""
                       class="rounded-3xl w-20 h-20"
                     />
-                    <div class="ml-5">
-                      <span class="block text-2xl font-semibold">FREE</span>
+                    <div class="mx-5">
+                      <span class="block text-2xl font-semibold">
+                        {free.title}
+                      </span>
                     </div>
                   </div>
                   <ul class="mb-7 font-medium text-gray-500">
                     <li class="flex text-lg mb-2">
                       <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-                      <span class="ml-3">
-                        Get started <span class="text-black">For Free</span>
-                      </span>
+                      <span class="mx-3 text-black">{free.include}</span>
                     </li>
                   </ul>
                   <Link
-                    href="http://bondifycrm.domapphub.com/login"
+                    href={free.link}
                     class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
                   >
-                    Start Demo
+                    {free.btn}
                     <img
                       src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-                      class="ml-2"
+                      class="mx-2"
                     />
                   </Link>
                 </div>
@@ -135,28 +130,26 @@ function Monthly({ priceIcon,currency }) {
                       alt=""
                       class="rounded-3xl w-20 h-20"
                     />
-                    <div class="ml-5">
+                    <div class="mx-5">
                       <span class="block text-3xl font-semibold text-white">
-                        Enterprise
+                        {enterprise.title}
                       </span>
                     </div>
                   </div>
                   <ul class="mb-10 font-medium text-xl">
                     <li class="flex mb-6">
                       <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
-                      <span class="ml-3">
-                        Get customized features for your organization
-                      </span>
+                      <span class="mx-3">{enterprise.include}</span>
                     </li>
                   </ul>
                   <Link
-                    href="https://wa.me/201501060885"
+                    href={enterprise.link}
                     class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-2xl"
                   >
-                    Contact Sales
+                    {enterprise.btn}
                     <img
                       src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-                      class="ml-2"
+                      class="mx-2"
                     />
                   </Link>
                 </div>
@@ -168,33 +161,35 @@ function Monthly({ priceIcon,currency }) {
                       alt=""
                       class="rounded-3xl w-20 h-20"
                     />
-                    <div class="ml-5">
-                      <span class="block text-2xl font-semibold">Standard</span>
+                    <div class="mx-5">
+                      <span class="block text-2xl font-semibold">
+                        {standard.title}
+                      </span>
                       <span>
                         <span class="font-medium text-gray-500 text-xl align-top">
                           {currency}&thinsp;
                         </span>
-                        <span class="text-3xl font-bold">9 </span>
+                        <span class="text-3xl font-bold">{standard.price}</span>
                       </span>
-                      <span class="text-gray-500 font-medium">/ user</span>
+                      <span class="text-gray-500 font-medium">
+                        / {standard.user}
+                      </span>
                     </div>
                   </div>
                   <ul class="mb-7 font-medium text-gray-500">
                     <li class="flex text-lg mb-2">
                       <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-                      <span class="ml-3">
-                        All features in <span class="text-black">Startup</span>
-                      </span>
+                      <span class="mx-3 text-black">{standard.include}</span>
                     </li>
                   </ul>
                   <Link
-                    href="https://wa.me/201501060885"
+                    href={standard.link}
                     class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
                   >
-                    Contact Sales
+                    {standard.btn}
                     <img
                       src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-                      class="ml-2"
+                      class="mx-2"
                     />
                   </Link>
                 </div>
@@ -208,10 +203,17 @@ function Monthly({ priceIcon,currency }) {
     </>
   );
 }
-function Annual({ priceIcon,currency }) {
+function Annual({ priceIcon, currency }) {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
+  let { free, standard, enterprise } =
+    bondifycrm(lang).sections.BONDIFY_PRICING.annualy;
   return (
     <>
-      <div class="flex flex-col justify-between items-center lg:flex-row lg:items-start">
+      <div
+        class="flex flex-col justify-between items-center lg:flex-row lg:items-start"
+        dir={dir}
+      >
         <div class="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
           <div class="mb-7 pb-7 flex items-center border-b border-gray-300">
             <img
@@ -219,26 +221,24 @@ function Annual({ priceIcon,currency }) {
               alt=""
               class="rounded-3xl w-20 h-20"
             />
-            <div class="ml-5">
-              <span class="block text-2xl font-semibold">FREE</span>
+            <div class="mx-5">
+              <span class="block text-2xl font-semibold">{free.title}</span>
             </div>
           </div>
           <ul class="mb-7 font-medium text-gray-500">
             <li class="flex text-lg mb-2">
               <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-              <span class="ml-3">
-                Get started <span class="text-black">For Free</span>
-              </span>
+              <span class="mx-3 text-black">{free.include}</span>
             </li>
           </ul>
           <Link
             href="http://bondifycrm.domapphub.com/login"
             class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
           >
-            Start Demo
+            {free.btn}
             <img
               src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-              class="ml-2"
+              class="mx-2"
             />
           </Link>
         </div>
@@ -250,28 +250,26 @@ function Annual({ priceIcon,currency }) {
               alt=""
               class="rounded-3xl w-20 h-20"
             />
-            <div class="ml-5">
+            <div class="mx-5">
               <span class="block text-3xl font-semibold text-white">
-                Enterprise
+                {enterprise.title}
               </span>
             </div>
           </div>
           <ul class="mb-10 font-medium text-xl">
             <li class="flex mb-6">
               <img src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
-              <span class="ml-3">
-                Get customized features for your organization
-              </span>
+              <span class="mx-3">{enterprise.include}</span>
             </li>
           </ul>
           <Link
             href="https://wa.me/201501060885"
             class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-2xl"
           >
-            Contact Sales
+            {enterprise.btn}
             <img
               src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-              class="ml-2"
+              class="mx-2"
             />
           </Link>
         </div>
@@ -283,33 +281,33 @@ function Annual({ priceIcon,currency }) {
               alt=""
               class="rounded-3xl w-20 h-20"
             />
-            <div class="ml-5">
-              <span class="block text-2xl font-semibold">Standard</span>
+            <div class="mx-5">
+              <span class="block text-2xl font-semibold">{standard.title}</span>
               <span>
                 <span class="font-medium text-gray-500 text-xl align-top">
-                {currency}&thinsp;
+                  {currency}&thinsp;
                 </span>
-                <span class="text-3xl font-bold">{currency=="SAR"?27:7} </span>
+                <span class="text-3xl font-bold">
+                  {currency == "SAR" ? 27 : standard.price}{" "}
+                </span>
               </span>
-              <span class="text-gray-500 font-medium">/ user</span>
+              <span class="text-gray-500 font-medium">/ {standard.user}</span>
             </div>
           </div>
           <ul class="mb-7 font-medium text-gray-500">
             <li class="flex text-lg mb-2">
               <img src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-              <span class="ml-3">
-                All features in <span class="text-black">Startup</span>
-              </span>
+              <span class="mx-3 text-black">{standard.include}</span>
             </li>
           </ul>
           <Link
             href="https://wa.me/201501060885"
             class="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
           >
-            Contact Sales
+            {standard.btn}
             <img
               src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-              class="ml-2"
+              class="mx-2"
             />
           </Link>
         </div>
