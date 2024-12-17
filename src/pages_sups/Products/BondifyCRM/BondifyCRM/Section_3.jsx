@@ -26,8 +26,9 @@ export default function Section_3() {
               className="content h-100"
               data-aos="fade-up"
               data-aos-duration="3000"
+              dir={dir}
             >
-              <div>
+              <div >
                 <h3>{bondifycrm(lang).sections.Card_2.title}</h3>
                 <p>{bondifycrm(lang).sections.Card_2.slogan}</p>
               </div>
@@ -35,7 +36,7 @@ export default function Section_3() {
                 <ul
                   className="list"
                   data-aos="fade-right"
-                  data-aos-duration="1500"
+                  data-aos-duration="500"
                 >
                   {bondifycrm(lang).sections.Card_2.slice.map((item, index) => (
                     <li key={index}>

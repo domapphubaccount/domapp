@@ -15,7 +15,7 @@ export default function Section_1() {
               <div
                 className="h-100 text-center card"
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                data-aos-duration="1000"                
               >
                 <div>
                 {rdapp(lang).sections.Cards_1_icon[index]}

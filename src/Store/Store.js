@@ -13,6 +13,7 @@ import customSoftwareRed from './reducers/CustomSoftware'
 import grasshopperRed from './reducers/Grasshopper'
 import rdAppRed from './reducers/rdApp'
 import bondifycrmRed from './reducers/Bondifycrm'
+import privacyRed from './reducers/Privacy'
 
 export const store = configureStore({
   reducer: {
@@ -28,6 +29,7 @@ export const store = configureStore({
     byldRed,
     bondifycrmRed,
     rdAppRed,
+    privacyRed,
     languageSlice
   },
 })

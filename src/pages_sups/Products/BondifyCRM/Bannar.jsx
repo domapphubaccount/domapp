@@ -13,12 +13,12 @@ export default function Bannar2() {
     <section>
       <div className="home-bg relative">
         <div className="row align-items-center justify-content-center">
-          <div className="col-lg-5 col-md-6">
+          <div className="col-lg-5 col-md-6" dir={dir}>
             <div className="home-text">
               <div className="mb-5">
                 <img src={bondi.src} />
               </div>
-              <div className="docutment-button">
+              <div className="docutment-button text-center">
                 <a
                   className="btn text-white me-3 mb-3"
                   href="http://bondifycrm.domapphub.com/"

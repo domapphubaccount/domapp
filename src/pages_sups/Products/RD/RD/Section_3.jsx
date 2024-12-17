@@ -22,8 +22,8 @@ export default function Section_3() {
               <div>
                 <i className="bi bi-check custom_icon"></i>
               </div>
-              <h2>{rdapp(lang).sections.Info_2[0].title}</h2>
-              <p>{rdapp(lang).sections.Info_2[0].slogan}</p>
+              <h2 dir={dir}>{rdapp(lang).sections.Info_2[0].title}</h2>
+              <p dir={dir}>{rdapp(lang).sections.Info_2[0].slogan}</p>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
@@ -47,8 +47,8 @@ export default function Section_3() {
               <div>
                 <i className="bi bi-check custom_icon"></i>
               </div>
-              <h2>{rdapp(lang).sections.Info_2[1].title}</h2>
-              <p>{rdapp(lang).sections.Info_2[1].slogan}</p>
+              <h2 dir={dir}>{rdapp(lang).sections.Info_2[1].title}</h2>
+              <p dir={dir}>{rdapp(lang).sections.Info_2[1].slogan}</p>
             </div>
           </Col>
         </Row>

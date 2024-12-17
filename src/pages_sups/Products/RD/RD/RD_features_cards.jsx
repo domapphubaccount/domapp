@@ -20,7 +20,7 @@ export default function RD_features_cards() {
           {rdapp(lang).sections.Cards_2.map((item, index) => (
             <div
               key={index}
-              dir={dir}
+              
               className="col-xxl-4 col-md-6 slideInUp wow mt-5"
               style={{ visibility: "visible", animationName: "slideInUp" }}
             >
@@ -28,7 +28,7 @@ export default function RD_features_cards() {
                 <div className="frame-icon">
                   <img src={icons[index].src} alt="" />
                 </div>
-                <div className="frame-details">
+                <div className={`frame-details ${dir === "rtl" && "text-end"}`} dir={dir}>
                   <h5>{item.title}</h5>
                   <p className="f-light">{item.slogan}</p>
                 </div>

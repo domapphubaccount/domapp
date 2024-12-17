@@ -94,7 +94,7 @@ function AboutUs() {
   const { custom_software } = useSelector((state) => state.customSoftwareRed);
   return (
     <>
-      <div className="row align-items-center cust_about" dir={dir}>
+      <div className="row align-items-center cust_about">
         <div
           className="col-lg-6 m-b30 wow fadeInLeft"
           data-wow-duration="2s"
@@ -108,6 +108,7 @@ function AboutUs() {
           className="col-lg-6 m-b30 wow fadeInRight"
           data-wow-duration="2s"
           data-wow-delay="0.4s"
+          dir={dir}
         >
           <div className="section-head style-1 mb-4">
             <h6

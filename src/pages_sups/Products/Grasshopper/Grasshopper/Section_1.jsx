@@ -18,7 +18,7 @@ export default function Section_1() {
             </div>
             <div className="col-lg-7 col-md-12">
               <div className="about-inner inner" dir={dir}>
-                <div className="section-title" data-aos="fade-down" data-aos-duration="2000" >
+                <div className="text-white" data-aos="fade-down" data-aos-duration="500">
                   <h2 className="title fw-bold">{grasshopper(lang).sections.Quick_start.title}</h2>
                   <p className="description">{grasshopper(lang).sections.Quick_start.slogan}</p>
                 </div>

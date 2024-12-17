@@ -24,7 +24,8 @@ export default function Section_12() {
             <div
               className="content h-100"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="500"
+              dir={dir}
             >
               <div>
                 <h3>{bondifycrm(lang).sections.Card_9.title}</h3>

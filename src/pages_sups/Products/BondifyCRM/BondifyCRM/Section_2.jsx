@@ -12,7 +12,7 @@ export default function Section_2() {
       <Container>
         <div className='row g-0 section_container data-aos="fade-up"'>
           <Col sm={12} md={6} lg={6}>
-            <div className="content h-100">
+            <div className="content h-100" dir={dir}>
               <div>
                 <h3>{bondifycrm(lang).sections.Card_1.title}</h3>
                 <p>
@@ -23,7 +23,7 @@ export default function Section_2() {
                 <ul
                   className="list"
                   data-aos="fade-right"
-                  data-aos-duration="1500"
+                  data-aos-duration="500"
                 >
                   {bondifycrm(lang).sections.Card_1.slice.map((item,index)=>(
                   <li key={index}>

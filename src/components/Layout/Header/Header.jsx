@@ -16,8 +16,8 @@ export default function Header() {
   const router = useRouter();
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
   const dispatch = useDispatch();
-  const header = useSelector((state) => state.headerRed.header);
-  const lang = useSelector((state) => state.languageSlice.lang);
+  const {header} = useSelector((state) => state.headerRed);
+  const {lang} = useSelector((state) => state.languageSlice);
 
   return (
     <header>

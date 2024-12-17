@@ -13,9 +13,10 @@ export default function Section_10() {
         <div className="row g-0 section_container">
           <Col sm={12} md={6} lg={6}>
             <div
+              dir={dir}
               className="content h-100"
               data-aos="fade-up"
-              data-aos-duration="2500"
+              data-aos-duration="500"
             >
               <div>
                 <h3>{bondifycrm(lang).sections.Card_8.title}</h3>

@@ -8,8 +8,8 @@ import { whatWeDo } from "@/Store/Main/IDs";
 
 
 function WhatWeDo() {
-  const lang = useSelector((state) => state.languageSlice.lang);
-  const home = useSelector(state => state.homeRed.home);
+  const {lang,dir} = useSelector((state) => state.languageSlice);
+  const {home} = useSelector(state => state.homeRed);
   
   return (
     <section>
@@ -20,10 +20,10 @@ function WhatWeDo() {
           des_1={home(lang).sections.what_we_do.head.slogan}
           sectionId={whatWeDo}
         />
-        <div className="section_2_mobile_cards">
+        <div className="section_2_mobile_cards" dir={dir}>
           <Cards />
         </div>
-        <div className="pc_res">
+        <div className="pc_res" dir={dir}>
           <ResponsiveCarousel />
         </div>
       </Container>

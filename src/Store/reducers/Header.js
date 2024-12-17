@@ -117,13 +117,19 @@ const initialState = {
                   img: grassIcon,
                   link: grasshopper_page,
                 },
+              ],
+            },
+            {
+              title: t("generative_ai",lang),
+              sub_title: false,
+              products: [
                 {
                   name: t("BYLD",lang),
                   img: byldIcon,
                   link: byld_page,
-                },
-              ],
-            },
+                }
+              ]
+            }
           ],
         },
         {

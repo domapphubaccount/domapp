@@ -6,8 +6,8 @@ import { about } from "@/Store/Main/IDs";
 import { useSelector } from "react-redux";
 
 export default function About() {
-  const lang = useSelector((state) => state.languageSlice.lang);
-  const home = useSelector(state => state.homeRed.home);
+  const {lang,dir} = useSelector((state) => state.languageSlice);
+  const {home} = useSelector(state => state.homeRed);
 
   return (
     <section className="home_section_2">
@@ -18,7 +18,7 @@ export default function About() {
         sectionId={about}
       />
       <Container>
-        <Row className="card_shadow card_dis rounded mb-5">
+        <Row className="card_shadow card_dis rounded mb-5" >
           <Col sm={12} lg={6} md={12} className="p-4">
             <div
               className="card_shadow rounded h-100 video_container my-3"
@@ -41,7 +41,7 @@ export default function About() {
               </div>
             </div>
           </Col>
-          <Col sm={12} lg={6} md={12}>
+          <Col sm={12} lg={6} md={12} dir={dir}>
             <div data-aos="fade-up" data-aos-duration="2000">
               <div>
                 <h5>{home(lang).sections.about_us?.main.title}</h5>

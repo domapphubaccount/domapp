@@ -6,8 +6,8 @@ import Shape1 from "@/assets/images/shap/shap1.png";
 import { useSelector } from "react-redux";
 
 export default function Section_5() {
-    const { lang, dir } = useSelector((state) => state.languageSlice);
-    const { rdapp } = useSelector((state) => state.rdAppRed);
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { rdapp } = useSelector((state) => state.rdAppRed);
   return (
     <section className="rd_section_3">
       <Container>
@@ -21,10 +21,8 @@ export default function Section_5() {
               <div>
                 <i className="bi bi-check custom_icon"></i>
               </div>
-              <h2> {rdapp(lang).sections.Info_3[0].title}</h2>
-              <p>
-              {rdapp(lang).sections.Info_3[0].slogan}
-              </p>
+              <h2 dir={dir}> {rdapp(lang).sections.Info_3[0].title}</h2>
+              <p dir={dir}>{rdapp(lang).sections.Info_3[0].slogan}</p>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
@@ -48,10 +46,8 @@ export default function Section_5() {
               <div>
                 <i className="bi bi-check custom_icon"></i>
               </div>
-              <h2> {rdapp(lang).sections.Info_3[1].title}</h2>
-              <p>
-              {rdapp(lang).sections.Info_3[1].slogan}
-              </p>
+              <h2 dir={dir}> {rdapp(lang).sections.Info_3[1].title}</h2>
+              <p dir={dir}>{rdapp(lang).sections.Info_3[1].slogan}</p>
             </div>
           </Col>
         </Row>

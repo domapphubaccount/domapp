@@ -9,7 +9,7 @@ function WindVideo() {
   const { windmaster } = useSelector((state) => state.windmasterRed);
 
   return (
-    <section>
+    <section dir={dir}>
       <Container>
         <Video
           title={windmaster(lang).sections.Quick_start.title}

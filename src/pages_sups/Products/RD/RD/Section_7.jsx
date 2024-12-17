@@ -5,8 +5,8 @@ import CardSection_2 from "@/assets/images/Products_Page/Rd/cost.jpg";
 import { useSelector } from "react-redux";
 
 export default function Section_7() {
-    const { lang, dir } = useSelector((state) => state.languageSlice);
-    const { rdapp } = useSelector((state) => state.rdAppRed);
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { rdapp } = useSelector((state) => state.rdAppRed);
   return (
     <section className="rd_section_3">
       <Container>
@@ -20,10 +20,8 @@ export default function Section_7() {
               <div>
                 <i className="bi bi-check custom_icon"></i>
               </div>
-              <h2>{rdapp(lang).sections.Info_4[0].title}</h2>
-              <p>
-              {rdapp(lang).sections.Info_4[0].slogan}
-              </p>
+              <h2 dir={dir}>{rdapp(lang).sections.Info_4[0].title}</h2>
+              <p dir={dir}>{rdapp(lang).sections.Info_4[0].slogan}</p>
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
@@ -47,10 +45,8 @@ export default function Section_7() {
               <div>
                 <i className="bi bi-check custom_icon"></i>
               </div>
-              <h2>{rdapp(lang).sections.Info_4[1].title}</h2>
-              <p>
-              {rdapp(lang).sections.Info_4[1].slogan}
-              </p>
+              <h2 dir={dir}>{rdapp(lang).sections.Info_4[1].title}</h2>
+              <p dir={dir}>{rdapp(lang).sections.Info_4[1].slogan}</p>
             </div>
           </Col>
         </Row>

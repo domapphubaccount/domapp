@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Section__head() {
+
   return (
     <section className="privacy_head">
       <div>

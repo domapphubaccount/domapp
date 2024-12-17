@@ -22,9 +22,10 @@ export default function Section_14() {
           </Col>
           <Col sm={12} md={7} lg={8}>
             <div
+              dir={dir}
               className="content h-100"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="500"
             >
               <div>
                 <h3>{bondifycrm(lang).sections.Card_11.title}</h3>

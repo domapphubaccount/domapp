@@ -8,11 +8,11 @@ export default function Section_4({ sections }) {
   const { windmaster } = useSelector((state) => state.windmasterRed);
 
   return (
-    <section className="container my-12 mt-60">
+    <section className="container my-12 mt-60" dir={dir}>
       <div className="rounded bg-primary bg-gradient p-lg-5 p-4">
-        <div className="row align-items-end">
-          <div className="col-md-8">
-            <div className=" text-md-start text-center">
+        <div className="flex align-items-end justify-between">
+          <div className="">
+            <div className="">
               <h4 className="title mb-3 text-white title-dark">
                 {windmaster(lang).sections.get_started.title}
               </h4>
@@ -21,7 +21,8 @@ export default function Section_4({ sections }) {
               </p>
             </div>
           </div>
-          <div className="col-md-4 mt-4 mt-sm-0">
+
+          <div className=" mt-4 mt-sm-0">
             <div className="text-md-end text-center">
               <Link className="btn btn-light" href={contact_page}>
               {windmaster(lang).sections.get_started.btn}

@@ -11,7 +11,7 @@ export default function Section_7() {
     <section className="content-inner-2 overflow-hidden" id="Sub">
       <div className="container">
         <div className="row align-items-center about-bx3">
-          <div className="col-lg-6 m-b30">
+          <div className="col-lg-6 m-b30" dir={dir}>
             <div className="section-head" style={{ transform: "none" }}>
               <h5 className="text-secondary sub-title mb-4">
                 {bondifycrm(lang).sections.Card_5.sub}
@@ -62,7 +62,7 @@ export default function Section_7() {
               />
             </div>
           </div>
-          <div className="col-lg-6 m-b30">
+          <div className="col-lg-6 m-b30" dir={dir}>
             <div className="section-head" style={{ transform: "none" }}>
               <h5 className="text-secondary sub-title mb-4">
                 {bondifycrm(lang).sections.Card_6.sub}
