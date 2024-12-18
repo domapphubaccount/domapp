@@ -70,7 +70,7 @@ function SectionContent() {
                 <h4 className="dlab-title">
                   {custom_software(lang).sections.Services.slice[1].title}
                 </h4>
-                <p>{custom_software(lang).sections.Services.slice[1].title}</p>
+                <p>{custom_software(lang).sections.Services.slice[1].slogan}</p>
               </div>
             </div>
           </div>

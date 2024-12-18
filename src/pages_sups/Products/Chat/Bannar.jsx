@@ -20,7 +20,7 @@ function Bannar2() {
       <div class="agency bg mb-4">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
               <div class="center-text">
                 <div>
                   <div class="header-text">
@@ -46,23 +46,27 @@ function Bannar2() {
                 </div>
               </div>
             </div>
+            <div class="col-md-8 flex items-center">
+              <div
+              className=""
+                style={{
+                  transform:
+                    "perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
+                }}
+              >
+                <img alt="" class="img-fluid" src={BannarIMG.src} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="mt-[250px]">
-      <VideoSection />
+        <VideoSection />
       </div>
 
       <div class="set-abs abs-horizon-center girl-boy image_bannar">
         {/* <div style={{willChange: "transform; transition: 3000ms cubic-bezier(0.03, 0.98, 0.52, 0.99); transform: perspective(20000px) rotateX(3.68412deg) rotateY(-5.86818deg) scale3d(1, 1, 1);"}}></div> */}
-        <div
-          style={{
-            transform:
-              "perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
-          }}
-        >
-          <img alt="" class="img-fluid" src={BannarIMG.src} />
-        </div>
+
         <div class="plus-container plus-container6">
           <div class="plus white"></div>
         </div>

@@ -31,10 +31,10 @@ function Page() {
       <Section_3 />
       <Section_4 />
       <Section_5 />
-      <RD_heading
+      {/* <RD_heading
         title={rdapp(lang).sections.Head_2.title}
         body={rdapp(lang).sections.Head_2.slogan}
-      />
+      /> */}
       <RD_features_cards />
       <RD_Content_section />
       <RD_heading

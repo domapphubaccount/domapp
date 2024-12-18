@@ -9,7 +9,7 @@ function ByldVideo() {
   const { byld } = useSelector((state) => state.byldRed);
 
   return (
-    <section>
+    <section dir={dir}>
       <Container>
         <Video
           title={byld(lang).sections.Quick_start.title}

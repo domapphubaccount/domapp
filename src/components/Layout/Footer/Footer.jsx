@@ -88,11 +88,11 @@ export default function Footer() {
             </Link>
           </div>
           <div className="px-3">
-            <LanguageDropdown />
+            <LanguageDropdown text_color={"text-white"}/>
           </div>
           <div className="px-3">
             <Link href="/privacy" className="privacy_link">
-              {policy(lang).sections.policy.title}
+              { lang === "ar" ? "الشروط والأحكام" : "Privacy policy" }
             </Link>
           </div>
         </div>

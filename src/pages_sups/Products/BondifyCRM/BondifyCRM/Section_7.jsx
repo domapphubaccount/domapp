@@ -12,7 +12,7 @@ export default function Section_7() {
       <div className="container">
         <div className="row align-items-center about-bx3">
           <div className="col-lg-6 m-b30" dir={dir}>
-            <div className="section-head" style={{ transform: "none" }}>
+            <div className="section-head" style={{ transform: "none" }} >
               <h5 className="text-secondary sub-title mb-4">
                 {bondifycrm(lang).sections.Card_5.sub}
               </h5>
@@ -30,9 +30,9 @@ export default function Section_7() {
             >
               {bondifycrm(lang).sections.Card_5.slice.map((item, index) => (
                 <div className="col-sm-6" key={index}>
-                  <ul className="list-check-1 light">
+                  <ul className={`${dir === "rtl" ? "list-check-2" : "list-check-1"} light`}>
                     {item.map((item, index) => (
-                      <li key={index}>{item}</li>
+                      <li key={index} >{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -81,8 +81,8 @@ export default function Section_7() {
             >
               {bondifycrm(lang).sections.Card_6.slice.map((item, index) =>
                 item.map((item, index) => (
-                  <div className="col-sm-6" key={index}>
-                    <ul className="list-check-1 light">
+                  <div className="col-sm-6" key={index} dir={dir}>
+                    <ul className={`${dir === "rtl" ? "list-check-2" : "list-check-1"} light`}>
                       <li>{item}</li>
                     </ul>
                   </div>

@@ -161,7 +161,7 @@ export default function Contact() {
                           </span>
                         </div>
                         <div>
-                          (Local Time in <span className="fw-bold">{item.place}</span>)
+                          <span className="fw-bold">{item.place}</span>
                         </div>
                       </div>
                     </li>

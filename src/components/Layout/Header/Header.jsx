@@ -116,7 +116,7 @@ export default function Header() {
                       )}
                     </li>
                   ))}
-                  <LanguageDropdown />
+                  <LanguageDropdown text_color={"text-black"}/>
               </ul>
             </nav>
           </div>

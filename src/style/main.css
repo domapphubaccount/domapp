@@ -3409,6 +3409,16 @@ footer{
     font-weight: 500;
     position: relative;
 }
+.list-check-2 li {
+    padding: 15px 48px 15px 0px;
+    color: #071c35;
+    font-weight: 500;
+    position: relative;
+}
+
+
+
+
 .list-check-1.light li:before {
     background-color: #bd6adc4a;
     color: #4100ff;
@@ -3440,6 +3450,33 @@ footer{
     transition: all .8s;
    
 }
+
+.list-check-2 li:before {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-radius: 35px;
+    transform: translateY(-50%) scale(1);
+    content: "";
+    /* font-family: Line Awesome Free; */
+    background-image: url('../assets/images/BondifyCRM/Features/yes.svg');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background-color: #bd6adc4a;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    -webkit-transition: all .8s;
+    -ms-transition: all .8s;
+    transition: all .8s;
+   
+}
+
 .head_CWF{
     padding: 60px 0;
 }
