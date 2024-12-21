@@ -14,10 +14,12 @@ import grasshopperRed from './reducers/Grasshopper'
 import rdAppRed from './reducers/rdApp'
 import bondifycrmRed from './reducers/Bondifycrm'
 import privacyRed from './reducers/Privacy'
+import footerRed from './reducers/Footer'
 
 export const store = configureStore({
   reducer: {
     headerRed,
+    footerRed,
     MainData,
     homeRed,
     contactRed,

@@ -849,5 +849,22 @@
     ],
     "link": "http://bondifycrm.domapphub.com/login",
     "btn": "CONTACT SALES"
-  }
+  },
+
+
+  "FOOTER_ABOUT": {
+    "title": "About us"
+  },
+  "FOOTER_PRODUCTS": {
+    "title": "Products"
+  },
+  "FOOTER_SERVICES": {
+    "title": "Services",
+    "slice": [" Software Development","Facade Fabrication"]
+  },
+  "FOOTER_SUMMARY": [
+    "At DomApp, we develop and design applications tailored to the client's requirements.",
+    "Our expertise allows us to develop, customize, and modify the applications we design to align perfectly with the client's company and business visions."
+  ],
+  "FOOTER_SOCIAL": "Follow Us:"
 }
