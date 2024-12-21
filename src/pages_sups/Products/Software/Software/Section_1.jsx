@@ -35,7 +35,7 @@ function SectionContent() {
           data-wow-duration="2s"
           data-wow-delay="0.2s"
         >
-          <div className="section-head style-1">
+          <div className="section-head style-1" dir={dir}>
             <h6
               className="sub-title bgl-primary m-b20 text-primary"
               style={{ color: "#896eff !important;" }}
@@ -46,7 +46,7 @@ function SectionContent() {
               {custom_software(lang).sections.Services.title}
             </h2>
           </div>
-          <div className="section-wraper-one">
+          <div className="section-wraper-one" dir={dir}>
             <div className="icon-bx-wraper style-2 left m-b30">
               <div className="icon-bx-md radius bg-white text-red">
                 <a href="#" className="icon-cell">

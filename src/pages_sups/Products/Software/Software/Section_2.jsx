@@ -93,7 +93,7 @@ function Section_2() {
                       className="form-control"
                       id="name"
                       name="name"
-                      placeholder="John Smith"
+                      placeholder=""
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
                       value={formik.values.name}
@@ -109,7 +109,7 @@ function Section_2() {
                       className="form-control"
                       id="email"
                       name="email"
-                      placeholder="example@mail.com"
+                      placeholder=""
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
                       value={formik.values.email}
@@ -124,7 +124,7 @@ function Section_2() {
                       className="form-control p-2 z-10 relative"
                       defaultCountry="sa"
                       name="phone"
-                      placeholder="+123456789"
+                      placeholder=""
                       onChange={(e)=>formik.setFieldValue('phone' , e)}
                       onBlur={formik.handleBlur}
                       value={formik.values.phone}
@@ -141,7 +141,7 @@ function Section_2() {
                       className="form-control"
                       id="title"
                       name="title"
-                      placeholder="Title"
+                      placeholder=""
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
                       value={formik.values.title}
