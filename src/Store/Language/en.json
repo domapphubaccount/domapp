@@ -866,5 +866,8 @@
     "At DomApp, we develop and design applications tailored to the client's requirements.",
     "Our expertise allows us to develop, customize, and modify the applications we design to align perfectly with the client's company and business visions."
   ],
-  "FOOTER_SOCIAL": "Follow Us:"
+  "FOOTER_SOCIAL": "Follow Us:",
+  "FOOTER_COMMUNITY": {"title":"Community","slice": ["Blog"]},
+  "LEGAL": "Legal"
+
 }

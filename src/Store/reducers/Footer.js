@@ -42,6 +42,8 @@ const initialState = {
       services: t("FOOTER_SERVICES",lang),
       summary: t("FOOTER_SUMMARY",lang),
       social: t("FOOTER_SOCIAL",lang),
+      community: t("FOOTER_COMMUNITY",lang),
+      legal: t("LEGAL",lang)
     };
   },
 };
