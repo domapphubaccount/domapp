@@ -1,3 +1,4 @@
+"use client"
 import React, { useMemo, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useDispatch, useSelector } from "react-redux";
