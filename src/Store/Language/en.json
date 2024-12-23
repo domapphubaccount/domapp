@@ -3,6 +3,7 @@
   "PRODUCTS": "PRODUCTS",
   "WHAT_WE_DO": "WHAT WE DO",
   "ABOUT_US": "ABOUT US",
+  "ًWHY_US": "WHY US",
   "CONTACT_US": "CONTACT US",
   "Design_Software": "Design Software",
   "Business_Adminstration": "Business Administration",
@@ -36,10 +37,6 @@
   "WHAT_WE_DO_SLOGAN": "We develop remarkable and exceptional innovative software solutions.",
   "WHAT_WE_DO_SLICES": [
     {
-      "title": "Our Mission",
-      "description": "To enhance our customer’s success through unique solutions."
-    },
-    {
       "title": "Cutting-Edge Software",
       "description": "We specialize in developing applications that meet the needs of our clients with precision and creativity, utilizing the latest tech and frameworks."
     },
@@ -59,6 +56,19 @@
       "title": "Client-Centric Approach",
       "description": "Putting our clients at the heart of everything we do, we strive to exceed expectations and deliver exceptional results that propel their success."
     }
+  ],
+  "WHY_US_HEAD": {
+    "title":"Why us",
+    "slogan":"We Build Relationships, Not Just Projects"
+  },
+
+  "SERVICES": [
+    {"title":"Software Development","slogan": "Our software development services focus on delivering tailor-made solutions that align with your business goals. Whether it's developing innovative applications or upgrading your existing systems, we ensure robust, reliable, and seamless software experiences."},
+    {"title":"Software Customization","slogan": "We offer software customization services to align existing systems with your unique business requirements. From modifying off-the-shelf solutions to enhancing current functionalities, our team ensures tailored, efficient, and seamless software performance."},
+    {"title":"Web Development","slogan": "Our web development team combines creativity and technical expertise to create websites that captivate your audience and drive results. From simple websites to advanced web platforms, we deliver solutions tailored to your vision."},
+    {"title":"Mobile App development","slogan": "Transform your business with our mobile app development services. We design and build intuitive, high-performance apps for iOS, Android, and cross-platform solutions, delivering exceptional user experiences and innovative features."},
+    {"title":"UI/UX Desgin","slogan": "Our UI/UX design team specializes in building interfaces that leave a lasting impression. We align design aesthetics with user needs, creating experiences that are both beautiful and practical."},
+    {"title":"Facade Fabrication","slogan":"Our expertise in facade fabrication integrates advanced computational tools like Grasshopper to deliver custom cladding solutions. We provide 3D manufacturing models and detailed fabrication drawings, ensuring efficient and high-quality results."}
   ],
 
   "OUR_PRODUCTS_TITLE": "Our Products",
@@ -213,7 +223,7 @@
   "WINDMASTER_PAGE_GET_STARTED_SLOGAN": "Discover how our Wind Master can enhance your wind analysis. Start your free trial today for a detailed analysis!",
   "WINDMASTER_PAGE_GET_STARTED_BTN": "Get Started",
 
-  "CHATPLUS_PAGE_SLOGAN": "Try For Free",
+  "CHATPLUS_PAGE_SLOGAN": "One platform with all your communication needs.",
   "CHATPLUS_PAGE_TRY_BTN": "Try For Free",
   "CHATPLUS_PAGE_PRICING_BTN": "Pricing",
 
@@ -851,7 +861,6 @@
     "btn": "CONTACT SALES"
   },
 
-
   "FOOTER_ABOUT": {
     "title": "About us"
   },
@@ -860,14 +869,17 @@
   },
   "FOOTER_SERVICES": {
     "title": "Services",
-    "slice": [" Software Development","Facade Fabrication"]
+    "slice": [
+      { "title": "Development Services", "slice": ["Software Development","Software Customization","Web Development","Mobile App Development"] },
+      { "title": "Facade Fabrication", "slice": ["Grasshopper Modules"] }
+    ]
   },
   "FOOTER_SUMMARY": [
     "At DomApp, we develop and design applications tailored to the client's requirements.",
     "Our expertise allows us to develop, customize, and modify the applications we design to align perfectly with the client's company and business visions."
   ],
   "FOOTER_SOCIAL": "Follow Us:",
-  "FOOTER_COMMUNITY": {"title":"Community","slice": ["Blog"]},
-  "LEGAL": "Legal Policies"
-
+  "FOOTER_COMMUNITY": { "title": "Community", "slice": ["Blog"] },
+  "LEGAL": "Legal Policies",
+  "EXCLUSIVE_DEALERS": { "title": "Exclusive Dealer ", "slice": ["Dlalat"] }
 }

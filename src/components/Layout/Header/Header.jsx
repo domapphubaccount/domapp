@@ -38,12 +38,6 @@ export default function Header() {
               onClick={() => router.push("/")}
               src={header(lang).logo}
               alt="main logo"
-              // className="main_logo"
-              // style={{ cursor: "pointer" }}
-              // width={120}
-              // height={47}
-              // priority
-              // loading="eager"
               className="main_logo cursor-pointer"
             />
           </div>

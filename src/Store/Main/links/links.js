@@ -2,6 +2,7 @@ export const home_section = "#home"
 export const products_section = "#products";
 export const whatwedo_section = "#whatwedo";
 export const about_section = "#about";
+export const why_us_section = "#why_us";
 
 export const  cladcut_page = "/cladcut"
 

@@ -43,7 +43,8 @@ const initialState = {
       summary: t("FOOTER_SUMMARY",lang),
       social: t("FOOTER_SOCIAL",lang),
       community: t("FOOTER_COMMUNITY",lang),
-      legal: t("LEGAL",lang)
+      legal: t("LEGAL",lang),
+      dealers: t("EXCLUSIVE_DEALERS",lang)
     };
   },
 };

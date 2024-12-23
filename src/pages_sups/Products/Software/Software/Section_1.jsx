@@ -53,7 +53,7 @@ function SectionContent() {
                   <i className="bi bi-code-slash"></i>
                 </a>
               </div>
-              <div className="icon-content">
+              <div className="icon-content px-4">
                 <h4 className="dlab-title">
                   {custom_software(lang).sections.Services.slice[0].title}
                 </h4>
@@ -66,7 +66,7 @@ function SectionContent() {
                   <i className="bi bi-cast"></i>
                 </a>
               </div>
-              <div className="icon-content">
+              <div className="icon-content px-4">
                 <h4 className="dlab-title">
                   {custom_software(lang).sections.Services.slice[1].title}
                 </h4>

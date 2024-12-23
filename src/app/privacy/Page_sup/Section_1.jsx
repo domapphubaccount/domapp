@@ -3875,7 +3875,7 @@ export default function Section_1() {
                     </span>
                   </b>
                   <span>
-                    �DomApp is a subsidiary of the parent company, Designal
+                    DomApp is a subsidiary of the parent company, Designal
                     Engineering, DomApp is a leading company in the field of
                     software development and customization. We are committed to
                     protecting your privacy and ensuring transparency in the

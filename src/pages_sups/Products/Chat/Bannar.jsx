@@ -65,8 +65,6 @@ function Bannar2() {
       </div>
 
       <div class="set-abs abs-horizon-center girl-boy image_bannar">
-        {/* <div style={{willChange: "transform; transition: 3000ms cubic-bezier(0.03, 0.98, 0.52, 0.99); transform: perspective(20000px) rotateX(3.68412deg) rotateY(-5.86818deg) scale3d(1, 1, 1);"}}></div> */}
-
         <div class="plus-container plus-container6">
           <div class="plus white"></div>
         </div>
@@ -80,12 +78,14 @@ function Bannar2() {
           <div class="gradient-circle-big"></div>
         </div>
       </div>
+      
       <div class="plus-container">
         <div class="plus"></div>
       </div>
-      <div class="plus-container plus-container2">
+
+      {/* <div class="plus-container plus-container2">
         <div class="plus plus-medium"></div>
-      </div>
+      </div> */}
       <div class="plus-container plus-container3">
         <div class="plus plus-small"></div>
       </div>

@@ -23,6 +23,7 @@ import {
   products_section,
   rdapp_page,
   whatwedo_section,
+  why_us_section,
   windmaster_page,
 } from "@/Store/Main/links/links";
 import en from "@/Store/Language/en.json";
@@ -140,6 +141,11 @@ const initialState = {
         {
           name: t("ABOUT_US", lang),
           link: `/${about_section}`,
+          list: false,
+        },
+        {
+          name: t("ًWHY_US", lang),
+          link: `/${why_us_section}`,
           list: false,
         },
         {

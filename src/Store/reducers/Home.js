@@ -50,6 +50,7 @@ const initialState = {
           slices: t("WHAT_WE_DO_SLICES",lang),
         },
       },
+      services: t("SERVICES",lang),
       products: {
         head: {
           title: t("OUR_PRODUCTS_TITLE",lang),
@@ -498,6 +499,7 @@ const initialState = {
         },
       },
       counterdata: t("HOME_COUNTER",lang),
+      why_us: t("WHY_US_HEAD",lang),
     },
   })
 };

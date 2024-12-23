@@ -100,7 +100,7 @@ function Section_2() {
                         className="form-control"
                         id="name"
                         name="name"
-                        placeholder={lang === "en" && "Ahmed Ibrahim"}
+                        // placeholder={lang === "en" && "Ahmed Ibrahim"}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.name}
@@ -118,7 +118,7 @@ function Section_2() {
                         className="form-control"
                         id="email"
                         name="email"
-                        placeholder={lang === "en" && "ahm34@gmail.com"}
+                        // placeholder={lang === "en" && "ahm34@gmail.com"}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.email}
@@ -154,7 +154,7 @@ function Section_2() {
                         className="form-control"
                         id="title"
                         name="title"
-                        placeholder={lang === "en" && "Message title"}
+                        // placeholder={lang === "en" && "Message title"}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.title}
