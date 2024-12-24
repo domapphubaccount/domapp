@@ -16,29 +16,29 @@ function Bannar2() {
   const { chatplus } = useSelector((state) => state.chatplusRed);
 
   return (
-    <section class="agency header chat-head" id="header">
-      <div class="agency bg mb-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="center-text">
+    <section className="agency header chat-head" id="header">
+      <div className="agency bg mb-4">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <div className="center-text">
                 <div>
-                  <div class="header-text">
+                  <div className="header-text">
                     <img src={Logo.src} width={400} alt="chatplus" />
                   </div>
-                  <div class="header-sub-text mb-5 text-lg" dir={dir}>
+                  <div className="header-sub-text mb-5 text-lg" dir={dir}>
                     <p>{chatplus(lang).sections.bannar.slogan}</p>
                   </div>
-                  <div class="link-horizontal" dir={dir}>
+                  <div className="link-horizontal" dir={dir}>
                     <Link
                       href={contact_page}
-                      class="btn btn-default btn-gradient text-white active mx-2"
+                      className="btn btn-default btn-gradient text-white active mx-2"
                     >
                       {chatplus(lang).sections.bannar.try_btn}
                     </Link>
                     <Link
                       href="/chatplus/pricing"
-                      class="btn btn-default btn-gradient text-white active mx-2"
+                      className="btn btn-default btn-gradient text-white active mx-2"
                     >
                       {chatplus(lang).sections.bannar.pricing_btn}
                     </Link>
@@ -46,7 +46,7 @@ function Bannar2() {
                 </div>
               </div>
             </div>
-            <div class="col-md-8 flex items-center">
+            <div className="col-md-8 flex items-center">
               <div
               className=""
                 style={{
@@ -54,7 +54,7 @@ function Bannar2() {
                     "perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
                 }}
               >
-                <img alt="" class="img-fluid" src={BannarIMG.src} />
+                <img alt="" className="img-fluid" src={BannarIMG.src} />
               </div>
             </div>
           </div>
@@ -64,36 +64,36 @@ function Bannar2() {
         <VideoSection />
       </div>
 
-      <div class="set-abs abs-horizon-center girl-boy image_bannar">
-        <div class="plus-container plus-container6">
-          <div class="plus white"></div>
+      <div className="set-abs abs-horizon-center girl-boy image_bannar">
+        <div className="plus-container plus-container6">
+          <div className="plus white"></div>
         </div>
-        <div class="plus-container plus-container7">
-          <div class="plus white"></div>
+        <div className="plus-container plus-container7">
+          <div className="plus white"></div>
         </div>
-        <div class="plus-container plus-container8">
-          <div class="plus white"></div>
+        <div className="plus-container plus-container8">
+          <div className="plus white"></div>
         </div>
-        <div class="circle-container">
-          <div class="gradient-circle-big"></div>
+        <div className="circle-container">
+          <div className="gradient-circle-big"></div>
         </div>
       </div>
       
-      <div class="plus-container">
-        <div class="plus"></div>
+      <div className="plus-container">
+        <div className="plus"></div>
       </div>
 
-      {/* <div class="plus-container plus-container2">
-        <div class="plus plus-medium"></div>
+      {/* <div className="plus-container plus-container2">
+        <div className="plus plus-medium"></div>
       </div> */}
-      <div class="plus-container plus-container3">
-        <div class="plus plus-small"></div>
+      <div className="plus-container plus-container3">
+        <div className="plus plus-small"></div>
       </div>
-      <div class="plus-container plus-container4">
-        <div class="plus plus-small"></div>
+      <div className="plus-container plus-container4">
+        <div className="plus plus-small"></div>
       </div>
-      <div class="plus-container plus-container5">
-        <div class="plus plus-medium"></div>
+      <div className="plus-container plus-container5">
+        <div className="plus plus-medium"></div>
       </div>
     </section>
   );

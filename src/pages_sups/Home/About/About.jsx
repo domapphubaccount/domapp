@@ -30,7 +30,6 @@ export default function About() {
                     <Col sm={12} md={6}>
                       <div
                         className="vc_column-inner vc_custom_1545618139147"
-                        data-className-mobile="vc_custom_1545618139153"
                       >
                         <div className="wpb_wrapper">
                           <div className="bp-element bp-element-image-box  demo-1 image-left color-1 layout-gradient">
@@ -181,7 +180,6 @@ export default function About() {
             <Col sm={12} md={6}>
               <div
                 className="vc_column-inner vc_custom_1545390792675"
-                data-className-mobile="vc_custom_1545390792681"
                 dir={dir}
               >
                 <div className="wpb_wrapper">

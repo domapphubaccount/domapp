@@ -4,11 +4,11 @@ import { about_section, why_us_section } from "@/Store/Main/links/links";
 import { useSelector } from "react-redux";
 import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import Slider from "react-slick/lib/slider";
-import customer from "/public/Why_us/customer.jpg";
-import tech from "/public/Why_us/tech.jpg";
-import innovation from "/public/Why_us/innovation.jpg";
-import solutions from "/public/Why_us/solutions.jpg";
-import software from "/public/Why_us/software.jpg";
+import customer from "/public/Why_us/customer.webp";
+import tech from "/public/Why_us/tech.webp";
+import innovation from "/public/Why_us/innovation.webp";
+import solutions from "/public/Why_us/solutions.webp";
+import software from "/public/Why_us/software.webp";
 import { Container } from "reactstrap";
 import { whyUs } from "@/Store/Main/IDs";
 
@@ -21,7 +21,7 @@ function WhyUs() {
   const slides = [
     {
         image: software.src, // Replace with your image URL
-      },
+    },
     {
       image: tech.src, // Replace with your image URL
     },
@@ -83,6 +83,7 @@ function WhyUs() {
                         }}
                         dir={dir}
                       >
+                        <div className="p-3">
                         <h2
                           className="mb-4"
                           style={{ marginBottom: "10px", fontSize: "2.5rem" }}
@@ -90,6 +91,7 @@ function WhyUs() {
                           {item.title}
                         </h2>
                         <p>{item.description}</p>
+                        </div>
                       </div>
                     )
                   )}

@@ -3,21 +3,7 @@ import { useSelector } from "react-redux";
 import Slider from "react-slick";
 import styled from "styled-components";
 import quotes from "@/assets/images/Products_Page/Rd/quotes-left.svg";
-
-const testimonials = [
-  {
-    name: "Helena",
-    title: "Senior Marketing Manager, ABC Company",
-    quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet dolor nec arcu eleifend fermentum eget laoreet felis. Donec sagittis quam massa, quis tempor orci commodo quis. Praesent et sem eget augue posuere tempus.",
-  },
-  {
-    name: "Helena",
-    title: "Senior Marketing Manager, ABC Company",
-    quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet dolor nec arcu eleifend fermentum eget laoreet felis. Donec sagittis quam massa, quis tempor orci commodo quis. Praesent et sem eget augue posuere tempus.",
-  },
-];
+import Section_head from "@/components/Reuse/Section_Head/Section_head";
 
 const Carousel = () => {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -36,12 +22,17 @@ const Carousel = () => {
 
   return (
     <Container>
-      <Header>{home(lang).sections.review_title}</Header>
+      {/* <Header className="mt-5">{home(lang).sections.review_title}</Header> */}
+      <Section_head
+        head={1}
+        title_1={home(lang).sections.review_title.title}
+        des_1={home(lang).sections.review_title.slogan}
+      />
       <SliderWrapper>
         <Slider {...settings}>
           {home(lang).sections.review.map((testimonial, index) => (
-            <div className="p-5 h-full" key={index}>
-              <Card  className="h-full">
+            <div className="p-5 h-full mt-4 mb-5" key={index}>
+              <Card className="h-full">
                 <div className="flex justify-between mb-4">
                   <div>
                     <Name>{testimonial.name}</Name>
@@ -50,7 +41,7 @@ const Carousel = () => {
                   <div>
                     <img
                       src={quotes.src}
-                      style={{ width: "60px" }}
+                      style={{ width: "60px", filter: "brightness(0.9)" }}
                       className="inline"
                       alt="qute"
                     />
@@ -129,7 +120,7 @@ const Card = styled.div`
   background: #ffffff;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px #ccc;
   text-align: left;
   position: relative;
   z-index: 2;
@@ -141,7 +132,7 @@ const Card = styled.div`
     left: 10%;
     right: 10%;
     height: 20px;
-    background: rgba(200, 200, 255, 0.4);
+    background: rgb(205 205 205 / 40%);
     border-radius: 16px;
     z-index: 1;
     filter: blur(5px);

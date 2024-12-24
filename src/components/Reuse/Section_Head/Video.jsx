@@ -22,22 +22,19 @@ function Video({title , body , src , className , bannar , additional}) {
             <Col sm={12} md={6}>
               <div className="">
                 <div className="relative">
-                  <div class={ `${className} absolute -top-4 -bottom-4 -right-4 w-2/3 rounded-3xl z-0 sm:rounded-[50px] md:top-0 md:bottom-0 md:right-0 xl:w-7/12`}></div>
-                  <div class="relative">
+                  <div className={ `${className} absolute -top-4 -bottom-4 -right-4 w-2/3 rounded-3xl z-0 sm:rounded-[50px] md:top-0 md:bottom-0 md:right-0 xl:w-7/12`}></div>
+                  <div className="relative">
                     <div >
                       <div className="relative video-screen-border">
                         <img
                           className="w-full aspect-video rounded-2xl"
                           src={bannar.src}
                           title="YouTube video player"
-                          frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          referrerpolicy="strict-origin-when-cross-origin"
-                          allowfullscreen
                         />
                         <div className="play-icon-clad">
                           <div
-                            class="border_circle"
+                            className="border_circle"
                             onClick={() => setOpen(true)}
                           ></div>
                           <img src={playIcon.src} width={50} />

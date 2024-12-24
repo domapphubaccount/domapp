@@ -925,7 +925,7 @@
   "FOOTER_COMMUNITY": { "title": "Community", "slice": ["Blog"] },
   "LEGAL": "Legal Policies",
   "EXCLUSIVE_DEALERS": { "title": "Exclusive Dealer ", "slice": ["Dlalat"] },
-  "REVIEW_TITLE": "What our clients say",
+  "REVIEW_TITLE": {"title":"TESTIMONIALS","slogan":"Your success tells our story"},
   "REVIEW": [
     {
       "name": "Mohamed Ghattas",

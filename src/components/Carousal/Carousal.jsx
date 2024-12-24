@@ -147,8 +147,6 @@ function Carousal() {
 
   return (
     <>
-    <></>
-      <div id="products"></div>
       <Section_head
         head={1}
         title_1={home(lang).sections.products.head.title}

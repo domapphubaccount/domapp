@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "../style/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StoreProvider from "@/Store/Provider/StoreProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata = {
   title: "DomApp",
@@ -17,17 +16,13 @@ export const metadata = {
 
 export default function RootLayout({ children  }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch+Pop&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
-      <body className={inter.className}>
+      <body suppressHydrationWarning={true} style={{fontFamily:"Alexandria"}} >
         <StoreProvider>{children}</StoreProvider>
       </body>
     </html>

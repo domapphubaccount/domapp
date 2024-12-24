@@ -23,8 +23,8 @@ function WhatWeDo() {
       <g
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
         <rect width="13" height="13" x=".5" y=".5" rx="1" />
         <path d="M.5 3.5h13M4 9l2 1.5l3.5-4" />
@@ -41,8 +41,8 @@ function WhatWeDo() {
       <g
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
         <rect width="13" height="13" x=".5" y=".5" rx="1" />
         <path d="M.5 4h13M4 7l1.5 1.5L4 10m4.5-1.5h2" />
@@ -59,8 +59,8 @@ function WhatWeDo() {
       <g
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
         <circle cx="7" cy="7" r="6.5" />
         <path d="M.5 7h13m-4 0A11.22 11.22 0 0 1 7 13.5A11.22 11.22 0 0 1 4.5 7A11.22 11.22 0 0 1 7 .5A11.22 11.22 0 0 1 9.5 7Z" />
@@ -103,8 +103,8 @@ function WhatWeDo() {
       <path
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         d="m.94 2l12-1.38a.49.49 0 0 1 .56.49v11.82a.5.5 0 0 1-.58.49l-12-1.84a.51.51 0 0 1-.42-.5V2.46A.5.5 0 0 1 .94 2M6 1.38v10.98m7.5-5.6H.5"
       />
     </svg>,

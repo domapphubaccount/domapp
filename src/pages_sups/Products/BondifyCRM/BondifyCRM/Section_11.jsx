@@ -28,8 +28,8 @@ export default function Section_11() {
                         fill="none"
                         stroke="currentColor"
                         stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="feather feather-code"
                       >
                         <polyline points="16 18 22 12 16 6"></polyline>
