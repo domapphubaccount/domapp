@@ -9,7 +9,7 @@ function WindVideo() {
   const { windmaster } = useSelector((state) => state.windmasterRed);
 
   return (
-    <section dir={dir}>
+    <section dir={dir} className="my-20 py-20">
       <Container>
         <Video
           title={windmaster(lang).sections.Quick_start.title}

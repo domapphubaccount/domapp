@@ -12,7 +12,7 @@ export default function Product() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const { rdapp } = useSelector((state) => state.rdAppRed);
   return (
-    <section className={`rd_bannar ${league.className} position-relative`}>
+    <section className={`rd_bannar position-relative`}>
       <div className="vh-100">
         <Container className="h-100  z-10 relative">
           <Row className="h-100 align-items-center">
@@ -28,7 +28,7 @@ export default function Product() {
                     </div>
                   </div>
                   <div className="mb-4">
-                    <p className={league.className + " mb-4"}>
+                    <p className={" mb-4"}>
                       {rdapp(lang).sections.bannar.slogan.title}
                       <br />
                       <span className="fw-bold">

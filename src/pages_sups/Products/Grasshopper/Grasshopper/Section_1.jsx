@@ -13,13 +13,13 @@ export default function Section_1() {
           <div className="row row--35 align-items-center">
             <div className="col-lg-5 col-md-12">
               <div className="thumbnail" data-aos="fade-up" data-aos-duration="2000" >
-                <img className="w-90" src={grass.src} alt="About Images" />
+                <img className="w-80" src={grass.src} alt="About Images" />
               </div>
             </div>
             <div className="col-lg-7 col-md-12">
               <div className="about-inner inner" dir={dir}>
                 <div className="text-white" data-aos="fade-down" data-aos-duration="500">
-                  <h2 className="title fw-bold">{grasshopper(lang).sections.Quick_start.title}</h2>
+                  <h2 className="title fw-bold mb-3">{grasshopper(lang).sections.Quick_start.title}</h2>
                   <p className="description">{grasshopper(lang).sections.Quick_start.slogan}</p>
                 </div>
               </div>

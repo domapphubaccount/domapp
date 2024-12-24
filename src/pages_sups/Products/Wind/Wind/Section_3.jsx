@@ -8,7 +8,7 @@ export default function Section_3() {
   const { windmaster } = useSelector((state) => state.windmasterRed);
 
   return (
-    <div className="container mt-20 relative ">
+    <section className="container my-20 py-20 relative ">
       <div
         className="row align-items-center  social-feature-right"
         data-aos="fade-up"
@@ -37,10 +37,10 @@ export default function Section_3() {
               {windmaster(lang).sections.Collaborate.head.part_1} <br />{" "}
               {windmaster(lang).sections.Collaborate.head.part_2}
             </h4>
-            <p className="text-muted mb-0 para-desc">
+            <div className="text-muted mb-0 para-desc">
               <span className="text-primary fw-bold">Wind Master </span>{" "}
-              {windmaster(lang).sections.Collaborate.slogan}
-            </p>
+              <small>{windmaster(lang).sections.Collaborate.slogan}</small>
+            </div>
 
             {windmaster(lang).sections.Collaborate.slice.map((item,index)=>(
 
@@ -49,7 +49,7 @@ export default function Section_3() {
                 {item.icon}
               </div>
               <div className={`flex-1 ${dir == 'rtl' && 'text-end'}`}>
-                {item.slogan}
+                <p>{item.slogan}</p>
               </div>
             </div>
             ))}
@@ -58,6 +58,6 @@ export default function Section_3() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -6,7 +6,7 @@ export default function Section_5() {
   const { windmaster } = useSelector((state) => state.windmasterRed);
 
   return (
-    <section className="relative my-5">
+    <section className="relative my-52 pt-52">
       <div className="container">
         <div className="row social-feature-left">
           {windmaster(lang).sections.INFO_CARDS.map((item, index) => (

@@ -27,17 +27,17 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
           <Suspense fallback={""}>
             <div className="bg-gray-900 p-4">
               <Container>
-                <h3 className="font-semibold text-lg mb-2 text-center text-white">
+                <h3 className="font-semibold text-sm mb-2 text-center text-white">
                   DomApp
                 </h3>
                 <div className="footer p-8 text-white">
-                  <div className="grid grid-cols-7 sm:grid-cols-7 gap-6">
-                    {/* About Us Section */}
+                <div className="grid grid-cols-1 sm:grid-cols-7 gap-6">
+                {/* About Us Section */}
                     <div>
                       <div className="mb-3">
-                        <h3 className="font-semibold text-lg mb-2">
+                        <h5 className="font-semibold text-sm mb-2">
                           {footer(lang).about.title}
-                        </h3>
+                        </h5>
                         <ul className="space-y-1">
                           {header(lang)
                             .nav.map((item, index) => (
@@ -55,9 +55,9 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                         </ul>
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg mb-2">
+                        <h5 className="font-semibold text-sm mb-2">
                           {footer(lang).legal}
-                        </h3>
+                        </h5>
                         <ul className="space-y-1">
                           <li>
                             <Link href="/privacy" className="hover:underline">
@@ -71,9 +71,9 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                     </div>
                     {/* Services Section */}
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">
+                      <h5 className="font-semibold text-sm mb-2">
                         {footer(lang).services.title}
-                      </h3>
+                      </h5>
                       <ul className="space-y-1">
                         {footer(lang).services.slice.map((item, index) => (
                           <li key={index}>
@@ -98,9 +98,9 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                     </div>
                     {/* Products Section */}
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">
+                      <h5 className="font-semibold text-sm mb-2">
                         {footer(lang).products.title}
-                      </h3>
+                      </h5>
                       <ul className="space-y-1">
                         {header(lang).nav.filter((item) => item.list)[0].list.map((item) => item.products.filter((item) => (item.link !== "/grasshopper" && item.link !== "/customization"))).map((item,index)=>(
                               item.length > 0 && item.map((item,index)=>(
@@ -119,9 +119,9 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                     </div>
                     {/* Exclusive Dealer Section */}
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">
+                      <h5 className="font-semibold text-sm mb-2">
                         {footer(lang).dealers.title}
-                      </h3>
+                      </h5>
                       <ul className="space-y-1">
                         {footer(lang).dealers.slice.map((item, index) => (
                           <li key={index}>
@@ -134,9 +134,9 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                     </div>
                     {/* Community Section */}
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">
+                      <h5 className="font-semibold text-sm mb-2">
                         {footer(lang).community.title}
-                      </h3>
+                      </h5>
                       <ul className="space-y-1">
                         {footer(lang).community.slice.map((item, index) => (
                           <li key={index}>

@@ -51,9 +51,9 @@ function Section_2() {
                   {index + 1}
                 </div>
                 <img className="h-48 mx-auto my-4" src={byld(lang).sections.CARDS_IMAGES[index].src} alt="" />
-                <h3 className="mb-2 font-bold font-heading">
+                <h5 className="mb-2 font-bold font-heading">
                   {item.title}
-                </h3>
+                </h5>
                 <p className="text-sm text-blueGray-400 leading-relaxed">
                   {item.slogan}
                 </p>

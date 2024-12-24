@@ -14,8 +14,8 @@ function Video({title , body , src , className , bannar , additional}) {
             <Col sm={12} md={6}>
               <div className="">
                 <div className="my-5 text-slate-900">
-                  <h3 className="mb-5">{title}</h3>
-                  <h1 className="mb-5">{body}</h1>
+                  <h4 className="mb-5">{title}</h4>
+                  <h3 className="mb-5">{body}</h3>
                 </div>
               </div>
             </Col>

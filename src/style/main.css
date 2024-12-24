@@ -19,6 +19,9 @@
 a {
   text-decoration: none;
 }
+p{
+  font-weight: 300;
+}
 
 .card_shadow {
   box-shadow: 1px 0px 7px 0px #ccccccb3;
@@ -591,6 +594,9 @@ footer .footer a {
 }
 
 /* Home Page */
+.home_bannar  .bannar_container h1{
+  font-family: "Elhadary";
+}
 .home_bannar {
   background-image: url("../assets/images/Home_Page/bannar.webp");
   background-size: cover;
@@ -612,9 +618,7 @@ footer .footer a {
     top: 0;
     left: 0;
   }
-  .bannar_container h1{
-    font-family: "Elhadary";
-  }
+
 
   .bannar_container {
     height: 100%;
@@ -1975,7 +1979,7 @@ footer .footer a {
 .chat_section_2 p {
   font-size: 0.9rem;
   color: gray;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .back_drop_chat {
@@ -2844,7 +2848,6 @@ footer .footer a {
 
 .chat_section_4_cards .chat_card_icon_container p {
   font-size: 0.9rem;
-  font-weight: 400;
 }
 
 .chat_section_4_cards .chat_card_icon_container h4 {
@@ -3036,7 +3039,7 @@ footer .footer a {
 .RD-head h1 {
   font-size: calc(80px + 40 * (100vw - 320px) / 1600);
   color: #1c77ed;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 900;
   /* text-transform: uppercase; */
   line-height: 0.7;
@@ -3077,7 +3080,7 @@ footer .footer a {
 .RD-head h2 {
   font-size: calc(16px + 20 * (100vw - 320px) / 1600);
   color: #223645;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 700;
   width: 100%;
   text-transform: capitalize;
@@ -3139,7 +3142,7 @@ footer .footer a {
 .secure-app-content h1 {
   font-size: calc(18px + 38 * (100vw - 320px) / 1600);
   color: #223645;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 800;
   margin-bottom: 37px;
 }
@@ -3155,7 +3158,7 @@ footer .footer a {
 
 .secure-app-content h4 span {
   color: #1c77ed;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-size: 11px;
   font-weight: 700;
 }
@@ -5641,9 +5644,6 @@ div.btn-default {
   text-align: center;
 }
 
-.cust_section_3 .title {
-  font-size: 40px;
-}
 
 .axil-btn.btn-large {
   padding: 23px 55px;
@@ -5695,7 +5695,6 @@ div.btn-default {
 }
 
 .contact-form-box.shadow-box .title {
-  font-size: 32px;
   margin-bottom: 30px;
 }
 
@@ -6105,14 +6104,12 @@ input {
   margin-bottom: 10px;
   color: #333;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
 }
 
 .section-subtitle {
   font-size: 1.5em;
   margin-bottom: 20px;
   color: #777;
-  font-family: "Open Sans", sans-serif;
 }
 
 .section-buttons {
@@ -6476,6 +6473,18 @@ i.icon-2x {
 .slick-slide.slick-active.slick-center .grass path {
   fill: #fff;
 }
+.social-feature-left p{
+  font-weight: 300;
+}
+.social-feature-left h5{
+  margin-bottom: 30px;
+}
+.features-absolute p{
+  font-weight: 300;
+}
+.social-feature-right p{
+  font-weight:  300;
+}
 
 @media (max-width: 700px) {
   .grass_title {
@@ -6491,6 +6500,7 @@ i.icon-2x {
     visibility: hidden;
   }
 }
+
 
 /* updates */
 

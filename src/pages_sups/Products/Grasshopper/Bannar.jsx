@@ -15,7 +15,7 @@ export default function Bannar() {
           dir={dir}
         >
           <div className="container position-relative">
-            <div className="row">
+            <div className="row mb-5">
               <div className="col-lg-12">
                 <div className="inner mb-5" data-aos="fade-right">
                   <h1 className="title theme-gradient grass_title">

@@ -84,9 +84,9 @@ function Section_2() {
                   className="contact-form-box shadow-box"
                   style={{ transform: "translateY(-100px)" }}
                 >
-                  <h3 className="title">
+                  <h4 className="title">
                     {custom_software(lang).sections.Contact.form.title}
-                  </h3>
+                  </h4>
                   <form
                     className="axil-contact-form"
                     onSubmit={formik.handleSubmit}
@@ -132,10 +132,11 @@ function Section_2() {
                         {custom_software(lang).sections.Contact.form.phone}
                       </label>
                       <PhoneInput
-                        className="form-control p-2 z-10 relative"
+                        className="form-control p-2 z-10 flex"
+                        style={{display: "flex"}}
                         defaultCountry="sa"
                         name="phone"
-                        placeholder=""
+                        placeholder="151515"
                         onChange={(e) => formik.setFieldValue("phone", e)}
                         onBlur={formik.handleBlur}
                         value={formik.values.phone}
