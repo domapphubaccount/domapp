@@ -11,7 +11,7 @@ export default function RD_cards() {
       <Container>
         <Row>
           <Col>
-            <div className="py-4 qute">
+            <div className="py-4 qute" dir={dir}>
               <div
                 className="text-start"
                 style={{ width: "80px" }}
@@ -30,14 +30,15 @@ export default function RD_cards() {
                 </Container>
               </div>
               <div
-                className="text-end"
+                className="flex justify-end"
+                // style={{ width: "80px" }}
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
                 <img
                   src={quotes.src}
                   style={{ width: "80px" }}
-                  className="ms-auto"
+                  className="inline"
                   alt="qute"
                 />
               </div>

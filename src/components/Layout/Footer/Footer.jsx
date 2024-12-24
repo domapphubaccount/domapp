@@ -19,7 +19,7 @@ export default function Footer() {
   if (!isMounted) {
     return null; // or return loading spinner
   }
-
+console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item.products.filter(item => item.link != "/customization" && item.link != "/grasshopper")))
   return (
     <footer dir={dir}>
       {isMounted && (
@@ -40,8 +40,8 @@ export default function Footer() {
                         </h3>
                         <ul className="space-y-1">
                           {header(lang)
-                            .nav.slice(0, 3)
-                            .map((item, index) => (
+                            .nav.map((item, index) => (
+                              item.link != "/#about" &&
                               <li key={index}>
                                 <Link
                                   href={item.link}
@@ -86,7 +86,7 @@ export default function Footer() {
                               </CustomToggle>
                               <ul id={`accordion-${index}`} className="hidden">
                                 {item.slice.map((item, index) => (
-                                  <li key={index} className="ms-1">
+                                  <li key={index} className="ms-1 text-gray-300	">
                                     <small>{item}</small>
                                   </li>
                                 ))}
@@ -102,10 +102,8 @@ export default function Footer() {
                         {footer(lang).products.title}
                       </h3>
                       <ul className="space-y-1">
-                        {header(lang)
-                          .nav.filter((item) => item.list)[0]
-                          .list.map((item) =>
-                            item.products.map((item, index) => (
+                        {header(lang).nav.filter((item) => item.list)[0].list.map((item) => item.products.filter((item) => (item.link !== "/grasshopper" && item.link !== "/customization"))).map((item,index)=>(
+                              item.length > 0 && item.map((item,index)=>(
                               <li key={index}>
                                 <Link
                                   href={item.link}
@@ -114,8 +112,9 @@ export default function Footer() {
                                   {item.name}
                                 </Link>
                               </li>
+                              ))
                             ))
-                          )}
+                          }
                       </ul>
                     </div>
                     {/* Exclusive Dealer Section */}

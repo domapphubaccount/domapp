@@ -123,9 +123,9 @@ function WhatWeDo() {
         <Row>
           {home(lang).sections.services.map((item, index) => (
             <Col sm={12} md={4} lg={4} className="mb-4" key={index}>
-              <div className="bg-body-secondary p-4 h-100 rounded" dir={dir}>
+              <div className="bg-body-secondary card-sec p-4 h-100 rounded" dir={dir}>
                 <div className="d-flex">
-                  <div className="rounded-circle bg-secondary text-white p-3">
+                  <div className="rounded-circle bg-secondary text-white p-3 icon">
                     {icons[index]}
                   </div>
                 </div>

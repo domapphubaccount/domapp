@@ -24,14 +24,30 @@
 
   "slogan": "Transforming ideas into unique applications.",
   "Get_Started": "Get Started",
+  "ABOUT_US_HEAD": {
+    "title": "ABOUT US",
+    "slogan": "Specialized in crafting innovative solutions that redefine possibilities."
+  },
 
-  "ABOUT_US_SLOGAN": "Specialized in crafting innovative solutions that redefine possibilities.",
+  "ABOUT_US_SLOGAN": [
+    "We craft and refine client-driven concepts to seamlessly integrate with our precisely designed applications ensuring optimal functionality and user satisfaction at every step.",
+    "We design solutions that surpass expectations and propel our clients toward success.",
+    "With our expertise, we develop, and design applications tailored to the client's requirements. Our expertise allows us to customize and modify the applications we design to align perfectly with the client's company and business visions."
+  ],
   "ABOUT_US_MAIN_TITLE": "At DomApp Our Expertise Shines Bright",
   "ABOUT_US_MAIN_SLICES": [
-    "We design solutions that surpass expectations and propel our clients toward success.",
-    "Our unwavering commitment lies in delivering consistent, reliable, and cost-effective services that adhere to the highest quality standards. We continuously strive to meet and exceed the needs and expectations of our clients, ensuring their utmost satisfaction.",
-    "We craft and refine client-driven concepts to seamlessly integrate with our precisely designed applications ensuring optimal functionality and user satisfaction at every step.",
-    "With our expertise, we develop, and design applications tailored to the client's requirements. Our expertise allows us to customize and modify the applications we design to align perfectly with the client's company and business visions."
+    {
+      "title": "Mission",
+      "slogan": "We turn your life-changing ideas into fantastic software solutions that people enjoy using."
+    },
+    {
+      "title": "Vision",
+      "slogan": "To develop innovative, customized, and reliable solutions that enhance business visions, exceed client expectations, and drive continuous success."
+    },
+    {
+      "title": "Core Value",
+      "slogan": "We are dedicated to innovation and quality, meeting client needs with transparency, collaboration, and the latest technologies, while prioritizing responsibility and sustainability."
+    }
   ],
 
   "WHAT_WE_DO_SLOGAN": "We develop remarkable and exceptional innovative software solutions.",
@@ -58,20 +74,38 @@
     }
   ],
   "WHY_US_HEAD": {
-    "title":"Why us",
-    "slogan":"We Build Relationships, Not Just Projects"
+    "title": "WHY US",
+    "slogan": "We Build Relationships, Not Just Projects"
   },
 
   "SERVICES": [
-    {"title":"Software Development","slogan": "Our software development services focus on delivering tailor-made solutions that align with your business goals. Whether it's developing innovative applications or upgrading your existing systems, we ensure robust, reliable, and seamless software experiences."},
-    {"title":"Software Customization","slogan": "We offer software customization services to align existing systems with your unique business requirements. From modifying off-the-shelf solutions to enhancing current functionalities, our team ensures tailored, efficient, and seamless software performance."},
-    {"title":"Web Development","slogan": "Our web development team combines creativity and technical expertise to create websites that captivate your audience and drive results. From simple websites to advanced web platforms, we deliver solutions tailored to your vision."},
-    {"title":"Mobile App development","slogan": "Transform your business with our mobile app development services. We design and build intuitive, high-performance apps for iOS, Android, and cross-platform solutions, delivering exceptional user experiences and innovative features."},
-    {"title":"UI/UX Desgin","slogan": "Our UI/UX design team specializes in building interfaces that leave a lasting impression. We align design aesthetics with user needs, creating experiences that are both beautiful and practical."},
-    {"title":"Facade Fabrication","slogan":"Our expertise in facade fabrication integrates advanced computational tools like Grasshopper to deliver custom cladding solutions. We provide 3D manufacturing models and detailed fabrication drawings, ensuring efficient and high-quality results."}
+    {
+      "title": "Software Development",
+      "slogan": "Our software development services focus on delivering tailor-made solutions that align with your business goals. Whether it's developing innovative applications or upgrading your existing systems, we ensure robust, reliable, and seamless software experiences."
+    },
+    {
+      "title": "Software Customization",
+      "slogan": "We offer software customization services to align existing systems with your unique business requirements. From modifying off-the-shelf solutions to enhancing current functionalities, our team ensures tailored, efficient, and seamless software performance."
+    },
+    {
+      "title": "Web Development",
+      "slogan": "Our web development team combines creativity and technical expertise to create websites that captivate your audience and drive results. From simple websites to advanced web platforms, we deliver solutions tailored to your vision."
+    },
+    {
+      "title": "Mobile App development",
+      "slogan": "Transform your business with our mobile app development services. We design and build intuitive, high-performance apps for iOS, Android, and cross-platform solutions, delivering exceptional user experiences and innovative features."
+    },
+    {
+      "title": "UI/UX Desgin",
+      "slogan": "Our UI/UX design team specializes in building interfaces that leave a lasting impression. We align design aesthetics with user needs, creating experiences that are both beautiful and practical."
+    },
+    {
+      "title": "Facade Fabrication",
+      "slogan": "Our expertise in facade fabrication integrates advanced computational tools like Grasshopper to deliver custom cladding solutions. We provide 3D manufacturing models and detailed fabrication drawings, ensuring efficient and high-quality results."
+    }
   ],
 
-  "OUR_PRODUCTS_TITLE": "Our Products",
+  "OUR_PRODUCTS_TITLE": "OUR PRODUCTS",
   "OUR_PRODUCTS_SLOGAN": "Each developed with precision, passion, and a deep commitment to excellence.",
 
   "HOME_COUNTER": [
@@ -870,7 +904,16 @@
   "FOOTER_SERVICES": {
     "title": "Services",
     "slice": [
-      { "title": "Development Services", "slice": ["Software Development","Software Customization","Web Development","Mobile App Development"] },
+      {
+        "title": "Development Services",
+        "slice": [
+          "Software Development",
+          "Software Customization",
+          "Web Development",
+          "Mobile App Development",
+          "UI/UX Desgin"
+        ]
+      },
       { "title": "Facade Fabrication", "slice": ["Grasshopper Modules"] }
     ]
   },
@@ -881,5 +924,24 @@
   "FOOTER_SOCIAL": "Follow Us:",
   "FOOTER_COMMUNITY": { "title": "Community", "slice": ["Blog"] },
   "LEGAL": "Legal Policies",
-  "EXCLUSIVE_DEALERS": { "title": "Exclusive Dealer ", "slice": ["Dlalat"] }
+  "EXCLUSIVE_DEALERS": { "title": "Exclusive Dealer ", "slice": ["Dlalat"] },
+  "REVIEW_TITLE": "What our clients say",
+  "REVIEW": [
+    {
+      "name": "Mohamed Ghattas",
+      "job": "Operation Manager",
+      "company": "Dome FDH",
+      "title": "Operation Manager, Dome FDH",
+      "quote": "CladCut is a valuable asset for any business looking to streamline their production process and improve efficiency. CladCut can quickly and efficiently release the most difficult panel."
+    },
+    {
+      "name": "Mohamed Ghattas",
+      "job": "Operation Manager",
+      "company": "Dome FDH",
+      "title": "Operation Manager, Dome FDH",
+      "quote": "CladCut is a valuable asset for any business looking to streamline their production process and improve efficiency. CladCut can quickly and efficiently release the most difficult panel."
+    }
+
+
+  ]
 }

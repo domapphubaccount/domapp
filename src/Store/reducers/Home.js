@@ -30,6 +30,7 @@ const initialState = {
         button: t("Get_Started",lang),
       },
       about_us: {
+        head_section: t("ABOUT_US_HEAD",lang),
         head: {
           title: t("ABOUT_US",lang),
           slogan: t("ABOUT_US_SLOGAN",lang),
@@ -500,6 +501,9 @@ const initialState = {
       },
       counterdata: t("HOME_COUNTER",lang),
       why_us: t("WHY_US_HEAD",lang),
+      review: t("REVIEW",lang),
+      review_title: t("REVIEW_TITLE",lang)
+
     },
   })
 };
