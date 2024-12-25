@@ -601,7 +601,7 @@ footer .footer a {
   background-image: url("../assets/images/Home_Page/bannar.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   height: 100vh;
   position: relative;
   overflow: hidden;

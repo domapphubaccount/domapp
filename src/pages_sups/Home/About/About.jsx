@@ -45,7 +45,7 @@ export default function About() {
                               <div className="content">
                                 <h3 className="title"></h3>
 
-                                <div className="description">
+                                <div className="description" dir={dir}>
                                   <h4 className="mb-4">
                                     {
                                       home(lang).sections.about_us?.main
@@ -78,7 +78,7 @@ export default function About() {
                             >
                               <div className="icon-image"></div>
 
-                              <div className="content">
+                              <div className="content" dir={dir}>
                                 <h3 className="title"></h3>
 
                                 <div className="description ">
@@ -118,7 +118,7 @@ export default function About() {
                             >
                               <div className="icon-image"></div>
 
-                              <div className="content">
+                              <div className="content" dir={dir}>
                                 <h3 className="title"></h3>
 
                                 <div className="description text-black" >

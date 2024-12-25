@@ -97,7 +97,7 @@ export default function Header() {
                                           alt={product.name}
                                         />
                                         <div className="mt-1">
-                                          {product.name}
+                                          <p className="m-0 p-0">{product.name}</p>
                                         </div>
                                       </Link>
                                     </li>

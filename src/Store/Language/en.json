@@ -75,7 +75,7 @@
   ],
   "WHY_US_HEAD": {
     "title": "WHY US",
-    "slogan": "We Build Relationships, Not Just Projects"
+    "slogan": "We Build Relationships, Not Just Projects."
   },
 
   "SERVICES": [
@@ -925,7 +925,7 @@
   "FOOTER_COMMUNITY": { "title": "Community", "slice": ["Blog"] },
   "LEGAL": "Legal Policies",
   "EXCLUSIVE_DEALERS": { "title": "Exclusive Dealer ", "slice": ["Dlalat"] },
-  "REVIEW_TITLE": {"title":"TESTIMONIALS","slogan":"Your success tells our story"},
+  "REVIEW_TITLE": {"title":"TESTIMONIALS","slogan":"Your success tells our story."},
   "REVIEW": [
     {
       "name": "Mohamed Ghattas",

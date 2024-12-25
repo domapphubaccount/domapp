@@ -49,7 +49,7 @@ export default function Section_12() {
                           className="w-full h-full object-contain"
                         />
                       </span>
-                      <span>{item}</span>
+                      <span><p className="p-0 m-0">{item}</p></span>
                     </div>
                   ))}
                 </div>

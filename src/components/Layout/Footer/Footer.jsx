@@ -82,7 +82,7 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                             </a> */}
                             <Accordion>
                               <CustomToggle eventKey={index}>
-                                <a>{item.title}</a>
+                                <a style={{fontSize: ".7rem"}}>{item.title}</a>
                               </CustomToggle>
                               <ul id={`accordion-${index}`} className="hidden">
                                 {item.slice.map((item, index) => (

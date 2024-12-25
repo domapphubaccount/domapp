@@ -32,7 +32,7 @@ export default function Section_2() {
                         <img src={yesI.src} className="yes_icon" alt="true" />
                       </span>
                       <span className="m-0 mb-2">
-                        {item}
+                        <p className="p-0 m-0">{item}</p>
                       </span>
                     </div>
                   </li>

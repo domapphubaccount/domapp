@@ -44,7 +44,7 @@ export default function Section_3() {
                         <span>
                           <img src={yesI.src} className="yes_icon" alt="true" />
                         </span>
-                        <span className="m-0 mb-2">{item}</span>
+                        <span className="m-0 mb-2"><p className="p-0 m-0">{item}</p></span>
                       </div>
                     </li>
                   ))}

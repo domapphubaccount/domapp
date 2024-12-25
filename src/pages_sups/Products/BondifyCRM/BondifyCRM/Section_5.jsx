@@ -57,7 +57,7 @@ export default function Section_5() {
                                 />
                               </span>
                               <span className="m-0 mb-2 text-sm md:text-base">
-                                {item}
+                                <p className="p-0 m-0">{item}</p>
                               </span>
                             </div>
                           </li>

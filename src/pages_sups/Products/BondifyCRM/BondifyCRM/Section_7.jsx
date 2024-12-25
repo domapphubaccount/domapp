@@ -32,7 +32,7 @@ export default function Section_7() {
                 <div className="col-sm-6" key={index}>
                   <ul className={`${dir === "rtl" ? "list-check-2" : "list-check-1"} light`}>
                     {item.map((item, index) => (
-                      <li key={index} >{item}</li>
+                      <li key={index} ><p className="p-0 m-0">{item}</p></li>
                     ))}
                   </ul>
                 </div>
@@ -83,7 +83,7 @@ export default function Section_7() {
                 item.map((item, index) => (
                   <div className="col-sm-6" key={index} dir={dir}>
                     <ul className={`${dir === "rtl" ? "list-check-2" : "list-check-1"} light`}>
-                      <li>{item}</li>
+                      <li><p className="p-0 m-0">{item}</p></li>
                     </ul>
                   </div>
                 ))

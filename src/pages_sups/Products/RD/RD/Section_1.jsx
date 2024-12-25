@@ -7,7 +7,7 @@ export default function Section_1() {
   const { rdapp } = useSelector((state) => state.rdAppRed);
 
   return (
-    <section className="rd_section_1">
+    <section className="rd_section_1" dir={dir}>
       <Container>
         <Row>
           {rdapp(lang).sections.Cards_1.map((item, index) => (

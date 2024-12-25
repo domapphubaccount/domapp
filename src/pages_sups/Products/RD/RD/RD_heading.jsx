@@ -1,10 +1,13 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import { Container } from 'reactstrap'
 
 export default function RD_heading({body,title}) {
+    const { lang, dir } = useSelector((state) => state.languageSlice);
+
 
   return (
-    <section className='RD-head position-relative' data-aos="fade-up-right">
+    <section className='RD-head position-relative' dir={dir} data-aos="fade-up-right">
         <Container>
             <div className='text-center'>
                 <h1 >
