@@ -33,10 +33,10 @@ export default function Bannar() {
                 </div>
                 <div className="slogan my-5 fw-bold">
                   <p>{cladcut(lang).sections.bannar.slogan.first}</p>
-                  <span className="position-relative d-inline-block">
-                    <p>{cladcut(lang).sections.bannar.slogan.seconed}</p>
-                  </span>
-                  <p>{cladcut(lang).sections.bannar.slogan.end}</p>
+                  {/* <span className="position-relative d-inline-block"> */}
+                    <p>{cladcut(lang).sections.bannar.slogan.seconed}
+                  {/* </span> */}
+                  {cladcut(lang).sections.bannar.slogan.end}</p>
                 </div>
                 <div className="flex">
                   <a
