@@ -19,7 +19,7 @@ export default function Footer() {
   if (!isMounted) {
     return null; // or return loading spinner
   }
-console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item.products.filter(item => item.link != "/customization" && item.link != "/grasshopper")))
+
   return (
     <footer dir={dir}>
       {isMounted && (
@@ -31,27 +31,28 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                   DomApp
                 </h3>
                 <div className="footer p-8 text-white">
-                <div className="grid grid-cols-1 sm:grid-cols-7 gap-6">
-                {/* About Us Section */}
+                  <div className="grid grid-cols-1 sm:grid-cols-7 gap-6">
+                    {/* About Us Section */}
                     <div>
                       <div className="mb-3">
                         <h5 className="font-semibold text-sm mb-2">
                           {footer(lang).about.title}
                         </h5>
                         <ul className="space-y-1">
-                          {header(lang)
-                            .nav.map((item, index) => (
-                              item.link != "/#about" &&
-                              <li key={index}>
-                                <Link
-                                  href={item.link}
-                                  className="hover:underline"
-                                >
-                                  {item.name[0]}
-                                  {item.name.slice(1).toLowerCase()}
-                                </Link>
-                              </li>
-                            ))}
+                          {header(lang).nav.map(
+                            (item, index) =>
+                              item.link != "/#about" && (
+                                <li key={index}>
+                                  <Link
+                                    href={item.link}
+                                    className="hover:underline"
+                                  >
+                                    {item.name[0]}
+                                    {item.name.slice(1).toLowerCase()}
+                                  </Link>
+                                </li>
+                              )
+                          )}
                         </ul>
                       </div>
                       <div>
@@ -82,11 +83,16 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                             </a> */}
                             <Accordion>
                               <CustomToggle eventKey={index}>
-                                <a style={{fontSize: ".7rem"}}>{item.title}</a>
+                                <a style={{ fontSize: ".7rem" }}>
+                                  {item.title}
+                                </a>
                               </CustomToggle>
                               <ul id={`accordion-${index}`} className="hidden">
                                 {item.slice.map((item, index) => (
-                                  <li key={index} className="ms-1 text-gray-300	">
+                                  <li
+                                    key={index}
+                                    className="ms-1 text-gray-300	"
+                                  >
                                     <small>{item}</small>
                                   </li>
                                 ))}
@@ -102,19 +108,29 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                         {footer(lang).products.title}
                       </h5>
                       <ul className="space-y-1">
-                        {header(lang).nav.filter((item) => item.list)[0].list.map((item) => item.products.filter((item) => (item.link !== "/grasshopper" && item.link !== "/customization"))).map((item,index)=>(
-                              item.length > 0 && item.map((item,index)=>(
-                              <li key={index}>
-                                <Link
-                                  href={item.link}
-                                  className="hover:underline"
-                                >
-                                  {item.name}
-                                </Link>
-                              </li>
+                        {header(lang)
+                          .nav.filter((item) => item.list)[0]
+                          .list.map((item) =>
+                            item.products.filter(
+                              (item) =>
+                                item.link !== "/grasshopper" &&
+                                item.link !== "/customization"
+                            )
+                          )
+                          .map(
+                            (item, index) =>
+                              item.length > 0 &&
+                              item.map((item, index) => (
+                                <li key={index}>
+                                  <Link
+                                    href={item.link}
+                                    className="hover:underline"
+                                  >
+                                    {item.name}
+                                  </Link>
+                                </li>
                               ))
-                            ))
-                          }
+                          )}
                       </ul>
                     </div>
                     {/* Exclusive Dealer Section */}
@@ -125,9 +141,12 @@ console.log(header(lang).nav.filter((item)=> item.list)[0].list.map(item => item
                       <ul className="space-y-1">
                         {footer(lang).dealers.slice.map((item, index) => (
                           <li key={index}>
-                            <a href="#" className="hover:underline">
-                              {item}
-                            </a>
+                            <Link
+                              href={`https://${item.link}`}
+                              className="hover:underline"
+                            >
+                              {item.title}
+                            </Link>
                           </li>
                         ))}
                       </ul>

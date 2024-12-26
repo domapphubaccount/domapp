@@ -32,11 +32,11 @@ export default function Bannar() {
                   </h2>
                 </div>
                 <div className="slogan my-5 fw-bold">
-                  {cladcut(lang).sections.bannar.slogan.first}
+                  <p>{cladcut(lang).sections.bannar.slogan.first}</p>
                   <span className="position-relative d-inline-block">
-                    {cladcut(lang).sections.bannar.slogan.seconed}
+                    <p>{cladcut(lang).sections.bannar.slogan.seconed}</p>
                   </span>
-                  {cladcut(lang).sections.bannar.slogan.end}
+                  <p>{cladcut(lang).sections.bannar.slogan.end}</p>
                 </div>
                 <div className="flex">
                   <a
@@ -72,7 +72,7 @@ export default function Bannar() {
                               100+
                             </span>
                           </h4>
-                          <p className="fw-bold">{cladcut(lang).sections.bannar.slice.users}</p>
+                          <p>{cladcut(lang).sections.bannar.slice.users}</p>
                         </div>
                         <ul className="style-none p-0 d-flex align-items-center justify-content-center rating-star mt-15">
                           {/* Stars rendering */}
@@ -96,7 +96,7 @@ export default function Bannar() {
                               190K+
                             </span>
                           </h4>
-                          <p className="fw-bold">
+                          <p>
                              {cladcut(lang).sections.bannar.slice.produced}
                           </p>
                         </div>
@@ -112,7 +112,7 @@ export default function Bannar() {
                               18K+
                             </span>
                           </h4>
-                          <p className="fw-bold">
+                          <p>
                             {cladcut(lang).sections.bannar.slice.houres}
                           </p>
                         </div>

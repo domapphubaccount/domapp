@@ -924,7 +924,7 @@
   "FOOTER_SOCIAL": "Follow Us:",
   "FOOTER_COMMUNITY": { "title": "Community", "slice": ["Blog"] },
   "LEGAL": "Legal Policies",
-  "EXCLUSIVE_DEALERS": { "title": "Exclusive Dealer ", "slice": ["Dlalat"] },
+  "EXCLUSIVE_DEALERS": { "title": "Exclusive Dealer ", "slice": [{"title":"Dlalat","link":"https://www.dlalat.com/"}] },
   "REVIEW_TITLE": {"title":"TESTIMONIALS","slogan":"Your success tells our story."},
   "REVIEW": [
     {

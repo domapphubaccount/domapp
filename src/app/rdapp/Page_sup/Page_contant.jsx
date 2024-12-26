@@ -38,7 +38,7 @@ function Page() {
       <RD_features_cards />
       <RD_Content_section />
       <RD_heading
-        title={rdapp(lang).sections.Head_3.slogan}
+        title={rdapp(lang).sections.Head_3.title}
         body={rdapp(lang).sections.Head_3.slogan}
       />
       <Section_7 />

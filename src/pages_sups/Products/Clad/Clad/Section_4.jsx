@@ -28,7 +28,7 @@ export default function Section_4() {
                   <div className="mil-icon-lg mil-mb-30 image_card_clad">
                     <img src={item.icon.src} alt="Interior Decor" />
                   </div>
-                  <h4 className="mil-upper mil-mb-20">{item.title}</h4>
+                  <h6 className="mil-upper mil-mb-20">{item.title}</h6>
                   <div className="mil-divider-sm mil-mb-20"></div>
                   <p className="mil-service-text">
                     {item.slogan}

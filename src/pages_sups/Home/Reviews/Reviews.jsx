@@ -31,7 +31,7 @@ const Carousel = () => {
       <SliderWrapper>
         <Slider {...settings}>
           {home(lang).sections.review.map((testimonial, index) => (
-            <div className="p-5 h-full mt-4 mb-5" key={index}>
+            <div className="p-5 h-full mt-4 mb-5" key={index} dir={dir}>
               <Card className="h-full">
                 <div className="flex justify-between mb-4">
                   <div>
@@ -47,7 +47,7 @@ const Carousel = () => {
                     />
                   </div>
                 </div>
-                <Quote className="p-3">{`"${testimonial.quote}"`}</Quote>
+                <Quote className={`p-3 ${dir === "rtl" && "text-end"}`} dir={dir}>{`"${testimonial.quote}"`}</Quote>
               </Card>
             </div>
           ))}

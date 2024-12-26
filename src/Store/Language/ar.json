@@ -573,15 +573,15 @@
   "RDAPP_PAGE_NOTE_1": "إن اختيار برنامج RDAPP  يعني الاستفادة من أفضل الحلول الذكية التي توفر الوقت والتكلفة وتعزز الكفاءة وجهود التواصل، وهي ميزة تنافسية كبيرة تتوافق مع كود البناء السعودي .",
   "RDAPP_PAGE_HEAD_1": {
     "title": "مزايا حصرية",
-    "slogan": " مزود بأفضل الإمكانيات RDAPP"
+    "slogan": "RDAPP مزود بأفضل الامكانيات."
   },
   "RDAPP_PAGE_HEAD_2": {
     "title": "مزايا حصرية",
-    "slogan": " أفضل الاتصالات ومراقبة التكاليف RDAPP يوفر"
+    "slogan": "أفضل الإتصالات"
   },
   "RDAPP_PAGE_HEAD_3": {
     "title": "مزايا حصرية",
-    "slogan": " أفضل الاتصالات ومراقبة التكاليف RDAPP يوفر"
+    "slogan": "يوفر RDAPP أفضل الاتصالات ومراقبة التكاليف."
   },
   "RDAPP_PAGE_CARDS_1": [
     {
@@ -1199,22 +1199,22 @@
   "FOOTER_SOCIAL": "تابعنا :",
   "FOOTER_COMMUNITY": { "title": "المجتمع", "slice": ["مدونة"] },
   "LEGAL": "السياسات القانونية",
-  "EXCLUSIVE_DEALERS": { "title": "الوكيل الحصري ", "slice": ["Dlalat"] },
+  "EXCLUSIVE_DEALERS": { "title": "الوكيل الحصري ", "slice": [{"title":"Dlalat","link":"www.dlalat.com"}] },
   "REVIEW_TITLE": {"title": "اّراء العملاء","slogan":".شهادات تروي تميزنا"},
   "REVIEW": [
     {
       "name": "Mohamed Ghattas",
-      "job": "Operation Manager",
+      "job": "المدير التشغيلي",
       "company": "Dome FDH",
-      "title": "Operation Manager, Dome FDH",
-      "quote": "CladCut is a valuable asset for any business looking to streamline their production process and improve efficiency. CladCut can quickly and efficiently release the most difficult panel."
+      "title": "المدير التشغيلي, Dome FDH",
+      "quote": "”يعد CladCut ميزة قيّمة لأي شركة تتطلع إلى تبسيط عمليات الإنتاج وتحسين الكفاءة. يستطيع CladCut تحرير أصعب الألواح بسرعة وكفاءة.“"
     },
     {
       "name": "Mohamed Ghattas",
-      "job": "Operation Manager",
+      "job": "المدير التشغيلي",
       "company": "Dome FDH",
-      "title": "Operation Manager, Dome FDH",
-      "quote": "CladCut is a valuable asset for any business looking to streamline their production process and improve efficiency. CladCut can quickly and efficiently release the most difficult panel."
+      "title": "المدير التشغيلي, Dome FDH",
+      "quote": "”يعد CladCut ميزة قيّمة لأي شركة تتطلع إلى تبسيط عمليات الإنتاج وتحسين الكفاءة. يستطيع CladCut تحرير أصعب الألواح بسرعة وكفاءة.“"
     }
 
 

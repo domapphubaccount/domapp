@@ -28,7 +28,7 @@ export default function Head_2() {
               >
                 {cladcut(lang).sections.Head_NOTE_2.title}
               </h4>
-              <h2>{cladcut(lang).sections.Head_NOTE_2.slogan}</h2>
+              <p>{cladcut(lang).sections.Head_NOTE_2.slogan}</p>
             </div>
           </div>
         </div>

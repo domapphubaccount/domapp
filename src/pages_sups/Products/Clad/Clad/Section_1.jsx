@@ -18,7 +18,7 @@ export default function Section_1() {
         >
           <div className="col-lg-5">
             <div className="mil-mb-90">
-              <h2
+              <h4
                 className="mil-upper mil-up mil-mb-30"
                 style={{
                   translate: "none",
@@ -29,7 +29,7 @@ export default function Section_1() {
                 }}
               >
                 {cladcut(lang).sections.WORK_FLOW.title}
-              </h2>
+              </h4>
               <div
                 className="mil-up mil-mb-40"
                 style={{
@@ -48,7 +48,7 @@ export default function Section_1() {
                       className="mx-3"
                       style={{ width: "30px", height: "30px" }}
                     />
-                    {item}
+                    <p>{item}</p>
                   </div>
                 ))}
               </div>
