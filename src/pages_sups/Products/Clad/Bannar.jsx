@@ -25,7 +25,6 @@ export default function Bannar() {
                       width={300}
                       height={100}
                       src={CladBannar.src}
-                      alt="cladcut banner title"
                       sizes="(max-width: 768px) 100vw, 
                              (max-width: 1200px) 50vw, 
                              300px"
