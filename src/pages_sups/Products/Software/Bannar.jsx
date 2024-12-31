@@ -23,6 +23,7 @@ export default function Bannar() {
                             {/* <h1 className="title h2 head_bannar">Custome Software</h1> */}
                             {/* <div><div className='d-inline-block m-auto text-primary fw-bold px-5'>Tailored solutions, turning your vision into reality.</div></div> */}
                             <img src={customlogo.src}  />
+                            <div><p className='fw-bold mb-2'>{custom_software(lang).sections.bannar.slogan}</p></div>
                             <div><Link className='btn btn-primary font-bold mt-4' href={contact_page}>{custom_software(lang).sections.bannar.contact_btn}</Link></div>
                         </div>
                     </div>

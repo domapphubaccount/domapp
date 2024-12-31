@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -33,16 +33,10 @@ export default function Bannar() {
                 </div>
                 <div className="slogan my-5 fw-bold">
                   <p>{cladcut(lang).sections.bannar.slogan.first}</p>
-                  {/* <span className="position-relative d-inline-block"> */}
-                    <p>{cladcut(lang).sections.bannar.slogan.seconed}
-                  {/* </span> */}
-                  {cladcut(lang).sections.bannar.slogan.end}</p>
+                  <p>{cladcut(lang).sections.bannar.slogan.end}</p>
                 </div>
                 <div className="flex">
-                  <a
-                    style={{ textDecoration: "none" }}
-                    href={cladcut_site}
-                  >
+                  <a style={{ textDecoration: "none" }} href={cladcut_site}>
                     <button className="try-button">
                       {cladcut(lang).sections.bannar.try_btn}
                       <div className="arrow-wrapper">
@@ -96,9 +90,7 @@ export default function Bannar() {
                               190K+
                             </span>
                           </h4>
-                          <p>
-                             {cladcut(lang).sections.bannar.slice.produced}
-                          </p>
+                          <p>{cladcut(lang).sections.bannar.slice.produced}</p>
                         </div>
                       </div>
 
@@ -112,12 +104,9 @@ export default function Bannar() {
                               18K+
                             </span>
                           </h4>
-                          <p>
-                            {cladcut(lang).sections.bannar.slice.houres}
-                          </p>
+                          <p>{cladcut(lang).sections.bannar.slice.houres}</p>
                         </div>
                       </div>
-
                     </div>
                   </div>
                   {/* <Shape1 className="shapes shape-one" /> */}

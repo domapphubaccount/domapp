@@ -97,7 +97,9 @@ export default function Header() {
                                           alt={product.name}
                                         />
                                         <div className="mt-1">
-                                          <p className="m-0 p-0">{product.name}</p>
+                                          <p className="m-0 p-0">
+                                            {product.name}
+                                          </p>
                                         </div>
                                       </Link>
                                     </li>
@@ -110,7 +112,7 @@ export default function Header() {
                       )}
                     </li>
                   ))}
-                  <LanguageDropdown text_color={"text-black"}/>
+                <LanguageDropdown text_color={"text-black"} />
               </ul>
             </nav>
           </div>

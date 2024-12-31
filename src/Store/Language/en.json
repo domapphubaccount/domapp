@@ -130,8 +130,8 @@
   "CONTACT_CARD_WORK_TIME_SLICE": [
     {
       "days": "Saturday to Thursday from",
-      "from": "08:00 Am",
-      "to": "04:00 Pm",
+      "from": "09:00 Am",
+      "to": "05:00 Pm",
       "place": "Makkah, Saudi Arabia"
     },
     {
@@ -142,21 +142,33 @@
     },
     {
       "days": "Saturday to Thursday from",
-      "from": "05:00 Am",
-      "to": "02:00 Pm",
+      "from": "09:00 Am",
+      "to": "05:00 Pm",
       "place": "UTC"
     }
   ],
   "CONTACT_CARD_PLACE": [
     {
-      "place": "2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, Al Riyadh, Saudi Arabia"
+      "place": "2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, ",
+      "country": "Al Riyadh, Saudi Arabia"
     },
     {
-      "place": "Prince Mohamed Ibn Abdulrahman St, Ask Fayha Dist, Riyadh, Saudi Arabia"
+      "place": "Prince Mohamed Ibn Abdulrahman St, Ask Fayha Dist,",
+      "country": "Riyadh, Saudi Arabia"
     },
-    { "place": "20A, Salah Salem Rd, Al Obour Building, New Cairo, Egypt" },
-    { "place": "Jad Allah Tower,4th Floor, Office No 309, 412, KFS, Egypt" },
-    { "place": "Al Motahda Tower, 2nd Floor, Office No 3, KFS, Egypt" }
+    {
+      "place": "20A, Salah Salem Rd, Al Obour Building,",
+      "country": "New Cairo, Egypt"
+    },
+
+    {
+      "place": "Jad Allah Tower,4th Floor, Office No 309, 412,",
+      "country": " KFS, Egypt"
+    },
+    {
+      "place": "Al Motahda Tower, 2nd Floor, Office No 3,",
+      "country": "KFS, Egypt"
+    }
   ],
 
   "CONTACT_PAGE_HEAD_TITLE": "Get in Touch",
@@ -171,8 +183,7 @@
 
   "CLADCUT_PAGE_BANNAR_SLOGAN": {
     "first": "Produce detailed fabrication drawings with ",
-    "seconed": " exceptional speed",
-    "end": "and efficiency."
+    "end": " exceptional speed and efficiency."
   },
   "CLADCUT_PAGE_TRY_BTN": "TRY FOR FREE",
   "CLADCUT_PAGE_PRICING_BTN": "PRICING",
@@ -400,7 +411,7 @@
       "slogan": "Immediate answers to your questions, ensuring ease of use."
     }
   ],
-
+  "CUSTOM_SOFTWARE_PAGE_SLOGAN": "TAILORED SOLUTIONS TURNING YOUR VISION INTO REALITY.",
   "CUSTOM_SOFTWARE_PAGE_CONTACT_BTN": "Contact us",
   "CUSTOM_SOFTWARE_PAGE_ABOUT": {
     "about_us": "About Us",
@@ -922,10 +933,16 @@
     "Our expertise allows us to develop, customize, and modify the applications we design to align perfectly with the client's company and business visions."
   ],
   "FOOTER_SOCIAL": "Follow Us:",
-  "FOOTER_COMMUNITY": { "title": "Community", "slice": ["Blog"] },
+  "FOOTER_COMMUNITY": { "title": "Community", "slice": [{"title":"Blog","link":"http://blog.domapphub.com"}] },
   "LEGAL": "Legal Policies",
-  "EXCLUSIVE_DEALERS": { "title": "Exclusive Dealer ", "slice": [{"title":"Dlalat","link":"https://www.dlalat.com/"}] },
-  "REVIEW_TITLE": {"title":"TESTIMONIALS","slogan":"Your success tells our story."},
+  "EXCLUSIVE_DEALERS": {
+    "title": "Exclusive Dealer ",
+    "slice": [{ "title": "Dlalat", "link": "https://www.dlalat.com/" }]
+  },
+  "REVIEW_TITLE": {
+    "title": "TESTIMONIALS",
+    "slogan": "Your success tells our story."
+  },
   "REVIEW": [
     {
       "name": "Mohamed Ghattas",
@@ -941,7 +958,5 @@
       "title": "Operation Manager, Dome FDH",
       "quote": "CladCut is a valuable asset for any business looking to streamline their production process and improve efficiency. CladCut can quickly and efficiently release the most difficult panel."
     }
-
-
   ]
 }

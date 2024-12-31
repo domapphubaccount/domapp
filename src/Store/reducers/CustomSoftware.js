@@ -17,6 +17,7 @@ const initialState = {
       sections: {
         bannar: {
           contact_btn: t("CUSTOM_SOFTWARE_PAGE_CONTACT_BTN", lang),
+          slogan: t("CUSTOM_SOFTWARE_PAGE_SLOGAN",lang)
         },
         About_us: t("CUSTOM_SOFTWARE_PAGE_ABOUT",lang),
         Services: t("CUSTOM_SOFTWARE_PAGE_SERVICES",lang),

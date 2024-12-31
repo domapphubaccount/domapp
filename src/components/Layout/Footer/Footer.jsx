@@ -2,15 +2,19 @@
 import Link from "next/link";
 import { Container } from "reactstrap";
 import LanguageDropdown from "./Lang";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Suspense, useEffect, useState } from "react";
 import { Accordion, useAccordionButton } from "react-bootstrap";
+import { contact_Toggle } from "@/Store/reducers/Header";
 
 export default function Footer() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const { header } = useSelector((state) => state.headerRed);
   const { footer } = useSelector((state) => state.footerRed);
   const [isMounted, setIsMounted] = useState(false);
+  const dispatch = useDispatch();
+  let date = new Date()
+  let year = date.getFullYear()
 
   useEffect(() => {
     setIsMounted(true);
@@ -46,6 +50,11 @@ export default function Footer() {
                                   <Link
                                     href={item.link}
                                     className="hover:underline"
+                                    onClick={
+                                      item.contact
+                                        ? () => dispatch(contact_Toggle(true))
+                                        : ""
+                                    }
                                   >
                                     {item.name[0]}
                                     {item.name.slice(1).toLowerCase()}
@@ -159,8 +168,8 @@ export default function Footer() {
                       <ul className="space-y-1">
                         {footer(lang).community.slice.map((item, index) => (
                           <li key={index}>
-                            <a href="#" className="hover:underline">
-                              {item}
+                            <a href={item.link} className="hover:underline">
+                              {item.title}
                             </a>
                           </li>
                         ))}
@@ -229,7 +238,7 @@ export default function Footer() {
                             <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
                           </svg>
                         </Link>
-                        <Link href="https://www.linkedin.com/company/domapphub/">
+                        <Link href="https://x.com/DomAppHub">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
@@ -243,7 +252,7 @@ export default function Footer() {
                             <path d="M 18.492188 2.9941406 A 0.50005 0.50005 0 0 0 18.113281 3.1816406 L 13.060547 9.3164062 L 9.0566406 3.7714844 C 8.7066406 3.2874844 8.1458281 3 7.5488281 3 L 4.078125 3 C 3.420125 3 3.0388281 3.7462969 3.4238281 4.2792969 L 9.8652344 13.199219 L 4.1132812 20.181641 A 0.50090307 0.50090307 0 1 0 4.8867188 20.818359 L 10.470703 14.037109 L 14.943359 20.228516 C 15.293359 20.712516 15.854172 21 16.451172 21 L 19.921875 21 C 20.579875 21 20.961172 20.253703 20.576172 19.720703 L 13.667969 10.15625 L 18.886719 3.8183594 A 0.50005 0.50005 0 0 0 18.492188 2.9941406 z M 4.4550781 4 L 7.5507812 4 C 7.8257813 4 8.0850937 4.1324687 8.2460938 4.3554688 L 19.544922 20 L 16.451172 20 C 16.176172 20 15.916859 19.867531 15.755859 19.644531 L 4.4550781 4 z"></path>
                           </svg>
                         </Link>
-                        <Link href="https://www.linkedin.com/company/domapphub/">
+                        <Link href="https://www.instagram.com/domapphub/">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
@@ -283,13 +292,8 @@ export default function Footer() {
             <Container>
               <div className="footer grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between gap-2">
                 <div className="sm:col-span-2">
-                  &#169;2024 DomApp. All rights reserved.
+                  &#169;{year} DomApp. All rights reserved.
                 </div>
-                {/* <div className="px-3">
-              <Link href="/privacy" className="privacy_link">
-                {lang === "ar" ? "الشروط والأحكام" : "Privacy policy"}
-              </Link>
-            </div> */}
               </div>
             </Container>
           </div>

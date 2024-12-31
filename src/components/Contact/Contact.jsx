@@ -17,7 +17,7 @@ export default function Contact() {
   const [timeTooltipOpen, setTimeTooltipOpen] = useState(false);
   const [placeTooltipOpen, setPlaceTooltipOpen] = useState(false);
   const { contact_card } = useSelector((state) => state.contactRed);
-  const {lang,dir} = useSelector((state) => state.languageSlice);
+  const { lang, dir } = useSelector((state) => state.languageSlice);
 
   const dispatch = useDispatch();
   const contact_toggle = useSelector((state) => state.headerRed.contact_Toggle);
@@ -145,7 +145,11 @@ export default function Contact() {
               >
                 <ul>
                   {contact_card(lang).work_time.slice.map((item, index) => (
-                    <li className={`d-flex ${dir === "rtl" && 'text-end'}`} key={index} dir={dir}>
+                    <li
+                      className={`d-flex ${dir === "rtl" && "text-end"}`}
+                      key={index}
+                      dir={dir}
+                    >
                       <div className="me-2">
                         <i className="bi bi-clock text-dark"></i>
                       </div>
@@ -194,13 +198,20 @@ export default function Contact() {
               >
                 <ul>
                   {contact_card(lang).find_us.slice.map((item, index) => (
-                    <li className={`d-flex ${dir === "rtl" && 'text-end'}`} key={index} dir={dir}>
+                    <li
+                      className={`d-flex ${dir === "rtl" && "text-end"}`}
+                      key={index}
+                      dir={dir}
+                    >
                       <div className="fw-bold me-2">
                         <span>
                           <i className="bi bi-geo-alt text-dark"></i>
                         </span>
                       </div>
-                      <span>{item.place}</span>
+                      <div>
+                        <p className="m-0">{item.place}</p>
+                        <p className="mb-2">{item.country}</p>
+                      </div>
                     </li>
                   ))}
                 </ul>

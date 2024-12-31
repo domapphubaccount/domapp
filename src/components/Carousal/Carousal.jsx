@@ -148,6 +148,7 @@ function Carousal() {
   return (
     <>
       <Section_head
+        sectionId={"products"}
         head={1}
         title_1={home(lang).sections.products.head.title}
         des_1={
