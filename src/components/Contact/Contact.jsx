@@ -174,7 +174,7 @@ export default function Contact() {
               </div>
             )}
           </div>
-          <div
+          {/* <div
             className="contact_circle_content pointer position-relative"
             onClick={handlePlaceToggle}
             id="place"
@@ -217,7 +217,7 @@ export default function Contact() {
                 </ul>
               </div>
             )}
-          </div>
+          </div> */}
         </div>
       )}
       <div className="contact_container">
