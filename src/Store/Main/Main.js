@@ -4,8 +4,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 // start data center
 const initialState = {
-  language: "ar", // options are ['en','ar']
-  dir: "ltr", // options are ['ltr','rtl']
+  language: "en", // options are ['en','ar']
+  dir: "rtl", // options are ['ltr','rtl']
   footer: [],
   content: {
     pages: {

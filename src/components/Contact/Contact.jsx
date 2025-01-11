@@ -80,7 +80,7 @@ export default function Contact() {
     <div className="contact_center">
       {contact_toggle && (
         <div data-aos="fade-up">
-          <div
+          {/* <div
             className="contact_circle_content pointer"
             id="whats"
             onClick={() => toggleTooltip("whats")}
@@ -101,7 +101,7 @@ export default function Contact() {
             >
               <i className="bi bi-whatsapp"></i>
             </a>
-          </div>
+          </div> */}
           <div
             className="contact_circle_content pointer"
             id="contact"

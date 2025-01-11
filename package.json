@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "clean": "rm -rf .next",
-    "postbuild": "cp out/index.html out/200.html"
+    "postbuild": "shx cp out/index.html out/200.html"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
