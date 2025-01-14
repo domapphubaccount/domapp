@@ -23,7 +23,7 @@ export default function Section_4() {
                   opacity: 1,
                 }}
               >
-                <div className="mil-card-number">01.</div>
+                <div className="mil-card-number">0{index+1}.</div>
                 <div className="mil-center">
                   <div className="mil-icon-lg mil-mb-30 image_card_clad">
                     <img src={item.icon.src} alt="Interior Decor" />

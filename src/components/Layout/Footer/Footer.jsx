@@ -105,7 +105,7 @@ export default function Footer() {
                                     <small>{item}</small>
                                   </li>
                                 ))}
-                              </ul>
+                              </ul>  
                             </Accordion>
                           </li>
                         ))}
