@@ -938,7 +938,7 @@
   "LEGAL": "Legal Policies",
   "EXCLUSIVE_DEALERS": {
     "title": "Exclusive Dealer ",
-    "slice": [{ "title": "Dlalat", "link": "https://www.dlalat.com/" }]
+    "slice": [{ "title": "Dlalat", "link": "www.dlalat.com/" }]
   },
   "REVIEW_TITLE": {
     "title": "TESTIMONIALS",
