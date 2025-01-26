@@ -44,7 +44,7 @@ function Monthly({ currency }) {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const { windmaster } = useSelector((state) => state.windmasterRed);
 
-  console.log(windmaster(lang).sections.Pricing)
+ 
   return (
     <>
       <div className="py-5 wind">

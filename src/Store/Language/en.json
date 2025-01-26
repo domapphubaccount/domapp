@@ -855,7 +855,8 @@
       },
       "standard": {
         "title": "Standard",
-        "price": "9",
+        "price_SAR": "34",
+        "price_USD": "9",
         "user": "User",
         "include": "All features in Startup",
         "link": "https://wa.me/201501060885",
@@ -879,8 +880,9 @@
       },
       "standard": {
         "title": "Standard",
-        "price": "7",
-        "user": "مستخدم",
+        "price_USD": "7",
+        "price_SAR": "27",
+        "user": "User",
         "include": "All features in Startup",
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"

@@ -853,7 +853,8 @@
       },
       "standard": {
         "title": "قياسي",
-        "price": "9",
+        "price_SAR": "34",
+        "price_USD": "9",
         "user": "مستخدم",
         "include": "كافة التطبيقات والمميزات متاحة",
         "link": "https://wa.me/201501060885",
@@ -877,7 +878,8 @@
       },
       "standard": {
         "title": "قياسي",
-        "price": "7",
+        "price_USD": "7",
+        "price_SAR": "27",
         "user": "مستخدم",
         "include": "كافة التطبيقات والمميزات متاحة",
         "link": "https://wa.me/201501060885",
