@@ -824,7 +824,7 @@
     },
     {
       "title": "Package 1",
-      "price": "15 USD",
+      "price_USD": "15 ",
       "include": "Includes",
       "slice": ["10 reports", "1 Year Subscription"],
       "footer": "Price Excluding VAT",
@@ -833,7 +833,7 @@
     },
     {
       "title": "Package 2",
-      "price": "55 USD",
+      "price_USD": "55 ",
       "include": "Includes",
       "slice": ["50 reports", "1 Year Subscription"],
       "footer": "Price Excluding VAT",

@@ -169,7 +169,7 @@ function Monthly({ priceIcon, currency }) {
                         <span className="font-medium text-gray-500 text-xl align-top">
                           {currency}&thinsp;
                         </span>
-                        <span className="text-3xl font-bold">{currency==="USD"?standard.price_USD:price_SAR}</span>
+                        <span className="text-3xl font-bold">{currency==="USD"?standard.price_USD:standard.price_SAR}</span>
                       </span>
                       <span className="text-gray-500 font-medium">
                         / {standard.user}
@@ -288,7 +288,7 @@ function Annual({ priceIcon, currency }) {
                   {currency}&thinsp;
                 </span>
                 <span className="text-3xl font-bold">
-                  {currency==="USD"?standard.price_USD:price_SAR}
+                  {currency==="USD"?standard.price_USD:standard.price_SAR}
                 </span>
               </span>
               <span className="text-gray-500 font-medium">/ {standard.user}</span>

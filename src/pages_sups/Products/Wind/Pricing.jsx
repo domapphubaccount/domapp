@@ -18,8 +18,7 @@ export default function Pricing() {
       .get("https://get.geojs.io/v1/ip/country.json")
       .then((response) => {
         country =
-          response.data.name !== "Egypt" && setCurrency("SAR");
-  
+          response.data.name !== "Egypt" && setCurrency("SAR");  
 
       })
       .catch((error) => {
@@ -63,7 +62,7 @@ function Monthly({ currency }) {
                       <div className="fw-bold text-secondary fs-4 mb-3">
                         {item.title}
                       </div>
-                      <h2>{item.price}</h2>
+                      <h2 dir="ltr"> {currency==="USD"?item.price_USD:item.price_SAR} {currency}  </h2>
                       <p className="m-0">{item.include}</p>
                     </div>
                     <div className="mb-4">
