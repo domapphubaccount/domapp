@@ -16,10 +16,10 @@ export default function Pricing() {
 
   useEffect(() => {
     axios
-      .get("https://ipapi.co/json/")
+      .get("https://get.geojs.io/v1/ip/country.json")
       .then((response) => {
         country =
-          response.data.country_name == "Saudi Arabia" && setCurrency("SAR");
+        response.data.name !== "Egypt" && setCurrency("SAR");
       })
       .catch((error) => {
         console.log("error", error);

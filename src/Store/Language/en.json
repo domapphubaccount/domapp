@@ -814,8 +814,9 @@
   },
   "WINDMASTER_PRICING_PAGE": [
     {
-      "title": "",
-      "price": "FREE",
+      "title": "Try For Free",      
+      "price_USD": "0",
+      "price_SAR":"0",
       "include": "Includes",
       "slice": ["1 report"],
       "footer": "",

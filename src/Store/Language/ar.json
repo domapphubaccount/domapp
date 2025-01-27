@@ -813,7 +813,8 @@
   "WINDMASTER_PRICING_PAGE": [
     {
       "title": "جرب مجاناً",
-      "price": "",
+      "price_USD": "0",
+      "price_SAR":"0",
       "include": "تشمل",
       "slice": ["1 تقرير"],
       "footer": "",
