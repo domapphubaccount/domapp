@@ -3827,7 +3827,7 @@ export default function Section_1() {
                     <span></span>
                     <b>
                       <span>
-                        <span></span>25,000{" "}
+                        <span></span>150,000{" "}
                       </span>
                     </b>
                     <b>
@@ -5229,7 +5229,7 @@ export default function Section_1() {
                   </span>
                   <span></span>
                   <span>
-                    If usage exceeds <b>25,000 </b>
+                    If usage exceeds <b>150,000 </b>
                   </span>
                   <b>
                     <span>square </span>
