@@ -687,7 +687,8 @@
   },
   "BONDIFYCRM_PAGE_QUICK_START": {
     "title": "Quick Start",
-    "slogan": "Don't forget to watch our quick start tutorial."
+    "slogan": "Don't forget to watch our quick start tutorial.",
+    "sloganGrass": "Don't forget to watch our quick start tutorial."
   },
   "BONDIFYCRM_PAGE_BREAK_1": "REDUCED COST IMPROVED PRODUCTIVITY",
   "BONDIFYCRM_PAGE_CARD_1": {

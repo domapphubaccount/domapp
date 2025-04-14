@@ -13,7 +13,7 @@ export default function VideoSection() {
         <div className="my-12" dir={dir}>
           <Video
             title={bondifycrm(lang).sections.Quick_start.title}
-            body={bondifycrm(lang).sections.Quick_start.slogan}
+            body={bondifycrm(lang).sections.Quick_start.sloganGrass}
             src={"O-Ws8Gd5l9E"}
             className={"clad-v-bannar"}
             bannar={Bondify_VID}

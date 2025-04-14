@@ -691,7 +691,12 @@
   },
   "BONDIFYCRM_PAGE_QUICK_START": {
     "title": "بدء الإستخدام",
-    "slogan": "إكتشف bondify CRM من خلال مشاهدة العرض التوضيحي لبدء الإستخدام السريع."
+    "slogan": "إكتشف bondify CRM من خلال مشاهدة العرض التوضيحي لبدء الإستخدام السريع.",
+    "sloganGrass": "إكتشف Grasshopper Modules من خلال مشاهدة العرض التوضيحي لبدء الإستخدام السريع."
+  },
+  "GRASSHOPER_PAGE_QUICK_START": {
+    "title": "بدء الإستخدام",
+    "slogan": "إكتشف Grasshopper Modules من خلال مشاهدة العرض التوضيحي لبدء الإستخدام السريع."
   },
   "BONDIFYCRM_PAGE_BREAK_1": ".تخفيض التكلفة وتحسين الإنتاجية",
   "BONDIFYCRM_PAGE_CARD_1": {
