@@ -21,7 +21,7 @@ export default function Bannar() {
               >
                 <div className="ln-title-one my-5">
                   <h2 className="title fw-500 tx-dark">
-                    <Image loading="lazy"
+                    <Image 
                       width={300}
                       height={100}
                       src={CladBannar.src}
