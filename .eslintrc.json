@@ -4,6 +4,8 @@
   ],
   "rules": {
     // Add your custom rules or overrides here
+        "@next/next/no-img-element": "off",
+
     "react/no-unescaped-entities": "off"
   }
 }
