@@ -15,10 +15,11 @@ export default function Pricing() {
 
   useEffect(() => {
     axios
-      .get("https://ipapi.co/json/")
+      .get("https://get.geojs.io/v1/ip/country.json")
       .then((response) => {
         country =
-          response.data.country_name == "Saudi Arabia" && setCurrency("SAR");
+          response.data.name !== "Egypt" && setCurrency("SAR");  
+
       })
       .catch((error) => {
         console.log("error", error);
@@ -42,7 +43,7 @@ function Monthly({ currency }) {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const { windmaster } = useSelector((state) => state.windmasterRed);
 
-  console.log(windmaster(lang).sections.Pricing)
+ 
   return (
     <>
       <div className="py-5 wind">
@@ -61,7 +62,7 @@ function Monthly({ currency }) {
                       <div className="fw-bold text-secondary fs-4 mb-3">
                         {item.title}
                       </div>
-                      <h2>{item.price}</h2>
+                      <h2 dir="ltr"> {currency==="USD"?item.price_USD:item.price_SAR} {currency}  </h2>
                       <p className="m-0">{item.include}</p>
                     </div>
                     <div className="mb-4">

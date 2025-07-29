@@ -651,7 +651,8 @@
   },
   "BONDIFYCRM_PAGE_QUICK_START": {
     "title": "Quick Start",
-    "slogan": "Don't forget to watch our quick start tutorial."
+    "slogan": "Don't forget to watch our quick start tutorial.",
+    "sloganGrass": "Don't forget to watch our quick start tutorial."
   },
   "BONDIFYCRM_PAGE_BREAK_1": "REDUCED COST IMPROVED PRODUCTIVITY",
   "BONDIFYCRM_PAGE_CARD_1": {
@@ -792,8 +793,9 @@
   },
   "WINDMASTER_PRICING_PAGE": [
     {
-      "title": "",
-      "price": "FREE",
+      "title": "Try For Free",      
+      "price_USD": "0",
+      "price_SAR":"0",
       "include": "Includes",
       "slice": [
         "1 report"
@@ -804,7 +806,8 @@
     },
     {
       "title": "Package 1",
-      "price": "15 USD",
+      "price_USD": "15 ",
+      "price_SAR":"50",
       "include": "Includes",
       "slice": [
         "10 reports",
@@ -816,7 +819,8 @@
     },
     {
       "title": "Package 2",
-      "price": "55 USD",
+      "price_USD": "55 ",
+      "price_SAR":"200",
       "include": "Includes",
       "slice": [
         "50 reports",
@@ -841,7 +845,8 @@
       },
       "standard": {
         "title": "Standard",
-        "price": "9",
+        "price_SAR": "34",
+        "price_USD": "9",
         "user": "User",
         "include": "All features in Startup",
         "link": "https://wa.me/201501060885",
@@ -865,8 +870,9 @@
       },
       "standard": {
         "title": "Standard",
-        "price": "7",
-        "user": "مستخدم",
+        "price_USD": "7",
+        "price_SAR": "27",
+        "user": "User",
         "include": "All features in Startup",
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"

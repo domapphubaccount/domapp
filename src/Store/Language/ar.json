@@ -653,7 +653,12 @@
   },
   "BONDIFYCRM_PAGE_QUICK_START": {
     "title": "بدء الإستخدام",
-    "slogan": "إكتشف bondify CRM من خلال مشاهدة العرض التوضيحي لبدء الإستخدام السريع."
+    "slogan": "إكتشف bondify CRM من خلال مشاهدة العرض التوضيحي لبدء الإستخدام السريع.",
+    "sloganGrass": "إكتشف Grasshopper Modules من خلال مشاهدة العرض التوضيحي لبدء الإستخدام السريع."
+  },
+  "GRASSHOPER_PAGE_QUICK_START": {
+    "title": "بدء الإستخدام",
+    "slogan": "إكتشف Grasshopper Modules من خلال مشاهدة العرض التوضيحي لبدء الإستخدام السريع."
   },
   "BONDIFYCRM_PAGE_BREAK_1": ".تخفيض التكلفة وتحسين الإنتاجية",
   "BONDIFYCRM_PAGE_CARD_1": {
@@ -791,7 +796,8 @@
   "WINDMASTER_PRICING_PAGE": [
     {
       "title": "جرب مجاناً",
-      "price": "",
+      "price_USD": "0",
+      "price_SAR":"0",
       "include": "تشمل",
       "slice": [
         "1 تقرير"
@@ -802,7 +808,8 @@
     },
     {
       "title": "باقة 1",
-      "price": "15 دولار",
+      "price_USD": "15 ",
+      "price_SAR": "50",
       "include": "تشمل",
       "slice": [
         "10 تقرير",
@@ -814,7 +821,8 @@
     },
     {
       "title": "باقة 2",
-      "price": "55 دولار",
+      "price_USD": "55 ",
+      "price_SAR": "200",
       "include": "تشتمل علي",
       "slice": [
         "50 تقرير",
@@ -839,7 +847,8 @@
       },
       "standard": {
         "title": "قياسي",
-        "price": "9",
+        "price_SAR": "34",
+        "price_USD": "9",
         "user": "مستخدم",
         "include": "كافة التطبيقات والمميزات متاحة",
         "link": "https://wa.me/201501060885",
@@ -863,7 +872,8 @@
       },
       "standard": {
         "title": "قياسي",
-        "price": "7",
+        "price_USD": "7",
+        "price_SAR": "27",
         "user": "مستخدم",
         "include": "كافة التطبيقات والمميزات متاحة",
         "link": "https://wa.me/201501060885",

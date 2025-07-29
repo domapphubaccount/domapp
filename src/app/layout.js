@@ -67,7 +67,6 @@ export default function RootLayout({ children }) {
           `,
         }}
       />
-
       {/* Yandex.Metrika */}
       <Script
         id="yandex-metrika"

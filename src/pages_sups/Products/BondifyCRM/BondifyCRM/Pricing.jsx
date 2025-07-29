@@ -14,10 +14,10 @@ export default function Pricing() {
 
   useEffect(() => {
     axios
-      .get("https://ipapi.co/json/")
+      .get("https://get.geojs.io/v1/ip/country.json")
       .then((response) => {
         country =
-          response.data.country_name == "Saudi Arabia" && setCurrency("SAR");
+          response.data.name !== "Egypt" && setCurrency("SAR");
       })
       .catch((error) => {
         console.log("error", error);
@@ -167,7 +167,7 @@ function Monthly({ priceIcon, currency }) {
                         <span className="font-medium text-gray-500 text-xl align-top">
                           {currency}&thinsp;
                         </span>
-                        <span className="text-3xl font-bold">{standard.price}</span>
+                        <span className="text-3xl font-bold">{currency==="USD"?standard.price_USD:standard.price_SAR}</span>
                       </span>
                       <span className="text-gray-500 font-medium">
                         / {standard.user}
@@ -286,7 +286,7 @@ function Annual({ priceIcon, currency }) {
                   {currency}&thinsp;
                 </span>
                 <span className="text-3xl font-bold">
-                  {currency == "SAR" ? 27 : standard.price}{" "}
+                  {currency==="USD"?standard.price_USD:standard.price_SAR}
                 </span>
               </span>
               <span className="text-gray-500 font-medium">/ {standard.user}</span>
