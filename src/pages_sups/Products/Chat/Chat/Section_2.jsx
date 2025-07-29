@@ -17,7 +17,7 @@ function Section_1() {
     <section className="chat agency agency-content about-bg">
       <div className="row">
         <div className="col-lg-4">
-          <img alt="" className="img-fluid blue-img" src={Phone_S.src} />
+          <img loading="lazy" alt="" className="img-fluid blue-img" src={Phone_S.src} />
         </div>
         <div className="col-lg-8 my-3 flex items-center">
           <h3 className="text-as-shadow">

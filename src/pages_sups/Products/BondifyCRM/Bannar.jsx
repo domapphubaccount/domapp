@@ -16,7 +16,7 @@ export default function Bannar2() {
           <div className="col-lg-5 col-md-6" dir={dir}>
             <div className="home-text">
               <div className="mb-5">
-                <img src={bondi.src} />
+                <img loading="lazy" src={bondi.src} />
               </div>
               <div className="docutment-button text-center">
                 <a
@@ -39,7 +39,7 @@ export default function Bannar2() {
           <div className="col-lg-7 col-md-6">
             <div className="home-screen">
               <div className="screen-1">
-                <img
+                <img loading="lazy"
                   className="img-fluid"
                   style={{ borderRadius: "15px" }}
                   src={Erp_Dash.src}
@@ -50,7 +50,7 @@ export default function Bannar2() {
           </div>
         </div>
 
-        <img
+        <img loading="lazy"
           src={Bondify.src}
           className="absolute w-100 h-100"
           style={{ zIndex: -1, top: 0, left: 0 }}

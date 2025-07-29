@@ -35,9 +35,8 @@ export default function Sidebar({ items }) {
         viewBox="0 0 24 24"
         strokeWidth={2}
         stroke="currentColor"
-        className={`${
-          id === open ? "rotate-180" : ""
-        } h-5 w-5 transition-transform`}
+        className={`${id === open ? "rotate-180" : ""
+          } h-5 w-5 transition-transform`}
       >
         <path
           strokeLinecap="round"
@@ -61,7 +60,7 @@ export default function Sidebar({ items }) {
       >
         <div className="mb-4 flex items-center justify-between p-1">
           <Typography variant="h5" color="white">
-            <Image
+            <Image loading="lazy"
               src={header(lang).logo.src}
               width={120}
               height={50}
@@ -135,7 +134,7 @@ export default function Sidebar({ items }) {
                                   href={product.link}
                                   className="flex items-center no-underline	"
                                 >
-                                  <Image
+                                  <Image loading="lazy"
                                     src={product.img}
                                     width={20}
                                     height={20}

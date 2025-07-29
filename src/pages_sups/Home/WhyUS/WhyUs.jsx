@@ -20,7 +20,7 @@ function WhyUs() {
 
   const slides = [
     {
-        image: software.src, // Replace with your image URL
+      image: software.src, // Replace with your image URL
     },
     {
       image: tech.src, // Replace with your image URL
@@ -32,7 +32,7 @@ function WhyUs() {
       image: solutions.src, // Replace with your image URL
     },
     {
-        image: customer.src, // Replace with your image URL
+      image: customer.src, // Replace with your image URL
     }
 
   ];
@@ -58,7 +58,7 @@ function WhyUs() {
               sectionId={whyUs}
             />
           </div>
-          <div className="whyus-section" style={{ margin: "0 auto",width: "95%" }}>
+          <div className="whyus-section" style={{ margin: "0 auto", width: "95%" }}>
             <div className="whyus-slider-text">
               <div className="relative">
                 {/* Text Slider */}
@@ -66,7 +66,7 @@ function WhyUs() {
                   {...settings}
                   asNavFor={nav2}
                   ref={(slider) => setNav1(slider)}
-                  // arrows={true}
+                // arrows={true}
                 >
                   {home(lang).sections.what_we_do.main.slices.map(
                     (item, index) => (
@@ -84,13 +84,13 @@ function WhyUs() {
                         dir={dir}
                       >
                         <div className="p-3">
-                        <h2
-                          className="mb-4"
-                          style={{ marginBottom: "10px", fontSize: "2.5rem" }}
-                        >
-                          {item.title}
-                        </h2>
-                        <p>{item.description}</p>
+                          <h2
+                            className="mb-4"
+                            style={{ marginBottom: "10px", fontSize: "2.5rem" }}
+                          >
+                            {item.title}
+                          </h2>
+                          <p>{item.description}</p>
                         </div>
                       </div>
                     )
@@ -128,7 +128,7 @@ function WhyUs() {
                     key={index}
                     style={{ position: "relative", borderRadius: "10px" }}
                   >
-                    <img
+                    <img loading="lazy"
                       src={slide.image}
                       alt={slide.title}
                       style={{

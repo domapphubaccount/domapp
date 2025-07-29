@@ -27,7 +27,7 @@ export default function Section_3() {
               </div>
             </Col>
             <Col sm={12} md={4} lg={4} className="flex items-center">
-              <Image src={Mob} alt="mobile" data-aos="fade-right" />
+              <Image loading="lazy" src={Mob} alt="mobile" data-aos="fade-right" />
             </Col>
             <Col sm={12} md={4} lg={4}>
               <div

@@ -21,14 +21,12 @@
   "Custom_Software": "Custom Software",
   "Grasshopper_Modules": "Grasshopper Modules",
   "BYLD": "BYLD",
-
   "slogan": "Transforming ideas into unique applications.",
   "Get_Started": "Get Started",
   "ABOUT_US_HEAD": {
     "title": "ABOUT US",
     "slogan": "Specialized in crafting innovative solutions that redefine possibilities."
   },
-
   "ABOUT_US_SLOGAN": [
     "We craft and refine client-driven concepts to seamlessly integrate with our precisely designed applications ensuring optimal functionality and user satisfaction at every step.",
     "We design solutions that surpass expectations and propel our clients toward success.",
@@ -49,7 +47,6 @@
       "slogan": "We are dedicated to innovation and quality, meeting client needs with transparency, collaboration, and the latest technologies, while prioritizing responsibility and sustainability."
     }
   ],
-
   "WHAT_WE_DO_SLOGAN": "We develop remarkable and exceptional innovative software solutions.",
   "WHAT_WE_DO_SLICES": [
     {
@@ -77,7 +74,6 @@
     "title": "WHY US",
     "slogan": "We Build Relationships, Not Just Projects."
   },
-
   "SERVICES": [
     {
       "title": "Software Development",
@@ -104,10 +100,8 @@
       "slogan": "Our expertise in facade fabrication integrates advanced computational tools like Grasshopper to deliver custom cladding solutions. We provide 3D manufacturing models and detailed fabrication drawings, ensuring efficient and high-quality results."
     }
   ],
-
   "OUR_PRODUCTS_TITLE": "OUR PRODUCTS",
   "OUR_PRODUCTS_SLOGAN": "Each developed with precision, passion, and a deep commitment to excellence.",
-
   "HOME_COUNTER": [
     {
       "number": 300,
@@ -122,7 +116,6 @@
       "title": "Successful Jobs"
     }
   ],
-
   "CONTACT_CARD_WHATSAPP": "Contact us on WhatsApp",
   "CONTACT_CARD_MESSAGE": "Send Message",
   "CONTACT_CARD_WORK_TIME": "Work time",
@@ -160,7 +153,6 @@
       "place": "20A, Salah Salem Rd, Al Obour Building,",
       "country": "New Cairo, Egypt"
     },
-
     {
       "place": "Jad Allah Tower,4th Floor, Office No 309, 412,",
       "country": " KFS, Egypt"
@@ -170,7 +162,6 @@
       "country": "KFS, Egypt"
     }
   ],
-
   "CONTACT_PAGE_HEAD_TITLE": "Get in Touch",
   "CONTACT_PAGE_HEAD_SLOGAN": "Welcome to DomApphubApps! We're here to assist you with any questions, feedback, or inquiries you may have. Please feel free to reach out to us using the contact information provided below. Your privacy is important to us, and we're committed to handling your information with care and transparency.",
   "CONTACT_PAGE_FORM_NAME": "Name",
@@ -180,7 +171,6 @@
   "CONTACT_PAGE_FORM_SUBJECT": "Subject",
   "CONTACT_PAGE_FORM_MESSAGE": "Message",
   "CONTACT_PAGE_FORM_SEND": "Send",
-
   "CLADCUT_PAGE_BANNAR_SLOGAN": {
     "first": "Produce detailed fabrication drawings with ",
     "end": " exceptional speed and efficiency."
@@ -192,7 +182,6 @@
     "produced": "square meter of Cladding produced",
     "houres": "Reduced Working Hours"
   },
-
   "CLADCUT_PAGE_QUICK_START_TITLE": "Quick Start",
   "CLADCUT_PAGE_QUICK_START_SLOGAN": "Don't forget to watch our quick start tutorial.",
   "CLADCUT_PAGE_HEAD_NOTE_1_TITLE": "Unleash the Speed of Aluminum Cladding Fabrication with CladCut",
@@ -230,10 +219,8 @@
     "Automatically generates dimensions for clear reference.",
     "Exports fabrication-ready files: PDF, DXF, and CNC formats for each panel."
   ],
-
   "WINDMASTER_PAGE_TRY_BTN": "Try For Free",
   "WINDMASTER_PAGE_PRICING_BTN": "Pricing",
-
   "WINDMASTER_PAGE_CARDS_TITLE_1": "Accuracy And Precision.",
   "WINDMASTER_PAGE_CARDS_TITLE_2": "Saudi Building Compliance.",
   "WINDMASTER_PAGE_CARDS_TITLE_3": "Reduced Time.",
@@ -242,19 +229,16 @@
   "WINDMASTER_PAGE_CARDS_SLOGAN_2": "Accurately calculate wind loads on facades in accordance with the latest Saudi Building Code standards.",
   "WINDMASTER_PAGE_CARDS_SLOGAN_3": "Eliminate the wasted time spent on inefficient methods, allowing your engineering team to focus on critical tasks.",
   "WINDMASTER_PAGE_CARDS_SLOGAN_4": "Wind Master generates a detailed, easy-to-understand report that includes all calculations, and compliance checks.",
-
   "WINDMASTER_PAGE_QUICK_START": {
     "title": "Quick Start",
     "slogan": "Don't forget to watch our quick start tutorial."
   },
-
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_1": "Project info.",
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_2": "Site Data.",
   "WINDMASTER_PAGE_INFO_CARDS_TITLE_3": "Export & Print.",
   "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_1": "Manage and modify project and client information.",
   "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_2": "Following Saudi Building Code 301, identifying the site data in terms of risk category, project address, and exposure category is made simple.",
   "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_3": "Export detailed design data sheet.",
-
   "WINDMASTER_PAGE_COLLABORATE_HEAD": {
     "part_1": "Collaborate with your",
     "part_2": "team anytime and anywhare."
@@ -263,27 +247,21 @@
   "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_1": "Wind calculations for the multiple structure types such as: the main wind-force resisting system (MWFRS), the components and cladding, arched roofs and more.",
   "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_2": "Provide transparent, easy-to-understand calculations that make an impact. Quickly export reports to PDF.",
   "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_3": "Simplify your workflow and Reduce repetitive calculations, easy interface, and online accessibility, allowing you to work seamlessly from any location.",
-
   "WINDMASTER_PAGE_GET_STARTED_TITLE": " Start your free trial today",
   "WINDMASTER_PAGE_GET_STARTED_SLOGAN": "Discover how our Wind Master can enhance your wind analysis. Start your free trial today for a detailed analysis!",
   "WINDMASTER_PAGE_GET_STARTED_BTN": "Get Started",
-
   "CHATPLUS_PAGE_SLOGAN": "One platform with all your communication needs.",
   "CHATPLUS_PAGE_TRY_BTN": "Try For Free",
   "CHATPLUS_PAGE_PRICING_BTN": "Pricing",
-
   "CHATPLUS_PAGE_PRICING_GROW": "Grow your business and engage with your customers via messaging",
-
   "CHATPLUS_PAGE_COLLABORATE_HEAD": "Flexible configuration options",
   "CHATPLUS_PAGE_COLLABORATE_SLOGAN": "Provide quick and personalized responses, improving customer satisfaction.",
-
   "CHATPLUS_PAGE_CUSTOMER_SUPPORT": "Customer Support",
   "CHATPLUS_PAGE_ARCHIVE": "Archive",
   "CHATPLUS_PAGE_AUTO_REPLY": "Auto-reply",
   "CHATPLUS_PAGE_BROADCAST": "Broadcast Messaging",
   "CHATPLUS_PAGE_CHATBOAT": "ChatBot",
   "CHATPLUS_PAGE_MSGTEMPLATE": "Message Templates",
-
   "CHATPLUS_PAGE_HEADS": {
     "why_us": "Why Us",
     "feature": "Features"
@@ -320,7 +298,6 @@
       "slogan": "Implement a robust archiving system to store and retrieve past conversations effortlessly, enabling quick access to historical data for analysis and reference."
     }
   ],
-
   "CHATPLUS_PAGE_FEATUERS_CARDS_L": [
     {
       "title": "Maximize Support Interaction",
@@ -357,10 +334,8 @@
       "slogan": "Offers integration with your CRM & ERP."
     }
   ],
-
   "CHATPLUS_PAGE_QUICK_START_TITLE": "Quick Start",
   "CHATPLUS_PAGE_QUICK_START_SLOGAN": "Don't forget to watch our quick start tutorial.",
-
   "BYLD_PAGE_BANNAR_SLOGAN": {
     "first": "Smart Engineering",
     "seconed": "Solutions",
@@ -369,10 +344,8 @@
   },
   "BYLD_PAGE_TRY_BTN": "Try For Free",
   "BYLD_PAGE_PRICING_BTN": "Pricing",
-
   "BYLD_PAGE_QUICK_START_TITLE": "Quick Brief",
   "BYLD_PAGE_QUICK_START_SLOGAN": "Revolutionize Construction Compliance With BYLD.",
-
   "BYLD_PAGE_CARDS": [
     {
       "title": "Accurate Information",
@@ -387,14 +360,12 @@
       "slogan": "All conversation results are archived in your account to continue the remaining parts of your project."
     }
   ],
-
   "BYLD_PAGE_HEAD_TITLE": {
     "first": "Clear answers to ",
     "seconed": "complex questions",
     "third": "referencing the Saudi Building Code"
   },
   "BYLD_PAGE_HEAD_SLOGAN": "Using BYLD can enhance informed decision-making and ensure that your projects comply with all requirements of the Saudi Building Code.",
-
   "BYLD_PAGE_FEATURES_WHY_US": "Why choose us",
   "BYLD_PAGE_FEATURES_TITLE": "Key Features",
   "BYLD_PAGE_FEATURES_SLICE": [
@@ -447,7 +418,6 @@
       "submit": "Estimate Project"
     }
   },
-
   "GRASSHOPPER_PAGE_BANNAR_SLOGAN": "Precision engineering for exquisite facade fabrication.",
   "GRASSHOPPER_PAGE_BANNAR_SLICE": [
     {
@@ -463,7 +433,6 @@
       "slogan": "Grasshopper can save approximately 40-80% of the time typically required for complex design and modelling tasks by automating repetitive processes, enabling rapid iterations, and integrating analysis tools, this estimate assumes that users have a moderate to high level of proficiency with Grasshopper, as familiarity with the tool greatly enhances its efficiency benefits."
     }
   ],
-
   "GRASSHOPPER_PAGE_QUICK_START": {
     "title": "About Grasshopper",
     "slogan": "Grasshopper is a powerful visual programming language and environment integrated within the Rhino Modules modelling software. It allows users to create and manipulate complex designs that offers significant time savings and enhanced design capabilities."
@@ -560,7 +529,6 @@
     "title": "Let's get to work",
     "btn": "CONTACT US"
   },
-
   "RDAPP_PAGE_BANNAR_SLOGAN": {
     "title": "Risk assessment complying with",
     "slogan": "Saudi building code ."
@@ -597,7 +565,6 @@
       "slogan": "Every risk management strategy and precautionary measure implemented is aligned with the regulations outlined in the Saudi Building Code, prioritizing safety and regulatory adherence throughout."
     }
   ],
-
   "RDAPP_PAGE_INFO_1": {
     "title": "RDAPP PURPOSE",
     "slogan": "The RDAPP is designed with the main purpose of assuring that each project is complying with the Saudi Building Code and receives the technical attention needed for high-quality output. Tracking the stages of progress for each project and ensuring seamless coordination with the various parties involved, starting from receiving the project, followed by the initial risk assessment and any deeper review by the experts in several fields of civil engineering, such as geotechnical studies, structural analysis, innovative materials..etc. and going through each technical inspection stage on-site with efficiency."
@@ -612,12 +579,10 @@
       "slogan": "Integrating all technical reports and relevant documents into one application that is designed with specific limits according to the Saudi Building Code, with easy access for all users to create, edit, and share documents according to their specific roles. The RDAPP streamlines the issuance of RD and inspection reports for technical engineers, automatically populating data across all reports and eliminating redundant data entry."
     }
   ],
-
   "RDAPP_PAGE_HEAD_2": {
     "title": "DATABASE PROTECTION",
     "slogan": "Data protected by CITC Decision Number 424/1442 Date 27-01-1442."
   },
-
   "RDAPP_PAGE_INFO_3": [
     {
       "title": "PROCESS CONTROL",
@@ -678,7 +643,6 @@
       "slogan_3": "The application's documentation system includes automated notifications and reminders, ensuring that technical reservations, notes, and all the project updates have been received by the engineers."
     }
   ],
-
   "BONDIFYCRM_PAGE_TRY_BTN": "Try Demo",
   "BONDIFYCRM_PAGE_PRICING_BTN": "Pricing",
   "BONDIFYCRM_PAGE_HEADING_1": {
@@ -748,8 +712,16 @@
     "title": "Subscriptions",
     "slogan": "This functionality allows you to automatically bill your clients for your products and services. You have the flexibility to set the billing cycle to weekly, monthly, yearly, and more. The system will then automatically generate a new invoice and charge your client's accordingly.",
     "slice": [
-      ["Billing invoices", "Billing interval", "Create invoices"],
-      ["Transaction document", "Process payment", "Process runs"]
+      [
+        "Billing invoices",
+        "Billing interval",
+        "Create invoices"
+      ],
+      [
+        "Transaction document",
+        "Process payment",
+        "Process runs"
+      ]
     ]
   },
   "BONDIFYCRM_PAGE_CARD_6": {
@@ -757,8 +729,14 @@
     "title": "Estimates/Quotations",
     "slogan": "Clients are more inclined to engage in a project when they have an estimate of the total cost involved. The application offers a user-friendly tool for effortlessly creating and emailing estimates to your clients. This enables your clients to conveniently review and accept the estimates provided.",
     "slice": [
-      ["Create, modify estimates.", "Customized templates."],
-      ["Manage deal amount and products.", "Send estimates automation."]
+      [
+        "Create, modify estimates.",
+        "Customized templates."
+      ],
+      [
+        "Manage deal amount and products.",
+        "Send estimates automation."
+      ]
     ]
   },
   "BONDIFYCRM_PAGE_BREAK_2": "INTEGRATED BUSINESS MODALES CREATED FOR SPEED & EFFICIENCY",
@@ -817,7 +795,9 @@
       "title": "",
       "price": "FREE",
       "include": "Includes",
-      "slice": ["1 report"],
+      "slice": [
+        "1 report"
+      ],
       "footer": "",
       "link": "",
       "btn": "TRY FOR FREE"
@@ -826,7 +806,10 @@
       "title": "Package 1",
       "price": "15 USD",
       "include": "Includes",
-      "slice": ["10 reports", "1 Year Subscription"],
+      "slice": [
+        "10 reports",
+        "1 Year Subscription"
+      ],
       "footer": "Price Excluding VAT",
       "link": "",
       "btn": "CONTACT SALES"
@@ -835,7 +818,10 @@
       "title": "Package 2",
       "price": "55 USD",
       "include": "Includes",
-      "slice": ["50 reports", "1 Year Subscription"],
+      "slice": [
+        "50 reports",
+        "1 Year Subscription"
+      ],
       "footer": "Price Excluding VAT",
       "link": "",
       "btn": "CONTACT SALES"
@@ -906,7 +892,6 @@
     "link": "http://bondifycrm.domapphub.com/login",
     "btn": "CONTACT SALES"
   },
-
   "FOOTER_ABOUT": {
     "title": "About us"
   },
@@ -926,7 +911,12 @@
           "UI/UX Desgin"
         ]
       },
-      { "title": "Facade Fabrication", "slice": ["Grasshopper Modules"] }
+      {
+        "title": "Facade Fabrication",
+        "slice": [
+          "Grasshopper Modules"
+        ]
+      }
     ]
   },
   "FOOTER_SUMMARY": [
@@ -934,11 +924,24 @@
     "Our expertise allows us to develop, customize, and modify the applications we design to align perfectly with the client's company and business visions."
   ],
   "FOOTER_SOCIAL": "Follow Us:",
-  "FOOTER_COMMUNITY": { "title": "Community", "slice": [{"title":"Blog","link":"http://blog.domapphub.com"}] },
+  "FOOTER_COMMUNITY": {
+    "title": "Community",
+    "slice": [
+      {
+        "title": "Blog",
+        "link": "http://blog.domapphub.com"
+      }
+    ]
+  },
   "LEGAL": "Legal Policies",
   "EXCLUSIVE_DEALERS": {
     "title": "Exclusive Dealer ",
-    "slice": [{ "title": "Dlalat", "link": "https://www.dlalat.com/" }]
+    "slice": [
+      {
+        "title": "Dlalat",
+        "link": "https://www.dlalat.com/"
+      }
+    ]
   },
   "REVIEW_TITLE": {
     "title": "TESTIMONIALS",
@@ -953,11 +956,78 @@
       "quote": "CladCut is a valuable asset for any business looking to streamline their production process and improve efficiency. CladCut can quickly and efficiently release the most difficult panel."
     },
     {
-      "name": "Sayed Salah",
-      "job": "Junior Façade Designer",
+      "name": "Mohamed Ismail",
+      "job": "DAS-METAL",
       "company": "Dome FDH",
-      "title": "Junior Façade Designer",
-      "quote": "”CladCut works to significantly speed up the aluminum cladding workflow by automating the fabrication drawings process with very high accuracy and a simple and intuitive user interface.“"
+      "title": "DAS-METAL",
+      "quote": "Using CladCut and bondify CRM has made a major impact on our operations. CladCut drastically reduced the time we spend creating cutting lists and CNC files, making it easier to meet deadlines. Meanwhile, bondify CRM improved how we manage tasks and projects, helping us track progress and optimize team performance."
+    },
+    {
+      "name": "Mohamed Amer",
+      "job": "General Manager",
+      "company": "Dome FDH",
+      "title": "CEO, PINION ENGINEERING",
+      "quote": "One standout feature in CladCut is its ability to generate error-free CNC files directly from the input, which reduced manual mistakes and rework in the workshop. bondify CRM, on the other hand, gave us a full activity history for each client and project, making it easier to manage follow-ups, spot delays, and improve accountability across the team."
+    },
+    {
+      "name": "Bakr Ramzy",
+      "job": "",
+      "company": "",
+      "title": "CEO,",
+      "quote": "Our team saved considerable amounts of time thanks to the recurring billing feature in bondify CRM. Additionally, automating invoice reminders has significantly decreased our late payments."
+    },
+    {
+      "name": "Mohamed Meligy ",
+      "job": "",
+      "company": "",
+      "title": "CEO, EGYTEL for Telecommunication",
+      "quote": "bondify CRM is solid, especially for contract management and proposals. We love how everything stays centralized."
+    },
+    {
+      "name": "Mustafa Sharaf",
+      "job": "Executive Manager",
+      "company": "DESIGNAL ENGINEERING",
+      "title": "Executive Manager, DESIGNAL ENGINEERING",
+      "quote": "bondify CRM has shown great potential in managing leads and tracking opportunities efficiently. Meanwhile, ChatPlus has given us complete visibility over our support performance—from agent response times to issue tracking and overall metrics—making it easier to improve service quality and team accountability."
+    },
+    {
+      "name": "Ahmed Morsi",
+      "job": "",
+      "company": "DAAM CENTER",
+      "title": "CEO, DAAM CENTER",
+      "quote": "Since we started using ChatPlus, our customer service has become faster and more professional. Everything is in one place, and you can access any client’s details in seconds."
+    },
+    {
+      "name": "Ahmed Kamel",
+      "job": "",
+      "company": "",
+      "title": "CEO, CPV ARABIA",
+      "quote": "We used many support platforms, but ChatPlus stands out for its simplicity and power. You can manage broadcasts, tickets, and team performance— Now we have full organization of complaints and inquiries, with real-time tracking—nothing gets missed."
+    },
+    {
+      "name": "Ahmed Tantour",
+      "job": "Technical Manager",
+      "company": "CUBEMETAL INDUSTRIES CO.",
+      "title": "Technical Manager, CUBEMETAL INDUSTRIES CO.",
+      "quote": "We appreciate the value CladCut brings to our cladding fabrication workflow. The software has been helpful in improving efficiency and reducing time, particularly in generating accurate cutting lists. The usability is intuitive, and it has supported our technical team in streamlining their tasks. And your team’s support has been excellent."
+    },
+    {
+      "name": "Karim Zaytoun",
+      "job": "CEO",
+      "company": "Zaytoun Development",
+      "title": "CEO, Zaytoun Development",
+      "quote": "ChatPlus significantly reduced the workload on our customer service team, thanks to the fully automated chatbot handling most repeated questions instantly."
+    },
+    {
+      "name": "Mohamed Abo Elmakarem",
+      "job": "",
+      "company": "Dlalat Technology Limited",
+      "title": "Dlalat Technology Limited",
+      "quote": "ChatPlus Smooth Integration into our platform made a clear difference — we started resolving customer issues faster and with less friction, leading to a significant boost in satisfaction levels."
     }
-  ]
+  ],
+    "PARTNERS_TITLE": {
+    "title": "OUR CLIENTS",
+    "slogan": "Turning Ambitions into Achievements."
+  }
 }

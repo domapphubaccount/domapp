@@ -16,7 +16,7 @@ export default function Section_3() {
       <Container>
         <Row className="z-1 position-relative" dir={dir}>
           <Col sm={12} md={4}>
-            <Image
+            <Image loading="lazy"
               width={200}
               height={100}
               src={CladBannar.src}

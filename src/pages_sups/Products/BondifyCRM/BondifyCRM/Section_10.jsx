@@ -25,7 +25,7 @@ export default function Section_10() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={6} className=" ">
-            <img
+            <img loading="lazy"
               src={Time.src}
               className="image_manage "
               style={{ maxHeight: "400px" }}

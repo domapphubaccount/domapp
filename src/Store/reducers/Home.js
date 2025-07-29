@@ -1,21 +1,21 @@
 "use client"
 import {
-    bondifycrm_page,
-    byld_page,
-    chatplus_page,
-    cladcut_page,
-    customization_page,
-    grasshopper_page,
-    rdapp_page,
-    windmaster_page,
-  } from "@/Store/Main/links/links";
-  import { linksData } from "@/Store/Main/links/linkstider";
-  import { process } from "@/Store/Main/assets/Videos";
-  import en from "@/Store/Language/en.json";
-  import ar from "@/Store/Language/ar.json";
+  bondifycrm_page,
+  byld_page,
+  chatplus_page,
+  cladcut_page,
+  customization_page,
+  grasshopper_page,
+  rdapp_page,
+  windmaster_page,
+} from "@/Store/Main/links/links";
+import { linksData } from "@/Store/Main/links/linkstider";
+import { process } from "@/Store/Main/assets/Videos";
+import en from "@/Store/Language/en.json";
+import ar from "@/Store/Language/ar.json";
 import { createSlice } from "@reduxjs/toolkit";
-  
-  const translations = { en, ar };
+
+const translations = { en, ar };
 
 const t = (key, lang) => translations[lang]?.[key] || key;
 
@@ -26,36 +26,36 @@ const initialState = {
     sections: {
       bannar: {
         title: "DomApp",
-        slogan: t("slogan",lang),
-        button: t("Get_Started",lang),
+        slogan: t("slogan", lang),
+        button: t("Get_Started", lang),
       },
       about_us: {
-        head_section: t("ABOUT_US_HEAD",lang),
+        head_section: t("ABOUT_US_HEAD", lang),
         head: {
-          title: t("ABOUT_US",lang),
-          slogan: t("ABOUT_US_SLOGAN",lang),
+          title: t("ABOUT_US", lang),
+          slogan: t("ABOUT_US_SLOGAN", lang),
         },
         main: {
-          title: t("ABOUT_US_MAIN_TITLE",lang),
-          slices: t("ABOUT_US_MAIN_SLICES",lang),
+          title: t("ABOUT_US_MAIN_TITLE", lang),
+          slices: t("ABOUT_US_MAIN_SLICES", lang),
           video: process,
         },
       },
       what_we_do: {
         head: {
-          title: t("WHAT_WE_DO",lang),
+          title: t("WHAT_WE_DO", lang),
           slogan:
-            t("WHAT_WE_DO_SLOGAN",lang),
+            t("WHAT_WE_DO_SLOGAN", lang),
         },
         main: {
-          slices: t("WHAT_WE_DO_SLICES",lang),
+          slices: t("WHAT_WE_DO_SLICES", lang),
         },
       },
-      services: t("SERVICES",lang),
+      services: t("SERVICES", lang),
       products: {
         head: {
-          title: t("OUR_PRODUCTS_TITLE",lang),
-          slogan: t("OUR_PRODUCTS_SLOGAN",lang),
+          title: t("OUR_PRODUCTS_TITLE", lang),
+          slogan: t("OUR_PRODUCTS_SLOGAN", lang),
         },
         main: {
           slices: [
@@ -72,7 +72,7 @@ const initialState = {
                   strokeWidth={1.5}
                   stroke="currentColor"
                   className=" m-auto"
-                  style={{ width: "30px" }}
+                  style={{ width: "30px",height: "40px" }}
                 >
                   <g
                     transform="translate(0.000000,639.000000) scale(0.100000,-0.100000)"
@@ -96,7 +96,7 @@ const initialState = {
                   version="1.0"
                   xmlns="http://www.w3.org/2000/svg"
                   className="m-auto"
-                  style={{ width: "30px" }}
+                  style={{ width: "30px",height: "40px" }}
                   viewBox="0 0 1000.000000 947.000000"
                   preserveAspectRatio="xMidYMid meet"
                 >
@@ -160,7 +160,7 @@ const initialState = {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1000.000000 1421.000000"
                   preserveAspectRatio="xMidYMid meet"
-                  style={{ width: "30px" }}
+                  style={{ width: "30px",height: "40px" }}
                   className="m-auto"
                 >
                   <g
@@ -202,7 +202,7 @@ const initialState = {
                   strokeWidth={1.5}
                   stroke="currentColor"
                   className=" m-auto"
-                  style={{ width: "30px" }}
+                  style={{ width: "30px",height: "40px" }}
                   viewBox="0 0 1000.000000 1243.000000"
                   preserveAspectRatio="xMidYMid meet"
                 >
@@ -262,7 +262,7 @@ const initialState = {
                   strokeWidth={1.5}
                   stroke="currentColor"
                   className=" m-auto"
-                  style={{ width: "25px" }}
+                  style={{ width: "30px",height: "40px" }}
                 >
                   <g
                     transform="translate(0.000000,520.000000) scale(0.100000,-0.100000)"
@@ -285,7 +285,7 @@ const initialState = {
                 </svg>
               ),
             },
-  
+
             {
               index: 6,
               title: "Custom Software",
@@ -299,7 +299,7 @@ const initialState = {
                   preserveAspectRatio="xMidYMid meet"
                   strokeWidth={1.5}
                   className=" m-auto"
-                  style={{ width: "30px" }}
+                  style={{ width: "30px",height: "40px" }}
                 >
                   <g
                     transform="translate(0.000000,270.000000) scale(0.100000,-0.100000)"
@@ -363,7 +363,7 @@ const initialState = {
               icon: (
                 <svg
                   version="1.0"
-                  style={{ width: "30px" }}
+                  style={{ width: "30px",height: "40px" }}
                   xmlns="http://www.w3.org/2000/svg"
                   className="m-auto  grass"
                   viewBox="0 0 2000.000000 2000.000000"
@@ -466,7 +466,7 @@ const initialState = {
                   strokeWidth={1.5}
                   stroke="currentColor"
                   className="m-auto"
-                  style={{ width: "25px" }}
+                  style={{ width: "30px",height: "40px" }}
                 >
                   <g
                     transform="translate(0.000000,391.000000) scale(0.100000,-0.100000)"
@@ -499,11 +499,11 @@ const initialState = {
           ],
         },
       },
-      counterdata: t("HOME_COUNTER",lang),
-      why_us: t("WHY_US_HEAD",lang),
-      review: t("REVIEW",lang),
-      review_title: t("REVIEW_TITLE",lang)
-
+      counterdata: t("HOME_COUNTER", lang),
+      why_us: t("WHY_US_HEAD", lang),
+      review: t("REVIEW", lang),
+      review_title: t("REVIEW_TITLE", lang),
+      partners_title: t("PARTNERS_TITLE", lang)
     },
   })
 };

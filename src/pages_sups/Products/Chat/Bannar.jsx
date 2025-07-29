@@ -24,7 +24,7 @@ function Bannar2() {
               <div className="center-text">
                 <div>
                   <div className="header-text">
-                    <img src={Logo.src} width={400} alt="chatplus" />
+                    <img loading="lazy" src={Logo.src} width={400} alt="chatplus" />
                   </div>
                   <div className="header-sub-text mb-5 text-lg" dir={dir}>
                     <p>{chatplus(lang).sections.bannar.slogan}</p>
@@ -48,13 +48,13 @@ function Bannar2() {
             </div>
             <div className="col-md-8 flex items-center">
               <div
-              className=""
+                className=""
                 style={{
                   transform:
                     "perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
                 }}
               >
-                <img alt="" className="img-fluid" src={BannarIMG.src} />
+                <img loading="lazy" alt="" className="img-fluid" src={BannarIMG.src} />
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ function Bannar2() {
           <div className="gradient-circle-big"></div>
         </div>
       </div>
-      
+
       <div className="plus-container">
         <div className="plus"></div>
       </div>

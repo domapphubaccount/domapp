@@ -23,7 +23,7 @@ export default function Bannar() {
             <div className="col-lg-12 text-center">
               <div className="title-heading leading-6 mb-3" data-aos="fade-up">
                 <div className="flex justify-center">
-                  <img src={windmasterImg.src} alt="windmaster" width={400} />
+                  <img loading="lazy" src={windmasterImg.src} alt="windmaster" width={400} />
                 </div>
                 <div className="mt-4 pt-2">
                   <Link

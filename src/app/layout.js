@@ -91,12 +91,12 @@ export default function RootLayout({ children }) {
           `,
         }}
       />
-      <body suppressHydrationWarning={true} style={{fontFamily:"Alexandria"}} >
-      <StoreProvider>{children}</StoreProvider>
+      <body suppressHydrationWarning={true} style={{ fontFamily: "Alexandria" }} >
+        <StoreProvider>{children}</StoreProvider>
 
 
-      <AOSInit />
-      {/* <noscript>
+        <AOSInit />
+        {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WHTW6XJK"
             height="0"
@@ -106,7 +106,7 @@ export default function RootLayout({ children }) {
         </noscript>
         <noscript>
           <div>
-            <img
+            <img loading="lazy" 
               src="https://mc.yandex.ru/watch/99154524"
               style="position:absolute; left:-9999px;"
               alt=""

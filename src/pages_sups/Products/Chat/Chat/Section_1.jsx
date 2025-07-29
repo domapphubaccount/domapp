@@ -43,17 +43,17 @@ export default function Section_1() {
                 >
                   <li className="about-icon col-sm-12 ">
                     <div className="center-content " href="#">
-                      <img alt="" src={Icon_1.src} />
+                      <img loading="lazy" alt="" src={Icon_1.src} />
                       <h5>
                         {chatplus(lang).sections.Collaborate.slice.support}
                       </h5>
                     </div>
                   </li>
-                 
+
                 </ul>
               </div>
 
-           
+
               <div className="center-content unset-height col-sm-4">
                 <ul
                   className="icon-collection aos-init aos-animate w-100"
@@ -62,7 +62,7 @@ export default function Section_1() {
                 >
                   <li className="about-icon">
                     <div className="center-content" href="#">
-                      <img alt="" src={Icon_2.src} />
+                      <img loading="lazy" alt="" src={Icon_2.src} />
                       <h5>
                         {chatplus(lang).sections.Collaborate.slice.archive}
                       </h5>
@@ -70,7 +70,7 @@ export default function Section_1() {
                   </li>
                   <li className="about-icon">
                     <div className="center-content " href="#">
-                      <img alt="" src={Icon_3.src} />
+                      <img loading="lazy" alt="" src={Icon_3.src} />
                       <h5>
                         {chatplus(lang).sections.Collaborate.slice.auto_reply}
                       </h5>
@@ -87,7 +87,7 @@ export default function Section_1() {
                 >
                   <li className="about-icon">
                     <div className="center-content" href="#">
-                      <img alt="" src={Icon_4.src} />
+                      <img loading="lazy" alt="" src={Icon_4.src} />
                       <h5>
                         {chatplus(lang).sections.Collaborate.slice.broadcast}
                       </h5>
@@ -95,7 +95,7 @@ export default function Section_1() {
                   </li>
                   <li className="about-icon">
                     <div className="center-content" href="#">
-                      <img alt="" src={Icon_5.src} />
+                      <img loading="lazy" alt="" src={Icon_5.src} />
                       <h5>
                         {chatplus(lang).sections.Collaborate.slice.chatboat}
                       </h5>
@@ -103,7 +103,7 @@ export default function Section_1() {
                   </li>
                   <li className="about-icon">
                     <div className="center-content" href="#">
-                      <img alt="" src={Icon_6.src} />
+                      <img loading="lazy" alt="" src={Icon_6.src} />
                       <h5>
                         {chatplus(lang).sections.Collaborate.slice.msgtemplate}
                       </h5>

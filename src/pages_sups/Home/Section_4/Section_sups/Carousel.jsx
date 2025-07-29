@@ -87,7 +87,7 @@
 //                 <li key={index} className={`${item.index === activeIndex && 'active_card'}`} >
 //                   {item.index == activeIndex ?
 
-//                     <div 
+//                     <div
 //                       data-aos="fade-up"
 //                       data-aos-duration="1000">
 //                       {item.title}
@@ -108,13 +108,13 @@
 //             items.map((item,index) => (
 //               item.index === activeIndex &&
 //               <div key={index} className={`carousal_card fade-in`} data-aos="zoom-in" data-aos-duration="500">
-//                 {/* <Image src={item.src} alt="product image" className="carousal_image" width="100%" height="100%"/> */}
+//                 {/* <Image loading="lazy"  src={item.src} alt="product image" className="carousal_image" width="100%" height="100%"/> */}
 
 //                 <div className="carousel_inside_content">
 //                   <div className="h-100">
 //                     <Row className="h-100">
 //                       <Col className={`d-flex align-items-center justify-content-center rounded transformed_video  ${'video_col'}`} >
-//                         {/* <Image src={item.src} alt="product" style={{border: '2px solid gray'}}/> */}
+//                         {/* <Image loading="lazy"  src={item.src} alt="product" style={{border: '2px solid gray'}}/> */}
 //                         <video className="rounded h-100 w-100" preload="none" loop muted autoPlay>
 //                             <source src="/Home_page/Section_2.mp4" type="video/mp4" />
 //                             Your browser does not support the video tag.

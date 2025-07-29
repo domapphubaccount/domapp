@@ -18,7 +18,7 @@ export default function RD_cards() {
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <img src={quotes.src} className="me-auto" alt="qute" />
+                <img loading="lazy" src={quotes.src} className="me-auto" alt="qute" />
               </div>
               <div
                 className="py-5 text-center"
@@ -35,7 +35,7 @@ export default function RD_cards() {
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <img
+                <img loading="lazy"
                   src={quotes.src}
                   style={{ width: "80px" }}
                   className="inline"

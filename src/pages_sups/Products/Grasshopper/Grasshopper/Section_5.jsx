@@ -42,13 +42,13 @@ function Section_5() {
 
           <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000">
             <div className="h-100 d-flex align-items-center my-2">
-              <img src={grass1.src} className="rounded" alt="" />
+              <img loading="lazy" src={grass1.src} className="rounded" alt="" />
             </div>
           </Col>
 
           <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000">
             <div className="h-100 d-flex align-items-center my-2">
-              <img src={grass2.src} className="rounded" alt="" />
+              <img loading="lazy" src={grass2.src} className="rounded" alt="" />
             </div>
           </Col>
 
@@ -76,8 +76,8 @@ function Section_5() {
           <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000">
             <div className="p-5 my-2">
               <div className="description py-5 px-3 rounded">
-              <h4>{grasshopper(lang).sections.Examples[2].title}</h4>
-              <p>
+                <h4>{grasshopper(lang).sections.Examples[2].title}</h4>
+                <p>
                   <span className="fw-bold">
                     {grasshopper(lang).sections.Examples[2].first.title}
                   </span>
@@ -96,7 +96,7 @@ function Section_5() {
 
           <Col md={6} sm={12} data-aos="fade-up" data-aos-duration="2000">
             <div className="h-100 d-flex align-items-center my-2">
-              <img src={grass3.src} className="rounded" alt="" />
+              <img loading="lazy" src={grass3.src} className="rounded" alt="" />
             </div>
           </Col>
         </Row>

@@ -20,7 +20,7 @@ function Head({ head }) {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <img src={quotes.src} className="me-auto" alt="qute" />
+            <img loading="lazy" src={quotes.src} className="me-auto" alt="qute" />
           </div>
           <div
             className="text-center"
@@ -75,7 +75,7 @@ function Head({ head }) {
             data-aos-duration="1000"
 
           >
-            <img
+            <img loading="lazy"
               src={quotes.src}
               style={{ width: "80px" }}
               className="inline"

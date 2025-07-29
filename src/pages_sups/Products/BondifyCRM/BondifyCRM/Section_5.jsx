@@ -13,7 +13,7 @@ export default function Section_5() {
       <Container>
         <div className="row g-0 section_container">
           <Col sm={12} md={6} lg={6}>
-            <img
+            <img loading="lazy"
               src={Pay.src}
               className="image_manage"
               alt="manage"
@@ -50,7 +50,7 @@ export default function Section_5() {
                           <li key={index}>
                             <div className="align-items-start gap-1">
                               <span>
-                                <img
+                                <img loading="lazy"
                                   src={yesI.src}
                                   className="yes_icon"
                                   alt="true"

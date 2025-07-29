@@ -2,20 +2,50 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Slider from "react-slick";
 import styled from "styled-components";
-import quotes from "@/assets/images/Products_Page/Rd/quotes-left.svg";
+import quotes from "@/assets/images/Home_Page/testimoniols/coma-up.png";
 import Section_head from "@/components/Reuse/Section_Head/Section_head";
+
+
+const Dot = styled.div`
+  width: 15px;
+  height: 7px;
+  background-color: #ccc;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+`;
+
+const DotContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+
+  li.slick-active & ${Dot} {
+    width: 30px;
+    background-color: #444;
+  }
+`;
+
 
 const Carousel = () => {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const { home } = useSelector((state) => state.homeRed);
 
   const settings = {
-    dots: false,
+    customPaging: function (i) {
+      return (
+        <DotContainer>
+          <Dot />
+        </DotContainer>
+      );
+    },
+    dots: true,
+    dotsClass: "slick-dots custom-dots",
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     nextArrow: <CustomArrow direction="next" />,
     prevArrow: <CustomArrow direction="prev" />,
   };
@@ -31,23 +61,37 @@ const Carousel = () => {
       <SliderWrapper>
         <Slider {...settings}>
           {home(lang).sections.review.map((testimonial, index) => (
-            <div className="p-5 h-full mt-4 mb-5" key={index} dir={dir}>
-              <Card className="h-full">
-                <div className="flex justify-between mb-4">
-                  <div>
-                    <Name>{testimonial.name}</Name>
-                    <Title>{testimonial.title}</Title>
-                  </div>
-                  <div>
-                    <img
-                      src={quotes.src}
-                      style={{ width: "60px", filter: "brightness(0.9)" }}
-                      className="inline"
-                      alt="qute"
-                    />
-                  </div>
+            <div className="p-5 h-full mt-4 " key={index} dir={dir}>
+              <Card className="h-full flex flex-column">
+                <div id="testimoniol-qute-up">
+                  <img loading="lazy"
+                    src={quotes.src}
+                    style={{
+                      width: "40px",
+                    }}
+                    className="inline"
+                    alt="qute"
+                  />
                 </div>
-                <Quote className={`p-3 ${dir === "rtl" && "text-end"}`} dir={dir}>{`"${testimonial.quote}"`}</Quote>
+
+                <div id="testimoniol-qute-down">
+                  <img loading="lazy"
+                    src={quotes.src}
+                    style={{
+                      width: "40px",
+                    }}
+                    className="inline"
+                    alt="qute"
+                  />
+                </div>
+
+                <Quote className={`p-2 mb-5 pt-5 text-center flex-1 flex justify-center items-center`} dir={dir}>”{testimonial.quote}”</Quote>
+
+                <div className="px-2">
+                  <Name>{testimonial.name}</Name>
+                  <Title>{testimonial.title}</Title>
+                </div>
+
               </Card>
             </div>
           ))}
@@ -124,37 +168,25 @@ const Card = styled.div`
   text-align: left;
   position: relative;
   z-index: 2;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 10%;
-    right: 10%;
-    height: 20px;
-    background: rgb(205 205 205 / 40%);
-    border-radius: 16px;
-    z-index: 1;
-    filter: blur(5px);
-  }
 `;
 
 const Name = styled.h3`
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 5px;
 `;
 
 const Title = styled.p`
   color: #6c757d;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 `;
 
 const Quote = styled.p`
   font-size: 16px;
-  color: #6c757d;
+  color: #000;
   line-height: 1.6;
+  font-weight: 200;
 `;
 
 const ArrowWrapper = styled.div`

@@ -95,8 +95,6 @@ export const carousalData = [
     src: "/Products/BONDIFY CRM.WebP",
     link: "/bondifycrm",
     icon: (
-
-
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +143,7 @@ export const carousalData = [
       //   strokeWidth={1.5}
       //   stroke="currentColor"
       //   className=" m-auto"
-      //   style={{ width: "30px" }}
+      //   style={{ width: "30px",height: "60px" }}
       // >
       //   <path
       //     strokeLinecap="round"
@@ -256,7 +254,7 @@ c-1307 -1 -1581 -3 -1646 -15z m2453 -1816 c0 -1171 1 -1143 -57 -1251 -88
       //   strokeWidth={1.5}
       //   stroke="currentColor"
       //   className=" m-auto"
-      //   style={{ width: "30px" }}
+      //   style={{ width: "30px",height: "60px" }}
       // >
       //   <path
       //     strokeLinecap="round"
@@ -439,7 +437,7 @@ c-494 0 -673 -3 -785 -15 -363 -37 -529 -65 -656 -109 -65 -23 -292 -70 -464
         strokeWidth={1.5}
         stroke="currentColor"
         className="m-auto"
-        style={{ width: "25px" }}
+        style={{ width: "30px" }}
       >
         <g
           transform="translate(0.000000,391.000000) scale(0.100000,-0.100000)"

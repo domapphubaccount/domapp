@@ -46,7 +46,7 @@ function Pricing() {
                 animationName: "fadeInUp",
               }}
             >
-              <img
+              <img loading="lazy"
                 className="h-20 mb-6 mx-auto"
                 src="assets/imgs/icons/startup.svg"
                 alt=""
@@ -148,9 +148,9 @@ function Pricing() {
             <div
               className="hover-up-5 pt-16 pb-8 px-4 text-center text-white bg-blue-500 rounded shadow wow animate__ animate__fadeInUp animated"
               data-wow-delay=".4s"
-              style={{visibility: "visible", animationDelay: "0.4s", animationName: "fadeInUp"}}
+              style={{ visibility: "visible", animationDelay: "0.4s", animationName: "fadeInUp" }}
             >
-              <img
+              <img loading="lazy"
                 className="h-20 mb-6 mx-auto"
                 src="assets/imgs/icons/agency.svg"
                 alt=""
@@ -250,9 +250,9 @@ function Pricing() {
             <div
               className="hover-up-5 pt-16 pb-8 px-4 text-center bg-white rounded shadow wow animate__ animate__fadeInUp animated"
               data-wow-delay=".6s"
-              style={{visibility: "visible", animationDelay: "0.6s", animationName: "fadeInUp"}}
+              style={{ visibility: "visible", animationDelay: "0.6s", animationName: "fadeInUp" }}
             >
-              <img
+              <img loading="lazy"
                 className="h-20 mb-6 mx-auto"
                 src="assets/imgs/icons/enterprise.svg"
                 alt=""

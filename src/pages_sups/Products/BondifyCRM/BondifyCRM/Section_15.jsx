@@ -33,7 +33,7 @@ export default function Section_15() {
                       <li key={index}>
                         <div className="grid grid-cols-[auto_1fr] items-start ">
                           <span className="w-5 h-5">
-                            <img
+                            <img loading="lazy"
                               src={yesI.src}
                               alt="true"
                               className="w-full h-full object-contain"
@@ -49,7 +49,7 @@ export default function Section_15() {
             </div>
           </Col>
           <Col sm={12} md={5} lg={4}>
-            {/* <img src={Time.src} className="image_manage  " alt="manage" /> */}
+            {/* <img loading="lazy"  src={Time.src} className="image_manage  " alt="manage" /> */}
           </Col>
         </div>
       </Container>

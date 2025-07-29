@@ -133,7 +133,7 @@ function Section_2() {
                       </label>
                       <PhoneInput
                         className="form-control p-2 z-10 flex"
-                        style={{display: "flex"}}
+                        style={{ display: "flex" }}
                         defaultCountry="sa"
                         name="phone"
                         placeholder="151515"
@@ -203,25 +203,25 @@ function Section_2() {
           </div>
           <ul className="list-unstyled shape-group-9">
             <li className="shape shape-1">
-              <img src={shap1.src} alt="Comments" />
+              <img loading="lazy" src={shap1.src} alt="Comments" />
             </li>
             <li className="shape shape-2">
-              <img src={shap2.src} alt="Comments" />
+              <img loading="lazy" src={shap2.src} alt="Comments" />
             </li>
             <li className="shape shape-3">
-              <img src={shap3.src} alt="Comments" />
+              <img loading="lazy" src={shap3.src} alt="Comments" />
             </li>
             <li className="shape shape-4">
-              <img src={shap4.src} alt="Comments" />
+              <img loading="lazy" src={shap4.src} alt="Comments" />
             </li>
             <li className="shape shape-5">
-              <img src={shap5.src} alt="Comments" />
+              <img loading="lazy" src={shap5.src} alt="Comments" />
             </li>
             <li className="shape shape-6">
-              <img src={shap5.src} alt="Comments" />
+              <img loading="lazy" src={shap5.src} alt="Comments" />
             </li>
             <li className="shape shape-7">
-              <img src={shap2.src} alt="Comments" />
+              <img loading="lazy" src={shap2.src} alt="Comments" />
             </li>
           </ul>
         </div>

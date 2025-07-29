@@ -32,7 +32,7 @@ export default function Section_4() {
                     <li key={index}>
                       <div className="align-items-start gap-2">
                         <span>
-                          <img src={yesI.src} className="yes_icon" alt="true" />
+                          <img loading="lazy" src={yesI.src} className="yes_icon" alt="true" />
                         </span>
                         <span className="m-0 mb-2"><p className="p-0 m-0">{item}</p></span>
                       </div>
@@ -43,7 +43,7 @@ export default function Section_4() {
             </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
-            <img
+            <img loading="lazy"
               src={Time.src}
               className="image_manage"
               alt="manage"

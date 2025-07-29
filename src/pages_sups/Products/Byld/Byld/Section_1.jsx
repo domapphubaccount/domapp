@@ -53,7 +53,7 @@ function Section_1() {
 
               {byld(lang).sections.FEATURES.slice.map((item, index) => (
                 <div
-                key={index}
+                  key={index}
                   className="flex items-start py-4 wow animate__ animate__fadeInUp"
                   data-wow-delay=".5s"
                   style={{
@@ -90,17 +90,17 @@ function Section_1() {
                 animationName: "fadeInRight",
               }}
             >
-              <img
+              <img loading="lazy"
                 className="jump relative mx-auto rounded-xl w-full z-10"
                 src={sectionImg.src}
                 alt=""
               />
-              <img
+              <img loading="lazy"
                 className="absolute top-0 left-0 w-40 -ml-12 -mt-12"
                 src={blob.src}
                 alt=""
               />
-              <img
+              <img loading="lazy"
                 className="absolute bottom-0 right-0 w-40 -mr-12 -mb-12"
                 src={blob.src}
                 alt=""

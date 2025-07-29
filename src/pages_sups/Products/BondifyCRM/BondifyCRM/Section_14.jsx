@@ -12,7 +12,7 @@ export default function Section_14() {
       <Container>
         <div className="row g-0 section_container bondify-section" id="Wor">
           <Col sm={12} md={5} lg={4}>
-            {/* <img
+            {/* <img loading="lazy" 
               src={Pay.src}
               className="image_manage  "
               alt="manage"
@@ -44,7 +44,7 @@ export default function Section_14() {
                         key={index}
                       >
                         <span className="w-5 h-5">
-                          <img
+                          <img loading="lazy"
                             src={yesI.src}
                             alt="true"
                             className="w-full h-full object-contain"

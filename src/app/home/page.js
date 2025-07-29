@@ -1,6 +1,5 @@
 "use client";
 import Carousal from "@/components/Carousal/Carousal";
-// import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import Bannar from "@/pages_sups/Home/Bannar/Bannar";
 import About from "@/pages_sups/Home/About/About";
@@ -10,6 +9,7 @@ import WhatWeDo from "@/pages_sups/Home/WhatWeDo/WhatWeDo";
 import dynamic from "next/dynamic";
 import Reviews from "@/pages_sups/Home/Reviews/Reviews";
 import WhyUs from "@/pages_sups/Home/WhyUS/WhyUs";
+import Partners from "@/pages_sups/Home/Partners/Partners";
 const Footer = dynamic(() => import("@/components/Layout/Footer/Footer"), {
   ssr: false,
 });
@@ -25,6 +25,7 @@ export default function Home() {
       <Carousal />
       <CounterData />
       <Reviews />
+      <Partners />
       <Footer />
     </main>
   );

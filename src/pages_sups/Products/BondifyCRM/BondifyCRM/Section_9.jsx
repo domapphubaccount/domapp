@@ -12,7 +12,7 @@ export default function Section_9() {
       <Container>
         <div className="row g-0 section_container">
           <Col sm={12} md={6} lg={6}>
-            <img
+            <img loading="lazy"
               src={Pay.src}
               className="image_manage"
               alt="manage"
@@ -41,7 +41,7 @@ export default function Section_9() {
                     <li key={index}>
                       <div className="grid grid-cols-[auto_1fr] gap-2 items-start  ">
                         <span className="w-5 h-5">
-                          <img
+                          <img loading="lazy"
                             src={yesI.src}
                             alt="true"
                             className="w-full h-full object-contain"

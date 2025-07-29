@@ -13,7 +13,7 @@ export default function Section_1() {
           <div className="row row--35 align-items-center">
             <div className="col-lg-5 col-md-12">
               <div className="thumbnail" data-aos="fade-up" data-aos-duration="2000" >
-                <img className="w-80" src={grass.src} alt="About Images" />
+                <img loading="lazy" className="w-80" src={grass.src} alt="About Images" />
               </div>
             </div>
             <div className="col-lg-7 col-md-12">

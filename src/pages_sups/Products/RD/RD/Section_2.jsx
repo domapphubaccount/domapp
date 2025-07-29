@@ -27,7 +27,7 @@ export default function Section_3() {
           </Col>
           <Col sm={12} md={6} lg={6}>
             <div data-aos="fade-up" data-aos-duration="1000">
-              <img src={porp.src} alt="" />
+              <img loading="lazy" src={porp.src} alt="" />
             </div>
           </Col>
         </Row>

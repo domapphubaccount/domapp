@@ -76,7 +76,7 @@ export default function RD_Content_section() {
                 </div>
                 <div className="order-1 order-lg-2 col-lg-6">
                   <div className="thumbnail">
-                    <img
+                    <img loading="lazy"
                       className="w-100"
                       src={IMGS[index].src}
                       alt="Corporate React Template"

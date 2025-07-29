@@ -15,9 +15,8 @@ export default function Section_3() {
         dir={dir}
       >
         <div className="col-lg-5 col-md-6 order-1 order-md-2">
-          <img
+          <img loading="lazy"
             alt=""
-            loading="lazy"
             width="0"
             height="0"
             decoding="async"
@@ -30,7 +29,7 @@ export default function Section_3() {
         </div>
         <div
           className={`col-lg-7 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0`}
-          
+
         >
           <div className={`section-title ${dir == 'rtl' && 'text-end'}`}>
             <h4 className="mb-4">
@@ -42,16 +41,16 @@ export default function Section_3() {
               <small>{windmaster(lang).sections.Collaborate.slogan}</small>
             </div>
 
-            {windmaster(lang).sections.Collaborate.slice.map((item,index)=>(
+            {windmaster(lang).sections.Collaborate.slice.map((item, index) => (
 
-            <div className="d-flex align-items-center text-start mt-4 pt-2" key={index}>
-              <div className="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
-                {item.icon}
+              <div className="d-flex align-items-center text-start mt-4 pt-2" key={index}>
+                <div className="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
+                  {item.icon}
+                </div>
+                <div className={`flex-1 ${dir == 'rtl' && 'text-end'}`}>
+                  <p>{item.slogan}</p>
+                </div>
               </div>
-              <div className={`flex-1 ${dir == 'rtl' && 'text-end'}`}>
-                <p>{item.slogan}</p>
-              </div>
-            </div>
             ))}
 
 

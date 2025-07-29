@@ -21,7 +21,7 @@ function Bannar() {
         <div className="pt-12 text-center">
           <div className="max-w-2xl mx-auto mb-8 text-center">
             <div className="flex justify-center">
-              <img src={byldicon.src} width={300} />
+              <img loading="lazy" src={byldicon.src} width={300} />
             </div>
             {
               <p
@@ -81,7 +81,7 @@ function Bannar() {
               animationName: "fadeInRight",
             }}
           >
-            <img
+            <img loading="lazy"
               className="absolute top-0 left-0 w-40 -ml-12 -mt-12"
               src={blob.src}
               alt=""
@@ -89,7 +89,7 @@ function Bannar() {
           </div>
         </div>
 
-        <img
+        <img loading="lazy"
           src="assets/imgs/elements/pattern.WebP"
           alt=""
           style={{ minHeight: "600px" }}
@@ -98,7 +98,7 @@ function Bannar() {
           className="absolute"
           style={{ top: "9%", left: "14%", width: "80%", height: "70%" }}
         >
-          <img
+          <img loading="lazy"
             className="jump rounded wow animate__animated animate__fadeInUp animated"
             src={subBannar.src}
             alt=""

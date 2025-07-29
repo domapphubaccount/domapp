@@ -41,7 +41,7 @@ export default function Section_7() {
           </div>
           <div className="col-lg-6">
             <div className="dz-media">
-              <img
+              <img loading="lazy"
                 src={Pay.src}
                 className="main-img"
                 data-aos-duration="2500"
@@ -54,7 +54,7 @@ export default function Section_7() {
         <div className="row align-items-center about-bx3" id="Est">
           <div className="col-lg-6">
             <div className="dz-media">
-              <img
+              <img loading="lazy"
                 src={Time.src}
                 className="main-img"
                 data-aos-duration="2500"

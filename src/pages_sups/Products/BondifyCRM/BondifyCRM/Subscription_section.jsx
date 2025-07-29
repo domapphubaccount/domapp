@@ -9,7 +9,7 @@ export default function Payments_section() {
       <Container>
         <div className="row g-0 section_container">
           <Col sm={12} md={6} lg={6}>
-            <img
+            <img loading="lazy"
               src={Pay.src}
               className="image_manage"
               alt="manage"
@@ -51,7 +51,7 @@ export default function Payments_section() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img loading="lazy" src={yesI.src} alt="true" />
                           </span>{" "}
                           <span>Create, send, track.</span>
                         </div>
@@ -59,7 +59,7 @@ export default function Payments_section() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img loading="lazy" src={yesI.src} alt="true" />
                           </span>{" "}
                           <span>Customize template.</span>
                         </div>
@@ -67,7 +67,7 @@ export default function Payments_section() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img loading="lazy" src={yesI.src} alt="true" />
                           </span>
                           <span>Invoice automation.</span>{" "}
                         </div>
@@ -88,7 +88,7 @@ export default function Payments_section() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img loading="lazy" src={yesI.src} alt="true" />
                           </span>{" "}
                           <span>Track payments.</span>
                         </div>
@@ -96,7 +96,7 @@ export default function Payments_section() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img loading="lazy" src={yesI.src} alt="true" />
                           </span>{" "}
                           <span>Receive and generate payments.</span>
                         </div>
@@ -104,7 +104,7 @@ export default function Payments_section() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img loading="lazy" src={yesI.src} alt="true" />
                           </span>
                           <span>Payment status overview.</span>{" "}
                         </div>
@@ -112,7 +112,7 @@ export default function Payments_section() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img loading="lazy" src={yesI.src} alt="true" />
                           </span>
                           <span>
                             Determine payment method paypal, credit card.
@@ -122,7 +122,7 @@ export default function Payments_section() {
                       <li>
                         <div>
                           <span>
-                            <img src={yesI.src} alt="true" />
+                            <img loading="lazy" src={yesI.src} alt="true" />
                           </span>
                           <span>Control product, time, and task billing.</span>{" "}
                         </div>

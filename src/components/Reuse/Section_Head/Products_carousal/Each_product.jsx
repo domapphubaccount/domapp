@@ -53,7 +53,7 @@ export default function Each_product({ product_carousal }) {
           <Slider {...settings}>
             {product_carousal.map((item, index) => (
               <div key={index} onClick={() => handleImageClick(item.src)}>
-                <img src={item.src} alt="product" />
+                <img loading="lazy" src={item.src} alt="product" />
               </div>
             ))}
           </Slider>
@@ -63,7 +63,7 @@ export default function Each_product({ product_carousal }) {
       <Modal isOpen={modal} toggle={toggleModal} size="lg"> {/* Toggle modal visibility */}
         <ModalHeader toggle={toggleModal}>Modal title</ModalHeader>
         <ModalBody>
-          {modalImage && <img src={modalImage} alt="Modal" style={{ width: '100%' }} />}
+          {modalImage && <img loading="lazy" src={modalImage} alt="Modal" style={{ width: '100%' }} />}
         </ModalBody>
         <ModalFooter>
           <button color="secondary" onClick={toggleModal}>Close</button>

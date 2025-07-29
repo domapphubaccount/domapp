@@ -50,7 +50,7 @@ function Section_2() {
                 <div className="flex w-12 h-12 mx-auto items-center justify-center text-blue-800 font-bold font-heading bg-blue-200 rounded-full">
                   {index + 1}
                 </div>
-                <img className="h-48 mx-auto my-4" src={byld(lang).sections.CARDS_IMAGES[index].src} alt="" />
+                <img loading="lazy" className="h-48 mx-auto my-4" src={byld(lang).sections.CARDS_IMAGES[index].src} alt="" />
                 <h5 className="mb-2 font-bold font-heading">
                   {item.title}
                 </h5>

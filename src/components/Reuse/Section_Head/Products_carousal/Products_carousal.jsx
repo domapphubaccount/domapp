@@ -19,28 +19,28 @@ import Link from "next/link";
 
 const cardsData = [
   {
-      src: Clad,
-      link: '/cladCut'
+    src: Clad,
+    link: '/cladCut'
   },
   {
-      src: Wind,
-      link: '/windmaster'
+    src: Wind,
+    link: '/windmaster'
   },
   {
-      src: RD,
-      link: '/rdApprd'
+    src: RD,
+    link: '/rdApprd'
   },
   // {
   //     src: Facade,
   //     link: '/facade'
   // },
   {
-      src: Erp,
-      link: '/crmBondify'
+    src: Erp,
+    link: '/crmBondify'
   },
   {
-      src: Chat,
-      link: '/chatPlus'
+    src: Chat,
+    link: '/chatPlus'
   },
 ]
 
@@ -110,9 +110,9 @@ export const Card = React.memo(function (props) {
       className="my-slide-component"
     >
       <Link href={link} shallow>
-        <Image src={src} alt={src} />
+        <Image loading="lazy" src={src} alt={src} />
       </Link>
     </div>
   );
 });
-Card.displayName ='Card'
+Card.displayName = 'Card'

@@ -42,7 +42,7 @@ export default function Section_1() {
               >
                 {cladcut(lang).sections.WORK_FLOW.slice.map((item, index) => (
                   <div className="d-flex mb-3" key={index}>
-                    <img
+                    <img loading="lazy"
                       src={checked.src}
                       alt=""
                       className="mx-3"
@@ -66,7 +66,7 @@ export default function Section_1() {
               }}
             >
               <div className="mil-image-frame">
-                <img
+                <img loading="lazy"
                   src={cl1.src}
                   alt="img"
                   className="mil-scale"

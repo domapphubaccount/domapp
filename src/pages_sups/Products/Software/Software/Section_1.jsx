@@ -81,7 +81,7 @@ function SectionContent() {
           data-wow-delay="0.4s"
         >
           <div className="dlab-media">
-            <img src={sectioncard.src} className="move-2" alt="" />
+            <img loading="lazy" src={sectioncard.src} className="move-2" alt="" />
           </div>
         </div>
       </div>
@@ -101,7 +101,7 @@ function AboutUs() {
           data-wow-delay="0.2s"
         >
           <div className="dz-media">
-            <img src={sectioncardabout.src} className="move-2" alt="" />
+            <img loading="lazy" src={sectioncardabout.src} className="move-2" alt="" />
           </div>
         </div>
         <div

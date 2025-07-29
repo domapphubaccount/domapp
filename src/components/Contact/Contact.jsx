@@ -226,7 +226,7 @@ export default function Contact() {
           className="contact_circle z-1 position-relative pointer"
           onClick={() => dispatch(contact_Toggle(!contact_toggle))}
         >
-          <img src={!contact_toggle ? cont.src : cross.src} alt="" />
+          <img loading="lazy" src={!contact_toggle ? cont.src : cross.src} alt="" />
         </div>
       </div>
       <Email modal={modal} setModal={setModal} />

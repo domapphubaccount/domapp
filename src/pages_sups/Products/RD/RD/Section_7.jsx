@@ -26,14 +26,14 @@ export default function Section_7() {
           </Col>
           <Col sm={12} md={6} lg={6}>
             <div data-aos="fade-up" data-aos-duration="1000">
-              <img src={CardSection_1.src} alt="" />
+              <img loading="lazy" src={CardSection_1.src} alt="" />
             </div>
           </Col>
         </Row>
         <Row>
           <Col sm={12} md={6} lg={6}>
             <div data-aos="fade-up" data-aos-duration="1000">
-              <img src={CardSection_2.src} alt="" />
+              <img loading="lazy" src={CardSection_2.src} alt="" />
             </div>
           </Col>
           <Col sm={12} md={5} lg={5}>

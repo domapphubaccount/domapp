@@ -3,7 +3,7 @@ import playIcon from "@/assets/images/Clad/play-button.png";
 import ModalVideo from "react-modal-video";
 import { Col, Row } from "reactstrap";
 
-function Video({title , body , src , className , bannar , additional}) {
+function Video({ title, body, src, className, bannar, additional }) {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -22,11 +22,11 @@ function Video({title , body , src , className , bannar , additional}) {
             <Col sm={12} md={6}>
               <div className="">
                 <div className="relative">
-                  <div className={ `${className} absolute -top-4 -bottom-4 -right-4 w-2/3 rounded-3xl z-0 sm:rounded-[50px] md:top-0 md:bottom-0 md:right-0 xl:w-7/12`}></div>
+                  <div className={`${className} absolute -top-4 -bottom-4 -right-4 w-2/3 rounded-3xl z-0 sm:rounded-[50px] md:top-0 md:bottom-0 md:right-0 xl:w-7/12`}></div>
                   <div className="relative">
                     <div >
                       <div className="relative video-screen-border">
-                        <img
+                        <img loading="lazy"
                           className="w-full aspect-video rounded-2xl"
                           src={bannar.src}
                           title="YouTube video player"
@@ -37,7 +37,7 @@ function Video({title , body , src , className , bannar , additional}) {
                             className="border_circle"
                             onClick={() => setOpen(true)}
                           ></div>
-                          <img src={playIcon.src} width={50} />
+                          <img loading="lazy" src={playIcon.src} width={50} />
                         </div>
                       </div>
                       <ModalVideo

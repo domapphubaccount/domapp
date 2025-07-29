@@ -34,7 +34,7 @@ export default function Header() {
           ref={headerScrol}
         >
           <div className="d-flex items-center">
-            <Image
+            <Image loading="lazy"
               onClick={() => router.push("/")}
               src={header(lang).logo}
               alt="main logo"
@@ -89,7 +89,7 @@ export default function Header() {
                                         href={product.link}
                                         shallow
                                       >
-                                        <Image
+                                        <Image loading="lazy"
                                           width={15}
                                           height={15}
                                           src={product.img.src}

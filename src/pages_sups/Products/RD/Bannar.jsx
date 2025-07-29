@@ -24,7 +24,7 @@ export default function Product() {
                 >
                   <div className="flex justify-center mb-3">
                     <div className="mr-3">
-                      <img src={Logo.src} alt="logo" />
+                      <img loading="lazy" src={Logo.src} alt="logo" />
                     </div>
                   </div>
                   <div className="mb-4">
@@ -52,7 +52,7 @@ export default function Product() {
                 className=" position-relative py-5"
                 style={{ zIndex: 10, borderRadius: "15px" }}
               >
-                <img
+                <img loading="lazy"
                   src={labtop.src}
                   style={{ borderRadius: "15px" }}
                   alt="lab"
@@ -91,14 +91,14 @@ export default function Product() {
           </svg>
         </div>
         <div className="back_wave right_shap">
-          <img src={Shap_1.src} alt="shap" />
+          <img loading="lazy" src={Shap_1.src} alt="shap" />
         </div>
         <div className="back_wave top_left_shap">
-          <img src={Shap_2.src} alt="shap" />
+          <img loading="lazy" src={Shap_2.src} alt="shap" />
         </div>
       </div>
       {/* <div className="shape1">
-          <img src={Shape1.src} alt="shape" />
+          <img loading="lazy"  src={Shape1.src} alt="shape" />
         </div> */}
     </section>
   );

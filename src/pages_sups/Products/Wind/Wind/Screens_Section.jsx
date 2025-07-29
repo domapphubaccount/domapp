@@ -44,24 +44,24 @@ export default function Screens_Section({ sections }) {
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
-          <div
-            className={className}
-            style={{ ...style, display: "block", background: "gray",borderRadius: '50%' }}
-            onClick={onClick}
-          />
+            <div
+                className={className}
+                style={{ ...style, display: "block", background: "gray", borderRadius: '50%' }}
+                onClick={onClick}
+            />
         );
-      }
-      
-      function SamplePrevArrow(props) {
+    }
+
+    function SamplePrevArrow(props) {
         const { className, style, onClick } = props;
         return (
-          <div
-            className={className}
-            style={{ ...style, display: "block", background: "gray",borderRadius: '50%' }}
-            onClick={onClick}
-          />
+            <div
+                className={className}
+                style={{ ...style, display: "block", background: "gray", borderRadius: '50%' }}
+                onClick={onClick}
+            />
         );
-      }
+    }
 
     return (
         <section className=''>
@@ -82,13 +82,13 @@ export default function Screens_Section({ sections }) {
                                         {router === '/windmaster' ? (
                                             wind.map((item, index) => (
                                                 <div key={index} onClick={() => handleImageClick(item)}>
-                                                    <img src={item.src} className="  card_shadow" style={{ height: "400px", width: "350px", objectFit: "cover" }} alt='image' />
+                                                    <img loading="lazy" src={item.src} className="  card_shadow" style={{ height: "400px", width: "350px", objectFit: "cover" }} alt='image' />
                                                 </div>
                                             ))
                                         ) : (
                                             screens.map((item, index) => (
                                                 <div key={index} onClick={() => handleImageClick(item)}>
-                                                    <img src={item.src} className="  card_shadow" style={{ height: "400px", width: "350px", objectFit: "cover" }} alt='image' />
+                                                    <img loading="lazy" src={item.src} className="  card_shadow" style={{ height: "400px", width: "350px", objectFit: "cover" }} alt='image' />
                                                 </div>
                                             ))
                                         )}
@@ -103,7 +103,7 @@ export default function Screens_Section({ sections }) {
             <Modal isOpen={modal} toggle={toggleModal} size="lg"> {/* Toggle modal visibility */}
                 <ModalHeader toggle={toggleModal}></ModalHeader>
                 <ModalBody>
-                    {modalImage && <img src={modalImage.src} alt="Modal" style={{ width: '100%' }} />}
+                    {modalImage && <img loading="lazy" src={modalImage.src} alt="Modal" style={{ width: '100%' }} />}
                 </ModalBody>
                 <ModalFooter>
                     <button color="secondary" onClick={toggleModal}>Close</button>

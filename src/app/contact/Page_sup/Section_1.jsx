@@ -133,7 +133,7 @@ export default function Section_1() {
                                 onChange={handleChange}
                               >
                                 <option className="p-2" value="">
-                                {contact_page(lang).form.Option}
+                                  {contact_page(lang).form.Option}
                                 </option>
                                 <option className="p-2" value="1">
                                   CladCut
@@ -217,7 +217,7 @@ export default function Section_1() {
           <div>
             <Row>
               <Col sm={12} lg={4} md={6}>
-                <img src={Contact.src} alt="contact" />
+                <img loading="lazy" src={Contact.src} alt="contact" />
               </Col>
             </Row>
           </div>

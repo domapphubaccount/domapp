@@ -24,7 +24,7 @@ export default function Section_13() {
             </div>
           </Col>
           <Col sm={12} md={5} lg={4}>
-            {/* <img
+            {/* <img loading="lazy" 
               src={Time.src}
               className="image_manage  "
               alt="manage"

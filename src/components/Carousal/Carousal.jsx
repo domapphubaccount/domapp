@@ -125,21 +125,21 @@ function Carousal() {
         onClick={onClick}
       >
         <div className="relative">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="white"
-          className="size-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15.75 19.5 8.25 12l7.5-7.5"
-          />
-        </svg>
-        <div id="carusal_close_prev"></div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="white"
+            className="size-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+          <div id="carusal_close_prev"></div>
         </div>
       </div>
     );
@@ -170,7 +170,7 @@ function Carousal() {
                   <div key={index}>
                     <div className="text-center p-3">
                       <div className="m-auto">{item.icon}</div>
-                      <h6 className="m-auto mt-3" style={{ fontSize: "13px" , maxWidth: '172px'}}>
+                      <h6 className="m-auto mt-3" style={{ fontSize: "13px", maxWidth: '172px' }}>
                         {item.title}
                       </h6>
                     </div>
@@ -195,7 +195,7 @@ function Carousal() {
                       className=" shadow_inside pointer"
                       onClick={() => navigate.push(item.link)}
                     >
-                      <img src={item.src} className="rounded w-100 " />
+                      <img loading="lazy" src={item.src} className="rounded w-100 " />
                     </div>
                   ))}
               </Slider>

@@ -13,7 +13,7 @@ export default function Section_3() {
       <Container>
         <div className="row g-0 section_container" id="Task">
           <Col sm={12} md={6} lg={6}>
-            <img
+            <img loading="lazy"
               src={Task.src}
               className="image_manage"
               alt="manage"
@@ -42,7 +42,7 @@ export default function Section_3() {
                     <li key={index}>
                       <div className="align-items-start gap-2">
                         <span>
-                          <img src={yesI.src} className="yes_icon" alt="true" />
+                          <img loading="lazy" src={yesI.src} className="yes_icon" alt="true" />
                         </span>
                         <span className="m-0 mb-2"><p className="p-0 m-0">{item}</p></span>
                       </div>

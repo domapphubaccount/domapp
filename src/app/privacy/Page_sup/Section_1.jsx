@@ -5069,7 +5069,7 @@ export default function Section_1() {
           <div>
             <Row>
               <Col sm={12} lg={4} md={6}>
-                <img src={Privacy.src} alt="privacy" />
+                <img loading="lazy" src={Privacy.src} alt="privacy" />
               </Col>
             </Row>
           </div>
