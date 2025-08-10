@@ -48,6 +48,8 @@ const Carousel = () => {
     arrows: false,
     nextArrow: <CustomArrow direction="next" />,
     prevArrow: <CustomArrow direction="prev" />,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -61,7 +63,7 @@ const Carousel = () => {
       <SliderWrapper>
         <Slider {...settings}>
           {home(lang).sections.review.map((testimonial, index) => (
-            <div className="p-5 h-full mt-4 " key={index} dir={dir}>
+            <div className="p-5 h-full mt-4 " key={index} dir={lang == "ar" ? "rtl" : "ltr"}>
               <Card className="h-full flex flex-column">
                 <div id="testimoniol-qute-up">
                   <img loading="lazy"
@@ -85,7 +87,7 @@ const Carousel = () => {
                   />
                 </div>
 
-                <Quote className={`p-2 mb-5 pt-5 text-center flex-1 flex justify-center items-center`} dir={dir}>”{testimonial.quote}”</Quote>
+                <Quote className={`p-2 mb-5 pt-5 text-center flex-1 flex justify-center items-center`} dir={lang == "ar" ? "rtl" : "ltr"}>{testimonial.quote}</Quote>
 
                 <div className="px-2">
                   <Name>{testimonial.name}</Name>

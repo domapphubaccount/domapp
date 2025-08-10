@@ -793,9 +793,9 @@
   },
   "WINDMASTER_PRICING_PAGE": [
     {
-      "title": "Try For Free",      
+      "title": "Try For Free",
       "price_USD": "0",
-      "price_SAR":"0",
+      "price_SAR": "0",
       "include": "Includes",
       "slice": [
         "1 report"
@@ -807,7 +807,7 @@
     {
       "title": "Package 1",
       "price_USD": "15 ",
-      "price_SAR":"50",
+      "price_SAR": "50",
       "include": "Includes",
       "slice": [
         "10 reports",
@@ -820,7 +820,7 @@
     {
       "title": "Package 2",
       "price_USD": "55 ",
-      "price_SAR":"200",
+      "price_SAR": "200",
       "include": "Includes",
       "slice": [
         "50 reports",
@@ -965,7 +965,7 @@
       "name": "Mohamed Ismail",
       "job": "DAS-METAL",
       "company": "Dome FDH",
-      "title": "DAS-METAL",
+      "title": "CEO, DAS-METAL",
       "quote": "Using CladCut and bondify CRM has made a major impact on our operations. CladCut drastically reduced the time we spend creating cutting lists and CNC files, making it easier to meet deadlines. Meanwhile, bondify CRM improved how we manage tasks and projects, helping us track progress and optimize team performance."
     },
     {
@@ -974,13 +974,6 @@
       "company": "Dome FDH",
       "title": "CEO, PINION ENGINEERING",
       "quote": "One standout feature in CladCut is its ability to generate error-free CNC files directly from the input, which reduced manual mistakes and rework in the workshop. bondify CRM, on the other hand, gave us a full activity history for each client and project, making it easier to manage follow-ups, spot delays, and improve accountability across the team."
-    },
-    {
-      "name": "Bakr Ramzy",
-      "job": "",
-      "company": "",
-      "title": "CEO,",
-      "quote": "Our team saved considerable amounts of time thanks to the recurring billing feature in bondify CRM. Additionally, automating invoice reminders has significantly decreased our late payments."
     },
     {
       "name": "Mohamed Meligy ",
@@ -993,27 +986,34 @@
       "name": "Mustafa Sharaf",
       "job": "Executive Manager",
       "company": "DESIGNAL ENGINEERING",
-      "title": "Executive Manager, DESIGNAL ENGINEERING",
+      "title": "COO, DESIGNAL ENGINEERING",
       "quote": "bondify CRM has shown great potential in managing leads and tracking opportunities efficiently. Meanwhile, ChatPlus has given us complete visibility over our support performance—from agent response times to issue tracking and overall metrics—making it easier to improve service quality and team accountability."
     },
     {
       "name": "Ahmed Morsi",
       "job": "",
       "company": "DAAM CENTER",
-      "title": "CEO, DAAM CENTER",
+      "title": "COO, DAAM CENTER",
       "quote": "Since we started using ChatPlus, our customer service has become faster and more professional. Everything is in one place, and you can access any client’s details in seconds."
     },
     {
-      "name": "Ahmed Kamel",
+      "name": "Abdullah Abu Hashem",
+      "job": "",
+      "company": "DAAM CENTER",
+      "title": "CEO, DAAEM Construction",
+      "quote": "bondify CRM’s projects and milestones keep our team aligned and on track, every deadline met, every detail covered."
+    },
+    {
+      "name": "Mahmoud El Masry",
       "job": "",
       "company": "",
-      "title": "CEO, CPV ARABIA",
-      "quote": "We used many support platforms, but ChatPlus stands out for its simplicity and power. You can manage broadcasts, tickets, and team performance— Now we have full organization of complaints and inquiries, with real-time tracking—nothing gets missed."
+      "title": "Technical Manager, CPV ARABIA",
+      "quote": "We used many support platforms, but ChatPlus stands out for its simplicity' and power. You can manage broadcasts, tickets, and team performance-Now we have full organization of complaints and inquiries, with real-time .tracking-nothing gets missed."
     },
     {
       "name": "Ahmed Tantour",
       "job": "Technical Manager",
-      "company": "CUBEMETAL INDUSTRIES CO.",
+      "company": "CUBEMETAL INDUSTRIES CO",
       "title": "Technical Manager, CUBEMETAL INDUSTRIES CO.",
       "quote": "We appreciate the value CladCut brings to our cladding fabrication workflow. The software has been helpful in improving efficiency and reducing time, particularly in generating accurate cutting lists. The usability is intuitive, and it has supported our technical team in streamlining their tasks. And your team’s support has been excellent."
     },
@@ -1032,8 +1032,8 @@
       "quote": "ChatPlus Smooth Integration into our platform made a clear difference — we started resolving customer issues faster and with less friction, leading to a significant boost in satisfaction levels."
     }
   ],
-    "PARTNERS_TITLE": {
+  "PARTNERS_TITLE": {
     "title": "OUR CLIENTS",
-    "slogan": "Turning Ambitions into Achievements."
+    "slogan": "A legacy shaped by our clients’ success."
   }
 }

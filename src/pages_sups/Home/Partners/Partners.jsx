@@ -15,7 +15,7 @@ function Partners() {
         title_1={home(lang).sections.partners_title.title}
         des_1={home(lang).sections.partners_title.slogan}
       />
-      <div className="partners-logos-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-center items-center my-6">
+      <div className="partners-logos-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 items-center my-6">
         <div className="partner-logo partner-logo-1"></div>
         <div className="partner-logo partner-logo-2"></div>
         <div className="partner-logo partner-logo-3"></div>
@@ -24,7 +24,16 @@ function Partners() {
         <div className="partner-logo partner-logo-6"></div>
         <div className="partner-logo partner-logo-7"></div>
         <div className="partner-logo partner-logo-8"></div>
+
+        {/* Last row in its own flex container */}
+        <div className="md:col-span-4 flex justify-center gap-6">
+          <div className="partner-logo partner-logo-9"></div>
+          <div className="partner-logo partner-logo-10"></div>
+          <div className="partner-logo partner-logo-11"></div>
+        </div>
       </div>
+
+
     </Container>
   );
 }

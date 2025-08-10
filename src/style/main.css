@@ -7591,72 +7591,96 @@ i.icon-2x {
 
 /* Logo 1 */
 .partner-logo-1 {
-  background-image: url("../assets/images/Home_Page/assets/partnersDark/CPV.png");
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/CPV.webp");
 }
 
 .partner-logo-1:hover {
-  background-image: url("../assets/images/Home_Page/assets/partners/CPV.png");
+  background-image: url("../assets/images/Home_Page/assets/partners/CPV.webp");
 }
 
 /* Logo 2 */
 .partner-logo-2 {
-  background-image: url("../assets/images/Home_Page/assets/partnersDark/Dlalat.png");
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/Dlalat.webp");
 }
 
 .partner-logo-2:hover {
-  background-image: url("../assets/images/Home_Page/assets/partners/Dlalat.png");
+  background-image: url("../assets/images/Home_Page/assets/partners/Dlalat.webp");
 }
 
 /* Logo 3 */
 .partner-logo-3 {
-  background-image: url("../assets/images/Home_Page/assets/partnersDark/DOME.png");
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/DOME.webp");
 }
 
 .partner-logo-3:hover {
-  background-image: url("../assets/images/Home_Page/assets/partners/DOME.png");
+  background-image: url("../assets/images/Home_Page/assets/partners/DOME.webp");
 }
 
 /* Logo 4 */
 .partner-logo-4 {
-  background-image: url("../assets/images/Home_Page/assets/partnersDark/Zaytoundev.png");
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/Zaytoundev.webp");
 }
 
 .partner-logo-4:hover {
-  background-image: url("../assets/images/Home_Page/assets/partners/Zaytoundev.png");
+  background-image: url("../assets/images/Home_Page/assets/partners/Zaytoundev.webp");
 }
 
 /* Logo 5 */
 .partner-logo-5 {
-  background-image: url("../assets/images/Home_Page/assets/partnersDark/Pinionlogo.png");
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/Pinionlogo.webp");
 }
 
 .partner-logo-5:hover {
-  background-image: url("../assets/images/Home_Page/assets/partners/Pinionlogo.png");
+  background-image: url("../assets/images/Home_Page/assets/partners/Pinionlogo.webp");
 }
 
 /* Logo 6 */
 .partner-logo-6 {
-  background-image: url("../assets/images/Home_Page/assets/partnersDark/Daam.png");
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/Daam.webp");
 }
 
 .partner-logo-6:hover {
-  background-image: url("../assets/images/Home_Page/assets/partners/Daam.png");
+  background-image: url("../assets/images/Home_Page/assets/partners/Daam.webp");
 }
 
 /* Logo 7 */
 .partner-logo-7 {
-  background-image: url("../assets/images/Home_Page/assets/partnersDark/cube_metal-logo.png");
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/cube_metal-logo.webp");
 }
 
 .partner-logo-7:hover {
-  background-image: url("../assets/images/Home_Page/assets/partners/cube_metal-logo.png");
+  background-image: url("../assets/images/Home_Page/assets/partners/cube_metal-logo.webp");
 }
 
 /* Logo 8 */
 .partner-logo-8 {
-  background-image: url("../assets/images/Home_Page/assets/partnersDark/Designal.png");
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/Designal.webp");
 }
 
 .partner-logo-8:hover {
-  background-image: url("../assets/images/Home_Page/assets/partners/Designal.png");
+  background-image: url("../assets/images/Home_Page/assets/partners/Designal.webp");
+}
+/* Logo 9 */
+.partner-logo-9 {
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/DASMETAL.webp");
+}
+
+.partner-logo-9:hover {
+  background-image: url("../assets/images/Home_Page/assets/partners/DASMETAL.webp");
+}
+/* Logo 9 */
+.partner-logo-10 {
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/EgyTel.webp");
+}
+
+.partner-logo-10:hover {
+  background-image: url("../assets/images/Home_Page/assets/partners/EgyTel.webp");
+}
+/* Logo 9 */
+.partner-logo-11 {
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/Daaem.webp");
+}
+
+.partner-logo-11:hover {
+  background-image: url("../assets/images/Home_Page/assets/partners/Daaem.webp");
 }
