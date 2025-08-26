@@ -7684,3 +7684,36 @@ i.icon-2x {
 .partner-logo-11:hover {
   background-image: url("../assets/images/Home_Page/assets/partners/Daaem.webp");
 }
+
+
+
+/* Logo 9 */
+.partner-logo-12 {
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/Alu.webp");
+}
+
+.partner-logo-12:hover {
+  background-image: url("../assets/images/Home_Page/assets/partners/Alu.webp");
+}
+
+
+
+
+/* Logo 9 */
+.partner-logo-13 {
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/Elem.webp");
+}
+
+.partner-logo-13:hover {
+  background-image: url("../assets/images/Home_Page/assets/partners/Elem.webp");
+}
+
+
+/* Logo 9 */
+.partner-logo-14 {
+  background-image: url("../assets/images/Home_Page/assets/partnersDark/DomApp.webp");
+}
+
+.partner-logo-14:hover {
+  background-image: url("../assets/images/Home_Page/assets/partners/DomApp.webp");
+}
