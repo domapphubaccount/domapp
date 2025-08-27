@@ -49,7 +49,7 @@ function Section_2() {
     onSubmit: (values) => {
       // alert(JSON.stringify(values, null, 2));
       // Handle form submission logic here
-      console.log(values);
+      // console.log(values);
       axios
         .post("https://domapphub.com/Care/contacts.php", values)
         .then((res) => {
