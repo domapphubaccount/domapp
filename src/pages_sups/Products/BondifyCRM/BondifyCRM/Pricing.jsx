@@ -12,32 +12,44 @@ import { useSelector } from "react-redux";
 export default function Pricing() {
   const [priceIcon, setPriceIcon] = useState(false);
   const [currency, setCurrency] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
 
 
+  // useEffect(() => {
+  //   axios
+  //     .get("https://get.geojs.io/v1/ip/country.json")
+  //     .then((response) => {
+  //       console.log("API Response:", response.data);
+
+  //       const country = response.data.country;
+
+  //       if (country === "EG") {
+  //         setCurrency("EGP");
+  //       } else if (["SA", "ARE", "KW", "QA", "BH", "OM"].includes(country)) {
+  //         setCurrency("SAR");
+  //       } else {
+  //         setCurrency("USD");
+  //       }
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       console.log("error", error);
+  //                 setCurrency("USD");
+  //                     setLoading(false);
+
+  //     });
+  // }, []);
+  
   useEffect(() => {
     axios
       .get("https://get.geojs.io/v1/ip/country.json")
       .then((response) => {
-        console.log("API Response:", response.data);
-
-        const country = response.data.country;
-
-        if (country === "EG") {
-          setCurrency("EGP");
-        } else if (["SA", "ARE", "KW", "QA", "BH", "OM"].includes(country)) {
-          setCurrency("SAR");
-        } else {
-          setCurrency("USD");
-        }
-        setLoading(false);
+        country =
+          response.data.name !== "Egypt" && setCurrency("SAR");
       })
       .catch((error) => {
         console.log("error", error);
-                  setCurrency("USD");
-                      setLoading(false);
-
       });
   }, []);
 
@@ -205,20 +217,9 @@ function Monthly({ priceIcon, currency }) {
                       <span>
                         <span   className="font-medium text-gray-500 text-xl align-top ">
                          
-                             {currency === "EGP"
-                            ? standard.Egp
-                            : currency === "SAR"
-                            ? standard.Sar
-                            : standard.Usd}
-                            &thinsp;
+                             {currency}&thinsp;
                         </span>
-                        <span className="text-3xl font-bold">
-                          {currency === "EGP"
-                            ? standard.price_EGY
-                            : currency === "SAR"
-                            ? standard.price_SAR
-                            : standard.price_USD}
-                        </span>
+                       <span className="text-3xl font-bold">{currency==="USD"?standard.price_USD:standard.price_SAR}</span>
                       </span>
                       <span className="text-gray-500 font-medium">
                         / {standard.user}
@@ -367,22 +368,11 @@ function Annual({ priceIcon, currency }) {
                 {standard.title}
               </span>
               <span>
-                 <span   className="font-medium text-gray-500 text-xl align-top ">
+        <span   className="font-medium text-gray-500 text-xl align-top ">
                          
-                             {currency === "EGP"
-                            ? standard.Egp
-                            : currency === "SAR"
-                            ? standard.Sar
-                            : standard.Usd}
-                            &thinsp;
+                             {currency}&thinsp;
                         </span>
-                     <span className="text-3xl font-bold">
-                          {currency === "EGP"
-                            ? standard.price_EGY
-                            : currency === "SAR"
-                            ? standard.price_SAR
-                            : standard.price_USD}
-                        </span>
+                       <span className="text-3xl font-bold">{currency==="USD"?standard.price_USD:standard.price_SAR}</span>
               </span>
               <span className="text-gray-500 font-medium">
                 / {standard.user}
