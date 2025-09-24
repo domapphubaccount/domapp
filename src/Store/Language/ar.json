@@ -1194,19 +1194,19 @@
       }
     ]
   },
-    "FOOTER_CONTANT-INFO": {
-    "title": "Contant Info",
+    "FOOTER_CONTANT_INFO": {
+    "title": "العنوان",
     "slice": [
       {
-        "country": "Egypt",
+        "country": "مصر",
         "addresses": [
-          "Samir Abd El-Raouf, Nasr City, Cairo, Egypt",
-          "2nd Floor, Al-Mottaheda Tower, KFS, Egypt"
+          "سمير عبد الرؤوف، المنطقة الثامنة، مدينة نصر، القاهرة، جمهورية مصر العربية",
+          "الطابق الثاني، برج المتحدة، كفر الشيخ، مصر"
         ]
       },
       {
-        "country": "Netherlands",
-        "addresses": ["Weena 290, 10th floor, 3012 NJ, Rotterdam City Centre"]
+        "country": "هولندا",
+        "addresses": ["مركز أعمال وينا, الدور العاشر, روتردام"]
       }
     ]
   },

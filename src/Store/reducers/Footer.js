@@ -45,7 +45,7 @@ const initialState = {
       community: t("FOOTER_COMMUNITY",lang),
       legal: t("LEGAL",lang),
       dealers: t("EXCLUSIVE_DEALERS",lang),
-      contant: t("CONTANT-INFO",lang)
+      contant: t("FOOTER_CONTANT_INFO",lang)
     };
   },
 };

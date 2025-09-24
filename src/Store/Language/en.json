@@ -916,8 +916,8 @@
     ]
   },
 
-  "FOOTER_CONTANT-INFO": {
-    "title": "Contant Info",
+  "FOOTER_CONTANT_INFO": {
+    "title": "Address",
     "slice": [
       {
         "country": "Egypt",
