@@ -13,12 +13,7 @@ export default function Pricing() {
   const [priceIcon, setPriceIcon] = useState(false);
   const [currency, setCurrency] = useState(null);
   const [loading, setLoading] = useState(true);
-   const { lang } = useSelector((state) => state.languageSlice);
-     const currencyNames = {
-    USD: { en: "USD", ar: "دولار" },
-    SAR: { en: "SAR", ar: "ريال" },
-    EGP: { en: "EGP", ar: "جنيه" },
-  };
+
 
 
   useEffect(() => {
@@ -208,8 +203,14 @@ function Monthly({ priceIcon, currency }) {
                         {standard.title}
                       </span>
                       <span>
-                        <span className="font-medium text-gray-500 text-xl align-top">
-                          {currency}&thinsp;
+                        <span   className="font-medium text-gray-500 text-xl align-top ">
+                         
+                             {currency === "EGP"
+                            ? standard.Egp
+                            : currency === "SAR"
+                            ? standard.Sar
+                            : standard.Usd}
+                            &thinsp;
                         </span>
                         <span className="text-3xl font-bold">
                           {currency === "EGP"
@@ -366,9 +367,15 @@ function Annual({ priceIcon, currency }) {
                 {standard.title}
               </span>
               <span>
-                <span className="font-medium text-gray-500 text-xl align-top">
-                  {currency}&thinsp;
-                </span>
+                 <span   className="font-medium text-gray-500 text-xl align-top ">
+                         
+                             {currency === "EGP"
+                            ? standard.Egp
+                            : currency === "SAR"
+                            ? standard.Sar
+                            : standard.Usd}
+                            &thinsp;
+                        </span>
                      <span className="text-3xl font-bold">
                           {currency === "EGP"
                             ? standard.price_EGY
