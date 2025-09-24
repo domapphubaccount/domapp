@@ -823,8 +823,9 @@
       },
       "standard": {
         "title": "Standard",
-        "price_SAR": "34",
         "price_USD": "9",
+        "price_SAR": "34",
+        "price_EGY": "226",
         "user": "User",
         "include": ["All features in Startup", "Suitable for up to 10 users"],
         "link": "https://wa.me/201501060885",
@@ -850,15 +851,16 @@
         "title": "Standard",
         "price_USD": "7",
         "price_SAR": "27",
+        "price_EGY": "180",
         "user": "User",
-        "include": "All features in Startup",
+        "include": ["All features in Startup", "Suitable for up to 10 users"],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       },
       "enterprise": {
         "title": "Enterprise",
         "price": false,
-        "include": "Get customized features for your organization",
+        "include": "For companies and Enterprises with more than 10 users",
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       }
