@@ -713,16 +713,8 @@
     "title": "Subscriptions",
     "slogan": "This functionality allows you to automatically bill your clients for your products and services. You have the flexibility to set the billing cycle to weekly, monthly, yearly, and more. The system will then automatically generate a new invoice and charge your client's accordingly.",
     "slice": [
-      [
-        "Billing invoices",
-        "Billing interval",
-        "Create invoices"
-      ],
-      [
-        "Transaction document",
-        "Process payment",
-        "Process runs"
-      ]
+      ["Billing invoices", "Billing interval", "Create invoices"],
+      ["Transaction document", "Process payment", "Process runs"]
     ]
   },
   "BONDIFYCRM_PAGE_CARD_6": {
@@ -730,14 +722,8 @@
     "title": "Estimates/Quotations",
     "slogan": "Clients are more inclined to engage in a project when they have an estimate of the total cost involved. The application offers a user-friendly tool for effortlessly creating and emailing estimates to your clients. This enables your clients to conveniently review and accept the estimates provided.",
     "slice": [
-      [
-        "Create, modify estimates.",
-        "Customized templates."
-      ],
-      [
-        "Manage deal amount and products.",
-        "Send estimates automation."
-      ]
+      ["Create, modify estimates.", "Customized templates."],
+      ["Manage deal amount and products.", "Send estimates automation."]
     ]
   },
   "BONDIFYCRM_PAGE_BREAK_2": "INTEGRATED BUSINESS MODALES CREATED FOR SPEED & EFFICIENCY",
@@ -797,9 +783,7 @@
       "price_USD": "0",
       "price_SAR": "0",
       "include": "Includes",
-      "slice": [
-        "1 report"
-      ],
+      "slice": ["1 report"],
       "footer": "",
       "link": "",
       "btn": "TRY FOR FREE"
@@ -809,10 +793,7 @@
       "price_USD": "15 ",
       "price_SAR": "50",
       "include": "Includes",
-      "slice": [
-        "10 reports",
-        "1 Year Subscription"
-      ],
+      "slice": ["10 reports", "1 Year Subscription"],
       "footer": "Price Excluding VAT",
       "link": "",
       "btn": "CONTACT SALES"
@@ -822,10 +803,7 @@
       "price_USD": "55 ",
       "price_SAR": "200",
       "include": "Includes",
-      "slice": [
-        "50 reports",
-        "1 Year Subscription"
-      ],
+      "slice": ["50 reports", "1 Year Subscription"],
       "footer": "Price Excluding VAT",
       "link": "",
       "btn": "CONTACT SALES"
@@ -848,14 +826,14 @@
         "price_SAR": "34",
         "price_USD": "9",
         "user": "User",
-        "include": "All features in Startup",
+        "include": ["All features in Startup", "Suitable for up to 10 users"],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       },
       "enterprise": {
         "title": "Enterprise",
         "price": false,
-        "include": "Get customized features for your organization",
+        "include": "For companies and Enterprises with more than 10 users",
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       }
@@ -919,9 +897,7 @@
       },
       {
         "title": "Facade Fabrication",
-        "slice": [
-          "Grasshopper Modules"
-        ]
+        "slice": ["Grasshopper Modules"]
       }
     ]
   },
@@ -936,6 +912,23 @@
       {
         "title": "Blog",
         "link": "http://blog.domapphub.com"
+      }
+    ]
+  },
+
+  "FOOTER_CONTANT-INFO": {
+    "title": "Contant Info",
+    "slice": [
+      {
+        "country": "Egypt",
+        "addresses": [
+          "Samir Abd El-Raouf, Nasr City, Cairo, Egypt",
+          "2nd Floor, Al-Mottaheda Tower, KFS, Egypt"
+        ]
+      },
+      {
+        "country": "Netherlands",
+        "addresses": ["Weena 290, 10th floor, 3012 NJ, Rotterdam City Centre"]
       }
     ]
   },

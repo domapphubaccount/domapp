@@ -44,7 +44,8 @@ const initialState = {
       social: t("FOOTER_SOCIAL",lang),
       community: t("FOOTER_COMMUNITY",lang),
       legal: t("LEGAL",lang),
-      dealers: t("EXCLUSIVE_DEALERS",lang)
+      dealers: t("EXCLUSIVE_DEALERS",lang),
+      contant: t("CONTANT-INFO",lang)
     };
   },
 };

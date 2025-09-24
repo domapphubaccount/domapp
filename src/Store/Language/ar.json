@@ -850,14 +850,14 @@
         "price_SAR": "34",
         "price_USD": "9",
         "user": "مستخدم",
-        "include": "كافة التطبيقات والمميزات متاحة",
+        "include": ["كافة التطبيقات والمميزات متاحة" , "مناسبة حتى 10 مستخدمين"],
         "link": "https://wa.me/201501060885",
         "btn": "تواصل مع المبيعات"
       },
       "enterprise": {
         "title": "مخصص للمؤسسات",
         "price": false,
-        "include": "احصل على مزايا مخصصة لمؤسستك",
+        "include": "مخصصة للشركات التي تضم أكثر من 10 مستخدمين",
         "link": "https://wa.me/201501060885",
         "btn": "تواصل مع المبيعات"
       }
@@ -1191,6 +1191,22 @@
         "slice": [
           "Grasshopper Modules"
         ]
+      }
+    ]
+  },
+    "FOOTER_CONTANT-INFO": {
+    "title": "Contant Info",
+    "slice": [
+      {
+        "country": "Egypt",
+        "addresses": [
+          "Samir Abd El-Raouf, Nasr City, Cairo, Egypt",
+          "2nd Floor, Al-Mottaheda Tower, KFS, Egypt"
+        ]
+      },
+      {
+        "country": "Netherlands",
+        "addresses": ["Weena 290, 10th floor, 3012 NJ, Rotterdam City Centre"]
       }
     ]
   },

@@ -26,17 +26,17 @@ function Partners() {
         <div className="partner-logo partner-logo-8"></div>
 
         {/* Last row in its own flex container */}
-          <div className="partner-logo partner-logo-9"></div>
-          <div className="partner-logo partner-logo-10"></div>
-          <div className="partner-logo partner-logo-11"></div>
-          <div className="partner-logo partner-logo-12"></div>
+        <div className="partner-logo partner-logo-9"></div>
+        <div className="partner-logo partner-logo-10"></div>
+        <div className="partner-logo partner-logo-11"></div>
+        <div className="partner-logo partner-logo-12"></div>
+
         <div className="md:col-span-4 flex justify-center gap-6">
-          <div className="partner-logo partner-logo-13"></div>
           {/* <div className="partner-logo partner-logo-14"></div> */}
+          <div className="partner-logo partner-logo-13"></div>
+          <div className="partner-logo partner-logo-15"></div>
         </div>
       </div>
-
-
     </Container>
   );
 }

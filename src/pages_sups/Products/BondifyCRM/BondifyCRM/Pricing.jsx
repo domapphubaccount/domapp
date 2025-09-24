@@ -174,12 +174,30 @@ function Monthly({ priceIcon, currency }) {
                       </span>
                     </div>
                   </div>
-                  <ul className="mb-7 font-medium text-gray-500">
-                    <li className="flex text-lg mb-2">
-                      <img loading="lazy" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-                      <span className="mx-3 text-black">{standard.include}</span>
-                    </li>
-                  </ul>
+                 <ul>
+  {Array.isArray(standard.include) ? (
+    standard.include.map((item, index) => (
+      <li key={index} className="flex text-lg mb-2">
+        <img
+          loading="lazy"
+          src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+          alt="check"
+        />
+        <span className="mx-3 text-black">{item}</span>
+      </li>
+    ))
+  ) : (
+    <li className="flex text-lg mb-2">
+      <img
+        loading="lazy"
+        src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+        alt="check"
+      />
+      <span className="mx-3 text-black">{standard.include}</span>
+    </li>
+  )}
+</ul>
+
                   <Link
                     href={standard.link}
                     className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
