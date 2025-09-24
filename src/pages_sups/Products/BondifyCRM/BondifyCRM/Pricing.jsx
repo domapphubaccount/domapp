@@ -13,6 +13,13 @@ export default function Pricing() {
   const [priceIcon, setPriceIcon] = useState(false);
   const [currency, setCurrency] = useState(null);
   const [loading, setLoading] = useState(true);
+   const { lang } = useSelector((state) => state.languageSlice);
+     const currencyNames = {
+    USD: { en: "USD", ar: "دولار" },
+    SAR: { en: "SAR", ar: "ريال" },
+    EGP: { en: "EGP", ar: "جنيه" },
+  };
+
 
   useEffect(() => {
     axios
