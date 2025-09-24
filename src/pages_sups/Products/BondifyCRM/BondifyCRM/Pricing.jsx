@@ -6,57 +6,15 @@ import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
 import Loading_page from "@/components/Loading_page/Loading_page";
 import Link from "next/link";
-import axios from "axios";
 import { useSelector } from "react-redux";
+import useInitCountry from "@/store/useInitCountry";
 
 export default function Pricing() {
   const [priceIcon, setPriceIcon] = useState(false);
-  const [currency, setCurrency] = useState("USD");
-  const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   axios
-  //     .get("https://get.geojs.io/v1/ip/country.json")
-  //     .then((response) => {
-  //       console.log("API Response:", response.data);
+  useInitCountry();
 
-  //       const country = response.data.country;
-
-  //       if (country === "EG") {
-  //         setCurrency("EGP");
-  //       } else if (["SA", "ARE", "KW", "QA", "BH", "OM"].includes(country)) {
-  //         setCurrency("SAR");
-  //       } else {
-  //         setCurrency("USD");
-  //       }
-  //       setLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       console.log("error", error);
-  //                 setCurrency("USD");
-  //                     setLoading(false);
-
-  //     });
-  // }, []);
-
-  useEffect(() => {
-    axios
-      .get("https://get.geojs.io/v1/ip/country.json")
-      .then((response) => {
-        country = response.data.name !== "Egypt" && setCurrency("SAR");
-      })
-      .catch((error) => {
-        console.log("error", error);
-      });
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex justify-center items-center">
-        <Loading_page />
-      </div>
-    );
-  }
+  const { currency, country } = useSelector((state) => state.countryRed);
 
   return (
     <>
@@ -216,9 +174,11 @@ function Monthly({ priceIcon, currency }) {
                           {currency}&thinsp;
                         </span>
                         <span className="text-3xl font-bold">
-                          {currency === "USD"
-                            ? standard.price_USD
-                            : standard.price_SAR}
+                          {currency === "EGP"
+                            ? standard.price_EGY
+                            : currency === "SAR"
+                            ? standard.price_SAR
+                            : standard.price_USD}
                         </span>
                       </span>
                       <span className="text-gray-500 font-medium">
@@ -372,7 +332,11 @@ function Annual({ priceIcon, currency }) {
                   {currency} &thinsp;
                 </span>
                 <span className="text-3xl font-bold">
-                  {currency === "USD" ? standard.price_USD : standard.price_SAR}
+                  {currency === "EGP"
+                    ? standard.price_EGY
+                    : currency === "SAR"
+                    ? standard.price_SAR
+                    : standard.price_USD}
                 </span>
               </span>
               <span className="text-gray-500 font-medium">
