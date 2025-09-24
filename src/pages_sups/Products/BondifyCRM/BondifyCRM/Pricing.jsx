@@ -4,17 +4,15 @@ import { Col, Container, Row } from "reactstrap";
 import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
-import Loading_page from "@/components/Loading_page/Loading_page"
+import Loading_page from "@/components/Loading_page/Loading_page";
 import Link from "next/link";
 import axios from "axios";
 import { useSelector } from "react-redux";
 
 export default function Pricing() {
   const [priceIcon, setPriceIcon] = useState(false);
-  const [currency, setCurrency] = useState(null);
+  const [currency, setCurrency] = useState("USD");
   const [loading, setLoading] = useState(false);
-
-
 
   // useEffect(() => {
   //   axios
@@ -40,23 +38,22 @@ export default function Pricing() {
 
   //     });
   // }, []);
-  
+
   useEffect(() => {
     axios
       .get("https://get.geojs.io/v1/ip/country.json")
       .then((response) => {
-        country =
-          response.data.name !== "Egypt" && setCurrency("SAR");
+        country = response.data.name !== "Egypt" && setCurrency("SAR");
       })
       .catch((error) => {
         console.log("error", error);
       });
   }, []);
 
-   if (loading) {
+  if (loading) {
     return (
       <div className="min-h-screen flex justify-center items-center">
-        <Loading_page/>
+        <Loading_page />
       </div>
     );
   }
@@ -215,11 +212,14 @@ function Monthly({ priceIcon, currency }) {
                         {standard.title}
                       </span>
                       <span>
-                        <span   className="font-medium text-gray-500 text-xl align-top ">
-                         
-                             {currency}&thinsp;
+                        <span className="font-medium text-gray-500 text-xl align-top ">
+                          {currency}&thinsp;
                         </span>
-                       <span className="text-3xl font-bold">{currency==="USD"?standard.price_USD:standard.price_SAR}</span>
+                        <span className="text-3xl font-bold">
+                          {currency === "USD"
+                            ? standard.price_USD
+                            : standard.price_SAR}
+                        </span>
                       </span>
                       <span className="text-gray-500 font-medium">
                         / {standard.user}
@@ -368,11 +368,12 @@ function Annual({ priceIcon, currency }) {
                 {standard.title}
               </span>
               <span>
-        <span   className="font-medium text-gray-500 text-xl align-top ">
-                         
-                             {currency}&thinsp;
-                        </span>
-                       <span className="text-3xl font-bold">{currency==="USD"?standard.price_USD:standard.price_SAR}</span>
+                <span className="font-medium text-gray-500 text-xl align-top ">
+                  {currency} &thinsp;
+                </span>
+                <span className="text-3xl font-bold">
+                  {currency === "USD" ? standard.price_USD : standard.price_SAR}
+                </span>
               </span>
               <span className="text-gray-500 font-medium">
                 / {standard.user}
