@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container } from "reactstrap";
-import Time from "@/assets/images/BondifyCRM/Features/repay.jpg";
+import Time from "@/assets/images/BondifyCRM/Features/repay.webp";
 import { useSelector } from "react-redux";
 
 export default function Section_10() {
