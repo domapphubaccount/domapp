@@ -8,8 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import StoreProvider from "@/Store/Provider/StoreProvider";
 import Script from "next/script";
 import { AOSInit } from "@/components/Animation/aos";
-
-
+import ClientWrapper from "@/components/ClientWrapper/ClientWrapper";
 
 export const metadata = {
   title: "DomApp",
@@ -18,7 +17,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
@@ -90,11 +89,14 @@ export default function RootLayout({ children }) {
           `,
         }}
       />
-      <body suppressHydrationWarning={true} style={{ fontFamily: "Alexandria" }} >
-        <StoreProvider>{children}</StoreProvider>
-
-
-        <AOSInit />
+      <body
+        suppressHydrationWarning={true}
+        style={{ fontFamily: "Alexandria" }}
+      >
+        <StoreProvider>
+          <ClientWrapper>{children}</ClientWrapper>
+          <AOSInit />
+        </StoreProvider>
         {/* <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-WHTW6XJK"

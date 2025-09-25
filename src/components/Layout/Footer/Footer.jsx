@@ -13,8 +13,8 @@ export default function Footer() {
   const { footer } = useSelector((state) => state.footerRed);
   const [isMounted, setIsMounted] = useState(false);
   const dispatch = useDispatch();
-  let date = new Date()
-  let year = date.getFullYear()
+  let date = new Date();
+  let year = date.getFullYear();
 
   useEffect(() => {
     setIsMounted(true);
@@ -105,7 +105,7 @@ export default function Footer() {
                                     <small>{item}</small>
                                   </li>
                                 ))}
-                              </ul>  
+                              </ul>
                             </Accordion>
                           </li>
                         ))}
@@ -281,6 +281,29 @@ export default function Footer() {
                           </svg>
                         </Link>
                       </div>
+                    </div>
+
+                    {/* DomApp Section */}
+
+                    <div className="col-span-2">
+                      <h5 className="font-semibold text-sm mb-2">
+                        {footer(lang).contant.title}
+                      </h5>
+                      <ul className="space-y-3">
+  {footer(lang).contant.slice.map((item, index) => (
+    <li key={index}>
+      <strong>{item.country}</strong>
+      <ul className="ml-4 list-disc">
+        {item.addresses.map((address, addrIndex) => (
+          <li key={addrIndex} className="text-sm text-gray-700">
+            {address}
+          </li>
+        ))}
+      </ul>
+    </li>
+  ))}
+</ul>
+
                     </div>
                   </div>
                 </div>
