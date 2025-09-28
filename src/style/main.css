@@ -710,7 +710,7 @@ footer .footer a {
   background-position: center;
   opacity: 0;
   transform: scale(1.2); /* Start slightly zoomed in */
-  animation: zoomSlide 9s infinite;
+  animation: zoomSlide 15s infinite;
 }
 
 /* Assign background images to slides */
@@ -721,12 +721,12 @@ footer .footer a {
 
 .home_bannar .slide:nth-child(2) {
   background-image: url("../assets/images/Home_Page/homeBanner2.jpg");
-  animation-delay: 3s;
+  animation-delay: 5s;
 }
 
 .home_bannar .slide:nth-child(3) {
   background-image: url("../assets/images/Home_Page/homebanner3.jpg");
-  animation-delay: 6s;
+  animation-delay: 10s;
 }
 
 /* Keyframes for zoom-out and fade effect */
