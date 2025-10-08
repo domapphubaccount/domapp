@@ -16,10 +16,10 @@ export default function Bannar() {
     >
       <div>
         <div className={`home_bannar`}>
-          <div class="slideshow">
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
+          <div className="slideshow">
+            <div className="slide"></div>
+            <div className="slide"></div>
+            <div className="slide"></div>
           </div>
           <div className="dark_bannar"></div>
           <div className="bannar_container">
