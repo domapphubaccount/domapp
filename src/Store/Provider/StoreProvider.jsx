@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Provider } from "react-redux";
-import { store } from "../Store";
+import { store } from "../store";
 import Contact from "@/components/Contact/Contact";
 import { AOSInit } from "@/components/Animation/aos";
 import ScrollToTop from "react-scroll-to-top";

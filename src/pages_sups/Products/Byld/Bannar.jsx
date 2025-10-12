@@ -5,7 +5,7 @@ import subBannar from "@/assets/images/Byld/dashboard.png";
 import byldicon from "@/assets/images/Byld/logobyld.png";
 import blob from "@/assets/images/Byld/blob-tear.svg";
 import Link from "next/link";
-import { contact_page } from "@/Store/Main/links/links";
+import { contact_page } from "@/store/Main/links/links";
 import { useSelector } from "react-redux";
 
 function Bannar() {
@@ -21,7 +21,12 @@ function Bannar() {
         <div className="pt-12 text-center">
           <div className="max-w-2xl mx-auto mb-8 text-center">
             <div className="flex justify-center">
-              <img alt="byld banner" loading="lazy" src={byldicon.src} width={300} />
+              <img
+                alt="byld banner"
+                loading="lazy"
+                src={byldicon.src}
+                width={300}
+              />
             </div>
             {
               <p
@@ -81,7 +86,8 @@ function Bannar() {
               animationName: "fadeInRight",
             }}
           >
-            <img loading="lazy"
+            <img
+              loading="lazy"
               className="absolute top-0 left-0 w-40 -ml-12 -mt-12"
               src={blob.src}
               alt=""
@@ -89,7 +95,8 @@ function Bannar() {
           </div>
         </div>
 
-        <img loading="lazy"
+        <img
+          loading="lazy"
           src="assets/imgs/elements/pattern.WebP"
           alt=""
           style={{ minHeight: "600px" }}
@@ -98,7 +105,8 @@ function Bannar() {
           className="absolute"
           style={{ top: "9%", left: "14%", width: "80%", height: "70%" }}
         >
-          <img loading="lazy"
+          <img
+            loading="lazy"
             className="jump rounded wow animate__animated animate__fadeInUp animated"
             src={subBannar.src}
             alt=""

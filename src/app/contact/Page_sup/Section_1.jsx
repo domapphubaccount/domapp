@@ -15,7 +15,7 @@ import * as Yup from "yup";
 import Contact from "@/assets/images/Products_Page/contact/contact.jpg";
 import axios from "axios";
 import { useSelector } from "react-redux";
-import { linksData } from "@/Store/Main/links/linkstider";
+import { linksData } from "@/store/Main/links/linkstider";
 
 export default function Section_1() {
   const [module, setModule] = useState(false);
@@ -44,12 +44,10 @@ export default function Section_1() {
 
   const handleSubmit = (values, actions) => {
     // Handle form submission logic here
-    axios
-      .post(linksData.contact.form_api, values)
-      .then((res) => {
-        setModule(true);
-        console.log("done");
-      });
+    axios.post(linksData.contact.form_api, values).then((res) => {
+      setModule(true);
+      console.log("done");
+    });
     console.log(values);
     actions.setSubmitting(false);
   };

@@ -5,7 +5,7 @@ import { Container } from "reactstrap";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
-import { contact_Toggle } from "@/Store/reducers/Header";
+import { contact_Toggle } from "@/store/reducers/Header";
 import dynamic from "next/dynamic";
 import LanguageDropdown from "../Footer/Lang";
 
@@ -34,7 +34,8 @@ export default function Header() {
           ref={headerScrol}
         >
           <div className="d-flex items-center">
-            <Image loading="lazy"
+            <Image
+              loading="lazy"
               onClick={() => router.push("/")}
               src={header(lang).logo}
               alt="main logo"
@@ -89,7 +90,8 @@ export default function Header() {
                                         href={product.link}
                                         shallow
                                       >
-                                        <Image loading="lazy"
+                                        <Image
+                                          loading="lazy"
                                           width={15}
                                           height={15}
                                           src={product.img.src}

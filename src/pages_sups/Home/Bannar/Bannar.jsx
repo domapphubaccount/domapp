@@ -1,4 +1,4 @@
-import { linksData } from "@/Store/Main/links/linkstider";
+import { linksData } from "@/store/Main/links/linkstider";
 import { League_Spartan } from "next/font/google";
 import { useSelector } from "react-redux";
 

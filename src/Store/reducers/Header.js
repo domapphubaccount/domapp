@@ -10,7 +10,7 @@ import {
   logo,
   rdappIcon,
   windmasterIcon,
-} from "@/Store/Main/assets/images";
+} from "@/store/Main/assets/images";
 import {
   about_section,
   bondifycrm_page,
@@ -25,7 +25,7 @@ import {
   whatwedo_section,
   why_us_section,
   windmaster_page,
-} from "@/Store/Main/links/links";
+} from "@/store/Main/links/links";
 import en from "@/Store/Language/en.json";
 import ar from "@/Store/Language/ar.json";
 
@@ -50,87 +50,87 @@ const initialState = {
           link: `/${products_section}`,
           list: [
             {
-              title: t("Design_Software",lang),
+              title: t("Design_Software", lang),
               sub_title: false,
               products: [
                 {
-                  name: t("CladCut",lang),
+                  name: t("CladCut", lang),
                   img: cladIcon,
                   link: cladcut_page,
                 },
                 {
-                  name: t("Wind_Master",lang),
+                  name: t("Wind_Master", lang),
                   img: windmasterIcon,
                   link: windmaster_page,
                 },
               ],
             },
             {
-              title: t("Business_Adminstration",lang),
+              title: t("Business_Adminstration", lang),
               sub_title: false,
               products: [
                 {
-                  name: t("bondify_CRM",lang),
+                  name: t("bondify_CRM", lang),
                   img: bondifycrmIcon,
                   link: bondifycrm_page,
                 },
               ],
             },
             {
-              title: t("Risk_Assessment",lang),
-              sub_title: t("comply_with_SBC",lang),
+              title: t("Risk_Assessment", lang),
+              sub_title: t("comply_with_SBC", lang),
               products: [
                 {
-                  name: t("RDAPP",lang),
+                  name: t("RDAPP", lang),
                   img: rdappIcon,
                   link: rdapp_page,
                 },
               ],
             },
             {
-              title: t("Communication",lang),
+              title: t("Communication", lang),
               sub_title: false,
               products: [
                 {
-                  name: t("ChatPlus",lang),
+                  name: t("ChatPlus", lang),
                   img: chatplusIcon,
                   link: chatplus_page,
                 },
               ],
             },
             {
-              title: t("Developement_Services",lang),
+              title: t("Developement_Services", lang),
               sub_title: false,
               products: [
                 {
-                  name: t("Custom_Software",lang),
+                  name: t("Custom_Software", lang),
                   img: customizationIcon,
                   link: customization_page,
                 },
               ],
             },
             {
-              title: t("Facade_Fabrication",lang),
+              title: t("Facade_Fabrication", lang),
               sub_title: false,
               products: [
                 {
-                  name: t("Grasshopper_Modules",lang),
+                  name: t("Grasshopper_Modules", lang),
                   img: grassIcon,
                   link: grasshopper_page,
                 },
               ],
             },
             {
-              title: t("generative_ai",lang),
+              title: t("generative_ai", lang),
               sub_title: false,
               products: [
                 {
-                  name: t("BYLD",lang),
+                  name: t("BYLD", lang),
                   img: byldIcon,
                   link: byld_page,
-                }
-              ]
-            }
+                },
+              ],
+            },
           ],
         },
         {

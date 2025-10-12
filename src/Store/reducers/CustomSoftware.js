@@ -1,6 +1,6 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import { contact_page, whatsapp } from "@/Store/Main/links/links";
+import { contact_page, whatsapp } from "@/store/Main/links/links";
 import en from "@/Store/Language/en.json";
 import ar from "@/Store/Language/ar.json";
 import { byld_icon1, byld_icon2, byld_icon3 } from "../Main/assets/images";
@@ -17,13 +17,13 @@ const initialState = {
       sections: {
         bannar: {
           contact_btn: t("CUSTOM_SOFTWARE_PAGE_CONTACT_BTN", lang),
-          slogan: t("CUSTOM_SOFTWARE_PAGE_SLOGAN",lang)
+          slogan: t("CUSTOM_SOFTWARE_PAGE_SLOGAN", lang),
         },
-        About_us: t("CUSTOM_SOFTWARE_PAGE_ABOUT",lang),
-        Services: t("CUSTOM_SOFTWARE_PAGE_SERVICES",lang),
-        Contact: t("CUSTOM_SOFTWARE_PAGE_CONTACT",lang),
+        About_us: t("CUSTOM_SOFTWARE_PAGE_ABOUT", lang),
+        Services: t("CUSTOM_SOFTWARE_PAGE_SERVICES", lang),
+        Contact: t("CUSTOM_SOFTWARE_PAGE_CONTACT", lang),
       },
-  }
+    };
   },
 };
 

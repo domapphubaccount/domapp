@@ -2,7 +2,7 @@
 import React, { useMemo, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useDispatch, useSelector } from "react-redux";
-import { handle_language } from "@/Store/reducers/Language";
+import { handle_language } from "@/store/reducers/Language";
 import Image from "next/image";
 import USIcon from "@/assets/images/flagicons/united-states.png";
 import SAIcon from "@/assets/images/flagicons/saudi-arabia.png";

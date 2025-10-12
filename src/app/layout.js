@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import StoreProvider from "@/Store/Provider/StoreProvider";
+import StoreProvider from "@/store/Provider/StoreProvider";
 import Script from "next/script";
 import { AOSInit } from "@/components/Animation/aos";
 import ClientWrapper from "@/components/ClientWrapper/ClientWrapper";

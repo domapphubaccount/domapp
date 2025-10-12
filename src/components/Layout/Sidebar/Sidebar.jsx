@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-import { contact_Toggle } from "@/Store/reducers/Header";
+import { contact_Toggle } from "@/store/reducers/Header";
 import LanguageDropdown from "../Footer/Lang";
 
 export default function Sidebar({ items }) {
@@ -35,8 +35,9 @@ export default function Sidebar({ items }) {
         viewBox="0 0 24 24"
         strokeWidth={2}
         stroke="currentColor"
-        className={`${id === open ? "rotate-180" : ""
-          } h-5 w-5 transition-transform`}
+        className={`${
+          id === open ? "rotate-180" : ""
+        } h-5 w-5 transition-transform`}
       >
         <path
           strokeLinecap="round"
@@ -60,7 +61,8 @@ export default function Sidebar({ items }) {
       >
         <div className="mb-4 flex items-center justify-between p-1">
           <Typography variant="h5" color="white">
-            <Image loading="lazy"
+            <Image
+              loading="lazy"
               src={header(lang).logo.src}
               width={120}
               height={50}
@@ -134,7 +136,8 @@ export default function Sidebar({ items }) {
                                   href={product.link}
                                   className="flex items-center no-underline	"
                                 >
-                                  <Image loading="lazy"
+                                  <Image
+                                    loading="lazy"
                                     src={product.img}
                                     width={20}
                                     height={20}
@@ -155,7 +158,9 @@ export default function Sidebar({ items }) {
                 )}
               </Accordion>
             ))}
-          <div className="text-end"><LanguageDropdown /></div>
+          <div className="text-end">
+            <LanguageDropdown />
+          </div>
         </List>
       </Drawer>
     </React.Fragment>

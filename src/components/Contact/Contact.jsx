@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Tooltip } from "reactstrap";
 import cross from "@/assets/images/Home_Page/cross.png";
 import { useDispatch, useSelector } from "react-redux";
-import { contact_Toggle } from "@/Store/reducers/Header";
+import { contact_Toggle } from "@/store/reducers/Header";
 
 export default function Contact() {
   const [modal, setModal] = useState(false);
@@ -226,7 +226,11 @@ export default function Contact() {
           className="contact_circle z-1 position-relative pointer"
           onClick={() => dispatch(contact_Toggle(!contact_toggle))}
         >
-          <img loading="lazy" src={!contact_toggle ? cont.src : cross.src} alt="" />
+          <img
+            loading="lazy"
+            src={!contact_toggle ? cont.src : cross.src}
+            alt=""
+          />
         </div>
       </div>
       <Email modal={modal} setModal={setModal} />
