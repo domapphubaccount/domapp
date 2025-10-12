@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Logo from '@/assets/images/Header/dark-logo.Webp'
+import Logo from '@/assets/images/Header/dark-logo.png'
 
 export default function Loading_page() {
   return (
