@@ -1,4 +1,4 @@
-import Head from "next/head";
+// import Head from "next/head";
 import "./globals.css";
 import "../style/main.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -19,12 +19,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="public/images/favicon.ico" type="image/x-icon" />
         {/* <link rel="shortcut icon" href="/images/favicon.ico" /> */}
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      </Head>
+      </>
       <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-0P9TXL8XCE"
