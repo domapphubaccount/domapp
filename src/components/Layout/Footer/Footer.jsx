@@ -5,7 +5,7 @@ import LanguageDropdown from "./Lang";
 import { useDispatch, useSelector } from "react-redux";
 import { Suspense, useEffect, useState } from "react";
 import { Accordion, useAccordionButton } from "react-bootstrap";
-import { contact_Toggle } from "@/Store/reducers/Header";
+import { contact_Toggle } from "@/store/reducers/Header";
 
 export default function Footer() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -184,7 +184,28 @@ export default function Footer() {
                       <div className="text-sm mb-4">
                         <p className="mb-4">{footer(lang).summary[0]}</p>
                         {/* <><div className="my-3"></div></> */}
-                        <p>{footer(lang).summary[1]}</p>
+                        <div className="col-span-2">
+                          <h5 className="font-semibold text-sm mb-2">
+                            {footer(lang).contant.title}
+                          </h5>
+                          <ul className="space-y-3">
+                            {footer(lang).contant.slice.map((item, index) => (
+                              <li key={index}>
+                                <strong>{item.country}</strong>
+                                <ul className="ml-4 list-none">
+                                  {item.addresses.map((address, addrIndex) => (
+                                    <li
+                                      key={addrIndex}
+                                      className="text-sm font-light before:content-['-'] before:mr-2"
+                                    >
+                                      {address}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
 
                       {/* Social Media Icons */}
@@ -281,29 +302,6 @@ export default function Footer() {
                           </svg>
                         </Link>
                       </div>
-                    </div>
-
-                    {/* DomApp Section */}
-
-                    <div className="col-span-2">
-                      <h5 className="font-semibold text-sm mb-2">
-                        {footer(lang).contant.title}
-                      </h5>
-                      <ul className="space-y-3">
-  {footer(lang).contant.slice.map((item, index) => (
-    <li key={index}>
-      <strong>{item.country}</strong>
-      <ul className="ml-4 list-disc">
-        {item.addresses.map((address, addrIndex) => (
-          <li key={addrIndex} className="text-sm text-gray-700">
-            {address}
-          </li>
-        ))}
-      </ul>
-    </li>
-  ))}
-</ul>
-
                     </div>
                   </div>
                 </div>

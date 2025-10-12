@@ -138,8 +138,6 @@ header {
 
   .nav_active {
     box-shadow: 0px 2px 12px #4d4d4d8f;
-    /* background-color: rgba(102, 102, 102, 0.341); */
-    /* background: linear-gradient(257deg, rgb(41 41 86 / 73%) 0%, rgb(105 111 137 / 30%) 40%, rgb(163 196 235 / 0%) 100%); */
     border-color: #fff;
     outline: 1px solid #000;
     padding: 10px 20px;
@@ -455,10 +453,10 @@ header {
 
 .bp-element-image-box.layout-gradient.color-2 .image-box::before {
   background: #dee5f0;
-  background: -webkit-linear-gradient(left, #f8c76c, #515a63);
-  background: -o-linear-gradient(left, #f8c76c, #515a63);
-  background: -moz-linear-gradient(left, #f8c76c, #515a63);
-  background: linear-gradient(left, #f8c76c, #515a63);
+  background: -webkit-linear-gradient(to right, #f8c76c, #515a63);
+  background: -o-linear-gradient(to right, #f8c76c, #515a63);
+  background: -moz-linear-gradient(to right, #f8c76c, #515a63);
+  background: linear-gradient(to right, #f8c76c, #515a63);
 }
 
 .bp-element-image-box.layout-gradient .image-box .content .title {
@@ -612,98 +610,146 @@ footer .footer a {
   font-family: "Elhadary";
 }
 
+/* Home Page */
 .home_bannar {
-  /* background-image: url("../assets/images/Home_Page/bannar.webp"); */
-  animation: slider 15s infinite ease-in-out;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
   height: 100vh;
   position: relative;
   overflow: hidden;
   background-attachment: fixed;
-  /* font-family: "League Spartan", sans-serif; */
   font-optical-sizing: auto;
   font-style: normal;
+}
 
+.home_bannar .bannar_container h1 {
+  font-family: "Elhadary";
+}
 
-  .dark_bannar {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #000000a1;
-    top: 0;
-    left: 0;
-  }
+.home_bannar .dark_bannar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a1;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 
-  .bannar_container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    z-index: 100;
-    position: relative;
+.home_bannar .bannar_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  z-index: 100;
+  position: relative;
+}
 
-    div {
-      h1 {
-        font-size: 4.5rem;
-        font-weight: bold;
-        margin-bottom: 32px;
-        /* text-shadow: 2px 2px 1px #8c8b8b; */
-      }
+.home_bannar .bannar_container div h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
 
-      @media (max-width: 500px) {
-        h1 {
-          font-size: 3.5rem;
-        }
-      }
-
-      p {
-        /* text-shadow: 2px 2px 1px #8c8b8b; */
-        margin-bottom: 32px;
-        font-size: 1.2rem;
-      }
-
-      a {
-        text-decoration: none;
-        border: 2px solid white;
-        color: #fff;
-        border-radius: 50px;
-        padding: 10px 30px;
-        font-weight: bold;
-        margin: 9.6px;
-        transition: 1s;
-      }
-
-      .get_started:hover {
-        background-color: #fff;
-        color: #000;
-      }
-    }
-  }
-
-  .swction_wave {
-    position: absolute;
-    bottom: -60px;
-    left: 0;
+@media (max-width: 500px) {
+  .home_bannar .bannar_container div h1 {
+    font-size: 3.5rem;
   }
 }
 
+.home_bannar .bannar_container div p {
+  margin-bottom: 32px;
+  font-size: 1.2rem;
+}
 
-  @keyframes slider {
-    0% {
-      background-image: url("../assets/images/Home_Page/bannar.webp");
-    }
-    50% {
-      background-image: url("../assets/images/Home_Page/homeBanner2.jpg");
-    }
-    100% {
-      background-image: url("../assets/images/Home_Page/homebanner3.jpg");
-    }
+.home_bannar .bannar_container div a {
+  text-decoration: none;
+  border: 2px solid white;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: bold;
+  margin: 9.6px;
+  transition: 1s;
+}
+
+.home_bannar .bannar_container div .get_started:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.home_bannar .swction_wave {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  z-index: 2;
+}
+
+/* Slideshow container for images */
+.home_bannar .slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Individual slide */
+.home_bannar .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.2); /* Start slightly zoomed in */
+  animation: zoomSlide 15s infinite;
+}
+
+/* Assign background images to slides */
+.home_bannar .slide:nth-child(1) {
+  background-image: url("../assets/images/Home_Page/bannar.webp");
+  animation-delay: 0s;
+}
+
+.home_bannar .slide:nth-child(2) {
+  background-image: url("../assets/images/Home_Page/homeBanner2.jpg");
+  animation-delay: 5s;
+}
+
+.home_bannar .slide:nth-child(3) {
+  background-image: url("../assets/images/Home_Page/homebanner3.jpg");
+  animation-delay: 10s;
+}
+
+/* Keyframes for zoom-out and fade effect */
+@keyframes zoomSlide {
+  0% {
+    opacity: 0;
+    transform: scale(1.5); /* Start zoomed in */
   }
+  10% {
+    opacity: 1;
+    transform: scale(1); /* Zoom out to normal */
+  }
+  33.33% {
+    opacity: 1;
+    transform: scale(1); /* Stay visible */
+  }
+  43.33% {
+    opacity: 0;
+    transform: scale(1); /* Fade out */
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5); /* Reset for next cycle */
+  }
+}
 /* about */
 
 .bp-element-image-box.layout-gradient .image-box {
@@ -1410,7 +1456,7 @@ footer .footer a {
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/images/back_drops/drop7.png");
+  /* background-image: url("../assets/images/back_drops/drop7.png"); */
   background-repeat: no-repeat;
   background-size: cover;
 }

@@ -4,9 +4,9 @@ import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import Cards from "./Section_sups/Cards";
 import ResponsiveCarousel from "./Section_sups/Carousal";
 import { useSelector } from "react-redux";
-import { whatWeDo } from "@/Store/Main/IDs";
+import { whatWeDo } from "@/store/Main/IDs";
 import { Col, Row } from "react-bootstrap";
-import { why_us_section } from "@/Store/Main/links/links";
+import { why_us_section } from "@/store/Main/links/links";
 
 function WhatWeDo() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -93,7 +93,7 @@ function WhatWeDo() {
       />
     </svg>,
     <svg
-    key={6}
+      key={6}
       xmlns="http://www.w3.org/2000/svg"
       width="200"
       height="200"
@@ -123,7 +123,10 @@ function WhatWeDo() {
         <Row>
           {home(lang).sections.services.map((item, index) => (
             <Col sm={12} md={4} lg={4} className="mb-4" key={index}>
-              <div className="bg-body-secondary card-sec p-4 h-100 rounded" dir={dir}>
+              <div
+                className="bg-body-secondary card-sec p-4 h-100 rounded"
+                dir={dir}
+              >
                 <div className="d-flex">
                   <div className="rounded-circle bg-secondary text-white p-3 icon">
                     {icons[index]}

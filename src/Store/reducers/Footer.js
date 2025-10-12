@@ -10,7 +10,7 @@ import {
   logo,
   rdappIcon,
   windmasterIcon,
-} from "@/Store/Main/assets/images";
+} from "@/store/Main/assets/images";
 import {
   about_section,
   bondifycrm_page,
@@ -24,7 +24,7 @@ import {
   rdapp_page,
   whatwedo_section,
   windmaster_page,
-} from "@/Store/Main/links/links";
+} from "@/store/Main/links/links";
 import en from "@/Store/Language/en.json";
 import ar from "@/Store/Language/ar.json";
 
@@ -38,14 +38,14 @@ const initialState = {
   footer: (lang) => {
     return {
       about: t("FOOTER_ABOUT", lang),
-      products: t("FOOTER_PRODUCTS",lang),
-      services: t("FOOTER_SERVICES",lang),
-      summary: t("FOOTER_SUMMARY",lang),
-      social: t("FOOTER_SOCIAL",lang),
-      community: t("FOOTER_COMMUNITY",lang),
-      legal: t("LEGAL",lang),
-      dealers: t("EXCLUSIVE_DEALERS",lang),
-      contant: t("FOOTER_CONTANT_INFO",lang)
+      products: t("FOOTER_PRODUCTS", lang),
+      services: t("FOOTER_SERVICES", lang),
+      summary: t("FOOTER_SUMMARY", lang),
+      social: t("FOOTER_SOCIAL", lang),
+      community: t("FOOTER_COMMUNITY", lang),
+      legal: t("LEGAL", lang),
+      dealers: t("EXCLUSIVE_DEALERS", lang),
+      contant: t("FOOTER_CONTANT_INFO", lang),
     };
   },
 };

@@ -1,4 +1,4 @@
-import { linksData } from "@/Store/Main/links/linkstider";
+import { linksData } from "@/store/Main/links/linkstider";
 import { League_Spartan } from "next/font/google";
 import { useSelector } from "react-redux";
 
@@ -6,8 +6,7 @@ export const league = League_Spartan({ subsets: ["latin"] });
 
 export default function Bannar() {
   const lang = useSelector((state) => state.languageSlice.lang);
-  const home = useSelector(state => state.homeRed.home)
-
+  const home = useSelector((state) => state.homeRed.home);
 
   return (
     <section
@@ -17,10 +16,17 @@ export default function Bannar() {
     >
       <div>
         <div className={`home_bannar`}>
+          <div className="slideshow">
+            <div className="slide"></div>
+            <div className="slide"></div>
+            <div className="slide"></div>
+          </div>
           <div className="dark_bannar"></div>
           <div className="bannar_container">
             <div data-aos="fade-left" data-aos-duration="3000">
-              <h1 className={league.className}>{home(lang).sections.bannar.title}</h1>
+              <h1 className={league.className}>
+                {home(lang).sections.bannar.title}
+              </h1>
               <p>{home(lang).sections.bannar.slogan}</p>
               <a
                 href={linksData.home.bannar.get_started}

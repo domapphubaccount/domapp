@@ -104,6 +104,7 @@ function Monthly({ priceIcon, currency }) {
                       <img
                         loading="lazy"
                         src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                        alt=""
                       />
                       <span className="mx-3 text-black">{free.include}</span>
                     </li>
@@ -117,6 +118,7 @@ function Monthly({ priceIcon, currency }) {
                       loading="lazy"
                       src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
                       className="mx-2"
+                      alt=""
                     />
                   </Link>
                 </div>
@@ -140,6 +142,7 @@ function Monthly({ priceIcon, currency }) {
                       <img
                         loading="lazy"
                         src="https://res.cloudinary.com/williamsondesign/check-white.svg"
+                        alt=""
                       />
                       <span className="mx-3">{enterprise.include}</span>
                     </li>
@@ -153,6 +156,7 @@ function Monthly({ priceIcon, currency }) {
                       loading="lazy"
                       src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
                       className="mx-2"
+                      alt=""
                     />
                   </Link>
                 </div>
@@ -221,6 +225,7 @@ function Monthly({ priceIcon, currency }) {
                       loading="lazy"
                       src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
                       className="mx-2"
+                      alt=""
                     />
                   </Link>
                 </div>
@@ -261,6 +266,7 @@ function Annual({ priceIcon, currency }) {
             <li className="flex text-lg mb-2">
               <img
                 loading="lazy"
+                alt=""
                 src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
               />
               <span className="mx-3 text-black">{free.include}</span>
@@ -275,6 +281,7 @@ function Annual({ priceIcon, currency }) {
               loading="lazy"
               src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
               className="mx-2"
+              alt=""
             />
           </Link>
         </div>
@@ -297,6 +304,7 @@ function Annual({ priceIcon, currency }) {
             <li className="flex mb-6">
               <img
                 loading="lazy"
+                alt=""
                 src="https://res.cloudinary.com/williamsondesign/check-white.svg"
               />
               <span className="mx-3">{enterprise.include}</span>
@@ -311,6 +319,7 @@ function Annual({ priceIcon, currency }) {
               loading="lazy"
               src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
               className="mx-2"
+              alt=""
             />
           </Link>
         </div>
@@ -376,6 +385,7 @@ function Annual({ priceIcon, currency }) {
               loading="lazy"
               src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
               className="mx-2"
+              alt="btn icon"
             />
           </Link>
         </div>

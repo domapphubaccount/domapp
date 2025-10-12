@@ -31,13 +31,14 @@ function Video({ title, body, src, className, bannar, additional }) {
                           src={bannar.src}
                           title="YouTube video player"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          alt="video 1"
                         />
                         <div className="play-icon-clad">
                           <div
                             className="border_circle"
                             onClick={() => setOpen(true)}
                           ></div>
-                          <img loading="lazy" src={playIcon.src} width={50} />
+                          <img alt="play icon" loading="lazy" src={playIcon.src} width={50} />
                         </div>
                       </div>
                       <ModalVideo

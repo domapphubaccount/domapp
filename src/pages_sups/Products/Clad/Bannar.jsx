@@ -3,7 +3,7 @@ import React from "react";
 import CladBannar from "@/assets/images/Clad/Logo_Bannar.png";
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import { cladcut_site } from "@/Store/Main/links/links";
+import { cladcut_site } from "@/store/Main/links/links";
 
 export default function Bannar() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -21,7 +21,7 @@ export default function Bannar() {
               >
                 <div className="ln-title-one my-5">
                   <h2 className="title fw-500 tx-dark">
-                    <Image 
+                    <Image
                       width={300}
                       height={100}
                       src={CladBannar.src}
@@ -58,7 +58,7 @@ export default function Bannar() {
                 </div>
               </div>
 
-              <div className="col-lg-6" style={{ marginTop: '40px' }}>
+              <div className="col-lg-6" style={{ marginTop: "40px" }}>
                 <div className="block-container position-relative ps-sm-3 pe-sm-3 ps-xl-5 pe-xl-5 md-mt-40">
                   <div className="row gx-xxl-5 align-items-center">
                     <div

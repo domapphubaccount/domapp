@@ -2,9 +2,8 @@ import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import { Col, Container, Row } from "reactstrap";
 import Cards from "../WhatWeDo/Section_sups/Cards";
 import ResponsiveCarousel from "../WhatWeDo/Section_sups/Carousal";
-import { about, whyUs } from "@/Store/Main/IDs";
+import { about, whyUs } from "@/store/Main/IDs";
 import { useSelector } from "react-redux";
-
 
 export default function About() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -28,9 +27,7 @@ export default function About() {
                 <div className="wpb_wrapper">
                   <Row>
                     <Col sm={12} md={6}>
-                      <div
-                        className="vc_column-inner vc_custom_1545618139147"
-                      >
+                      <div className="vc_column-inner vc_custom_1545618139147">
                         <div className="wpb_wrapper">
                           <div className="bp-element bp-element-image-box  demo-1 image-left color-1 layout-gradient">
                             <div
@@ -121,7 +118,7 @@ export default function About() {
                               <div className="content" dir={dir}>
                                 <h3 className="title"></h3>
 
-                                <div className="description text-black" >
+                                <div className="description text-black">
                                   <h4 className="mb-4">
                                     {
                                       home(lang).sections.about_us?.main

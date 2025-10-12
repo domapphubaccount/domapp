@@ -1,6 +1,6 @@
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import { useRef, useState } from "react";
-import { about_section, why_us_section } from "@/Store/Main/links/links";
+import { about_section, why_us_section } from "@/store/Main/links/links";
 import { useSelector } from "react-redux";
 import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import Slider from "react-slick/lib/slider";
@@ -10,7 +10,7 @@ import innovation from "/public/Why_us/innovation.webp";
 import solutions from "/public/Why_us/solutions.webp";
 import software from "/public/Why_us/software.webp";
 import { Container } from "reactstrap";
-import { whyUs } from "@/Store/Main/IDs";
+import { whyUs } from "@/store/Main/IDs";
 
 function WhyUs() {
   const [nav1, setNav1] = useState(null);
@@ -33,8 +33,7 @@ function WhyUs() {
     },
     {
       image: customer.src, // Replace with your image URL
-    }
-
+    },
   ];
 
   const settings = {
@@ -58,7 +57,10 @@ function WhyUs() {
               sectionId={whyUs}
             />
           </div>
-          <div className="whyus-section" style={{ margin: "0 auto", width: "95%" }}>
+          <div
+            className="whyus-section"
+            style={{ margin: "0 auto", width: "95%" }}
+          >
             <div className="whyus-slider-text">
               <div className="relative">
                 {/* Text Slider */}
@@ -66,7 +68,7 @@ function WhyUs() {
                   {...settings}
                   asNavFor={nav2}
                   ref={(slider) => setNav1(slider)}
-                // arrows={true}
+                  // arrows={true}
                 >
                   {home(lang).sections.what_we_do.main.slices.map(
                     (item, index) => (
@@ -128,7 +130,8 @@ function WhyUs() {
                     key={index}
                     style={{ position: "relative", borderRadius: "10px" }}
                   >
-                    <img loading="lazy"
+                    <img
+                      loading="lazy"
                       src={slide.image}
                       alt={slide.title}
                       style={{

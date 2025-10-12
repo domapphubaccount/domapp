@@ -4,7 +4,7 @@ import Link from "next/link";
 import Logo from "@/assets/images/chatPlus/logo-slogan.png";
 import VideoSection from "./Chat/VideoSection";
 import BannarIMG from "@/assets/images/chatPlus/img.png";
-import { contact_page } from "@/Store/Main/links/links";
+import { contact_page } from "@/store/Main/links/links";
 import { useSelector } from "react-redux";
 
 export default function Bannar() {
@@ -24,7 +24,12 @@ function Bannar2() {
               <div className="center-text">
                 <div>
                   <div className="header-text">
-                    <img loading="lazy" src={Logo.src} width={400} alt="chatplus" />
+                    <img
+                      loading="lazy"
+                      src={Logo.src}
+                      width={400}
+                      alt="chatplus"
+                    />
                   </div>
                   <div className="header-sub-text mb-5 text-lg" dir={dir}>
                     <p>{chatplus(lang).sections.bannar.slogan}</p>
@@ -54,7 +59,12 @@ function Bannar2() {
                     "perspective(20000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)",
                 }}
               >
-                <img loading="lazy" alt="" className="img-fluid" src={BannarIMG.src} />
+                <img
+                  loading="lazy"
+                  alt=""
+                  className="img-fluid"
+                  src={BannarIMG.src}
+                />
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ import "react-modal-video/scss/modal-video.scss";
 import V_bannar from "@/assets/images/Clad/v-bannar.png";
 import playIcon from "@/assets/images/Clad/play-button.png";
 import Video from "@/components/Reuse/Section_Head/Video";
-import { cladcut_fram } from "@/Store/Main/links/links";
+import { cladcut_fram } from "@/store/Main/links/links";
 import { useSelector } from "react-redux";
 
 export default function Section_2() {

@@ -16,7 +16,7 @@ export default function Bannar2() {
           <div className="col-lg-5 col-md-6" dir={dir}>
             <div className="home-text">
               <div className="mb-5">
-                <img loading="lazy" src={bondi.src} />
+                <img alt="banner" loading="lazy" src={bondi.src} />
               </div>
               <div className="docutment-button text-center">
                 <a
