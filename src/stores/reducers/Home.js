@@ -8,9 +8,9 @@ import {
   grasshopper_page,
   rdapp_page,
   windmaster_page,
-} from "@/store/Main/links/links";
-import { linksData } from "@/store/Main/links/linkstider";
-import { process } from "@/store/Main/assets/Videos";
+} from "@/stores/Main/links/links";
+import { linksData } from "@/stores/Main/links/linkstider";
+import { process } from "@/stores/Main/assets/Videos";
 import en from "@/Store/Language/en.json";
 import ar from "@/Store/Language/ar.json";
 import { createSlice } from "@reduxjs/toolkit";

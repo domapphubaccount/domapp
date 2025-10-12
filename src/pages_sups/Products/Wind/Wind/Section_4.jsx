@@ -1,4 +1,4 @@
-import { contact_page } from "@/store/Main/links/links";
+import { contact_page } from "@/stores/Main/links/links";
 import Link from "next/link";
 import React from "react";
 import { useSelector } from "react-redux";

@@ -13,7 +13,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
-import { contact_Toggle } from "@/store/reducers/Header";
+import { contact_Toggle } from "@/stores/reducers/Header";
 import LanguageDropdown from "../Footer/Lang";
 
 export default function Sidebar({ items }) {

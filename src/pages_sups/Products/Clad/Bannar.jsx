@@ -3,7 +3,7 @@ import React from "react";
 import CladBannar from "@/assets/images/Clad/Logo_Bannar.png";
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import { cladcut_site } from "@/store/Main/links/links";
+import { cladcut_site } from "@/stores/Main/links/links";
 
 export default function Bannar() {
   const { lang, dir } = useSelector((state) => state.languageSlice);

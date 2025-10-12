@@ -1,6 +1,6 @@
 import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import { useRef, useState } from "react";
-import { about_section, why_us_section } from "@/store/Main/links/links";
+import { about_section, why_us_section } from "@/stores/Main/links/links";
 import { useSelector } from "react-redux";
 import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import Slider from "react-slick/lib/slider";
@@ -10,7 +10,7 @@ import innovation from "/public/Why_us/innovation.webp";
 import solutions from "/public/Why_us/solutions.webp";
 import software from "/public/Why_us/software.webp";
 import { Container } from "reactstrap";
-import { whyUs } from "@/store/Main/IDs";
+import { whyUs } from "@/stores/Main/IDs";
 
 function WhyUs() {
   const [nav1, setNav1] = useState(null);

@@ -5,7 +5,7 @@ import subBannar from "@/assets/images/Byld/dashboard.png";
 import byldicon from "@/assets/images/Byld/logobyld.png";
 import blob from "@/assets/images/Byld/blob-tear.svg";
 import Link from "next/link";
-import { contact_page } from "@/store/Main/links/links";
+import { contact_page } from "@/stores/Main/links/links";
 import { useSelector } from "react-redux";
 
 function Bannar() {

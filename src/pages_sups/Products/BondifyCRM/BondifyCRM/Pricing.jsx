@@ -7,7 +7,7 @@ import Header from "@/components/Layout/Header/Header";
 import Loading_page from "@/components/Loading_page/Loading_page";
 import Link from "next/link";
 import { useSelector } from "react-redux";
-import useInitCountry from "@/store/useInitCountry";
+import useInitCountry from "@/stores/useInitCountry";
 
 export default function Pricing() {
   const [priceIcon, setPriceIcon] = useState(false);

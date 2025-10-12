@@ -2,7 +2,7 @@ import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import { Col, Container, Row } from "reactstrap";
 import Cards from "../WhatWeDo/Section_sups/Cards";
 import ResponsiveCarousel from "../WhatWeDo/Section_sups/Carousal";
-import { about, whyUs } from "@/store/Main/IDs";
+import { about, whyUs } from "@/stores/Main/IDs";
 import { useSelector } from "react-redux";
 
 export default function About() {

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Tooltip } from "reactstrap";
 import cross from "@/assets/images/Home_Page/cross.png";
 import { useDispatch, useSelector } from "react-redux";
-import { contact_Toggle } from "@/store/reducers/Header";
+import { contact_Toggle } from "@/stores/reducers/Header";
 
 export default function Contact() {
   const [modal, setModal] = useState(false);

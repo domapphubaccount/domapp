@@ -4,7 +4,7 @@ import Link from "next/link";
 import Logo from "@/assets/images/chatPlus/logo-slogan.png";
 import VideoSection from "./Chat/VideoSection";
 import BannarIMG from "@/assets/images/chatPlus/img.png";
-import { contact_page } from "@/store/Main/links/links";
+import { contact_page } from "@/stores/Main/links/links";
 import { useSelector } from "react-redux";
 
 export default function Bannar() {

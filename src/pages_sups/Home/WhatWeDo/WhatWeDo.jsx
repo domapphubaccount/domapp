@@ -4,9 +4,9 @@ import Section_head from "@/components/Reuse/Section_Head/Section_head";
 import Cards from "./Section_sups/Cards";
 import ResponsiveCarousel from "./Section_sups/Carousal";
 import { useSelector } from "react-redux";
-import { whatWeDo } from "@/store/Main/IDs";
+import { whatWeDo } from "@/stores/Main/IDs";
 import { Col, Row } from "react-bootstrap";
-import { why_us_section } from "@/store/Main/links/links";
+import { why_us_section } from "@/stores/Main/links/links";
 
 function WhatWeDo() {
   const { lang, dir } = useSelector((state) => state.languageSlice);

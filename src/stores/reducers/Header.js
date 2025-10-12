@@ -10,7 +10,7 @@ import {
   logo,
   rdappIcon,
   windmasterIcon,
-} from "@/store/Main/assets/images";
+} from "@/stores/Main/assets/images";
 import {
   about_section,
   bondifycrm_page,
@@ -25,7 +25,7 @@ import {
   whatwedo_section,
   why_us_section,
   windmaster_page,
-} from "@/store/Main/links/links";
+} from "@/stores/Main/links/links";
 import en from "@/Store/Language/en.json";
 import ar from "@/Store/Language/ar.json";
 

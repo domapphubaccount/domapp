@@ -6,7 +6,7 @@ import item from "@/assets/images/Products_Page/Customization/project-8.png";
 import item2 from "@/assets/images/Products_Page/Customization/pic1.png";
 import Link from "next/link";
 import customlogo from "@/assets/images/customization/Custom.png";
-import { contact_page } from "@/store/Main/links/links";
+import { contact_page } from "@/stores/Main/links/links";
 import { useSelector } from "react-redux";
 
 export default function Bannar() {

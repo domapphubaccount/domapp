@@ -5,7 +5,7 @@ import LanguageDropdown from "./Lang";
 import { useDispatch, useSelector } from "react-redux";
 import { Suspense, useEffect, useState } from "react";
 import { Accordion, useAccordionButton } from "react-bootstrap";
-import { contact_Toggle } from "@/store/reducers/Header";
+import { contact_Toggle } from "@/stores/reducers/Header";
 
 export default function Footer() {
   const { lang, dir } = useSelector((state) => state.languageSlice);

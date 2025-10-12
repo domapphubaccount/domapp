@@ -15,7 +15,7 @@ import * as Yup from "yup";
 import Contact from "@/assets/images/Products_Page/contact/contact.jpg";
 import axios from "axios";
 import { useSelector } from "react-redux";
-import { linksData } from "@/store/Main/links/linkstider";
+import { linksData } from "@/stores/Main/links/linkstider";
 
 export default function Section_1() {
   const [module, setModule] = useState(false);
