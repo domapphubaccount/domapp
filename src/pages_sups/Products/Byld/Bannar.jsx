@@ -21,7 +21,7 @@ function Bannar() {
         <div className="pt-12 text-center">
           <div className="max-w-2xl mx-auto mb-8 text-center">
             <div className="flex justify-center">
-              <img loading="lazy" src={byldicon.src} width={300} />
+              <img alt="byld banner" loading="lazy" src={byldicon.src} width={300} />
             </div>
             {
               <p
