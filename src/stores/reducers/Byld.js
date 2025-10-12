@@ -1,7 +1,7 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 import { byld_icon1, byld_icon2, byld_icon3 } from "../Main/assets/images";
 
 const translations = { en, ar };
@@ -24,12 +24,12 @@ const initialState = {
           slogan: t("BYLD_PAGE_QUICK_START_SLOGAN", lang),
         },
         FEATURES: {
-          why_us: t("BYLD_PAGE_FEATURES_WHY_US",lang),
-          title: t("BYLD_PAGE_FEATURES_TITLE",lang),
-          slice: t("BYLD_PAGE_FEATURES_SLICE",lang),
+          why_us: t("BYLD_PAGE_FEATURES_WHY_US", lang),
+          title: t("BYLD_PAGE_FEATURES_TITLE", lang),
+          slice: t("BYLD_PAGE_FEATURES_SLICE", lang),
           icons: [
             <svg
-            key={1}
+              key={1}
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
@@ -44,7 +44,7 @@ const initialState = {
               ></path>
             </svg>,
             <svg
-            key={2}
+              key={2}
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
@@ -65,7 +65,7 @@ const initialState = {
               ></path>
             </svg>,
             <svg
-            key={3}
+              key={3}
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"

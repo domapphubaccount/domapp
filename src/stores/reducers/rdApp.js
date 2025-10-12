@@ -1,7 +1,7 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 import { byld_icon1, byld_icon2, byld_icon3 } from "../Main/assets/images";
 
 const translations = { en, ar };
@@ -27,7 +27,7 @@ const initialState = {
         Cards_1_icon: [
           <i key={1} className="bi bi-database-up"></i>,
           <i key={2} className="bi bi-file-lock"></i>,
-          <i key={3} className="bi bi-code-slash"></i>
+          <i key={3} className="bi bi-code-slash"></i>,
         ],
         Info_1: t("RDAPP_PAGE_INFO_1", lang),
         Info_2: t("RDAPP_PAGE_INFO_2", lang),
@@ -36,7 +36,6 @@ const initialState = {
         Head_2: t("RDAPP_PAGE_HEAD_2", lang),
         Cards_2: t("RDAPP_PAGE_CARDS_2", lang),
         Cards_3: t("RDAPP_PAGE_CARDS_3", lang),
-
       },
     };
   },

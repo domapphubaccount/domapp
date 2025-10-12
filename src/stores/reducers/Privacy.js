@@ -1,7 +1,7 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 
 const translations = { en, ar };
 
@@ -13,7 +13,7 @@ const initialState = {
   policy: (lang) => {
     return {
       sections: {
-        policy: t("PRIVACY",lang)
+        policy: t("PRIVACY", lang),
       },
     };
   },

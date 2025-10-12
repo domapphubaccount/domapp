@@ -1,7 +1,7 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 
 const translations = { en, ar };
 
@@ -19,26 +19,25 @@ const initialState = {
         },
         video_section: {
           title: t("CHATPLUS_PAGE_QUICK_START_TITLE", lang),
-          slogan: t("CHATPLUS_PAGE_QUICK_START_SLOGAN", lang)
+          slogan: t("CHATPLUS_PAGE_QUICK_START_SLOGAN", lang),
         },
-        GROW:{
-            title: t( "CHATPLUS_PAGE_PRICING_GROW",lang)
+        GROW: {
+          title: t("CHATPLUS_PAGE_PRICING_GROW", lang),
         },
         Collaborate: {
-            head: t("CHATPLUS_PAGE_COLLABORATE_HEAD",lang),
-            slogan: t("CHATPLUS_PAGE_COLLABORATE_SLOGAN",lang),
-            slice: 
-              {
-                support: t("CHATPLUS_PAGE_CUSTOMER_SUPPORT", lang),
-                archive: t("CHATPLUS_PAGE_ARCHIVE", lang),
-                auto_reply: t("CHATPLUS_PAGE_AUTO_REPLY", lang),
-                broadcast: t("CHATPLUS_PAGE_BROADCAST", lang),
-                chatboat: t("CHATPLUS_PAGE_CHATBOAT", lang),
-                msgtemplate:  t("CHATPLUS_PAGE_MSGTEMPLATE", lang),
-              }
+          head: t("CHATPLUS_PAGE_COLLABORATE_HEAD", lang),
+          slogan: t("CHATPLUS_PAGE_COLLABORATE_SLOGAN", lang),
+          slice: {
+            support: t("CHATPLUS_PAGE_CUSTOMER_SUPPORT", lang),
+            archive: t("CHATPLUS_PAGE_ARCHIVE", lang),
+            auto_reply: t("CHATPLUS_PAGE_AUTO_REPLY", lang),
+            broadcast: t("CHATPLUS_PAGE_BROADCAST", lang),
+            chatboat: t("CHATPLUS_PAGE_CHATBOAT", lang),
+            msgtemplate: t("CHATPLUS_PAGE_MSGTEMPLATE", lang),
           },
-        heads: t("CHATPLUS_PAGE_HEADS",lang),
-        CARDS: t("CHATPLUS_PAGE_CARDS",lang),
+        },
+        heads: t("CHATPLUS_PAGE_HEADS", lang),
+        CARDS: t("CHATPLUS_PAGE_CARDS", lang),
         INFO_CARDS: [
           {
             icon: (
@@ -100,14 +99,14 @@ const initialState = {
             slogan: t("WINDMASTER_PAGE_INFO_CARDS_SLOGAN_3", lang),
           },
         ],
-        FEATUERS_CARDS_L: t("CHATPLUS_PAGE_FEATUERS_CARDS_L",lang),
-        FEATUERS_CARDS_R: t("CHATPLUS_PAGE_FEATUERS_CARDS_R",lang),
+        FEATUERS_CARDS_L: t("CHATPLUS_PAGE_FEATUERS_CARDS_L", lang),
+        FEATUERS_CARDS_R: t("CHATPLUS_PAGE_FEATUERS_CARDS_R", lang),
         get_started: {
-            title: t("WINDMASTER_PAGE_GET_STARTED_TITLE",lang),
-            slogan: t("WINDMASTER_PAGE_GET_STARTED_SLOGAN",lang),
-            btn: t("WINDMASTER_PAGE_GET_STARTED_BTN",lang)
+          title: t("WINDMASTER_PAGE_GET_STARTED_TITLE", lang),
+          slogan: t("WINDMASTER_PAGE_GET_STARTED_SLOGAN", lang),
+          btn: t("WINDMASTER_PAGE_GET_STARTED_BTN", lang),
         },
-        CHATPLUS_PRICING: t("CHATPLUS_PRICING_PAGE",lang)
+        CHATPLUS_PRICING: t("CHATPLUS_PRICING_PAGE", lang),
       },
     };
   },

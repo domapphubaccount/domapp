@@ -26,8 +26,8 @@ import {
   why_us_section,
   windmaster_page,
 } from "@/stores/Main/links/links";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 
 const translations = { en, ar };
 

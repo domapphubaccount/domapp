@@ -1,7 +1,7 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 import { byld_icon1, byld_icon2, byld_icon3 } from "../Main/assets/images";
 
 const translations = { en, ar };
@@ -18,7 +18,7 @@ const initialState = {
           slogan: t("GRASSHOPPER_PAGE_BANNAR_SLOGAN", lang),
           icon: [
             <svg
-            key={1}
+              key={1}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -33,7 +33,7 @@ const initialState = {
               />
             </svg>,
             <svg
-            key={2}
+              key={2}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -48,7 +48,7 @@ const initialState = {
               />
             </svg>,
             <svg
-            key={3}
+              key={3}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ const initialState = {
           slice: t("GRASSHOPPER_PAGE_SERVICES_SLICE", lang),
           icons: [
             <svg
-            key={1}
+              key={1}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -88,7 +88,7 @@ const initialState = {
               />
             </svg>,
             <svg
-            key={2}
+              key={2}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -104,7 +104,7 @@ const initialState = {
               />
             </svg>,
             <svg
-            key={3}
+              key={3}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -120,7 +120,7 @@ const initialState = {
               />
             </svg>,
             <svg
-            key={4}
+              key={4}
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"

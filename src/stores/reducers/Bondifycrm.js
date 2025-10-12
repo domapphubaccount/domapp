@@ -1,7 +1,7 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 import { byld_icon1, byld_icon2, byld_icon3 } from "../Main/assets/images";
 
 const translations = { en, ar };
@@ -18,31 +18,30 @@ const initialState = {
           try_btn: t("BONDIFYCRM_PAGE_TRY_BTN", lang),
           pricing_btn: t("BONDIFYCRM_PAGE_PRICING_BTN", lang),
         },
-        Heading_1: t("BONDIFYCRM_PAGE_HEADING_1",lang),
+        Heading_1: t("BONDIFYCRM_PAGE_HEADING_1", lang),
         Quick_start: t("BONDIFYCRM_PAGE_QUICK_START", lang),
-        Break_1: t("BONDIFYCRM_PAGE_BREAK_1",lang),
-        Card_1: t("BONDIFYCRM_PAGE_CARD_1",lang),
-        Card_2: t("BONDIFYCRM_PAGE_CARD_2",lang),
-        Card_3: t("BONDIFYCRM_PAGE_CARD_3",lang),
-        Card_4: t("BONDIFYCRM_PAGE_CARD_4",lang),
-        Card_5: t("BONDIFYCRM_PAGE_CARD_5",lang),
-        Card_6: t("BONDIFYCRM_PAGE_CARD_6",lang),
-        Break_2: t("BONDIFYCRM_PAGE_BREAK_2",lang),
-        Card_7: t("BONDIFYCRM_PAGE_CARD_7",lang),
-        Card_8: t("BONDIFYCRM_PAGE_CARD_8",lang),
-        Card_9: t("BONDIFYCRM_PAGE_CARD_9",lang),
-        Card_10: t("BONDIFYCRM_PAGE_CARD_10",lang),
-        Card_11: t("BONDIFYCRM_PAGE_CARD_11",lang),
-        Card_12: t("BONDIFYCRM_PAGE_CARD_12",lang),
-
-
+        Break_1: t("BONDIFYCRM_PAGE_BREAK_1", lang),
+        Card_1: t("BONDIFYCRM_PAGE_CARD_1", lang),
+        Card_2: t("BONDIFYCRM_PAGE_CARD_2", lang),
+        Card_3: t("BONDIFYCRM_PAGE_CARD_3", lang),
+        Card_4: t("BONDIFYCRM_PAGE_CARD_4", lang),
+        Card_5: t("BONDIFYCRM_PAGE_CARD_5", lang),
+        Card_6: t("BONDIFYCRM_PAGE_CARD_6", lang),
+        Break_2: t("BONDIFYCRM_PAGE_BREAK_2", lang),
+        Card_7: t("BONDIFYCRM_PAGE_CARD_7", lang),
+        Card_8: t("BONDIFYCRM_PAGE_CARD_8", lang),
+        Card_9: t("BONDIFYCRM_PAGE_CARD_9", lang),
+        Card_10: t("BONDIFYCRM_PAGE_CARD_10", lang),
+        Card_11: t("BONDIFYCRM_PAGE_CARD_11", lang),
+        Card_12: t("BONDIFYCRM_PAGE_CARD_12", lang),
 
         FEATURES: {
-          why_us: t("BYLD_PAGE_FEATURES_WHY_US",lang),
-          title: t("BYLD_PAGE_FEATURES_TITLE",lang),
-          slice: t("BYLD_PAGE_FEATURES_SLICE",lang),
+          why_us: t("BYLD_PAGE_FEATURES_WHY_US", lang),
+          title: t("BYLD_PAGE_FEATURES_TITLE", lang),
+          slice: t("BYLD_PAGE_FEATURES_SLICE", lang),
           icons: [
-            <svg key={1}
+            <svg
+              key={1}
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
@@ -57,7 +56,7 @@ const initialState = {
               ></path>
             </svg>,
             <svg
-            key={2}
+              key={2}
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
@@ -78,7 +77,7 @@ const initialState = {
               ></path>
             </svg>,
             <svg
-            key={3}
+              key={3}
               className="w-6 h-6"
               fill="none"
               stroke="currentColor"
@@ -100,7 +99,7 @@ const initialState = {
           title: t("BYLD_PAGE_HEAD_TITLE", lang),
           slogan: t("BYLD_PAGE_HEAD_SLOGAN", lang),
         },
-        BONDIFY_PRICING: t("BONDIFY_PRICING_PAGE",lang)
+        BONDIFY_PRICING: t("BONDIFY_PRICING_PAGE", lang),
       },
     };
   },

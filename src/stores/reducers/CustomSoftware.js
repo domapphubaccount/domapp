@@ -1,8 +1,8 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
 import { contact_page, whatsapp } from "@/stores/Main/links/links";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 import { byld_icon1, byld_icon2, byld_icon3 } from "../Main/assets/images";
 
 const translations = { en, ar };

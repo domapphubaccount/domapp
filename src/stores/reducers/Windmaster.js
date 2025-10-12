@@ -1,7 +1,7 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 
 const translations = { en, ar };
 
@@ -16,7 +16,7 @@ const initialState = {
           try_btn: t("WINDMASTER_PAGE_TRY_BTN", lang),
           pricing_btn: t("WINDMASTER_PAGE_PRICING_BTN", lang),
         },
-        Quick_start: t("WINDMASTER_PAGE_QUICK_START", lang) ,
+        Quick_start: t("WINDMASTER_PAGE_QUICK_START", lang),
         CARDS: [
           {
             icon: (
@@ -173,8 +173,8 @@ const initialState = {
           },
         ],
         Collaborate: {
-          head: t("WINDMASTER_PAGE_COLLABORATE_HEAD",lang),
-          slogan: t("WINDMASTER_PAGE_COLLABORATE_SLOGAN",lang),
+          head: t("WINDMASTER_PAGE_COLLABORATE_HEAD", lang),
+          slogan: t("WINDMASTER_PAGE_COLLABORATE_SLOGAN", lang),
           slice: [
             {
               icon: (
@@ -240,11 +240,11 @@ const initialState = {
           ],
         },
         get_started: {
-            title: t("WINDMASTER_PAGE_GET_STARTED_TITLE",lang),
-            slogan: t("WINDMASTER_PAGE_GET_STARTED_SLOGAN",lang),
-            btn: t("WINDMASTER_PAGE_GET_STARTED_BTN",lang)
+          title: t("WINDMASTER_PAGE_GET_STARTED_TITLE", lang),
+          slogan: t("WINDMASTER_PAGE_GET_STARTED_SLOGAN", lang),
+          btn: t("WINDMASTER_PAGE_GET_STARTED_BTN", lang),
         },
-        Pricing: t("WINDMASTER_PRICING_PAGE",lang)
+        Pricing: t("WINDMASTER_PRICING_PAGE", lang),
       },
     };
   },

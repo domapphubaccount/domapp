@@ -11,8 +11,8 @@ import {
 } from "@/stores/Main/links/links";
 import { linksData } from "@/stores/Main/links/linkstider";
 import { process } from "@/stores/Main/assets/Videos";
-import en from "@/Store/Language/en.json";
-import ar from "@/Store/Language/ar.json";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 import { createSlice } from "@reduxjs/toolkit";
 
 const translations = { en, ar };
