@@ -25,17 +25,26 @@ export default function Footer() {
   }
 
   return (
-    <footer dir={dir}>
+    <footer >
       {isMounted && (
         <>
           <Suspense fallback={""}>
             <div className="bg-gray-900 p-4">
-              <Container>
+              <Container dir={dir}>
                 <h3 className="font-semibold text-sm mb-2 text-center text-white">
                   DomApp
                 </h3>
-                <div className="footer p-8 text-white">
-                  <div className="grid grid-cols-1 sm:grid-cols-7 gap-6">
+                <div
+                  className={`footer p-8 text-white ${
+                    dir === "rtl" ? "text-right" : "text-left"
+                  }`}
+                
+                >
+                               <div
+                className={`grid grid-cols-1 sm:grid-cols-7 gap-6 ${
+                  dir === "rtl" ? "sm:[direction:ltr]" : "sm:[direction:rtl]"
+                }`}
+              >
                     {/* About Us Section */}
                     <div>
                       <div className="mb-3">
@@ -209,7 +218,7 @@ export default function Footer() {
                       </div>
 
                       {/* Social Media Icons */}
-                      <div className="flex items-center space-x-4">
+                      <div dir={dir} className="flex items-center space-x-4">
                         {/* <p className="mt-[2px] mb-0">{footer(lang).social}</p> */}
                         <Link
                           href="https://www.youtube.com/@DomAppHub"
@@ -309,10 +318,10 @@ export default function Footer() {
             </div>
           </Suspense>
 
-          <div className="p-4" dir={"ltr"}>
+          <div className="p-4 m-" dir={"ltr"}>
             <Container>
-              <div className="footer grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-between gap-2">
-                <div className="sm:col-span-2">
+              <div className="footer grid grid-cols-1 sm:grid-cols-2 lg:flex lg:justify-center gap-2">
+                <div className="sm:col-span-2 text-center">
                   &#169;{year} DomApp. All rights reserved.
                 </div>
               </div>
