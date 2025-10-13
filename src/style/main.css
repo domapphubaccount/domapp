@@ -453,10 +453,10 @@ header {
 
 .bp-element-image-box.layout-gradient.color-2 .image-box::before {
   background: #dee5f0;
-  background: -webkit-linear-gradient(to right, #f8c76c, #515a63);
+  /* background: -webkit-linear-gradient(to right, #f8c76c, #515a63);
   background: -o-linear-gradient(to right, #f8c76c, #515a63);
   background: -moz-linear-gradient(to right, #f8c76c, #515a63);
-  background: linear-gradient(to right, #f8c76c, #515a63);
+  background: linear-gradient(to right, #f8c76c, #515a63); */
 }
 
 .bp-element-image-box.layout-gradient .image-box .content .title {
