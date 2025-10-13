@@ -218,7 +218,7 @@ export default function Footer() {
                       </div>
 
                       {/* Social Media Icons */}
-                      <div className="flex items-center space-x-4">
+                      <div dir={dir} className="flex items-center space-x-4">
                         {/* <p className="mt-[2px] mb-0">{footer(lang).social}</p> */}
                         <Link
                           href="https://www.youtube.com/@DomAppHub"
