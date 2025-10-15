@@ -1,22 +1,25 @@
-"use client"
-import { createSlice } from '@reduxjs/toolkit'
+"use client";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  lang: (typeof window !== "undefined" && localStorage.getItem("lang")) || "en",
-  dir: (typeof window !== "undefined" && localStorage.getItem("lang") == "en" ? "ltr" : "rtl") || "ltr"
-}
+  // lang: (typeof window !== "undefined" && localStorage.getItem("lang")) || "en",
+  // dir: (typeof window !== "undefined" && localStorage.getItem("lang") == "en" ? "ltr" : "rtl") || "ltr"
+
+  lang: "en",
+  dir: "ltr",
+};
 
 export const languageSlice = createSlice({
-  name: 'language',
+  name: "language",
   initialState,
   reducers: {
-    handle_language: (state , action) => {
+    handle_language: (state, action) => {
       state.lang = action.payload.lang;
       state.dir = action.payload.dir;
-    }
+    },
   },
-})
+});
 
-export const { handle_language} = languageSlice.actions
+export const { handle_language } = languageSlice.actions;
 
-export default languageSlice.reducer
+export default languageSlice.reducer;
