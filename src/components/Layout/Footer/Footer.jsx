@@ -57,9 +57,9 @@ export default function Footer() {
                                   {item.addresses.map((address, addrIndex) => (
                                     <li
                                       key={addrIndex}
-                                      className="text-sm font-light before:content-['-'] before:mr-2"
+                                      className="text-sm font-light"
                                     >
-                                      {address}
+                                      - {address}
                                     </li>
                                   ))}
                                 </ul>
@@ -165,7 +165,7 @@ export default function Footer() {
                       </div>
                     </div>
                     {/* About Us Section */}
-                    <div>
+                    <div className="ms-4">
                       <div className="mb-3">
                         <h5 className="font-semibold text-sm mb-2">
                           {footer(lang).about.title}
@@ -207,6 +207,37 @@ export default function Footer() {
                         </ul>
                       </div>
                     </div>
+                    {/* Products Section */}
+                    <div>
+                      <h5 className="font-semibold text-sm mb-2">
+                        {footer(lang).products.title}
+                      </h5>
+                      <ul className="space-y-1">
+                        {header(lang)
+                          .nav.filter((item) => item.list)[0]
+                          .list.map((item) =>
+                            item.products.filter(
+                              (item) =>
+                                item.link !== "/grasshopper" &&
+                                item.link !== "/customization"
+                            )
+                          )
+                          .map(
+                            (item, index) =>
+                              item.length > 0 &&
+                              item.map((item, index) => (
+                                <li key={index}>
+                                  <Link
+                                    href={item.link}
+                                    className="hover:underline"
+                                  >
+                                    {item.name}
+                                  </Link>
+                                </li>
+                              ))
+                          )}
+                      </ul>
+                    </div>
                     {/* Services Section */}
                     <div>
                       <h5 className="font-semibold text-sm mb-2">
@@ -237,37 +268,6 @@ export default function Footer() {
                             </Accordion>
                           </li>
                         ))}
-                      </ul>
-                    </div>
-                    {/* Products Section */}
-                    <div>
-                      <h5 className="font-semibold text-sm mb-2">
-                        {footer(lang).products.title}
-                      </h5>
-                      <ul className="space-y-1">
-                        {header(lang)
-                          .nav.filter((item) => item.list)[0]
-                          .list.map((item) =>
-                            item.products.filter(
-                              (item) =>
-                                item.link !== "/grasshopper" &&
-                                item.link !== "/customization"
-                            )
-                          )
-                          .map(
-                            (item, index) =>
-                              item.length > 0 &&
-                              item.map((item, index) => (
-                                <li key={index}>
-                                  <Link
-                                    href={item.link}
-                                    className="hover:underline"
-                                  >
-                                    {item.name}
-                                  </Link>
-                                </li>
-                              ))
-                          )}
                       </ul>
                     </div>
                     {/* Exclusive Dealer Section */}
