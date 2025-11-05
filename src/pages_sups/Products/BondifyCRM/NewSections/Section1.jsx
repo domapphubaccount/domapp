@@ -2,56 +2,42 @@ import React from "react";
 import { Container } from "reactstrap";
 import "./Section.css";
 import Image from "next/image";
+import { useSelector } from "react-redux";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 
 export default function Section1() {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const translations = { en, ar };
+  const section = translations[lang].SECTION_1;
+
+  const images = [
+    "/images/image1.png",
+    "/images/image2.png",
+    "/images/image3.png",
+    "/images/image4.png"
+  ];
+
   return (
-    <Container>
+    <Container dir={dir}>
       <div className="text-center mt-5 section-title-meta">
-        <span>Amazing Set Of Features</span>
-        <h2>All the important modules that you need</h2>
+        <span>{section.subtitle}</span>
+        <h2>{section.title}</h2>
       </div>
 
-      <div className="features-wrapper-cards d-flex ">
-        <div className="feature-card ">
-          <Image
-            src="/images/image1.png"
-            alt="feature1"
-            width={140}
-            height={140}
-          />
-          <h4>Clients</h4>
-          <p>Manage all aspects of your clients in one place.</p>
-        </div>
-        <div className="feature-card">
-              <Image
-            src="/images/image2.png"
-            alt="feature1"
-            width={140}
-            height={140}
-          />
-          <h4>Projects</h4>
-          <p>Deliver your projects on time and on budget.</p>
-        </div>
-        <div className="feature-card">
-                  <Image
-            src="/images/image3.png"
-            alt="feature1"
-            width={140}
-            height={140}
-          />
-          <h4>Prospects</h4>
-          <p>Capture all your leads and opportunities easily.</p>
-        </div>
-        <div className="feature-card">
-                  <Image
-            src="/images/image4.png"
-            alt="feature1"
-            width={140}
-            height={140}
-          />
-          <h4>Team Work</h4>
-          <p>Collaboration between your team members easily.</p>
-        </div>
+      <div className="features-wrapper-cards d-flex flex-wrap justify-content-center gap-4 mt-4">
+        {section.cards.map((card, idx) => (
+          <div className="feature-card text-center" key={idx}>
+            <Image
+              src={images[idx]}
+              alt={card.title}
+              width={140}
+              height={140}
+            />
+            <h4>{card.title}</h4>
+            <p>{card.desc}</p>
+          </div>
+        ))}
       </div>
     </Container>
   );

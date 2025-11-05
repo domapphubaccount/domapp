@@ -1037,6 +1037,46 @@
     "title": "OUR CLIENTS",
     "slogan": "A legacy shaped by our clients’ success."
   },
+  "SECTION_3": {
+    "title": "One CRM to replace them all",
+    "buttons": {
+      "createAccount": "Create Account",
+      "seePricing": "See Pricing"
+    }
+  },
+  "SECTION_1": {
+    "subtitle": "Amazing Set Of Features",
+    "title": "All the important modules that you need",
+    "cards": [
+      {
+        "title": "Clients",
+        "desc": "Manage all aspects of your clients in one place."
+      },
+      {
+        "title": "Projects",
+        "desc": "Deliver your projects on time and on budget."
+      },
+      {
+        "title": "Prospects",
+        "desc": "Capture all your leads and opportunities easily."
+      },
+      {
+        "title": "Team Work",
+        "desc": "Collaboration between your team members easily."
+      }
+    ]
+  },
+    "SECTION_2": {
+    "subtitle": "INCREASE YOUR PRODUCTIVITY",
+    "title": "Intuitive, powerful, and built for teams who get things done",
+    "desc": "Our bondify CRM comes with a host of features that are designed to help increase your entire team's productivity.",
+    "list": [
+      "Project templates to kick-start a new project",
+      "Clone task to speed your time to action",
+      "Communicate and collaborate with your team and clients",
+      "Time tracking for the whole team"
+    ]
+  },
 
   "SECTION_4": {
     "subtitle": "Advanced Project Management",
