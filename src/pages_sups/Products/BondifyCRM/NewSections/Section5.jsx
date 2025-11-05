@@ -4,6 +4,8 @@ import Image from "next/image";
 import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
 import { useSelector } from "react-redux";
+import "./Section.css";
+
 
 
 export default function Section5() {

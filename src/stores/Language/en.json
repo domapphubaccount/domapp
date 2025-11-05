@@ -1129,5 +1129,18 @@
         "desc": "Accept recurring payments via Stripe, using the subscription feature."
       }
     ]
-  }
+  },
+  "SECTION_6": {
+  "title": "Productivity Redefined",
+  "subtitle": "The complete productivity tool for your business",
+  "tabs": [
+    "Tasks",
+    "Invoice",
+    "Support Ticket",
+    "Clients",
+    "Leads",
+    "Knowledgebase"
+  ]
+}
+
 }
