@@ -1,28 +1,29 @@
 import React from "react";
-import { Container } from "reactstrap";
+import { useSelector } from "react-redux";
 import "./Section.css";
 import Image from "next/image";
+import en from "@/stores/Language/en.json";
+import ar from "@/stores/Language/ar.json";
 
 export default function Section4() {
-  return (
-    // <Container >
-    <div className="p-5 d-flex align-items-cente justify-content-between section2-boundify-crm gap-3">
-      <div className="text-div section-title-meta ml-5">
-        <span>Advanced Project Management</span>
-        <h3>Beat your project deadlines</h3>
+  const { lang , dir } = useSelector((state) => state.languageSlice);
 
-        <p>
-          Our CRM gives you the right tools to manage, collaborate and complete
-          your projects on time. Your clients will be happy and your team will
-          be happy.
-        </p>
+  const translations = { en, ar };
+  const section = translations[lang].SECTION_4;
+
+  return (
+    <div dir={dir} className="p-5 d-flex align-items-center justify-content-between section2-boundify-crm gap-3">
+      <div className="text-div section-title-meta ml-5">
+        <span>{section.subtitle}</span>
+        <h3>{section.title}</h3>
+        <p>{section.desc}</p>
         <ul className="p-0 m-0">
-          <li>Easily see the progress of your project</li>
-          <li>Collaborate with team members</li>
-          <li>Break down your project into milestones and tasks</li>
+          {section.list.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
       </div>
-      <div className="image-div-section2 ml-5 ">
+      <div className="image-div-section2 ml-5">
         <Image
           src="/images/section4.png"
           alt="feature1"
@@ -31,6 +32,5 @@ export default function Section4() {
         />
       </div>
     </div>
-    // </Container>
   );
 }

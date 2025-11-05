@@ -1038,6 +1038,16 @@
     "slogan": "A legacy shaped by our clients’ success."
   },
 
+  "SECTION_4": {
+    "subtitle": "Advanced Project Management",
+    "title": "Beat your project deadlines",
+    "desc": "Our CRM gives you the right tools to manage, collaborate and complete your projects on time. Your clients will be happy and your team will be happy.",
+    "list": [
+      "Easily see the progress of your project",
+      "Collaborate with team members",
+      "Break down your project into milestones and tasks"
+    ]
+  },
   "SECTION_5": {
     "title": "All the important modules that you need",
     "subtitle": "Amazing Set Of Features",
