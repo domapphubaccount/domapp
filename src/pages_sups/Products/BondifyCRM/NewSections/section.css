@@ -116,7 +116,7 @@
     margin: 0 0 10px;
     color: #5c5678;
   }
-  .create-account{
+  .create-account {
     display: inline-block;
     font-weight: 400;
     font-size: 18px;
@@ -125,7 +125,7 @@
     border-radius: 5px;
     padding: 10px 40px;
   }
-  .see-pricing{
+  .see-pricing {
     display: inline-block;
     font-weight: 400;
     font-size: 18px;
@@ -135,4 +135,13 @@
     border-radius: 5px;
     padding: 10px 40px;
   }
+}
+
+.card-section5 {
+  width: 30% !important;
+  padding: 25px;
+  border-radius: 7px;
+  background-color: #fafbff;
+  margin-top: 30px;
+  height: 340px;
 }

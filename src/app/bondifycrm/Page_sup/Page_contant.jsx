@@ -40,6 +40,7 @@ import Section1 from "@/pages_sups/Products/BondifyCRM/NewSections/Section1";
 import Section2 from "@/pages_sups/Products/BondifyCRM/NewSections/Section2";
 import Section3 from "@/pages_sups/Products/BondifyCRM/NewSections/Section3";
 import Section4 from "@/pages_sups/Products/BondifyCRM/NewSections/Section4";
+import Section5 from "@/pages_sups/Products/BondifyCRM/NewSections/Section5";
 
 export default function Page() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -77,6 +78,7 @@ export default function Page() {
         <Section2/>
         <Section3/>
         <Section4/>
+        <Section5/>
       </>
     </div>
   );

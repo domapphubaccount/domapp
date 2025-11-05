@@ -24,7 +24,7 @@ export default function Section1() {
         </div>
         <div className="feature-card">
               <Image
-            src="/images/image1.png"
+            src="/images/image2.png"
             alt="feature1"
             width={140}
             height={140}
@@ -34,7 +34,7 @@ export default function Section1() {
         </div>
         <div className="feature-card">
                   <Image
-            src="/images/image1.png"
+            src="/images/image3.png"
             alt="feature1"
             width={140}
             height={140}
@@ -44,7 +44,7 @@ export default function Section1() {
         </div>
         <div className="feature-card">
                   <Image
-            src="/images/image1.png"
+            src="/images/image4.png"
             alt="feature1"
             width={140}
             height={140}
