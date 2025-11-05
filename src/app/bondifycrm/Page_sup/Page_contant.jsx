@@ -36,6 +36,7 @@ import Bannar from "@/pages_sups/Products/BondifyCRM/Bannar";
 import Break from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Break";
 import VideoSection from "@/pages_sups/Products/BondifyCRM/BondifyCRM/VideoSection";
 import { useSelector } from "react-redux";
+import Section1 from "@/pages_sups/Products/BondifyCRM/NewSections/Section1";
 
 export default function Page() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -53,20 +54,23 @@ export default function Page() {
         <VideoSection/>
         {/* <Section_1 /> */}
         <Break body={bondifycrm(lang).sections.Break_1} />
-        <Section_2 />
-        <Section_3 />
-        <Section_4 />
-        <Section_5 />
+        {/* <Section_2 /> */}
+        {/* <Section_3 /> */}
+        {/* <Section_4 /> */}
+        {/* <Section_5 /> */}
         {/* <Section_6 /> */}
-        <Section_7 />
-        <Break body={bondifycrm(lang).sections.Break_2} />
-        <Section_9 />
-        <Section_10 />
+        {/* <Section_7 /> */}
+        {/* <Break body={bondifycrm(lang).sections.Break_2} /> */}
+        {/* <Section_9 /> */}
+        {/* <Section_10 /> */}
         {/* <Section_11 /> */}
-        <Section_12 />
-        <Section_13 />
-        <Section_14 />
-        <Section_15 />
+        {/* <Section_12 /> */}
+        {/* <Section_13 /> */}
+        {/* <Section_14 /> */}
+        {/* <Section_15 /> */}
+
+
+        <Section1/>
       </>
     </div>
   );
