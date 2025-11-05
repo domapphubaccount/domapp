@@ -38,6 +38,7 @@ import VideoSection from "@/pages_sups/Products/BondifyCRM/BondifyCRM/VideoSecti
 import { useSelector } from "react-redux";
 import Section1 from "@/pages_sups/Products/BondifyCRM/NewSections/Section1";
 import Section2 from "@/pages_sups/Products/BondifyCRM/NewSections/Section2";
+import Section3 from "@/pages_sups/Products/BondifyCRM/NewSections/Section3";
 
 export default function Page() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -73,6 +74,7 @@ export default function Page() {
 
         <Section1/>
         <Section2/>
+        <Section3/>
       </>
     </div>
   );
