@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "reactstrap";
-import "./Section1.css";
+import "./Section.css";
 import Image from "next/image";
 
 export default function Section1() {
