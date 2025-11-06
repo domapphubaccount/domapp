@@ -11,9 +11,7 @@ import useInitCountry from "@/stores/useInitCountry";
 
 export default function Pricing() {
   const [priceIcon, setPriceIcon] = useState(false);
-
   useInitCountry();
-
   const { currency, country } = useSelector((state) => state.countryRed);
 
   return (
@@ -30,365 +28,242 @@ export default function Pricing() {
   );
 }
 
+function PricingCards({ isMonthly, currency }) {
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
+
+  const pricing = isMonthly
+    ? bondifycrm(lang).sections.BONDIFY_PRICING.monthly
+    : bondifycrm(lang).sections.BONDIFY_PRICING.annualy;
+
+  const { free = {}, standard = {}, enterprise = {} } = pricing;
+
+  const getPrice = (plan) => {
+    if (!plan) return "0";
+    return currency === "EGP"
+      ? plan.price_EGY ?? 0
+      : currency === "SAR"
+      ? plan.price_SAR ?? 0
+      : plan.price_USD ?? 0;
+  };
+
+  const plans = [
+    {
+      ...free,
+      type: "free",
+      price: "0",
+      period: isMonthly ? "month" : "year",
+    },
+    {
+      ...standard,
+      type: "standard",
+      price: getPrice(standard),
+      period: isMonthly ? "month" : "year",
+    },
+    {
+      ...enterprise,
+      type: "enterprise",
+      price: "Custom",
+      period: "",
+    },
+  ];
+
+  
+
+  return (
+    <div dir={dir}>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+        {plans.map((plan, index) => (
+          <div
+            key={index}
+            className={`rounded-2xl p-8 transition-all duration-300 border border-gray-200 ${
+              plan.type === "standard"
+                ? "bg-[#5c65c7] text-white  z-10"
+                : "bg-white text-gray-900 "
+            }`}
+          >
+            <h3
+              className={`${
+                plan.type === "standard" ? "text-white" : "text-[#5c5678]"
+              } text-[18px]`}
+            >
+              {plan.title}
+            </h3>
+
+            <div className="mb-8">
+              <div className="flex items-baseline">
+                <span className="text-[32px] font-medium">
+                  {plan.type === "enterprise"
+                    ? "Custom"
+                    : `${currency} ${plan.price}`}
+                </span >
+                {plan.type !== "enterprise" && plan.price !== "0" && (
+  <span className="text-[18px] ml-2 mr-2">
+  /{" "}
+  {plan.period === "month"
+    ? (lang === "en" ? "month" : "شهر")
+    : (lang === "en" ? "year" : "سنة")}
+</span>
+
+
+                )}
+              </div>
+            </div>
+
+            <ul className="m-0 p-0 mb-5">
+              {Array.isArray(plan.include) ? (
+                plan.include.map((item, i) => (
+                  <li key={i} className="flex items-center mb-3">
+                    <div
+                      className={`w-6 h-6 rounded-full flex items-center justify-center ${lang === "en" ? "mr-3" :"ml-3"} flex-shrink-0 ${
+                        plan.type === "standard" ? "bg-white/20" : "bg-gray-200"
+                      }`}
+                    >
+                      <svg
+                        className={`w-4 h-4 ${
+                          plan.type === "standard"
+                            ? "text-white"
+                            : "text-gray-600"
+                        }`}
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <span
+                      className={
+                        plan.type === "standard"
+                          ? "text-white"
+                          : "text-gray-700"
+                      }
+                    >
+                      {item}
+                    </span>
+                  </li>
+                ))
+              ) : (
+                <li className="flex items-center">
+                  <div
+                    className={`w-6 h-6 rounded-full flex items-center justify-center mr-3 ${
+                      plan.type === "standard" ? "bg-white/20" : "bg-gray-200"
+                    }`}
+                  >
+                    <svg
+                      className={`w-4 h-4 ${
+                        plan.type === "standard"
+                          ? "text-white"
+                          : "text-gray-600"
+                      }`}
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    className={
+                      plan.type === "standard" ? "text-white" : "text-gray-700"
+                    }
+                  >
+                    {plan.include}
+                  </span>
+                </li>
+              )}
+            </ul>
+
+            <Link
+              href={plan.link || "#"}
+              className={`
+    w-full flex justify-center items-center pt-2 pb-2 rounded-[12px] 
+    text-base font-semibold transition-all duration-300
+    ${
+      plan.type === "standard"
+        ? "bg-[#ebedfd] text-[#5c65c7] hover:bg-[#d8dbf7]"
+        : "bg-[#6772e5] text-white hover:bg-[#5a63d8]"
+    }
+    focus:outline-none text-decoration-none
+  `}
+            >
+              {plan.btn}
+              {/* Get Started */}
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Monthly({ priceIcon, currency }) {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
-  const [priceToggle, setPriceToggle] = useState(true);
-  let {
-    free = {},
-    standard = {},
-    enterprise = {},
-  } = bondifycrm(lang).sections.BONDIFY_PRICING.monthly;
+  const [isMonthly, setIsMonthly] = useState(true);
 
-  console.log(bondifycrm(lang).sections.BONDIFY_PRICING.monthly);
   return (
     <>
       <div className="py-3">
         <Container>
-          <div style={{ maxWidth: "1000px" }} className="m-auto"></div>
-          <div>
-            <div className="d-flex justify-content-center">
-              <div
-                className=""
-                style={{
-                  borderRadius: "20px",
-                  border: "1px solid #23834B",
-                  boxShadow: "0px 4px 20px 2px #ccc",
-                }}
+          <div className="text-center mb-16 px-4">
+            <h2 className="text-[27px] font-bold text-[#5c5678] mb-1">
+              {bondifycrm(lang).sections.BONDIFY_PRICING.title}
+            </h2>
+            <p className="text-[16px] text-[#5c5678] mb-8">
+               {bondifycrm(lang).sections.BONDIFY_PRICING.sub_title}
+            </p>
+
+            <div className="flex items-center justify-center gap-4">
+              <span
+                className={`text-sm font-semibold ${
+                  isMonthly ? "text-indigo-600" : "text-gray-600"
+                }`}
               >
-                <button
-                  className={`pricing_toggle  ${
-                    priceToggle ? "toggle-2" : "toggle-1"
+                {bondifycrm(lang).sections.BONDIFY_PRICING.month}
+              </span>
+
+              <label className="relative inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  className="sr-only peer"
+                  checked={!isMonthly}
+                  onChange={() => setIsMonthly(!isMonthly)}
+                />
+                <div
+                  className="w-16 h-5 bg-[#94a3b8] rounded-full 
+                    peer-checked:bg-[#4f46e5]
+                    after:content-[''] after:absolute after:top-0.5 after:left-0.5 
+                    after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all 
+                    peer-checked:after:translate-x-11"
+                ></div>
+              </label>
+
+              <div className="flex items-center gap-2">
+                <span
+                  className={`text-sm font-semibold ${
+                    !isMonthly ? "text-indigo-600" : "text-gray-600"
                   }`}
-                  style={{ borderRadius: "20px" }}
-                  onClick={() => setPriceToggle(true)}
-                >
-                  {bondifycrm(lang).sections.BONDIFY_PRICING.month}
-                </button>
-                <button
-                  data-save-content="save"
-                  className={`pricing_toggle annual_button ${
-                    priceToggle ? "toggle-1" : "toggle-2"
-                  }`}
-                  style={{
-                    borderRadius: "20px",
-                  }}
-                  onClick={() => setPriceToggle(false)}
                 >
                   {bondifycrm(lang).sections.BONDIFY_PRICING.year}
-                </button>
+                </span>
+                {/* {!isMonthly && (
+            <span className="text-xs bg-red-500 text-white px-2 py-0.5 rounded-full animate-pulse">
+              Save 20%
+            </span>
+          )} */}
               </div>
             </div>
-
-            {priceToggle ? (
-              <div
-                className="flex flex-col justify-between items-center lg:flex-row lg:items-start"
-                dir={dir}
-              >
-                <div className="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
-                  <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"
-                      alt=""
-                      className="rounded-3xl w-20 h-20"
-                    />
-                    <div className="mx-5">
-                      <span className="block text-2xl font-semibold">
-                        {free.title}
-                      </span>
-                    </div>
-                  </div>
-                  <ul className="mb-7 font-medium text-gray-500">
-                    <li className="flex text-lg mb-2">
-                      <img
-                        loading="lazy"
-                        src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                        alt=""
-                      />
-                      <span className="mx-3 text-black">{free.include}</span>
-                    </li>
-                  </ul>
-                  <Link
-                    href={free.link}
-                    className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
-                  >
-                    {free.btn}
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-                      className="mx-2"
-                      alt=""
-                    />
-                  </Link>
-                </div>
-
-                <div className="w-full flex-1 p-8 order-3 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
-                  <div className="mb-8 pb-8 flex items-center border-b border-gray-600">
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"
-                      alt=""
-                      className="rounded-3xl w-20 h-20"
-                    />
-                    <div className="mx-5">
-                      <span className="block text-3xl font-semibold text-white">
-                        {enterprise.title}
-                      </span>
-                    </div>
-                  </div>
-                  <ul className="mb-10 font-medium text-xl">
-                    <li className="flex mb-6">
-                      <img
-                        loading="lazy"
-                        src="https://res.cloudinary.com/williamsondesign/check-white.svg"
-                        alt=""
-                      />
-                      <span className="mx-3">{enterprise.include}</span>
-                    </li>
-                  </ul>
-                  <Link
-                    href={enterprise.link}
-                    className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-2xl"
-                  >
-                    {enterprise.btn}
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-                      className="mx-2"
-                      alt=""
-                    />
-                  </Link>
-                </div>
-
-                <div className="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
-                  <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"
-                      alt=""
-                      className="rounded-3xl w-20 h-20"
-                    />
-                    <div className="mx-5">
-                      <span className="block text-2xl font-semibold">
-                        {standard.title}
-                      </span>
-                      <span>
-                        <span className="font-medium text-gray-500 text-xl align-top ">
-                          {currency}&thinsp;
-                        </span>
-                        <span className="text-3xl font-bold">
-                          {currency === "EGP"
-                            ? standard.price_EGY
-                            : currency === "SAR"
-                            ? standard.price_SAR
-                            : standard.price_USD}
-                        </span>
-                      </span>
-                      <span className="text-gray-500 font-medium">
-                        / {standard.user}
-                      </span>
-                    </div>
-                  </div>
-                  <ul>
-                    {Array.isArray(standard.include) ? (
-                      standard.include.map((item, index) => (
-                        <li key={index} className="flex text-lg mb-2">
-                          <img
-                            loading="lazy"
-                            src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                            alt="check"
-                          />
-                          <span className="mx-3 text-black">{item}</span>
-                        </li>
-                      ))
-                    ) : (
-                      <li className="flex text-lg mb-2">
-                        <img
-                          loading="lazy"
-                          src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                          alt="check"
-                        />
-                        <span className="mx-3 text-black">
-                          {standard.include}
-                        </span>
-                      </li>
-                    )}
-                  </ul>
-
-                  <Link
-                    href={standard.link}
-                    className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
-                  >
-                    {standard.btn}
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-                      className="mx-2"
-                      alt=""
-                    />
-                  </Link>
-                </div>
-              </div>
-            ) : (
-              <Annual currency={currency} />
-            )}
           </div>
+
+          <PricingCards isMonthly={isMonthly} currency={currency} />
         </Container>
-      </div>
-    </>
-  );
-}
-function Annual({ priceIcon, currency }) {
-  const { lang, dir } = useSelector((state) => state.languageSlice);
-  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
-  let { free, standard, enterprise } =
-    bondifycrm(lang).sections.BONDIFY_PRICING.annualy;
-  return (
-    <>
-      <div
-        className="flex flex-col justify-between items-center lg:flex-row lg:items-start"
-        dir={dir}
-      >
-        <div className="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
-          <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"
-              alt=""
-              className="rounded-3xl w-20 h-20"
-            />
-            <div className="mx-5">
-              <span className="block text-2xl font-semibold">{free.title}</span>
-            </div>
-          </div>
-          <ul className="mb-7 font-medium text-gray-500">
-            <li className="flex text-lg mb-2">
-              <img
-                loading="lazy"
-                alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-              />
-              <span className="mx-3 text-black">{free.include}</span>
-            </li>
-          </ul>
-          <Link
-            href="http://bondifycrm.domapphub.com/login"
-            className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
-          >
-            {free.btn}
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-              className="mx-2"
-              alt=""
-            />
-          </Link>
-        </div>
-
-        <div className="w-full flex-1 p-8 order-3 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
-          <div className="mb-8 pb-8 flex items-center border-b border-gray-600">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"
-              alt=""
-              className="rounded-3xl w-20 h-20"
-            />
-            <div className="mx-5">
-              <span className="block text-3xl font-semibold text-white">
-                {enterprise.title}
-              </span>
-            </div>
-          </div>
-          <ul className="mb-10 font-medium text-xl">
-            <li className="flex mb-6">
-              <img
-                loading="lazy"
-                alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-white.svg"
-              />
-              <span className="mx-3">{enterprise.include}</span>
-            </li>
-          </ul>
-          <Link
-            href="https://wa.me/201501060885"
-            className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-2xl"
-          >
-            {enterprise.btn}
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-              className="mx-2"
-              alt=""
-            />
-          </Link>
-        </div>
-
-        <div className="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
-          <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"
-              alt=""
-              className="rounded-3xl w-20 h-20"
-            />
-            <div className="mx-5">
-              <span className="block text-2xl font-semibold">
-                {standard.title}
-              </span>
-              <span>
-                <span className="font-medium text-gray-500 text-xl align-top ">
-                  {currency} &thinsp;
-                </span>
-                <span className="text-3xl font-bold">
-                  {currency === "EGP"
-                    ? standard.price_EGY
-                    : currency === "SAR"
-                    ? standard.price_SAR
-                    : standard.price_USD}
-                </span>
-              </span>
-              <span className="text-gray-500 font-medium">
-                / {standard.user}
-              </span>
-            </div>
-          </div>
-          <ul>
-            {Array.isArray(standard.include) ? (
-              standard.include.map((item, index) => (
-                <li key={index} className="flex text-lg mb-2">
-                  <img
-                    loading="lazy"
-                    src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                    alt="check"
-                  />
-                  <span className="mx-3 text-black">{item}</span>
-                </li>
-              ))
-            ) : (
-              <li className="flex text-lg mb-2">
-                <img
-                  loading="lazy"
-                  src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                  alt="check"
-                />
-                <span className="mx-3 text-black">{standard.include}</span>
-              </li>
-            )}
-          </ul>
-          <Link
-            href="https://wa.me/201501060885"
-            className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
-          >
-            {standard.btn}
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-              className="mx-2"
-              alt="btn icon"
-            />
-          </Link>
-        </div>
       </div>
     </>
   );

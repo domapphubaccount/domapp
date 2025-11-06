@@ -14,8 +14,8 @@ export default function Section3() {
       <Container className="pt-5 pb-5">
         <h3 className="text-center mb-5">{section.title}</h3>
         <div dir={dir} className="d-flex justify-content-center gap-3">
-          <button className="create-account">{section.buttons.createAccount}</button>
-          <button className="see-pricing">{section.buttons.seePricing}</button>
+          <a href="https://bondifycrm.com/account/signup" className="create-account">{section.buttons.createAccount}</a>
+          <button href="https://bondifycrm.com/pricing" className="see-pricing">{section.buttons.seePricing}</button>
         </div>
       </Container>
     </div>

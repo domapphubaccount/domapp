@@ -124,6 +124,7 @@
     background-color: #6772e5;
     border-radius: 5px;
     padding: 10px 40px;
+    text-decoration: none;
   }
   .see-pricing {
     display: inline-block;
@@ -134,6 +135,11 @@
     border: solid 1px #6772e5;
     border-radius: 5px;
     padding: 10px 40px;
+    text-decoration: none;
+  }
+  .see-pricing:hover{
+      color: #ffffff;
+    background-color: #6772e5;
   }
 }
 

@@ -813,11 +813,32 @@
     "year": "Annual",
     "month": "Monthly",
     "save_to": "Save Up To 20%",
+    "title": " Your Business Size Doesn’t Matter — bondify CRM Fits All",
+    "sub_title": " Flexible, customizable, and built for every team — choose the plan that fits your workflow and business goals.",
     "monthly": {
       "free": {
         "title": "Free",
         "price": false,
-        "include": "Get started For Free",
+        "include": [
+          "Team (Users) - 50",
+          "Clients - 50",
+          "Projects - 50",
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
+
         "link": "http://bondifycrm.domapphub.com/login",
         "btn": "Start Demo"
       },
@@ -830,14 +851,50 @@
         "Egp": "EGP",
         "Sar": "SAR",
         "user": "User",
-        "include": ["All features in Startup", "Suitable for up to 10 users"],
+        "include": [
+          "Team (Users) - 10",
+          "Clients - Unlimited",
+          "Projects - Unlimited",
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       },
       "enterprise": {
         "title": "Enterprise",
         "price": false,
-        "include": "For companies and Enterprises with more than 10 users",
+        "include": [
+          "Team (Users) - Unlimited",
+          "Clients - Unlimited",
+          "Projects - Unlimited",
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       }
@@ -846,7 +903,25 @@
       "free": {
         "title": "Free",
         "price": false,
-        "include": "Get started For Free",
+        "include": [
+          "Team (Users) - 50",
+          "Clients - 50",
+          "Projects - 50",
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "http://bondifycrm.domapphub.com/login",
         "btn": "Start Demo"
       },
@@ -859,14 +934,50 @@
         "Egp": "EGP",
         "Sar": "SAR",
         "user": "User",
-        "include": ["All features in Startup", "Suitable for up to 10 users"],
+        "include": [
+          "Team (Users) - 10",
+          "Clients - Unlimited",
+          "Projects - Unlimited",
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       },
       "enterprise": {
         "title": "Enterprise",
         "price": false,
-        "include": "For companies and Enterprises with more than 10 users",
+        "include": [
+          "Team (Users) - Unlimited",
+          "Clients - Unlimited",
+          "Projects - Unlimited",
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       }
@@ -1066,7 +1177,7 @@
       }
     ]
   },
-    "SECTION_2": {
+  "SECTION_2": {
     "subtitle": "INCREASE YOUR PRODUCTIVITY",
     "title": "Intuitive, powerful, and built for teams who get things done",
     "desc": "Our bondify CRM comes with a host of features that are designed to help increase your entire team's productivity.",
@@ -1131,16 +1242,15 @@
     ]
   },
   "SECTION_6": {
-  "title": "Productivity Redefined",
-  "subtitle": "The complete productivity tool for your business",
-  "tabs": [
-    "Tasks",
-    "Invoice",
-    "Support Ticket",
-    "Clients",
-    "Leads",
-    "Knowledgebase"
-  ]
-}
-
+    "title": "Productivity Redefined",
+    "subtitle": "The complete productivity tool for your business",
+    "tabs": [
+      "Tasks",
+      "Invoice",
+      "Support Ticket",
+      "Clients",
+      "Leads",
+      "Knowledgebase"
+    ]
+  }
 }
