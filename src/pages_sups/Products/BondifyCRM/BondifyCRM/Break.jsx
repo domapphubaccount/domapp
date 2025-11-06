@@ -3,7 +3,7 @@ import { Container } from "reactstrap";
 
 export default function Break({body}) {
   return (
-    <section className=" mt-5">
+    <section className="section3-CRM-bg">
       <Container>
         <div className="text-center fw-bold">
           {body} 

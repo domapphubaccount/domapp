@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Container } from "reactstrap";
 import "./Section.css";
 import { useSelector } from "react-redux";
 import en from "@/stores/Language/en.json";
