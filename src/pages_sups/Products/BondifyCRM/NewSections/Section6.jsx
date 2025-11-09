@@ -18,13 +18,12 @@ export default function Section6() {
     "/images/Project.png",
     "/images/Tasks.png",
     "/images/INV.png",
-    "/images/supportTicket.png"
+    "/images/supportTicket.png",
   ];
 
   return (
     <div className="section6-CRM-bg">
       <div className="pt-5 pb-5" dir={dir}>
-        
         <div className="Text-center">
           <h3 className="text-center mb-3">{section.title}</h3>
           <p className="text-center mb-5">{section.subtitle}</p>
@@ -51,7 +50,6 @@ export default function Section6() {
             className="tab-image"
           />
         </div>
-
       </div>
     </div>
   );
