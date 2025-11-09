@@ -1245,12 +1245,12 @@
     "title": "Productivity Redefined",
     "subtitle": "The complete productivity tool for your business",
     "tabs": [
+      "Leads",
+      "Clients",
+      "Project",
       "Tasks",
       "Invoice",
-      "Support Ticket",
-      "Clients",
-      "Leads",
-      "Knowledgebase"
+      "Support Ticket"
     ]
   }
 }
