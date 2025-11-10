@@ -4822,6 +4822,10 @@ background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(252,252,252,1) 
   border-radius: 10px;
   display: flex;
 }
+.pricing-section  {
+   font-family: "Poppins", sans-serif !important;
+
+}
 
 .mil-link .mil-arrow.erp {
   margin-left: 15px;

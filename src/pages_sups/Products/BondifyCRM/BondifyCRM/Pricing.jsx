@@ -16,7 +16,7 @@ export default function Pricing() {
   return (
     <div className ="bondifycrm-page">
       <Header />
-      <section className={league.className + " pricing-section mb-5"}>
+      <section className={league.className + " pricing-section mb-5 bondifycrm-page"}>
         <div className="mb-2">{/* <Section__head /> */}</div>
         <Monthly priceIcon={priceIcon} currency={currency} />
       </section>
