@@ -42,13 +42,14 @@ import Section3 from "@/pages_sups/Products/BondifyCRM/NewSections/Section3";
 import Section4 from "@/pages_sups/Products/BondifyCRM/NewSections/Section4";
 import Section5 from "@/pages_sups/Products/BondifyCRM/NewSections/Section5";
 import Section6 from "@/pages_sups/Products/BondifyCRM/NewSections/Section6";
+// import "./Section.css";
 
 export default function Page() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
 
   return (
-    <div className="erp_page">
+    <div className="erp_page bondifycrm-page">
       <>
         <Bannar />
         <Heading

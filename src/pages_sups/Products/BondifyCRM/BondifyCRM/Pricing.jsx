@@ -14,14 +14,14 @@ export default function Pricing() {
   const { currency, country } = useSelector((state) => state.countryRed);
 
   return (
-    <>
+    <div className ="bondifycrm-page">
       <Header />
       <section className={league.className + " pricing-section mb-5"}>
         <div className="mb-2">{/* <Section__head /> */}</div>
         <Monthly priceIcon={priceIcon} currency={currency} />
       </section>
       <Footer />
-    </>
+    </div>
   );
 }
 

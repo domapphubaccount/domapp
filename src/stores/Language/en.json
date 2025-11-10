@@ -823,7 +823,7 @@
 
         "title": "Free",
         "price": false,
-        "limits": ["Team (Users) - 50", "Clients - 50", "Projects - 50"],
+        "limits": ["Team (Users) - 3", "Clients - 3", "Projects - 10"],
         "include": [
           "Tasks",
           "Leads",
@@ -924,7 +924,7 @@
         "for": "Free plan - explore all core features for free",
 
         "price": false,
-        "limits": ["Team (Users) - 50", "Clients - 50", "Projects - 50"],
+        "limits": ["Team (Users) - 3", "Clients - 3", "Projects - 10"],
 
         "include": [
           "Tasks",
