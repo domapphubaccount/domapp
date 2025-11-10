@@ -20,7 +20,7 @@ export default function Section1() {
 
   return (
     <Container dir={dir}>
-      <div className="text-center mt-5 section-title-meta">
+      <div className="text-center mt-5 pt-5 section-title-meta">
         <span>{section.subtitle}</span>
         <h2>{section.title}</h2>
       </div>

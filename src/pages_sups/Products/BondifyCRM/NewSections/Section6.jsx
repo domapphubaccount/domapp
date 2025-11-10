@@ -41,13 +41,13 @@ export default function Section6() {
           ))}
         </div>
 
-        <div className="d-flex justify-content-center mt-5">
+        <div className="d-flex justify-content-center mt-5  rounded-3 ">
           <Image
             src={images[activeTab]}
             alt="tab-preview"
             width={1100}
             height={500}
-            className="tab-image"
+            className="tab-image rounded-3"
           />
         </div>
       </div>

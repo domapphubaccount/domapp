@@ -4,7 +4,6 @@ import { Col, Container, Row } from "reactstrap";
 import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
-import Loading_page from "@/components/Loading_page/Loading_page";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import useInitCountry from "@/stores/useInitCountry";
@@ -18,9 +17,7 @@ export default function Pricing() {
     <>
       <Header />
       <section className={league.className + " pricing-section mb-5"}>
-        <div className="mb-2">
-          <Section__head />
-        </div>
+        <div className="mb-2">{/* <Section__head /> */}</div>
         <Monthly priceIcon={priceIcon} currency={currency} />
       </section>
       <Footer />
@@ -68,8 +65,6 @@ function PricingCards({ isMonthly, currency }) {
     },
   ];
 
-  
-
   return (
     <div dir={dir}>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
@@ -82,40 +77,56 @@ function PricingCards({ isMonthly, currency }) {
                 : "bg-white text-gray-900 "
             }`}
           >
-            <h3
+            <h2
               className={`${
                 plan.type === "standard" ? "text-white" : "text-[#5c5678]"
-              } text-[18px]`}
+              } text-[24px] fw-bold`}
             >
               {plan.title}
-            </h3>
+            </h2>
 
             <div className="mb-8">
               <div className="flex items-baseline">
-                <span className="text-[32px] font-medium">
+                <span className="text-[28px] font-medium">
                   {plan.type === "enterprise"
                     ? "Custom"
                     : `${currency} ${plan.price}`}
-                </span >
+                </span>
                 {plan.type !== "enterprise" && plan.price !== "0" && (
-  <span className="text-[18px] ml-2 mr-2">
-  /{" "}
-  {plan.period === "month"
-    ? (lang === "en" ? "month" : "شهر")
-    : (lang === "en" ? "year" : "سنة")}
-</span>
-
-
-                )}
+                  <span className="text-[16px] ml-2 mr-2">
+                    /{" "}
+                    {plan.period === "month"
+                      ? lang === "en"
+                        ? "month"
+                        : "شهر"
+                      : lang === "en"
+                      ? "year"
+                      : "سنة"} / {""}{plan.user}
+                  </span>
+                )} 
               </div>
             </div>
 
-            <ul className="m-0 p-0 mb-5">
-              {Array.isArray(plan.include) ? (
-                plan.include.map((item, i) => (
+
+              <h5
+              className={`${
+                plan.type === "standard" ? "text-white" : "text-[#5c5678]"
+              } text-[20px] mb-4 h-[50px]`}
+            >
+              {plan?.for}
+            </h5>
+
+
+            <div>
+              <h3>{plan?.LimitsTitle}</h3>
+                <ul className="m-0 p-0 mb-5 m-3">
+              {Array.isArray(plan.limits) ? (
+                plan.limits.map((item, i) => (
                   <li key={i} className="flex items-center mb-3">
                     <div
-                      className={`w-6 h-6 rounded-full flex items-center justify-center ${lang === "en" ? "mr-3" :"ml-3"} flex-shrink-0 ${
+                      className={`w-6 h-6 rounded-full flex items-center justify-center ${
+                        lang === "en" ? "mr-3" : "ml-3"
+                      } flex-shrink-0 ${
                         plan.type === "standard" ? "bg-white/20" : "bg-gray-200"
                       }`}
                     >
@@ -179,6 +190,82 @@ function PricingCards({ isMonthly, currency }) {
                 </li>
               )}
             </ul>
+            </div>
+
+  <div>
+              <h3>{plan.Modules}</h3>
+            <ul className="m-0 p-0 mb-5 m-3">
+              {Array.isArray(plan.include) ? (
+                plan.include.map((item, i) => (
+                  <li key={i} className="flex items-center mb-3">
+                    <div
+                      className={`w-6 h-6 rounded-full flex items-center justify-center ${
+                        lang === "en" ? "mr-3" : "ml-3"
+                      } flex-shrink-0 ${
+                        plan.type === "standard" ? "bg-white/20" : "bg-gray-200"
+                      }`}
+                    >
+                      <svg
+                        className={`w-4 h-4 ${
+                          plan.type === "standard"
+                            ? "text-white"
+                            : "text-gray-600"
+                        }`}
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <span
+                      className={
+                        plan.type === "standard"
+                          ? "text-white"
+                          : "text-gray-700"
+                      }
+                    >
+                      {item}
+                    </span>
+                  </li>
+                ))
+              ) : (
+                <li className="flex items-center">
+                  <div
+                    className={`w-6 h-6 rounded-full flex items-center justify-center mr-3 ${
+                      plan.type === "standard" ? "bg-white/20" : "bg-gray-200"
+                    }`}
+                  >
+                    <svg
+                      className={`w-4 h-4 ${
+                        plan.type === "standard"
+                          ? "text-white"
+                          : "text-gray-600"
+                      }`}
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    className={
+                      plan.type === "standard" ? "text-white" : "text-gray-700"
+                    }
+                  >
+                    {plan.include}
+                  </span>
+                </li>
+              )}
+            </ul>
+              </div>
 
             <Link
               href={plan.link || "#"}
@@ -217,12 +304,12 @@ function Monthly({ priceIcon, currency }) {
               {bondifycrm(lang).sections.BONDIFY_PRICING.title}
             </h2>
             <p className="text-[16px] text-[#5c5678] mb-8">
-               {bondifycrm(lang).sections.BONDIFY_PRICING.sub_title}
+              {bondifycrm(lang).sections.BONDIFY_PRICING.sub_title}
             </p>
 
             <div className="flex items-center justify-center gap-4">
               <span
-                className={`text-sm font-semibold ${
+                className={`text-[20px] font-semibold ${
                   isMonthly ? "text-indigo-600" : "text-gray-600"
                 }`}
               >
@@ -247,17 +334,17 @@ function Monthly({ priceIcon, currency }) {
 
               <div className="flex items-center gap-2">
                 <span
-                  className={`text-sm font-semibold ${
+                  className={`text-[20px] font-semibold ${
                     !isMonthly ? "text-indigo-600" : "text-gray-600"
                   }`}
                 >
                   {bondifycrm(lang).sections.BONDIFY_PRICING.year}
                 </span>
-                {/* {!isMonthly && (
-            <span className="text-xs bg-red-500 text-white px-2 py-0.5 rounded-full animate-pulse">
-              Save 20%
-            </span>
-          )} */}
+                {!isMonthly && (
+                  <span className="text-xs bg-red-500 text-white px-2 py-0.5 rounded-full animate-pulse">
+                    Save 20%
+                  </span>
+                )}
               </div>
             </div>
           </div>

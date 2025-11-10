@@ -58,7 +58,7 @@ export default function Page() {
         />
         <VideoSection/>
         {/* <Section_1 /> */}
-        <Break body={bondifycrm(lang).sections.Break_1} />
+        {/* <Break body={bondifycrm(lang).sections.Break_1} /> */}
         {/* <Section_2 /> */}
         {/* <Section_3 /> */}
         {/* <Section_4 /> */}

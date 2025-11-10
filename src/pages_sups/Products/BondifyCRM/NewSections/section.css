@@ -121,7 +121,7 @@
     font-weight: 400;
     font-size: 18px;
     color: #ffffff;
-    background-color: #6772e5;
+    background-color: #f0297c;
     border-radius: 5px;
     padding: 10px 40px;
     text-decoration: none;
@@ -130,16 +130,16 @@
     display: inline-block;
     font-weight: 400;
     font-size: 18px;
-    color: #6772e5;
+    color: #f0297c;
     background-color: transparent;
-    border: solid 1px #6772e5;
+    border: solid 1px #f0297c;
     border-radius: 5px;
     padding: 10px 40px;
     text-decoration: none;
   }
   .see-pricing:hover{
       color: #ffffff;
-    background-color: #6772e5;
+    background-color: #f0297c;
   }
 }
 
@@ -179,19 +179,19 @@
   transition: 0.2s;
   font-weight: 500;
   min-width: 150px;
-  color:#6772e5;
+  color:#5c5678;
   border-radius: 18px;
 }
 
 .crm-tab-btn:hover {
-  background: #6772e5;
+  background: #f0297c;
   color: #fff;
 }
 
 .crm-tab-btn.active {
-  background: #6772e5;
+  background: #f0297c;
   color: #fff;
-  border-color: #6772e5;
+  border-color: #f0297c;
 }
 
 .tab-image {

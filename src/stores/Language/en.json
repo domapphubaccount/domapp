@@ -817,12 +817,14 @@
     "sub_title": " Flexible, customizable, and built for every team — choose the plan that fits your workflow and business goals.",
     "monthly": {
       "free": {
+        "for": "Free plan - explore all core features for free",
+        "LimitsTitle": "Limits",
+        "Modules":"Included Modules",
+
         "title": "Free",
         "price": false,
+        "limits": ["Team (Users) - 50", "Clients - 50", "Projects - 50"],
         "include": [
-          "Team (Users) - 50",
-          "Clients - 50",
-          "Projects - 50",
           "Tasks",
           "Leads",
           "Invoices",
@@ -844,6 +846,16 @@
       },
       "standard": {
         "title": "Standard",
+        "for": "Suitable for up to 10 users",
+        "LimitsTitle": "Limits",
+                "Modules":"Included Modules",
+
+
+        "limits": [
+          "Team (Users) - 10",
+          "Clients - Unlimited",
+          "Projects - Unlimited"
+        ],
         "price_USD": "9",
         "price_SAR": "34",
         "price_EGY": "226",
@@ -852,9 +864,6 @@
         "Sar": "SAR",
         "user": "User",
         "include": [
-          "Team (Users) - 10",
-          "Clients - Unlimited",
-          "Projects - Unlimited",
           "Tasks",
           "Leads",
           "Invoices",
@@ -875,11 +884,18 @@
       },
       "enterprise": {
         "title": "Enterprise",
+                "Modules":"Included Modules",
+
         "price": false,
-        "include": [
+        "LimitsTitle": "Limits",
+        "for": "For Companies and Enterprises With More Than 10 Users",
+        "limits": [
           "Team (Users) - Unlimited",
           "Clients - Unlimited",
-          "Projects - Unlimited",
+          "Projects - Unlimited"
+        ],
+
+        "include": [
           "Tasks",
           "Leads",
           "Invoices",
@@ -902,11 +918,15 @@
     "annualy": {
       "free": {
         "title": "Free",
+        "LimitsTitle": "Limits",
+                "Modules":"Included Modules",
+
+        "for": "Free plan - explore all core features for free",
+
         "price": false,
+        "limits": ["Team (Users) - 50", "Clients - 50", "Projects - 50"],
+
         "include": [
-          "Team (Users) - 50",
-          "Clients - 50",
-          "Projects - 50",
           "Tasks",
           "Leads",
           "Invoices",
@@ -927,6 +947,9 @@
       },
       "standard": {
         "title": "Standard",
+                "Modules":"Included Modules",
+
+        "LimitsTitle": "Limits",
         "price_USD": "7",
         "price_SAR": "27",
         "price_EGY": "180",
@@ -934,10 +957,14 @@
         "Egp": "EGP",
         "Sar": "SAR",
         "user": "User",
-        "include": [
+        "for": "Suitable for up to 10 users",
+        "limits": [
           "Team (Users) - 10",
           "Clients - Unlimited",
-          "Projects - Unlimited",
+          "Projects - Unlimited"
+        ],
+
+        "include": [
           "Tasks",
           "Leads",
           "Invoices",
@@ -958,11 +985,17 @@
       },
       "enterprise": {
         "title": "Enterprise",
+                "Modules":"Included Modules",
+
         "price": false,
-        "include": [
+        "LimitsTitle": "Limits",
+        "for": "For Companies and Enterprises With More Than 10 Users",
+        "limits": [
           "Team (Users) - Unlimited",
           "Clients - Unlimited",
-          "Projects - Unlimited",
+          "Projects - Unlimited"
+        ],
+        "include": [
           "Tasks",
           "Leads",
           "Invoices",
