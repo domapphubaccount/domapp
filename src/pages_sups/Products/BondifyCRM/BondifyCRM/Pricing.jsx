@@ -14,7 +14,7 @@ export default function Pricing() {
   const { currency, country } = useSelector((state) => state.countryRed);
 
   return (
-    <div className ="bondifycrm-page">
+    <div className ="bondifycrm-page pt-[120px]">
       <Header />
       <section className={league.className + " pricing-section mb-5 bondifycrm-page"}>
         <div className="mb-2">{/* <Section__head /> */}</div>

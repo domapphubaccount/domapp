@@ -819,7 +819,7 @@
       "free": {
         "for": "Free plan - explore all core features for free",
         "LimitsTitle": "Limits",
-        "Modules":"Included Modules",
+        "Modules": "Included Modules",
 
         "title": "Free",
         "price": false,
@@ -848,8 +848,7 @@
         "title": "Standard",
         "for": "Suitable for up to 10 users",
         "LimitsTitle": "Limits",
-                "Modules":"Included Modules",
-
+        "Modules": "Included Modules",
 
         "limits": [
           "Team (Users) - 10",
@@ -884,11 +883,11 @@
       },
       "enterprise": {
         "title": "Enterprise",
-                "Modules":"Included Modules",
+        "Modules": "Included Modules",
 
         "price": false,
         "LimitsTitle": "Limits",
-        "for": "For Companies and Enterprises With More Than 10 Users",
+        "for": "For companies and enterprises with more than 10 users",
         "limits": [
           "Team (Users) - Unlimited",
           "Clients - Unlimited",
@@ -919,7 +918,7 @@
       "free": {
         "title": "Free",
         "LimitsTitle": "Limits",
-                "Modules":"Included Modules",
+        "Modules": "Included Modules",
 
         "for": "Free plan - explore all core features for free",
 
@@ -947,7 +946,7 @@
       },
       "standard": {
         "title": "Standard",
-                "Modules":"Included Modules",
+        "Modules": "Included Modules",
 
         "LimitsTitle": "Limits",
         "price_USD": "7",
@@ -985,11 +984,11 @@
       },
       "enterprise": {
         "title": "Enterprise",
-                "Modules":"Included Modules",
+        "Modules": "Included Modules",
 
         "price": false,
         "LimitsTitle": "Limits",
-        "for": "For Companies and Enterprises With More Than 10 Users",
+        "for": "For companies and enterprises with more than 10 users",
         "limits": [
           "Team (Users) - Unlimited",
           "Clients - Unlimited",

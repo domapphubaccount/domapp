@@ -25,7 +25,7 @@ export default function Footer() {
   }
 
   return (
-    <footer >
+    <footer>
       {isMounted && (
         <>
           <Suspense fallback={""}>
@@ -35,16 +35,17 @@ export default function Footer() {
                   DomApp
                 </h3>
                 <div
-                  className={`footer p-8 text-white ${
+                  className={`footer  text-white ${
                     dir === "rtl" ? "text-right" : "text-left"
                   }`}
-                
                 >
-                               <div
-                className={`grid grid-cols-1 sm:grid-cols-7 gap-6 ${
-                  dir === "rtl" ? "sm:[direction:ltr]" : "sm:[direction:rtl]"
-                }`}
-              >
+                  <div
+                    className={`grid grid-cols-1 sm:grid-cols-7 gap-6 ${
+                      dir === "rtl"
+                        ? "sm:[direction:ltr]"
+                        : "sm:[direction:rtl]"
+                    }`}
+                  >
                     {/* About Us Section */}
                     <div>
                       <div className="mb-3">
