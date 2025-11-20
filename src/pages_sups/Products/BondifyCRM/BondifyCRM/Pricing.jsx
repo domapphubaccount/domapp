@@ -150,6 +150,12 @@ export default function Pricing() {
     );
   }
 
+  const planTranslations = {
+  "Enterprise Plan": "خطة الشركات",
+  "Standard Plan": "الخطة القياسية",
+  "Free Plan": "الخطة المجانية",
+};
+
   return (
     <div className="bondifycrm-page pt-[120px]">
       <Header />
@@ -231,7 +237,8 @@ export default function Pricing() {
                         isStandard ? "text-white" : "text-[#5c5678]"
                       }`}
                     >
-                      {plan.name}
+                      {/* {plan.name} */}
+                       {lang === "ar" ? planTranslations[plan.name] : plan.name}
                     </h2>
 
                     <div className="mb-8">
