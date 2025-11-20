@@ -7,6 +7,7 @@ import Header from "@/components/Layout/Header/Header";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import useInitCountry from "@/stores/useInitCountry";
+import Loading from "@/app/bondifycrm/loading";
 
 export default function Pricing() {
   const [plans, setPlans] = useState([
@@ -139,9 +140,11 @@ export default function Pricing() {
 
   if (loading) {
     return (
-      <div className="bondifycrm-page pt-[120px] min-h-screen flex items-center justify-center">
+      <div className="bondifycrm-page pt-[120px] ">
         <Header />
-        <div className="text-2xl text-[#5c65c7]">Loading...</div>
+        <div className="text-2xl text-[#5c65c7]">
+          <Loading/>
+        </div>
         <Footer />
       </div>
     );
