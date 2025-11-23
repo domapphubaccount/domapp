@@ -10,9 +10,7 @@ import useInitCountry from "@/stores/useInitCountry";
 import Loading from "@/app/bondifycrm/loading";
 
 export default function Pricing() {
-  const [plans, setPlans] = useState([
-
-  ]);
+  const [plans, setPlans] = useState([]);
   const [loading, setLoading] = useState(true);
   const [isMonthly, setIsMonthly] = useState(true);
 
@@ -48,7 +46,7 @@ export default function Pricing() {
       <div className="bondifycrm-page pt-[120px] ">
         <Header />
         <div className="text-2xl text-[#5c65c7]">
-          <Loading/>
+          <Loading />
         </div>
         <Footer />
       </div>
@@ -56,10 +54,10 @@ export default function Pricing() {
   }
 
   const planTranslations = {
-  "Enterprise Plan": "خطة الشركات",
-  "Standard Plan": "الخطة القياسية",
-  "Free Plan": "الخطة المجانية",
-};
+    "Enterprise Plan": "خطة الشركات",
+    "Standard Plan": "الخطة القياسية",
+    "Free Plan": "الخطة المجانية",
+  };
 
   return (
     <div className="bondifycrm-page pt-[120px]">
@@ -143,7 +141,7 @@ export default function Pricing() {
                       }`}
                     >
                       {/* {plan.name} */}
-                       {lang === "ar" ? planTranslations[plan.name] : plan.name}
+                      {lang === "ar" ? planTranslations[plan.name] : plan.name}
                     </h2>
 
                     <div className="mb-8">
@@ -153,11 +151,7 @@ export default function Pricing() {
                         </span>
                         {plan.id !== 6 && price !== "0" && (
                           <span className="text-[16px] ml-2 mr-2">
-                           
-                         
-                            /{" "}
-                          
-                            {lang === "ar" ? "مستخدم" : "user"}
+                            / {lang === "ar" ? "مستخدم" : "user"}
                           </span>
                         )}
                       </div>
@@ -183,7 +177,10 @@ export default function Pricing() {
                       <h3
                         className={isStandard ? "text-white" : "text-gray-900"}
                       >
-                        {bondifycrm(lang).sections.BONDIFY_PRICING.monthly.free.LimitsTitle}
+                        {
+                          bondifycrm(lang).sections.BONDIFY_PRICING.monthly.free
+                            .LimitsTitle
+                        }
                       </h3>
                       <ul className="m-0 p-0 mb-5 m-3">
                         {Object.entries(plan.limits || {}).map(
@@ -236,15 +233,18 @@ export default function Pricing() {
                       <h3
                         className={isStandard ? "text-white" : "text-gray-900"}
                       >
-                                               {bondifycrm(lang).sections.BONDIFY_PRICING.monthly.free.LimitsTitle}
-
+                        {
+                          bondifycrm(lang).sections.BONDIFY_PRICING.monthly.free
+                            .LimitsTitle
+                        }
                       </h3>
                       <ul className="m-0 p-0 mb-5 m-3">
                         {Object.entries(plan?.modules || {})
                           .filter(([_, v]) => v === true)
                           .map(([key]) => {
                             const names = {
-                              projects: lang === "ar" ? "إدارة المشاريع" : "Projects",
+                              projects:
+                                lang === "ar" ? "إدارة المشاريع" : "Projects",
                               tasks: lang === "ar" ? "المهام" : "Tasks",
                               invoices: lang === "ar" ? "الفواتير" : "Invoices",
                               leads:
@@ -301,7 +301,7 @@ export default function Pricing() {
 
                     <Link
                       href={
-                        plan.id === 6 ? "/contact" : `/signup?plan=${plan.id}`
+                        `/bondifycrm/CreateAccount`
                       }
                       className={`
                         w-full flex justify-center items-center pt-2 pb-2 rounded-[12px] 
@@ -315,12 +315,12 @@ export default function Pricing() {
                       `}
                     >
                       {plan.id === 4
-    ? lang === "ar"
-      ? "ابدأ العرض التجريبي"
-      : "Start Demo"
-    : lang === "ar"
-    ? "تواصل معنا"
-    : "Contact Sales"}
+                        ? lang === "ar"
+                          ? "ابدأ العرض التجريبي"
+                          : "Start Demo"
+                        : lang === "ar"
+                        ? "تواصل معنا"
+                        : "Contact Sales"}
                     </Link>
                   </div>
                 );
