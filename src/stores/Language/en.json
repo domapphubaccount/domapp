@@ -1284,5 +1284,20 @@
       "Invoice",
       "Support Ticket"
     ]
-  }
+  },
+"BOUNDIFYCRM_CREATE_ACCOUNT": {
+  "title": "Create Your Account",
+  "subtitle": "Work through your task efficiently and intuitively.",
+  "full_name_label": "Full Name",
+  "full_name_placeholder": "Enter your name",
+  "account_name_label": "User Name",
+  "account_name_placeholder": "@account_name",
+  "email_address_label": "Email Address",
+  "email_address_placeholder": "Enter your email",
+  "password_label": "Password",
+  "password_placeholder": "Create a password",
+  "plan_label": "Select Plan",
+  "create_account_button": "Create Account"
+}
+
 }

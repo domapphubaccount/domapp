@@ -1553,5 +1553,20 @@
       "الفواتير",
       "تذاكر الدعم"
     ]
+  },
+
+ "BOUNDIFYCRM_CREATE_ACCOUNT": {
+    "title": "أنشئ حسابك",
+    "subtitle": "قم بإنجاز مهامك بكفاءة وسهولة.",
+    "full_name_label": "الاسم الكامل",
+    "full_name_placeholder": "أدخل اسمك",
+    "account_name_label": "اسم المستخدم",
+    "account_name_placeholder": "@اسم المستخدم",
+    "email_address_label": "البريد الإلكتروني",
+    "email_address_placeholder": "أدخل بريدك الإلكتروني",
+    "password_label": "كلمة المرور",
+    "password_placeholder": "أنشئ كلمة مرور",
+    "plan_label": "اختر الباقة",
+    "create_account_button": "إنشاء الحساب"
   }
 }
