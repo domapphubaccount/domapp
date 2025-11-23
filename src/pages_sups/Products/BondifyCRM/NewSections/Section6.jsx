@@ -13,7 +13,7 @@ export default function Section6() {
   const [activeTab, setActiveTab] = useState(0);
 
   const images = [
-    "/images/leads.png",
+    "/images/imageTab1.png",
     "/images/Clients.png",
     "/images/Project.png",
     "/images/Tasks.png",
