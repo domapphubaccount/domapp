@@ -235,7 +235,7 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                     className="text-red-500 text-sm mt-1"
                   />
                 </div>
-{values.plan?.value !== "free" && (
+{/* {values.plan?.value !== "Free plan" && (
                 <div className="flex flex-col">
                   <label className="font-medium mb-1">
                     {section.plan_label}
@@ -253,7 +253,7 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                     </div>
                   )}
                 </div>
-)}
+)} */}
 
                 <button
                   type="submit"
