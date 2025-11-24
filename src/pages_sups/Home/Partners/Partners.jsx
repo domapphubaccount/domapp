@@ -21,7 +21,7 @@ const logos = [
   "partner-logo-11",
   "partner-logo-12",
   "partner-logo-13",
-  "partner-logo-14",
+  // "partner-logo-14",
   "partner-logo-15",
 ];
 
@@ -47,7 +47,7 @@ const logos = [
         title_1={home(lang).sections.partners_title.title}
         des_1={home(lang).sections.partners_title.slogan}
       />
-       <div className="flex flex-col gap-4 w-full max-w-5xl mx-auto perspective-1000 mb-[100px]">
+       <div className="flex flex-col gap-4 w-full max-w-5xl mx-auto perspective-1000 mb-[100px] ">
       <div className="grid grid-cols-4 gap-6 transition-transform duration-700 transform-gpu">
         {currentLogos.slice(0, 4).map((logo, idx) => (
           <div
@@ -56,7 +56,7 @@ const logos = [
           ></div>
         ))}
       </div>
-      <div className="grid grid-cols-4 gap-6 transition-transform duration-700 transform-gpu">
+      <div  className="grid grid-cols-4 gap-2 transition-transform duration-700 transform-gpu justify-center flex ">
         {currentLogos.slice(4, 8).map((logo, idx) => (
           <div
             key={idx}

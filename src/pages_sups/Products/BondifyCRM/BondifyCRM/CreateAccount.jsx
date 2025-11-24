@@ -82,28 +82,28 @@ export default function CreateAccount() {
   });
 
   return (
-    <div className="bondifycrm-page pt-[120px] ">
+    <div className="bondifycrm-page pt-[100px] ">
       <Header />
 
       <div
         dir={dir}
-        className="w-full min-h-[80vh] flex flex-col md:flex-row items-center justify-center px-6 md:px-16 gap-10"
+        className="w-[60%] m-auto min-h-[85vh] flex flex-col md:flex-row items-center justify-center gap-5 overflow-hidden "
       >
         {/* Image */}
-        <div className="w-full md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 flex justify-center">
           <img
             src="/images/CreatAcc.png"
             alt="Create Account"
-            className="w-[85%] max-w-[680px] object-contain"
+            className="w-[80%] max-w-[550px] object-contain"
           />
         </div>
 
         {/* Form */}
-        <div className="w-full md:w-1/2">
+        <div className=" md:w-1/2">
           <h2 className="text-3xl font-bold text-[#6772e5] ">
             {section.title}
           </h2>
-          <p className="mb-[30px] text-[#797687]">{section.subtitle}</p>
+          <p className="mb-[25px] text-[#797687]">{section.subtitle}</p>
 
           <Formik
             initialValues={{
@@ -146,7 +146,7 @@ export default function CreateAccount() {
             }}
           >
             {({ setFieldValue, values, errors, touched }) => (
-              <Form className="flex flex-col gap-4">
+              <Form className="flex flex-col gap-2">
                 <div className="flex flex-col">
                   <label className="font-medium mb-1">
                     {section.full_name_label}
@@ -154,7 +154,7 @@ export default function CreateAccount() {
                   <Field
                     name="full_name"
                     type="text"
-                    className="border rounded-lg p-3 outline-none focus:border-[#6772e5]"
+                    className="border rounded-lg p-2 outline-none focus:border-[#6772e5]"
                     placeholder={section.full_name_placeholder}
                   />
                   <ErrorMessage
@@ -171,13 +171,13 @@ export default function CreateAccount() {
                   <Field
                     name="account_name"
                     type="text"
-                    className="border rounded-lg p-3 outline-none focus:border-[#6772e5]"
+                    className="border rounded-lg p-2 outline-none focus:border-[#6772e5]"
                     placeholder={section.account_name_placeholder}
                   />
                   <ErrorMessage
                     name="account_name"
                     component="div"
-                    className="text-red-500 text-sm mt-1"
+                    className="text-red-500 text-sm mt-1 mb-0"
                   />
                 </div>
 
@@ -188,7 +188,7 @@ export default function CreateAccount() {
                   <Field
                     name="email_address"
                     type="email_address"
-                    className="border rounded-lg p-3 outline-none focus:border-[#6772e5]"
+                    className="border rounded-lg p-2 outline-none focus:border-[#6772e5]"
                     placeholder={section.email_address_placeholder}
                   />
                   <ErrorMessage
@@ -205,7 +205,7 @@ export default function CreateAccount() {
                   <Field
                     name="password"
                     type="password"
-                    className="border rounded-lg p-3 outline-none focus:border-[#6772e5]"
+                    className="border rounded-lg p-2 outline-none focus:border-[#6772e5]"
                     placeholder={section.password_placeholder}
                   />
                   <ErrorMessage

@@ -129,7 +129,7 @@ export default function Pricing() {
                 return (
                   <div
                     key={plan.id}
-                    className={`rounded-2xl p-8 transition-all duration-300 border border-gray-200 ${
+                    className={`rounded-2xl p-8 .....transition-all duration-300 border border-gray-200 ${
                       isStandard
                         ? "bg-[#5c65c7] text-white z-10"
                         : "bg-white text-gray-900"
@@ -235,7 +235,7 @@ export default function Pricing() {
                       >
                         {
                           bondifycrm(lang).sections.BONDIFY_PRICING.monthly.free
-                            .LimitsTitle
+                            .Modules
                         }
                       </h3>
                       <ul className="m-0 p-0 mb-5 m-3">
@@ -320,7 +320,7 @@ export default function Pricing() {
                           : "Start Demo"
                         : lang === "ar"
                         ? "تواصل معنا"
-                        : "Contact Sales"}
+                        : "Checkout"}
                     </Link>
                   </div>
                 );
