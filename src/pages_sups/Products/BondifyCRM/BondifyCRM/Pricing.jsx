@@ -300,9 +300,9 @@ export default function Pricing() {
                     </div>
 
                     <Link
-                      href={
-                        `/bondifycrm/CreateAccount`
-                      }
+                      href={`/bondifycrm/CreateAccount?planId=${plan.id}&type=${
+                        isStandard ? "yearly" : "monthly"
+                      }`}
                       className={`
                         w-full flex justify-center items-center pt-2 pb-2 rounded-[12px] 
                         text-base font-semibold transition-all duration-300

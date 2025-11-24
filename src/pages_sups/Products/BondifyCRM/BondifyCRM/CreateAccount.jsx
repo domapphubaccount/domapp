@@ -11,9 +11,16 @@ import { ToastContainer } from "react-toastify";
 import { useSelector } from "react-redux";
 import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
+import { useSearchParams } from "next/navigation";
+
 
 export default function CreateAccount() {
   const [planOption, setPlanOption] = useState([]);
+  const searchParams = useSearchParams();
+const selectedPlanId = searchParams.get("planId");
+const selectedType = searchParams.get("type");
+
+const [preselectedPlan, setPreselectedPlan] = useState(null);
 
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const translations = { en, ar };
@@ -40,6 +47,18 @@ export default function CreateAccount() {
             },
           ]);
           setPlanOption(options);
+      if (selectedPlanId && selectedType) {
+  const preselected = options.find(
+    (opt) =>
+      opt.planId === Number(selectedPlanId) &&
+      opt.type === selectedType
+  );
+
+  if (preselected) {
+    setPreselectedPlan(preselected);
+  }
+}
+
         }
         setLoading(false);
       })
@@ -111,9 +130,11 @@ export default function CreateAccount() {
               account_name: "",
               email_address: "",
               password: "",
-              plan: null,
+              plan: preselectedPlan,
               sign_agree_terms: "on",
             }}
+            enableReinitialize={true}
+
             validationSchema={validationSchema}
             onSubmit={(values) => {
               const payload = {
@@ -214,7 +235,7 @@ export default function CreateAccount() {
                     className="text-red-500 text-sm mt-1"
                   />
                 </div>
-
+{values.plan?.value !== "free" && (
                 <div className="flex flex-col">
                   <label className="font-medium mb-1">
                     {section.plan_label}
@@ -224,6 +245,7 @@ export default function CreateAccount() {
                     value={values.plan}
                     onChange={(option) => setFieldValue("plan", option)}
                     className="react-select-container"
+                    isDisabled
                   />
                   {errors.plan && touched.plan && (
                     <div className="text-red-500 text-sm mt-1">
@@ -231,6 +253,7 @@ export default function CreateAccount() {
                     </div>
                   )}
                 </div>
+)}
 
                 <button
                   type="submit"
