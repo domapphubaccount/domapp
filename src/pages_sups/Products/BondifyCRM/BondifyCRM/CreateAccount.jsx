@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "@/components/Layout/Header/Header";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import Select from "react-select";
 import axios from "axios";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
@@ -12,6 +11,7 @@ import { useSelector } from "react-redux";
 import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
 import { useSearchParams } from "next/navigation";
+
 
 
 export default function CreateAccount() {
@@ -131,7 +131,7 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
               email_address: "",
               password: "",
               plan: preselectedPlan,
-              sign_agree_terms: "on",
+              // sign_agree_terms: "on",
             }}
             enableReinitialize={true}
 
@@ -141,7 +141,7 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                 ...values,
                 plan: values.plan.value,
               };
-              console.log("FORM VALUES:", payload);
+              // console.log("FORM VALUES:", payload);
 
               axios
                 .post(
@@ -150,12 +150,22 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                 )
                 .then((res) => {
                   if (res.status === 200 || res.status === 201) {
-                    // window.location.href = res.data.account_url;
+
+ const url = res.data.data.account_url;
+    // console.log("URL:", url);
                     toast.success(
                       lang === "ar"
                         ? "تم إنشاء الحساب بنجاح!"
                         : "Created Account successfully!"
                     );
+                       setTimeout(() => {
+
+                       window.location.assign(url);
+
+
+    
+
+    }, 500);
                   }
                 })
                 .catch((error) => {
