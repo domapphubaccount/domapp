@@ -132,6 +132,7 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
               password: "",
               plan: preselectedPlan,
               // sign_agree_terms: "on",
+              sign_agree_terms: false,
             }}
             enableReinitialize={true}
 
@@ -140,6 +141,7 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
               const payload = {
                 ...values,
                 plan: values.plan.value,
+                sign_agree_terms: values.sign_agree_terms ? "on" : "off",
               };
               // console.log("FORM VALUES:", payload);
 
@@ -218,7 +220,7 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                   </label>
                   <Field
                     name="email_address"
-                    type="email_address"
+                    type="email"
                     className="border rounded-lg p-2 outline-none focus:border-[#6772e5]"
                     placeholder={section.email_address_placeholder}
                   />
@@ -245,6 +247,18 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                     className="text-red-500 text-sm mt-1"
                   />
                 </div>
+                <div className="flex items-center gap-2 mt-4">
+  <input
+    type="checkbox"
+    name="sign_agree_terms"
+    checked={values.sign_agree_terms}
+    onChange={(e) => setFieldValue("sign_agree_terms", e.target.checked)}
+    className="h-5 w-5 text-[#6772e5] rounded focus:ring-[#6772e5]"
+  />
+  <label className="text-sm cursor-pointer select-none">
+    {lang === "ar" ? "أوافق على الشروط والأحكام" : "I agree to the terms & conditions"}
+  </label>
+</div>
 {/* {values.plan?.value !== "Free plan" && (
                 <div className="flex flex-col">
                   <label className="font-medium mb-1">
@@ -265,12 +279,18 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                 </div>
 )} */}
 
+               
                 <button
-                  type="submit"
-                  className="w-full bg-[#6772e5] hover:bg-[#5a63d8] text-white font-semibold py-3 rounded-lg mt-2 transition-all"
-                >
-                  {section.create_account_button}
-                </button>
+  type="submit"
+  disabled={!values.sign_agree_terms}
+  className={`w-full text-white font-semibold py-3 rounded-lg mt-6 transition-all ${
+    values.sign_agree_terms
+      ? "bg-[#6772e5] hover:bg-[#5a63d8] cursor-pointer"
+      : "bg-gray-400 cursor-not-allowed"
+  }`}
+>
+  {section.create_account_button}
+</button>
               </Form>
             )}
           </Formik>
