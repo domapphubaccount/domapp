@@ -47,24 +47,28 @@ const logos = [
         title_1={home(lang).sections.partners_title.title}
         des_1={home(lang).sections.partners_title.slogan}
       />
-       <div className="flex flex-col gap-4 w-full max-w-5xl mx-auto perspective-1000 mb-[100px] ">
-      <div className="grid grid-cols-4 gap-6 transition-transform duration-700 transform-gpu">
-        {currentLogos.slice(0, 4).map((logo, idx) => (
-          <div
-            key={idx}
-            className={`partner-logo ${logo} w-32 h-32`}
-          ></div>
-        ))}
-      </div>
-      <div  className="grid grid-cols-4 gap-2 transition-transform duration-700 transform-gpu justify-center flex ">
-        {currentLogos.slice(4, 8).map((logo, idx) => (
-          <div
-            key={idx}
-            className={`partner-logo ${logo} w-32 h-32`}
-          ></div>
-        ))}
-      </div>
-    </div>
+<div className="flex flex-col gap-4 w-full max-w-5xl mx-auto mb-[100px]">
+  <div className="grid grid-cols-4 gap-6 justify-center">
+    {currentLogos.slice(0, 4).map((logo, idx) => (
+      <div
+        key={logo} 
+        className={`partner-logo ${logo} w-32 h-32 animate-logoChange`}
+        style={{ animationDelay: `${idx * 70}ms` }}
+      />
+    ))}
+  </div>
+
+
+  <div className="grid grid-cols-4 gap-2 justify-center">
+    {currentLogos.slice(4, 8).map((logo, idx) => (
+      <div
+        key={logo}
+        className={`partner-logo ${logo} w-32 h-32 animate-logoChange`}
+        style={{ animationDelay: `${(idx + 4) * 70}ms` }}
+      />
+    ))}
+  </div>
+</div>
     </Container>
   );
 }

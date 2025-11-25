@@ -7890,3 +7890,18 @@ i.icon-2x {
 .partner-logo-15:hover {
   background-image: url("../assets/images/Home_Page/assets/partners/REEM_EMIRATES.png");
 }
+@keyframes logoFadeOutIn {
+  0%   { opacity: 1; transform: scale(1)     translateY(0); }
+  40%  { opacity: 0; transform: scale(0.8)   translateY(-15px); }
+  60%  { opacity: 0; transform: scale(0.8)   translateY(15px); }
+  100% { opacity: 1; transform: scale(1)     translateY(0); }
+}
+
+.animate-logoChange {
+  animation: logoFadeOutIn 1100ms ease-in-out forwards;
+}
+
+
+.partner-logo {
+  position: relative;
+}
