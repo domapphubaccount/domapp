@@ -181,52 +181,46 @@ export default function Pricing() {
                           bondifycrm(lang).sections.BONDIFY_PRICING.monthly.free
                             .LimitsTitle
                         }
-                      </h3>
-                      <ul className="m-0 p-0 mb-5 m-3">
-                        {Object.entries(plan.limits || {}).map(
-                          ([key, value]) => {
-                            if (value === 0 || value === false) return null;
+</h3>
+<ul className="m-0 p-0 mb-5 m-3">
+  {Object.entries(plan.limits || {})
+    .filter(([key, value]) => value !== 0 && value !== false) 
+    .map(([key, value], index, array) => {
+      const label =
+        {
+          clients: lang === "ar" ? "العملاء" : "Clients",
+          projects: lang === "ar" ? "المشاريع" : "Projects",
+          team: lang === "ar" ? "الفريق" : "Team Members",
+        }[key] || key;
 
-                            const label =
-                              {
-                                clients: lang === "ar" ? "العملاء" : "Clients",
-                                projects:
-                                  lang === "ar" ? "المشاريع" : "Projects",
-                                team: lang === "ar" ? "الفريق" : "Team Members",
-                              }[key] || key;
+      const displayValue =
+        value === -1
+          ? lang === "ar"
+            ? "غير محدود"
+            : "Unlimited"
+          : value;
 
-                            const displayValue =
-                              value === -1
-                                ? lang === "ar"
-                                  ? "غير محدود"
-                                  : "Unlimited"
-                                : value;
+      const showUpTo = index === array.length - 1;
 
-                            return (
-                              <li key={key} className="flex items-center mb-3">
-                                <div
-                                  className={`w-6 h-6 rounded-full flex items-center justify-center ${
-                                    lang === "en" ? "mr-3" : "ml-3"
-                                  } flex-shrink-0 ${
-                                    isStandard ? "bg-white/20" : "bg-gray-200"
-                                  }`}
-                                >
-                                  <Check
-                                    color={isStandard ? "white" : "gray"}
-                                  />
-                                </div>
-                                <span
-                                  className={
-                                    isStandard ? "text-white" : "text-gray-700"
-                                  }
-                                >
-                                  {displayValue} {label}
-                                </span>
-                              </li>
-                            );
-                          }
-                        )}
-                      </ul>
+      return (
+        <li key={key} className="flex items-center mb-3">
+          <div
+            className={`w-6 h-6 rounded-full flex items-center justify-center ${
+              lang === "en" ? "mr-3" : "ml-3"
+            } flex-shrink-0 ${
+              isStandard ? "bg-white/20" : "bg-gray-200"
+            }`}
+          >
+            <Check color={isStandard ? "white" : "gray"} />
+          </div>
+          <span className={isStandard ? "text-white" : "text-gray-700"}>
+            {showUpTo && isStandard ? "Up to " : ""}
+            {displayValue} {label}
+          </span>
+        </li>
+      );
+    })}
+</ul>
                     </div>
 
                     <div>
