@@ -12,19 +12,18 @@ import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
 import { useSearchParams } from "next/navigation";
 
-
-
 export default function CreateAccount() {
   const [planOption, setPlanOption] = useState([]);
   const searchParams = useSearchParams();
-const selectedPlanId = searchParams.get("planId");
-const selectedType = searchParams.get("type");
+  const selectedPlanId = searchParams.get("planId");
+  const selectedType = searchParams.get("type");
 
-const [preselectedPlan, setPreselectedPlan] = useState(null);
+  const [preselectedPlan, setPreselectedPlan] = useState(null);
 
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const translations = { en, ar };
   const section = translations[lang].BOUNDIFYCRM_CREATE_ACCOUNT;
+   const [loading, setLoading] = useState(false);
   useEffect(() => {
     fetch("https://bondifycrm.com/api/bondify/plans")
       .then((res) => res.json())
@@ -47,23 +46,25 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
             },
           ]);
           setPlanOption(options);
-      if (selectedPlanId && selectedType) {
-  const preselected = options.find(
-    (opt) =>
-      opt.planId === Number(selectedPlanId) &&
-      opt.type === selectedType
-  );
+          if (selectedPlanId && selectedType) {
+            const preselected = options.find(
+              (opt) =>
+                opt.planId === Number(selectedPlanId) &&
+                opt.type === selectedType
+            );
 
-  if (preselected) {
-    setPreselectedPlan(preselected);
-  }
-}
-
+            if (preselected) {
+              setPreselectedPlan(preselected);
+            }
+          }
         }
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch(() => {
+        setLoading(false);
+      });
   }, []);
+
   const validationSchema = Yup.object({
     full_name: Yup.string().required(
       lang === "ar" ? "الاسم الكامل مطلوب" : "Full Name is required"
@@ -135,7 +136,6 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
               sign_agree_terms: false,
             }}
             enableReinitialize={true}
-
             validationSchema={validationSchema}
             onSubmit={(values) => {
               const payload = {
@@ -152,22 +152,16 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                 )
                 .then((res) => {
                   if (res.status === 200 || res.status === 201) {
-
- const url = res.data.data.account_url;
-    // console.log("URL:", url);
+                    const url = res.data.data.account_url;
+                    // console.log("URL:", url);
                     toast.success(
                       lang === "ar"
                         ? "تم إنشاء الحساب بنجاح!"
                         : "Created Account successfully!"
                     );
-                       setTimeout(() => {
-
-                       window.location.assign(url);
-
-
-    
-
-    }, 500);
+                    setTimeout(() => {
+                      window.location.assign(url);
+                    }, 500);
                   }
                 })
                 .catch((error) => {
@@ -248,18 +242,22 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                   />
                 </div>
                 <div className="flex items-center gap-2 mt-4">
-  <input
-    type="checkbox"
-    name="sign_agree_terms"
-    checked={values.sign_agree_terms}
-    onChange={(e) => setFieldValue("sign_agree_terms", e.target.checked)}
-    className="h-5 w-5 text-[#6772e5] rounded focus:ring-[#6772e5]"
-  />
-  <label className="text-sm cursor-pointer select-none">
-    {lang === "ar" ? "أوافق على الشروط والأحكام" : "I agree to the terms & conditions"}
-  </label>
-</div>
-{/* {values.plan?.value !== "Free plan" && (
+                  <input
+                    type="checkbox"
+                    name="sign_agree_terms"
+                    checked={values.sign_agree_terms}
+                    onChange={(e) =>
+                      setFieldValue("sign_agree_terms", e.target.checked)
+                    }
+                    className="h-5 w-5 text-[#6772e5] rounded focus:ring-[#6772e5]"
+                  />
+                  <label className="text-sm cursor-pointer select-none">
+                    {lang === "ar"
+                      ? "أوافق على الشروط والأحكام"
+                      : "I agree to the terms & conditions"}
+                  </label>
+                </div>
+                {/* {values.plan?.value !== "Free plan" && (
                 <div className="flex flex-col">
                   <label className="font-medium mb-1">
                     {section.plan_label}
@@ -279,18 +277,17 @@ const [preselectedPlan, setPreselectedPlan] = useState(null);
                 </div>
 )} */}
 
-               
                 <button
-  type="submit"
-  disabled={!values.sign_agree_terms}
-  className={`w-full text-white font-semibold py-3 rounded-lg mt-6 transition-all ${
-    values.sign_agree_terms
-      ? "bg-[#6772e5] hover:bg-[#5a63d8] cursor-pointer"
-      : "bg-gray-400 cursor-not-allowed"
-  }`}
->
-  {section.create_account_button}
-</button>
+                  type="submit"
+                  disabled={!values.sign_agree_terms}
+                  className={`w-full text-white font-semibold py-3 rounded-lg mt-6 transition-all ${
+                    values.sign_agree_terms
+                      ? "bg-[#6772e5] hover:bg-[#5a63d8] cursor-pointer"
+                      : "bg-gray-400 cursor-not-allowed"
+                  }`}
+                >
+                  {section.create_account_button}
+                </button>
               </Form>
             )}
           </Formik>

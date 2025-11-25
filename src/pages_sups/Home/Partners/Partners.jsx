@@ -10,7 +10,7 @@ function Partners() {
 const logos = [
   "partner-logo-1",
   "partner-logo-2",
-  "partner-logo-3",
+  // "partner-logo-3",
   "partner-logo-4",
   "partner-logo-5",
   "partner-logo-6",
