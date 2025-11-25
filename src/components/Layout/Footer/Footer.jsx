@@ -34,157 +34,8 @@ export default function Footer() {
                 <h3 className="font-semibold text-sm mb-2 text-center text-white">
                   DomApp
                 </h3>
-                <div
-                  className={`footer  text-white ${
-                    dir === "rtl" ? "text-right" : "text-left"
-                  }`}
-                >
-                  <div
-                    className={`grid grid-cols-1 sm:grid-cols-7 gap-6 ${
-                      dir === "rtl"
-                        ? "sm:[direction:ltr]"
-                        : "sm:[direction:rtl]"
-                    }`}
-                  >
-                    {/* About Us Section */}
-                    <div>
-                      <div className="mb-3">
-                        <h5 className="font-semibold text-sm mb-2">
-                          {footer(lang).about.title}
-                        </h5>
-                        <ul className="space-y-1">
-                          {header(lang).nav.map(
-                            (item, index) =>
-                              item.link != "/#about" && (
-                                <li key={index}>
-                                  <Link
-                                    href={item.link}
-                                    className="hover:underline"
-                                    onClick={
-                                      item.contact
-                                        ? () => dispatch(contact_Toggle(true))
-                                        : ""
-                                    }
-                                  >
-                                    {item.name[0]}
-                                    {item.name.slice(1).toLowerCase()}
-                                  </Link>
-                                </li>
-                              )
-                          )}
-                        </ul>
-                      </div>
-                      <div>
-                        <h5 className="font-semibold text-sm mb-2">
-                          {footer(lang).legal}
-                        </h5>
-                        <ul className="space-y-1">
-                          <li>
-                            <Link href="/privacy" className="hover:underline">
-                              {lang === "ar"
-                                ? "الشروط والأحكام"
-                                : "Privacy policy"}
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    {/* Services Section */}
-                    <div>
-                      <h5 className="font-semibold text-sm mb-2">
-                        {footer(lang).services.title}
-                      </h5>
-                      <ul className="space-y-1">
-                        {footer(lang).services.slice.map((item, index) => (
-                          <li key={index}>
-                            {/* <a href="#" className="hover:underline">
-                              {item}
-                            </a> */}
-                            <Accordion>
-                              <CustomToggle eventKey={index}>
-                                <a style={{ fontSize: ".7rem" }}>
-                                  {item.title}
-                                </a>
-                              </CustomToggle>
-                              <ul id={`accordion-${index}`} className="hidden">
-                                {item.slice.map((item, index) => (
-                                  <li
-                                    key={index}
-                                    className="ms-1 text-gray-300	"
-                                  >
-                                    <small>{item}</small>
-                                  </li>
-                                ))}
-                              </ul>
-                            </Accordion>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    {/* Products Section */}
-                    <div>
-                      <h5 className="font-semibold text-sm mb-2">
-                        {footer(lang).products.title}
-                      </h5>
-                      <ul className="space-y-1">
-                        {header(lang)
-                          .nav.filter((item) => item.list)[0]
-                          .list.map((item) =>
-                            item.products.filter(
-                              (item) =>
-                                item.link !== "/grasshopper" &&
-                                item.link !== "/customization"
-                            )
-                          )
-                          .map(
-                            (item, index) =>
-                              item.length > 0 &&
-                              item.map((item, index) => (
-                                <li key={index}>
-                                  <Link
-                                    href={item.link}
-                                    className="hover:underline"
-                                  >
-                                    {item.name}
-                                  </Link>
-                                </li>
-                              ))
-                          )}
-                      </ul>
-                    </div>
-                    {/* Exclusive Dealer Section */}
-                    <div>
-                      <h5 className="font-semibold text-sm mb-2">
-                        {footer(lang).dealers.title}
-                      </h5>
-                      <ul className="space-y-1">
-                        {footer(lang).dealers.slice.map((item, index) => (
-                          <li key={index}>
-                            <Link
-                              href={`https://${item.link}`}
-                              className="hover:underline"
-                            >
-                              {item.title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    {/* Community Section */}
-                    <div>
-                      <h5 className="font-semibold text-sm mb-2">
-                        {footer(lang).community.title}
-                      </h5>
-                      <ul className="space-y-1">
-                        {footer(lang).community.slice.map((item, index) => (
-                          <li key={index}>
-                            <a href={item.link} className="hover:underline">
-                              {item.title}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                <div className={`footer p-8 text-white`}>
+                  <div className={`grid grid-cols-1 sm:grid-cols-7 gap-6`}>
                     {/* DomApp Section */}
                     <div className="col-span-2">
                       <LanguageDropdown text_color={"text-white"} />
@@ -206,9 +57,9 @@ export default function Footer() {
                                   {item.addresses.map((address, addrIndex) => (
                                     <li
                                       key={addrIndex}
-                                      className="text-sm font-light before:content-['-'] before:mr-2"
+                                      className="text-sm font-light"
                                     >
-                                      {address}
+                                      - {address}
                                     </li>
                                   ))}
                                 </ul>
@@ -312,6 +163,145 @@ export default function Footer() {
                           </svg>
                         </Link>
                       </div>
+                    </div>
+                    {/* About Us Section */}
+                    <div className="ms-4">
+                      <div className="mb-3">
+                        <h5 className="font-semibold text-sm mb-2">
+                          {footer(lang).about.title}
+                        </h5>
+                        <ul className="space-y-1">
+                          {header(lang).nav.map(
+                            (item, index) =>
+                              item.link != "/#about" && (
+                                <li key={index}>
+                                  <Link
+                                    href={item.link}
+                                    className="hover:underline"
+                                    onClick={
+                                      item.contact
+                                        ? () => dispatch(contact_Toggle(true))
+                                        : ""
+                                    }
+                                  >
+                                    {item.name[0]}
+                                    {item.name.slice(1).toLowerCase()}
+                                  </Link>
+                                </li>
+                              )
+                          )}
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-sm mb-2">
+                          {footer(lang).legal}
+                        </h5>
+                        <ul className="space-y-1">
+                          <li>
+                            <Link href="/privacy" className="hover:underline">
+                              {lang === "ar"
+                                ? "الشروط والأحكام"
+                                : "Privacy policy"}
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    {/* Products Section */}
+                    <div>
+                      <h5 className="font-semibold text-sm mb-2">
+                        {footer(lang).products.title}
+                      </h5>
+                      <ul className="space-y-1">
+                        {header(lang)
+                          .nav.filter((item) => item.list)[0]
+                          .list.map((item) =>
+                            item.products.filter(
+                              (item) =>
+                                item.link !== "/grasshopper" &&
+                                item.link !== "/customization"
+                            )
+                          )
+                          .map(
+                            (item, index) =>
+                              item.length > 0 &&
+                              item.map((item, index) => (
+                                <li key={index}>
+                                  <Link
+                                    href={item.link}
+                                    className="hover:underline"
+                                  >
+                                    {item.name}
+                                  </Link>
+                                </li>
+                              ))
+                          )}
+                      </ul>
+                    </div>
+                    {/* Services Section */}
+                    <div>
+                      <h5 className="font-semibold text-sm mb-2">
+                        {footer(lang).services.title}
+                      </h5>
+                      <ul className="space-y-1">
+                        {footer(lang).services.slice.map((item, index) => (
+                          <li key={index}>
+                            {/* <a href="#" className="hover:underline">
+                              {item}
+                            </a> */}
+                            <Accordion>
+                              <CustomToggle eventKey={index}>
+                                <a style={{ fontSize: ".7rem" }}>
+                                  {item.title}
+                                </a>
+                              </CustomToggle>
+                              <ul id={`accordion-${index}`} className="hidden">
+                                {item.slice.map((item, index) => (
+                                  <li
+                                    key={index}
+                                    className="ms-1 text-gray-300	"
+                                  >
+                                    <small>{item}</small>
+                                  </li>
+                                ))}
+                              </ul>
+                            </Accordion>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    {/* Exclusive Dealer Section */}
+                    <div>
+                      <h5 className="font-semibold text-sm mb-2">
+                        {footer(lang).dealers.title}
+                      </h5>
+                      <ul className="space-y-1">
+                        {footer(lang).dealers.slice.map((item, index) => (
+                          <li key={index}>
+                            <Link
+                              href={`https://${item.link}`}
+                              className="hover:underline"
+                            >
+                              {item.title}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    {/* Community Section */}
+                    <div>
+                      <h5 className="font-semibold text-sm mb-2">
+                        {footer(lang).community.title}
+                      </h5>
+                      <ul className="space-y-1">
+                        {footer(lang).community.slice.map((item, index) => (
+                          <li key={index}>
+                            <a href={item.link} className="hover:underline">
+                              {item.title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </div>
