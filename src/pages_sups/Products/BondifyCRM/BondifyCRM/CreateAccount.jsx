@@ -23,7 +23,7 @@ export default function CreateAccount() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const translations = { en, ar };
   const section = translations[lang].BOUNDIFYCRM_CREATE_ACCOUNT;
-   const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     fetch("https://bondifycrm.com/api/bondify/plans")
       .then((res) => res.json())
@@ -166,9 +166,20 @@ export default function CreateAccount() {
                 })
                 .catch((error) => {
                   console.log(error);
-                  toast.error(
-                    error.response?.data?.message || "An error occurred"
-                  );
+                  // toast.error(
+                  //   error.response?.data?.message || "An error occurred"
+                  // );
+                  const response = error.response?.data;
+
+                  if (response?.errors) {
+                    const allErrors = Object.values(response.errors)
+                      .flat()
+                      .join(" and ");
+
+                    toast.error(allErrors);
+                  } else {
+                    toast.error(response?.message || "An error occurred");
+                  }
                 });
             }}
           >
