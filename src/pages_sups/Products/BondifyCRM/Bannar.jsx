@@ -21,7 +21,7 @@ export default function Bannar2() {
               <div className="docutment-button text-center">
                 <a
                   className="btn text-white me-3 mb-3"
-                  href="http://bondifycrm.domapphub.com/"
+                  href="/bondifycrm/CreateAccount"
                   target="_blank"
                 >
                   {bondifycrm(lang).sections.bannar.try_btn}

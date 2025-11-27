@@ -24,46 +24,61 @@ export default function CreateAccount() {
   const translations = { en, ar };
   const section = translations[lang].BOUNDIFYCRM_CREATE_ACCOUNT;
   const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    fetch("https://bondifycrm.com/api/bondify/plans")
-      .then((res) => res.json())
-      .then((result) => {
-        if (result.data) {
-          const options = result.data.flatMap((plan) => [
-            {
-              value: `monthly_${plan.id}`,
-              label: `${plan.name} - $${plan.pricing.monthly}/month`,
-              planId: plan.id,
-              type: "monthly",
-              pricing: plan.pricing.monthly,
-            },
-            {
-              value: `yearly_${plan.id}`,
-              label: `${plan.name} - $${plan.pricing.yearly}/year`,
-              planId: plan.id,
-              type: "yearly",
-              pricing: plan.pricing.yearly,
-            },
-          ]);
-          setPlanOption(options);
-          if (selectedPlanId && selectedType) {
-            const preselected = options.find(
-              (opt) =>
-                opt.planId === Number(selectedPlanId) &&
-                opt.type === selectedType
-            );
+useEffect(() => {
+  setLoading(true);
 
-            if (preselected) {
-              setPreselectedPlan(preselected);
-            }
+  fetch("https://bondifycrm.com/api/bondify/plans")
+    .then((res) => res.json())
+    .then((result) => {
+      if (result.data) {
+        const options = result.data.flatMap((plan) => [
+          {
+            value: `monthly_${plan.id}`,
+            label: `${plan.name} - $${plan.pricing.monthly}/month`,
+            planId: plan.id,
+            type: "monthly",
+            pricing: plan.pricing.monthly,
+          },
+          {
+            value: `yearly_${plan.id}`,
+            label: `${plan.name} - $${plan.pricing.yearly}/year`,
+            planId: plan.id,
+            type: "yearly",
+            pricing: plan.pricing.yearly,
+          },
+        ]);
+
+        setPlanOption(options);
+
+  
+        if (selectedPlanId && selectedType) {
+          const preselected = options.find(
+            (opt) =>
+              opt.planId === Number(selectedPlanId) &&
+              opt.type === selectedType
+          );
+
+          if (preselected) {
+            setPreselectedPlan(preselected);
+            setLoading(false);
+            return; 
           }
         }
-        setLoading(false);
-      })
-      .catch(() => {
-        setLoading(false);
-      });
-  }, []);
+
+     
+        const freePlan = options.find((opt) => opt.pricing === 0);
+        if (freePlan) {
+          setPreselectedPlan(freePlan);
+        }
+      }
+
+      setLoading(false);
+    })
+    .catch(() => {
+      setLoading(false);
+    });
+}, []);
+
 
   const validationSchema = Yup.object({
     full_name: Yup.string().required(
