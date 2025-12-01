@@ -40,11 +40,9 @@ function Partners() {
     page * logosPerPage,
     page * logosPerPage + logosPerPage
   );
-  const safeLogos = [...currentLogos];
+  // const safeLogos = [...currentLogos];
 
-while (safeLogos.length < 8) {
-  safeLogos.push(...currentLogos.slice(0, 8 - safeLogos.length));
-}
+
 
   return (
     <Container>
@@ -57,13 +55,13 @@ while (safeLogos.length < 8) {
         <div className="logos-wrapper animate-slideGroup">
           <div className=" mx-auto overflow-hidden py-12 bg-gray-50/50">
            <div className="flex animate-slideLeftInfinite mb-12">
-  {[...safeLogos.slice(0, 4), ...safeLogos.slice(0, 4)].map((logo, idx) => (
+  {[...currentLogos.slice(0, 4), ...currentLogos.slice(0, 4)].map((logo, idx) => (
     <div key={`upper-${logo}-${idx}`} className={`partner-logo ${logo} flex-shrink-0 w-36 h-36 mx-20`} />
   ))}
 </div>
 
 <div className="flex animate-slideRightInfinite">
-  {[...safeLogos.slice(4, 8), ...safeLogos.slice(4, 8)].map((logo, idx) => (
+  {[...currentLogos.slice(4, 8), ...currentLogos.slice(4, 8)].map((logo, idx) => (
     <div key={`lower-${logo}-${idx}`} className={`partner-logo ${logo} flex-shrink-0 w-36 h-36 mx-20`} />
   ))}
 </div>
