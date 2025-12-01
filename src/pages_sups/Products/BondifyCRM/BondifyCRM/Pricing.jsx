@@ -304,7 +304,7 @@ export default function Pricing() {
 
                     <Link
                       href={`/bondifycrm/CreateAccount?planId=${plan.id}&type=${
-                        isStandard ? "yearly" : "monthly"
+                        isMonthly ? "monthly" : "yearly"
                       }`}
                       className={`
                         w-full flex justify-center items-center pt-2 pb-2 rounded-[12px] 
@@ -317,7 +317,7 @@ export default function Pricing() {
                         focus:outline-none text-decoration-none
                       `}
                     >
-                      {plan.id === 4
+                      {plan.type.toLowerCase().includes("free")
                         ? lang === "ar"
                           ? "ابدأ العرض التجريبي"
                           : "Start Demo"
