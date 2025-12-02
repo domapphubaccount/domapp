@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useDispatch, useSelector } from "react-redux";
 import { handle_language } from "@/stores/reducers/Language";
@@ -12,6 +12,28 @@ export default function LanguageDropdown({ text_color }) {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const dispatch = useDispatch();
 
+
+    useEffect(() => {
+    const storedLang = localStorage.getItem("lang");
+    if (!storedLang) {
+
+      localStorage.setItem("lang", "en");
+      dispatch(
+        handle_language({
+          lang: "en",
+          dir: "ltr",
+        })
+      );
+    } else {
+   
+      dispatch(
+        handle_language({
+          lang: storedLang,
+          dir: storedLang === "en" ? "ltr" : "rtl",
+        })
+      );
+    }
+  }, [dispatch]);
   const handleClose = () => {
     setAnchorEl(null);
   };

@@ -19,8 +19,13 @@ export default function Section4() {
         <p>{section.desc}</p>
         <ul className="p-0 m-0">
           {section.list.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
+            // <li key={index}>{item}</li>
+                          <li key={index} className="flex items-center gap-2 mb-2">
+                  <span className="list-icon">✔</span>
+                  <span className = "li-span ">{item}.</span>
+                </li>
+                      ))}
+         
         </ul>
       </div>
       <div className="image-div-section2 ml-5">

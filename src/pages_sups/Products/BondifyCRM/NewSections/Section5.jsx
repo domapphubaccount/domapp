@@ -31,7 +31,7 @@ export default function Section5() {
         <span>{section.subtitle}</span>
         <h2>{section.title}</h2>
       </div>
-      <div className="features-wrapper-cards d-flex flex-wrap justify-content-center gap-4 mt-4">
+      <div dir={dir} className="features-wrapper-cards d-flex flex-wrap justify-content-center gap-4 mt-4">
         {section.cards.map((card, index) => (
           <div
             key={index}

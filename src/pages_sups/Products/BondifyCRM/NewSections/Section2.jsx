@@ -26,9 +26,14 @@ export default function Section2() {
         <span>{section.subtitle}</span>
         <h3>{section.title}</h3>
         <p>{section.desc}</p>
-        <ul className="p-0 m-0">
+        <ul className="p-0 m-0" dir={dir}>
           {section.list.map((item, index) => (
-            <li key={index}>{item}</li>
+            
+            // <li key={index}>{item}</li>
+         <li key={index} className="flex items-center gap-2 mb-2">
+      <span className="list-icon p-0 m-0">✔</span>
+      <span className = "li-span">{item}.</span>
+    </li>
           ))}
         </ul>
       </div>
