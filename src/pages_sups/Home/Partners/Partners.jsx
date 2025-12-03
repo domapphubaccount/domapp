@@ -42,8 +42,6 @@ function Partners() {
   );
   // const safeLogos = [...currentLogos];
 
-
-
   return (
     <Container>
       <Section_head
@@ -53,19 +51,12 @@ function Partners() {
       />
       <div className="flex flex-col gap-4 w-full max-w-5xl mx-auto mb-[100px]">
         <div className="logos-wrapper animate-slideGroup">
-          <div className=" mx-auto overflow-hidden py-12 bg-gray-50/50">
-           <div className="flex animate-slideLeftInfinite mb-12">
-  {[...currentLogos.slice(0, 4), ...currentLogos.slice(0, 4)].map((logo, idx) => (
-    <div key={`upper-${logo}-${idx}`} className={`partner-logo ${logo} flex-shrink-0 w-36 h-36 mx-20`} />
-  ))}
-</div>
-
-<div className="flex animate-slideRightInfinite">
-  {[...currentLogos.slice(4, 8), ...currentLogos.slice(4, 8)].map((logo, idx) => (
-    <div key={`lower-${logo}-${idx}`} className={`partner-logo ${logo} flex-shrink-0 w-36 h-36 mx-20`} />
-  ))}
-</div>
-
+          <div className="overflow-wrapper">
+            <div className="slide-wrapper">
+              {[...logos, ...logos].map((logo, idx) => (
+                <div key={idx} className={`partner-logo ${logo}`} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

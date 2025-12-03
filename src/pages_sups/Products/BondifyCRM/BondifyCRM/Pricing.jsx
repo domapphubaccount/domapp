@@ -60,7 +60,9 @@ export default function Pricing() {
   };
 
   return (
-    <div className="bondifycrm-page pt-[120px]">
+    <div   className={` pt-[120px] ${
+    lang === "ar" ? "bondifycrm-page-ar text-right" : "bondifycrm-page"
+  }`}>
       <Header />
 
       <section
@@ -302,29 +304,39 @@ export default function Pricing() {
                       </ul>
                     </div>
 
-                    <Link
-                      href={`/bondifycrm/CreateAccount?planId=${plan.id}&type=${
-                        isMonthly ? "monthly" : "yearly"
-                      }`}
-                      className={`
-                        w-full flex justify-center items-center pt-2 pb-2 rounded-[12px] 
-                        text-base font-semibold transition-all duration-300
-                        ${
-                          isStandard
-                            ? "bg-[#ebedfd] text-[#5c65c7] hover:bg-[#d8dbf7]"
-                            : "bg-[#6772e5] text-white hover:bg-[#5a63d8]"
-                        }
-                        focus:outline-none text-decoration-none
-                      `}
-                    >
-                      {plan.type.toLowerCase().includes("free")
-                        ? lang === "ar"
-                          ? "ابدأ العرض التجريبي"
-                          : "Start Demo"
-                        : lang === "ar"
-                        ? "تواصل معنا"
-                        : "Checkout"}
-                    </Link>
+      <Link
+  href={
+    !isStandard && !plan.type.toLowerCase().includes("free")
+      ? "mailto:Contactus@domapphub.com"
+      
+      : `/bondifycrm/CreateAccount?planId=${plan.id}&type=${
+          isMonthly ? "monthly" : "yearly"
+        }`
+  }
+  className={`
+    w-full flex justify-center items-center pt-2 pb-2 rounded-[12px] 
+    text-base font-semibold transition-all duration-300
+    ${
+      isStandard
+        ? "bg-[#ebedfd] text-[#5c65c7] hover:bg-[#d8dbf7]"
+        : "bg-[#6772e5] text-white hover:bg-[#5a63d8]"
+    }
+    focus:outline-none text-decoration-none
+  `}
+>
+  {plan.type.toLowerCase().includes("free")
+    ? lang === "ar"
+      ? "ابدأ العرض التجريبي"
+      : "Start Demo"
+    : !isStandard
+    ? lang === "ar"
+      ? " تواصل معنا"
+      : "Contact Sales"
+    : lang === "ar"
+    ? "تواصل معنا"
+    : "Checkout"}
+</Link>
+
                   </div>
                 );
               })}

@@ -7896,35 +7896,38 @@ i.icon-2x {
   animation: slideLeft 6s linear infinite;
 }
 
-@keyframes slideLeftInfinite {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
+.overflow-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
 
-  @keyframes slideRightInfinite {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
-  }
+.slide-wrapper {
+  display: flex;
+  width: max-content;
+  animation: slideInfinite 32s linear infinite;
+}
 
-  .animate-slideLeftInfinite {
-    animation: slideLeftInfinite 32s linear infinite;
-  }
+@keyframes slideInfinite {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
 
-  .animate-slideRightInfinite {
-    animation: slideRightInfinite 38s linear infinite;
+.partner-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  width: 9rem; 
+  height: 9rem; 
+  margin: 0 5rem;
+  transition: transform 0.4s ease;
+}
 
-  }
+.partner-logo:hover {
+  transform: scale(1.15);
+}
 
-  .partner-logo {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: transform 0.4s ease;
-  }
 
-  .partner-logo:hover {
-    transform: scale(1.15);
-  }
 
 
 
