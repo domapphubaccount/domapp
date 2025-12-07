@@ -49,7 +49,9 @@ export default function Page() {
   const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
 
   return (
-    <div className="erp_page bondifycrm-page">
+    <div   className={` erp_page bondifycrm-page ${
+              lang === "ar" ? "bondifycrm-page-ar text-right" : "bondifycrm-page"
+            }`} >
       <>
         <Bannar />
         <Heading
