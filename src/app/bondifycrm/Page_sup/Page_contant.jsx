@@ -36,13 +36,22 @@ import Bannar from "@/pages_sups/Products/BondifyCRM/Bannar";
 import Break from "@/pages_sups/Products/BondifyCRM/BondifyCRM/Break";
 import VideoSection from "@/pages_sups/Products/BondifyCRM/BondifyCRM/VideoSection";
 import { useSelector } from "react-redux";
+import Section1 from "@/pages_sups/Products/BondifyCRM/NewSections/Section1";
+import Section2 from "@/pages_sups/Products/BondifyCRM/NewSections/Section2";
+import Section3 from "@/pages_sups/Products/BondifyCRM/NewSections/Section3";
+import Section4 from "@/pages_sups/Products/BondifyCRM/NewSections/Section4";
+import Section5 from "@/pages_sups/Products/BondifyCRM/NewSections/Section5";
+import Section6 from "@/pages_sups/Products/BondifyCRM/NewSections/Section6";
+// import "./Section.css";
 
 export default function Page() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
   const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
 
   return (
-    <div className="erp_page">
+    <div   className={` erp_page bondifycrm-page ${
+              lang === "ar" ? "bondifycrm-page-ar text-right" : "bondifycrm-page"
+            }`} >
       <>
         <Bannar />
         <Heading
@@ -52,21 +61,29 @@ export default function Page() {
         />
         <VideoSection/>
         {/* <Section_1 /> */}
-        <Break body={bondifycrm(lang).sections.Break_1} />
-        <Section_2 />
-        <Section_3 />
-        <Section_4 />
-        <Section_5 />
+        {/* <Break body={bondifycrm(lang).sections.Break_1} /> */}
+        {/* <Section_2 /> */}
+        {/* <Section_3 /> */}
+        {/* <Section_4 /> */}
+        {/* <Section_5 /> */}
         {/* <Section_6 /> */}
-        <Section_7 />
-        <Break body={bondifycrm(lang).sections.Break_2} />
-        <Section_9 />
-        <Section_10 />
+        {/* <Section_7 /> */}
+        {/* <Break body={bondifycrm(lang).sections.Break_2} /> */}
+        {/* <Section_9 /> */}
+        {/* <Section_10 /> */}
         {/* <Section_11 /> */}
-        <Section_12 />
-        <Section_13 />
-        <Section_14 />
-        <Section_15 />
+        {/* <Section_12 /> */}
+        {/* <Section_13 /> */}
+        {/* <Section_14 /> */}
+        {/* <Section_15 /> */}
+
+
+        <Section1/>
+        <Section2/>
+        <Section3/>
+        <Section4/>
+        <Section5/>
+        <Section6/>
       </>
     </div>
   );

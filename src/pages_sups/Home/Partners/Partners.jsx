@@ -1,12 +1,46 @@
 "use client";
 import Section_head from "@/components/Reuse/Section_Head/Section_head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Container } from "reactstrap";
 
 function Partners() {
   const { lang } = useSelector((state) => state.languageSlice);
   const { home } = useSelector((state) => state.homeRed);
+  const logos = [
+    "partner-logo-1",
+    "partner-logo-2",
+    // "partner-logo-3",
+    "partner-logo-4",
+    "partner-logo-5",
+    "partner-logo-6",
+    "partner-logo-7",
+    "partner-logo-8",
+    "partner-logo-9",
+    "partner-logo-10",
+    "partner-logo-11",
+    "partner-logo-12",
+    "partner-logo-13",
+    // "partner-logo-14",
+    "partner-logo-15",
+  ];
+
+  const [page, setPage] = useState(0);
+  const logosPerPage = 8;
+  const totalPages = Math.ceil(logos.length / logosPerPage);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPage((prev) => (prev + 1) % totalPages);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [totalPages]);
+
+  const currentLogos = logos.slice(
+    page * logosPerPage,
+    page * logosPerPage + logosPerPage
+  );
+  // const safeLogos = [...currentLogos];
 
   return (
     <Container>
@@ -15,26 +49,15 @@ function Partners() {
         title_1={home(lang).sections.partners_title.title}
         des_1={home(lang).sections.partners_title.slogan}
       />
-      <div className="partners-logos-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 items-center my-6">
-        <div className="partner-logo partner-logo-1"></div>
-        <div className="partner-logo partner-logo-2"></div>
-        <div className="partner-logo partner-logo-3"></div>
-        <div className="partner-logo partner-logo-4"></div>
-        <div className="partner-logo partner-logo-5"></div>
-        <div className="partner-logo partner-logo-6"></div>
-        <div className="partner-logo partner-logo-7"></div>
-        <div className="partner-logo partner-logo-8"></div>
-
-        {/* Last row in its own flex container */}
-        <div className="partner-logo partner-logo-9"></div>
-        <div className="partner-logo partner-logo-10"></div>
-        <div className="partner-logo partner-logo-11"></div>
-        <div className="partner-logo partner-logo-12"></div>
-
-        <div className="md:col-span-4 flex justify-center gap-6">
-          {/* <div className="partner-logo partner-logo-14"></div> */}
-          <div className="partner-logo partner-logo-13"></div>
-          <div className="partner-logo partner-logo-15"></div>
+      <div className="flex flex-col gap-4 w-full max-w-5xl mx-auto mb-[100px]">
+        <div className="logos-wrapper animate-slideGroup">
+          <div className="overflow-wrapper">
+            <div className="slide-wrapper">
+              {[...logos, ...logos].map((logo, idx) => (
+                <div key={idx} className={`partner-logo ${logo}`} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </Container>

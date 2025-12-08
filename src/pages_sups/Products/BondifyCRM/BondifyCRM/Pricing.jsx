@@ -1,435 +1,363 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "reactstrap";
+import { Container } from "reactstrap";
 import { league } from "@/pages_sups/Home/Bannar/Bannar";
 import Footer from "@/components/Layout/Footer/Footer";
 import Header from "@/components/Layout/Header/Header";
-import Loading_page from "@/components/Loading_page/Loading_page";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 import useInitCountry from "@/stores/useInitCountry";
+import Loading from "@/app/bondifycrm/loading";
 
 export default function Pricing() {
-  const [priceIcon, setPriceIcon] = useState(false);
+  const [plans, setPlans] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [isMonthly, setIsMonthly] = useState(true);
+
+  const { currency } = useSelector((state) => state.countryRed);
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
 
   useInitCountry();
 
-  const { currency, country } = useSelector((state) => state.countryRed);
+  useEffect(() => {
+    fetch("https://bondifycrm.com/api/bondify/plans")
+      .then((res) => res.json())
+      .then((result) => {
+        if (result.data) {
+          setPlans(result.data.sort((a, b) => a.id - b.id));
+        }
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, []);
 
-  return (
-    <>
-      <Header />
-      <section className={league.className + " pricing-section mb-5"}>
-        <div className="mb-2">
-          <Section__head />
+  const getPrice = (plan) => {
+    if (plan.type === null || plan === undefined) return "0";
+    if (plan.id === 6) return "Custom";
+    if (plan.type === "free") return "0";
+
+    const price = isMonthly ? plan.pricing?.monthly : plan.pricing?.yearly;
+    return price > 0 ? price : "0";
+  };
+
+  if (loading) {
+    return (
+      <div className="bondifycrm-page pt-[120px] ">
+        <Header />
+        <div className="text-2xl text-[#5c65c7]">
+          <Loading />
         </div>
-        <Monthly priceIcon={priceIcon} currency={currency} />
-      </section>
-      <Footer />
-    </>
-  );
-}
+        <Footer />
+      </div>
+    );
+  }
 
-function Monthly({ priceIcon, currency }) {
-  const { lang, dir } = useSelector((state) => state.languageSlice);
-  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
-  const [priceToggle, setPriceToggle] = useState(true);
-  let {
-    free = {},
-    standard = {},
-    enterprise = {},
-  } = bondifycrm(lang).sections.BONDIFY_PRICING.monthly;
+  const planTranslations = {
+    "Enterprise Plan": "خطة الشركات",
+    "Standard Plan": "الخطة القياسية",
+    "Free Plan": "الخطة المجانية",
+  };
 
-  console.log(bondifycrm(lang).sections.BONDIFY_PRICING.monthly);
   return (
-    <>
-      <div className="py-3">
-        <Container>
-          <div style={{ maxWidth: "1000px" }} className="m-auto"></div>
-          <div>
-            <div className="d-flex justify-content-center">
-              <div
-                className=""
-                style={{
-                  borderRadius: "20px",
-                  border: "1px solid #23834B",
-                  boxShadow: "0px 4px 20px 2px #ccc",
-                }}
-              >
-                <button
-                  className={`pricing_toggle  ${
-                    priceToggle ? "toggle-2" : "toggle-1"
+    <div   className={` pt-[120px] ${
+    lang === "ar" ? "bondifycrm-page-ar text-right" : "bondifycrm-page"
+  }`}>
+      <Header />
+
+      <section
+        className={league.className + " pricing-section mb-5 bondifycrm-page"}
+      >
+        <div className="py-3">
+          <Container>
+            <div className="text-center mb-16 px-4">
+              <h2 className="text-[27px] font-bold text-[#5c5678] mb-1">
+                {bondifycrm(lang).sections.BONDIFY_PRICING.title}
+              </h2>
+              <p className="text-[16px] text-[#5c5678] mb-8">
+                {bondifycrm(lang).sections.BONDIFY_PRICING.sub_title}
+              </p>
+
+              <div className="flex items-center justify-center gap-4">
+                <span
+                  className={`text-[20px] font-semibold ${
+                    isMonthly ? "text-indigo-600" : "text-gray-600"
                   }`}
-                  style={{ borderRadius: "20px" }}
-                  onClick={() => setPriceToggle(true)}
                 >
                   {bondifycrm(lang).sections.BONDIFY_PRICING.month}
-                </button>
-                <button
-                  data-save-content="save"
-                  className={`pricing_toggle annual_button ${
-                    priceToggle ? "toggle-1" : "toggle-2"
-                  }`}
-                  style={{
-                    borderRadius: "20px",
-                  }}
-                  onClick={() => setPriceToggle(false)}
-                >
-                  {bondifycrm(lang).sections.BONDIFY_PRICING.year}
-                </button>
-              </div>
-            </div>
-
-            {priceToggle ? (
-              <div
-                className="flex flex-col justify-between items-center lg:flex-row lg:items-start"
-                dir={dir}
-              >
-                <div className="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
-                  <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"
-                      alt=""
-                      className="rounded-3xl w-20 h-20"
-                    />
-                    <div className="mx-5">
-                      <span className="block text-2xl font-semibold">
-                        {free.title}
-                      </span>
-                    </div>
-                  </div>
-                  <ul className="mb-7 font-medium text-gray-500">
-                    <li className="flex text-lg mb-2">
-                      <img
-                        loading="lazy"
-                        src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                        alt=""
-                      />
-                      <span className="mx-3 text-black">{free.include}</span>
-                    </li>
-                  </ul>
-                  <Link
-                    href={free.link}
-                    className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
-                  >
-                    {free.btn}
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-                      className="mx-2"
-                      alt=""
-                    />
-                  </Link>
-                </div>
-
-                <div className="w-full flex-1 p-8 order-3 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
-                  <div className="mb-8 pb-8 flex items-center border-b border-gray-600">
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"
-                      alt=""
-                      className="rounded-3xl w-20 h-20"
-                    />
-                    <div className="mx-5">
-                      <span className="block text-3xl font-semibold text-white">
-                        {enterprise.title}
-                      </span>
-                    </div>
-                  </div>
-                  <ul className="mb-10 font-medium text-xl">
-                    <li className="flex mb-6">
-                      <img
-                        loading="lazy"
-                        src="https://res.cloudinary.com/williamsondesign/check-white.svg"
-                        alt=""
-                      />
-                      <span className="mx-3">{enterprise.include}</span>
-                    </li>
-                  </ul>
-                  <Link
-                    href={enterprise.link}
-                    className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-2xl"
-                  >
-                    {enterprise.btn}
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-                      className="mx-2"
-                      alt=""
-                    />
-                  </Link>
-                </div>
-
-                <div className="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
-                  <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"
-                      alt=""
-                      className="rounded-3xl w-20 h-20"
-                    />
-                    <div className="mx-5">
-                      <span className="block text-2xl font-semibold">
-                        {standard.title}
-                      </span>
-                      <span>
-                        <span className="font-medium text-gray-500 text-xl align-top ">
-                          {currency}&thinsp;
-                        </span>
-                        <span className="text-3xl font-bold">
-                          {currency === "EGP"
-                            ? standard.price_EGY
-                            : currency === "SAR"
-                            ? standard.price_SAR
-                            : standard.price_USD}
-                        </span>
-                      </span>
-                      <span className="text-gray-500 font-medium">
-                        / {standard.user}
-                      </span>
-                    </div>
-                  </div>
-                  <ul>
-                    {Array.isArray(standard.include) ? (
-                      standard.include.map((item, index) => (
-                        <li key={index} className="flex text-lg mb-2">
-                          <img
-                            loading="lazy"
-                            src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                            alt="check"
-                          />
-                          <span className="mx-3 text-black">{item}</span>
-                        </li>
-                      ))
-                    ) : (
-                      <li className="flex text-lg mb-2">
-                        <img
-                          loading="lazy"
-                          src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                          alt="check"
-                        />
-                        <span className="mx-3 text-black">
-                          {standard.include}
-                        </span>
-                      </li>
-                    )}
-                  </ul>
-
-                  <Link
-                    href={standard.link}
-                    className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
-                  >
-                    {standard.btn}
-                    <img
-                      loading="lazy"
-                      src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-                      className="mx-2"
-                      alt=""
-                    />
-                  </Link>
-                </div>
-              </div>
-            ) : (
-              <Annual currency={currency} />
-            )}
-          </div>
-        </Container>
-      </div>
-    </>
-  );
-}
-function Annual({ priceIcon, currency }) {
-  const { lang, dir } = useSelector((state) => state.languageSlice);
-  const { bondifycrm } = useSelector((state) => state.bondifycrmRed);
-  let { free, standard, enterprise } =
-    bondifycrm(lang).sections.BONDIFY_PRICING.annualy;
-  return (
-    <>
-      <div
-        className="flex flex-col justify-between items-center lg:flex-row lg:items-start"
-        dir={dir}
-      >
-        <div className="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-1 lg:rounded-r-none">
-          <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"
-              alt=""
-              className="rounded-3xl w-20 h-20"
-            />
-            <div className="mx-5">
-              <span className="block text-2xl font-semibold">{free.title}</span>
-            </div>
-          </div>
-          <ul className="mb-7 font-medium text-gray-500">
-            <li className="flex text-lg mb-2">
-              <img
-                loading="lazy"
-                alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-              />
-              <span className="mx-3 text-black">{free.include}</span>
-            </li>
-          </ul>
-          <Link
-            href="http://bondifycrm.domapphub.com/login"
-            className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
-          >
-            {free.btn}
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-              className="mx-2"
-              alt=""
-            />
-          </Link>
-        </div>
-
-        <div className="w-full flex-1 p-8 order-3 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:order-2 lg:mt-0">
-          <div className="mb-8 pb-8 flex items-center border-b border-gray-600">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"
-              alt=""
-              className="rounded-3xl w-20 h-20"
-            />
-            <div className="mx-5">
-              <span className="block text-3xl font-semibold text-white">
-                {enterprise.title}
-              </span>
-            </div>
-          </div>
-          <ul className="mb-10 font-medium text-xl">
-            <li className="flex mb-6">
-              <img
-                loading="lazy"
-                alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-white.svg"
-              />
-              <span className="mx-3">{enterprise.include}</span>
-            </li>
-          </ul>
-          <Link
-            href="https://wa.me/201501060885"
-            className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-2xl"
-          >
-            {enterprise.btn}
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-              className="mx-2"
-              alt=""
-            />
-          </Link>
-        </div>
-
-        <div className="w-full flex-1 mt-8 p-8 order-2 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:order-3 lg:rounded-l-none">
-          <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"
-              alt=""
-              className="rounded-3xl w-20 h-20"
-            />
-            <div className="mx-5">
-              <span className="block text-2xl font-semibold">
-                {standard.title}
-              </span>
-              <span>
-                <span className="font-medium text-gray-500 text-xl align-top ">
-                  {currency} &thinsp;
                 </span>
-                <span className="text-3xl font-bold">
-                  {currency === "EGP"
-                    ? standard.price_EGY
-                    : currency === "SAR"
-                    ? standard.price_SAR
-                    : standard.price_USD}
-                </span>
-              </span>
-              <span className="text-gray-500 font-medium">
-                / {standard.user}
-              </span>
-            </div>
-          </div>
-          <ul>
-            {Array.isArray(standard.include) ? (
-              standard.include.map((item, index) => (
-                <li key={index} className="flex text-lg mb-2">
-                  <img
-                    loading="lazy"
-                    src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                    alt="check"
+
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    className="sr-only peer"
+                    checked={!isMonthly}
+                    onChange={() => setIsMonthly(!isMonthly)}
                   />
-                  <span className="mx-3 text-black">{item}</span>
-                </li>
-              ))
-            ) : (
-              <li className="flex text-lg mb-2">
-                <img
-                  loading="lazy"
-                  src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
-                  alt="check"
-                />
-                <span className="mx-3 text-black">{standard.include}</span>
-              </li>
-            )}
-          </ul>
-          <Link
-            href="https://wa.me/201501060885"
-            className="flex no-underline justify-center items-center bg-indigo-600 rounded-xl p-3 text-center text-white text-xl"
-          >
-            {standard.btn}
-            <img
-              loading="lazy"
-              src="https://res.cloudinary.com/williamsondesign/arrow-right.svg"
-              className="mx-2"
-              alt="btn icon"
-            />
-          </Link>
+                  <div
+                    className="w-16 h-5 bg-[#94a3b8] rounded-full 
+                    peer-checked:bg-[#4f46e5]
+                    after:content-[''] after:absolute after:top-0.5 after:left-0.5 
+                    after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all 
+                    peer-checked:after:translate-x-11"
+                  ></div>
+                </label>
+
+                <div className="flex items-center gap-2">
+                  <span
+                    className={`text-[20px] font-semibold ${
+                      !isMonthly ? "text-indigo-600" : "text-gray-600"
+                    }`}
+                  >
+                    {bondifycrm(lang).sections.BONDIFY_PRICING.year}
+                  </span>
+                  {!isMonthly && (
+                    <span className="text-xs bg-red-500 text-white px-2 py-0.5 rounded-full animate-pulse">
+                      Save 20%
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            <div
+              dir={dir}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto px-4"
+            >
+              {plans.map((plan) => {
+                const isStandard = plan.featured === true;
+                const price = getPrice(plan);
+
+                return (
+                  <div
+                    key={plan.id}
+                    className={`rounded-2xl p-8 .....transition-all duration-300 border border-gray-200 ${
+                      isStandard
+                        ? "bg-[#5c65c7] text-white z-10"
+                        : "bg-white text-gray-900"
+                    }`}
+                  >
+                    <h2
+                      className={`text-[24px] fw-bold ${
+                        isStandard ? "text-white" : "text-[#5c5678]"
+                      }`}
+                    >
+                      {/* {plan.name} */}
+                      {lang === "ar" ? planTranslations[plan.name] : plan.name}
+                    </h2>
+
+                    <div className="mb-8">
+                      <div className="flex items-baseline">
+                        <span className="text-[28px] font-medium">
+                          {plan.id === 6 ? "Custom" : `${currency} ${price}`}
+                        </span>
+                        {plan.id !== 6 && price !== "0" && (
+                          <span className="text-[16px] ml-2 mr-2">
+                            / {lang === "ar" ? "مستخدم" : "user"}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    <h5
+                      className={`text-[20px] mb-4 h-[50px] ${
+                        isStandard ? "text-white" : "text-[#5c5678]"
+                      }`}
+                    >
+                      {plan.id === 4 &&
+                        bondifycrm(lang).sections.BONDIFY_PRICING.monthly.free
+                          .for}
+                      {plan.id === 5 &&
+                        bondifycrm(lang).sections.BONDIFY_PRICING.monthly
+                          .standard.for}
+                      {plan.id === 6 &&
+                        bondifycrm(lang).sections.BONDIFY_PRICING.monthly
+                          .enterprise.for}
+                    </h5>
+
+                    <div>
+                      <h3
+                        className={isStandard ? "text-white" : "text-gray-900"}
+                      >
+                        {
+                          bondifycrm(lang).sections.BONDIFY_PRICING.monthly.free
+                            .LimitsTitle
+                        }
+                      </h3>
+                      <ul className="m-0 p-0 mb-5 m-3">
+                        {Object.entries(plan.limits || {})
+                          .filter(
+                            ([key, value]) => value !== 0 && value !== false
+                          )
+                          .map(([key, value], index, array) => {
+                            const label =
+                              {
+                                clients: lang === "ar" ? "العملاء" : "Clients",
+                                projects:
+                                  lang === "ar" ? "المشاريع" : "Projects",
+                                team: lang === "ar" ? "الفريق" : "Team Members",
+                              }[key] || key;
+
+                            const displayValue =
+                              value === -1
+                                ? lang === "ar"
+                                  ? "غير محدود"
+                                  : "Unlimited"
+                                : value;
+
+                            const showUpTo = index === array.length - 1;
+
+                            return (
+                              <li key={key} className="flex items-center mb-3">
+                                <div
+                                  className={`w-6 h-6 rounded-full flex items-center justify-center ${
+                                    lang === "en" ? "mr-3" : "ml-3"
+                                  } flex-shrink-0 ${
+                                    isStandard ? "bg-white/20" : "bg-gray-200"
+                                  }`}
+                                >
+                                  <Check
+                                    color={isStandard ? "white" : "gray"}
+                                  />
+                                </div>
+                                <span
+                                  className={
+                                    isStandard ? "text-white" : "text-gray-700"
+                                  }
+                                >
+                                  {showUpTo && isStandard ? "Up to " : ""}
+                                  {displayValue} {label}
+                                </span>
+                              </li>
+                            );
+                          })}
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h3
+                        className={isStandard ? "text-white" : "text-gray-900"}
+                      >
+                        {
+                          bondifycrm(lang).sections.BONDIFY_PRICING.monthly.free
+                            .Modules
+                        }
+                      </h3>
+                      <ul className="m-0 p-0 mb-5 m-3">
+                        {Object.entries(plan?.modules || {})
+                          .filter(([_, v]) => v === true)
+                          .map(([key]) => {
+                            const names = {
+                              projects:
+                                lang === "ar" ? "إدارة المشاريع" : "Projects",
+                              tasks: lang === "ar" ? "المهام" : "Tasks",
+                              invoices: lang === "ar" ? "الفواتير" : "Invoices",
+                              leads:
+                                lang === "ar" ? "العملاء المحتملين" : "Leads",
+                              knowledgebase:
+                                lang === "ar"
+                                  ? "قاعدة المعرفة"
+                                  : "Knowledge Base",
+                              estimates:
+                                lang === "ar" ? "عروض الأسعار" : "Estimates",
+                              expense: lang === "ar" ? "المصروفات" : "Expenses",
+                              subscriptions:
+                                lang === "ar" ? "الاشتراكات" : "Subscriptions",
+                              tickets:
+                                lang === "ar"
+                                  ? "تذاكر الدعم"
+                                  : "Support Tickets",
+                              calendar: lang === "ar" ? "التقويم" : "Calendar",
+                              timetracking:
+                                lang === "ar" ? "تتبع الوقت" : "Time Tracking",
+                              reminders:
+                                lang === "ar" ? "التذكيرات" : "Reminders",
+                              proposals: lang === "ar" ? "العروض" : "Proposals",
+                              contracts: lang === "ar" ? "العقود" : "Contracts",
+                              messages:
+                                lang === "ar" ? "الرسائل الداخلية" : "Messages",
+                            };
+
+                            return (
+                              <li key={key} className="flex items-center mb-3">
+                                <div
+                                  className={`w-6 h-6 rounded-full flex items-center justify-center ${
+                                    lang === "en" ? "mr-3" : "ml-3"
+                                  } flex-shrink-0 ${
+                                    isStandard ? "bg-white/20" : "bg-gray-200"
+                                  }`}
+                                >
+                                  <Check
+                                    color={isStandard ? "white" : "gray"}
+                                  />
+                                </div>
+                                <span
+                                  className={
+                                    isStandard ? "text-white" : "text-gray-700"
+                                  }
+                                >
+                                  {names[key] || key}
+                                </span>
+                              </li>
+                            );
+                          })}
+                      </ul>
+                    </div>
+
+      <Link
+  href={
+    !isStandard && !plan.type.toLowerCase().includes("free")
+      ? "mailto:Contactus@domapphub.com"
+      
+      : `/bondifycrm/CreateAccount?planId=${plan.id}&type=${
+          isMonthly ? "monthly" : "yearly"
+        }`
+  }
+  className={`
+    w-full flex justify-center items-center pt-2 pb-2 rounded-[12px] 
+    text-base font-semibold transition-all duration-300
+    ${
+      isStandard
+        ? "bg-[#ebedfd] text-[#5c65c7] hover:bg-[#d8dbf7]"
+        : "bg-[#6772e5] text-white hover:bg-[#5a63d8]"
+    }
+    focus:outline-none text-decoration-none
+  `}
+>
+  {plan.type.toLowerCase().includes("free")
+    ? lang === "ar"
+      ? "ابدأ العرض التجريبي"
+      : "Start Demo"
+    : !isStandard
+    ? lang === "ar"
+      ? " تواصل معنا"
+      : "Contact Sales"
+    : lang === "ar"
+    ? "تواصل معنا"
+    : "Checkout"}
+</Link>
+
+                  </div>
+                );
+              })}
+            </div>
+          </Container>
         </div>
-      </div>
-    </>
+      </section>
+
+      <Footer />
+    </div>
   );
 }
 
-function Section__head() {
+function Check({ color = "currentColor" }) {
   return (
-    <section className="pricing_erp_head">
-      <div>
-        <div className="head_container">
-          <h1 style={{ zIndex: 4 }} className="position-relative">
-            bondify CRM Pricing
-          </h1>
-        </div>
-      </div>
-      <div className="dark_bannar"></div>
-      <div className="back_wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1922.547 325.915">
-          <defs></defs>
-          <g
-            id="Group_1"
-            data-name="Group 1"
-            transform="translate(2.547 -753.617)"
-          >
-            <path
-              id="Path_1"
-              data-name="Path 1"
-              className="cls-1"
-              d="M1920,669.331V993.246H-2.547Z"
-              transform="translate(0 84.287)"
-            ></path>
-            <path
-              id="Path_2"
-              data-name="Path 2"
-              className="cls-2"
-              d="M1920,669.331V902.469H-2.547Z"
-              transform="translate(0 177.064)"
-            ></path>
-          </g>
-        </svg>
-      </div>
-    </section>
+    <svg className="w-4 h-4" fill={color} viewBox="0 0 20 20">
+      <path
+        fillRule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clipRule="evenodd"
+      />
+    </svg>
   );
 }

@@ -813,31 +813,103 @@
     "year": "Annual",
     "month": "Monthly",
     "save_to": "Save Up To 20%",
+    "title": " Your Business Size Doesn’t Matter — bondify CRM Fits All",
+    "sub_title": " Flexible, customizable, and built for every team — choose the plan that fits your workflow and business goals.",
     "monthly": {
       "free": {
+        "for": "Free plan - explore all core features for free",
+        "LimitsTitle": "Limits",
+        "Modules": "Included Modules",
+
         "title": "Free",
         "price": false,
-        "include": "Get started For Free",
+        "limits": ["Team (Users) - 3", "Clients - 3", "Projects - 10"],
+        "include": [
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
+
         "link": "http://bondifycrm.domapphub.com/login",
         "btn": "Start Demo"
       },
       "standard": {
         "title": "Standard",
+        "for": "Suitable for up to 10 users",
+        "LimitsTitle": "Limits",
+        "Modules": "Included Modules",
+
+        "limits": [
+          "Team (Users) - 10",
+          "Clients - Unlimited",
+          "Projects - Unlimited"
+        ],
         "price_USD": "9",
         "price_SAR": "34",
         "price_EGY": "226",
-        "Usd":"USD",
-        "Egp":"EGP",
-        "Sar":"SAR",
+        "Usd": "USD",
+        "Egp": "EGP",
+        "Sar": "SAR",
         "user": "User",
-        "include": ["All features in Startup", "Suitable for up to 10 users"],
+        "include": [
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       },
       "enterprise": {
         "title": "Enterprise",
+        "Modules": "Included Modules",
+
         "price": false,
-        "include": "For companies and Enterprises with more than 10 users",
+        "LimitsTitle": "Limits",
+        "for": "For companies and enterprises with more than 10 users",
+        "limits": [
+          "Team (Users) - Unlimited",
+          "Clients - Unlimited",
+          "Projects - Unlimited"
+        ],
+
+        "include": [
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       }
@@ -845,28 +917,99 @@
     "annualy": {
       "free": {
         "title": "Free",
+        "LimitsTitle": "Limits",
+        "Modules": "Included Modules",
+
+        "for": "Free plan - explore all core features for free",
+
         "price": false,
-        "include": "Get started For Free",
+        "limits": ["Team (Users) - 3", "Clients - 3", "Projects - 10"],
+
+        "include": [
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "http://bondifycrm.domapphub.com/login",
         "btn": "Start Demo"
       },
       "standard": {
         "title": "Standard",
+        "Modules": "Included Modules",
+
+        "LimitsTitle": "Limits",
         "price_USD": "7",
         "price_SAR": "27",
         "price_EGY": "180",
-           "Usd":"USD",
-        "Egp":"EGP",
-        "Sar":"SAR",
+        "Usd": "USD",
+        "Egp": "EGP",
+        "Sar": "SAR",
         "user": "User",
-        "include": ["All features in Startup", "Suitable for up to 10 users"],
+        "for": "Suitable for up to 10 users",
+        "limits": [
+          "Team (Users) - 10",
+          "Clients - Unlimited",
+          "Projects - Unlimited"
+        ],
+
+        "include": [
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       },
       "enterprise": {
         "title": "Enterprise",
+        "Modules": "Included Modules",
+
         "price": false,
-        "include": "For companies and Enterprises with more than 10 users",
+        "LimitsTitle": "Limits",
+        "for": "For companies and enterprises with more than 10 users",
+        "limits": [
+          "Team (Users) - Unlimited",
+          "Clients - Unlimited",
+          "Projects - Unlimited"
+        ],
+        "include": [
+          "Tasks",
+          "Leads",
+          "Invoices",
+          "Estimates",
+          "Subscriptions",
+          "Contracts",
+          "Proposals",
+          "Tickets",
+          "Calendar",
+          "Expenses",
+          "Instant Messaging",
+          "Time Tracking",
+          "Knowledgebase",
+          "Reminders"
+        ],
         "link": "https://wa.me/201501060885",
         "btn": "CONTACT SALES"
       }
@@ -1036,5 +1179,125 @@
   "PARTNERS_TITLE": {
     "title": "OUR CLIENTS",
     "slogan": "A legacy shaped by our clients’ success."
-  }
+  },
+  "SECTION_3": {
+    "title": "One CRM to replace them all",
+    "buttons": {
+      "createAccount": "Create Account",
+      "seePricing": "See Pricing"
+    }
+  },
+  "SECTION_1": {
+    "subtitle": "Amazing Set Of Features",
+    "title": "All the important modules that you need",
+    "cards": [
+      {
+        "title": "Clients",
+        "desc": "Manage all aspects of your clients in one place."
+      },
+      {
+        "title": "Projects",
+        "desc": "Deliver your projects on time and on budget."
+      },
+      {
+        "title": "Prospects",
+        "desc": "Capture all your leads and opportunities easily."
+      },
+      {
+        "title": "Team Work",
+        "desc": "Collaboration between your team members easily."
+      }
+    ]
+  },
+  "SECTION_2": {
+    "subtitle": "INCREASE YOUR PRODUCTIVITY",
+    "title": "Intuitive, powerful, and built for teams who get things done",
+    "desc": "Our bondify CRM comes with a host of features that are designed to help increase your entire team's productivity.",
+    "list": [
+      "Project templates to kick-start a new project",
+      "Clone task to speed your time to action",
+      "Communicate and collaborate with your team and clients",
+      "Time tracking for the whole team"
+    ]
+  },
+
+  "SECTION_4": {
+    "subtitle": "Advanced Project Management",
+    "title": "Beat your project deadlines",
+    "desc": "Our CRM gives you the right tools to manage, collaborate and complete your projects on time. Your clients will be happy and your team will be happy.",
+    "list": [
+      "Easily see the progress of your project",
+      "Collaborate with team members",
+      "Break down your project into milestones and tasks"
+    ]
+  },
+  "SECTION_5": {
+    "title": "All the important modules that you need",
+    "subtitle": "Amazing Set Of Features",
+    "cards": [
+      {
+        "title": "Tasks",
+        "desc": "Work through your task efficiently and intuitively."
+      },
+      {
+        "title": "Invoicing",
+        "desc": "Invoice your clients and accept payments easily."
+      },
+      {
+        "title": "Estimates",
+        "desc": "Quickly send your clients estimates and proposals."
+      },
+      {
+        "title": "User Roles",
+        "desc": "Control the resources your team members can access."
+      },
+      {
+        "title": "Work From Anywhere",
+        "desc": "Your team can now easily connect and work from anywhere."
+      },
+      {
+        "title": "Time Tracking",
+        "desc": "Advanced time tracking so you never miss a minute of time spent."
+      },
+      {
+        "title": "Help Desk",
+        "desc": "Use the helpdesk to provide support for your clients."
+      },
+      {
+        "title": "Knowledgebase",
+        "desc": "Create engaging articles easily and share information with all your stakeholders."
+      },
+      {
+        "title": "Subscriptions",
+        "desc": "Accept recurring payments via Stripe, using the subscription feature."
+      }
+    ]
+  },
+  "SECTION_6": {
+    "title": "Productivity Redefined",
+    "subtitle": "The complete productivity tool for your business",
+    "tabs": [
+      "Leads",
+      "Clients",
+      "Project",
+      "Tasks",
+      "Invoice",
+      "Support Ticket"
+    ]
+  },
+"BOUNDIFYCRM_CREATE_ACCOUNT": {
+  "title": "Create Your Account",
+  "subtitle": "Work through your task efficiently and intuitively.",
+  "full_name_label": "Full Name",
+  "full_name_placeholder": "Enter your name",
+  "account_name_label": "User Name",
+  "account_name_placeholder": "@account_name",
+  "email_address_label": "Email Address",
+  "email_address_placeholder": "Enter your email",
+  "password_label": "Password",
+  "password_placeholder": "Create a password",
+  "plan_label": "Select Plan",
+  "create_account_button": "Create Account"
+}
+
 }
