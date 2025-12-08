@@ -4,7 +4,7 @@ import Image from "next/image";
 import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
 import { useSelector } from "react-redux";
-import "./Section.css";
+import "./section.css";
 
 export default function Section5() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -31,7 +31,10 @@ export default function Section5() {
         <span>{section.subtitle}</span>
         <h2>{section.title}</h2>
       </div>
-      <div dir={dir} className="features-wrapper-cards d-flex flex-wrap justify-content-center gap-4 mt-4">
+      <div
+        dir={dir}
+        className="features-wrapper-cards d-flex flex-wrap justify-content-center gap-4 mt-4"
+      >
         {section.cards.map((card, index) => (
           <div
             key={index}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "reactstrap";
-import "./Section.css";
+import "./section.css";
 import Image from "next/image";
 import { useSelector } from "react-redux";
 import en from "@/stores/Language/en.json";
@@ -15,17 +15,16 @@ export default function Section1() {
     "/images/image1.png",
     "/images/image2.png",
     "/images/image3.png",
-    "/images/image4.png"
+    "/images/image4.png",
   ];
 
   return (
     <Container dir={dir}>
       <div
-      
-      className={` text-center mt-5 pt-5 section-title-meta ${
+        className={` text-center mt-5 pt-5 section-title-meta ${
           lang === "ar" ? "bondifycrm-page-ar text-right" : "bondifycrm-page"
         }`}
-    >
+      >
         <span>{section.subtitle}</span>
         <h2>{section.title}</h2>
       </div>
