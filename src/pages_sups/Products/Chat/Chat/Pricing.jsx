@@ -18,8 +18,8 @@ export default function Pricing() {
     axios
       .get("https://get.geojs.io/v1/ip/country.json")
       .then((response) => {
-        country =
-        response.data.name !== "Egypt" && setCurrency("SAR");
+        // country =
+        // response.data.name !== "Egypt" && setCurrency("SAR");
       })
       .catch((error) => {
         console.log("error", error);
@@ -52,7 +52,7 @@ function Monthly({ priceIcon, currency }) {
       <div className="py-5">
         <Container>
           <div style={{ maxWidth: "1000px" }} className="m-auto">
-            <Row className="justify-center" >
+            <Row className="justify-center">
               <Col sm={12} md={4}>
                 <div className="text-center pricing-container pricing-card">
                   <div className="mb-2">
@@ -91,9 +91,7 @@ function Monthly({ priceIcon, currency }) {
                         />
                       </svg>
 
-                      <small className="dis">
-                        {item}
-                      </small>
+                      <small className="dis">{item}</small>
                     </div>
                   ))}
 
