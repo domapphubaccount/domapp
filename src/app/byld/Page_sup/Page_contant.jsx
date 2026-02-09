@@ -4,12 +4,17 @@ import Bannar from "@/pages_sups/Products/Byld/Bannar";
 import ByldVideo from "@/pages_sups/Products/Byld/Byld/ByldVideo";
 import Section_1 from "@/pages_sups/Products/Byld/Byld/Section_1";
 import Section_2 from "@/pages_sups/Products/Byld/Byld/Section_2";
+import { useSelector } from "react-redux";
 
 export default function Page() {
-  
+  const { lang, dir } = useSelector((state) => state.languageSlice);
+
   return (
-     <div   className={` ${
-    lang === "ar" ? "bondifycrm-page-ar text-right" : "bondifycrm-page"  }`}>
+    <div
+      className={` ${
+        lang === "ar" ? "bondifycrm-page-ar text-right" : "bondifycrm-page"
+      }`}
+    >
       <>
         <Bannar />
         <ByldVideo />
