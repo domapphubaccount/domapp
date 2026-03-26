@@ -7,7 +7,9 @@ export const league = League_Spartan({ subsets: ["latin"] });
 export default function Bannar() {
   const lang = useSelector((state) => state.languageSlice.lang);
   const home = useSelector((state) => state.homeRed.home);
-
+  console.log('lang', lang)
+  console.log('home', home)
+  console.log('homeمشىل', home(lang))
   return (
     <section
       data-bs-version="5.1"

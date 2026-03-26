@@ -1,0 +1,1301 @@
+{
+  "HOME": "Startseite",
+  "PRODUCTS": "Produkte ",
+  "WHAT_WE_DO": "WAS WIR TUN",
+  "ABOUT_US": "ÜBER UNS",
+  "ًWHY_US": "WARUM WIR",
+  "CONTACT_US": "Kontakt",
+  "Design_Software": "",
+  "Business_Adminstration": "",
+  "Risk_Assessment": "",
+  "Communication": "",
+  "Developement_Services": "",
+  "Facade_Fabrication": "",
+  "comply_with_SBC": "",
+  "generative_ai": "",
+  "CladCut": "",
+  "Wind_Master": "",
+  "bondify_CRM": "",
+  "RDAPP": "",
+  "ChatPlus": "",
+  "Custom_Software": " ",
+  "Grasshopper_Modules": " ",
+  "BYLD": "",
+  "slogan": "",
+  "Get_Started": "",
+  "ABOUT_US_HEAD": {
+    "title": "ÜBER UNS",
+    "slogan": "Spezialisiert auf die Entwicklung innovativer Lösungen, die Möglichkeitenneu definieren."
+  },
+  "ABOUT_US_SLOGAN": [
+    "Wir entwickeln und verfeinern kundenorientierte Konzepte und integrieren sie nahtlos in unsere präzise entwickelten Anwendungen, um optimale Funktionalität und maximale Benutzerzufriedenheit in jeder Phase zu gewährleisten.",
+    "Wir entwerfen Lösungen, die Erwartungen übertreffen und unsere Kunden auf ihrem Weg zum Erfolg voranbringen.",
+    "Mit unserer Expertise entwickeln und gestalten wir Anwendungen, die exakt auf die Anforderungen unserer Kunden zugeschnitten sind. Unsere Erfahrung ermöglicht es uns, die entwickelten Anwendungen individuell anzupassen und zu optimieren, sodass sie perfekt mit der Unternehmensstruktur und der geschäftlichen Vision des Kunden übereinstimmen."
+  ],
+  "ABOUT_US_MAIN_TITLE": "Bei DomApp zeigt sich unsere Expertise in voller Stärke",
+  "ABOUT_US_MAIN_SLICES": [
+    {
+      "title": "Mission",
+      "slogan": "Wir verwandeln Ihre lebensverändernden Ideen in großartige Softwarelösungen, die Menschen gerne nutzen."
+    },
+    {
+      "title": "Vision",
+      "slogan": "Entwicklung innovativer, maßgeschneiderter und zuverlässiger Lösungen zur Stärkung von Geschäftsvisionen, zur Übertreffung von Kundenerwartungen und zur Förderung nachhaltigen Erfolgs."
+    },
+    {
+      "title": "Kernwerte",
+      "slogan": "Wir setzen uns für Innovation und Qualität ein. Dabei erfüllen wir die Anforderungen unserer Kunden durch Transparenz, Zusammenarbeit und den Einsatz modernster Technologien, während wir Verantwortung und Nachhaltigkeit in den Mittelpunkt stellen."
+    }
+  ],
+  "WHAT_WE_DO_SLOGAN": "Wir entwickeln hochwertige, innovative Softwarelösungen, die Effizienz, Leistung und Benutzerfreundlichkeit vereinen",
+  "WHAT_WE_DO_SLICES": [
+    {
+      "title": "Modernste Software",
+      "description": "Wir entwickeln Anwendungen mit Präzision und Kreativität, die den Anforderungen unserer Kunden entsprechen, unter Einsatz modernster Technologien und Frameworks."
+    },
+    {
+      "title": "Technologische Weiterentwicklung",
+      "description": " Innovationen in künstlicher Intelligenz, virtueller Realität und Big-Data-Analyse treiben unsere Kunden mit Kreativität und Expertise voran."
+    },
+    {
+      "title": "Kreative Innovation",
+      "description": "Von CladCut bis ChatPlus zeigen unsere Projekte unser Engagement für bahnbrechende Lösungen."
+    },
+    {
+      "title": " Spezialisierte Lösungen",
+      "description": " Entwicklung maßgeschneiderter Anwendungen zur Erfüllung individueller Anforderungen und zur Sicherstellung von Erfolg und Wachstum"
+    },
+    {
+      "title": "Kundenorientierter Ansatz",
+      "description": "Wir stellen unsere Kunden in den Mittelpunkt und liefern außergewöhnliche Ergebnisse."
+    }
+  ],
+  "WHY_US_HEAD": {
+    "title": "WARUM WIR",
+    "slogan": "- Wir bauen Beziehungen, nicht nur Projekte."
+  },
+  "SERVICES": [
+    {
+      "title": "Softwareentwicklung",
+      "slogan": "Unsere Softwareentwicklungsdienste konzentrieren sich auf maßgeschneiderte Lösungen, die auf Ihre Geschäftsziele abgestimmt sind. Ob innovative Anwendungen entwickelt oder bestehende Systeme modernisiert werden – wir gewährleisten robuste, zuverlässige und nahtlose Softwarelösungen."
+    },
+    {
+      "title": "Softwareanpassung",
+      "slogan": " Wir bieten Softwareanpassungsdienste, um bestehende Systeme an Ihre individuellen Geschäftsanforderungen anzupassen. Von der Modifikation von Standardlösungen bis zur Verbesserung bestehender Funktionen sorgt unser Team für effiziente und nahtlose Softwareleistung."
+    },
+    {
+      "title": "Webentwicklung",
+      "slogan": "Unser Webentwicklungsteam kombiniert Kreativität und technisches Know-how, um Websites zu erstellen, die Ihr Publikum begeistern und Ergebnisse liefern. Von einfachen Websites bis zu komplexen Webplattformen bieten wir maßgeschneiderte Lösungen für Ihre Vision."
+    },
+    {
+      "title": "Mobile-App-Entwicklung",
+      "slogan": "Transformieren Sie Ihr Unternehmen mit unseren Mobile-AppEntwicklungsdiensten. Wir entwerfen und entwickeln intuitive Hochleistungs-Apps für iOS, Android und plattformübergreifende Lösungen und bieten außergewöhnliche Benutzererlebnisse und innovative Funktionen."
+    },
+    {
+      "title": "UI/UX Desgin",
+      "slogan": "Unser UI/UX-Designteam ist spezialisiert auf die Entwicklung von Benutzeroberflächen, die einen bleibenden Eindruck hinterlassen. Wir verbinden Designästhetik mit Benutzeranforderungen und schaffen sowohl schöne als auch funktionale Erlebnisse."
+    },
+    {
+      "title": "Fassadenfertigung",
+      "slogan": "Unsere Expertise in der Fassadenfertigung integriert fortschrittliche computergestützte Werkzeuge wie Grasshopper zur Bereitstellung individueller Fassadenlösungen. Wir liefern 3D-Fertigungsmodelle und detaillierte Fertigungszeichnungen für effiziente und hochwertige Ergebnisse"
+    }
+  ],
+  "OUR_PRODUCTS_TITLE": "UNSERE PRODUKTE",
+  "OUR_PRODUCTS_SLOGAN": "Jedes unserer Produkte wird mit Präzision, Leidenschaft und einem tiefen Engagement für Exzellenz entwickelt.",
+
+  "HOME_COUNTER": [
+    {
+      "number": 300,
+      "title": "Clients"
+    },
+    {
+      "number": 20,
+      "title": "PRODUKTE"
+    },
+    {
+      "number": 25000,
+      "title": "Successful Jobs"
+    }
+  ],
+  "CONTACT_CARD_WHATSAPP": "",
+  "CONTACT_CARD_MESSAGE": "",
+  "CONTACT_CARD_WORK_TIME": "",
+  "CONTACT_FIND_US": "",
+  "CONTACT_CARD_WORK_TIME_SLICE": [
+    {
+      "days": "",
+      "from": "09:00 Am",
+      "to": "05:00 Pm",
+      "place": "Makkah, Saudi Arabia"
+    },
+    {
+      "days": "",
+      "from": "09:00 Am",
+      "to": "05:00 Pm",
+      "place": "Cairo, Ägypten"
+    },
+    {
+      "days": "",
+      "from": "09:00 Am",
+      "to": "05:00 Pm",
+      "place": "UTC"
+    }
+  ],
+  "CONTACT_CARD_PLACE": [
+    {
+      "place": "2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, ",
+      "country": "Al Riyadh, Saudi Arabia"
+    },
+    {
+      "place": "Prince Mohamed Ibn Abdulrahman St, Ask Fayha Dist,",
+      "country": "Riyadh, Saudi Arabia"
+    },
+    {
+      "place": "20A, Salah Salem Rd, Al Obour Building,",
+      "country": "New Cairo, Ägypten"
+    },
+    {
+      "place": "Jad Allah Tower,4th Floor, Office No 309, 412,",
+      "country": " KFS, Ägypten"
+    },
+    {
+      "place": "Al Motahda Tower, 2nd Floor, Office No 3,",
+      "country": "KFS, Ägypten"
+    }
+  ],
+  "CONTACT_PAGE_HEAD_TITLE": "",
+  "CONTACT_PAGE_HEAD_SLOGAN": "",
+  "CONTACT_PAGE_FORM_NAME": "",
+  "CONTACT_PAGE_FORM_PHONE": "",
+  "CONTACT_PAGE_FORM_EMAIL": "",
+  "CONTACT_PAGE_FORM_OPTIONS": "",
+  "CONTACT_PAGE_FORM_SUBJECT": "",
+  "CONTACT_PAGE_FORM_MESSAGE": "",
+  "CONTACT_PAGE_FORM_SEND": "",
+  "CLADCUT_PAGE_BANNAR_SLOGAN": {
+    "first": " ",
+    "end": " ."
+  },
+  "CLADCUT_PAGE_TRY_BTN": "",
+  "CLADCUT_PAGE_PRICING_BTN": "",
+  "CLADCUT_PAGE_BANNAR_SLICE": {
+    "users": "",
+    "produced": "",
+    "houres": ""
+  },
+  "CLADCUT_PAGE_QUICK_START_TITLE": "Schnellstart",
+  "CLADCUT_PAGE_QUICK_START_SLOGAN": "Vergessen Sie nicht, unser Schnellstart-Tutorial anzusehen.",
+  "CLADCUT_PAGE_HEAD_NOTE_1_TITLE": "Unleash the Speed of Aluminum Cladding Fabrication with CladCut",
+  "CLADCUT_PAGE_HEAD_NOTE_1_SLOGAN": "Generate fabrication drawings and CNC files in minutes, not days.",
+  "CLADCUT_PAGE_WORK_FLOW_TITLE": "Effortless Workflow",
+  "CLADCUT_PAGE_WORK_FLOW_SLICE": [
+    "An intuitive interface guides you through the process.",
+    "Select your sheet size.",
+    "Upload your cladding layout as a DXF.",
+    "Sit back and let CladCut handle the rest."
+  ],
+  "CLADCUT_PAGE_WORK_FLOW_HISTORY": {
+    "many": "Many",
+    "type": "Years",
+    "by": "of",
+    "mid": "success",
+    "last": "work"
+  },
+  "CLADCUT_PAGE_HEAD_NOTE_2_TITLE": "Exklusive Funktionen",
+  "CLADCUT_PAGE_HEAD_NOTE_2_SLOGAN": "Make us proud",
+  "CLADCUT_PAGE_CARDS_TITLE_1": "Reduced Time",
+  "CLADCUT_PAGE_CARDS_TITLE_2": "Effortless Workflow",
+  "CLADCUT_PAGE_CARDS_TITLE_3": "Improved Efficiency",
+  "CLADCUT_PAGE_CARDS_TITLE_4": "Enhanced Accuracy",
+  "CLADCUT_PAGE_CARDS_TITLE_5": "Streamlined Installation",
+  "CLADCUT_PAGE_CARDS_SLOGAN_1": "ــــــــــــــ.",
+  "CLADCUT_PAGE_CARDS_SLOGAN_2": "An intuitive interface simplifies the process.",
+  "CLADCUT_PAGE_CARDS_SLOGAN_3": "ــــــــــــــ",
+  "CLADCUT_PAGE_CARDS_SLOGAN_4": "Precise unfold views and automatic dimensioning minimize errors.",
+  "CLADCUT_PAGE_CARDS_SLOGAN_5": "Installation drawings ensure a smooth on-site process.",
+  "CLADCUT_PAGE_FOOTER_TITLE": "ــــــــــــــ",
+  "CLADCUT_PAGE_FOOTER_SLICE": [
+    "Cــــــــــــــ",
+    "ــــــــــــــ.",
+    "ــــــــــــــ.",
+    "ــــــــــــــ"
+  ],
+
+  "WINDMASTER_PAGE_TRY_BTN": "Kostenlos testen",
+  "WINDMASTER_PAGE_PRICING_BTN": "Pricing",
+  "WINDMASTER_PAGE_CARDS_TITLE_1": "Saudi-Baucode-Konformität",
+  "WINDMASTER_PAGE_CARDS_TITLE_2": "Genauigkeit und Präzision",
+  "WINDMASTER_PAGE_CARDS_TITLE_3": "Zeitersparnis.",
+  "WINDMASTER_PAGE_CARDS_TITLE_4": "Umfassende Berichterstattung",
+  "WINDMASTER_PAGE_CARDS_SLOGAN_1": "Berechnen Sie Windlasten auf Fassaden präzise gemäß den neuesten Standards des Saudi Building Code.",
+  "WINDMASTER_PAGE_CARDS_SLOGAN_2": "Erzielen Sie präzise und zuverlässige Ergebnisse mit Effizienz und Genauigkeit und übertreffen Sie die Grenzen traditioneller Methoden.",
+  "WINDMASTER_PAGE_CARDS_SLOGAN_3": "Eliminieren Sie Zeitverluste durch ineffiziente Methoden, damit sich Ihr Ingenieurteam auf kritische Aufgaben konzentrieren kann.",
+  "WINDMASTER_PAGE_CARDS_SLOGAN_4": " WINDMASTER erstellt einen detaillierten und leicht verständlichen Bericht mit allen Berechnungen und Konformitätsprüfungen.",
+  "WINDMASTER_PAGE_QUICK_START": {
+    "title": "Schnellstart",
+    "slogan": "Don't forget to watch our schnellstart tutorial."
+  },
+  "WINDMASTER_PAGE_INFO_CARDS_TITLE_1": "Projektinformationen",
+  "WINDMASTER_PAGE_INFO_CARDS_TITLE_2": "Standortdaten.",
+  "WINDMASTER_PAGE_INFO_CARDS_TITLE_3": "Exportieren & Drucken",
+  "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_1": "Verwalten und bearbeiten Sie Projekt- und Kundendaten.",
+  "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_2": "Gemäß Saudi Building Code 301 wird die Identifizierung von Standortdaten wie Risikokategorie, Projektadresse und Expositionskategorie vereinfacht",
+  "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_3": "Exportieren Sie detaillierte Konstruktionsdatenblätter",
+  "WINDMASTER_PAGE_COLLABORATE_HEAD": {
+    "part_1": "Arbeiten Sie mit Ihrem",
+    "part_2": "Team jederzeit und überall."
+  },
+  "WINDMASTER_PAGE_COLLABORATE_SLOGAN": "WINDMASTER bietet alles, was Sie benötigen, um fortschrittliche Windanalyseberichte zu erstellen.",
+  "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_1": "Windberechnungen für verschiedene Strukturtypen wie das Main Wind Force Resisting System (MWFRS), Komponenten und Fassadenbekleidungen, gewölbte Dächer und mehr.",
+  "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_2": "Bieten Sie transparente und leicht verständliche Berechnungen mit Wirkung. Exportieren Sie Berichte schnell als PDF.",
+  "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_3": "Vereinfachen Sie Ihren Workflow und reduzieren Sie wiederholte Berechnungen mit einer benutzerfreundlichen Oberfläche und OnlineZugänglichkeit, sodass Sie von überall nahtlos arbeiten können.",
+  "WINDMASTER_PAGE_GET_STARTED_TITLE": " Starten Sie noch heute Ihre kostenlose Testversion",
+  "WINDMASTER_PAGE_GET_STARTED_SLOGAN": "Entdecken Sie, wie WINDMASTER Ihre Windanalyse verbessern kann. Starten Sie noch heute Ihre kostenlose Testversion für eine detaillierte Analyse!",
+  "WINDMASTER_PAGE_GET_STARTED_BTN": "Jetzt starten",
+  "CHATPLUS_PAGE_SLOGAN": "Eine Plattform für alle Ihre Kommunikationsbedürfnisse.",
+  "CHATPLUS_PAGE_TRY_BTN": "Kostenlos testen",
+  "CHATPLUS_PAGE_PRICING_BTN": "Pricing",
+  "CHATPLUS_PAGE_PRICING_GROW": "Grow your business and engage with your customers via messaging",
+  "CHATPLUS_PAGE_COLLABORATE_HEAD": "Flexible Konfigurationsoptionen",
+  "CHATPLUS_PAGE_COLLABORATE_SLOGAN": "Schnelle und personalisierte Antworten zur Steigerung der Kundenzufriedenheit.",
+  "CHATPLUS_PAGE_CUSTOMER_SUPPORT": "Kundensupport",
+  "CHATPLUS_PAGE_ARCHIVE": "Archiv",
+  "CHATPLUS_PAGE_AUTO_REPLY": "Automatische Antworten",
+  "CHATPLUS_PAGE_BROADCAST": "Broadcast-Nachrichten",
+  "CHATPLUS_PAGE_CHATBOAT": "ChatBot",
+  "CHATPLUS_PAGE_MSGTEMPLATE": "Nachrichtenvorlagen",
+  "CHATPLUS_PAGE_HEADS": {
+    "why_us": "Warum Wir",
+    "feature": "Funktionen"
+  },
+  "CHATPLUS_PAGE_CARDS": [
+    {
+      "icon": "bi bi-telephone-x",
+      "title": "Support-Interaktion",
+      "slogan": "Ermöglichen Sie Mitarbeitern dynamische und personalisierte Support-Interaktionen."
+    },
+    {
+      "icon": "'bi bi-postage-fill",
+      "title": "Fehlerfreie Kommunikation",
+      "slogan": "Implementieren Sie fortschrittliche Algorithmen, um fehlerfreie Kommunikation sicherzustellen und Missverständnisse zu reduzieren."
+    },
+    {
+      "icon": "bi bi-lock",
+      "title": "Verstärkte Kommunikationskanäle",
+      "slogan": "Etablieren Sie sichere Kommunikationskanäle mit End-to-EndVerschlüsselung zum Schutz sensibler Daten."
+    },
+    {
+      "icon": "bi bi-broadcast-pin",
+      "title": "Optimierte Kommunikationsabläufe",
+      "slogan": "Etablieren Sie sichere Kommunikationskanäle mit End-to-EndVerschlüsselung zum Schutz sensibler Daten."
+    },
+    {
+      "icon": "bi bi-phone",
+      "title": "Mobile Responsivität",
+      "slogan": "Verbessern Sie die mobile Reaktionsfähigkeit durch automatisierte Antworten entsprechend den Bedürfnissen mobiler Nutzer."
+    },
+    {
+      "icon": "bi bi-archive",
+      "title": "Effizientes Kommunikationsarchiv",
+      "slogan": "Implementieren Sie ein robustes Archivierungssystem zur einfachen Speicherung und Wiederherstellung früherer Gespräche mit schnellem Zugriff auf historische Daten."
+    }
+  ],
+  "CHATPLUS_PAGE_FEATUERS_CARDS_L": [
+    {
+      "title": "Support-Interaktion Maximieren",
+      "slogan": "Verbessern Sie Kundeninteraktion, Lead-Qualität und Kommunikation mit Echtzeit-Support."
+    },
+    {
+      "title": "Nachrichtenvorlagen",
+      "slogan": "Erstellen und personalisieren Sie mehrere Vorlagen für unterschiedliche Szenarien."
+    },
+    {
+      "title": "Broadcast-Nachrichten",
+      "slogan": "Senden Sie eine einzelne Nachricht gleichzeitig an eine große Anzahl von Empfängern."
+    },
+    {
+      "title": "Leistungsbericht ",
+      "slogan": "Bietet eine Analyse der Effizienz und Effektivität des Teams im Umgang mit Kundeninteraktionen.."
+    }
+  ],
+  "CHATPLUS_PAGE_FEATUERS_CARDS_R": [
+    {
+      "title": "Automatische Antworten",
+      "slogan": "Personalisierte automatische Antworten verbessern die Kundenbindung und optimieren die Geschäftskommunikation."
+    },
+    {
+      "title": "Archiv",
+      "slogan": "Speichern und greifen Sie mühelos auf frühere Gespräche und Chatprotokolle zu."
+    },
+    {
+      "title": "Automatisierte Prozesse ",
+      "slogan": "ChatPlus bietet vielseitige automatisierte Geschäftsprozesse wie Terminplanung, Auftragsverfolgung und mehr."
+    },
+    {
+      "title": "API-Integration ",
+      "slogan": "Bietet Integration mit Ihrem CRM & ERP."
+    }
+  ],
+  "CHATPLUS_PAGE_QUICK_START_TITLE": "Schnellstart",
+  "CHATPLUS_PAGE_QUICK_START_SLOGAN": "Vergessen Sie nicht, unser Schnellstart-Tutorial anzusehen",
+  "BYLD_PAGE_BANNAR_SLOGAN": {
+    "first": "Intelligente Engineering",
+    "seconed": "Lösungen",
+    "third": ", fragen Sie einfach die ",
+    "forth": "KI"
+  },
+  "BYLD_PAGE_TRY_BTN": "Kostenlos testen",
+  "BYLD_PAGE_PRICING_BTN": "Preise",
+  "BYLD_PAGE_QUICK_START_TITLE": "Kurzübersicht",
+  "BYLD_PAGE_QUICK_START_SLOGAN": "Revolutionieren Sie Bau-Compliance mit BYLD.",
+  "BYLD_PAGE_CARDS": [
+    {
+      "title": "Präzise Informationen",
+      "slogan": "Eine genaue Informationsquelle mit Möglichkeit zur Angabe der spezifischen Vorschrift"
+    },
+    {
+      "title": "Informationen Mit Anderen Teilen",
+      "slogan": "Sie können die Ergebnisse Ihrer Gespräche teilen, um Diskussionen zu bündeln und die Kommunikation im Team zu erleichtern."
+    },
+    {
+      "title": "Alle Gespräche Archivieren",
+      "slogan": "Alle Gesprächsergebnisse werden in Ihrem Konto gespeichert, um Ihr Projekt fortzusetzen.."
+    }
+  ],
+  "BYLD_PAGE_HEAD_TITLE": {
+    "first": "Klare Antworten auf ",
+    "seconed": "komplexe Fragen",
+    "third": "unter Bezugnahme auf den Saudi Building Code"
+  },
+
+  "BYLD_PAGE_HEAD_SLOGAN": "Die Nutzung von BYLD unterstützt fundierte Entscheidungen und stellt sicher, dass Ihre Projekte allen Anforderungen des Saudi Building Code entsprechen.",
+
+  "BYLD_PAGE_FEATURES_WHY_US": "Warum Sie uns wählen sollten",
+  "BYLD_PAGE_FEATURES_TITLE": "Hauptmerkmale",
+  "BYLD_PAGE_FEATURES_SLICE": [
+    {
+      "title": "Einhaltung des Saudi Building Code.",
+      "slogan": "Vermeiden Sie Missverständnisse bei Anforderungen und den Rückgriff auf unzuverlässige Quellen."
+    },
+    {
+      "title": "Kontinuierliche Updates und Erweiterungen",
+      "slogan": "Die Überwachung aller von zuständigen Behörden genehmigten Aktualisierungen des Saudi Building Code gewährleistet die kontinuierliche Bereitstellung korrekter Informationen. Alle Anforderungen und Vorschriften können ergänzt werden."
+    },
+    {
+      "title": "Sofortige Antworten",
+      "slogan": "Sofortige Antworten auf Ihre Fragen für eine einfache Nutzung."
+    }
+  ],
+  "CUSTOM_SOFTWARE_PAGE_SLOGAN": "TAILORED SOLUTIONS TURNING YOUR VISION INTO REALITY.",
+  "CUSTOM_SOFTWARE_PAGE_CONTACT_BTN": "Kontaktieren Sie uns",
+  "CUSTOM_SOFTWARE_PAGE_ABOUT": {
+    "about_us": "Über Uns ",
+    "title": "Wie Wir Ihnen Helfen, Ihre Geschäftsziele zu Erreichen",
+    "slogan": {
+      "first": "DomApp ist ein führendes Softwareentwicklungsunternehmen mit umfassender Erfahrung in der Entwicklung und Programmierung individueller Softwarelösungen",
+      "seconed": "Ob Eigenentwicklung oder Anpassung bestehender Software – wir bieten optimale Lösungen für Ihren Erfolg."
+    }
+  },
+  "CUSTOM_SOFTWARE_PAGE_SERVICES": {
+    "Services": "Dienstleistungen",
+    "title": "Unser Arbeitsprozess zur Unterstützung Ihres Geschäftswachstums",
+    "slice": [
+      {
+        "title": "Individuelle Softwareentwicklung",
+        "slogan": "Wir entwickeln Softwarelösungen, die Ihre spezifischen Anforderungen erfüllen – von der Analyse bis zur Umsetzung,Implementierung stellen wir sicher, dass die Software speziell auf Ihre Anforderungen zugeschnitten ist."
+      },
+      {
+        "title": "Software-Anpassung",
+        "slogan": "Haben Sie bestehende Software, die angepasst werden muss? Unser Team passt Software individuell an Ihre Geschäftsanforderungen an."
+      }
+    ]
+  },
+  "CUSTOM_SOFTWARE_PAGE_CONTACT": {
+    "title": "Benötigen Sie ein erfolgreiches Projekt?",
+    "form": {
+      "title": "Kontaktieren Sie uns für eine kostenlose Beratung!",
+      "name": "Name",
+      "Email": "Email",
+      "Phone": "Telefonnummer",
+      "Title": "Title",
+      "Description": "Projektbeschreibung",
+      "submit": "Projektkostenschätzung"
+    }
+  },
+  "GRASSHOPPER_PAGE_BANNAR_SLOGAN": "ــــــــــــــ.",
+  "GRASSHOPPER_PAGE_BANNAR_SLICE": [
+    {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ."
+    },
+    {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ."
+    },
+    {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ"
+    }
+  ],
+  "GRASSHOPPER_PAGE_QUICK_START": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ."
+  },
+  "GRASSHOPPER_PAGE_SERVICES_HEAD": {
+    "title": "Our Services",
+    "slogan": "ــــــــــــــ"
+  },
+  "GRASSHOPPER_PAGE_SERVICES_SLICE": [
+    {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ."
+    },
+    {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ"
+    },
+    {
+      "title": "ــــــــــــــ",
+      "slogan": "Tــــــــــــــ."
+    },
+    {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ."
+    }
+  ],
+  "GRASSHOPPER_PAGE_HEADS": [
+    {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ."
+    },
+    {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ"
+    }
+  ],
+  "GRASSHOPPER_PAGE_WHY_US": {
+    "head": {
+      "title": "Why Choose Us?",
+      "slogan": "ــــــــــــــ"
+    },
+    "slice": [
+      {
+        "title": "ــــــــــــــ: ",
+        "slogan": "ــــــــــــــ"
+      },
+      {
+        "title": "ــــــــــــــ ",
+        "slogan": "ــــــــــــــ."
+      },
+      {
+        "title": "ــــــــــــــ ",
+        "slogan": "ــــــــــــــ."
+      }
+    ]
+  },
+  "GRASSHOPPER_PAGE_EXAMPLE": [
+    {
+      "title": "ــــــــــــــ",
+      "first": {
+        "title": "ــــــــــــــ:",
+        "slogan": "ــــــــــــــ"
+      },
+      "seconed": {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ."
+      }
+    },
+    {
+      "title": "ــــــــــــــ",
+      "first": {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ"
+      },
+      "seconed": {
+        "title": "ــــــــــــــ",
+        "slogan": " ــــــــــــــ."
+      }
+    },
+    {
+      "title": "ــــــــــــــ",
+      "first": {
+        "title": "ــــــــــــــ:",
+        "slogan": "ــــــــــــــ"
+      },
+      "seconed": {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ."
+      }
+    }
+  ],
+  "GRASSHOPPER_PAGE_CONTACT": {
+    "sup": "ــــــــــــــ",
+    "title": "ــــــــــــــ",
+    "btn": "Kontaktieren Sie uns"
+  },
+  "RDAPP_PAGE_BANNAR_SLOGAN": {
+    "title": "Risikobewertung in Übereinstimmung",
+    "slogan": "mit dem Saudi Building Code"
+  },
+  "BRDAPP_PAGE_TRY_BTN": "Jetzt starten",
+  "RDAPP_PAGE_QUICK_START": {
+    "title": "Schnellstart",
+    "slogan": "Entdecken Sie ein nahtloses Erlebnis mit RDAPP."
+  },
+  "RDAPP_PAGE_NOTE_1": "“ Mit RDAPP profitieren Sie von intelligenten Lösungen, die Zeit und Kosten sparen sowie Effizienz und Kommunikation verbessern. Es bietet einen großen Wettbewerbsvorteil im Einklang mit dem Saudi Building Code”",
+  "RDAPP_PAGE_HEAD_1": {
+    "title": "Exklusive Funktionen",
+    "slogan": "RDAPP ist mit den besten Funktionen ausgestattet."
+  },
+  "RDAPP_PAGE_HEAD_2": {
+    "title": "AND MORE",
+    "slogan": "RDAPP Provides Best Features 'And more'"
+  },
+  "RDAPP_PAGE_HEAD_3": {
+    "title": "Exklusive Funktionen",
+    "slogan": "- RDAPP bietet hervorragende Kommunikations- und Kostenüberwachung."
+  },
+  "RDAPP_PAGE_CARDS_1": [
+    {
+      "title": "Erhöhte Produktivität",
+      "slogan": "Effiziente Plattform für das Risikomanagement, die den gesamten Prozess optimiert und manuelle sowie zeitaufwändige Aufgaben eliminiert, damit Teams Risiken effektiver verwalten können."
+    },
+    {
+      "title": "Sichere Daten",
+      "slogan": "Fortschrittliche Verschlüsselungsprotokolle zum Schutz von Daten und zur Gewährleistung sicherer Übertragung und Speicherung."
+    },
+    {
+      "title": "Konformität mit dem Saudi Building Code",
+      "slogan": "Jede Risikomanagementstrategie und Vorsichtsmaßnahme entspricht den Vorschriften des Saudi Building Code und priorisiert Sicherheit und regulatorische Konformität."
+    }
+  ],
+  "RDAPP_PAGE_INFO_1": {
+    "title": "ZWECK VON RDAPP",
+    "slogan": "RDAPP wurde entwickelt, um sicherzustellen, dass jedes Projekt dem Saudi Building Code entspricht und die notwendige technische Aufmerksamkeit für hochwertige Ergebnisse erhält. Es verfolgt die Projektfortschritte und gewährleistet eine nahtlose Koordination aller Beteiligten – vom Projekteingang über die erste Risikobewertung bis hin zu detaillierten Prüfungen durch Experten in verschiedenen Bereichen des Bauingenieurwesens, wie Geotechnik, Strukturanalyse und innovative Materialien, bis zu jeder technischen Vor-Ort-Inspektion"
+  },
+  "RDAPP_PAGE_INFO_2": [
+    {
+      "title": "BENUTZERFREUNDLICH",
+      "slogan": "RDAPP verfügt über eine benutzerfreundliche Oberfläche, die eine reibungslose Navigation und einfache Interaktion gewährleistet. Durch die Anzeige aller Projektberichte, Tickets und des Projektstatus ermöglicht das klare Layout einen einfachen Zugriff auf Informationen.."
+    },
+    {
+      "title": "INTEGRATION",
+      "slogan": "Integration aller technischen Berichte und relevanten Dokumente in einer Anwendung gemäß den Vorgaben des Saudi Building Code. Benutzer können Dokumente entsprechend ihrer Rolle erstellen, bearbeiten und teilen. RDAPP optimiert die Erstellung von R&D- und Inspektionsberichten und vermeidet doppelte Dateneingaben."
+    }
+  ],
+  "RDAPP_PAGE_HEAD_2": {
+    "title": "Datenbankschutz",
+    "slogan": "Daten geschützt durch CITC Entscheidung Nummer 424/1442 Datum 27-01-1442.."
+  },
+  "RDAPP_PAGE_INFO_3": [
+    {
+      "title": "PROZESSKONTROLLE",
+      "slogan": "TDer Dokumentationszyklus jedes Berichts wird von einem Fachingenieur zum nächsten übertragen, mit mehreren möglichen Abläufen für jedes Projekt, die vollständige technische Disziplinen bieten und automatisch eine höhere Qualität jedes Berichts gewährleisten."
+    },
+    {
+      "title": "PRODUKTIVITÄT",
+      "slogan": "Basierend auf Kundenfeedback steigert RDAPP die Produktivität jedes Berichts mit 50% Zeitersparnis, organisiert den Berichtszyklus und verbindet alle Beteiligten schneller. RDAPP bietet sofortige einheitliche Berichtsupdates bei jedem Schritt gemäß Saudi Building Code."
+    }
+  ],
+  "RDAPP_PAGE_INFO_4": [
+    {
+      "title": "KOMMUNIKATION",
+      "slogan": "Eine E-Mail wird automatisch aus der Anwendung ohne menschliches Eingreifen versendet. Sobald ein Bericht vom technischen Abteilungsleiter genehmigt wurde, werden alle technischen Hinweise an die Stakeholder, den Kunden und den Auftragnehmer weitergeleitet."
+    },
+    {
+      "title": "KOSTENÜBERWACHUNG",
+      "slogan": "Wir haben eine Kosten-pro-Meter-Technik entwickelt, die einen geschätzten Projektwert für jedes Element im Leistungsverzeichnis (BOQ) liefert. Diese Methode wurde in RDAPP integriert, um Kostenbewertungen zu optimieren und Stakeholder frühzeitig über mögliche Auffälligkeiten zu informieren."
+    }
+  ],
+  "RDAPP_PAGE_CARDS_2": [
+    {
+      "title": "Echtzeit-Zusammenarbeit",
+      "slogan": "Ermöglicht nahtlose Zusammenarbeit mit Echtzeit-Bearbeitung und Dokumentfreigabe."
+    },
+    {
+      "title": "Mobiler Zugang",
+      "slogan": " Zugriff auf Projektinformationen jederzeit und überall über mobile Geräte."
+    },
+    {
+      "title": "Datensicherheit",
+      "slogan": " Schützen Sie sensible Projektdaten mit robusten Sicherheitsmaßnahmen."
+    },
+    {
+      "title": "Integration ",
+      "slogan": "RDAPP bietet Integration mit bestehenden Systemen und gewährleistet einen reibungslosen Datenfluss."
+    },
+    {
+      "title": "Prüfprotokoll",
+      "slogan": "Gewährleisten Sie Transparenz und Nachvollziehbarkeit durch ein Prüfprotokoll von Dokumentrevisionen und Benutzeraktionen."
+    },
+    {
+      "title": "Reaktionsschneller Support",
+      "slogan": " RDAPP bietet Integration mit bestehenden Systemen und gewährleistet einen reibungslosen Datenfluss."
+    }
+  ],
+  "RDAPP_PAGE_CARDS_3": [
+    {
+      "title": "QUALITÄTSKONTROLLE",
+      "slogan_1": "Eine der wichtigsten Fähigkeiten von RDAPP ist die Verbesserung der Prozessqualität durch automatische Hervorhebung technischer Hinweise gemäß dem Saudi Building Code.",
+      "slogan_2": "Eine der wichtigsten Fähigkeiten von RDAPP ist die Verbesserung der Prozessqualität durch automatische Hervorhebung technischer Hinweise gemäß dem Saudi Building Code.",
+      "slogan_3": "Identifizierung von Projekten mit erhöhtem technischem Bedarf und Weiterleitung an zuständige Fachexperten."
+    },
+    {
+      "title": "DOKUMENTATION",
+      "slogan_1": "Mit dem integrierten Dokumentationssystem können Benutzer Projektberichte einfach erstellen, bearbeiten und teilen, wodurch eine effiziente Zusammenarbeit gewährleistet wird. Das System bietet erweiterte Such- und Filterfunktionen.",
+      "slogan_2": "Benutzer können Dokumente schnell anhand von Projektnummern, Standorten, Daten oder beteiligten Ingenieuren finden.",
+      "slogan_3": "Das Dokumentationssystem enthält automatische Benachrichtigungen und Erinnerungen, sodass alle technischen Hinweise und Projektupdates ordnungsgemäß empfangen werden."
+    }
+  ],
+  "BONDIFYCRM_PAGE_TRY_BTN": "Demo ausprobieren",
+  "BONDIFYCRM_PAGE_PRICING_BTN": "Preise",
+  "BONDIFYCRM_PAGE_HEADING_1": {
+    "title": "",
+    "slogan": "Erste Wahl für Ihr Unternehmen"
+  },
+  "BONDIFYCRM_PAGE_QUICK_START": {
+    "title": "Schnellstart",
+    "slogan": "Vergessen Sie nicht, unser Schnellstart-Tutorial anzusehen.",
+    "sloganGrass": "Vergessen Sie nicht, unser Schnellstart-Tutorial anzusehen."
+  },
+  "BONDIFYCRM_PAGE_BREAK_1": "ــــــــــــــ",
+  "BONDIFYCRM_PAGE_CARD_1": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ",
+    "slice": [
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ"
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_2": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ.",
+    "slice": [
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ"
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_3": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ",
+    "slice": [
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ"
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_4": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ",
+    "slice": [
+      {
+        "title": "ــــــــــــــ",
+        "slice": ["ــــــــــــــ", "ــــــــــــــ", "ــــــــــــــ"]
+      },
+      {
+        "title": "ــــــــــــــ",
+        "slice": [
+          "ــــــــــــــ",
+          "ــــــــــــــ",
+          "ــــــــــــــ",
+          "ــــــــــــــ"
+        ]
+      }
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_5": {
+    "sub": "ــــــــــــــ",
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ",
+    "slice": [
+      ["ــــــــــــــs", "ــــــــــــــ", "ــــــــــــــ"],
+      ["ــــــــــــــ", "ــــــــــــــ", "ــــــــــــــ"]
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_6": {
+    "sub": "ــــــــــــــ",
+    "title": "ــــــــــــــs",
+    "slogan": "ــــــــــــــ.",
+    "slice": [
+      ["ــــــــــــــ.", "ــــــــــــــs."],
+      ["ــــــــــــــ", "ــــــــــــــ."]
+    ]
+  },
+  "BONDIFYCRM_PAGE_BREAK_2": "ــــــــــــــ",
+  "BONDIFYCRM_PAGE_CARD_7": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ",
+    "slice": [
+      "ــــــــــــــ.",
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ"
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_8": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ"
+  },
+  "BONDIFYCRM_PAGE_CARD_9": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ",
+    "slice": [
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ"
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_10": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ"
+  },
+  "BONDIFYCRM_PAGE_CARD_11": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ.",
+    "slice": [
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ"
+    ]
+  },
+  "BONDIFYCRM_PAGE_CARD_12": {
+    "title": "ــــــــــــــ",
+    "slogan": "ــــــــــــــ.",
+    "slice": [
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ",
+      "ــــــــــــــ."
+    ]
+  },
+  "WINDMASTER_PRICING_PAGE": [
+    {
+      "title": "Kostenlos testen",
+      "price_USD": "0",
+      "price_SAR": "0",
+      "include": "Enthält",
+      "slice": ["1 berichte"],
+      "footer": "",
+      "link": "",
+      "btn": "KOSTENLOS TESTEN"
+    },
+    {
+      "title": "Package 1",
+      "price_USD": "15 ",
+      "price_SAR": "50",
+      "include": "Enthält",
+      "slice": ["10 berichtes", "1 Jahr Abonnement"],
+      "footer": "Preis exklusive MwSt",
+      "link": "",
+      "btn": "VERTRIEB KONTAKTIEREN"
+    },
+    {
+      "title": "Package 2",
+      "price_USD": "55 ",
+      "price_SAR": "200",
+      "include": "Enthält",
+      "slice": ["50 berichtes", "1 Jahr Abonnement"],
+      "footer": "Preis exklusive MwSt",
+      "link": "",
+      "btn": "VERTRIEB KONTAKTIEREN"
+    }
+  ],
+  "BONDIFY_PRICING_PAGE": {
+    "year": "Jährlich",
+    "month": "Monatlich",
+    "save_to": "Sparen Sie bis zu 20 %",
+    "title": " Die Größe Ihres Unternehmens spielt keine Rolle — bondify CRM passt für alle",
+    "sub_title": " Flexibel, anpassbar und für jedes Team entwickelt – wählen Sie den Planen Sie, der zu Ihrem Workflow und Ihren Geschäftszielen passt.",
+    "monthly": {
+      "free": {
+        "for": "Free plan - explore all core features for free",
+        "LimitsTitle": "Limits",
+        "Modules": "Enthaltene Module",
+
+        "title": "Kostenlos",
+        "price": false,
+        "limits": [" Team (Benutzer) - 3", "Kunden - 3", "Projekte - 10"],
+        "include": [
+          "Aufgaben",
+          "Leads",
+          "Rechnungen",
+          "Kostenvoranschläge",
+          "Abonnements",
+          "Verträge",
+          "Angebote",
+          "Tickets",
+          "Kalender",
+          "Ausgaben",
+          "Sofortnachrichten",
+          "Zeiterfassung",
+          "Wissensdatenbank",
+          "Erinnerungen"
+        ],
+
+        "link": "http://bondifycrm.domapphub.com/login",
+        "btn": "Demo starten"
+      },
+      "standard": {
+        "title": "Standard",
+        "for": "Geeignet für bis zu 10 Benutzer",
+        "LimitsTitle": "Limits  ",
+        "Modules": "Enthaltene Module ",
+
+        "limits": [
+          "Team (Benutzer)  - 10  ",
+          "Clients   - Unbegrenzt",
+          "Projects - Unbegrenzt"
+        ],
+        "price_USD": "9",
+        "price_SAR": "34",
+        "price_EGY": "226",
+        "Usd": "USD",
+        "Egp": "EGP",
+        "Sar": "SAR",
+        "user": "User",
+        "include": [
+          "Aufgaben",
+          "Leads",
+          "Rechnungen",
+          "Kostenvoranschläge",
+          "Abonnements",
+          "Verträge",
+          "Angebote",
+          "Tickets",
+          "Kalender",
+          "Ausgaben",
+          "Sofortnachrichten",
+          "Zeiterfassung",
+          "Wissensdatenbank",
+          "Erinnerungen"
+        ],
+        "link": "https://wa.me/201501060885",
+        "btn": "VERTRIEB KONTAKTIEREN"
+      },
+      "enterprise": {
+        "title": "Enterprise ",
+        "Modules": "Enthaltene Module",
+
+        "price": false,
+        "LimitsTitle": "Limits  ",
+        "for": "Für Unternehmen mit mehr als 10 Benutzern",
+        "limits": [
+          "Team (Benutzer) - Unbegrenzt ",
+          "Clients   - Unbegrenzt",
+          "Projects - Unbegrenzt"
+        ],
+
+        "include": [
+          "Tasks  ",
+          "Leads  ",
+          "Invoices  ",
+          "Estimates  ",
+          "Abonnements  ",
+          "Contracts  ",
+          "Proposals  ",
+          "Tickets  ",
+          "Calendar  ",
+          "Expenses  ",
+          "Instant Messaging  ",
+          "Time Tracking  ",
+          "Knowledgebase  ",
+          "Reminders  "
+        ],
+        "link": "https://wa.me/201501060885",
+        "btn": "VERTRIEB KONTAKTIEREN"
+      }
+    },
+    "annualy": {
+      "free": {
+        "title": "Kostenlos  ",
+        "LimitsTitle": "Limits  ",
+        "Modules": "Enthaltene Module  ",
+
+        "for": "Free plan - explore all core features for free  ",
+
+        "price": false,
+        "limits": [" Team (Benutzer) - 3  ", "Kunden - 3  ", "Projekte - 10"],
+
+        "include": [
+          "Aufgaben",
+          "Leads",
+          "Rechnungen",
+          "Kostenvoranschläge",
+          "Abonnements",
+          "Verträge",
+          "Angebote",
+          "Tickets",
+          "Kalender",
+          "Ausgaben",
+          "Sofortnachrichten",
+          "Zeiterfassung",
+          "Wissensdatenbank",
+          "Erinnerungen"
+        ],
+        "link": "http://bondifycrm.domapphub.com/login",
+        "btn": "Start Demo  "
+      },
+      "standard": {
+        "title": "Standard",
+        "Modules": "Enthaltene Module",
+
+        "LimitsTitle": "Limits",
+        "price_USD": "7",
+        "price_SAR": "27",
+        "price_EGY": "180",
+        "Usd": "USD",
+        "Egp": "EGP",
+        "Sar": "SAR",
+        "user": "User",
+        "for": "Suitable for up to 10 users  ",
+        "limits": [
+          "Team (Benutzer)  - 10  ",
+          "Kunden - Unbegrenzt  ",
+          "Projekte - Unbegrenzt"
+        ],
+        "include": [
+          "Aufgaben",
+          "Leads",
+          "Rechnungen",
+          "Kostenvoranschläge",
+          "Abonnements",
+          "Verträge",
+          "Angebote",
+          "Tickets",
+          "Kalender",
+          "Ausgaben",
+          "Sofortnachrichten",
+          "Zeiterfassung",
+          "Wissensdatenbank",
+          "Erinnerungen"
+        ],
+        "link": "https://wa.me/201501060885",
+        "btn": "VERTRIEB KONTAKTIEREN"
+      },
+      "enterprise": {
+        "title": "Enterprise  ",
+        "Modules": "Enthaltene Module  ",
+
+        "price": false,
+        "LimitsTitle": "Limits  ",
+        "for": "For companies and enterprises with more than 10 users  ",
+        "limits": [
+          "Team (Benutzer)    - Unbegrenzt ",
+          "Kunden   - Unbegrenzt ",
+          "Projekte - Unbegrenzt"
+        ],
+        "include": [
+          "Aufgaben",
+          "Leads",
+          "Rechnungen",
+          "Kostenvoranschläge",
+          "Abonnements",
+          "Verträge",
+          "Angebote",
+          "Tickets",
+          "Kalender",
+          "Ausgaben",
+          "Sofortnachrichten",
+          "Zeiterfassung",
+          "Wissensdatenbank",
+          "Erinnerungen"
+        ],
+        "link": "https://wa.me/201501060885",
+        "btn": "VERTRIEB KONTAKTIEREN"
+      }
+    }
+  },
+  "CHATPLUS_PRICING_PAGE": {
+    "title": "Abonnement",
+    "price": "26.65",
+    "sub": "/ user / month",
+    "include": [
+      "Der Preis enthält keine Mehrwertsteuer",
+      "Meta-Nachrichtenkosten nicht enthalten.",
+      "Einrichtungsgebühr nicht enthalten."
+    ],
+    "link": "http://bondifycrm.domapphub.com/login",
+    "btn": "VERTRIEB KONTAKTIEREN"
+  },
+  "FOOTER_ABOUT": {
+    "title": "Über Uns "
+  },
+  "FOOTER_PRODUCTS": {
+    "title": "Produkte"
+  },
+  "FOOTER_SERVICES": {
+    "title": "Dienstleistungen",
+    "slice": [
+      {
+        "title": "Entwicklungsdienstleistungen ",
+        "slice": [
+          "Softwareentwicklung ",
+          "Softwareanpassung ",
+          "Webentwicklung",
+          "Mobile App Entwicklung",
+          "UI/UX Desgin"
+        ]
+      },
+      {
+        "title": "Fassadenfertigung",
+        "slice": ["Grasshopper Modules"]
+      }
+    ]
+  },
+  "FOOTER_SUMMARY": [
+    "Bei DomApp entwickeln und gestalten wir Anwendungen nach Kundenanforderungen.",
+    "Unsere Expertise ermöglicht es uns, Anwendungen exakt an die Geschäftsvision des Kunden anzupassen."
+  ],
+  "FOOTER_SOCIAL": "Follow Us:",
+  "FOOTER_COMMUNITY": {
+    "title": "Community",
+    "slice": [
+      {
+        "title": "Blog",
+        "link": "http://blog.domapphub.com"
+      }
+    ]
+  },
+
+  "FOOTER_CONTANT_INFO": {
+    "title": "Adresse",
+    "slice": [
+      {
+        "country": "Ägypten",
+        "addresses": [
+          "Sami Abd El-Raouf, Nasr City, Kairo, Ägypten",
+          "2nd Floor, Al-Mottaheda Tower, KFS, Ägypten"
+        ]
+      },
+      {
+        "country": "Niederlande",
+        "addresses": ["Weena 290, 10. Etage, 3012 NJ, Rotterdam Zentrum"]
+      }
+    ]
+  },
+  "LEGAL": "Rechtliche Richtlinien",
+  "EXCLUSIVE_DEALERS": {
+    "title": "Exklusiver Händler ",
+    "slice": [
+      {
+        "title": "Dlalat",
+        "link": "https://www.dlalat.com/"
+      }
+    ]
+  },
+  "REVIEW_TITLE": {
+    "title": "REFERENZEN",
+    "slogan": "Ihr Erfolg ist unsere Geschichte."
+  },
+  "REVIEW": [
+    {
+      "name": "Mohamed Ghattas",
+      "job": "Operation Manager",
+      "company": "Dome FDH",
+      "title": "Betriebsleiter, Dome FDH",
+      "quote": "CladCut ist ein wertvolles Werkzeug für Unternehmen, die ihren Produktionsprozess optimieren möchten. CladCut kann selbst die schwierigsten Paneele effizient freigeben."
+    },
+    {
+      "name": "Mohamed Ismail",
+      "job": "DAS-METAL",
+      "company": "Dome FDH",
+      "title": "CEO, DAS-METAL",
+      "quote": "Die Nutzung von CladCut und bondify CRM hat großen Einfluss auf unsere Abläufe. CladCut reduzierte die Zeit für Schnittlisten und CNCDateien erheblich. bondify CRM verbesserte unser Aufgaben- und Projektmanagement."
+    },
+    {
+      "name": "Mohamed Amer",
+      "job": "General Manager",
+      "company": "Dome FDH",
+      "title": "CEO, PINION ENGINEERING",
+      "quote": "Eine herausragende Funktion von CladCut ist die fehlerfreie Generierung von CNC-Dateien direkt aus der Eingabe. bondify CRM bot uns eine vollständige Aktivitätshistorie pro Kunde und Projekt."
+    },
+    {
+      "name": "Mohamed Meligy ",
+      "job": "",
+      "company": "",
+      "title": "CEO, EGYTEL für Telekommunikation",
+      "quote": "bondify CRM ist besonders stark im Vertragsmanagement und bei Angeboten. Alles bleibt zentral organisiert."
+    },
+    {
+      "name": "Mustafa Sharaf",
+      "job": "Executive Manager",
+      "company": "DESIGNAL ENGINEERING",
+      "title": "COO, DESIGNAL ENGINEERING",
+      "quote": "bondify CRM zeigt großes Potenzial bei der effizienten Verwaltung von Leads und Opportunities. ChatPlus bietet vollständige Transparenz über unsere Supportleistung—von Antwortzeiten bis Ticketverfolgung—und verbessert so Servicequalität und Teamverantwortung."
+    },
+    {
+      "name": "Ahmed Morsi",
+      "job": "",
+      "company": "DAAM CENTER",
+      "title": "COO, DAAM CENTER",
+      "quote": "Seit wir ChatPlus nutzen, ist unser Kundenservice schneller und professioneller geworden. Alles ist zentral verfügbar und Kundendetails sind in Sekunden abrufbar."
+    },
+    {
+      "name": "Abdullah Abu Hashem",
+      "job": "",
+      "company": "DAAM CENTER",
+      "title": "CEO, DAAEM Construction",
+      "quote": "Die Projekte und Meilensteine von bondify CRM halten unser Team auf Kurs und sichern jede Deadline."
+    },
+    {
+      "name": "Mahmoud El Masry",
+      "job": "",
+      "company": "",
+      "title": "Technical Manager, CPV ARABIA",
+      "quote": "Wir haben viele Supportplattformen genutzt, aber ChatPlus überzeugt durch Einfachheit und Leistung. Echtzeit-Tracking sorgt dafür, dass nichts übersehen wird."
+    },
+    {
+      "name": "Ahmed Tantour",
+      "job": "Technical Manager",
+      "company": "CUBEMETAL INDUSTRIES CO",
+      "title": "Technical Manager, CUBEMETAL INDUSTRIES CO.",
+      "quote": "Wir schätzen den Mehrwert, den CladCut in unserem Fassadenfertigungsprozess bringt. Die Software verbessert Effizienz und verkürzt die Zeit, insbesondere bei präzisen Schnittlisten."
+    },
+    {
+      "name": "Karim Zaytoun",
+      "job": "CEO",
+      "company": "Zaytoun Development",
+      "title": "CEO, Zaytoun Development",
+      "quote": "ChatPlus reduzierte die Arbeitsbelastung unseres KundenserviceTeams erheblich dank des automatisierten Chatbots."
+    },
+    {
+      "name": "Mohamed Abo Elmakarem",
+      "job": "",
+      "company": "Dlalat Technology Limited",
+      "title": "Dlalat Technology Limited",
+      "quote": "Die reibungslose Integration von ChatPlus machte einen deutlichen Unterschied — Kundenanliegen werden schneller gelöst und die Zufriedenheit steigt."
+    }
+  ],
+  "PARTNERS_TITLE": {
+    "title": "OUR CLIENTS",
+    "slogan": "Ein Vermächtnis, geprägt vom Erfolg unserer Kunden."
+  },
+  "SECTION_3": {
+    "title": "One CRM to replace them all",
+    "buttons": {
+      "createAccount": "Konto erstellen",
+      "seePricing": "Preise ansehen "
+    }
+  },
+  "SECTION_1": {
+    "subtitle": "Erstaunliche Auswahl an Funktionen",
+    "title": "Alle wichtigen Module, die Sie benötigen",
+    "cards": [
+      {
+        "title": "Kunden",
+        "desc": "Verwalten Sie alle Aspekte Ihrer Kunden an einem Ort."
+      },
+      {
+        "title": "Projekte",
+        "desc": "Liefern Sie Ihre Projekte pünktlich und im Budget."
+      },
+      {
+        "title": "Interessenten",
+        "desc": "Erfassen Sie alle Ihre Leads und Chancen ganz einfach."
+      },
+      {
+        "title": "Teamarbeit",
+        "desc": "Einfache Zusammenarbeit zwischen Ihren Teammitgliedern."
+      }
+    ]
+  },
+  "SECTION_2": {
+    "subtitle": "STEIGERN SIE IHRE PRODUKTIVITÄT",
+    "title": "Intuitiv, leistungsstark und für Teams entwickelt, die Dinge erledigen",
+    "desc": "Unser bondify CRM bietet zahlreiche Funktionen, die die Produktivität Ihres Teams steigern.",
+    "list": [
+      " Projektvorlagen, um ein neues Projekt schnell zu starten",
+      "Aufgabe klonen, um schneller handeln zu können",
+      "Kommunizieren und arbeiten Sie mit Ihrem Team und Ihren Kunden zusammen",
+      "Zeiterfassung für das gesamte Team"
+    ]
+  },
+
+  "SECTION_4": {
+    "subtitle": "Erweitertes Projektmanagement",
+    "title": "Halten Sie Ihre Projektfristen ein",
+    "desc": "Our CRM gives you the right tools to manage, collaborate and complete your projects on time. Your clients will be happy and your team will be happy.",
+    "list": [
+      "Sehen Sie den Fortschritt Ihres Projekts ganz einfach",
+      "Arbeiten Sie mit Teammitgliedern zusammen",
+      "Teilen Sie Ihr Projekt in Meilensteine und Aufgaben auf"
+    ]
+  },
+  "SECTION_5": {
+    "title": "Alle wichtigen Module, die Sie benötigen",
+    "subtitle": "Erstaunliche Auswahl an Funktionen",
+    "cards": [
+      {
+        "title": "Aufgaben",
+        "desc": " Bearbeiten Sie Ihre Aufgaben effizient und intuitiv."
+      },
+      {
+        "title": "Rechnungsstellung",
+        "desc": "Stellen Sie Ihren Kunden Rechnungen und akzeptieren Sie Zahlungen ganz einfach."
+      },
+      {
+        "title": "Kostenvoranschläge",
+        "desc": "Senden Sie Ihren Kunden schnell Kostenvoranschläge und Angebote."
+      },
+      {
+        "title": "Benutzerrollen ",
+        "desc": "Steuern Sie, auf welche Ressourcen Ihre Teammitglieder zugreifen können."
+      },
+      {
+        "title": "Arbeiten von überal ",
+        "desc": "Ihr Team kann sich nun einfach verbinden und von überall arbeiten."
+      },
+      {
+        "title": "Zeiterfassung",
+        "desc": "Erweiterte Zeiterfassung, damit Sie keine Minute verpassen."
+      },
+      {
+        "title": "Helpdesk",
+        "desc": "Nutzen Sie den Helpdesk, um Ihren Kunden Support zu bieten."
+      },
+      {
+        "title": "Wissensdatenbank",
+        "desc": "Erstellen Sie ganz einfach ansprechende Artikel und teilen Sie Informationen mit allen Beteiligten."
+      },
+      {
+        "title": "Abonnements",
+        "desc": "Akzeptieren Sie wiederkehrende Zahlungen über Stripe mit der Abonnementfunktion."
+      }
+    ]
+  },
+  "SECTION_6": {
+    "title": "Produktivität neu definiert",
+    "subtitle": "Das vollständige Produktivitätstool für Ihr Unternehmen",
+    "tabs": [
+      "Leads",
+      "Kunden",
+      "Projekt",
+      "Aufgaben",
+      "Rechnung",
+      "Support-Ticket"
+    ]
+  },
+  "BOUNDIFYCRM_CREATE_ACCOUNT": {
+    "title": "Konto erstellen",
+    "subtitle": "Bearbeiten Sie Ihre Aufgaben effizient und intuitiv.",
+    "full_name_label": "Vollständiger Name",
+    "full_name_placeholder": "",
+    "account_name_label": "Benutzername",
+    "account_name_placeholder": "",
+    "email_address_label": "E-Mail-Adresse ",
+    "email_address_placeholder": "",
+    "password_label": "Passwort",
+    "password_placeholder": "",
+    "plan_label": "Plan auswählen",
+    "create_account_button": "Konto erstellen"
+  }
+}
