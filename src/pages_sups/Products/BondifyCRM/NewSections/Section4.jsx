@@ -4,11 +4,14 @@ import "./section.css";
 import Image from "next/image";
 import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
+import de from "@/stores/Language/de.json";
+import es from "@/stores/Language/es.json";
+import nl from "@/stores/Language/nl.json";
 
 export default function Section4() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
 
-  const translations = { en, ar };
+  const translations = { en, ar , de , es , nl };
   const section = translations[lang].SECTION_4;
 
   return (

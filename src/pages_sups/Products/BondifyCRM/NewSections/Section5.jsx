@@ -5,11 +5,13 @@ import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
 import { useSelector } from "react-redux";
 import "./section.css";
+import de from "@/stores/Language/de.json";
+import es from "@/stores/Language/es.json";
+import nl from "@/stores/Language/nl.json";
 
 export default function Section5() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
-
-  const translations = { en, ar };
+  const translations = { en, ar , de , es , nl };
 
   const section = translations[lang].SECTION_5;
 
