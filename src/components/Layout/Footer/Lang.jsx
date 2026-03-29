@@ -6,6 +6,9 @@ import { handle_language } from "@/stores/reducers/Language";
 import Image from "next/image";
 import USIcon from "@/assets/images/flagicons/united-states.png";
 import SAIcon from "@/assets/images/flagicons/saudi-arabia.png";
+import DEIcon from "@/assets/images/flagicons/deIcon.png";
+import ESIcon from "@/assets/images/flagicons/esIcon.png";
+import NLIcon from "@/assets/images/flagicons/nl.png";
 
 export default function LanguageDropdown({ text_color }) {
   const { lang, dir } = useSelector((state) => state.languageSlice);
@@ -14,9 +17,9 @@ export default function LanguageDropdown({ text_color }) {
   const languages = [
     { code: "en", label: "English", icon: USIcon, dir: "ltr" },
     { code: "ar", label: "العربية", icon: SAIcon, dir: "rtl" },
-    { code: "de", label: "Deutsch", icon: null, dir: "ltr" },
-    { code: "es", label: "Español", icon: null, dir: "ltr" },
-    { code: "nl", label: "Nederlands", icon: null, dir: "ltr" },
+    { code: "de", label: "Deutsch", icon: DEIcon, dir: "ltr" },
+    { code: "es", label: "Español", icon: ESIcon, dir: "ltr" },
+    { code: "nl", label: "Nederlands", icon: NLIcon, dir: "ltr" },
   ];
 
   useEffect(() => {
