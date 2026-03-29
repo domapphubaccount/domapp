@@ -814,7 +814,7 @@
     "monthly": {
       "free": {
         "for": "Free plan - explore all core features for free",
-        "LimitsTitle": "Limits",
+        "LimitsTitle": "Beschränkungen",
         "Modules": "Enthaltene Module",
 
         "title": "Kostenlos",
@@ -843,7 +843,7 @@
       "standard": {
         "title": "Standard",
         "for": "Geeignet für bis zu 10 Benutzer",
-        "LimitsTitle": "Limits  ",
+        "LimitsTitle": "Beschränkungen",
         "Modules": "Enthaltene Module ",
 
         "limits": [
@@ -882,7 +882,7 @@
         "Modules": "Enthaltene Module",
 
         "price": false,
-        "LimitsTitle": "Limits  ",
+        "LimitsTitle": "Beschränkungen",
         "for": "Für Unternehmen mit mehr als 10 Benutzern",
         "limits": [
           "Team (Benutzer) - Unbegrenzt ",
@@ -913,7 +913,7 @@
     "annualy": {
       "free": {
         "title": "Kostenlos  ",
-        "LimitsTitle": "Limits  ",
+        "LimitsTitle": "Beschränkungen",
         "Modules": "Enthaltene Module  ",
 
         "for": "Free plan - explore all core features for free  ",
@@ -944,7 +944,7 @@
         "title": "Standard",
         "Modules": "Enthaltene Module",
 
-        "LimitsTitle": "Limits",
+        "LimitsTitle": "Beschränkungen",
         "price_USD": "7",
         "price_SAR": "27",
         "price_EGY": "180",
@@ -952,7 +952,7 @@
         "Egp": "EGP",
         "Sar": "SAR",
         "user": "User",
-        "for": "Suitable for up to 10 users  ",
+        "for": "Geeignet für bis zu 10 Benutzer ",
         "limits": [
           "Team (Benutzer)  - 10  ",
           "Kunden - Unbegrenzt  ",
@@ -982,8 +982,8 @@
         "Modules": "Enthaltene Module  ",
 
         "price": false,
-        "LimitsTitle": "Limits  ",
-        "for": "For companies and enterprises with more than 10 users  ",
+        "LimitsTitle": "Beschränkungen ",
+        "for": "Für Unternehmen mit mehr als 10 Benutzern ",
         "limits": [
           "Team (Benutzer)    - Unbegrenzt ",
           "Kunden   - Unbegrenzt ",
