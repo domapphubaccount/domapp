@@ -21,8 +21,8 @@
   "Custom_Software": " ",
   "Grasshopper_Modules": " ",
   "BYLD": "",
-  "slogan": "",
-  "Get_Started": "",
+  "slogan": "________________",
+  "Get_Started": "Beginnen",
   "ABOUT_US_HEAD": {
     "title": "ÜBER UNS",
     "slogan": "Spezialisiert auf die Entwicklung innovativer Lösungen, die Möglichkeitenneu definieren."
@@ -637,7 +637,7 @@
     {
       "title": "QUALITÄTSKONTROLLE",
       "slogan_1": "Eine der wichtigsten Fähigkeiten von RDAPP ist die Verbesserung der Prozessqualität durch automatische Hervorhebung technischer Hinweise gemäß dem Saudi Building Code.",
-      "slogan_2": "Eine der wichtigsten Fähigkeiten von RDAPP ist die Verbesserung der Prozessqualität durch automatische Hervorhebung technischer Hinweise gemäß dem Saudi Building Code.",
+      "slogan_2": "Dadurch reduziert RDAPP menschliche Fehler und optimiert den  Inspektionsprozess für Ingenieure.",
       "slogan_3": "Identifizierung von Projekten mit erhöhtem technischem Bedarf und Weiterleitung an zuständige Fachexperten."
     },
     {
@@ -656,17 +656,13 @@
   "BONDIFYCRM_PAGE_QUICK_START": {
     "title": "Schnellstart",
     "slogan": "Vergessen Sie nicht, unser Schnellstart-Tutorial anzusehen.",
-    "sloganGrass": "Vergessen Sie nicht, unser Schnellstart-Tutorial anzusehen."
+    "sloganGrass": " Entwickeln Sie Ihr Geschäft weiter und kommunizieren Sie mit Kunden per Messaging"
   },
   "BONDIFYCRM_PAGE_BREAK_1": "ــــــــــــــ",
   "BONDIFYCRM_PAGE_CARD_1": {
     "title": "ــــــــــــــ",
     "slogan": "ــــــــــــــ",
-    "slice": [
-      "ــــــــــــــ",
-      "ــــــــــــــ",
-      "ــــــــــــــ"
-    ]
+    "slice": ["ــــــــــــــ", "ــــــــــــــ", "ــــــــــــــ"]
   },
   "BONDIFYCRM_PAGE_CARD_2": {
     "title": "ــــــــــــــ",
@@ -1017,7 +1013,7 @@
   "CHATPLUS_PRICING_PAGE": {
     "title": "Abonnement",
     "price": "26.65",
-    "sub": "/ user / month",
+    "sub": "/ Benutzer / Monat",
     "include": [
       "Der Preis enthält keine Mehrwertsteuer",
       "Meta-Nachrichtenkosten nicht enthalten.",

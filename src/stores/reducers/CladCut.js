@@ -11,7 +11,11 @@ import {
   clad_icon5,
 } from "../Main/assets/images";
 
-const translations = { en, ar };
+import de from "@/stores/Language/de.json";
+import es from "@/stores/Language/es.json";
+import nl from "@/stores/Language/nl.json";
+
+const translations = { en, ar , de , es , nl };
 
 const t = (key, lang) => translations[lang]?.[key] || key;
 

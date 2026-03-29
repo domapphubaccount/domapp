@@ -27,8 +27,11 @@ import {
 } from "@/stores/Main/links/links";
 import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
+import de from "@/stores/Language/de.json";
+import es from "@/stores/Language/es.json";
+import nl from "@/stores/Language/nl.json";
 
-const translations = { en, ar };
+const translations = { en, ar , de , es , nl };
 
 const t = (key, lang) => translations[lang]?.[key] || key;
 
