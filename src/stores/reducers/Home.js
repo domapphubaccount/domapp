@@ -13,9 +13,12 @@ import { linksData } from "@/stores/Main/links/linkstider";
 import { process } from "@/stores/Main/assets/Videos";
 import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
+import de from "@/stores/Language/de.json";
+import es from "@/stores/Language/es.json";
+import nl from "@/stores/Language/nl.json";
 import { createSlice } from "@reduxjs/toolkit";
 
-const translations = { en, ar };
+const translations = { en, ar , de , es , nl };
 
 const t = (key, lang) => translations[lang]?.[key] || key;
 

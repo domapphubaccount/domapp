@@ -1,0 +1,1298 @@
+{
+    "HOME": "Home",
+    "PRODUCTS": "ONZE PRODUCTEN ",
+    "WHAT_WE_DO": "WAT WIJ DOEN",
+    "ABOUT_US": " OVER ONS",
+    "ًWHY_US": "WAAROM WIJ",
+    "CONTACT_US": "Contact",
+    "Design_Software": "",
+    "Business_Adminstration": "",
+    "Risk_Assessment": "",
+    "Communication": "",
+    "Developement_Services": "",
+    "Facade_Fabrication": "",
+    "comply_with_SBC": "",
+    "generative_ai": "",
+    "CladCut": "",
+    "Wind_Master": "",
+    "bondify_CRM": "",
+    "RDAPP": "",
+    "ChatPlus": "",
+    "Custom_Software": "Custom Software ",
+    "Grasshopper_Modules": " Grasshopper_Modules",
+    "BYLD": "",
+    "slogan": "___",
+    
+    "Get_Started": "Beginnen",
+    "ABOUT_US_HEAD": {
+      "title": " OVER ONS",
+      "slogan": "Gespecialiseerd in het ontwikkelen van innovatieve oplossingen die mogelijkheden herdefiniëren."
+    },
+    "ABOUT_US_SLOGAN": [
+      "Wij ontwikkelen en verfijnen klantgerichte concepten en integreren deze naadloos in onze nauwkeurig ontworpen applicaties, zodat optimale functionaliteit en maximale gebruikerstevredenheid in elke fase van het ontwikkelingsproces worden gegarandeerd.",
+      "Wij ontwerpen oplossingen die de verwachtingen overtreffen en onze klanten helpen hun zakelijke en technologische doelstellingen succesvol te realiseren.",
+      "Met onze expertise ontwikkelen en ontwerpen wij applicaties die volledig zijn afgestemd op de functionele en technische vereisten van de klant. Dankzij onze ervaring kunnen wij deze applicaties flexibel aanpassen en optimaliseren, zodat ze perfect aansluiten bij de bedrijfsstructuur en de strategische visie van de organisatie."
+    ],
+    "ABOUT_US_MAIN_TITLE": "Bij DomApp Straalt Onze Expertise Helder",
+    "ABOUT_US_MAIN_SLICES": [
+      {
+        "title": "Missie",
+        "slogan": " Wij zetten uw levensveranderende ideeën om in fantastische softwareoplossingen die mensen graag gebruiken."
+      },
+      {
+        "title": "Visie",
+        "slogan": "Het ontwikkelen van innovatieve, op maat gemaakte en betrouwbare oplossingen die bedrijfsvisies versterken, verwachtingen van klanten overtreffen en voortdurend succes stimuleren."
+      },
+      {
+        "title": "Kernwaarde",
+        "slogan": "Wij zijn toegewijd aan innovatie en kwaliteit en voldoen aan de behoeften van klanten met transparantie, samenwerking en de nieuwste technologieën, met prioriteit voor verantwoordelijkheid en duurzaamheid."
+      }
+    ],
+    "WHAT_WE_DO_SLOGAN": "Wij ontwikkelen hoogwaardige en innovatieve softwareoplossingen die zich onderscheiden door kwaliteit en prestaties",
+    "WHAT_WE_DO_SLICES": [
+      {
+        "title": "Toonaangevende Software",
+        "description": "Wij zijn gespecialiseerd in het ontwikkelen van applicaties die met precisie en creativiteit inspelen op de behoeften van onze klanten, met behulp van de nieuwste technologieën en frameworks."
+      },
+      {
+        "title": "Technologische Vooruitgang",
+        "description": " Het omarmen van innovatie in kunstmatige intelligentie, virtual reality en big data-analyse om onze klanten vooruit te helpen met creativiteit en expertise."
+      },
+      {
+        "title": " Creatieve Innovatie",
+        "description": " Van CladCut tot ChatPlus tonen onze projecten onze toewijding aan het verleggen van grenzen en het creëren van baanbrekende oplossingen"
+      },
+      {
+        "title": " Gespecialiseerde Oplossingen",
+        "description": " Het ontwikkelen van maatwerkapplicaties om unieke vereisten en doelstellingen te realiseren en zo het succes en de groei van onze klanten te waarborgen."
+      },
+      {
+        "title": " Klantgerichte Aanpak",
+        "description": ": Door onze klanten centraal te stellen in alles wat we doen, streven we ernaar verwachtingen te overtreffen en uitzonderlijke resultaten te leveren"
+      }
+    ],
+    "WHY_US_HEAD": {
+      "title": "WAAROM WIJ",
+      "slogan": "Wij bouwen relaties, niet alleen projecten."
+    },
+    "SERVICES": [
+      {
+        "title": "Softwareontwikkeling",
+        "slogan": "Onze softwareontwikkelingsdiensten richten zich op het leveren van op maat gemaakte oplossingen die aansluiten bij uw bedrijfsdoelen. Of het nu gaat om het ontwikkelen van innovatieve applicaties of het upgraden van bestaande systemen, wij zorgen voor robuuste, betrouwbare en naadloze software-ervaringen."
+      },
+      {
+        "title": " Software-aanpassing",
+        "slogan": "  Wij bieden software-aanpassingsdiensten om bestaande systemen af te stemmen op uw unieke bedrijfsvereisten. Van het aanpassen van standaardoplossingen tot het verbeteren van huidige functionaliteiten, ons team zorgt voor efficiënte en naadloze softwareprestaties."
+      },
+      {
+        "title": " Webontwikkeling",
+        "slogan": " Ons webontwikkelingsteam combineert creativiteit en technische expertise om websites te creëren die uw doelgroep boeien en resultaten opleveren. Van eenvoudige websites tot geavanceerde webplatforms leveren wij oplossingen op maat van uw visie."
+      },
+      {
+        "title": "Mobiele app-ontwikkeling",
+        "slogan": "Transformeer uw bedrijf met onze mobiele appontwikkelingsdiensten. Wij ontwerpen en bouwen intuïtieve, hoogwaardige apps voor iOS, Android en cross-platformoplossingen, met uitzonderlijke gebruikerservaringen en innovatieve functies."
+      },
+      {
+        "title": "UI/UX Ontwerp",
+        "slogan": "Ons UI/UX-ontwerpteam is gespecialiseerd in het creëren van interfaces die een blijvende indruk achterlaten. Wij stemmen ontwerpesthetiek af op gebruikersbehoeften en creëren ervaringen die zowel mooi als praktisch zijn."
+      },
+      {
+        "title": "Gevelfabricage",
+        "slogan": "Onze expertise in gevelfabricage integreert geavanceerde computationele tools zoals Grasshopper om maatwerk gevelbekledingsoplossingen te leveren. Wij bieden 3D-productiemodellen en gedetailleerde fabricagetekeningen voor efficiënte en hoogwaardige resultaten"
+      }
+    ],
+    "OUR_PRODUCTS_TITLE": "ONZE PRODUCTEN",
+    "OUR_PRODUCTS_SLOGAN": "JElk product ontwikkeld met precisie, passie en een diepe toewijding aan excellentie.",
+  
+    "HOME_COUNTER": [
+      {
+        "number": 300,
+        "title": "Clients"
+      },
+      {
+        "number": 20,
+        "title": "Producten"
+      },
+      {
+        "number": 25000,
+        "title": "Successful Jobs"
+      }
+    ],
+    "CONTACT_CARD_WHATSAPP": "",
+    "CONTACT_CARD_MESSAGE": "",
+    "CONTACT_CARD_WORK_TIME": "",
+    "CONTACT_FIND_US": "",
+    "CONTACT_CARD_WORK_TIME_SLICE": [
+      {
+        "days": "",
+        "from": "09:00 Am",
+        "to": "05:00 Pm",
+        "place": "Makkah, Saudi Arabia"
+      },
+      {
+        "days": "",
+        "from": "09:00 Am",
+        "to": "05:00 Pm",
+        "place": "Cairo, Ägypten"
+      },
+      {
+        "days": "",
+        "from": "09:00 Am",
+        "to": "05:00 Pm",
+        "place": "UTC"
+      }
+    ],
+    "CONTACT_CARD_PLACE": [
+      {
+        "place": "2198 Al Malaz, Salah Ad Din Al Ayyubi Rd, ",
+        "country": "Al Riyadh, Saudi Arabia"
+      },
+      {
+        "place": "Prince Mohamed Ibn Abdulrahman St, Ask Fayha Dist,",
+        "country": "Riyadh, Saudi Arabia"
+      },
+      {
+        "place": "20A, Salah Salem Rd, Al Obour Building,",
+        "country": "New Cairo, Ägypten"
+      },
+      {
+        "place": "Jad Allah Tower,4th Floor, Office No 309, 412,",
+        "country": " KFS, Ägypten"
+      },
+      {
+        "place": "Al Motahda Tower, 2nd Floor, Office No 3,",
+        "country": "KFS, Ägypten"
+      }
+    ],
+    "CONTACT_PAGE_HEAD_TITLE": "",
+    "CONTACT_PAGE_HEAD_SLOGAN": "",
+    "CONTACT_PAGE_FORM_NAME": "",
+    "CONTACT_PAGE_FORM_PHONE": "",
+    "CONTACT_PAGE_FORM_EMAIL": "",
+    "CONTACT_PAGE_FORM_OPTIONS": "",
+    "CONTACT_PAGE_FORM_SUBJECT": "",
+    "CONTACT_PAGE_FORM_MESSAGE": "",
+    "CONTACT_PAGE_FORM_SEND": "",
+    "CLADCUT_PAGE_BANNAR_SLOGAN": {
+      "first": " ",
+      "end": " ."
+    },
+    "CLADCUT_PAGE_TRY_BTN": "",
+    "CLADCUT_PAGE_PRICING_BTN": "",
+    "CLADCUT_PAGE_BANNAR_SLICE": {
+      "users": "",
+      "produced": "",
+      "houres": ""
+    },
+    "CLADCUT_PAGE_QUICK_START_TITLE": "Schnellstart",
+    "CLADCUT_PAGE_QUICK_START_SLOGAN": "Vergeet niet onze snelstart-handleiding te bekijken",
+    "CLADCUT_PAGE_HEAD_NOTE_1_TITLE": "Unleash the Speed of Aluminum Cladding Fabrication with CladCut",
+    "CLADCUT_PAGE_HEAD_NOTE_1_SLOGAN": "Generate fabrication drawings and CNC files in minutes, not days.",
+    "CLADCUT_PAGE_WORK_FLOW_TITLE": "Effortless Workflow",
+    "CLADCUT_PAGE_WORK_FLOW_SLICE": [
+      "An intuitive interface guides you through the process.",
+      "Select your sheet size.",
+      "Upload your cladding layout as a DXF.",
+      "Sit back and let CladCut handle the rest."
+    ],
+    "CLADCUT_PAGE_WORK_FLOW_HISTORY": {
+      "many": "Many",
+      "type": "Years",
+      "by": "of",
+      "mid": "success",
+      "last": "work"
+    },
+    "CLADCUT_PAGE_HEAD_NOTE_2_TITLE": "Exklusive Funktionen",
+    "CLADCUT_PAGE_HEAD_NOTE_2_SLOGAN": "Make us proud",
+    "CLADCUT_PAGE_CARDS_TITLE_1": "Reduced Time",
+    "CLADCUT_PAGE_CARDS_TITLE_2": "Effortless Workflow",
+    "CLADCUT_PAGE_CARDS_TITLE_3": "Improved Efficiency",
+    "CLADCUT_PAGE_CARDS_TITLE_4": "Enhanced Accuracy",
+    "CLADCUT_PAGE_CARDS_TITLE_5": "Streamlined Installation",
+    "CLADCUT_PAGE_CARDS_SLOGAN_1": "ــــــــــــــ.",
+    "CLADCUT_PAGE_CARDS_SLOGAN_2": "An intuitive interface simplifies the process.",
+    "CLADCUT_PAGE_CARDS_SLOGAN_3": "ــــــــــــــ",
+    "CLADCUT_PAGE_CARDS_SLOGAN_4": "Precise unfold views and automatic dimensioning minimize errors.",
+    "CLADCUT_PAGE_CARDS_SLOGAN_5": "Installation drawings ensure a smooth on-site process.",
+    "CLADCUT_PAGE_FOOTER_TITLE": "ــــــــــــــ",
+    "CLADCUT_PAGE_FOOTER_SLICE": [
+      "Cــــــــــــــ",
+      "ــــــــــــــ.",
+      "ــــــــــــــ.",
+      "ــــــــــــــ"
+    ],
+  
+    "WINDMASTER_PAGE_TRY_BTN": "Probeer Gratis",
+    "WINDMASTER_PAGE_PRICING_BTN": "Prijzen",
+    "WINDMASTER_PAGE_CARDS_TITLE_1": "Saoedische Bouwcode Naleving.",
+    "WINDMASTER_PAGE_CARDS_TITLE_2": "Nauwkeurigheid en Precisie.",
+    "WINDMASTER_PAGE_CARDS_TITLE_3": "Tijdsbesparing.",
+    "WINDMASTER_PAGE_CARDS_TITLE_4": "Uitgebreide Rapportage.",
+    "WINDMASTER_PAGE_CARDS_SLOGAN_1": "Bereken nauwkeurig windbelastingen op gevels volgens de nieuwste normen van de Saoedische Bouwcode",
+    "WINDMASTER_PAGE_CARDS_SLOGAN_2": " Behaal nauwkeurige en betrouwbare resultaten met efficiëntie en precisie, en overtreft de beperkingen van traditionele methoden.",
+    "WINDMASTER_PAGE_CARDS_SLOGAN_3": "Elimineer verspilde tijd door inefficiënte methoden, zodat uw ingenieursteam zich kan richten op kritieke taken.",
+    "WINDMASTER_PAGE_CARDS_SLOGAN_4": " WINDMASTER genereert een gedetailleerd en gemakkelijk te begrijpen rapport dat alle berekeningen en nalevingscontroles bevat",
+    "WINDMASTER_PAGE_QUICK_START": {
+      "title": "Schnellstart",
+      "slogan": "Don't forget to watch our schnellstart tutorial."
+    },
+    "WINDMASTER_PAGE_INFO_CARDS_TITLE_1": "Projectinformatie",
+    "WINDMASTER_PAGE_INFO_CARDS_TITLE_2": "Locatiegegevens.",
+    "WINDMASTER_PAGE_INFO_CARDS_TITLE_3": " Exporteren & Afdrukken",
+    "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_1": "Beheer en wijzig project- en klantinformatie.",
+    "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_2": "Volgens Saoedische Bouwcode 301 wordt het identificeren van locatiegegevens zoals risicocategorie, projectadres en blootstellingscategorie eenvoudig gemaakt.",
+    "WINDMASTER_PAGE_INFO_CARDS_SLOGAN_3": "Exporteer gedetailleerde ontwerpgegevens.",
+    "WINDMASTER_PAGE_COLLABORATE_HEAD": {
+      "part_1": "Werk samen met uw",
+      "part_2": "team altijd en overal."
+    },
+    "WINDMASTER_PAGE_COLLABORATE_SLOGAN": " WINDMASTER biedt alles wat u nodig heeft om geavanceerde windanalyse-rapporten te genereren.",
+    "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_1": "Windberekeningen voor meerdere constructietypen zoals het hoofdwindbelastingssysteem (MWFRS), componenten en gevelbekleding, gebogen daken en meer.",
+    "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_2": "Bied transparante en gemakkelijk te begrijpen berekeningen die impact maken.Exporteer snel rapporten naar PDF.",
+    "WINDMASTER_PAGE_COLLABORATE_CARDS_SLOGAN_3": "Vereenvoudig uw workflow en verminder repetitieve berekeningen met een gebruiksvriendelijke interface en online toegankelijkheid, zodat u overal naadloos kunt werken.",
+    "WINDMASTER_PAGE_GET_STARTED_TITLE": " Start vandaag uw gratis proefperiode",
+    "WINDMASTER_PAGE_GET_STARTED_SLOGAN": "Ontdek hoe WINDMASTER uw windanalyse kan verbeteren. Start vandaag nog uw gratis proefperiode voor een gedetailleerde analyse!",
+    "WINDMASTER_PAGE_GET_STARTED_BTN": "Aan de slag",
+    "CHATPLUS_PAGE_SLOGAN": "Eén platform voor al uw communicatiebehoeften.",
+    "CHATPLUS_PAGE_TRY_BTN": "PROBEER GRATIS",
+    "CHATPLUS_PAGE_PRICING_BTN": "PRIJZEN",
+    "CHATPLUS_PAGE_PRICING_GROW": "Grow your business and engage with your customers via messaging",
+    "CHATPLUS_PAGE_COLLABORATE_HEAD": "Flexibele configuratieopties",
+    "CHATPLUS_PAGE_COLLABORATE_SLOGAN": "Bied snelle en gepersonaliseerde reacties voor hogere klanttevredenheid.",
+    "CHATPLUS_PAGE_CUSTOMER_SUPPORT": "Klantenservice",
+    "CHATPLUS_PAGE_ARCHIVE": "Archief",
+    "CHATPLUS_PAGE_AUTO_REPLY": "Automatisch Antwoord",
+    "CHATPLUS_PAGE_BROADCAST": "Broadcast Berichten",
+    "CHATPLUS_PAGE_CHATBOAT": "ChatBot",
+    "CHATPLUS_PAGE_MSGTEMPLATE": "Berichtensjablonen",
+    "CHATPLUS_PAGE_HEADS": {
+      "why_us": "WAAROM WIJ",
+      "feature": "Funktionen"
+    },
+    "CHATPLUS_PAGE_CARDS": [
+      {
+        "icon": "bi bi-telephone-x",
+        "title": "OndersteuningsinterAction",
+        "slogan": "Stel medewerkers in staat om dynamische en gepersonaliseerde ondersteuning te bieden."
+      },
+      {
+        "icon": "'bi bi-postage-fill",
+        "title": "Foutloze Communicatie",
+        "slogan": "Implementeer geavanceerde algoritmen om foutloze communicatie te garanderen en misverstanden te verminderen."
+      },
+      {
+        "icon": "bi bi-lock",
+        "title": "Versterkte Communicatiekanalen",
+        "slogan": "Richt veilige communicatiekanalen in met end-to-end encryptie om gevoelige informatie te beschermen tegen cyberdreigingen."
+      },
+      {
+        "icon": "bi bi-broadcast-pin",
+        "title": "Gestroomlijnde Communicatieworkflows",
+        "slogan": "Richt veilige communicatiekanalen in met end-to-end encryptie om gevoelige informatie te beschermen tegen cyberdreigingen."
+      },
+      {
+        "icon": "bi bi-phone",
+        "title": " Mobiele Responsiviteit",
+        "slogan": "Verbeter mobiele responsiviteit met automatische antwoorden afgestemd op de behoeften van mobiele gebruikers"
+      },
+      {
+        "icon": "bi bi-archive",
+        "title": "Efficiënt Communicatiearchief",
+        "slogan": "Implementeer een robuust archiefsysteem om eerdere gesprekken eenvoudig op te slaan en terug te halen, met snelle toegang tot historische gegevens voor analyse en referentie."
+      }
+    ],
+    "CHATPLUS_PAGE_FEATUERS_CARDS_L": [
+      {
+        "title": "Maximaliseer OndersteuningsinterAction",
+        "slogan": "Verbeter klantinteractie, leadkwaliteit en communicatie-effectiviteit met realtime ondersteuning voor vragen en klachten."
+      },
+      {
+        "title": "Berichtensjablonen",
+        "slogan": "Maak en personaliseer meerdere sjablonen voor verschillende scenario’s."
+      },
+      {
+        "title": "Broadcast Berichten",
+        "slogan": "Verstuur één bericht gelijktijdig naar een groot aantal ontvangers."
+      },
+      {
+        "title": "Prestatie Rappor ",
+        "slogan": "Biedt analyse van de efficiëntie en effectiviteit van het team bij klantinteracties"
+      }
+    ],
+    "CHATPLUS_PAGE_FEATUERS_CARDS_R": [
+      {
+        "title": "Automatisch Antwoord",
+        "slogan": "Gepersonaliseerde automatische antwoorden verbeteren klantbetrokkenheid en stroomlijnen zakelijke communicatie."
+      },
+      {
+        "title": "Archief",
+        "slogan": "Sla eerdere gesprekken op en raadpleeg chattranscripten eenvoudig voor snelle referentie en evaluatie"
+      },
+      {
+        "title": "Geautomatiseerde Processen ",
+        "slogan": "ChatPlus biedt veelzijdige geautomatiseerde processen zoals afspraakplanning, ordertracking en meer"
+      },
+      {
+        "title": "API Integratie",
+        "slogan": "Biedt integratie met uw CRM & ERP"
+      }
+    ],
+    "CHATPLUS_PAGE_QUICK_START_TITLE": "Snelle Start",
+    "CHATPLUS_PAGE_QUICK_START_SLOGAN": "Vergeet niet onze snelle starttutorial te bekijken.",
+    "BYLD_PAGE_BANNAR_SLOGAN": {
+      "first": "Slimme Engineeringoplossingen",
+      "seconed": "vraag",
+      "third": ", het gewoon aan",
+      "forth": "AI"
+    },
+    "BYLD_PAGE_TRY_BTN": "Probeer Gratis",
+    "BYLD_PAGE_PRICING_BTN": "Preise",
+    "BYLD_PAGE_QUICK_START_TITLE": "Korte Introductie",
+    "BYLD_PAGE_QUICK_START_SLOGAN": " Revolutioneer Bouwcompliance met BYLD.",
+    "BYLD_PAGE_CARDS": [
+      {
+        "title": " Nauwkeurige Informatie",
+        "slogan": "Een betrouwbare informatiebron met mogelijkheid tot bronvermelding uit specifieke codes."
+      },
+      {
+        "title": "Informatie Delen Met Anderen",
+        "slogan": "U kunt de resultaten van uw gesprekken delen om discussiepunten te bundelen en communicatie tussen teamleden te vergemakkelijken."
+      },
+      {
+        "title": "Archiveer Alle Gesprekken",
+        "slogan": "Alle gespreksresultaten worden opgeslagen in uw account om verder te werken aan uw project."
+      }
+    ],
+    "BYLD_PAGE_HEAD_TITLE": {
+      "first": "Duidelijke antwoorden op ",
+      "seconed": "complexe vragen",
+      "third": "met verwijzing naar de Saoedische Bouwcode"
+    },
+  
+    "BYLD_PAGE_HEAD_SLOGAN": " Het gebruik van BYLD ondersteunt geïnformeerde besluitvorming en naleving van alle vereisten van de Saoedische Bouwcode.",
+  
+    "BYLD_PAGE_FEATURES_WHY_US": "Waarom Voor Ons Kiezen",
+    "BYLD_PAGE_FEATURES_TITLE": "Belangrijkste Kenmerken",
+    "BYLD_PAGE_FEATURES_SLICE": [
+      {
+        "title": "Naleving van de Saoedische Bouwcode",
+        "slogan": "Voorkom misverstanden over vereisten en vermijd onbetrouwbare bronnen."
+      },
+      {
+        "title": "Continue Updates en Toevoegingen",
+        "slogan": "Het monitoren van alle updates goedgekeurd door relevante autoriteiten voor de ontwikkeling van de Saoedische Bouwcode garandeert continue verspreiding van nauwkeurige informatie. Alle vereisten en codes zijn onderhevig aan toevoegingen."
+      },
+      {
+        "title": "Directe Antwoorden",
+        "slogan": "Onmiddellijke antwoorden op uw vragen voor gebruiksgemak."
+      }
+    ],
+    "CUSTOM_SOFTWARE_PAGE_SLOGAN": "TAILORED SOLUTIONS TURNING YOUR VISION INTO REALITY.",
+    "CUSTOM_SOFTWARE_PAGE_CONTACT_BTN": "Neem contact op",
+    "CUSTOM_SOFTWARE_PAGE_ABOUT": {
+      "about_us": "Over Ons",
+      "title": " Hoe Wij U Helpen Uw Bedrijfsdoelen te Bereiken",
+      "slogan": {
+        "first": "DomApp is een toonaangevend softwareontwikkelingsbedrijf met uitgebreide ervaring in het ontwerpen en programmeren van software op maat",
+        "seconed": "Of het nu gaat om eigen ontwikkeling of maatwerk van bestaande software, wij bieden optimale oplossingen voor uw succes."
+      }
+    },
+    "CUSTOM_SOFTWARE_PAGE_SERVICES": {
+      "Services": "Diensten",
+      "title": "Ons werkproces om uw bedrijf te laten groeien",
+      "slice": [
+        {
+          "title": "Maatwerk Softwareontwikkeling",
+          "slogan": "Wij creëren softwareoplossingen die aansluiten op uw specifieke behoeften, van analyse tot implementatie. implementatie, zorgen wij voor software die specifiek is ontworpen om aan uw eisen te voldoen."
+        },
+        {
+          "title": "Software Aanpassing",
+          "slogan": "Heeft u bestaande software die aanpassing nodig heeft? Ons team kan software aanpassen aan uw unieke bedrijfsbehoeften"
+        }
+      ]
+    },
+    "CUSTOM_SOFTWARE_PAGE_CONTACT": {
+      "title": "Heeft u een succesvol project nodig?",
+      "form": {
+        "title": "Neem contact met ons op voor een gratis consultatie!",
+        "name": "Name",
+        "Email": "Email",
+        "Phone": "Telefoon",
+        "Title": "Title",
+        "Description": "ProjectDescription",
+        "submit": "Projectschatting"
+      }
+    },
+    "GRASSHOPPER_PAGE_BANNAR_SLOGAN": "ــــــــــــــ.",
+    "GRASSHOPPER_PAGE_BANNAR_SLICE": [
+      {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ."
+      },
+      {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ."
+      },
+      {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ"
+      }
+    ],
+    "GRASSHOPPER_PAGE_QUICK_START": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ."
+    },
+    "GRASSHOPPER_PAGE_SERVICES_HEAD": {
+      "title": "Our Services",
+      "slogan": "ــــــــــــــ"
+    },
+    "GRASSHOPPER_PAGE_SERVICES_SLICE": [
+      {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ."
+      },
+      {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ"
+      },
+      {
+        "title": "ــــــــــــــ",
+        "slogan": "Tــــــــــــــ."
+      },
+      {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ."
+      }
+    ],
+    "GRASSHOPPER_PAGE_HEADS": [
+      {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ."
+      },
+      {
+        "title": "ــــــــــــــ",
+        "slogan": "ــــــــــــــ"
+      }
+    ],
+    "GRASSHOPPER_PAGE_WHY_US": {
+      "head": {
+        "title": "Why Choose Us?",
+        "slogan": "ــــــــــــــ"
+      },
+      "slice": [
+        {
+          "title": "ــــــــــــــ: ",
+          "slogan": "ــــــــــــــ"
+        },
+        {
+          "title": "ــــــــــــــ ",
+          "slogan": "ــــــــــــــ."
+        },
+        {
+          "title": "ــــــــــــــ ",
+          "slogan": "ــــــــــــــ."
+        }
+      ]
+    },
+    "GRASSHOPPER_PAGE_EXAMPLE": [
+      {
+        "title": "ــــــــــــــ",
+        "first": {
+          "title": "ــــــــــــــ:",
+          "slogan": "ــــــــــــــ"
+        },
+        "seconed": {
+          "title": "ــــــــــــــ",
+          "slogan": "ــــــــــــــ."
+        }
+      },
+      {
+        "title": "ــــــــــــــ",
+        "first": {
+          "title": "ــــــــــــــ",
+          "slogan": "ــــــــــــــ"
+        },
+        "seconed": {
+          "title": "ــــــــــــــ",
+          "slogan": " ــــــــــــــ."
+        }
+      },
+      {
+        "title": "ــــــــــــــ",
+        "first": {
+          "title": "ــــــــــــــ:",
+          "slogan": "ــــــــــــــ"
+        },
+        "seconed": {
+          "title": "ــــــــــــــ",
+          "slogan": "ــــــــــــــ."
+        }
+      }
+    ],
+    "GRASSHOPPER_PAGE_CONTACT": {
+      "sup": "ــــــــــــــ",
+      "title": "ــــــــــــــ",
+      "btn": "Kontaktieren Sie uns"
+    },
+    "RDAPP_PAGE_BANNAR_SLOGAN": {
+      "title": "Risicobeoordeling in overeenstemming met",
+      "slogan": " Saoedische Bouwcode."
+    },
+    "BRDAPP_PAGE_TRY_BTN": "Nu starten",
+    "RDAPP_PAGE_QUICK_START": {
+      "title": "Snelle Start",
+      "slogan": "Ontdek een naadloze ervaring met RDAPP."
+    },
+    "RDAPP_PAGE_NOTE_1": " Door RDAPP te kiezen profiteert u van de beste slimme oplossingen die tijd en kosten besparen en efficiëntie en communicatie verbeteren. Het biedt een groot concurrentievoordeel in overeenstemming met de Saoedische Bouwcode",
+    "RDAPP_PAGE_HEAD_1": {
+      "title": "Exclusieve Functies",
+      "slogan": "RDAPP uitgerust met de beste functies."
+    },
+    "RDAPP_PAGE_HEAD_2": {
+      "title": "AND MORE",
+      "slogan": "RDAPP Provides Best Features 'And more'"
+    },
+    "RDAPP_PAGE_HEAD_3": {
+      "title": "Exclusieve Functies",
+      "slogan": "RDAPP biedt de beste communicatie- en kostenbewaking."
+    },
+    "RDAPP_PAGE_CARDS_1": [
+      {
+        "title": "Verhoogde Productiviteit",
+        "slogan": "Efficiënt platform voor risicobeheer dat het volledige proces stroomlijnt en handmatige, tijdrovende taken elimineert, zodat teams risico’s effectiever kunnen beheren."
+      },
+      {
+        "title": " Beveiligde Gegevens",
+        "slogan": "Geavanceerde encryptieprotocollen die gegevens beschermen en veilige overdracht en opslag te garanderen."
+      },
+      {
+        "title": "Naleving Saoedische Bouwcode",
+        "slogan": " Elke risicobeheerstrategie en voorzorgsmaatregel is afgestemd op de voorschriften van de Saoedische Bouwcode, waarbij veiligheid en naleving centraal staan."
+      }
+    ],
+    "RDAPP_PAGE_INFO_1": {
+      "title": "DOEL VAN RDAPP",
+      "slogan": "RDAPP is ontworpen om te garanderen dat elk project voldoet aan de Saoedische Bouwcode en de technische aandacht krijgt die nodig is voor hoogwaardige resultaten. Het volgen van de voortgang van elk project) en het waarborgen van naadloze coördinatie tussen alle betrokken partijen, vanaf ontvangst van het project, gevolgd door een eerste risicobeoordeling en diepgaande evaluaties door experts in civiele techniek, zoals geotechnische studies, structurele analyses en innovatieve materialen, tot en met elke technische inspectiefase op locatie."
+    },
+    "RDAPP_PAGE_INFO_2": [
+      {
+        "title": "GEBRUIKSVRIENDELIJK",
+        "slogan": " RDAPP beschikt over een gebruiksvriendelijke interface die zorgt voor soepele navigatie en moeiteloze interAction. Door alleprojectrapporten, tickets en projectstatus duidelijk weer te geven, maakt de overzichtelijke layout het eenvoudig om taken uit te voeren en informatie te raadplegen."
+      },
+      {
+        "title": "INTEGRATIE",
+        "slogan": "Integratie van alle technische rapporten en relevante documenten in één applicatie die is ontworpen volgens de limieten van de Saoedische Bouwcode, met eenvoudige toegang voor gebruikers om documenten te maken, bewerken en delen volgens hun rol. RDAPP stroomlijnt de uitgifte van R&D- en inspectierapporten en elimineert dubbele gegevensinvoer"
+      }
+    ],
+    "RDAPP_PAGE_HEAD_2": {
+      "title": "DATABASEBESCHERMING",
+      "slogan": "Gegevens beschermd door CITC Besluitnummer 424/1442 Datum 27-01-1442."
+    },
+    "RDAPP_PAGE_INFO_3": [
+      {
+        "title": "PROCESBEHEER",
+        "slogan": "De documentcyclus van elk rapport wordt overgedragen van de ene gespecialiseerde ingenieur naar de andere, met meerdere mogelijke trajecten voor elk project die volledige technische disciplines omvatten en automatisch een hogere kwaliteit van elk rapport garanderen."
+      },
+      {
+        "title": "PRODUCTIVITEIT",
+        "slogan": "Op basis van feedback van klanten verhoogt RDAPP de productiviteit van elk rapport met 50% tijdsreductie, organiseert het rapportproces en verbindt het alle betrokken partijen sneller. RDAPP biedt een directe uniforme rapportupdate bij elke stap volgens de Saoedische Bouwcode."
+      }
+    ],
+    "RDAPP_PAGE_INFO_4": [
+      {
+        "title": "COMMUNICATIE",
+        "slogan": "Een e-mail wordt automatisch verzonden vanuit de applicatie zonder menselijke tussenkomst. Zodra een rapport is goedgekeurd door de technische manager, worden alle technische opmerkingen verzonden naar de belanghebbenden, de klant en de aannemer."
+      },
+      {
+        "title": "KOSTENBEWAKING",
+        "slogan": "Wij hebben een kost-per-meter techniek ontwikkeld die een geschatte projectwaarde biedt voor elk onderdeel in de Bill of Quantities (BOQ). Deze methode is geïntegreerd in RDAPP met gedetailleerde factoren om kostenbeoordelingen te verbeteren en belanghebbenden tijdig te informeren over eventuele aandachtspunten."
+      }
+    ],
+    "RDAPP_PAGE_CARDS_2": [
+      {
+        "title": "Realtime Samenwerking",
+        "slogan": "Maak naadloze samenwerking mogelijk met realtime bewerking en delen van documenten."
+      },
+      {
+        "title": "Mobiele Toegankelijkheid",
+        "slogan": "Toegang tot projectinformatie altijd en overal via mobiele apparaten."
+      },
+      {
+        "title": "Gegevensbeveiliging",
+        "slogan": " Bescherm gevoelige projectgegevens met robuuste beveiligingsmaatregelen."
+      },
+      {
+        "title": "Integratie",
+        "slogan": " RDAPP biedt integratie met bestaande systemen voor een soepele gegevensstroom"
+      },
+      {
+        "title": "Audittrail",
+        "slogan": "Zorg voor verantwoordelijkheid en transparantie met een audittrail van documentrevisies en gebruikersacties"
+      },
+      {
+        "title": "Responsieve Ondersteuning",
+        "slogan": " RDAPP biedt integratie met bestaande systemen voor een soepele gegevensstroom"
+      }
+    ],
+    "RDAPP_PAGE_CARDS_3": [
+      {
+        "title": "KWALITEITSCONTROLE",
+        "slogan_1": "Een van de belangrijkste mogelijkheden van RDAPP is het verbeteren van proceskwaliteit door automatisch technische aandachtspunten volgens de Saoedische Bouwcode te markeren.",
+        "slogan_2": "Hierdoor vermindert RDAPP menselijke fouten en stroomlijnt het inspectieproces voor ingenieurs",
+        "slogan_3": "Het identificeren van projecten die geavanceerde technische betrokkenheid vereisen en deze doorverwijzen naar de juiste vakspecialisten."
+      },
+      {
+        "title": "DOCUMENTATIE",
+        "slogan_1": "Met het ingebouwde documentatiesysteem kunnen gebruikers eenvoudig projectrapporten maken, bewerken en delen, wat efficiënte samenwerking tussen teamleden garandeert. Het systeem biedt geavanceerde zoek- en filtermogelijkheden",
+        "slogan_2": "Gebruikers kunnen snel specifieke documenten vinden op basis van projectnummers, locaties, datums en betrokken ingenieurs.",
+        "slogan_3": "Het documentatiesysteem bevat automatische meldingen en herinneringen, zodat alle technische opmerkingen en projectupdates correct worden ontvangen."
+      }
+    ],
+    "BONDIFYCRM_PAGE_TRY_BTN": "Demo proberen",
+    "BONDIFYCRM_PAGE_PRICING_BTN": "Prijzen",
+    "BONDIFYCRM_PAGE_HEADING_1": {
+      "title": "",
+      "slogan": "Eerste keuze voor uw bedrijf"
+    },
+    "BONDIFYCRM_PAGE_QUICK_START": {
+      "title": "Snelle Start",
+      "slogan": "Vergeet niet onze snelle start handleiding te bekijken.",
+      "sloganGrass": "Laat uw bedrijf groeien en communiceer met klanten via berichten."
+    },
+    "BONDIFYCRM_PAGE_BREAK_1": "ــــــــــــــ",
+    "BONDIFYCRM_PAGE_CARD_1": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ",
+      "slice": ["ــــــــــــــ", "ــــــــــــــ", "ــــــــــــــ"]
+    },
+    "BONDIFYCRM_PAGE_CARD_2": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ.",
+      "slice": [
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ"
+      ]
+    },
+    "BONDIFYCRM_PAGE_CARD_3": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ",
+      "slice": [
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ"
+      ]
+    },
+    "BONDIFYCRM_PAGE_CARD_4": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ",
+      "slice": [
+        {
+          "title": "ــــــــــــــ",
+          "slice": ["ــــــــــــــ", "ــــــــــــــ", "ــــــــــــــ"]
+        },
+        {
+          "title": "ــــــــــــــ",
+          "slice": [
+            "ــــــــــــــ",
+            "ــــــــــــــ",
+            "ــــــــــــــ",
+            "ــــــــــــــ"
+          ]
+        }
+      ]
+    },
+    "BONDIFYCRM_PAGE_CARD_5": {
+      "sub": "ــــــــــــــ",
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ",
+      "slice": [
+        ["ــــــــــــــs", "ــــــــــــــ", "ــــــــــــــ"],
+        ["ــــــــــــــ", "ــــــــــــــ", "ــــــــــــــ"]
+      ]
+    },
+    "BONDIFYCRM_PAGE_CARD_6": {
+      "sub": "ــــــــــــــ",
+      "title": "ــــــــــــــs",
+      "slogan": "ــــــــــــــ.",
+      "slice": [
+        ["ــــــــــــــ.", "ــــــــــــــs."],
+        ["ــــــــــــــ", "ــــــــــــــ."]
+      ]
+    },
+    "BONDIFYCRM_PAGE_BREAK_2": "ــــــــــــــ",
+    "BONDIFYCRM_PAGE_CARD_7": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ",
+      "slice": [
+        "ــــــــــــــ.",
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ"
+      ]
+    },
+    "BONDIFYCRM_PAGE_CARD_8": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ"
+    },
+    "BONDIFYCRM_PAGE_CARD_9": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ",
+      "slice": [
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ"
+      ]
+    },
+    "BONDIFYCRM_PAGE_CARD_10": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ"
+    },
+    "BONDIFYCRM_PAGE_CARD_11": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ.",
+      "slice": [
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ"
+      ]
+    },
+    "BONDIFYCRM_PAGE_CARD_12": {
+      "title": "ــــــــــــــ",
+      "slogan": "ــــــــــــــ.",
+      "slice": [
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ",
+        "ــــــــــــــ."
+      ]
+    },
+    "WINDMASTER_PRICING_PAGE": [
+      {
+        "title": "Probeer Gratis",
+        "price_USD": "0",
+        "price_SAR": "0",
+        "include": "Inclusief",
+        "slice": ["1 rapport"],
+        "footer": "",
+        "link": "",
+        "btn": "PROBEER GRATIS"
+      },
+      {
+        "title": "Pakket 1",
+        "price_USD": "15 ",
+        "price_SAR": "50",
+        "include": "Inclusief",
+        "slice": ["10 rapporten", "1 Jaar Abonnement"],
+        "footer": "Prijs exclusief BTW",
+        "link": "",
+        "btn": "CONTACT OPNEMEN MET VERKOOP"
+      },
+      {
+        "title": "Pakket 2",
+        "price_USD": "55 ",
+        "price_SAR": "200",
+        "include": "Inclusief",
+        "slice": ["50 berichtes", "1 Jaar Abonnement"],
+        "footer": "Prijs exclusief BTW",
+        "link": "",
+        "btn": "CONTACT OPNEMEN MET VERKOOP"
+      }
+    ],
+    "BONDIFY_PRICING_PAGE": {
+      "year": "Jaarlijks",
+      "month": "Maandelijks",
+      "save_to": "Bespaar tot 20%",
+      "title": " De grootte van uw bedrijf maakt niet uit — bondify CRM past bij iedereen",
+      "sub_title": "Flexibel, aanpasbaar en gebouwd voor elk team — kies het plan dat past bij uw workflow en bedrijfsdoelen.",
+      "monthly": {
+        "free": {
+          "for": "Free plan - explore all core features for free",
+          "LimitsTitle": "Limieten",
+          "Modules": "Inbegrepen modules",
+  
+          "title": "Gratis",
+          "price": false,
+          "limits": [" Team (gebruikers) - 3", "Klanten - 3", "Projecten - 10"],
+          "include": [
+            "Taken",
+            "Leads",
+            "Facturen",
+            "Offertes",
+            "Abonnementen",
+            "Contracten",
+            "Voorstellen",
+            "Tickets",
+            "Kalender",
+            "Uitgaven",
+            "Directe berichten",
+            "Tijdregistratie",
+            "Kennisbank",
+            "Herinneringen"
+          ],
+  
+          "link": "http://bondifycrm.domapphub.com/login",
+          "btn": "Demo starten"
+        },
+        "standard": {
+          "title": "Standaard",
+          "for": "Geeignet für bis zu 10 Benutzer",
+          "LimitsTitle": "Limieten  ",
+          "Modules": "Inbegrepen modules ",
+  
+          "limits": [
+            "Team (gebruikers)  - 10  ",
+            "Clients   - Onbeperkt",
+            "Projects - Onbeperkt"
+          ],
+          "price_USD": "9",
+          "price_SAR": "34",
+          "price_EGY": "226",
+          "Usd": "USD",
+          "Egp": "EGP",
+          "Sar": "SAR",
+          "user": "User",
+          "include": [
+            "Taken",
+            "Leads",
+            "Facturen",
+            "Offertes",
+            "Abonnementen",
+            "Contracten",
+            "Voorstellen",
+            "Tickets",
+            "Kalender",
+            "Uitgaven",
+            "Directe berichten",
+            "Tijdregistratie",
+            "Kennisbank",
+            "Herinneringen"
+          ],
+          "link": "https://wa.me/201501060885",
+          "btn": "CONTACT VERKOOP"
+        },
+        "enterprise": {
+          "title": "Enterprise ",
+          "Modules": "Inbegrepen modules",
+  
+          "price": false,
+          "LimitsTitle": "Limieten",
+          "for": "Voor bedrijven met meer dan 10 gebruikers",
+          "limits": [
+            "Team (gebruikers) - Onbeperkt ",
+            "Clients   - Onbeperkt",
+            "Projects - Onbeperkt"
+          ],
+  
+          "include": [
+            "Tasks",
+            "Leads",
+            "Invoices",
+            "Estimates",
+            "Abonnementen",
+            "Contracts",
+            "Proposals",
+            "Tickets  ",
+            "Calendar",
+            "Expenses",
+            "Instant Messaging",
+            "Time Tracking",
+            "Knowledgebase",
+            "Reminders"
+          ],
+          "link": "https://wa.me/201501060885",
+          "btn": "CONTACT VERKOOP"
+        }
+      },
+      "annualy": {
+        "free": {
+          "title": "Gratis",
+          "LimitsTitle": "Limieten",
+          "Modules": "Inbegrepen modules",
+  
+          "for": "Free plan - explore all core features for free  ",
+  
+          "price": false,
+          "limits": [" Team (gebruikers) - 3  ", "Klanten - 3  ", "Projecten - 10"],
+  
+          "include": [
+            "Taken",
+            "Leads",
+            "Facturen",
+            "Offertes",
+            "Abonnementen",
+            "Contracten",
+            "Voorstellen",
+            "Tickets",
+            "Kalender",
+            "Uitgaven",
+            "Directe berichten",
+            "Tijdregistratie",
+            "Kennisbank",
+            "Herinneringen"
+          ],
+          "link": "http://bondifycrm.domapphub.com/login",
+          "btn": "Demo starten"
+        },
+        "standard": {
+          "title": "Standaard",
+          "Modules": "Inbegrepen modules",
+  
+          "LimitsTitle": "Limieten",
+          "price_USD": "7",
+          "price_SAR": "27",
+          "price_EGY": "180",
+          "Usd": "USD",
+          "Egp": "EGP",
+          "Sar": "SAR",
+          "user": "User",
+          "for": "Geschikt voor maximaal 10 gebruikers",
+          "limits": [
+            "Team (gebruikers)  - 10  ",
+            "Klanten - Onbeperkt  ",
+            "Projecten - Onbeperkt"
+          ],
+          "include": [
+            "Taken",
+            "Leads",
+            "Facturen",
+            "Offertes",
+            "Abonnementen",
+            "Contracten",
+            "Voorstellen",
+            "Tickets",
+            "Kalender",
+            "Uitgaven",
+            "Directe berichten",
+            "Tijdregistratie",
+            "Kennisbank",
+            "Herinneringen"
+          ],
+          "link": "https://wa.me/201501060885",
+          "btn": "CONTACT VERKOOP"
+        },
+        "enterprise": {
+          "title": "Enterprise",
+          "Modules": "Inbegrepen modules",
+  
+          "price": false,
+          "LimitsTitle": "Limieten",
+          "for": "Voor bedrijven met meer dan 10 gebruikers",
+          "limits": [
+            "Team (gebruikers)    - Onbeperkt ",
+            "Klanten   - Onbeperkt ",
+            "Projecten - Onbeperkt"
+          ],
+          "include": [
+            "Taken",
+            "Leads",
+            "Facturen",
+            "Offertes",
+            "Abonnements",
+            "Contracten",
+            "Voorstellen",
+            "Tickets",
+            "Kalender",
+            "Uitgaven",
+            "Directe berichten",
+            "Tijdregistratie",
+            "Kennisbank",
+            "Herinneringen"
+          ],
+          "link": "https://wa.me/201501060885",
+          "btn": "CONTACT VERKOOP"
+        }
+      }
+    },
+    "CHATPLUS_PRICING_PAGE": {
+      "title": "Abonnement",
+      "price": "26.65",
+      "sub": "/ gebruiker / maand",
+      "include": [
+        "De prijs is exclusief btw",
+        "Meta-berichtkosten niet inbegrepen.",
+        " Installatiekosten niet inbegrepen."
+      ],
+      "link": "http://bondifycrm.domapphub.com/login",
+      "btn": " CONTACT SALES "
+    },
+    "FOOTER_ABOUT": {
+      "title": "Over Ons "
+    },
+    "FOOTER_PRODUCTS": {
+      "title": "Producten"
+    },
+    "FOOTER_SERVICES": {
+      "title": "Diensten",
+      "slice": [
+        {
+          "title": "Ontwikkelingsdiensten ",
+          "slice": [
+            "Softwareontwikkeling ",
+            "Softwareaanpassing ",
+            "Webontwikkeling",
+            "Mobiele App Ontwikkeling",
+            "UI/UX Ontwerp"
+          ]
+        },
+        {
+          "title": "Gevelproductie",
+          "slice": ["Grasshopper Modules"]
+        }
+      ]
+    },
+    "FOOTER_SUMMARY": [
+      "Bij DomApp ontwikkelen en ontwerpen wij applicaties op maat van de klant , Onze expertise stelt ons in staat applicaties te ontwikkelen en aan te passen volgens de bedrijfsvisie van de klant."
+    ],
+    "FOOTER_SOCIAL": "Follow Us:",
+    "FOOTER_COMMUNITY": {
+      "title": "Community",
+      "slice": [
+        {
+          "title": "Blog",
+          "link": "http://blog.domapphub.com"
+        }
+      ]
+    },
+  
+    "FOOTER_CONTANT_INFO": {
+      "title": "Adres",
+      "slice": [
+        {
+          "country": "Egypte",
+          "addresses": [
+            "Sami Abd El-Raouf, Nasr City, Caïro, Egypte",
+            " 2e Verdieping, Al-Mottaheda Toren, KFS, Egypt"
+          ]
+        },
+        {
+          "country": "Nederland",
+          "addresses": ["Weena 290, 10e verdieping, 3012 NJ, Rotterdam Centrum"]
+        }
+      ]
+    },
+    "LEGAL": "Juridisch Beleid",
+    "EXCLUSIVE_DEALERS": {
+      "title": "Exclusieve Dealer ",
+      "slice": [
+        {
+          "title": "Dlalat",
+          "link": "https://www.dlalat.com/"
+        }
+      ]
+    },
+    "REVIEW_TITLE": {
+      "title": "GETUIGENISSEN",
+      "slogan": " Uw succes vertelt ons verhaal."
+    },
+    "REVIEW": [
+      {
+        "name": "Mohamed Ghattas",
+        "job": "Operation Manager",
+        "company": "Dome FDH",
+        "title": "Operationeel Manager, Dome FDH",
+        "quote": "CladCut is een waardevol hulpmiddel voor elk bedrijf dat zijn productieproces wil stroomlijnen en efficiëntie wil verbeteren. CladCut kan snel en efficiënt zelfs de meest complexe panelen produceren"
+      },
+      {
+        "name": "Mohamed Ismail",
+        "job": "DAS-METAL",
+        "company": "Dome FDH",
+        "title": "CEO, DAS-METAL",
+        "quote": "Het gebruik van CladCut en bondify CRM heeft een grote impact gehad op onze activiteiten. CladCut verminderde drastisch de tijd die we besteden aan het maken van snijList en en CNC-bestanden. bondify CRM verbeterde ondertussen ons taak- en projectbeheer.."
+      },
+      {
+        "name": "Mohamed Amer",
+        "job": "General Manager",
+        "company": "Dome FDH",
+        "title": "CEO, PINION ENGINEERING",
+        "quote": "Een opvallende functie van CladCut is het genereren van foutloze CNC-bestanden rechtstreeks vanuit de invoer, wat handmatige fouten verminderde. bondify CRM gaf ons een volledig activiteitenoverzicht per klant en project."
+      },
+      {
+        "name": "Mohamed Meligy ",
+        "job": "",
+        "company": "",
+        "title": "CEO, , EGYTEL voor Telecommunicatie",
+        "quote": "bondify CRM is sterk, vooral voor contractbeheer en voorstellen. We waarderen dat alles gecentraliseerd blijft."
+      },
+      {
+        "name": "Mustafa Sharaf",
+        "job": "Executive Manager",
+        "company": "DESIGNAL ENGINEERING",
+        "title": "COO, DESIGNAL ENGINEERING",
+        "quote": "bondify CRM toont grote kracht in het efficiënt beheren van leads en het volgen van kansen. ChatPlus biedt volledige zichtbaarheid op onze supportprestaties—van responstijden tot ticketopvolging—wat de servicekwaliteit en teamverantwoordelijkheid verbetert."
+      },
+      {
+        "name": "Ahmed Morsi",
+        "job": "",
+        "company": "DAAM CENTER",
+        "title": "COO, DAAM CENTER",
+        "quote": "Sinds we ChatPlus zijn gaan gebruiken is onze klantenservice sneller en professioneler geworden. Alles staat op één plek en klantgegevens zijn binnen seconden toegankelijk."
+      },
+      {
+        "name": "Abdullah Abu Hashem",
+        "job": "",
+        "company": "DAAM CENTER",
+        "title": "CEO, DAAEM Construction",
+        "quote": "De projecten en mijlpalen van bondify CRM houden ons team op één lijn en zorgen dat elke deadline wordt gehaald."
+      },
+      {
+        "name": "Mahmoud El Masry",
+        "job": "",
+        "company": "",
+        "title": "Technical Manager, CPV ARABIA",
+        "quote": "We gebruikten veel supportplatforms maar ChatPlus onderscheidt zich door eenvoud en kracht. Alles wordt in realtime gevolgd—niets wordt gemist."
+      },
+      {
+        "name": "Ahmed Tantour",
+        "job": "Technical Manager",
+        "company": "CUBEMETAL INDUSTRIES CO",
+        "title": "Technical Manager, CUBEMETAL INDUSTRIES CO.",
+        "quote": " Wij waarderen de waarde die CladCut toevoegt aan onze gevelproductieworkflow. De software verbeterde efficiëntie en verkortte de tijd, vooral bij het genereren van nauwkeurige snijList en."
+      },
+      {
+        "name": "Karim Zaytoun",
+        "job": "CEO",
+        "company": "Zaytoun Development",
+        "title": "CEO, Zaytoun Development",
+        "quote": " ChatPlus verminderde aanzienlijk de werklast van onze klantenservice dankzij de volledig geautomatiseerde chatbot."
+      },
+      {
+        "name": "Mohamed Abo Elmakarem",
+        "job": "",
+        "company": "Dlalat Technology Limited",
+        "title": "Dlalat Technology Limited",
+        "quote": "De soepele integratie van ChatPlus maakte een duidelijk verschil — klantproblemen worden sneller opgelost met hogere tevredenheid."
+      }
+    ],
+    "PARTNERS_TITLE": {
+      "title": "ONZE KLANTEN",
+      "slogan": "Een nalatenschap gevormd door het succes van onze klanten."
+    },
+    "SECTION_3": {
+      "title": "One CRM to replace them all",
+      "buttons": {
+        "createAccount": "Konto erstellen",
+        "seePricing": "Prijzen bekijken"
+      }
+    },
+    "SECTION_1": {
+      "subtitle": "Geweldige reeks functies",
+      "title": "Alle belangrijke modules die u nodig hebt",
+      "cards": [
+        {
+          "title": "Klanten",
+          "desc": "Beheer alle aspecten van uw klanten op één plaats."
+        },
+        {
+          "title": "Projecten",
+          "desc": "Lever uw projecten op tijd en binnen het budget."
+        },
+        {
+          "title": "Potentiële klanten",
+          "desc": "Leg al uw leads en kansen eenvoudig vast."
+        },
+        {
+          "title": "Teamwerk",
+          "desc": "Eenvoudige samenwerking tussen uw teamleden."
+        }
+      ]
+    },
+    "SECTION_2": {
+      "subtitle": "VERHOOG UW PRODUCTIVITEIT",
+      "title": "Intuïtief, krachtig en gebouwd voor teams die resultaten behalen",
+      "desc": "Onze bondify CRM bevat veel functies die zijn ontworpen om de productiviteit van uw team te verhogen.",
+      "list": [
+        " Projectsjablonen om snel een nieuw project te starten",
+        "Taak klonen om sneller actie te ondernemen",
+        "Communiceer en werk samen met uw team en klanten",
+        "ZTijdregistratie voor het hele tea"
+      ]
+    },
+  
+    "SECTION_4": {
+      "subtitle": "Geavanceerd projectbeheer",
+      "title": "Haal uw projectdeadlines",
+      "desc": "Our CRM gives you the right tools to manage, collaborate and complete your projects on time. Your clients will be happy and your team will be happy.",
+      "list": [
+        "Bekijk eenvoudig de voortgang van uw project",
+        "Werk samen met teamleden",
+        "Verdeel uw project in mijlpalen en taken"
+      ]
+    },
+    "SECTION_5": {
+      "title": "Geweldige reeks functiest",
+      "subtitle": "Alle belangrijke modules die u nodig hebt",
+      "cards": [
+        {
+          "title": "Taken",
+          "desc": " Werk uw taken efficiënt en intuïtief af."
+        },
+        {
+          "title": "Facturatie",
+          "desc": "Factureer uw klanten en accepteer eenvoudig betalingen."
+        },
+        {
+          "title": "Offertes",
+          "desc": "Stuur uw klanten snel offertes en voorstellen."
+        },
+        {
+          "title": "Gebruikersrollen ",
+          "desc": " Beheer tot welke middelen uw teamleden toegang hebben."
+        },
+        {
+          "title": "Werk vanaf elke locatie ",
+          "desc": "Uw team kan nu eenvoudig verbinding maken en overal werken."
+        },
+        {
+          "title": "Tijdregistratie",
+          "desc": "Geavanceerde tijdregistratie zodat u geen enkele minuut mist."
+        },
+        {
+          "title": "Helpdesk",
+          "desc": "Gebruik de helpdesk om ondersteuning te bieden aan uw klanten."
+        },
+        {
+          "title": "Kennisbank",
+          "desc": "Maak eenvoudig aantrekkelijke artikelen en deel informatie met al uw belanghebbenden."
+        },
+        {
+          "title": "Abonnementen",
+          "desc": "Accepteer terugkerende betalingen via Stripe met de abonnementsfunctie"
+        }
+      ]
+    },
+    "SECTION_6": {
+      "title": "Productiviteit opnieuw gedefinieerd",
+      "subtitle": "Het complete productiviteitshulpmiddel voor uw bedrijf",
+      "tabs": [
+        "Leads",
+        "Klanten",
+        "Project",
+        "Taken",
+        "Factuur",
+        "Supportticket"
+      ]
+    },
+    "BOUNDIFYCRM_CREATE_ACCOUNT": {
+      "title": "Account aanmaken",
+      "subtitle": "Werk uw taken efficiënt en intuïtief af.",
+      "full_name_label": "Volledige naam ",
+      "full_name_placeholder": "",
+      "account_name_label": "Gebruikersnaam",
+      "account_name_placeholder": "",
+      "email_address_label": "E-mailadres",
+      "email_address_placeholder": "",
+      "password_label": "Wachtwoord",
+      "password_placeholder": "",
+      "plan_label": "Selecteer abonnement",
+      "create_account_button": "Account aanmaken"
+    }
+  }
+  

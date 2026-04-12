@@ -4,10 +4,13 @@ import { useSelector } from "react-redux";
 import en from "@/stores/Language/en.json";
 import ar from "@/stores/Language/ar.json";
 import Image from "next/image";
+import de from "@/stores/Language/de.json";
+import es from "@/stores/Language/es.json";
+import nl from "@/stores/Language/nl.json";
 
 export default function Section6() {
   const { lang, dir } = useSelector((state) => state.languageSlice);
-  const translations = { en, ar };
+  const translations = { en, ar, de, es, nl };
   const section = translations[lang].SECTION_6;
 
   const [activeTab, setActiveTab] = useState(0);

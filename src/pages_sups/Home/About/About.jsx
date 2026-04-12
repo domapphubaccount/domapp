@@ -220,13 +220,11 @@ export default function About() {
                   </div>
                   <div className="wpb_text_column wpb_content_element vc_custom_1540530003602 mobile-center">
                     <div className="wpb_wrapper">
-                      {home(lang).sections.about_us?.head.slogan.map(
-                        (item, index) => (
-                          <div className="mb-3" key={index}>
-                            <p key={index}>{item}</p>
-                          </div>
-                        )
-                      )}
+                      {(home(lang).sections.about_us?.head?.slogan || []).map((item, index) => (
+                        <div className="mb-3" key={index}>
+                          <p>{item}</p>
+                        </div>
+                      ))}
                     </div>
                   </div>
 
