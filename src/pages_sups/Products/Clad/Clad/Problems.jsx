@@ -3,84 +3,105 @@ import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
 
 export default function Problems() {
-  const { lang } = useSelector((state) => state.languageSlice);
-  const { cladcut } = useSelector((state) => state.cladcutRed);
+    const { lang } = useSelector((state) => state.languageSlice);
+    const { cladcut } = useSelector((state) => state.cladcutRed);
 
-  const problemsData = [
-    cladcut(lang).sections.PROBLEMS.slice1,
-    cladcut(lang).sections.PROBLEMS.slice2,
-    cladcut(lang).sections.PROBLEMS.slice3,
-  ];
+    const data = cladcut(lang).sections.PROBLEMS;
 
-  const renderItem = (text, type) => {
-    const isProblem = type === "problem";
+    const Item = ({ title, text, isProblem, noBorder }) => (
+        <div className={`d-flex align-items-start gap-3 px-3 py-3 h-100 ${!noBorder ? "border rounded bg-white" : ""}`}>
+            <span
+                className="rounded-circle d-flex justify-content-center align-items-center text-white flex-shrink-0"
+                style={{
+                    width: 40,
+                    height: 40,
+                    background: isProblem ? "#dc3545" : "#28a745",
+                }}
+            >
+                {isProblem ? "✖" : "✔"}
+            </span>
+
+            <div>
+                {title && <div className="fw-bold mb-1">{title}</div>}
+                <div className={isProblem ? "text-secondary" : ""}>{text}</div>
+            </div>
+        </div>
+    );
+
+    const Line = () => (
+        <div
+            className="d-none d-md-block position-absolute top-50 start-50 translate-middle !z-0"
+            style={{ width: 60, height: 2, backgroundColor: "#d3d3d3" }}
+        />
+    );
 
     return (
-      <div className="col-md-6 relative z-10">
-        <div className="d-flex align-items-center border rounded px-3 py-3 bg-white h-100 relative z-10">
-          
-          {/* ICON */}
-          <span
-            className="me-3 rounded-circle d-flex justify-content-center align-items-center flex-shrink-0 text-white w-[40px] h-[40px] min-w-[40px] min-h-[40px] font-bold text-[1.2rem]"
-            style={{
-              background: isProblem ? "#dc3545" : "#28a745",
-            }}
-          >
-            {isProblem ? "✖" : "✔"}
-          </span>
+        <section>
+            <Container className="py-5">
+                <h2 className="text-center mb-5 fw-bold">{data.title}</h2>
 
-          {/* TEXT */}
-          <span
-            className={`flex-grow-1 ${
-              isProblem ? "text-secondary" : ""
-            }`}
-            style={{ fontSize: "1rem" }}
-          >
-            {text}
-          </span>
-        </div>
-      </div>
-    );
-  };
+                <div className="d-flex flex-column gap-5 align-items-center">
 
-  return (
-    <section>
-      <Container className="cladcut-problems-section py-5">
-        
-        {/* TITLE */}
-        <h2 className="text-center mb-5" style={{ fontWeight: 700 }}>
-          {cladcut(lang).sections.PROBLEMS.title}
-        </h2>
+                    <div className="col-lg-10 position-relative !z-10 ">
+                        {/* <Line /> */}
+                        <div className="row g-4 align-items-center">
+                            <div className="col-md-6">
+                                <Item title={data.slice1.ProblemTitle} text={data.slice1.Problem} isProblem />
+                            </div>
+                            <div className="col-md-6">
+                                <Item text={data.slice1.Solution} isProblem={false} />
+                            </div>
+                        </div>
+                    </div>
 
-        <div className="row justify-content-center">
-          <div className="col-lg-12">
-            
-            <div className="row g-5">
-              {problemsData.map((item, index) => (
-                
-                <div
-                  key={index}
-                  className="relative row g-4 align-items-center isolate"
-                >
-                  
-                  {/* LINE */}
-                  <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 !w-[50px] h-[2px] bg-gray-300 z-0"></div>
+                    <div className="col-lg-10 position-relative !z-10 ">
+                        {/* <Line /> */}
+                        <div className="row g-4 align-items-center">
+                            <div className="border rounded bg-white p-3 d-flex flex-column gap-4">
 
-                  {/* PROBLEM */}
-                  {renderItem(item.Problem, "problem")}
 
-                  {/* SOLUTION */}
-                  {renderItem(item.Solution, "solution")}
+                                <div className="row g-4 align-items-center">
+                                    <div className="col-md-6">
+                                        <Item title={data.slice2.ProblemTitle1} text={data.slice2.Problem1} isProblem noBorder />
+                                    </div>
+                                    <div className="col-md-6">
+                                        <Item text={data.slice2.Solution1 || data.slice2.Solut1ion} isProblem={false} noBorder />
+                                    </div>
+                                </div>
+
+                                <div className="row g-4 align-items-center">
+                                    <div className="col-md-6">
+                                        <Item title={data.slice2.ProblemTitle2} text={data.slice2.Problem2} isProblem noBorder />
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div className="col-lg-10 position-relative !z-10 isolate">
+                        {/* <Line /> */}
+                        <div className="row g-4 align-items-center">
+                            <div className="col-md-6">
+                                <Item title={data.slice3.ProblemTitle} text={data.slice3.Problem} isProblem />
+                            </div>
+                            <div className="col-md-6">
+                                <Item text={data.slice3.Solution} isProblem={false} />
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-
-              ))}
-            </div>
-
-          </div>
-        </div>
-
-      </Container>
-    </section>
-  );
+            </Container>
+        </section>
+    );
 }

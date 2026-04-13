@@ -222,15 +222,20 @@
   ],
   "CLADCUT_PAGE_PROBLEMS_TITLE": "Is your team still losing valuable engineering time on manual drafting?",
   "CLADCUT_PAGE_PROBLEMS_SLICE1": {
-    "Problem": "Resource Drain: Long hours spent preparing fabrication drawings",
+    "ProblemTitle": "Resource Drain:",
+    "Problem": " Long hours spent preparing fabrication drawings",
     "Solution": "Engineering-Level Accuracy: Automated, clash-free unfolding with zero human error"
   },
   "CLADCUT_PAGE_PROBLEMS_SLICE2": {
-    "Problem": "finantial Losses: Errors in unfolding leading to material and man power waste",
-    "Solution": "Faster Turnaround: Generate production files within minutes Optimized Material Usage: Smart cutting layouts that reduce waste and increase margins"
+    "ProblemTitle1": "resources Losses:",
+    "Problem1": "Errors in unfolding leading to material waste",
+    "Solut1ion": "Faster Turnaround: Generate production files within minutes Optimized Material Usage: Smart cutting layouts that reduce waste and increase margins",
+    "ProblemTitle2": "Project Delays mitigation:",
+    "Problem2": "eliminates the technical office bottlenecks which slows down production"
   },
   "CLADCUT_PAGE_PROBLEMS_SLICE3": {
-    "Problem": "Project Delays mitigation: eliminates the technical office bottlenecks which slows down production",
+    "ProblemTitle": "Project Delays mitigation:",
+    "Problem": "eliminates the technical office bottlenecks which slows down production",
     "Solution": "Optimized Material Usage: Smart cutting optimization that reduce waste and increase margins"
   },
   "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_TITLE": "A Simplified Workflow for Engineering Teams ",
@@ -258,7 +263,27 @@
     "title": "Project Engineer",
     "slogan": "CladCut has saved us so much time and effort. It's a great tool for our engineering team."
   },
+
   "CLADCUT_PAGE_TESTIMONIALS_CTA": "JOIN 100+ COMPANIES – START FREE TRIAL",
+  "CLADCUT_PAGE_FAQS_TITLE": "Frequently Asked Questions",
+  "CLADCUT_PAGE_FAQS_SLICE": [
+    {
+      "question": "What is CladCut?",
+      "answer": "CladCut is a software that helps you create fabrication drawings for cladding projects."
+    },
+    {
+      "question": "What is CladCut?",
+      "answer": "CladCut is a software that helps you create fabrication drawings for cladding projects."
+    },
+    {
+      "question": "What is CladCut?",
+      "answer": "CladCut is a software that helps you create fabrication drawings for cladding projects."
+    },
+    {
+      "question": "What is CladCut?",
+      "answer": "CladCut is a software that helps you create fabrication drawings for cladding projects."
+    }
+  ],
   "WINDMASTER_PAGE_TRY_BTN": "Try For Free",
   "WINDMASTER_PAGE_PRICING_BTN": "Pricing",
   "WINDMASTER_PAGE_CARDS_TITLE_1": "Accuracy And Precision.",

@@ -10,19 +10,21 @@ import Section_2 from "@/pages_sups/Products/Clad/Clad/Section_2";
 import Problems from "@/pages_sups/Products/Clad/Clad/Problems";
 import SimplifiedWorkflow from "@/pages_sups/Products/Clad/Clad/SimplifiedWorkflow";
 import Testimonials from "@/pages_sups/Products/Clad/Clad/Testimonials";
+import FAQs from "@/pages_sups/Products/Clad/Clad/FAQs";
 
 export default function Page() {
   return (
     <div className="facade_page cladcut">
       <Bannar />
-      <Section_2 />
       <Problems />
       <SimplifiedWorkflow />
+      <Section_2 />
       <Testimonials />
       {/* <Head head={""} body={""} /> */}
       {/* <Section_1 /> */}
       {/* <Head_2 /> */}
       {/* <Section_4 /> */}
+      <FAQs />
       <Section_3 />
     </div>
   );

@@ -12,7 +12,7 @@ export default function Bannar() {
   return (
     <section className="cladCut-bannar">
       <div className="products2">
-        <div className="load-speed-section py-5 pt-160 pb-160 lg-pt-100 lg-pb-80 mil-top-space clad-background">
+        <div className="load-speed-section   pt-160  lg-pt-100 lg-pb-80 mil-top-space clad-background">
           <div className="container relative" style={{ zIndex: "3" }} dir={dir}>
             <div className="row align-items-center justify-between">
               <div
@@ -58,15 +58,16 @@ export default function Bannar() {
                 </div>
               </div>
 
+
               <div className="col-lg-12" style={{ marginTop: "40px" }}>
                 <div className="block-container position-relative ps-sm-3 pe-sm-3 ps-xl-5 pe-xl-5 md-mt-40">
                   <div className="row gx-xxl-5 align-items-center">
 
-                    <div className=" d-flex gap-4 align-items-center justify-content-between mb-40 xs-mb-20">
+                    <div className=" d-flex gap-4 align-items-center justify-content-between mt-5  xs-mb-20">
                       <div className="rating font-recoleta">
                         <h2 className="mil-accent mil-mb-10">
                           <span
-                            className="mil-counter clad-text-color fw-bold"
+                            className="mil-counter clad-text-color fw-bold text-5xl"
                             data-number="99"
                           >
                             100+
@@ -78,7 +79,7 @@ export default function Bannar() {
                       <div className="rating font-recoleta">
                         <h2 className="mil-accent mil-mb-10">
                           <span
-                            className="mil-counter clad-text-color fw-bold"
+                            className="mil-counter clad-text-color fw-bold text-5xl"
                             data-number="346"
                           >
                             190K+
@@ -89,7 +90,7 @@ export default function Bannar() {
                       <div className="">
                         <h2 className="mil-accent mil-mb-10">
                           <span
-                            className="mil-counter clad-text-color fw-bold"
+                            className="mil-counter clad-text-color fw-bold text-5xl"
                             data-number="9"
                           >
                             18K+
