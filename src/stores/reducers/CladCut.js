@@ -34,6 +34,7 @@ const initialState = {
         Quick_start: {
           title: t("CLADCUT_PAGE_QUICK_START_TITLE", lang),
           slogan: t("CLADCUT_PAGE_QUICK_START_SLOGAN", lang),
+          cta: t("CLADCUT_PAGE_QUICK_START_CTA", lang),
         },
         Head_NOTE_1: {
           title: t("CLADCUT_PAGE_HEAD_NOTE_1_TITLE", lang),
@@ -84,6 +85,34 @@ const initialState = {
           slice1: t("CLADCUT_PAGE_PROBLEMS_SLICE1", lang),
           slice2: t("CLADCUT_PAGE_PROBLEMS_SLICE2", lang),
           slice3: t("CLADCUT_PAGE_PROBLEMS_SLICE3", lang),
+        },
+        SIMPLIFIED_WORKFLOW: {
+          title: t("CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_TITLE", lang),
+          step1: t("CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_TITLE", lang),
+          step1_slogan: t(
+            "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_SLOGAN",
+            lang,
+          ),
+          step2: t("CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_TITLE", lang),
+          step2_slogan: t(
+            "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_SLOGAN",
+            lang,
+          ),
+          step3: t("CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_TITLE", lang),
+          step3_slogan: t(
+            "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_SLOGAN",
+            lang,
+          ),
+        },
+        TESTIMONIALS: {
+          title: t("CLADCUT_PAGE_TESTIMONIALS_TITLE", lang),
+          subtitle: t("CLADCUT_PAGE_TESTIMONIALS_SUBTITLE", lang),
+          cta: t("CLADCUT_PAGE_TESTIMONIALS_CTA", lang),
+          items: [
+            t("CLADCUT_PAGE_TESTIMONIALS_SLICE_1", lang),
+            t("CLADCUT_PAGE_TESTIMONIALS_SLICE_2", lang),
+            t("CLADCUT_PAGE_TESTIMONIALS_SLICE_3", lang),
+          ],
         },
       },
     };

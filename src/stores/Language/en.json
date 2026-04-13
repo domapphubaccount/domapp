@@ -182,8 +182,9 @@
     "produced": "sqm of Cladding Produced",
     "houres": "Working Hours Saved"
   },
-  "CLADCUT_PAGE_QUICK_START_TITLE": "Quick Start",
-  "CLADCUT_PAGE_QUICK_START_SLOGAN": "Don't forget to watch our quick start tutorial.",
+  "CLADCUT_PAGE_QUICK_START_TITLE": "See How Cladding Production Gets Done in Minutes",
+  "CLADCUT_PAGE_QUICK_START_SLOGAN": "Transform manual processes into a streamlined digital workflow and reduce execution time from days to minutes.",
+  "CLADCUT_PAGE_QUICK_START_CTA": "START YOUR FREE TRIAL",
   "CLADCUT_PAGE_HEAD_NOTE_1_TITLE": "Unleash the Speed of Aluminum Cladding Fabrication with CladCut",
   "CLADCUT_PAGE_HEAD_NOTE_1_SLOGAN": "Generate fabrication drawings and CNC files in minutes, not days.",
   "CLADCUT_PAGE_WORK_FLOW_TITLE": "Effortless Workflow",
@@ -232,7 +233,32 @@
     "Problem": "Project Delays mitigation: eliminates the technical office bottlenecks which slows down production",
     "Solution": "Optimized Material Usage: Smart cutting optimization that reduce waste and increase margins"
   },
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_TITLE": "A Simplified Workflow for Engineering Teams ",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_TITLE": " Upload Your Project Files.",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_SLOGAN": "Import your cladding setting out in DXF format.",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_TITLE": "Define Specifications.",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_SLOGAN": "select row materials and profiles based on your project requirements.",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_TITLE": "Process & Export",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_SLOGAN": "Sit back and let CladCut handle the rest.",
+  "CLADCUT_PAGE_TESTIMONIALS_TITLE": "Trusted by Leading Engineering Firms & Manufacturers",
+  "CLADCUT_PAGE_TESTIMONIALS_SUBTITLE": "Real results from companies that improved efficiency and scaled their operations with CladCut",
 
+  "CLADCUT_PAGE_TESTIMONIALS_SLICE_1": {
+    "name": "John Doe",
+    "title": "Project Engineer",
+    "slogan": "CladCut has saved us so much time and effort. It's a great tool for our engineering team."
+  },
+  "CLADCUT_PAGE_TESTIMONIALS_SLICE_2": {
+    "name": "Jane Doe",
+    "title": "Project Engineer",
+    "slogan": "CladCut has saved us so much time and effort. It's a great tool for our engineering team."
+  },
+  "CLADCUT_PAGE_TESTIMONIALS_SLICE_3": {
+    "name": "John Doe",
+    "title": "Project Engineer",
+    "slogan": "CladCut has saved us so much time and effort. It's a great tool for our engineering team."
+  },
+  "CLADCUT_PAGE_TESTIMONIALS_CTA": "JOIN 100+ COMPANIES – START FREE TRIAL",
   "WINDMASTER_PAGE_TRY_BTN": "Try For Free",
   "WINDMASTER_PAGE_PRICING_BTN": "Pricing",
   "WINDMASTER_PAGE_CARDS_TITLE_1": "Accuracy And Precision.",

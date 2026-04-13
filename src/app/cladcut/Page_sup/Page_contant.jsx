@@ -8,6 +8,8 @@ import Section_4 from "../../../pages_sups/Products/Clad/Clad/Section_4";
 import Head_2 from "@/pages_sups/Products/Clad/Clad/Head_2";
 import Section_2 from "@/pages_sups/Products/Clad/Clad/Section_2";
 import Problems from "@/pages_sups/Products/Clad/Clad/Problems";
+import SimplifiedWorkflow from "@/pages_sups/Products/Clad/Clad/SimplifiedWorkflow";
+import Testimonials from "@/pages_sups/Products/Clad/Clad/Testimonials";
 
 export default function Page() {
   return (
@@ -15,8 +17,10 @@ export default function Page() {
       <Bannar />
       <Section_2 />
       <Problems />
-      <Head head={""} body={""} />
-      <Section_1 />
+      <SimplifiedWorkflow />
+      <Testimonials />
+      {/* <Head head={""} body={""} /> */}
+      {/* <Section_1 /> */}
       {/* <Head_2 /> */}
       {/* <Section_4 /> */}
       <Section_3 />
