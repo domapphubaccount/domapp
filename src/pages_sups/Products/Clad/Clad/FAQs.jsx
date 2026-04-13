@@ -17,9 +17,15 @@ export default function FAQs() {
         <div className="container py-5">
 
             {/* TITLE */}
-            <h2 className="text-center mb-5 fw-bold">
+            <h2 className="text-center mb-3 fw-bold">
                 {cladcut(lang).sections.FAQs.title}
             </h2>
+            <div className="d-flex justify-content-center mb-4">
+                <button className="btn btn-default">
+                    {cladcut(lang).sections.FAQs.action}
+                </button>
+            </div>
+
 
             {/* ACCORDION */}
             <div>

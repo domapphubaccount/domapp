@@ -20,7 +20,7 @@ export default function Bannar() {
                 style={{ visibility: "visible", animationName: "fadeInLeft" }}
               >
                 <div className="ln-title-one my-5">
-                  <h2 className="title fw-500 tx-dark">
+                  <h2 className="title fw-500 tx-dark uppercase">
                     <Image
                       width={300}
                       height={100}
@@ -34,11 +34,11 @@ export default function Bannar() {
                   </h2>
                 </div>
                 <div className="slogan my-5 fw-bold">
-                  <h1>{cladcut(lang).sections.bannar.slogan.first}</h1>
-                  <p>{cladcut(lang).sections.bannar.slogan.end}</p>
+                  <h1 className="capitalize">{cladcut(lang).sections.bannar.slogan.first}</h1>
+                  <p className="capitalize">{cladcut(lang).sections.bannar.slogan.end}</p>
                 </div>
 
-                <div className="flex">
+                <div className="flex flex-column gap-2">
                   <a style={{ textDecoration: "none" }} href={cladcut_site}>
                     <button className="try-button">
                       {cladcut(lang).sections.bannar.try_btn}
@@ -47,6 +47,7 @@ export default function Bannar() {
                       </div>
                     </button>
                   </a>
+                  <p className="capitalize">{cladcut(lang).sections.bannar.try_btn_microcopy}</p>
                   {/* <a
                     style={{ textDecoration: "none" }}
                     href={`${cladcut_site}pricing/`}
@@ -60,7 +61,7 @@ export default function Bannar() {
 
 
               <div className="col-lg-12" style={{ marginTop: "40px" }}>
-                <div className="block-container position-relative ps-sm-3 pe-sm-3 ps-xl-5 pe-xl-5 md-mt-40">
+                <div className="block-container position-relative ps-sm-3 pe-sm-3 ps-xl-5 pe-xl-5 md-mt-40 capitalize">
                   <div className="row gx-xxl-5 align-items-center">
 
                     <div className=" d-flex gap-4 align-items-center justify-content-between mt-5  xs-mb-20">

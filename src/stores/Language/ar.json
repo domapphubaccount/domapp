@@ -178,16 +178,19 @@
     "first": "تمیز من خلال أتمتة إنتاج رسومات التصنیع التفصیلیة بسرعة وكفاءة استثنائیتین",
     "end": "حل فرید من نوعھ یحول تصمیمات الكلادنج المعقدة إلى رسومات دقیقة وجاھزة للتصنیع - بدون أي أخطاء تشغیلیة."
   },
-  "CLADCUT_PAGE_TRY_BTN": "جرب الاّن مجانا",
+  "CLADCUT_PAGE_TRY_BTN": "ابدأ تجربتك المجانیة الآن",
+  "CLADCUT_PAGE_TRY_BTN_MICROCOPY": "*بدون بطاقة بنكیة",
   "CLADCUT_PAGE_PRICING_BTN": "الأسعار",
   "CLADCUT_PAGE_BANNAR_SLICE": {
     "users": "أكثر من 100 ألف مستخدم نشط",
     "produced": "تم تنفیذ أكثر من 190 الف متر كلادنج",
     "houres": "توفیر أكثر من 18 ألف ساعة عمل"
   },
-  "CLADCUT_PAGE_QUICK_START_TITLE": "ملخص سريع",
-  "CLADCUT_PAGE_QUICK_START_SLOGAN": "لا تفوت مشاهدة العرض التوضيحي لبدء الإستخدام السريع.",
+  "CLADCUT_PAGE_QUICK_START_TITLE": "تسریع عملیات التصنیع و تقلیل التعقید",
+  "CLADCUT_PAGE_QUICK_START_SLOGAN": "الانتقال من العملیات الیدویة الیدویة إلى نظام رقمي (مؤتمت ) متكامل، و تقلیص وقت التنفیذ",
   "CLADCUT_PAGE_HEAD_NOTE_1_TITLE": "سرعة تصنيع ألواح الألومنيوم باستخدام CladCut",
+  "CLADCUT_PAGE_QUICK_START_CTA": "اختبر النظام بنفسك – ابدأ التجربة المجانیة",
+
   "CLADCUT_PAGE_HEAD_NOTE_1_SLOGAN": "قم بإنشاء رسومات التصنيع وملفات CNC في دقائق بدلاً من أيام.",
   "CLADCUT_PAGE_WORK_FLOW_TITLE": "انسيابية في العمل دون عناء",
   "CLADCUT_PAGE_WORK_FLOW_SLICE": [
@@ -221,6 +224,72 @@
     "وضع زوايا التثبيت على النحو الأمثل, وتجنب التداخل.",
     "إنشاء الأبعاد تلقائيا للحصول على أرقام واضحة."
   ],
+  "CLADCUT_PAGE_PROBLEMS_TITLE": "ھل ما زال فریقك یھدر وقت في الرسم الیدوي بینما یمكن أن یقضي ذات الوقت في حل المشاكل الھندسیة؟",
+  "CLADCUT_PAGE_PROBLEMS_SLICE1": {
+    "ProblemTitle": "استنزاف في الموارد",
+    "Problem": "استھلاك ساعات عمل طویلة في اعداد الرسومات الفنیة",
+    "Solution": "تلقائي بدون تعارض أو أخطاء Unfold دقة ھندسیة عالیة: إخراج"
+  },
+  "CLADCUT_PAGE_PROBLEMS_SLICE2": {
+    "ProblemTitle1": "خسائر في الموارد :",
+    "Problem1": " بسبب أخطاء في لوحات الافراد مما یؤدي الى خسائر في المواد (الخامات)",
+    "Solut1ion": "خلال دقائق CNC و DXF و PDF تسریع دورة العمل: إنشاء ملفات",
+    "ProblemTitle2": "خسائر مادیة",
+    "Problem2": "بسبب أخطاء في لوحات الافراد مما یؤدي الى خسائر في المواد (الخامات) و خسائر في القوة العاملة"
+  },
+  "CLADCUT_PAGE_PROBLEMS_SLICE3": {
+    "ProblemTitle": "تجنب تأخیر المشاریع",
+    "Problem": "تجنب التأخیرات من جانب المكتب الفني مما یتسبب في تأخیر الانتاج",
+    "Solution": "تحسین استھلاك المواد: توزیع قص ذكي یقلل الفاقد ویرفع الربحیة"
+  },
+
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_TITLE": "آلیة عمل مبسطة لفرق العمل الھندسیة ",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_TITLE": " رفع ملفات المشروع.",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_SLOGAN": "بسھولة DXF استیراد مخططات الكلادینج بصیغة",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_TITLE": "تحدید المواصفات.",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_SLOGAN": "اختیار المواد الخام و القطاعات المستخدمة في المشروع.",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_TITLE": "التنفیذ والتصدیر",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_SLOGAN": "بشكل فوري (PDF / DXF / CNC (إخراج ملفات التصنیع",
+  "CLADCUT_PAGE_TESTIMONIALS_TITLE": "معتمد من شركات ومكاتب ھندسیة رائدة",
+  "CLADCUT_PAGE_TESTIMONIALS_SUBTITLE": "CladCut تجارب حقیقیة لشركات ح ّسنت كفاءة التشغیل ورفعت إنتاجیتھا باستخدام",
+
+  "CLADCUT_PAGE_TESTIMONIALS_SLICE_1": {
+    "name": "محمد عبد الله",
+    "title": "مدیر المشروع",
+    "slogan": "CladCut حفظ لنا وقت وجهد كبیر. یعتبر أداة رائعة لفريق العمل الھندسی."
+  },
+  "CLADCUT_PAGE_TESTIMONIALS_SLICE_2": {
+    "name": "عبد الله عبد الله",
+    "title": "مدیر المشروع",
+    "slogan": "CladCut حفظ لنا وقت وجهد كبیر. یعتبر أداة رائعة لفريق العمل الھندسی."
+  },
+  "CLADCUT_PAGE_TESTIMONIALS_SLICE_3": {
+    "name": "محمد عبد الله",
+    "title": "مدیر المشروع",
+    "slogan": "CladCut حفظ لنا وقت وجهد كبیر. یعتبر أداة رائعة لفريق العمل الھندسی."
+  },
+  "CLADCUT_PAGE_FAQS_TITLE": "تسعیر مرن تدعم نمو أعمالك",
+  "CLADCUT_PAGE_FAQS_ACTION": "اختر خطتك وابدأ الآن",
+  "CLADCUT_PAGE_FAQS_SLICE": [
+    {
+      "question": "كم عدد المستخدمين النشطين؟",
+      "answer": "نحن ندعم أكثر من 100 ألف مستخدم نشط."
+    },
+    {
+      "question": "كم عدد المستخدمين النشطين؟",
+      "answer": "نحن ندعم أكثر من 100 ألف مستخدم نشط."
+    },
+    {
+      "question": "كم عدد المستخدمين النشطين؟",
+      "answer": "نحن ندعم أكثر من 100 ألف مستخدم نشط."
+    },
+    {
+      "question": "كم عدد المستخدمين النشطين؟",
+      "answer": "نحن ندعم أكثر من 100 ألف مستخدم نشط."
+    }
+  ],
+
+  "CLADCUT_PAGE_TESTIMONIALS_CTA": "انضم لمئات الشركات الشركات اللتي أتمتت انتاجھا – ابدأ مجانًا",
   "WINDMASTER_PAGE_TRY_BTN": "جربه الاّن مجانا",
   "WINDMASTER_PAGE_PRICING_BTN": "الأسعار",
   "WINDMASTER_PAGE_CARDS_TITLE_1": "الدقة والكفاءة.",

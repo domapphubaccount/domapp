@@ -28,6 +28,7 @@ const initialState = {
         bannar: {
           slogan: t("CLADCUT_PAGE_BANNAR_SLOGAN", lang),
           try_btn: t("CLADCUT_PAGE_TRY_BTN", lang),
+          try_btn_microcopy: t("CLADCUT_PAGE_TRY_BTN_MICROCOPY", lang),
           pricing_btn: t("CLADCUT_PAGE_PRICING_BTN", lang),
           slice: t("CLADCUT_PAGE_BANNAR_SLICE", lang),
         },
@@ -121,6 +122,7 @@ const initialState = {
         },
         FAQs: {
           title: t("CLADCUT_PAGE_FAQS_TITLE", lang),
+          action: t("CLADCUT_PAGE_FAQS_ACTION", lang),
           items: t("CLADCUT_PAGE_FAQS_SLICE", lang),
         },
       },
