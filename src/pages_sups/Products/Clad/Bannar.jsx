@@ -16,7 +16,7 @@ export default function Bannar() {
           <div className="container relative" style={{ zIndex: "3" }} dir={dir}>
             <div className="row align-items-center justify-between">
               <div
-                className="col-xxl-5 col-lg-6 wow fadeInLeft"
+                className=""
                 style={{ visibility: "visible", animationName: "fadeInLeft" }}
               >
                 <div className="ln-title-one my-5">
@@ -34,7 +34,7 @@ export default function Bannar() {
                   </h2>
                 </div>
                 <div className="slogan my-5 fw-bold">
-                  <p>{cladcut(lang).sections.bannar.slogan.first}</p>
+                  <h1>{cladcut(lang).sections.bannar.slogan.first}</h1>
                   <p>{cladcut(lang).sections.bannar.slogan.end}</p>
                 </div>
 
@@ -47,94 +47,60 @@ export default function Bannar() {
                       </div>
                     </button>
                   </a>
-                  <a
+                  {/* <a
                     style={{ textDecoration: "none" }}
                     href={`${cladcut_site}pricing/`}
                   >
                     <button className="try-button mx-3">
                       {cladcut(lang).sections.bannar.pricing_btn}
                     </button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
 
-              <div className="col-lg-6" style={{ marginTop: "40px" }}>
+              <div className="col-lg-12" style={{ marginTop: "40px" }}>
                 <div className="block-container position-relative ps-sm-3 pe-sm-3 ps-xl-5 pe-xl-5 md-mt-40">
                   <div className="row gx-xxl-5 align-items-center">
-                    <div
-                      className="col-sm-6 wow fadeInRight cladcard"
-                      style={{
-                        visibility: "visible",
-                        animationName: "fadeInRight",
-                      }}
-                    >
-                      <div className="block-wrapper d-flex flex-column align-items-center justify-content-center mb-40 xs-mb-20">
-                        <div className="rating font-recoleta">
-                          <h4 className="mil-accent mil-mb-10">
-                            <span
-                              className="mil-counter clad-text-color fw-bold"
-                              data-number="99"
-                            >
-                              100+
-                            </span>
-                          </h4>
-                          <p>{cladcut(lang).sections.bannar.slice.users}</p>
-                        </div>
-                        <ul className="style-none p-0 d-flex align-items-center justify-content-center rating-star mt-15">
-                          <li>
-                            <i className="bi bi-star-fill"></i>
-                          </li>
-                          <li>
-                            <i className="bi bi-star-fill"></i>
-                          </li>
-                          <li>
-                            <i className="bi bi-star-fill"></i>
-                          </li>
-                          <li>
-                            <i className="bi bi-star-fill"></i>
-                          </li>
-                          <li>
-                            <i className="bi bi-star-fill"></i>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div
-                      className="col-sm-6 wow fadeInLeft cladcard "
-                      style={{
-                        visibility: "visible",
-                        animationName: "fadeInLeft",
-                      }}
-                    >
-                      <div className="block-wrapper d-flex flex-column align-items-center justify-content-center xs-mb-20">
-                        <div className="rating font-recoleta">
-                          <h4 className="mil-accent mil-mb-10">
-                            <span
-                              className="mil-counter clad-text-color fw-bold"
-                              data-number="346"
-                            >
-                              190K+
-                            </span>
-                          </h4>
-                          <p>{cladcut(lang).sections.bannar.slice.produced}</p>
-                        </div>
+
+                    <div className=" d-flex gap-4 align-items-center justify-content-between mb-40 xs-mb-20">
+                      <div className="rating font-recoleta">
+                        <h2 className="mil-accent mil-mb-10">
+                          <span
+                            className="mil-counter clad-text-color fw-bold"
+                            data-number="99"
+                          >
+                            100+
+                          </span>
+                        </h2>
+                        <p className="">{cladcut(lang).sections.bannar.slice.users}</p>
                       </div>
 
-                      <div className="block-wrapper mt-4 d-flex flex-column align-items-center justify-content-center mb-40 xs-mb-20">
-                        <div className="rating font-recoleta">
-                          <h4 className="mil-accent mil-mb-10">
-                            <span
-                              className="mil-counter clad-text-color fw-bold"
-                              data-number="9"
-                            >
-                              18K+
-                            </span>
-                          </h4>
-                          <p>{cladcut(lang).sections.bannar.slice.houres}</p>
-                        </div>
+                      <div className="rating font-recoleta">
+                        <h2 className="mil-accent mil-mb-10">
+                          <span
+                            className="mil-counter clad-text-color fw-bold"
+                            data-number="346"
+                          >
+                            190K+
+                          </span>
+                        </h2>
+                        <p>{cladcut(lang).sections.bannar.slice.produced}</p>
+                      </div>
+                      <div className="">
+                        <h2 className="mil-accent mil-mb-10">
+                          <span
+                            className="mil-counter clad-text-color fw-bold"
+                            data-number="9"
+                          >
+                            18K+
+                          </span>
+                        </h2>
+                        <p>{cladcut(lang).sections.bannar.slice.houres}</p>
                       </div>
                     </div>
                   </div>
+
+
                   {/* <Shape1 className="shapes shape-one" /> */}
                 </div>
               </div>

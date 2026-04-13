@@ -175,15 +175,15 @@
   "CONTACT_PAGE_FORM_MESSAGE": "محتوى الرسالة",
   "CONTACT_PAGE_FORM_SEND": "إرسال",
   "CLADCUT_PAGE_BANNAR_SLOGAN": {
-    "first": " تصميم لوحات التصنيع التفصيلية ",
-    "end": "بسرعة وكفاءة إستثنائية . "
+    "first": "تمیز من خلال أتمتة إنتاج رسومات التصنیع التفصیلیة بسرعة وكفاءة استثنائیتین",
+    "end": "حل فرید من نوعھ یحول تصمیمات الكلادنج المعقدة إلى رسومات دقیقة وجاھزة للتصنیع - بدون أي أخطاء تشغیلیة."
   },
   "CLADCUT_PAGE_TRY_BTN": "جرب الاّن مجانا",
   "CLADCUT_PAGE_PRICING_BTN": "الأسعار",
   "CLADCUT_PAGE_BANNAR_SLICE": {
-    "users": "مستخدم",
-    "produced": "متر مربع من ألواح الكلادينج تم تصميمه وتصنيعه",
-    "houres": "إجمالي ساعات العمل المخفضة"
+    "users": "أكثر من 100 ألف مستخدم نشط",
+    "produced": "تم تنفیذ أكثر من 190 الف متر كلادنج",
+    "houres": "توفیر أكثر من 18 ألف ساعة عمل"
   },
   "CLADCUT_PAGE_QUICK_START_TITLE": "ملخص سريع",
   "CLADCUT_PAGE_QUICK_START_SLOGAN": "لا تفوت مشاهدة العرض التوضيحي لبدء الإستخدام السريع.",
@@ -1555,7 +1555,7 @@
     ]
   },
 
- "BOUNDIFYCRM_CREATE_ACCOUNT": {
+  "BOUNDIFYCRM_CREATE_ACCOUNT": {
     "title": "أنشئ حسابك",
     "subtitle": "قم بإنجاز مهامك بكفاءة وسهولة.",
     "full_name_label": "الاسم الكامل",

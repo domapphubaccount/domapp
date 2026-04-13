@@ -15,7 +15,7 @@ import de from "@/stores/Language/de.json";
 import es from "@/stores/Language/es.json";
 import nl from "@/stores/Language/nl.json";
 
-const translations = { en, ar , de , es , nl };
+const translations = { en, ar, de, es, nl };
 
 const t = (key, lang) => translations[lang]?.[key] || key;
 
@@ -78,6 +78,12 @@ const initialState = {
         CLAD_FOOTER: {
           title: t("CLADCUT_PAGE_FOOTER_TITLE", lang),
           slice: t("CLADCUT_PAGE_FOOTER_SLICE", lang),
+        },
+        PROBLEMS: {
+          title: t("CLADCUT_PAGE_PROBLEMS_TITLE", lang),
+          slice1: t("CLADCUT_PAGE_PROBLEMS_SLICE1", lang),
+          slice2: t("CLADCUT_PAGE_PROBLEMS_SLICE2", lang),
+          slice3: t("CLADCUT_PAGE_PROBLEMS_SLICE3", lang),
         },
       },
     };

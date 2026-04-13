@@ -172,15 +172,15 @@
   "CONTACT_PAGE_FORM_MESSAGE": "Message",
   "CONTACT_PAGE_FORM_SEND": "Send",
   "CLADCUT_PAGE_BANNAR_SLOGAN": {
-    "first": "Produce detailed fabrication drawings with ",
-    "end": " exceptional speed and efficiency."
+    "first": "automate the production of detailed fabrication drawings with exceptional speed and efficiency",
+    "end": " A technology-driven solution that transforms complex cladding designs into precise, fabrication-ready drawings — with zero operational errors"
   },
-  "CLADCUT_PAGE_TRY_BTN": "TRY FOR FREE",
+  "CLADCUT_PAGE_TRY_BTN": "START YOUR FREE TRIAL",
   "CLADCUT_PAGE_PRICING_BTN": "PRICING",
   "CLADCUT_PAGE_BANNAR_SLICE": {
-    "users": "Users",
-    "produced": "square meter of Cladding produced",
-    "houres": "Reduced Working Hours"
+    "users": "Companies Using the System",
+    "produced": "sqm of Cladding Produced",
+    "houres": "Working Hours Saved"
   },
   "CLADCUT_PAGE_QUICK_START_TITLE": "Quick Start",
   "CLADCUT_PAGE_QUICK_START_SLOGAN": "Don't forget to watch our quick start tutorial.",
@@ -219,6 +219,20 @@
     "Automatically generates dimensions for clear reference.",
     "Exports fabrication-ready files: PDF, DXF, and CNC formats for each panel."
   ],
+  "CLADCUT_PAGE_PROBLEMS_TITLE": "Is your team still losing valuable engineering time on manual drafting?",
+  "CLADCUT_PAGE_PROBLEMS_SLICE1": {
+    "Problem": "Resource Drain: Long hours spent preparing fabrication drawings",
+    "Solution": "Engineering-Level Accuracy: Automated, clash-free unfolding with zero human error"
+  },
+  "CLADCUT_PAGE_PROBLEMS_SLICE2": {
+    "Problem": "finantial Losses: Errors in unfolding leading to material and man power waste",
+    "Solution": "Faster Turnaround: Generate production files within minutes Optimized Material Usage: Smart cutting layouts that reduce waste and increase margins"
+  },
+  "CLADCUT_PAGE_PROBLEMS_SLICE3": {
+    "Problem": "Project Delays mitigation: eliminates the technical office bottlenecks which slows down production",
+    "Solution": "Optimized Material Usage: Smart cutting optimization that reduce waste and increase margins"
+  },
+
   "WINDMASTER_PAGE_TRY_BTN": "Try For Free",
   "WINDMASTER_PAGE_PRICING_BTN": "Pricing",
   "WINDMASTER_PAGE_CARDS_TITLE_1": "Accuracy And Precision.",

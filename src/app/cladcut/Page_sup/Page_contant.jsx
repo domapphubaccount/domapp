@@ -7,16 +7,18 @@ import Section_3 from "@/pages_sups/Products/Clad/Clad/Section_3";
 import Section_4 from "../../../pages_sups/Products/Clad/Clad/Section_4";
 import Head_2 from "@/pages_sups/Products/Clad/Clad/Head_2";
 import Section_2 from "@/pages_sups/Products/Clad/Clad/Section_2";
+import Problems from "@/pages_sups/Products/Clad/Clad/Problems";
 
 export default function Page() {
   return (
     <div className="facade_page cladcut">
       <Bannar />
       <Section_2 />
+      <Problems />
       <Head head={""} body={""} />
       <Section_1 />
-      <Head_2 />
-      <Section_4 />
+      {/* <Head_2 /> */}
+      {/* <Section_4 /> */}
       <Section_3 />
     </div>
   );
