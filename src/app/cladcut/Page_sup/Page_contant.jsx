@@ -12,6 +12,7 @@ import SimplifiedWorkflow from "@/pages_sups/Products/Clad/Clad/SimplifiedWorkfl
 import Testimonials from "@/pages_sups/Products/Clad/Clad/Testimonials";
 import FAQs from "@/pages_sups/Products/Clad/Clad/FAQs";
 import CTA from "@/pages_sups/Products/Clad/Clad/CTA";
+import FloatingWhatsApp from "@/pages_sups/Products/Clad/Clad/FloatingWhatsApp";
 
 export default function Page() {
   return (
@@ -26,8 +27,9 @@ export default function Page() {
       {/* <Head_2 /> */}
       {/* <Section_4 /> */}
       <FAQs />
-      <CTA />
       <Section_3 />
+      <CTA />
+      <FloatingWhatsApp />
     </div>
   );
 }

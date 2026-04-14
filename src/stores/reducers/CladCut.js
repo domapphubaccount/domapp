@@ -126,6 +126,7 @@ const initialState = {
           slogan: t("CLADCUT_PAGE_CTA_SLOGAN", lang),
           btn: t("CLADCUT_PAGE_CTA_BTN", lang),
         },
+        WHATSAPP_TOOLTIP: t("CLADCUT_PAGE_WHATSAPP_TOOLTIP", lang),
       },
     };
   },
