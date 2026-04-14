@@ -24,60 +24,109 @@ export default function CreateAccount() {
   const translations = { en, ar };
   const section = translations[lang].BOUNDIFYCRM_CREATE_ACCOUNT;
   const [loading, setLoading] = useState(false);
-useEffect(() => {
-  setLoading(true);
+  // useEffect(() => {
+  //   setLoading(true);
 
-  fetch("https://bondifycrm.com/api/bondify/plans")
-    .then((res) => res.json())
-    .then((result) => {
-      if (result.data) {
-        const options = result.data.flatMap((plan) => [
-          {
-            value: `monthly_${plan.id}`,
-            label: `${plan.name} - $${plan.pricing.monthly}/month`,
-            planId: plan.id,
-            type: "monthly",
-            pricing: plan.pricing.monthly,
-          },
-          {
-            value: `yearly_${plan.id}`,
-            label: `${plan.name} - $${plan.pricing.yearly}/year`,
-            planId: plan.id,
-            type: "yearly",
-            pricing: plan.pricing.yearly,
-          },
-        ]);
+  //   fetch("https://bondifycrm.com/api/bondify/plans")
+  //     .then((res) => res.json())
+  //     .then((result) => {
+  //       if (result.data) {
+  //         const options = result.data.flatMap((plan) => [
+  //           {
+  //             value: `monthly_${plan.id}`,
+  //             label: `${plan.name} - $${plan.pricing.monthly}/month`,
+  //             planId: plan.id,
+  //             type: "monthly",
+  //             pricing: plan.pricing.monthly,
+  //           },
+  //           {
+  //             value: `yearly_${plan.id}`,
+  //             label: `${plan.name} - $${plan.pricing.yearly}/year`,
+  //             planId: plan.id,
+  //             type: "yearly",
+  //             pricing: plan.pricing.yearly,
+  //           },
+  //         ]);
 
-        setPlanOption(options);
+  //         setPlanOption(options);
 
-  
-        if (selectedPlanId && selectedType) {
-          const preselected = options.find(
-            (opt) =>
-              opt.planId === Number(selectedPlanId) &&
-              opt.type === selectedType
-          );
 
-          if (preselected) {
-            setPreselectedPlan(preselected);
-            setLoading(false);
-            return; 
+  //         if (selectedPlanId && selectedType) {
+  //           const preselected = options.find(
+  //             (opt) =>
+  //               opt.planId === Number(selectedPlanId) &&
+  //               opt.type === selectedType
+  //           );
+
+  //           if (preselected) {
+  //             setPreselectedPlan(preselected);
+  //             setLoading(false);
+  //             return;
+  //           }
+  //         }
+
+
+  //         const freePlan = options.find((opt) => opt.pricing === 0);
+  //         if (freePlan) {
+  //           setPreselectedPlan(freePlan);
+  //         }
+  //       }
+
+  //       setLoading(false);
+  //     })
+  //     .catch(() => {
+  //       setLoading(false);
+  //     });
+  // }, []);
+
+  useEffect(() => {
+    setLoading(true);
+
+    fetch("https://bondifycrm.com/api/bondify/plans")
+      .then((res) => res.json())
+      .then((result) => {
+        if (result.data) {
+          const options = result.data.flatMap((plan) => [
+            {
+              value: `monthly_${plan.id}`,
+              label: `${plan.name} - $${plan.pricing.monthly}/month`,
+              planId: plan.id,
+              type: "monthly",
+              pricing: plan.pricing.monthly,
+            },
+            {
+              value: `yearly_${plan.id}`,
+              label: `${plan.name} - $${plan.pricing.yearly}/year`,
+              planId: plan.id,
+              type: "yearly",
+              pricing: plan.pricing.yearly,
+            },
+          ]);
+
+          setPlanOption(options);
+
+          if (selectedPlanId && selectedType) {
+            const preselected = options.find(
+              (opt) =>
+                opt.planId === Number(selectedPlanId) &&
+                opt.type === selectedType
+            );
+
+            if (preselected) {
+              setPreselectedPlan(preselected);
+              setLoading(false);
+              return;
+            }
           }
+
+          const freePlan = options.find((opt) => opt.pricing === 0);
+          if (freePlan) setPreselectedPlan(freePlan);
         }
 
-     
-        const freePlan = options.find((opt) => opt.pricing === 0);
-        if (freePlan) {
-          setPreselectedPlan(freePlan);
-        }
-      }
-
-      setLoading(false);
-    })
-    .catch(() => {
-      setLoading(false);
-    });
-}, []);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, [selectedPlanId, selectedType]);
 
 
   const validationSchema = Yup.object({
@@ -306,11 +355,10 @@ useEffect(() => {
                 <button
                   type="submit"
                   disabled={!values.sign_agree_terms}
-                  className={`w-full text-white font-semibold py-3 rounded-lg mt-6 transition-all ${
-                    values.sign_agree_terms
-                      ? "bg-[#6772e5] hover:bg-[#5a63d8] cursor-pointer"
-                      : "bg-gray-400 cursor-not-allowed"
-                  }`}
+                  className={`w-full text-white font-semibold py-3 rounded-lg mt-6 transition-all ${values.sign_agree_terms
+                    ? "bg-[#6772e5] hover:bg-[#5a63d8] cursor-pointer"
+                    : "bg-gray-400 cursor-not-allowed"
+                    }`}
                 >
                   {section.create_account_button}
                 </button>
