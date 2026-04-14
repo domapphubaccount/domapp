@@ -63,25 +63,19 @@ export default function Problems() {
                 <div className="row g-4 mb-4 align-items-center">
                     <div className="col-md-6">
                         <h2 className="text-center fw-bold capitalize mb-0">
-                            {data.solutions_title}
+                            {data.problems_title}
                         </h2>
                     </div>
                     <div className="col-md-6">
                         <h2 className="text-center fw-bold capitalize mb-0">
-                            {data.problems_title}
+                            {data.solutions_title}
                         </h2>
                     </div>
+
                 </div>
 
                 {problemsData.map((item, index) => (
                     <div key={index} className="row g-3 align-items-stretch mb-3">
-                        <div className="col-md-6">
-                            <Item
-                                title={item.SolutionTitle}
-                                text={item.Solution}
-                                type="solution"
-                            />
-                        </div>
                         <div className="col-md-6">
                             <Item
                                 title={item.ProblemTitle}
@@ -89,6 +83,14 @@ export default function Problems() {
                                 type="problem"
                             />
                         </div>
+                        <div className="col-md-6">
+                            <Item
+                                title={item.SolutionTitle}
+                                text={item.Solution}
+                                type="solution"
+                            />
+                        </div>
+
                     </div>
                 ))}
 
