@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import playIcon from "@/assets/images/Clad/play-button.png";
 import ModalVideo from "react-modal-video";
 import { Col, Row } from "reactstrap";
+import { cladcut_site } from "@/stores/Main/links/links";
+
 
 function Video({ title, body, src, className, bannar, additional, cta }) {
   const [isOpen, setOpen] = useState(false);
@@ -49,7 +51,11 @@ function Video({ title, body, src, className, bannar, additional, cta }) {
                         onClose={() => setOpen(false)}
                       />
                     </div>
-                    {cta && <button className="btn btn-default" onClick={() => setOpen(true)}>{cta}</button>}
+                    {cta &&
+                      <a href={cladcut_site} target="_blank" rel="noopener noreferrer">
+                        <button className="btn btn-default">{cta}</button>
+                      </a>
+                    }
                   </div>
                 </div>
               </div>

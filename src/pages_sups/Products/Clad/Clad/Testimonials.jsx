@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
+import { cladcut_site } from "@/stores/Main/links/links";
 
 export default function Testimonials() {
     const { lang } = useSelector((state) => state.languageSlice);
@@ -81,12 +82,14 @@ export default function Testimonials() {
 
 
                 <div className="text-center mt-5">
-                    <button
-                        className="btn btn-default"
+                    <a style={{ textDecoration: "none" }} href={cladcut_site} target="_blank" rel="noopener noreferrer">
+                        <button
+                            className="btn btn-default  h:text-dark"
 
-                    >
-                        {cladcut(lang).sections.TESTIMONIALS.cta}
-                    </button>
+                        >
+                            {cladcut(lang).sections.TESTIMONIALS.cta}
+                        </button>
+                    </a>
                 </div>
 
 
