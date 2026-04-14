@@ -82,15 +82,11 @@ const initialState = {
           slice: t("CLADCUT_PAGE_FOOTER_SLICE", lang),
         },
         PROBLEMS: {
-          title: t("CLADCUT_PAGE_PROBLEMS_TITLE", lang),
+          problems_title: t("CLADCUT_PAGE_PROBLEMS_TITLE", lang),
+          solutions_title: t("CLADCUT_PAGE_PROBLEMS_SOLUTIONS_TITLE", lang),
           slice1: t("CLADCUT_PAGE_PROBLEMS_SLICE1", lang),
           slice2: t("CLADCUT_PAGE_PROBLEMS_SLICE2", lang),
           slice3: t("CLADCUT_PAGE_PROBLEMS_SLICE3", lang),
-          ProblemTitle1: t("CLADCUT_PAGE_PROBLEMS_SLICE2_ProblemTitle1", lang),
-          Problem1: t("CLADCUT_PAGE_PROBLEMS_SLICE2_Problem1", lang),
-          Solut1ion: t("CLADCUT_PAGE_PROBLEMS_SLICE2_Solut1ion", lang),
-          ProblemTitle2: t("CLADCUT_PAGE_PROBLEMS_SLICE2_ProblemTitle2", lang),
-          Problem2: t("CLADCUT_PAGE_PROBLEMS_SLICE2_Problem2", lang),
         },
         SIMPLIFIED_WORKFLOW: {
           title: t("CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_TITLE", lang),
