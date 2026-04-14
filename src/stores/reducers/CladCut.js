@@ -113,7 +113,6 @@ const initialState = {
           items: [
             t("CLADCUT_PAGE_TESTIMONIALS_SLICE_1", lang),
             t("CLADCUT_PAGE_TESTIMONIALS_SLICE_2", lang),
-            t("CLADCUT_PAGE_TESTIMONIALS_SLICE_3", lang),
           ],
         },
         FAQs: {

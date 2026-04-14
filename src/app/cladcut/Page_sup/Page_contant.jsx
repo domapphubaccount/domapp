@@ -29,7 +29,7 @@ export default function Page() {
       <FAQs />
       <Section_3 />
       <CTA />
-      <FloatingWhatsApp />
+      {/* <FloatingWhatsApp /> */}
     </div>
   );
 }

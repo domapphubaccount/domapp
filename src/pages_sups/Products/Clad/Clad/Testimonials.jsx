@@ -29,7 +29,7 @@ export default function Testimonials() {
                     {testimonials.map((item, index) => (
                         <div
                             key={index}
-                            className="col-xl-4 col-md-6 d-flex align-items-stretch"
+                            className="col-xl-6 col-md-6 d-flex align-items-stretch"
                         >
                             <div className="card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
 
@@ -84,7 +84,8 @@ export default function Testimonials() {
                 <div className="text-center mt-5">
                     <a style={{ textDecoration: "none" }} href={cladcut_site} target="_blank" rel="noopener noreferrer">
                         <button
-                            className="btn btn-default  h:text-dark"
+                            className="btn btn-default  !h:text-black"
+                           
 
                         >
                             {cladcut(lang).sections.TESTIMONIALS.cta}
