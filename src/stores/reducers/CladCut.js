@@ -125,6 +125,11 @@ const initialState = {
           action: t("CLADCUT_PAGE_FAQS_ACTION", lang),
           items: t("CLADCUT_PAGE_FAQS_SLICE", lang),
         },
+        CTA: {
+          title: t("CLADCUT_PAGE_CTA_TITLE", lang),
+          slogan: t("CLADCUT_PAGE_CTA_SLOGAN", lang),
+          btn: t("CLADCUT_PAGE_CTA_BTN", lang),
+        },
       },
     };
   },

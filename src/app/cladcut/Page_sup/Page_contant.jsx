@@ -11,6 +11,7 @@ import Problems from "@/pages_sups/Products/Clad/Clad/Problems";
 import SimplifiedWorkflow from "@/pages_sups/Products/Clad/Clad/SimplifiedWorkflow";
 import Testimonials from "@/pages_sups/Products/Clad/Clad/Testimonials";
 import FAQs from "@/pages_sups/Products/Clad/Clad/FAQs";
+import CTA from "@/pages_sups/Products/Clad/Clad/CTA";
 
 export default function Page() {
   return (
@@ -25,6 +26,7 @@ export default function Page() {
       {/* <Head_2 /> */}
       {/* <Section_4 /> */}
       <FAQs />
+      <CTA />
       <Section_3 />
     </div>
   );
