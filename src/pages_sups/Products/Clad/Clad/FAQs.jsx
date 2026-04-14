@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { Container } from "reactstrap";
 
 export default function FAQs() {
     const { lang } = useSelector((state) => state.languageSlice);
     const { cladcut } = useSelector((state) => state.cladcutRed);
 
     const faqs = cladcut(lang).sections.FAQs.items;
-
+    const isAr = lang === "ar";
     const [activeIndex, setActiveIndex] = useState(0);
 
     const toggleFAQ = (index) => {
@@ -14,14 +15,15 @@ export default function FAQs() {
     };
 
     return (
-        <div className="container py-5">
+        <section dir={isAr ? "rtl" : "ltr"}>
+        <Container className="py-5">
 
             {/* TITLE */}
-            <h2 className="text-center mb-3 fw-bold">
+            <h2 className="text-center mb-3 fw-bold capitalize ">
                 {cladcut(lang).sections.FAQs.title}
             </h2>
             <div className="d-flex justify-content-center mb-4">
-                <button className="btn btn-default">
+                <button className="btn btn-default capitalize ">
                     {cladcut(lang).sections.FAQs.action}
                 </button>
             </div>
@@ -33,7 +35,7 @@ export default function FAQs() {
                 {faqs.map((item, index) => (
                     <div
                         key={index}
-                        className="border rounded mb-3 overflow-hidden"
+                        className="border rounded mb-3 overflow-hidden capitalize "
                     >
 
                         {/* QUESTION */}
@@ -72,6 +74,7 @@ export default function FAQs() {
                 ))}
 
             </div>
-        </div>
+        </Container>
+        </section>
     );
 }
