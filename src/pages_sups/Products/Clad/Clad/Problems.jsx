@@ -21,7 +21,7 @@ export default function Problems() {
 
         return (
             <div
-                className="d-flex align-items-start gap-3 border rounded px-3 py-3 bg-white"
+                className="d-flex align-items-start gap-3 border rounded px-3 py-3 bg-white h-100"
                 style={{
                     direction: isAr ? "rtl" : "ltr",
                     textAlign: isAr ? "right" : "left",
@@ -60,49 +60,37 @@ export default function Problems() {
         <section dir={isAr ? "rtl" : "ltr"}>
             <Container className="py-5">
 
-                {/* GRID */}
-                <div className="row g-5">
-
-                    {/* PROBLEMS COLUMN */}
+                <div className="row g-4 mb-4 align-items-center">
                     <div className="col-md-6">
-
-                        <h2 className="text-center mb-4 fw-bold capitalize ">
-                            {data.problems_title}
-                        </h2>
-
-                        <div className="d-flex flex-column gap-3">
-                            {problemsData.map((item, index) => (
-                                <Item
-                                    key={index}
-                                    title={item.ProblemTitle}
-                                    text={item.Problem}
-                                    type="problem"
-                                />
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* SOLUTIONS COLUMN */}
-                    <div className="col-md-6">
-
-                        <h2 className="text-center mb-4 fw-bold capitalize ">
+                        <h2 className="text-center fw-bold capitalize mb-0">
                             {data.solutions_title}
                         </h2>
-
-                        <div className="d-flex flex-column gap-3">
-                            {problemsData.map((item, index) => (
-                                <Item
-                                    key={index}
-                                    title={item.SolutionTitle}
-                                    text={item.Solution}
-                                    type="solution"
-                                />
-                            ))}
-                        </div>
-
                     </div>
-
+                    <div className="col-md-6">
+                        <h2 className="text-center fw-bold capitalize mb-0">
+                            {data.problems_title}
+                        </h2>
+                    </div>
                 </div>
+
+                {problemsData.map((item, index) => (
+                    <div key={index} className="row g-3 align-items-stretch mb-3">
+                        <div className="col-md-6">
+                            <Item
+                                title={item.SolutionTitle}
+                                text={item.Solution}
+                                type="solution"
+                            />
+                        </div>
+                        <div className="col-md-6">
+                            <Item
+                                title={item.ProblemTitle}
+                                text={item.Problem}
+                                type="problem"
+                            />
+                        </div>
+                    </div>
+                ))}
 
             </Container>
         </section>
