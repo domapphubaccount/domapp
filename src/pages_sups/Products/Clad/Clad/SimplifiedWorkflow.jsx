@@ -8,19 +8,19 @@ export default function SimplifiedWorkflow() {
 
     const data = [
         {
-            img: "/img/cladcut/simplified-step1.png",
+            img: "/images/cladcut/virtual-modeling.gif",
             alt: "Step 1 - Upload Project Files",
             title: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step1,
             slogan: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step1_slogan,
         },
         {
-            img: "/img/cladcut/simplified-step2.png",
+            img: "/images/cladcut/3d-scanning.gif",
             alt: "Step 2 - Define Specifications",
             title: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step2,
             slogan: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step2_slogan,
         },
         {
-            img: "/img/cladcut/simplified-step3.png",
+            img: "/images/cladcut/model.gif",
             alt: "Step 3 - Process & Export",
             title: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step3,
             slogan: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step3_slogan,
@@ -49,8 +49,8 @@ export default function SimplifiedWorkflow() {
                                     alt={step.alt}
                                     className="card-img-top mx-auto d-block p-4"
                                     style={{
-                                        width: "120px",
-                                        height: "120px",
+                                        width: "80%",
+                                        height: "80%",
                                         objectFit: "contain",
                                     }}
                                 />
