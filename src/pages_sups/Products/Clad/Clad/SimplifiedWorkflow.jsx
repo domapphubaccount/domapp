@@ -8,19 +8,19 @@ export default function SimplifiedWorkflow() {
 
     const data = [
         {
-            img: "/images/cladcut/virtual-modeling.gif",
+            img: "/images/cladcut/upload.gif",
             alt: "Step 1 - Upload Project Files",
             title: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step1,
             slogan: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step1_slogan,
         },
         {
-            img: "/images/cladcut/3d-scanning.gif",
+            img: "/images/cladcut/definespcs.gif",
             alt: "Step 2 - Define Specifications",
             title: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step2,
             slogan: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step2_slogan,
         },
         {
-            img: "/images/cladcut/model.gif",
+            img: "/images/cladcut/export.gif",
             alt: "Step 3 - Process & Export",
             title: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step3,
             slogan: cladcut(lang).sections.SIMPLIFIED_WORKFLOW.step3_slogan,
