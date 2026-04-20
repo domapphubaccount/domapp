@@ -49,8 +49,8 @@ export default function SimplifiedWorkflow() {
                                     alt={step.alt}
                                     className="card-img-top mx-auto d-block p-4"
                                     style={{
-                                        width: "80%",
-                                        height: "80%",
+                                        width: "50%",
+                                        height: "50%",
                                         objectFit: "contain",
                                     }}
                                 />

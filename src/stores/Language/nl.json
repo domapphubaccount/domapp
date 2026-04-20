@@ -228,17 +228,21 @@
   "CLADCUT_PAGE_PROBLEMS_SLICE1": {
     "ProblemTitle": "Resource Drain:",
     "Problem": " Long hours spent preparing fabrication drawings",
-    "Solution": "Engineering-Level Accuracy: Automated, clash-free unfolding with zero human error"
+    "SolutionTitle": "Engineering-Level Accuracy:",
+    "Solution": "Automated, clash-free unfolding with zero human error"
   },
   "CLADCUT_PAGE_PROBLEMS_SLICE2": {
     "ProblemTitle": "resources Losses & finantial Losses:",
     "Problem": "Errors in unfolding leading to material waste and power waste",
-    "Solution": "Faster Turnaround: Generate production files within minutes Optimized Material Usage: Smart cutting layouts that reduce waste and increase margins"
+    "SolutionTitle": "Optimized Material Usage:",
+    "Solution": "Smart cutting optimization that reduce waste and increase margins"
   },
   "CLADCUT_PAGE_PROBLEMS_SLICE3": {
     "ProblemTitle": "Project Delays mitigation:",
     "Problem": "eliminates the technical office bottlenecks which slows down production",
-    "Solution": "Optimized Material Usage: Smart cutting optimization that reduce waste and increase margins"
+
+    "SolutionTitle": "Faster Turnaround:",
+    "Solution": "Generate production files within minutes Optimized Material Usage: Smart cutting layouts that reduce waste and increase margins"
   },
   "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_TITLE": "A Simplified Workflow for Engineering Teams ",
   "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_TITLE": " Upload Your Project Files.",

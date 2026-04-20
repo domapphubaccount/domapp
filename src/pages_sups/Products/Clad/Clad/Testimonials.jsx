@@ -38,68 +38,68 @@ export default function Testimonials() {
                 {/* GRID */}
                 <div className="row g-4 justify-content-center">
 
-{testimonials.map((item, index) => (
-    <div
-        key={index}
-        className="col-12 col-md-6 d-flex align-items-stretch"
-    >
-        <div className="card shadow-sm border border-1 border-gray-200 w-100 h-100 rounded-4 overflow-hidden">
+                    {testimonials.map((item, index) => (
+                        <div
+                            key={index}
+                            className="col-12 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div className="card shadow-sm border border-1 border-gray-200 w-100 h-100 rounded-4 overflow-hidden">
 
-            {/* VIDEO BOX */}
-            <div
-                className="position-relative"
-                style={{
-                    height: 300,
-                    background: "linear-gradient(135deg, #e0f2fe, #dbeafe)",
-                }}
-            >
+                                {/* VIDEO BOX */}
+                                <div
+                                    className="position-relative"
+                                    style={{
+                                        height: 300,
+                                        background: "linear-gradient(135deg, #e0f2fe, #dbeafe)",
+                                    }}
+                                >
 
-                {/* thumbnail */}
-                <img
-                    src={`https://img.youtube.com/vi/${videoIds[index]}/hqdefault.jpg`}
-                    alt="video"
-                    style={{
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                        cursor: "pointer",
-                    }}
-                    onClick={() => openVideo(videoIds[index])}
-                />
+                                    {/* thumbnail */}
+                                    <img
+                                        src={`https://img.youtube.com/vi/${videoIds[index]}/hqdefault.jpg`}
+                                        alt="video"
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            objectFit: "cover",
+                                            cursor: "pointer",
+                                        }}
+                                        onClick={() => openVideo(videoIds[index])}
+                                    />
 
-                {/* play button */}
-                <div
-                    onClick={() => openVideo(videoIds[index])}
-                    style={{
-                        position: "absolute",
-                        top: "50%",
-                        left: "50%",
-                        transform: "translate(-50%, -50%)",
-                        width: 60,
-                        height: 60,
-                        borderRadius: "50%",
-                        background: "white",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
-                        cursor: "pointer",
-                    }}
-                >
-                    ▶
+                                    {/* play button */}
+                                    <div
+                                        onClick={() => openVideo(videoIds[index])}
+                                        style={{
+                                            position: "absolute",
+                                            top: "50%",
+                                            left: "50%",
+                                            transform: "translate(-50%, -50%)",
+                                            width: 60,
+                                            height: 60,
+                                            borderRadius: "50%",
+                                            background: "white",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
+                                            cursor: "pointer",
+                                        }}
+                                    >
+                                        ▶
+                                    </div>
+                                </div>
+
+                                {/* TEXT */}
+                                {/* <div className="card-body text-center px-4 py-4">
+                                    <h6 className="fw-bold mb-1">{item.name}</h6>
+                                </div> */}
+
+                            </div>
+                        </div>
+                    ))}
+
                 </div>
-            </div>
-
-            {/* TEXT */}
-            <div className="card-body text-center px-4 py-4">
-                <h6 className="fw-bold mb-1">{item.name}</h6>
-            </div>
-
-        </div>
-    </div>
-))}
-
-</div>
 
                 {/* MODAL VIDEO */}
                 <ModalVideo
@@ -110,14 +110,14 @@ export default function Testimonials() {
                 />
 
                 {/* BUTTON */}
-                <div className="text-center mt-5">
+                <div className="text-center mt-5 flex justify-center">
                     <a
                         style={{ textDecoration: "none" }}
                         href={cladcut_site}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <button className="btn btn-default !h:text-black">
+                        <button className="try-button flex items-center gap-2">
                             {data.cta}
                         </button>
                     </a>

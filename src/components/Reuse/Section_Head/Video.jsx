@@ -19,8 +19,8 @@ function Video({ title, body, src, className, bannar, additional, cta }) {
                   <h2 className="mb-5">{title}</h2>
                   <p className="mb-5 text-lg">{body}</p>
                   {cta &&
-                    <a href={cladcut_site} target="_blank" rel="noopener noreferrer">
-                      <button className="btn btn-default">{cta}</button>
+                    <a href={cladcut_site} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                      <button className="try-button">{cta}</button>
                     </a>
                   }
                 </div>

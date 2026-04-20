@@ -235,14 +235,15 @@
   "CLADCUT_PAGE_PROBLEMS_SLICE2": {
     "ProblemTitle": "خسائر في الموارد & خسائر مادية :",
     "Problem": " بسبب أخطاء في لوحات الافراد مما یؤدي الى خسائر في المواد (الخامات) وخسائر فى القوة العاملة",
-    "SolutionTitle": "إنشاء ملفات",
-    "Solution": "خلال دقائق CNC و DXF و PDF تسریع دورة العمل: "
+    "SolutionTitle": "تحسین استھلاك المواد:",
+    "Solution": "توزیع قص ذكي یقلل الفاقد ویرفع الربحیة"
   },
   "CLADCUT_PAGE_PROBLEMS_SLICE3": {
     "ProblemTitle": "تجنب تأخیر المشاریع",
     "Problem": "تجنب التأخیرات من جانب المكتب الفني مما یتسبب في تأخیر الانتاج",
-    "SolutionTitle": "تحسین استھلاك المواد:",
-    "Solution": "توزیع قص ذكي یقلل الفاقد ویرفع الربحیة"
+
+    "SolutionTitle": "إنشاء ملفات",
+    "Solution": "خلال دقائق CNC و DXF و PDF تسریع دورة العمل: "
   },
 
   "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_TITLE": "آلیة عمل مبسطة لفرق العمل الھندسیة ",

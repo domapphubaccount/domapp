@@ -21,7 +21,7 @@ export default function CTA() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn btn-default">{cladcut(lang).sections.CTA.btn}</button>
+              <button className="try-button flex items-center gap-2">{cladcut(lang).sections.CTA.btn}</button>
             </a>
        
           </div>

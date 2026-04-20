@@ -232,14 +232,15 @@
   "CLADCUT_PAGE_PROBLEMS_SLICE2": {
     "ProblemTitle": "resources Losses & finantial Losses:",
     "Problem": "Errors in unfolding leading to material waste and power waste",
-    "SolutionTitle": "Faster Turnaround:",
-    "Solution": "Generate production files within minutes Optimized Material Usage: Smart cutting layouts that reduce waste and increase margins"
+    "SolutionTitle": "Optimized Material Usage:",
+    "Solution": "Smart cutting optimization that reduce waste and increase margins"
   },
   "CLADCUT_PAGE_PROBLEMS_SLICE3": {
     "ProblemTitle": "Project Delays mitigation:",
     "Problem": "eliminates the technical office bottlenecks which slows down production",
-    "SolutionTitle": "Optimized Material Usage:",
-    "Solution": "Smart cutting optimization that reduce waste and increase margins"
+
+    "SolutionTitle": "Faster Turnaround:",
+    "Solution": "Generate production files within minutes Optimized Material Usage: Smart cutting layouts that reduce waste and increase margins"
   },
   "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_TITLE": "A Simplified Workflow for Engineering Teams ",
   "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_TITLE": " Upload Your Project Files.",
