@@ -275,19 +275,41 @@
   "CLADCUT_PAGE_FAQS_SLICE": [
     {
       "question": "كم عدد المستخدمين النشطين؟",
-      "answer": "نحن ندعم أكثر من 100 ألف مستخدم نشط."
+      "answer": {
+        "text": "CladCut is a specialized software solution designed for façade and cladding professionals to automate the preparation of fabrication drawings and machining files, reducing engineering preparation time by up to 85% while significantly improving accuracy and minimizing human errors.",
+        "list": null
+      }
     },
     {
       "question": "كم عدد المستخدمين النشطين؟",
-      "answer": "نحن ندعم أكثر من 100 ألف مستخدم نشط."
+      "answer": {
+        "text": "No, CladCut is not a CNC operating software. It focuses on the pre-production phase, where it prepares accurate detailed fabrication drawings and machining files (such as DXF). These files are then typically optimized and forwarded to CNC operators for execution on cutting and fabrication machines.",
+        "list": null
+      }
     },
     {
       "question": "كم عدد المستخدمين النشطين؟",
-      "answer": "نحن ندعم أكثر من 100 ألف مستخدم نشط."
+      "answer": {
+        "text": "CladCut is built for professionals working in façade and cladding engineering, including:",
+        "list": [
+          "Façade technical offices",
+          "Cladding fabricators",
+          "Façade engineers"
+        ],
+        "footer": "It is ideal for teams aiming to increase productivity, standardize outputs, and reduce engineering preparation time without compromising precision."
+      }
     },
     {
       "question": "كم عدد المستخدمين النشطين؟",
-      "answer": "نحن ندعم أكثر من 100 ألف مستخدم نشط."
+      "answer": {
+        "text": "CladCut produces a complete set of production-ready outputs, including:",
+        "list": [
+          "Fabrication drawings in PDF, DWG format",
+          "Machining files in DXF format (ready for CNC workflow)",
+          "Material and cutting data in XLS format"
+        ],
+        "footer": "These outputs are structured to support a smooth transition from engineering to fabrication."
+      }
     }
   ],
   "CLADCUT_PAGE_CTA_TITLE": "ھل أنت على استعداد لتطویر أعمالك في مجال الكلانج",

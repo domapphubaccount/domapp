@@ -261,29 +261,64 @@
     "title": "Project Engineer",
     "slogan": "CladCut has saved us so much time and effort. It's a great tool for our engineering team."
   },
- 
 
   "CLADCUT_PAGE_TESTIMONIALS_CTA": "JOIN 100+ COMPANIES – START FREE TRIAL",
   "CLADCUT_PAGE_FAQS_TITLE": "Everything You Need to Know Before Getting Started",
   "CLADCUT_PAGE_FAQS_ACTION": "READY TO IMPROVE YOUR TEAM’S EFFICIENCY? START FREE TRIAL.",
+
   "CLADCUT_PAGE_FAQS_SLICE": [
     {
       "question": "What is CladCut?",
-      "answer": "CladCut is a software that helps you create fabrication drawings for cladding projects."
+      "answer": {
+        "text": "CladCut is a specialized software solution designed for façade and cladding professionals to automate the preparation of fabrication drawings and machining files, reducing engineering preparation time by up to 85% while significantly improving accuracy and minimizing human errors.",
+        "list": null
+      }
     },
     {
-      "question": "What is CladCut?",
-      "answer": "CladCut is a software that helps you create fabrication drawings for cladding projects."
+      "question": "Is CladCut a CNC machine software?",
+      "answer": {
+        "text": "No, CladCut is not a CNC operating software. It focuses on the pre-production phase, where it prepares accurate detailed fabrication drawings and machining files (such as DXF). These files are then typically optimized and forwarded to CNC operators for execution on cutting and fabrication machines.",
+        "list": null
+      }
     },
     {
-      "question": "What is CladCut?",
-      "answer": "CladCut is a software that helps you create fabrication drawings for cladding projects."
+      "question": "Who can use CladCut?",
+      "answer": {
+        "text": "CladCut is built for professionals working in façade and cladding engineering, including:",
+        "list": [
+          "Façade technical offices",
+          "Cladding fabricators",
+          "Façade engineers"
+        ],
+        "footer": "It is ideal for teams aiming to increase productivity, standardize outputs, and reduce engineering preparation time without compromising precision."
+      }
     },
     {
-      "question": "What is CladCut?",
-      "answer": "CladCut is a software that helps you create fabrication drawings for cladding projects."
+      "question": "What outputs does CladCut generate?",
+      "answer": {
+        "text": "CladCut produces a complete set of production-ready outputs, including:",
+        "list": [
+          "Fabrication drawings in PDF, DWG format",
+          "Machining files in DXF format (ready for CNC workflow)",
+          "Material and cutting data in XLS format"
+        ],
+        "footer": "These outputs are structured to support a smooth transition from engineering to fabrication."
+      }
+    },
+    {
+      "question": "How does CladCut improve the cladding fabrication workflow?",
+      "answer": {
+        "text": "CladCut automates repetitive and error-prone tasks in the façade detailing process, such as:",
+        "list": [
+          "Preparing panel layouts and cutting details",
+          "Generating consistent fabrication drawings",
+          "Producing accurate machining files"
+        ],
+        "footer": "By doing so, it reduces manual work, minimizes coordination errors, and ensures that fabrication data is directly usable in production."
+      }
     }
   ],
+
   "CLADCUT_PAGE_CTA_TITLE": "Ready to Upgrade Your Cladding Operations?",
   "CLADCUT_PAGE_CTA_SLOGAN": "Join 100+ companies improving production quality while reducing operational costs with CladCut",
   "CLADCUT_PAGE_CTA_BTN": "START YOUR FREE TRIAL NOW",
