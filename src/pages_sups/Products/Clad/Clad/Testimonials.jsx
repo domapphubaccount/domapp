@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "reactstrap";
 import { useSelector } from "react-redux";
 import { cladcut_site } from "@/stores/Main/links/links";
+import ModalVideo from "react-modal-video";
+import "react-modal-video/css/modal-video.css";
+import V_bannar from "@/assets/images/Clad/v-bannar.png";
+
 
 export default function Testimonials() {
     const { lang } = useSelector((state) => state.languageSlice);
@@ -11,6 +15,14 @@ export default function Testimonials() {
     const testimonials = data.items;
 
     const videoIds = ["RiODoCvw9Ck", "mWwYByfwWVg"];
+
+    const [isOpen, setOpen] = useState(false);
+    const [activeVideo, setActiveVideo] = useState(null);
+
+    const openVideo = (id) => {
+        setActiveVideo(id);
+        setOpen(true);
+    };
 
     return (
         <section className="py-5">
@@ -34,30 +46,38 @@ export default function Testimonials() {
                         >
                             <div className="card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
 
-                                {/* VIDEO */}
+                                {/* VIDEO BOX */}
                                 <div
                                     className="position-relative"
                                     style={{
-                                        height: 200,
-                                        background: "linear-gradient(135deg, #e0f2fe, #dbeafe)",
+                                        height: 300,
                                     }}
                                 >
-                                    {videoIds[index] ? (
-                                        <iframe
-                                            width="100%"
-                                            height="100%"
-                                            src={`https://www.youtube.com/embed/${videoIds[index]}`}
-                                            title="YouTube video"
-                                            frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowFullScreen
-                                            style={{ objectFit: "cover" }}
-                                        />
-                                    ) : (
-                                        <div className="d-flex align-items-center justify-content-center h-100">
-                                            No Video
-                                        </div>
-                                    )}
+
+                                    <div
+                                        className="position-absolute top-0 end-0 w-50 h-100"
+                                        style={{
+                                            background: "#cfe8ff",
+                                            borderRadius: "50px 0 0 50px",
+                                            zIndex: 0,
+                                        }}
+                                    />
+
+                                    {/* thumbnail */}
+                                    <img
+                                        src={V_bannar.src}
+                                        alt="video"
+                                        className="w-full h-full object-cover relative z-10 cursor-pointer"
+                                        onClick={() => openVideo(videoIds[index])}
+                                    />
+
+                                    {/* play button */}
+                                    <div
+                                        className="position-absolute top-50 start-50 translate-middle w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center box-shadow-md cursor-pointer z-20 font-size-20"
+                                        onClick={() => openVideo(videoIds[index])}
+                                    >
+                                        ▶
+                                    </div>
                                 </div>
 
                                 {/* TEXT */}
@@ -86,6 +106,14 @@ export default function Testimonials() {
                         </div>
                     ))}
                 </div>
+
+                {/* MODAL VIDEO */}
+                <ModalVideo
+                    channel="youtube"
+                    isOpen={isOpen}
+                    videoId={activeVideo}
+                    onClose={() => setOpen(false)}
+                />
 
                 {/* BUTTON */}
                 <div className="text-center mt-5">
