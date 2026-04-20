@@ -5,6 +5,7 @@ import { cladcut_site } from "@/stores/Main/links/links";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.css";
 import V_bannar from "@/assets/images/Clad/v-bannar.png";
+import playIcon from "@/assets/images/Clad/play-button.png";
 
 
 export default function Testimonials() {
@@ -78,6 +79,7 @@ export default function Testimonials() {
                                     >
                                         ▶
                                     </div>
+                                  
                                 </div>
 
                                 {/* TEXT */}
