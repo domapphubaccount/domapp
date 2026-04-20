@@ -36,98 +36,70 @@ export default function Testimonials() {
                 </p>
 
                 {/* GRID */}
-                <div className="row g-12 px-12 justify-content-center">
-                    {testimonials.map((item, index) => (
-                        <div
-                            key={index}
-                            className="col-xl-6 col-md-6 d-flex align-items-stretch px-4"
-                        >
-                            <div className="card  shadow-sm border border-1 border-gray-200 h-100 rounded-4 overflow-hidden">
+                <div className="row g-4 justify-content-center">
 
-                                {/* VIDEO BOX */}
-                                <div
-                                    className="position-relative"
-                                    style={{
-                                        height: 300,
-                                        background: "linear-gradient(135deg, #e0f2fe, #dbeafe)",
-                                    }}
-                                >
+{testimonials.map((item, index) => (
+    <div
+        key={index}
+        className="col-12 col-md-6 d-flex align-items-stretch"
+    >
+        <div className="card shadow-sm border border-1 border-gray-200 w-100 h-100 rounded-4 overflow-hidden">
 
-                                    <div
-                                        className="position-absolute top-0 end-0 w-50 h-100"
-                                        style={{
-                                            background: "#cfe8ff",
-                                            borderRadius: "50px 0 0 50px",
-                                            zIndex: 0,
-                                        }}
-                                    />
+            {/* VIDEO BOX */}
+            <div
+                className="position-relative"
+                style={{
+                    height: 300,
+                    background: "linear-gradient(135deg, #e0f2fe, #dbeafe)",
+                }}
+            >
 
-                                    {/* thumbnail */}
-                                    <img
-                                        src={`https://img.youtube.com/vi/${videoIds[index]}/hqdefault.jpg`}
-                                        alt="video"
-                                        style={{
-                                            width: "100%",
-                                            height: "100%",
-                                            objectFit: "cover",
-                                            position: "relative",
-                                            zIndex: 1,
-                                            cursor: "pointer",
-                                        }}
-                                        onClick={() => openVideo(videoIds[index])}
-                                    />
+                {/* thumbnail */}
+                <img
+                    src={`https://img.youtube.com/vi/${videoIds[index]}/hqdefault.jpg`}
+                    alt="video"
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        cursor: "pointer",
+                    }}
+                    onClick={() => openVideo(videoIds[index])}
+                />
 
-                                    {/* play button */}
-                                    <div
-                                        onClick={() => openVideo(videoIds[index])}
-                                        style={{
-                                            position: "absolute",
-                                            top: "50%",
-                                            left: "50%",
-                                            transform: "translate(-50%, -50%)",
-                                            width: 60,
-                                            height: 60,
-                                            borderRadius: "50%",
-                                            background: "white",
-                                            display: "flex",
-                                            alignItems: "center",
-                                            justifyContent: "center",
-                                            boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
-                                            cursor: "pointer",
-                                            zIndex: 2,
-                                            fontSize: 20,
-                                        }}
-                                    >
-                                        ▶
-                                    </div>
-                                </div>
-
-                                {/* TEXT */}
-                                <div className="card-body text-center px-4 py-4">
-
-                                    <h6 className="fw-bold mb-1" style={{ fontSize: "1.1rem" }}>
-                                        {item.name}
-                                    </h6>
-
-                                    <div className="text-muted mb-3" style={{ fontSize: "0.95rem" }}>
-                                        {item.title}
-                                    </div>
-
-                                    <p
-                                        className="text-secondary mb-0"
-                                        style={{
-                                            fontStyle: "italic",
-                                            lineHeight: 1.6,
-                                        }}
-                                    >
-                                        “{item.slogan}”
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    ))}
+                {/* play button */}
+                <div
+                    onClick={() => openVideo(videoIds[index])}
+                    style={{
+                        position: "absolute",
+                        top: "50%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)",
+                        width: 60,
+                        height: 60,
+                        borderRadius: "50%",
+                        background: "white",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
+                        cursor: "pointer",
+                    }}
+                >
+                    ▶
                 </div>
+            </div>
+
+            {/* TEXT */}
+            <div className="card-body text-center px-4 py-4">
+                <h6 className="fw-bold mb-1">{item.name}</h6>
+            </div>
+
+        </div>
+    </div>
+))}
+
+</div>
 
                 {/* MODAL VIDEO */}
                 <ModalVideo

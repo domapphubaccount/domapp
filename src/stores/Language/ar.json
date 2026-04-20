@@ -256,62 +256,75 @@
   "CLADCUT_PAGE_TESTIMONIALS_SUBTITLE": "CladCut تجارب حقیقیة لشركات ح ّسنت كفاءة التشغیل ورفعت إنتاجیتھا باستخدام",
 
   "CLADCUT_PAGE_TESTIMONIALS_SLICE_1": {
-    "name": "محمد عبد الله",
+    "name": "   المهندس عمرو يحيى",
+
     "title": "مدیر المشروع",
     "slogan": "CladCut حفظ لنا وقت وجهد كبیر. یعتبر أداة رائعة لفريق العمل الھندسی."
   },
   "CLADCUT_PAGE_TESTIMONIALS_SLICE_2": {
-    "name": "عبد الله عبد الله",
+    "name": "  المهندس أرجي",
     "title": "مدیر المشروع",
     "slogan": "CladCut حفظ لنا وقت وجهد كبیر. یعتبر أداة رائعة لفريق العمل الھندسی."
   },
-  "CLADCUT_PAGE_TESTIMONIALS_SLICE_3": {
-    "name": "محمد عبد الله",
-    "title": "مدیر المشروع",
-    "slogan": "CladCut حفظ لنا وقت وجهد كبیر. یعتبر أداة رائعة لفريق العمل الھندسی."
-  },
+
   "CLADCUT_PAGE_FAQS_TITLE": "تسعیر مرن تدعم نمو أعمالك",
   "CLADCUT_PAGE_FAQS_ACTION": "اختر خطتك وابدأ الآن",
+
   "CLADCUT_PAGE_FAQS_SLICE": [
     {
-      "question": "كم عدد المستخدمين النشطين؟",
+      "question": "ما هو CladCut؟",
       "answer": {
-        "text": "CladCut is a specialized software solution designed for façade and cladding professionals to automate the preparation of fabrication drawings and machining files, reducing engineering preparation time by up to 85% while significantly improving accuracy and minimizing human errors.",
-        "list": null
+        "text": "ـ CladCut هو برنامج تم تطويره خصيصا لمهندسي الواجهات ، يهدف إلى أتمتة إعداد مخططات التصنيع وملفات التشغيل، مما يقلل وقت التحضير الهندسي بنسبة تصل إلى 85%، مع تحسين الدقة بشكل كبير وتقليل الأخطاء البشرية.",
+        "list": null,
+        "footer": null
       }
     },
     {
-      "question": "كم عدد المستخدمين النشطين؟",
+      "question": "هل CladCut برنامج تشغيل ماكينات CNC؟",
       "answer": {
-        "text": "No, CladCut is not a CNC operating software. It focuses on the pre-production phase, where it prepares accurate detailed fabrication drawings and machining files (such as DXF). These files are then typically optimized and forwarded to CNC operators for execution on cutting and fabrication machines.",
-        "list": null
+        "text": "لا، CladCut ليس برنامج تشغيل لماكينات CNC. هو مخصص لمرحلة ما قبل الإنتاج، حيث يقوم بإعداد رسومات تصنيع تفصيلية وملفات تشغيل دقيقة (مثل DXF). ثم يتم عادةً تحسين هذه الملفات وإرسالها إلى مشغلي ماكينات CNC لتنفيذها على آلات القطع والتصنيع.",
+        "list": null,
+        "footer": null
       }
     },
     {
-      "question": "كم عدد المستخدمين النشطين؟",
+      "question": "من يمكنه استخدام CladCut؟",
       "answer": {
-        "text": "CladCut is built for professionals working in façade and cladding engineering, including:",
+        "text": "تم تطوير CladCut للمحترفين والمبتدئين في مجال هندسة الواجهات وخصيصًا أنظمة الكلادينج، مثل:",
         "list": [
-          "Façade technical offices",
-          "Cladding fabricators",
-          "Façade engineers"
+          "المكاتب الفنية للواجهات",
+          "مقاولين الكلادينج",
+          "مهندسي الواجهات"
         ],
-        "footer": "It is ideal for teams aiming to increase productivity, standardize outputs, and reduce engineering preparation time without compromising precision."
+        "footer": "وهو مثالي للفرق التي تسعى إلى: زيادة الإنتاجية • دقة في المخرجات • تقليل وقت التحضير الهندسي، مع الحفاظ على أعلى مستوى من الدقة."
       }
     },
     {
-      "question": "كم عدد المستخدمين النشطين؟",
+      "question": "ما هي المخرجات التي ينتجها CladCut؟",
       "answer": {
-        "text": "CladCut produces a complete set of production-ready outputs, including:",
+        "text": "يقوم CladCut بإنتاج مجموعة متكاملة من المخرجات الجاهزة للتصنيع، تشمل:",
         "list": [
-          "Fabrication drawings in PDF, DWG format",
-          "Machining files in DXF format (ready for CNC workflow)",
-          "Material and cutting data in XLS format"
+          "رسومات تصنيع بصيغ PDF وDWG",
+          "ملفات تشغيل بصيغة DXF (جاهزة لاستخدامها مع أنظمة CNC)",
+          "بيانات المواد والقص بصيغة XLS"
         ],
-        "footer": "These outputs are structured to support a smooth transition from engineering to fabrication."
+        "footer": "تم تنظيم هذه المخرجات لدعم انتقال سلس من مرحلة الإعداد الهندسي إلى مرحلة التصنيع."
+      }
+    },
+    {
+      "question": "كيف يساهم CladCut في تحسين سير عمل تصنيع الكلادينج؟",
+      "answer": {
+        "text": "يقوم CladCut بأتمتة المهام المتكررة والمعرضة للأخطاء في عملية تفصيل الواجهات، مثل:",
+        "list": [
+          "إعداد وإفراد كافة الألواح وتفاصيل القص",
+          "إنشاء رسومات تصنيع متسقة",
+          "إنتاج ملفات تشغيل دقيقة"
+        ],
+        "footer": "وبذلك يساهم في: تقليل العمل اليدوي • تقليل أخطاء التنسيق • ضمان جاهزية بيانات التصنيع للاستخدام المباشر في الإنتاج."
       }
     }
   ],
+
   "CLADCUT_PAGE_CTA_TITLE": "ھل أنت على استعداد لتطویر أعمالك في مجال الكلانج",
   "CLADCUT_PAGE_CTA_SLOGAN": "CladCut انضم لأكثر من 100 شركة نجحت بالفعل في تحسین جودة الإنتاج و تقلیص التكالیف باستخدام",
   "CLADCUT_PAGE_CTA_BTN": "ابدأ التجربة المجانیة الآن",
