@@ -1,169 +1,75 @@
 import React, { useState } from "react";
-import { Container } from "reactstrap";
-import { useSelector } from "react-redux";
-import { cladcut_site } from "@/stores/Main/links/links";
-import ModalVideo from "react-modal-video";
-import "react-modal-video/css/modal-video.css";
-
-import V_bannar from "@/assets/images/Clad/v-bannar.png";
 import playIcon from "@/assets/images/Clad/play-button.png";
+import ModalVideo from "react-modal-video";
+import { Col, Row } from "reactstrap";
+import { cladcut_site } from "@/stores/Main/links/links";
 
-export default function Testimonials() {
-  const { lang } = useSelector((state) => state.languageSlice);
-  const { cladcut } = useSelector((state) => state.cladcutRed);
 
-  const data = cladcut(lang).sections.TESTIMONIALS;
-  const testimonials = data.items;
-
-  const videoIds = ["RiODoCvw9Ck", "mWwYByfwWVg"];
-
+function Video({ title, body, src, className, bannar, additional, cta }) {
   const [isOpen, setOpen] = useState(false);
-  const [activeVideo, setActiveVideo] = useState(null);
-
-  const openVideo = (id) => {
-    setActiveVideo(id);
-    setOpen(true);
-  };
 
   return (
-    <section className="py-5">
-      <Container>
-
-        {/* TITLE */}
-        <h2 className="text-center mb-3 fw-bold">
-          {data.title}
-        </h2>
-
-        <p className="text-center mb-5 text-muted">
-          {data.subtitle}
-        </p>
-
-        {/* GRID */}
-        <div className="row g-4 justify-content-center">
-          {testimonials.map((item, index) => (
-            <div
-              key={index}
-              className="col-xl-6 col-md-6 d-flex align-items-stretch"
-            >
-              <div className="card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
-
-                <div className="position-relative">
-
-                  <div
-                    className="position-absolute top-0 end-0 w-50 h-100"
-                    style={{
-                      background: "#cfe8ff",
-                      borderRadius: "50px 0 0 50px",
-                      zIndex: 0,
-                    }}
-                  />
-
-                  <div className="position-relative video-screen-border" style={{ height: 300 }}>
-
-                    <img
-                      src={V_bannar.src}
-                      alt="video"
-                      className="w-100 h-100"
-                      style={{
-                        objectFit: "cover",
-                        borderRadius: "16px",
-                        position: "relative",
-                        zIndex: 1,
-                      }}
-                      onClick={() => openVideo(videoIds[index])}
-                    />
-
-                    {/* overlay circle + play */}
-                    <div
-                      style={{
-                        position: "absolute",
-                        inset: 0,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        zIndex: 2,
-                        cursor: "pointer",
-                      }}
-                      onClick={() => openVideo(videoIds[index])}
-                    >
-
-                      {/* circle */}
-                      <div
-                        className="border_circle"
-                        style={{
-                          position: "absolute",
-                          width: 70,
-                          height: 70,
-                          borderRadius: "50%",
-                          background: "rgba(255,255,255,0.2)",
-                        }}
-                      />
-
-                      {/* play icon */}
-                      <img
-                        src={playIcon.src}
-                        alt="play"
-                        width={50}
-                        style={{
-                          position: "relative",
-                          zIndex: 3,
-                        }}
+    <section className={additional}>
+      <div className="container">
+        <div className="my-5">
+          <Row>
+            <Col sm={12} md={6}>
+              <div className="">
+                <div className="my-5 text-slate-900">
+                  <h2 className="mb-5">{title}</h2>
+                  <p className="mb-5 text-lg">{body}</p>
+                  {cta &&
+                    <a href={cladcut_site} target="_blank" rel="noopener noreferrer">
+                      <button className="btn btn-default">{cta}</button>
+                    </a>
+                  }
+                </div>
+              </div>
+            </Col>
+            <Col sm={12} md={6}>
+              <div className="">
+                <div className="relative">
+                  <div className={`${className} absolute -top-4 -bottom-4 -right-4 w-2/3 rounded-3xl z-0 sm:rounded-[50px] md:top-0 md:bottom-0 md:right-0 xl:w-7/12`}></div>
+                  <div className="relative flex justify-end items-center flex-column gap-4">
+                    <div >
+                      <div className="relative video-screen-border">
+                        <img loading="lazy"
+                          className="w-full aspect-video rounded-2xl"
+                          src={bannar.src}
+                          title="YouTube video player"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          alt="video 1"
+                        />
+                        <div className="play-icon-clad">
+                          <div
+                            className="border_circle"
+                            onClick={() => setOpen(true)}
+                          ></div>
+                          <img alt="play icon" loading="lazy" src={playIcon.src} width={50} />
+                        </div>
+                      </div>
+                      <ModalVideo
+                        channel="youtube"
+                        youtube={{ mute: 0, autoplay: 0 }}
+                        isOpen={isOpen}
+                        videoId={src}
+                        onClose={() => setOpen(false)}
                       />
                     </div>
+                    {/* {cta &&
+                      <a href={cladcut_site} target="_blank" rel="noopener noreferrer">
+                        <button className="btn btn-default">{cta}</button>
+                      </a>
+                    } */}
                   </div>
                 </div>
-
-                {/* TEXT */}
-                <div className="card-body text-center px-4 py-4">
-
-                  <h6 className="fw-bold mb-1" style={{ fontSize: "1.1rem" }}>
-                    {item.name}
-                  </h6>
-
-                  <div className="text-muted mb-3" style={{ fontSize: "0.95rem" }}>
-                    {item.title}
-                  </div>
-
-                  <p
-                    className="text-secondary mb-0"
-                    style={{
-                      fontStyle: "italic",
-                      lineHeight: 1.6,
-                    }}
-                  >
-                    “{item.slogan}”
-                  </p>
-                </div>
-
               </div>
-            </div>
-          ))}
+            </Col>
+          </Row>
         </div>
-
-        {/* MODAL */}
-        <ModalVideo
-          channel="youtube"
-          youtube={{ mute: 0, autoplay: 0 }}
-          isOpen={isOpen}
-          videoId={activeVideo}
-          onClose={() => setOpen(false)}
-        />
-
-        {/* BUTTON */}
-        <div className="text-center mt-5">
-          <a
-            style={{ textDecoration: "none" }}
-            href={cladcut_site}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="btn btn-default !h:text-black">
-              {data.cta}
-            </button>
-          </a>
-        </div>
-
-      </Container>
+      </div>
     </section>
   );
 }
+
+export default Video;
