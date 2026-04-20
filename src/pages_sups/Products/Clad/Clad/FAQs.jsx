@@ -1,0 +1,96 @@
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { Container } from "reactstrap";
+
+export default function FAQs() {
+    const { lang } = useSelector((state) => state.languageSlice);
+    const { cladcut } = useSelector((state) => state.cladcutRed);
+
+    const faqs = cladcut(lang).sections.FAQs.items;
+    const isAr = lang === "ar";
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const toggleFAQ = (index) => {
+        setActiveIndex(activeIndex === index ? null : index);
+    };
+
+    return (
+        <section dir={isAr ? "rtl" : "ltr"}>
+            <Container className="py-5">
+
+                {/* TITLE */}
+                <h2 className="text-center mb-3 fw-bold capitalize ">
+                    {cladcut(lang).sections.FAQs.title}
+                </h2>
+                {/* <div className="d-flex justify-content-center mb-4">
+                <button className="btn btn-default capitalize ">
+                    {cladcut(lang).sections.FAQs.action}
+                </button>
+            </div> */}
+
+
+                {/* ACCORDION */}
+                <div>
+
+                    {faqs.map((item, index) => (
+                        <div
+                            key={index}
+                            className="border rounded mb-3 overflow-hidden capitalize "
+                        >
+
+                            {/* QUESTION */}
+                            <button
+                                onClick={() => toggleFAQ(index)}
+                                className="w-100 text-start p-3 fw-semibold bg-white border-0 d-flex justify-content-between align-items-center"
+                                style={{ outline: "none" }}
+                            >
+                                {item.question}
+
+                                <span
+                                    style={{
+                                        transform:
+                                            activeIndex === index ? "rotate(180deg)" : "rotate(0deg)",
+                                        transition: "0.3s",
+                                    }}
+                                >
+                                    ▼
+                                </span>
+                            </button>
+
+                            {/* ANSWER */}
+                            <div
+                                style={{
+                                    maxHeight: activeIndex === index ? "200px" : "0px",
+                                    overflow: "hidden",
+                                    transition: "0.3s ease",
+                                }}
+                            >
+                                <div className="p-4 text-gray-700 dark:text-gray-300 space-y-3" dir="auto">
+                                    <p className="text-base leading-relaxed">{item.answer.text}</p>
+
+                                    {item.answer.list && (
+                                        <ul className="list-disc ps-6 space-y-2 marker:text-gray-500 dark:marker:text-gray-400">
+                                            {item.answer.list.map((point, idx) => (
+                                                <li key={idx} className="text-sm leading-relaxed text-gray-600 dark:text-gray-300">
+                                                    {point}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+
+                                    {item.answer.footer && (
+                                        <p className="text-base leading-relaxed">
+                                            {item.answer.footer}
+                                        </p>
+                                    )}
+                                </div>
+                            </div>
+
+                        </div>
+                    ))}
+
+                </div>
+            </Container>
+        </section>
+    );
+}

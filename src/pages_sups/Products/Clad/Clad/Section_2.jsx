@@ -20,6 +20,7 @@ export default function Section_2() {
           <Video
             title={cladcut(lang).sections.Quick_start.title}
             body={cladcut(lang).sections.Quick_start.slogan}
+            cta={cladcut(lang).sections.Quick_start.cta}
             src={cladcut_fram}
             className={"clad-v-bannar"}
             bannar={V_bannar}

@@ -15,7 +15,7 @@ import de from "@/stores/Language/de.json";
 import es from "@/stores/Language/es.json";
 import nl from "@/stores/Language/nl.json";
 
-const translations = { en, ar , de , es , nl };
+const translations = { en, ar, de, es, nl };
 
 const t = (key, lang) => translations[lang]?.[key] || key;
 
@@ -28,12 +28,14 @@ const initialState = {
         bannar: {
           slogan: t("CLADCUT_PAGE_BANNAR_SLOGAN", lang),
           try_btn: t("CLADCUT_PAGE_TRY_BTN", lang),
+          try_btn_microcopy: t("CLADCUT_PAGE_TRY_BTN_MICROCOPY", lang),
           pricing_btn: t("CLADCUT_PAGE_PRICING_BTN", lang),
           slice: t("CLADCUT_PAGE_BANNAR_SLICE", lang),
         },
         Quick_start: {
           title: t("CLADCUT_PAGE_QUICK_START_TITLE", lang),
           slogan: t("CLADCUT_PAGE_QUICK_START_SLOGAN", lang),
+          cta: t("CLADCUT_PAGE_QUICK_START_CTA", lang),
         },
         Head_NOTE_1: {
           title: t("CLADCUT_PAGE_HEAD_NOTE_1_TITLE", lang),
@@ -79,6 +81,51 @@ const initialState = {
           title: t("CLADCUT_PAGE_FOOTER_TITLE", lang),
           slice: t("CLADCUT_PAGE_FOOTER_SLICE", lang),
         },
+        PROBLEMS: {
+          problems_title: t("CLADCUT_PAGE_PROBLEMS_TITLE", lang),
+          solutions_title: t("CLADCUT_PAGE_PROBLEMS_SOLUTIONS_TITLE", lang),
+          slice1: t("CLADCUT_PAGE_PROBLEMS_SLICE1", lang),
+          slice2: t("CLADCUT_PAGE_PROBLEMS_SLICE2", lang),
+          slice3: t("CLADCUT_PAGE_PROBLEMS_SLICE3", lang),
+        },
+        SIMPLIFIED_WORKFLOW: {
+          title: t("CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_TITLE", lang),
+          step1: t("CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_TITLE", lang),
+          step1_slogan: t(
+            "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_1_SLOGAN",
+            lang,
+          ),
+          step2: t("CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_TITLE", lang),
+          step2_slogan: t(
+            "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_SLOGAN",
+            lang,
+          ),
+          step3: t("CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_TITLE", lang),
+          step3_slogan: t(
+            "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_SLOGAN",
+            lang,
+          ),
+        },
+        TESTIMONIALS: {
+          title: t("CLADCUT_PAGE_TESTIMONIALS_TITLE", lang),
+          subtitle: t("CLADCUT_PAGE_TESTIMONIALS_SUBTITLE", lang),
+          cta: t("CLADCUT_PAGE_TESTIMONIALS_CTA", lang),
+          items: [
+            t("CLADCUT_PAGE_TESTIMONIALS_SLICE_1", lang),
+            t("CLADCUT_PAGE_TESTIMONIALS_SLICE_2", lang),
+          ],
+        },
+        FAQs: {
+          title: t("CLADCUT_PAGE_FAQS_TITLE", lang),
+          action: t("CLADCUT_PAGE_FAQS_ACTION", lang),
+          items: t("CLADCUT_PAGE_FAQS_SLICE", lang),
+        },
+        CTA: {
+          title: t("CLADCUT_PAGE_CTA_TITLE", lang),
+          slogan: t("CLADCUT_PAGE_CTA_SLOGAN", lang),
+          btn: t("CLADCUT_PAGE_CTA_BTN", lang),
+        },
+        WHATSAPP_TOOLTIP: t("CLADCUT_PAGE_WHATSAPP_TOOLTIP", lang),
       },
     };
   },
