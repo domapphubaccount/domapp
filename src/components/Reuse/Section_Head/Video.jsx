@@ -18,6 +18,11 @@ function Video({ title, body, src, className, bannar, additional, cta }) {
                 <div className="my-5 text-slate-900">
                   <h2 className="mb-5">{title}</h2>
                   <p className="mb-5 text-lg">{body}</p>
+                  {cta &&
+                    <a href={cladcut_site} target="_blank" rel="noopener noreferrer">
+                      <button className="btn btn-default">{cta}</button>
+                    </a>
+                  }
                 </div>
               </div>
             </Col>
@@ -51,11 +56,11 @@ function Video({ title, body, src, className, bannar, additional, cta }) {
                         onClose={() => setOpen(false)}
                       />
                     </div>
-                    {cta &&
+                    {/* {cta &&
                       <a href={cladcut_site} target="_blank" rel="noopener noreferrer">
                         <button className="btn btn-default">{cta}</button>
                       </a>
-                    }
+                    } */}
                   </div>
                 </div>
               </div>

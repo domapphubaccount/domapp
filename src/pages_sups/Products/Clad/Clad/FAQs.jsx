@@ -22,11 +22,11 @@ export default function FAQs() {
             <h2 className="text-center mb-3 fw-bold capitalize ">
                 {cladcut(lang).sections.FAQs.title}
             </h2>
-            <div className="d-flex justify-content-center mb-4">
+            {/* <div className="d-flex justify-content-center mb-4">
                 <button className="btn btn-default capitalize ">
                     {cladcut(lang).sections.FAQs.action}
                 </button>
-            </div>
+            </div> */}
 
 
             {/* ACCORDION */}
