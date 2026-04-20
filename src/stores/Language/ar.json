@@ -187,7 +187,7 @@
     "houres": "توفیر أكثر من 18 ألف ساعة عمل"
   },
   "CLADCUT_PAGE_QUICK_START_TITLE": "تسریع عملیات التصنیع و تقلیل التعقید",
-  "CLADCUT_PAGE_QUICK_START_SLOGAN": "الانتقال من العملیات الیدویة الیدویة إلى نظام رقمي (مؤتمت ) متكامل، و تقلیص وقت التنفیذ",
+  "CLADCUT_PAGE_QUICK_START_SLOGAN": "الانتقال من العملیات الیدویة إلى نظام رقمي (مؤتمت ) متكامل، و تقلیص وقت التنفیذ",
   "CLADCUT_PAGE_HEAD_NOTE_1_TITLE": "سرعة تصنيع ألواح الألومنيوم باستخدام CladCut",
   "CLADCUT_PAGE_QUICK_START_CTA": "اختبر النظام بنفسك – ابدأ التجربة المجانیة",
 
@@ -251,9 +251,9 @@
   "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_TITLE": "تحدید المواصفات.",
   "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_2_SLOGAN": "اختیار المواد الخام و القطاعات المستخدمة في المشروع.",
   "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_TITLE": "التنفیذ والتصدیر",
-  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_SLOGAN": "بشكل فوري (PDF / DXF / CNC (إخراج ملفات التصنیع",
+  "CLADCUT_PAGE_SIMPLIFIED_WORKFLOW_STEP_3_SLOGAN": "بشكل فوري (PDF / DXF / CNC )إخراج ملفات التصنیع",
   "CLADCUT_PAGE_TESTIMONIALS_TITLE": "معتمد من شركات ومكاتب ھندسیة رائدة",
-  "CLADCUT_PAGE_TESTIMONIALS_SUBTITLE": "CladCut تجارب حقیقیة لشركات ح ّسنت كفاءة التشغیل ورفعت إنتاجیتھا باستخدام",
+  "CLADCUT_PAGE_TESTIMONIALS_SUBTITLE": "CladCut تجارب حقیقیة لشركات حسنت كفاءة التشغیل ورفعت إنتاجیتھا باستخدام",
 
   "CLADCUT_PAGE_TESTIMONIALS_SLICE_1": {
     "name": "   المهندس عمرو يحيى",
@@ -325,11 +325,11 @@
     }
   ],
 
-  "CLADCUT_PAGE_CTA_TITLE": "ھل أنت على استعداد لتطویر أعمالك في مجال الكلانج",
+  "CLADCUT_PAGE_CTA_TITLE": "ھل أنت على استعداد لتطویر أعمالك في مجال الكلادنج",
   "CLADCUT_PAGE_CTA_SLOGAN": "CladCut انضم لأكثر من 100 شركة نجحت بالفعل في تحسین جودة الإنتاج و تقلیص التكالیف باستخدام",
   "CLADCUT_PAGE_CTA_BTN": "ابدأ التجربة المجانیة الآن",
   "CLADCUT_PAGE_WHATSAPP_TOOLTIP": "للاستفسارات الفنیة والتجاریة، تواصل مع فریقنا مباشرة",
-  "CLADCUT_PAGE_TESTIMONIALS_CTA": "انضم لمئات الشركات الشركات اللتي أتمتت انتاجھا – ابدأ مجانًا",
+  "CLADCUT_PAGE_TESTIMONIALS_CTA": "انضم لمئات الشركات اللتي أتمتت انتاجھا – ابدأ مجانًا",
 
   "WINDMASTER_PAGE_TRY_BTN": "جربه الاّن مجانا",
   "WINDMASTER_PAGE_PRICING_BTN": "الأسعار",

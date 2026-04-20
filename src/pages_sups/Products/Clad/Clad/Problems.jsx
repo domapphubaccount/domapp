@@ -62,7 +62,7 @@ export default function Problems() {
 
                 <div className="row g-4 mb-4 align-items-center">
                     <div className="col-md-6">
-                        <h2 className="text-center fw-bold capitalize mb-0">
+                        <h2 style={{ lineHeight: "1.7" }} className="text-center fw-bold capitalize mb-0 ">
                             {data.problems_title}
                         </h2>
                     </div>
